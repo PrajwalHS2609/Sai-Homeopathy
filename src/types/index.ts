@@ -136,3 +136,20 @@ export interface FaqItem {
   question: string;
   answer: string;
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  slug: string;
+  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief';
+  excerpt: string;
+  content: string[];
+  keyTakeaways: string[];
+  readTime: string;
+  author: string;
+  authorTitle: string;
+  publishedDate: string;
+  tags: string[];
+  featured?: boolean;
+}
+

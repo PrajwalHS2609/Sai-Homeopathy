@@ -17,6 +17,8 @@ import { FaqSection } from './components/FaqSection';
 import { FinalCtaBanner } from './components/FinalCtaBanner';
 import { Footer } from './components/Footer';
 import { ProductsCatalogView } from './components/ProductsCatalogView';
+import { HomeBlogSection } from './components/HomeBlogSection';
+import { BlogPageView } from './components/BlogPageView';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { CartDrawer } from './components/CartDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
@@ -141,7 +143,27 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route 6: Reviews View
+  // Route 6: Blog & Knowledge Hub View
+  if (currentView === 'blog') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+        <Header />
+        <main className="flex-1">
+          <BlogPageView />
+          <FinalCtaBanner />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route 7: Reviews View
   if (currentView === 'reviews') {
     return (
       <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
@@ -247,7 +269,10 @@ const MainContent: React.FC = () => {
         {/* 11. Patient Testimonials (Carousel & Cards) */}
         <PatientTestimonials />
 
-        {/* 12. Book Appointment (Core Functional Booking Engine) */}
+        {/* 12. Clinical Insights & Knowledge Column (with link to main blog page) */}
+        <HomeBlogSection />
+
+        {/* 13. Book Appointment (Core Functional Booking Engine) */}
         <section id="book-appointment-section" className="py-20 bg-[#FCFBF6]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AppointmentBookingEngine />

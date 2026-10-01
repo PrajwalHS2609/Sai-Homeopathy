@@ -40,6 +40,7 @@ export const Header: React.FC = () => {
     { label: 'About', view: 'about' },
     { label: 'Consultations', view: 'consultations' },
     { label: 'Products', view: 'products' },
+    { label: 'Blog', view: 'blog' },
     { label: 'Reviews', view: 'reviews' },
     { label: 'FAQ', view: 'faq' },
     { label: 'Contact', view: 'contact' },

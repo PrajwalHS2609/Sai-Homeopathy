@@ -127,6 +127,14 @@ export const Footer: React.FC = () => {
                   Dr. Ananya Sharma (BHMS)
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('blog')}
+                  className="hover:text-white transition-colors text-[#D8B45A]"
+                >
+                  Health Knowledge Hub
+                </button>
+              </li>
             </ul>
           </div>
 

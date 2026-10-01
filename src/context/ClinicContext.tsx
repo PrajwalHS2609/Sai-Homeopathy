@@ -9,12 +9,14 @@ import {
   ConsultationType,
   Order,
   OrderCustomerInfo,
+  BlogPost,
 } from '../types';
 import {
   INITIAL_SETTINGS,
   INITIAL_PRACTITIONERS,
   INITIAL_PRODUCTS,
   INITIAL_APPOINTMENTS,
+  INITIAL_BLOG_POSTS,
 } from '../data/initialData';
 
 export type NavView =
@@ -22,6 +24,7 @@ export type NavView =
   | 'about'
   | 'consultations'
   | 'products'
+  | 'blog'
   | 'reviews'
   | 'faq'
   | 'contact'
@@ -84,6 +87,12 @@ interface ClinicContextType {
   lastConfirmedOrder: Order | null;
   setLastConfirmedOrder: (order: Order | null) => void;
 
+  // Blog
+  blogPosts: BlogPost[];
+  selectedPostForReader: BlogPost | null;
+  setSelectedPostForReader: (post: BlogPost | null) => void;
+  openBlogPost: (post: BlogPost) => void;
+
   // Medical Disclaimer Modal
   isDisclaimerOpen: boolean;
   setIsDisclaimerOpen: (open: boolean) => void;
@@ -100,6 +109,19 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>('home');
   const [bookingTypePreset, setBookingTypePreset] = useState<ConsultationType>('online');
+
+  // Blog Posts
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
+    const saved = localStorage.getItem('sai_clinic_blogs');
+    return saved ? JSON.parse(saved) : INITIAL_BLOG_POSTS;
+  });
+  const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(null);
+
+  const openBlogPost = (post: BlogPost) => {
+    setSelectedPostForReader(post);
+    setCurrentView('blog');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Settings
   const [settings, setSettings] = useState<ClinicSettings>(() => {
@@ -445,6 +467,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         createOrder,
         lastConfirmedOrder,
         setLastConfirmedOrder,
+        blogPosts,
+        selectedPostForReader,
+        setSelectedPostForReader,
+        openBlogPost,
         isDisclaimerOpen,
         setIsDisclaimerOpen,
         toasts,

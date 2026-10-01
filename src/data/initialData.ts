@@ -1,4 +1,4 @@
-import { ClinicSettings, Practitioner, Product, Testimonial, FaqItem, Appointment } from '../types';
+import { ClinicSettings, Practitioner, Product, Testimonial, FaqItem, Appointment, BlogPost } from '../types';
 
 export const INITIAL_SETTINGS: ClinicSettings = {
   clinicName: 'SAI HOMEOPATHY CLINIC',
@@ -314,3 +314,108 @@ export const INITIAL_APPOINTMENTS: Appointment[] = [
     createdAt: new Date().toISOString(),
   },
 ];
+
+export const INITIAL_BLOG_POSTS: BlogPost[] = [
+  {
+    id: 'post-1',
+    title: 'Understanding Constitutional Homeopathy: How Personalized Care Differs from Symptom Suppression',
+    slug: 'understanding-constitutional-homeopathy',
+    category: 'Homeopathy',
+    excerpt: 'Explore why classical homeopathy looks at the whole individual—including temperament, sleep, cravings, and emotional stressors—rather than matching a standard pill to a generic diagnostic label.',
+    content: [
+      'In conventional medicine, the goal is often focused on the rapid suppression of isolated physical symptoms—a cough syrup for a cough, an antacid for heartburn, or an antihistamine for sneezing. While symptom relief is essential in emergencies, chronic recurring ailments frequently call for an approach that looks deeper into the individual\'s constitutional equilibrium.',
+      'Constitutional homeopathy is founded on the principle that symptoms are the body’s intelligent outward expression of internal strain. Rather than acting as enemies to be silenced, these signals guide the trained physician toward understanding how your unique biology and nervous system react to life stressors.',
+      'During a thorough 45-minute constitutional intake at Sai Homeopathy Clinic, we evaluate not only your current complaints, but also subtle constitutional markers: thermal sensitivities (whether you feel inherently chilly or warm), digestion and appetite rhythms, sleep patterns, emotional dispositions, and environmental factors.',
+      'Because every individual is biologically and constitutionally unique, two patients presenting with identical chronic migraine patterns may receive entirely distinct classical homeopathic prescriptions. One may thrive on Natrum Muriaticum, while another requires Belladonna or Iris Versicolor.',
+      'By addressing the underlying vitality rather than suppressing the signal, constitutional care assists the organism in reclaiming its innate regulatory balance gently and sustainably.'
+    ],
+    keyTakeaways: [
+      'Constitutional care treats the individual experiencing the illness, not an isolated medical label.',
+      'Symptoms are viewed as communication from your regulatory vitality rather than isolated malfunctions.',
+      'Comprehensive case-taking examines sleep, thermal preferences, emotional triggers, and digestion.',
+      'The objective is long-term physiological resilience and steady recovery without dependency.'
+    ],
+    readTime: '5 min read',
+    author: 'Dr. Ananya Sharma',
+    authorTitle: 'Senior Homeopathic Physician (BHMS)',
+    publishedDate: 'March 14, 2026',
+    tags: ['Constitutional Care', 'Holistic Health', 'Case Taking', 'Homeopathy'],
+    featured: true,
+  },
+  {
+    id: 'post-2',
+    title: 'Seasonal Allergies & Respiratory Health: A Gentle Preventive Protocol',
+    slug: 'seasonal-allergies-respiratory-health',
+    category: 'Patient Education',
+    excerpt: 'Practical insights into managing weather transition sensitivities, morning sneezing bouts, and dust allergies with gentle classical dilutions and supportive lifestyle adjustments.',
+    content: [
+      'Seasonal transitions in urban centers like Bengaluru often trigger heightened immune reactivity. As flowering cycles peak and morning humidity fluctuates, thousands of individuals struggle with recurrent sneezing, itchy palates, and sinus congestion.',
+      'Allergic rhinitis is fundamentally a hyper-reactive immune response where harmless airborne particles (pollen, house dust mites, particulate matter) are mistakenly treated as hostile threats.',
+      'Homeopathic interventions such as Allium Cepa, Sabadilla, and Arsenicum Album have a centuries-long history of supporting mucosal comfort. When selected in proper potencies by a qualified homeopath, these remedies encourage gentle immune modulation rather than inducing the daytime drowsiness common with first-generation antihistamines.',
+      'In addition to individualized remedies, simple preventative habits make a substantial difference: using a saline nasal rinse (jal neti) after prolonged outdoor exposure, avoiding icy beverages during peak allergen seasons, and keeping home sleeping spaces free of heavy dust-accumulating fabrics.'
+    ],
+    keyTakeaways: [
+      'Allergic rhinitis stems from an over-reactive mucosal immune response.',
+      'Homeopathic remedies work without dry mouth or sedative side-effects.',
+      'Pre-season constitutional consultation helps build mucosal resilience ahead of weather shifts.',
+      'Simple daily hydration and nasal hygiene significantly enhance recovery.'
+    ],
+    readTime: '4 min read',
+    author: 'Dr. Ananya Sharma',
+    authorTitle: 'Senior Homeopathic Physician (BHMS)',
+    publishedDate: 'February 28, 2026',
+    tags: ['Allergies', 'Respiratory Health', 'Immunity', 'Preventive Care'],
+    featured: false,
+  },
+  {
+    id: 'post-3',
+    title: 'Gut-Brain Harmony: Restoring Digestive Equilibrium Naturally',
+    slug: 'restoring-digestive-equilibrium-naturally',
+    category: 'Digestive Health',
+    excerpt: 'How chronic workplace stress and irregular meal timings affect the enteric nervous system, and how gentle remedies like Nux Vomica and Lycopodium assist digestive recovery.',
+    content: [
+      'Modern gastroenterology frequently describes the gut as our "second brain." With over 100 million neurons lining the gastrointestinal tract, emotional tension, deadlines, and erratic meal schedules directly impact digestive motility, gastric acid secretion, and microbiome balance.',
+      'Many patients who visit our clinic complain of a recurring cluster of symptoms: post-meal abdominal heaviness, acidity, morning nausea, or sudden bloating after eating even modest meals.',
+      'In classical homeopathy, remedies like Nux Vomica are renowned for individuals leading fast-paced, high-stress lifestyles who rely on caffeine or irregular snacks. Similarly, Lycopodium is considered when bloating characteristically worsens in the late afternoon and is accompanied by sluggish metabolic digestion.',
+      'Homeopathic constitutional therapy pairs gentle herbal and mineral potencies with mindful eating practices: chewing thoroughly, honoring consistent meal timings, and avoiding heavy meals late into the night.'
+    ],
+    keyTakeaways: [
+      'The enteric nervous system reacts immediately to psychological and lifestyle stress.',
+      'Post-meal discomfort often points to digestive rhythm dysregulation.',
+      'Classical remedies address the root neuro-digestive coordination.',
+      'Combining constitutional remedies with meal consistency yields lasting harmony.'
+    ],
+    readTime: '6 min read',
+    author: 'Dr. Ananya Sharma',
+    authorTitle: 'Senior Homeopathic Physician (BHMS)',
+    publishedDate: 'February 12, 2026',
+    tags: ['Digestive Care', 'Gut-Brain Axis', 'Metabolism', 'Stress'],
+    featured: false,
+  },
+  {
+    id: 'post-4',
+    title: 'Managing Modern Sensory Overload: Restful Sleep Without Dependency',
+    slug: 'managing-sensory-overload-restful-sleep',
+    category: 'Stress Relief',
+    excerpt: 'Gentle, non-habit-forming nocturnal approaches to quiet racing thoughts, release accumulated nervous tension, and cultivate deep, restorative sleep cycles.',
+    content: [
+      'In an era of continuous screen exposure, late-night notifications, and high cognitive demands, sleep disturbances have reached unprecedented levels. The nervous system frequently remains locked in a low-grade sympathetic "fight or flight" mode long after the workday has concluded.',
+      'Conventional sedatives may induce unconsciousness, but they frequently alter normal REM sleep architecture, leaving patients feeling groggy, unrefreshed, and concerned about dependency.',
+      'Homeopathy takes an entirely different stance. Remedies such as Passiflora Incarnata, Coffea Cruda (for the mind racing with exciting or nervous thoughts), and bio-chemic tissue salts (such as Kali Phos and Mag Phos) do not artificially suppress brainwaves. Instead, they gently ease hyper-excitability, allowing your natural sleep cycle to unfold organically.',
+      'Coupling appropriate homeopathic remedies with a 45-minute pre-bedtime screen curfew and gentle dimming of ambient lighting creates an environment where restorative sleep becomes natural again.'
+    ],
+    keyTakeaways: [
+      'Sleep disruption is often caused by unresolved sympathetic nervous system activation.',
+      'Homeopathic remedies are non-habit-forming and preserve natural sleep architecture.',
+      'Remedies like Passiflora and Kali Phos support natural relaxation without morning sluggishness.',
+      'Evening wind-down rituals reinforce the positive effects of homeopathic care.'
+    ],
+    readTime: '5 min read',
+    author: 'Dr. Ananya Sharma',
+    authorTitle: 'Senior Homeopathic Physician (BHMS)',
+    publishedDate: 'January 25, 2026',
+    tags: ['Sleep Health', 'Stress Management', 'Mental Calm', 'Bio-chemic Salts'],
+    featured: false,
+  },
+];
+
