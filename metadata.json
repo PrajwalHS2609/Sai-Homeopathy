@@ -1,0 +1,6 @@
+{
+  "name": "Sai Homeopathy Clinic",
+  "description": "Premium homeopathy clinic offering personalized online & in-clinic consultations, follow-up care, and curated homeopathic products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

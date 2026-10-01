@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Rounded Background Container -->
+  <rect width="64" height="64" rx="16" fill="#0B5D3B"/>
+  
+  <!-- Subtle Inner Ring Accent -->
+  <circle cx="32" cy="32" r="28" stroke="#145C3A" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="25" stroke="#D8B45A" stroke-width="0.75" stroke-dasharray="2 2" opacity="0.6"/>
+
+  <!-- Botanical Holistic Leaf Emblem -->
+  <g transform="translate(12, 12)">
+    <!-- Primary Botanical Leaf -->
+    <path d="M20 36 C8 34 4 24 5 12 C16 11 26 15 28 27 C28 32 25 35 20 36 Z" 
+          fill="#F8F5EA"/>
+    
+    <!-- Central Leaf Vein -->
+    <path d="M5 12 C14 18 20 25 20 36" 
+          stroke="#0B5D3B" stroke-width="1.75" stroke-linecap="round"/>
+    
+    <!-- Side Leaf Veins -->
+    <path d="M11 18 C15 18 18 20 18 20" 
+          stroke="#0B5D3B" stroke-width="1.25" stroke-linecap="round" opacity="0.8"/>
+    <path d="M14 23 C18 24 22 27 22 27" 
+          stroke="#0B5D3B" stroke-width="1.25" stroke-linecap="round" opacity="0.8"/>
+          
+    <!-- Secondary Sprout / Medicinal Herb Accent in Gold -->
+    <path d="M21 21 C26 18 31 19 33 13 C34 19 31 24 25 25" 
+          fill="#D8B45A"/>
+
+    <!-- Gentle Healing Droplet in Soft Mint -->
+    <circle cx="31" cy="29" r="3.5" fill="#EEF7EE"/>
+    <circle cx="31" cy="29" r="1.5" fill="#D8B45A"/>
+  </g>
+</svg>
