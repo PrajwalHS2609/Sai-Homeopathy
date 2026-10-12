@@ -2,48 +2,115 @@
 
 @layer base {
   :root {
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Lato', 'Inter', system-ui, sans-serif;
+    --font-editorial: 'Lato', 'Inter', system-ui, sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+    /* Primary requested palette: #45AC4B (Green) & #303A88 (Royal Navy Blue) */
+    --color-clinic-green: #45AC4B;
+    --color-clinic-navy: #303A88;
   }
 
   body {
     font-family: var(--font-sans);
-    color: #173A2A;
-    background-color: #FCFBF6;
+    color: #1E2559;
+    background-color: #F8FAFD;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.6;
   }
 
-  h1, h2, h3, .font-editorial {
-    font-family: var(--font-serif);
+  /* Elegant Sans-Serif Headings via Lato with tuned tracking */
+  h1, h2, h3, h4, h5, h6, .font-editorial, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+
+  h1 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  h2 {
+    letter-spacing: -0.018em;
+    font-weight: 700;
+  }
+
+  h3 {
+    letter-spacing: -0.012em;
+    font-weight: 700;
   }
 }
 
-/* Custom smooth transitions and utility classes */
+/* Typography Utility Classes */
+.font-lato {
+  font-family: 'Lato', 'Inter', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Lato', 'Inter', sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Anjali Homoeo Clinic Exact Color Utility Classes */
+/* Primary Navy/Blue: #303A88 */
+.bg-clinic-navy, .bg-primary-navy, .bg-primary-green {
+  background-color: #303A88;
+}
+.text-clinic-navy, .text-primary-navy, .text-primary-green {
+  color: #303A88;
+}
+.border-clinic-navy {
+  border-color: #303A88;
+}
+
+/* Primary Green: #45AC4B */
+.bg-clinic-green, .bg-leaf-green {
+  background-color: #45AC4B;
+}
+.text-clinic-green, .text-leaf-green, .text-gold-accent {
+  color: #45AC4B;
+}
+.border-clinic-green {
+  border-color: #45AC4B;
+}
+
+/* Soft Tints & Refined Backgrounds */
+.bg-navy-soft, .bg-soft-mint {
+  background-color: #EEF1FA;
+}
+.text-navy-soft {
+  color: #303A88;
+}
+.border-navy-soft, .border-light-sage {
+  border-color: #D3DBF4;
+}
+
+.bg-green-soft {
+  background-color: #EDF8EE;
+}
+.text-green-soft {
+  color: #2F8335;
+}
+.border-green-soft {
+  border-color: #C4EAC7;
+}
+
 .bg-cream {
-  background-color: #F8F5EA;
+  background-color: #F4F7FB;
 }
 .bg-warm-white {
-  background-color: #FCFBF6;
-}
-.bg-soft-mint {
-  background-color: #EEF7EE;
-}
-.bg-light-sage {
-  background-color: #DCEBDD;
-}
-.bg-primary-green {
-  background-color: #0B5D3B;
-}
-.text-primary-green {
-  color: #0B5D3B;
+  background-color: #F8FAFD;
 }
 .text-forest-green {
-  color: #145C3A;
-}
-.text-gold-accent {
-  color: #D8B45A;
-}
-.border-light-sage {
-  border-color: #DCEBDD;
+  color: #1E2559;
 }
 
 /* Custom scrollbar */
@@ -51,12 +118,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #F8F5EA;
+  background: #F1F4FA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #A4C4A8;
+  background: #C3CEEC;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0B5D3B;
+  background: #303A88;
 }

@@ -22,11 +22,13 @@ import {
 export type NavView =
   | 'home'
   | 'about'
+  | 'treatments'
   | 'consultations'
   | 'products'
   | 'blog'
   | 'reviews'
   | 'faq'
+  | 'qa'
   | 'contact'
   | 'book-appointment'
   | 'admin';
@@ -43,7 +45,10 @@ interface ClinicContextType {
   setCurrentView: (view: NavView) => void;
   bookingTypePreset: ConsultationType;
   setBookingTypePreset: (type: ConsultationType) => void;
+  bookingReasonPreset: string;
+  setBookingReasonPreset: (reason: string) => void;
   navigateToBooking: (type?: ConsultationType) => void;
+  navigateToBookingWithReason: (reason: string, type?: ConsultationType) => void;
 
   // Settings
   settings: ClinicSettings;
@@ -109,6 +114,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>('home');
   const [bookingTypePreset, setBookingTypePreset] = useState<ConsultationType>('online');
+  const [bookingReasonPreset, setBookingReasonPreset] = useState<string>('');
 
   // Blog Posts
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
@@ -126,13 +132,50 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   // Settings
   const [settings, setSettings] = useState<ClinicSettings>(() => {
     const saved = localStorage.getItem('sai_clinic_settings');
-    return saved ? JSON.parse(saved) : INITIAL_SETTINGS;
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed.practitionerName && parsed.practitionerName.includes('Ananya')) {
+        parsed.practitionerName = 'Dr. Anjali Chandrasekhar';
+      }
+      if (!parsed.clinicName || parsed.clinicName.toLowerCase().includes('sai')) {
+        parsed.clinicName = 'Anjali Homoeo Clinic';
+        parsed.city = 'Kuttippuram & Puthanathani';
+        parsed.state = 'Keralam';
+        parsed.addressLine1 = 'Tirur - Kuttippuram Rd, Kavumopuram';
+        parsed.addressLine2 = 'Kuttippuram';
+        parsed.pincode = '679571 / 676552';
+        parsed.email = 'consult@anjalihomoeoclinic.com';
+      }
+      // Ensure WhatsApp number is always updated to 89211 80408
+      parsed.whatsappNumber = '+918921180408';
+      parsed.branches = INITIAL_SETTINGS.branches;
+      localStorage.setItem('sai_clinic_settings', JSON.stringify(parsed));
+      return parsed;
+    }
+    return INITIAL_SETTINGS;
   });
 
   // Practitioners
   const [practitioners, setPractitioners] = useState<Practitioner[]>(() => {
     const saved = localStorage.getItem('sai_clinic_practitioners');
-    return saved ? JSON.parse(saved) : INITIAL_PRACTITIONERS;
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      const migrated = parsed.map((p: Practitioner) => {
+        if (p.name && p.name.includes('Ananya')) {
+          return {
+            ...p,
+            id: 'dr-anjali',
+            name: 'Dr. Anjali Chandrasekhar',
+            avatarInitial: 'AC',
+            bio: p.bio.replace(/Dr\. Ananya Sharma/g, 'Dr. Anjali Chandrasekhar'),
+          };
+        }
+        return p;
+      });
+      localStorage.setItem('sai_clinic_practitioners', JSON.stringify(migrated));
+      return migrated;
+    }
+    return INITIAL_PRACTITIONERS;
   });
 
   // Products
@@ -338,7 +381,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     data: Omit<Appointment, 'id' | 'bookingReference' | 'status' | 'createdAt' | 'fee'>
   ): Appointment => {
     const randomCode = Math.floor(1000 + Math.random() * 9000);
-    const bookingReference = `SAI-2026-${randomCode}`;
+    const bookingReference = `AHC-2026-${randomCode}`;
     const fee = data.consultationType === 'online' ? settings.onlineFee : settings.clinicFee;
 
     const newAppointment: Appointment = {
@@ -348,7 +391,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       status: 'CONFIRMED',
       meetingLink:
         data.consultationType === 'online'
-          ? `https://meet.google.com/sai-${randomCode}`
+          ? `https://meet.google.com/ahc-${randomCode}`
           : undefined,
       fee,
       createdAt: new Date().toISOString(),
@@ -398,7 +441,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     customerInfo: OrderCustomerInfo,
     paymentMethod: string
   ): Order => {
-    const orderNum = `ORD-SAI-${Math.floor(10000 + Math.random() * 90000)}`;
+    const orderNum = `ORD-AHC-${Math.floor(10000 + Math.random() * 90000)}`;
     const shipping = cartTotal >= 600 ? 0 : 50;
     const total = cartTotal + shipping;
 
@@ -429,6 +472,13 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const navigateToBookingWithReason = (reason: string, type?: ConsultationType) => {
+    setBookingReasonPreset(reason);
+    if (type) setBookingTypePreset(type);
+    setCurrentView('book-appointment');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <ClinicContext.Provider
       value={{
@@ -436,7 +486,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView,
         bookingTypePreset,
         setBookingTypePreset,
+        bookingReasonPreset,
+        setBookingReasonPreset,
         navigateToBooking,
+        navigateToBookingWithReason,
         settings,
         updateSettings,
         practitioners,

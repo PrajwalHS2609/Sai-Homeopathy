@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 160" width="100%" height="100%" fill="none">
+  <!-- Circular Emblem -->
+  <g transform="translate(15, 10)">
+    <!-- Outer Navy Ring -->
+    <circle cx="70" cy="70" r="64" stroke="#303A88" stroke-width="5" fill="#FFFFFF" />
+
+    <!-- Top Water Droplet at apex -->
+    <path
+      d="M70 25 C68.5 29 60 41 60 48.5 C60 54.2 64.5 58.5 70 58.5 C75.5 58.5 80 54.2 80 48.5 C80 41 71.5 29 70 25 Z"
+      fill="#303A88"
+    />
+
+    <!-- Right Leg of 'A' (Dark Navy with flared serif foot) -->
+    <path
+      d="M68 62 L78 62 L106 114 L117 114 L117 121 L91 121 L91 114 L98 114 L87 92 L64 92 Z"
+      fill="#303A88"
+    />
+
+    <!-- Crossbar of 'A' (Dark Navy) -->
+    <path
+      d="M51 92 L87 92 L84 86 L55 86 Z"
+      fill="#303A88"
+    />
+
+    <!-- Left Leg of 'A' as Green Botanical Leaf -->
+    <path
+      d="M38 121 C33 99 47 74 67.5 61 C67.5 76 63 96 48 115 C44.5 119.5 40.5 121 38 121 Z"
+      fill="#45AC4B"
+    />
+
+    <!-- Leaf Central Vein -->
+    <path
+      d="M41 117 Q53 93 66 65"
+      stroke="#FFFFFF"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      opacity="0.95"
+    />
+
+    <!-- Leaf Side Veins -->
+    <path
+      d="M48 103 Q55 99 58 101"
+      stroke="#FFFFFF"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.75"
+    />
+    <path
+      d="M54 89 Q60 85 64 87"
+      stroke="#FFFFFF"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      opacity="0.75"
+    />
+  </g>
+
+  <!-- Typography Wordmark -->
+  <g transform="translate(180, 20)">
+    <!-- ANJALI -->
+    <text
+      x="0"
+      y="66"
+      fill="#303A88"
+      font-family="'Inter', system-ui, -apple-system, sans-serif"
+      font-size="62"
+      font-weight="900"
+      letter-spacing="4"
+    >
+      ANJALI
+    </text>
+    <!-- HOMEO CLINIC -->
+    <text
+      x="2"
+      y="110"
+      fill="#303A88"
+      font-family="'Inter', system-ui, -apple-system, sans-serif"
+      font-size="27"
+      font-weight="700"
+      letter-spacing="6.5"
+    >
+      HOMEO CLINIC
+    </text>
+  </g>
+</svg>

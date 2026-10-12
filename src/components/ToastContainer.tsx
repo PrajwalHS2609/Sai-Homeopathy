@@ -12,15 +12,15 @@ export const ToastContainer: React.FC = () => {
       {toasts.map((toast) => (
         <div
           key={toast.id}
-          className="pointer-events-auto bg-[#173A2A] text-white px-4 py-3 rounded-2xl shadow-xl border border-[#0B5D3B] flex items-center justify-between gap-3 text-xs animate-in slide-in-from-bottom duration-200"
+          className="pointer-events-auto bg-[#1E2559] text-white px-4 py-3 rounded-2xl shadow-xl border border-[#303A88] flex items-center justify-between gap-3 text-xs animate-in slide-in-from-bottom duration-200"
         >
           <div className="flex items-center gap-2">
             {toast.type === 'info' ? (
-              <Info className="w-4 h-4 text-[#D8B45A] shrink-0" />
+              <Info className="w-4 h-4 text-[#8FA3E8] shrink-0" />
             ) : toast.type === 'warning' ? (
               <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
             ) : (
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-[#45AC4B] shrink-0" />
             )}
             <span className="leading-snug">{toast.message}</span>
           </div>

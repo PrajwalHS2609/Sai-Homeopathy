@@ -3,9 +3,9 @@ import { ClinicProvider, useClinic } from './context/ClinicContext';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { FeatureBar } from './components/FeatureBar';
+import { TreatmentCategoriesSection } from './components/TreatmentCategoriesSection';
 import { ConsultationOptions } from './components/ConsultationOptions';
 import { AppointmentProcess } from './components/AppointmentProcess';
-import { BestSellingProducts } from './components/BestSellingProducts';
 import { ProductShopBanner } from './components/ProductShopBanner';
 import { PractitionerProfile } from './components/PractitionerProfile';
 import { WhyChooseClinic } from './components/WhyChooseClinic';
@@ -26,15 +26,14 @@ import { AdminDashboard } from './components/AdminDashboard';
 import { FloatingWhatsapp } from './components/FloatingWhatsapp';
 import { MedicalDisclaimerModal } from './components/MedicalDisclaimerModal';
 import { ToastContainer } from './components/ToastContainer';
-import { Video, Building2, Calendar, ArrowRight, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 const MainContent: React.FC = () => {
-  const { currentView, navigateToBooking, settings } = useClinic();
+  const { currentView } = useClinic();
 
   // Route 1: Admin Dashboard View
   if (currentView === 'admin') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <AdminDashboard />
@@ -48,7 +47,7 @@ const MainContent: React.FC = () => {
   // Route 2: Products Catalog View
   if (currentView === 'products') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <ProductsCatalogView />
@@ -69,7 +68,7 @@ const MainContent: React.FC = () => {
   // Route 3: Dedicated Book Appointment View
   if (currentView === 'book-appointment') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1 py-12">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -90,14 +89,14 @@ const MainContent: React.FC = () => {
   // Route 4: Dedicated About View
   if (currentView === 'about') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
-          <div className="py-12 bg-[#F8F5EA] text-center border-b border-[#DCEBDD]">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#0B5D3B]">
+          <div className="py-12 bg-[#EEF2FB] text-center border-b border-[#D8E1F5]">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] font-sans">
               ABOUT OUR PRACTICE
             </span>
-            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#173A2A] mt-2">
+            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] mt-2">
               Natural Care. Personalized Healing.
             </h1>
           </div>
@@ -117,15 +116,49 @@ const MainContent: React.FC = () => {
     );
   }
 
+  // Route 4.5: Dedicated Treatments View
+  if (currentView === 'treatments') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <div className="py-12 bg-[#EEF2FB] text-center border-b border-[#D8E1F5]">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] font-sans">
+              SPECIALIZED CLINICAL CARE
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] mt-2">
+              Homeopathic Treatments & Modalities
+            </h1>
+            <p className="text-sm sm:text-base text-[#5F6F65] max-w-2xl mx-auto mt-2 px-4">
+              Gentle, personalized treatment protocols addressing root causes across chronic and lifestyle health conditions.
+            </p>
+          </div>
+          <TreatmentCategoriesSection />
+          <ConsultationOptions />
+          <AppointmentProcess />
+          <FinalCtaBanner />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
   // Route 5: Dedicated Consultations View
   if (currentView === 'consultations') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <ConsultationOptions />
+          <TreatmentCategoriesSection />
           <AppointmentProcess />
-          <div className="py-16 bg-[#FCFBF6] border-t border-[#DCEBDD]">
+          <div className="py-16 bg-[#F8FAFD] border-t border-[#D8E1F5]">
             <div className="max-w-3xl mx-auto px-4">
               <AppointmentBookingEngine />
             </div>
@@ -146,7 +179,7 @@ const MainContent: React.FC = () => {
   // Route 6: Blog & Knowledge Hub View
   if (currentView === 'blog') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <BlogPageView />
@@ -166,14 +199,14 @@ const MainContent: React.FC = () => {
   // Route 7: Reviews View
   if (currentView === 'reviews') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
-          <div className="py-12 bg-[#F8F5EA] text-center border-b border-[#DCEBDD]">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#0B5D3B]">
+          <div className="py-12 bg-[#EEF2FB] text-center border-b border-[#D8E1F5]">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] font-sans">
               VERIFIED PATIENT EXPERIENCES
             </span>
-            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#173A2A] mt-2">
+            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] mt-2">
               Patient Feedback & Stories
             </h1>
           </div>
@@ -192,10 +225,10 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route 7: FAQ View
-  if (currentView === 'faq') {
+  // Route 8: Q&A / FAQ View
+  if (currentView === 'faq' || currentView === 'qa') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <FaqSection />
@@ -212,10 +245,10 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route 8: Contact View
+  // Route 9: Contact View
   if (currentView === 'contact') {
     return (
-      <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
         <main className="flex-1">
           <ContactSection />
@@ -232,9 +265,9 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Default: Full Structured Homepage (Section 49 Homepage Structure)
+  // Default: Full Structured Homepage
   return (
-    <div className="min-h-screen flex flex-col bg-[#FCFBF6]">
+    <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
       {/* 1. Sticky Navigation Header */}
       <Header />
 
@@ -245,51 +278,51 @@ const MainContent: React.FC = () => {
         {/* 3. Floating Trust / Service Features */}
         <FeatureBar />
 
-        {/* 4. Consultation Options (Online vs Clinic) */}
+        {/* 4. Main Homeopathy Treatment Categories */}
+        <TreatmentCategoriesSection />
+
+        {/* 5. Consultation Options (Online vs Clinic) */}
         <ConsultationOptions />
 
-        {/* 5. 4-Step Consultation Process */}
+        {/* 6. 4-Step Consultation Process */}
         <AppointmentProcess />
-
-        {/* 6. Best-Selling Products */}
-        <BestSellingProducts />
 
         {/* 7. Product Shop Banner */}
         <ProductShopBanner />
 
-        {/* 8. Practitioner Profile (Dr. Ananya Sharma) */}
+        {/* 9. Practitioner Profile (Dr. Anjali Chandrasekhar) */}
         <PractitionerProfile />
 
-        {/* 9. Why Choose Our Clinic (5 Feature Cards) */}
+        {/* 10. Why Choose Our Clinic (8 Feature Cards) */}
         <WhyChooseClinic />
 
-        {/* 10. Product Consultation CTA Banner */}
+        {/* 11. Product Consultation CTA Banner */}
         <ProductConsultationBanner />
 
-        {/* 11. Patient Testimonials (Carousel & Cards) */}
+        {/* 12. Patient Testimonials (Carousel & Cards) */}
         <PatientTestimonials />
 
-        {/* 12. Clinical Insights & Knowledge Column (with link to main blog page) */}
+        {/* 13. Clinical Insights & Knowledge Column */}
         <HomeBlogSection />
 
-        {/* 13. Book Appointment (Core Functional Booking Engine) */}
-        <section id="book-appointment-section" className="py-20 bg-[#FCFBF6]">
+        {/* 14. Book Appointment (Core Functional Booking Engine) */}
+        <section id="book-appointment-section" className="py-20 bg-[#F8FAFD]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <AppointmentBookingEngine />
           </div>
         </section>
 
-        {/* 13. Online vs Clinic Contact Section (Address, Hours, Map, Inquiries) */}
+        {/* 15. Online vs Clinic Contact Section (Address, Hours, Map, Inquiries) */}
         <ContactSection />
 
-        {/* 14. FAQ Accordion */}
+        {/* 16. FAQ Accordion */}
         <FaqSection />
 
-        {/* 15. Final Dark Green CTA Banner */}
+        {/* 17. Final CTA Banner */}
         <FinalCtaBanner />
       </main>
 
-      {/* 16. Multi-Column Footer */}
+      {/* 18. Multi-Column Footer */}
       <Footer />
 
       {/* Modals, Drawers & Overlays */}

@@ -1,120 +1,98 @@
 import React from 'react';
 import {
-  Video,
-  CalendarCheck,
   UserCheck2,
-  PackageCheck,
+  Award,
+  ClipboardList,
+  Pill,
+  HeartHandshake,
+  Stethoscope,
+  Users,
   RefreshCw,
 } from 'lucide-react';
 
 export const WhyChooseClinic: React.FC = () => {
   const reasons = [
     {
-      num: '01',
-      title: 'ONLINE & OFFLINE OPTIONS',
-      desc: 'Choose the consultation format that fits your schedule, lifestyle, and location seamlessly.',
-      icon: Video,
-    },
-    {
-      num: '02',
-      title: 'EASY APPOINTMENT BOOKING',
-      desc: 'Request or schedule an appointment in minutes without unnecessary paperwork or delays.',
-      icon: CalendarCheck,
-    },
-    {
-      num: '03',
       title: 'PERSONALIZED CONSULTATION',
-      desc: 'Your consultation is tailored entirely around your unique health history, constitution, and goals.',
+      desc: 'Care tailored to individual health concerns and needs.',
       icon: UserCheck2,
     },
     {
-      num: '04',
-      title: 'CONVENIENT PRODUCT ACCESS',
-      desc: 'Browse and order genuine physician-selected homeopathy products directly to your doorstep.',
-      icon: PackageCheck,
+      title: 'EXPERIENCED PRACTITIONERS',
+      desc: 'Consult qualified healthcare professionals.',
+      icon: Award,
     },
     {
-      num: '05',
+      title: 'INDIVIDUALIZED TREATMENT PLANS',
+      desc: 'Recommendations based on personal consultation and assessment.',
+      icon: ClipboardList,
+    },
+    {
+      title: 'HOMEOPATHIC MEDICINES AVAILABLE',
+      desc: 'Access to homeopathic medicines and guidance on their use.',
+      icon: Pill,
+    },
+    {
+      title: 'PATIENT-CENTRED CARE',
+      desc: 'A welcoming environment focused on listening to patients.',
+      icon: HeartHandshake,
+    },
+    {
+      title: 'DETAILED HEALTH CONSULTATION',
+      desc: 'Discuss your symptoms, medical history, and health concerns.',
+      icon: Stethoscope,
+    },
+    {
+      title: 'FAMILY HEALTHCARE CONSULTATIONS',
+      desc: 'Consultation services for patients across different age groups.',
+      icon: Users,
+    },
+    {
       title: 'FOLLOW-UP SUPPORT',
-      desc: 'Make it easy to arrange your follow-up review and clarify recovery progress whenever advised.',
+      desc: 'Ongoing consultations to review concerns and discuss next steps.',
       icon: RefreshCw,
     },
   ];
 
   return (
-    <section className="py-20 bg-[#FCFBF6]">
+    <section className="py-20 bg-white border-t border-[#D8E1F5]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#0B5D3B] bg-[#EEF7EE] px-3.5 py-1 rounded-full border border-[#DCEBDD]">
+        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3 font-sans">
+          <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1 rounded-full border border-[#D3DBF4]">
             WHY CHOOSE OUR CLINIC
           </span>
-          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#173A2A] tracking-tight">
+          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] tracking-tight">
             A Convenient Way to Consult
           </h2>
-          <p className="text-base sm:text-lg text-[#5F6F65]">
+          <p className="text-base sm:text-lg text-[#64748B]">
             Bridging compassionate classical homeopathy with modern digital convenience
           </p>
         </div>
 
-        {/* 5 Feature Cards Grid (Asymmetric Bento/Responsive) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reasons.slice(0, 3).map((item) => {
+        {/* 8 Feature Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-sans">
+          {reasons.map((item) => {
             const Icon = item.icon;
             return (
               <div
-                key={item.num}
-                className="bg-white rounded-3xl p-8 border border-[#DCEBDD] shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between"
+                key={item.title}
+                className="bg-white rounded-3xl p-7 border border-[#D8E1F5] hover:border-[#45AC4B]/50 shadow-xs hover:shadow-xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1.5"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[#EEF7EE] group-hover:bg-[#0B5D3B] text-[#0B5D3B] group-hover:text-white flex items-center justify-center transition-colors">
+                  <div className="mb-5">
+                    <div className="w-12 h-12 rounded-2xl bg-[#EEF2FB] group-hover:bg-[#45AC4B] text-[#303A88] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-2xs group-hover:rotate-3">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="font-editorial text-xl font-bold text-[#A4C4A8] group-hover:text-[#0B5D3B] transition-colors tabular-nums">
-                      {item.num}
-                    </span>
                   </div>
 
-                  <h3 className="text-base font-bold tracking-tight text-[#173A2A] mb-2 group-hover:text-[#0B5D3B] transition-colors">
+                  <h3 className="text-sm font-bold tracking-tight text-[#1E2559] mb-2.5 group-hover:text-[#303A88] transition-colors font-sans uppercase leading-snug min-h-[2.5rem] flex items-center">
                     {item.title}
                   </h3>
 
-                  <p className="text-sm text-[#5F6F65] leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Remaining 2 Cards in Bottom Row (Spanning 2 columns each on large) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
-          {reasons.slice(3, 5).map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.num}
-                className="bg-white rounded-3xl p-8 border border-[#DCEBDD] shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-[#EEF7EE] group-hover:bg-[#0B5D3B] text-[#0B5D3B] group-hover:text-white flex items-center justify-center transition-colors">
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <span className="font-editorial text-xl font-bold text-[#A4C4A8] group-hover:text-[#0B5D3B] transition-colors tabular-nums">
-                      {item.num}
-                    </span>
-                  </div>
-
-                  <h3 className="text-base font-bold tracking-tight text-[#173A2A] mb-2 group-hover:text-[#0B5D3B] transition-colors">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-sm text-[#5F6F65] leading-relaxed">
-                    {item.desc}
+                  <p className="text-sm text-[#64748B] leading-relaxed">
+                    "{item.desc}"
                   </p>
                 </div>
               </div>

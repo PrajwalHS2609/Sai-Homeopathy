@@ -3,13 +3,10 @@ import { useClinic } from '../context/ClinicContext';
 import { Product } from '../types';
 import {
   Search,
-  Filter,
   ShoppingBag,
   Eye,
   Star,
-  Sparkles,
   HelpCircle,
-  ArrowRight,
 } from 'lucide-react';
 
 export const ProductsCatalogView: React.FC = () => {
@@ -48,24 +45,24 @@ export const ProductsCatalogView: React.FC = () => {
   });
 
   return (
-    <div className="py-12 bg-[#FCFBF6]">
+    <div className="py-12 bg-[#F8FAFD] font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Header */}
         <div className="space-y-3 text-center max-w-2xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-[#0B5D3B] bg-[#EEF7EE] px-3.5 py-1 rounded-full border border-[#DCEBDD]">
+          <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1 rounded-full border border-[#D3DBF4]">
             APOTHECARY & REMEDIES
           </span>
-          <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#173A2A]">
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559]">
             Genuine Homeopathic Products
           </h1>
           <p className="text-sm sm:text-base text-[#5F6F65]">
-            Hand-selected classical formulations prepared under strict Homeopathic Pharmacopoeia standards.
+            Hand-selected classical formulations prepared under strict Homeopathic Pharmacopoeia standards at Anjali Homoeo Clinic.
           </p>
         </div>
 
         {/* Filter & Search Bar */}
-        <div className="bg-white rounded-3xl p-5 border border-[#DCEBDD] shadow-sm space-y-4">
+        <div className="bg-white rounded-3xl p-5 border border-[#D8E1F5] shadow-sm space-y-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             
             {/* Search Input */}
@@ -76,7 +73,7 @@ export const ProductsCatalogView: React.FC = () => {
                 placeholder="Search remedies, symptoms (e.g. immunity, stress, skin)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#DCEBDD] text-xs text-[#173A2A] bg-[#FCFBF6] focus:outline-none focus:ring-2 focus:ring-[#0B5D3B]"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-[#D8E1F5] text-xs text-[#1E2559] bg-[#F8FAFD] focus:outline-none focus:ring-2 focus:ring-[#303A88]"
               />
             </div>
 
@@ -86,7 +83,7 @@ export const ProductsCatalogView: React.FC = () => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="px-3 py-2 rounded-xl border border-[#DCEBDD] bg-[#FCFBF6] text-xs font-semibold text-[#173A2A] focus:outline-none focus:ring-2 focus:ring-[#0B5D3B]"
+                className="px-3 py-2 rounded-xl border border-[#D8E1F5] bg-[#F8FAFD] text-xs font-semibold text-[#1E2559] focus:outline-none focus:ring-2 focus:ring-[#303A88]"
               >
                 <option value="featured">Featured First</option>
                 <option value="price-asc">Price: Low to High</option>
@@ -105,8 +102,8 @@ export const ProductsCatalogView: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`py-1.5 px-4 text-xs font-semibold rounded-full transition-colors whitespace-nowrap ${
                   selectedCategory === cat
-                    ? 'bg-[#0B5D3B] text-white shadow-2xs'
-                    : 'bg-[#FCFBF6] hover:bg-[#EEF7EE] text-[#173A2A] border border-[#DCEBDD]'
+                    ? 'bg-[#303A88] text-white shadow-2xs'
+                    : 'bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#1E2559] border border-[#D8E1F5]'
                 }`}
               >
                 {cat}
@@ -117,8 +114,8 @@ export const ProductsCatalogView: React.FC = () => {
 
         {/* Product Cards Grid */}
         {sortedProducts.length === 0 ? (
-          <div className="text-center py-16 bg-white rounded-3xl border border-[#DCEBDD] p-8 space-y-3">
-            <p className="text-base font-semibold text-[#173A2A]">
+          <div className="text-center py-16 bg-white rounded-3xl border border-[#D8E1F5] p-8 space-y-3">
+            <p className="text-base font-semibold text-[#1E2559]">
               No products match "{searchQuery}"
             </p>
             <p className="text-xs text-[#5F6F65]">
@@ -129,7 +126,7 @@ export const ProductsCatalogView: React.FC = () => {
                 setSearchQuery('');
                 setSelectedCategory('All');
               }}
-              className="text-xs font-bold text-[#0B5D3B] hover:underline"
+              className="text-xs font-bold text-[#303A88] hover:underline"
             >
               Reset All Filters
             </button>
@@ -139,40 +136,40 @@ export const ProductsCatalogView: React.FC = () => {
             {sortedProducts.map((prod) => (
               <div
                 key={prod.id}
-                className="bg-white rounded-3xl border border-[#DCEBDD] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl border border-[#D8E1F5] p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between group hover:border-[#303A88]/40"
               >
                 <div>
                   {/* Thumbnail / Vector Bottle Frame */}
                   <div
                     onClick={() => setSelectedProductForModal(prod)}
-                    className="cursor-pointer relative aspect-4/3 rounded-2xl bg-gradient-to-br from-[#F8F5EA] to-[#EEF7EE] border border-[#DCEBDD]/60 flex flex-col items-center justify-center p-4 overflow-hidden mb-4 group-hover:scale-[1.02] transition-transform duration-200"
+                    className="cursor-pointer relative aspect-4/3 rounded-2xl bg-gradient-to-br from-[#EEF2FB] to-white border border-[#D8E1F5]/80 flex flex-col items-center justify-center p-4 overflow-hidden mb-4 group-hover:scale-[1.02] transition-transform duration-200"
                   >
                     {prod.tag && (
-                      <span className="absolute top-2.5 left-2.5 text-[10px] font-bold text-[#0B5D3B] bg-white px-2.5 py-0.5 rounded-full border border-[#DCEBDD]">
+                      <span className="absolute top-2.5 left-2.5 text-[10px] font-bold text-[#303A88] bg-white px-2.5 py-0.5 rounded-full border border-[#D8E1F5] shadow-xs">
                         {prod.tag}
                       </span>
                     )}
 
-                    <span className="absolute top-2.5 right-2.5 text-[10px] font-semibold text-[#5F6F65] bg-white/80 px-2 py-0.5 rounded">
+                    <span className="absolute top-2.5 right-2.5 text-[10px] font-semibold text-[#5F6F65] bg-white/90 px-2 py-0.5 rounded border border-[#D8E1F5]">
                       {prod.volume}
                     </span>
 
                     {/* Bottle Vector Art */}
                     <div className="w-16 h-24 relative flex items-center justify-center">
                       <svg viewBox="0 0 80 120" className="w-full h-full drop-shadow-md">
-                        <rect x="34" y="2" width="12" height="14" rx="6" fill="#242C28" />
-                        <rect x="30" y="16" width="20" height="8" rx="2" fill="#D8B45A" />
-                        <rect x="32" y="24" width="16" height="10" fill="#8C531B" />
-                        <rect x="18" y="34" width="44" height="74" rx="8" fill="#B36B22" />
-                        <path d="M22 40 L26 40 L26 100 L22 100 Z" fill="#D98E3A" opacity="0.6" />
-                        <rect x="22" y="52" width="36" height="44" rx="3" fill="#FCFBF6" />
-                        <circle cx="40" cy="64" r="5" fill="#0B5D3B" />
-                        <line x1="28" y1="76" x2="52" y2="76" stroke="#173A2A" strokeWidth="1.5" />
+                        <rect x="34" y="2" width="12" height="14" rx="6" fill="#1E2559" />
+                        <rect x="30" y="16" width="20" height="8" rx="2" fill="#45AC4B" />
+                        <rect x="32" y="24" width="16" height="10" fill="#303A88" />
+                        <rect x="18" y="34" width="44" height="74" rx="8" fill="#1E2559" />
+                        <path d="M22 40 L26 40 L26 100 L22 100 Z" fill="#303A88" opacity="0.6" />
+                        <rect x="22" y="52" width="36" height="44" rx="3" fill="#FFFFFF" />
+                        <circle cx="40" cy="64" r="5" fill="#45AC4B" />
+                        <line x1="28" y1="76" x2="52" y2="76" stroke="#303A88" strokeWidth="1.5" />
                         <line x1="30" y1="82" x2="50" y2="82" stroke="#5F6F65" strokeWidth="1" />
                       </svg>
                     </div>
 
-                    <span className="text-[11px] font-medium text-[#0B5D3B] mt-2 group-hover:underline">
+                    <span className="text-[11px] font-medium text-[#303A88] mt-2 group-hover:underline">
                       View Formula Details
                     </span>
                   </div>
@@ -182,9 +179,9 @@ export const ProductsCatalogView: React.FC = () => {
                     <span className="text-[#5F6F65] font-medium uppercase tracking-wider text-[11px]">
                       {prod.category}
                     </span>
-                    <div className="flex items-center gap-1 text-[#D8B45A]">
+                    <div className="flex items-center gap-1 text-amber-500">
                       <Star className="w-3.5 h-3.5 fill-current" />
-                      <span className="font-bold text-[#173A2A] text-xs tabular-nums">
+                      <span className="font-bold text-[#1E2559] text-xs tabular-nums">
                         {prod.rating}
                       </span>
                       <span className="text-[#5F6F65] text-[10px] tabular-nums">
@@ -196,7 +193,7 @@ export const ProductsCatalogView: React.FC = () => {
                   {/* Product Title */}
                   <h3
                     onClick={() => setSelectedProductForModal(prod)}
-                    className="font-editorial text-xl font-bold text-[#173A2A] group-hover:text-[#0B5D3B] transition-colors leading-snug cursor-pointer"
+                    className="font-heading text-xl font-bold text-[#1E2559] group-hover:text-[#303A88] transition-colors leading-snug cursor-pointer"
                   >
                     {prod.name}
                   </h3>
@@ -210,7 +207,7 @@ export const ProductsCatalogView: React.FC = () => {
                     {prod.indications.slice(0, 2).map((ind, i) => (
                       <span
                         key={i}
-                        className="text-[10px] text-[#0B5D3B] bg-[#EEF7EE] px-2 py-0.5 rounded"
+                        className="text-[10px] text-[#303A88] bg-[#EEF2FB] px-2 py-0.5 rounded border border-[#D3DBF4]"
                       >
                         ✓ {ind}
                       </span>
@@ -219,9 +216,9 @@ export const ProductsCatalogView: React.FC = () => {
                 </div>
 
                 {/* Price & Action Buttons */}
-                <div className="pt-4 mt-4 border-t border-[#DCEBDD]/60 space-y-3">
+                <div className="pt-4 mt-4 border-t border-[#D8E1F5]/80 space-y-3">
                   <div className="flex items-baseline gap-2">
-                    <span className="text-xl font-bold text-[#173A2A] tabular-nums">
+                    <span className="text-xl font-bold text-[#1E2559] tabular-nums">
                       ₹{prod.price}
                     </span>
                     {prod.originalPrice && (
@@ -229,7 +226,7 @@ export const ProductsCatalogView: React.FC = () => {
                         ₹{prod.originalPrice}
                       </span>
                     )}
-                    <span className="text-[11px] text-emerald-700 font-semibold ml-auto">
+                    <span className="text-[11px] text-[#45AC4B] font-semibold ml-auto">
                       In Stock
                     </span>
                   </div>
@@ -237,7 +234,7 @@ export const ProductsCatalogView: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2">
                     <button
                       onClick={() => setSelectedProductForModal(prod)}
-                      className="inline-flex items-center justify-center gap-1.5 py-2 px-3 text-xs font-semibold text-[#173A2A] bg-[#FCFBF6] hover:bg-[#EEF7EE] border border-[#DCEBDD] rounded-xl transition-colors"
+                      className="inline-flex items-center justify-center gap-1.5 py-2 px-3 text-xs font-semibold text-[#1E2559] bg-[#F8FAFD] hover:bg-[#EEF2FB] border border-[#D8E1F5] rounded-xl transition-colors"
                     >
                       <Eye className="w-3.5 h-3.5 text-[#5F6F65]" />
                       <span>Details</span>
@@ -245,7 +242,7 @@ export const ProductsCatalogView: React.FC = () => {
 
                     <button
                       onClick={() => addToCart(prod, 1)}
-                      className="inline-flex items-center justify-center gap-1.5 py-2 px-3 text-xs font-semibold text-white bg-[#0B5D3B] hover:bg-[#145C3A] active:bg-[#08452B] rounded-xl transition-colors shadow-2xs"
+                      className="inline-flex items-center justify-center gap-1.5 py-2 px-3 text-xs font-semibold text-white bg-[#45AC4B] hover:bg-[#39933E] active:bg-[#328336] rounded-xl transition-colors shadow-2xs"
                     >
                       <ShoppingBag className="w-3.5 h-3.5" />
                       <span>Add to Cart</span>
@@ -258,16 +255,16 @@ export const ProductsCatalogView: React.FC = () => {
         )}
 
         {/* Guidance Notice Banner */}
-        <div className="bg-[#EEF7EE] rounded-3xl p-6 border border-[#DCEBDD] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="bg-[#EEF2FB] rounded-3xl p-6 border border-[#D3DBF4] flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <HelpCircle className="w-6 h-6 text-[#0B5D3B] shrink-0" />
-            <p className="text-xs text-[#173A2A] leading-relaxed">
-              <strong>Need physician guidance before ordering?</strong> Individualized constitutional matching ensures the highest efficacy. You can consult online with Dr. Sharma before finalizing your remedy.
+            <HelpCircle className="w-6 h-6 text-[#303A88] shrink-0" />
+            <p className="text-xs text-[#1E2559] leading-relaxed">
+              <strong>Need physician guidance before ordering?</strong> Individualized constitutional matching ensures the highest efficacy. You can consult online with Dr. Anjali Chandrasekhar at Anjali Homoeo Clinic before finalizing your remedy.
             </p>
           </div>
           <button
             onClick={() => navigateToBooking('online')}
-            className="shrink-0 px-5 py-2.5 rounded-full bg-[#0B5D3B] text-white text-xs font-semibold hover:bg-[#145C3A] transition-colors whitespace-nowrap"
+            className="shrink-0 px-5 py-2.5 rounded-full bg-[#303A88] text-white text-xs font-semibold hover:bg-[#252E6D] transition-colors whitespace-nowrap shadow-xs"
           >
             Book Consultation
           </button>

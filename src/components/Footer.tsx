@@ -1,10 +1,10 @@
 import React from 'react';
 import { useClinic } from '../context/ClinicContext';
 import { NavView } from '../context/ClinicContext';
+import { AnjaliLogo } from './AnjaliLogo';
 import {
   MapPin,
   Phone,
-  Mail,
   Clock,
   MessageCircle,
   ShieldAlert,
@@ -24,81 +24,60 @@ export const Footer: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const whatsappUrl = `https://wa.me/${settings.whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
-    'Hello Sai Homeopathy Clinic, I have an inquiry.'
+  const whatsappUrl = `https://wa.me/918921180408?text=${encodeURIComponent(
+    `Hello ${settings.clinicName}, I have an inquiry.`
   )}`;
 
   return (
-    <footer className="bg-[#173A2A] text-[#EEF7EE] pt-16 pb-12 border-t border-[#0B5D3B]">
+    <footer className="bg-[#1E2559] text-white pt-16 pb-12 border-t-2 border-[#303A88]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        {/* Main 5-Column Grid */}
+        {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           
           {/* Column 1: Brand & Bio */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#0B5D3B] flex items-center justify-center text-[#F8F5EA] border border-[#DCEBDD]/30">
-                <svg
-                  className="w-5 h-5 text-[#F8F5EA]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                </svg>
-              </div>
-              <div>
-                <span className="font-editorial text-lg font-bold tracking-tight text-white block">
-                  {settings.clinicName}
-                </span>
-                <span className="text-[11px] text-[#A4C4A8] tracking-wider uppercase font-medium">
-                  {settings.tagline}
-                </span>
-              </div>
+              <AnjaliLogo inverted={true} />
             </div>
 
-            <p className="text-xs text-[#DCEBDD]/80 leading-relaxed max-w-sm">
+            <p className="text-xs text-[#CBD5E1] leading-relaxed max-w-sm font-sans">
               Providing personalized constitutional homeopathy consultations through
-              convenient online video visits and modern in-person clinic appointments
-              in Indiranagar, Bengaluru.
+              convenient online video visits and in-person clinic appointments
+              at Kuttippuram and Puthanathani, Kerala.
             </p>
 
-            <div className="pt-2 flex items-center gap-3 text-xs">
+            <div className="pt-2 flex flex-wrap items-center gap-2.5 text-xs">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-[#D8B45A] transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#45AC4B] hover:bg-[#39933E] text-white font-semibold transition-colors"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
-                <span>WhatsApp Desk</span>
+                <span>WhatsApp: 89211 80408</span>
               </a>
 
               <button
                 onClick={() => handleLinkClick('admin')}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-[#EEF7EE] transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-[#D3DBF4] transition-colors"
               >
-                <Lock className="w-3 h-3 text-[#A4C4A8]" />
+                <Lock className="w-3 h-3 text-[#8FA3E8]" />
                 <span>Staff Portal</span>
               </button>
             </div>
           </div>
 
           {/* Column 2: Consultations */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#D8B45A]">
+          <div className="space-y-3 font-sans">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#45AC4B]">
               CONSULTATIONS
             </h4>
-            <ul className="space-y-2 text-xs text-[#DCEBDD]/80">
+            <ul className="space-y-2 text-xs text-[#CBD5E1]">
               <li>
                 <button
                   onClick={() => navigateToBooking('online')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
                   Online Video Consultation
                 </button>
@@ -106,7 +85,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigateToBooking('clinic')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
                   In-Clinic Consultation
                 </button>
@@ -114,7 +93,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => navigateToBooking('online')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
                   Follow-up Review
                 </button>
@@ -122,15 +101,15 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => handleLinkClick('about')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
-                  Dr. Ananya Sharma (BHMS)
+                  Dr. Anjali Chandrasekhar (BHMS)
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => handleLinkClick('blog')}
-                  className="hover:text-white transition-colors text-[#D8B45A]"
+                  className="hover:text-[#45AC4B] transition-colors text-[#86EFAC] text-left"
                 >
                   Health Knowledge Hub
                 </button>
@@ -138,71 +117,93 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Column 3: Products */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#D8B45A]">
-              PRODUCTS & STORE
+          {/* Column 3: Quick Navigation */}
+          <div className="space-y-3 font-sans">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#45AC4B]">
+              TREATMENTS & Q&A
             </h4>
-            <ul className="space-y-2 text-xs text-[#DCEBDD]/80">
+            <ul className="space-y-2 text-xs text-[#CBD5E1]">
               <li>
                 <button
-                  onClick={() => handleLinkClick('products')}
-                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('treatments')}
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
-                  Best-Selling Remedies
+                  Specialized Treatments (8 Disciplines)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleLinkClick('products')}
-                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('faq')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-[#86EFAC]"
                 >
-                  Immunity Formulations
+                  Doctor Q&A & FAQs
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleLinkClick('products')}
-                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('consultations')}
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
-                  Stress & Sleep Care
+                  Consultation Pricing & Process
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleLinkClick('products')}
-                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('contact')}
+                  className="hover:text-[#45AC4B] transition-colors text-left"
                 >
-                  Skin & Hair Elixirs
+                  Clinic Location & Directions
                 </button>
               </li>
             </ul>
           </div>
 
           {/* Column 4: Timings & Location */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-[#D8B45A]">
-              CLINIC HOURS & VENUE
+          <div className="space-y-4 font-sans">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#45AC4B]">
+              CLINIC LOCATIONS & HOURS
             </h4>
-            <div className="space-y-2 text-xs text-[#DCEBDD]/80">
-              <p className="flex items-start gap-2">
-                <Clock className="w-3.5 h-3.5 text-[#D8B45A] shrink-0 mt-0.5" />
-                <span>
+            
+            {/* Kuttippuram Branch */}
+            <div className="space-y-1 text-xs text-[#CBD5E1] border-b border-white/10 pb-2.5">
+              <p className="font-bold text-white flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-[#45AC4B] shrink-0" />
+                <span>Kuttippuram Clinic</span>
+              </p>
+              <p className="text-[11px] text-[#94A3B8] leading-tight">
+                Tirur - Kuttippuram Rd, Kavumopuram, Kuttippuram, Keralam 679571
+              </p>
+              <p className="pt-0.5">
+                <a href="tel:09895101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums">
+                  Ph: 098951 01707
+                </a>
+              </p>
+            </div>
+
+            {/* Puthanathani Branch */}
+            <div className="space-y-1 text-xs text-[#CBD5E1] border-b border-white/10 pb-2.5">
+              <p className="font-bold text-white flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-[#45AC4B] shrink-0" />
+                <span>Puthanathani Clinic</span>
+              </p>
+              <p className="text-[11px] text-[#94A3B8] leading-tight">
+                Chembayil complex, opp. Thavakkal gold, Puthanathani, Kurumbathur, Keralam 676552
+              </p>
+              <p className="pt-0.5 flex flex-wrap items-center gap-2">
+                <a href="tel:08921180408" className="text-[#86EFAC] hover:underline font-semibold tabular-nums">
+                  Ph: 089211 80408
+                </a>
+              </p>
+            </div>
+
+            {/* Timings */}
+            <div className="space-y-1 text-xs text-[#CBD5E1]">
+              <p className="flex items-start gap-1.5">
+                <Clock className="w-3.5 h-3.5 text-[#45AC4B] shrink-0 mt-0.5" />
+                <span className="text-[11px]">
                   {settings.weekdayHours}<br />
-                  <span className="text-[#A4C4A8]">{settings.sundayHours}</span>
+                  <span className="text-[#86EFAC]">{settings.sundayHours}</span>
                 </span>
-              </p>
-
-              <p className="flex items-start gap-2 pt-1">
-                <MapPin className="w-3.5 h-3.5 text-[#D8B45A] shrink-0 mt-0.5" />
-                <span>
-                  {settings.addressLine1}, {settings.city} - {settings.pincode}
-                </span>
-              </p>
-
-              <p className="flex items-center gap-2 pt-1">
-                <Phone className="w-3.5 h-3.5 text-[#D8B45A] shrink-0" />
-                <span className="tabular-nums">{settings.phone}</span>
               </p>
             </div>
           </div>
@@ -210,23 +211,23 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Medical Notice Bar */}
-        <div className="rounded-2xl bg-black/20 p-4 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#A4C4A8]">
+        <div className="rounded-2xl bg-[#141A42] p-4 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#94A3B8]">
           <div className="flex items-center gap-2">
-            <ShieldAlert className="w-4 h-4 text-[#D8B45A] shrink-0" />
+            <ShieldAlert className="w-4 h-4 text-[#45AC4B] shrink-0" />
             <p>
               <strong>Medical Disclaimer:</strong> Information presented is for educational purposes and constitutional homeopathic care. It does not replace emergency medical intervention.
             </p>
           </div>
           <button
             onClick={() => setIsDisclaimerOpen(true)}
-            className="text-[#D8B45A] underline hover:text-white shrink-0 font-medium"
+            className="text-[#86EFAC] underline hover:text-white shrink-0 font-medium"
           >
             Read Full Disclaimer
           </button>
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A4C4A8]">
+        <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#94A3B8]">
           <p>
             © {new Date().getFullYear()} {settings.clinicName}. All Rights Reserved.
           </p>

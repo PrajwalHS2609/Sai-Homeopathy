@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useClinic } from '../context/ClinicContext';
 import {
   X,
-  ShieldCheck,
   CheckCircle2,
   Truck,
   CreditCard,
@@ -28,9 +27,9 @@ export const CheckoutModal: React.FC = () => {
     phone: '',
     email: '',
     address: '',
-    city: 'Bengaluru',
-    state: 'Karnataka',
-    pincode: '560038',
+    city: 'Malappuram',
+    state: 'Kerala',
+    pincode: '676505',
     notes: '',
   });
 
@@ -75,46 +74,46 @@ export const CheckoutModal: React.FC = () => {
   // ----------------------------------------------------
   if (lastConfirmedOrder) {
     return (
-      <div className="fixed inset-0 z-50 overflow-y-auto bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
-        <div className="bg-white rounded-3xl max-w-lg w-full p-8 border border-[#DCEBDD] shadow-2xl text-center space-y-6">
-          <div className="w-16 h-16 rounded-full bg-[#EEF7EE] text-[#0B5D3B] mx-auto flex items-center justify-center">
+      <div className="fixed inset-0 z-50 overflow-y-auto bg-[#1E2559]/60 backdrop-blur-xs flex items-center justify-center p-4 font-sans">
+        <div className="bg-white rounded-3xl max-w-lg w-full p-8 border border-[#D8E1F5] shadow-2xl text-center space-y-6">
+          <div className="w-16 h-16 rounded-full bg-[#EEF2FB] text-[#45AC4B] mx-auto flex items-center justify-center border border-[#D3DBF4]">
             <CheckCircle2 className="w-10 h-10" />
           </div>
 
           <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#0B5D3B]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#303A88]">
               ORDER SUCCESSFUL
             </span>
-            <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#173A2A] mt-1">
+            <h3 className="font-heading text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Thank You for Your Order!
             </h3>
             <p className="text-xs text-[#5F6F65] mt-1">
-              Your remedies have been safely booked for pharmaceutical dispensing.
+              Your remedies have been safely booked for pharmaceutical dispensing from Anjali Homoeo Clinic.
             </p>
           </div>
 
-          <div className="bg-[#FCFBF6] rounded-2xl p-5 border border-[#DCEBDD] text-left space-y-3 text-xs">
-            <div className="flex justify-between items-center pb-2 border-b border-[#DCEBDD]">
+          <div className="bg-[#F8FAFD] rounded-2xl p-5 border border-[#D8E1F5] text-left space-y-3 text-xs">
+            <div className="flex justify-between items-center pb-2 border-b border-[#D8E1F5]">
               <span className="text-[#5F6F65]">Order Number</span>
-              <span className="font-mono font-bold text-[#0B5D3B]">
+              <span className="font-mono font-bold text-[#303A88]">
                 {lastConfirmedOrder.orderNumber}
               </span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-[#5F6F65]">Recipient</span>
-              <span className="font-semibold text-[#173A2A]">
+              <span className="font-semibold text-[#1E2559]">
                 {lastConfirmedOrder.customerInfo.fullName}
               </span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-[#5F6F65]">Shipping Address</span>
-              <span className="font-semibold text-[#173A2A] text-right truncate max-w-[200px]">
+              <span className="font-semibold text-[#1E2559] text-right truncate max-w-[200px]">
                 {lastConfirmedOrder.customerInfo.address}, {lastConfirmedOrder.customerInfo.city}
               </span>
             </div>
-            <div className="flex justify-between items-center pt-2 border-t border-[#DCEBDD]">
+            <div className="flex justify-between items-center pt-2 border-t border-[#D8E1F5]">
               <span className="text-[#5F6F65]">Total Paid</span>
-              <span className="font-bold text-[#0B5D3B] text-sm tabular-nums">
+              <span className="font-bold text-[#303A88] text-sm tabular-nums">
                 ₹{lastConfirmedOrder.total} ({lastConfirmedOrder.paymentMethod})
               </span>
             </div>
@@ -122,7 +121,7 @@ export const CheckoutModal: React.FC = () => {
 
           <button
             onClick={handleClose}
-            className="w-full py-3.5 px-6 rounded-full bg-[#0B5D3B] text-white text-xs font-semibold hover:bg-[#145C3A] transition-colors shadow-sm"
+            className="w-full py-3.5 px-6 rounded-full bg-[#45AC4B] text-white text-xs font-semibold hover:bg-[#39933E] transition-colors shadow-sm"
           >
             Continue Browsing
           </button>
@@ -135,20 +134,20 @@ export const CheckoutModal: React.FC = () => {
   // CHECKOUT FORM
   // ----------------------------------------------------
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
-      <div className="relative bg-white rounded-3xl max-w-xl w-full border border-[#DCEBDD] shadow-2xl overflow-hidden my-6">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#1E2559]/60 backdrop-blur-xs flex items-center justify-center p-4 font-sans">
+      <div className="relative bg-white rounded-3xl max-w-xl w-full border border-[#D8E1F5] shadow-2xl overflow-hidden my-6">
         
         {/* Header */}
-        <div className="p-6 border-b border-[#DCEBDD] flex items-center justify-between">
+        <div className="p-6 border-b border-[#D8E1F5] flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Package className="w-5 h-5 text-[#0B5D3B]" />
-            <h3 className="font-editorial text-xl font-bold text-[#173A2A]">
+            <Package className="w-5 h-5 text-[#303A88]" />
+            <h3 className="font-heading text-xl font-bold text-[#1E2559]">
               Secure Order Checkout
             </h3>
           </div>
           <button
             onClick={handleClose}
-            className="p-2 rounded-full text-[#5F6F65] hover:bg-[#EEF7EE] transition-colors"
+            className="p-2 rounded-full text-[#5F6F65] hover:bg-[#EEF2FB] hover:text-[#303A88] transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -158,13 +157,13 @@ export const CheckoutModal: React.FC = () => {
           
           {/* Shipping Details */}
           <div className="space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#173A2A] block">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#1E2559] block">
               1. Delivery Address
             </span>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label className="text-xs font-medium text-[#173A2A] block mb-1">
+                <label className="text-xs font-medium text-[#1E2559] block mb-1">
                   Full Name *
                 </label>
                 <input
@@ -174,7 +173,7 @@ export const CheckoutModal: React.FC = () => {
                   onChange={(e) =>
                     setCustomer({ ...customer, fullName: e.target.value })
                   }
-                  className="w-full px-3.5 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
                 />
                 {errors.fullName && (
                   <p className="text-[10px] text-rose-600 mt-0.5">{errors.fullName}</p>
@@ -182,7 +181,7 @@ export const CheckoutModal: React.FC = () => {
               </div>
 
               <div>
-                <label className="text-xs font-medium text-[#173A2A] block mb-1">
+                <label className="text-xs font-medium text-[#1E2559] block mb-1">
                   Phone Number *
                 </label>
                 <input
@@ -192,7 +191,7 @@ export const CheckoutModal: React.FC = () => {
                   onChange={(e) =>
                     setCustomer({ ...customer, phone: e.target.value })
                   }
-                  className="w-full px-3.5 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                  className="w-full px-3.5 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
                 />
                 {errors.phone && (
                   <p className="text-[10px] text-rose-600 mt-0.5">{errors.phone}</p>
@@ -201,7 +200,7 @@ export const CheckoutModal: React.FC = () => {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-[#173A2A] block mb-1">
+              <label className="text-xs font-medium text-[#1E2559] block mb-1">
                 Street Address *
               </label>
               <input
@@ -211,7 +210,7 @@ export const CheckoutModal: React.FC = () => {
                 onChange={(e) =>
                   setCustomer({ ...customer, address: e.target.value })
                 }
-                className="w-full px-3.5 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                className="w-full px-3.5 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
               />
               {errors.address && (
                 <p className="text-[10px] text-rose-600 mt-0.5">{errors.address}</p>
@@ -220,7 +219,7 @@ export const CheckoutModal: React.FC = () => {
 
             <div className="grid grid-cols-3 gap-2">
               <div>
-                <label className="text-xs font-medium text-[#173A2A] block mb-1">
+                <label className="text-xs font-medium text-[#1E2559] block mb-1">
                   City *
                 </label>
                 <input
@@ -229,12 +228,12 @@ export const CheckoutModal: React.FC = () => {
                   onChange={(e) =>
                     setCustomer({ ...customer, city: e.target.value })
                   }
-                  className="w-full px-3 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                  className="w-full px-3 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="text-xs font-medium text-[#173A2A] block mb-1">
+                <label className="text-xs font-medium text-[#1E2559] block mb-1">
                   State
                 </label>
                 <input
@@ -243,12 +242,12 @@ export const CheckoutModal: React.FC = () => {
                   onChange={(e) =>
                     setCustomer({ ...customer, state: e.target.value })
                   }
-                  className="w-full px-3 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                  className="w-full px-3 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="text-xs font-medium text-[#173A2A] block mb-1">
+                <label className="text-xs font-medium text-[#1E2559] block mb-1">
                   PIN Code *
                 </label>
                 <input
@@ -257,15 +256,15 @@ export const CheckoutModal: React.FC = () => {
                   onChange={(e) =>
                     setCustomer({ ...customer, pincode: e.target.value })
                   }
-                  className="w-full px-3 py-2 rounded-xl border border-[#DCEBDD] text-xs focus:ring-2 focus:ring-[#0B5D3B] focus:outline-none"
+                  className="w-full px-3 py-2 rounded-xl border border-[#D8E1F5] text-xs focus:ring-2 focus:ring-[#303A88] focus:outline-none"
                 />
               </div>
             </div>
           </div>
 
           {/* Payment Method Selector */}
-          <div className="space-y-3 pt-2 border-t border-[#DCEBDD]">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#173A2A] block">
+          <div className="space-y-3 pt-2 border-t border-[#D8E1F5]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#1E2559] block">
               2. Payment Method
             </span>
 
@@ -275,11 +274,11 @@ export const CheckoutModal: React.FC = () => {
                 onClick={() => setPaymentMethod('upi')}
                 className={`p-3 rounded-xl border text-center transition-all ${
                   paymentMethod === 'upi'
-                    ? 'border-[#0B5D3B] bg-[#EEF7EE] text-[#0B5D3B] font-bold shadow-xs'
-                    : 'border-[#DCEBDD] bg-[#FCFBF6] text-[#5F6F65]'
+                    ? 'border-[#303A88] bg-[#EEF2FB] text-[#303A88] font-bold shadow-xs'
+                    : 'border-[#D8E1F5] bg-[#F8FAFD] text-[#5F6F65]'
                 }`}
               >
-                <QrCode className="w-4 h-4 mx-auto mb-1 text-[#0B5D3B]" />
+                <QrCode className="w-4 h-4 mx-auto mb-1 text-[#303A88]" />
                 <span className="text-[11px] block">UPI / QR</span>
               </button>
 
@@ -288,11 +287,11 @@ export const CheckoutModal: React.FC = () => {
                 onClick={() => setPaymentMethod('card')}
                 className={`p-3 rounded-xl border text-center transition-all ${
                   paymentMethod === 'card'
-                    ? 'border-[#0B5D3B] bg-[#EEF7EE] text-[#0B5D3B] font-bold shadow-xs'
-                    : 'border-[#DCEBDD] bg-[#FCFBF6] text-[#5F6F65]'
+                    ? 'border-[#303A88] bg-[#EEF2FB] text-[#303A88] font-bold shadow-xs'
+                    : 'border-[#D8E1F5] bg-[#F8FAFD] text-[#5F6F65]'
                 }`}
               >
-                <CreditCard className="w-4 h-4 mx-auto mb-1 text-[#0B5D3B]" />
+                <CreditCard className="w-4 h-4 mx-auto mb-1 text-[#303A88]" />
                 <span className="text-[11px] block">Card / NetBanking</span>
               </button>
 
@@ -301,27 +300,27 @@ export const CheckoutModal: React.FC = () => {
                 onClick={() => setPaymentMethod('cod')}
                 className={`p-3 rounded-xl border text-center transition-all ${
                   paymentMethod === 'cod'
-                    ? 'border-[#0B5D3B] bg-[#EEF7EE] text-[#0B5D3B] font-bold shadow-xs'
-                    : 'border-[#DCEBDD] bg-[#FCFBF6] text-[#5F6F65]'
+                    ? 'border-[#303A88] bg-[#EEF2FB] text-[#303A88] font-bold shadow-xs'
+                    : 'border-[#D8E1F5] bg-[#F8FAFD] text-[#5F6F65]'
                 }`}
               >
-                <Truck className="w-4 h-4 mx-auto mb-1 text-[#0B5D3B]" />
+                <Truck className="w-4 h-4 mx-auto mb-1 text-[#303A88]" />
                 <span className="text-[11px] block">Pay on Delivery</span>
               </button>
             </div>
           </div>
 
           {/* Order Summary Line */}
-          <div className="bg-[#FCFBF6] rounded-xl p-4 border border-[#DCEBDD] flex items-center justify-between text-xs">
+          <div className="bg-[#F8FAFD] rounded-xl p-4 border border-[#D8E1F5] flex items-center justify-between text-xs">
             <div>
               <span className="text-[#5F6F65] block">Items in Order</span>
-              <span className="font-bold text-[#173A2A]">
+              <span className="font-bold text-[#1E2559]">
                 {cart.reduce((s, i) => s + i.quantity, 0)} remedies
               </span>
             </div>
             <div className="text-right">
               <span className="text-[#5F6F65] block">Total Payable</span>
-              <span className="font-bold text-[#0B5D3B] text-base tabular-nums">
+              <span className="font-bold text-[#303A88] text-base tabular-nums">
                 ₹{grandTotal}
               </span>
             </div>
@@ -331,7 +330,7 @@ export const CheckoutModal: React.FC = () => {
           <button
             type="submit"
             disabled={isProcessing}
-            className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#0B5D3B] hover:bg-[#145C3A] text-white text-xs sm:text-sm font-semibold transition-colors shadow-md disabled:opacity-50"
+            className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#45AC4B] hover:bg-[#39933E] text-white text-xs sm:text-sm font-semibold transition-colors shadow-md disabled:opacity-50"
           >
             {isProcessing ? (
               <span>Confirming Dispatch...</span>

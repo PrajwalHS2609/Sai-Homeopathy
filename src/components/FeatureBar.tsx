@@ -48,22 +48,22 @@ export const FeatureBar: React.FC = () => {
             <button
               key={item.num}
               onClick={item.action}
-              className="text-left bg-white hover:bg-[#EEF7EE]/60 rounded-2xl p-6 shadow-md hover:shadow-lg border border-[#DCEBDD] transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0B5D3B]"
+              className="text-left bg-white hover:bg-[#F8FAFD] rounded-2xl p-6 shadow-sm hover:shadow-md border border-[#D8E1F5] hover:border-[#45AC4B]/50 transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#303A88]"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-[#EEF7EE] group-hover:bg-[#DCEBDD] flex items-center justify-center text-[#0B5D3B] transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[#EEF2FB] group-hover:bg-[#45AC4B] flex items-center justify-center text-[#303A88] group-hover:text-white transition-all duration-200 shadow-2xs">
                   <Icon className="w-6 h-6" />
                 </div>
-                <span className="font-editorial text-xl font-bold text-[#A4C4A8] group-hover:text-[#0B5D3B] transition-colors tabular-nums">
+                <span className="font-editorial text-xl font-bold text-[#8FA3E8] group-hover:text-[#45AC4B] transition-colors tabular-nums">
                   {item.num}
                 </span>
               </div>
 
-              <h2 className="text-sm font-bold tracking-tight text-[#173A2A] mb-1.5 group-hover:text-[#0B5D3B] transition-colors">
+              <h2 className="text-sm font-bold tracking-tight text-[#1E2559] mb-1.5 group-hover:text-[#303A88] transition-colors font-sans">
                 {item.title}
               </h2>
 
-              <p className="text-xs text-[#5F6F65] leading-relaxed">
+              <p className="text-xs text-[#64748B] leading-relaxed font-sans">
                 {item.desc}
               </p>
             </button>

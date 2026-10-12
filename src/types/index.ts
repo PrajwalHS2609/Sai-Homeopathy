@@ -99,6 +99,19 @@ export interface Order {
   createdAt: string;
 }
 
+export interface ClinicBranch {
+  id: string;
+  name: string;
+  branchName: string;
+  address: string;
+  phone: string;
+  phoneDisplay: string;
+  whatsappNumber?: string;
+  mapEmbedSrc: string;
+  mapDirectionsUrl: string;
+  hours?: string;
+}
+
 export interface ClinicSettings {
   clinicName: string;
   tagline: string;
@@ -106,6 +119,7 @@ export interface ClinicSettings {
   practitionerQualification: string;
   registrationNumber: string;
   phone: string;
+  secondaryPhone?: string;
   whatsappNumber: string;
   email: string;
   addressLine1: string;
@@ -113,6 +127,7 @@ export interface ClinicSettings {
   city: string;
   state: string;
   pincode: string;
+  branches?: ClinicBranch[];
   weekdayHours: string;
   sundayHours: string;
   onlineFee: number;
@@ -132,7 +147,7 @@ export interface Testimonial {
 
 export interface FaqItem {
   id: string;
-  category: 'Consultation' | 'Booking' | 'Products' | 'General';
+  category: 'Consultation' | 'Booking' | 'Products' | 'General' | 'Treatments';
   question: string;
   answer: string;
 }
