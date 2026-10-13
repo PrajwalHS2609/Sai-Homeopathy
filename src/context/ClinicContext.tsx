@@ -144,8 +144,9 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         parsed.addressLine1 = 'Tirur - Kuttippuram Rd, Kavumopuram';
         parsed.addressLine2 = 'Kuttippuram';
         parsed.pincode = '679571 / 676552';
-        parsed.email = 'consult@anjalihomoeoclinic.com';
       }
+      // Ensure email is always updated to anjalihomoeoclinic@gmail.com
+      parsed.email = 'anjalihomoeoclinic@gmail.com';
       // Ensure WhatsApp number is always updated to 89211 80408
       parsed.whatsappNumber = '+918921180408';
       parsed.branches = INITIAL_SETTINGS.branches;

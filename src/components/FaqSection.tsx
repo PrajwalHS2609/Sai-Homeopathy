@@ -10,8 +10,13 @@ import {
   CheckCircle2,
   PhoneCall,
   Calendar,
+  Mail,
 } from 'lucide-react';
 import { useClinic } from '../context/ClinicContext';
+import {
+  sendFaqQuestionEmail,
+  CLINIC_OFFICIAL_EMAIL,
+} from '../services/emailService';
 
 export const FaqSection: React.FC = () => {
   const { settings, showToast, navigateToBooking } = useClinic();
@@ -49,14 +54,21 @@ export const FaqSection: React.FC = () => {
     e.preventDefault();
     if (!userQuestion.trim()) return;
 
+    const questionText = userQuestion.trim();
+
+    // Automatically send clinical inquiry email to anjalihomoeoclinic@gmail.com
+    sendFaqQuestionEmail({ question: questionText }).catch((err) =>
+      console.error('Failed to dispatch clinical question email:', err)
+    );
+
     // Launch WhatsApp with prefilled custom question
     const targetUrl = `https://wa.me/${settings.whatsappNumber.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
-      `Hello ${settings.clinicName}, I have a clinical question: "${userQuestion.trim()}"`
+      `Hello ${settings.clinicName}, I have a clinical question: "${questionText}"`
     )}`;
 
     window.open(targetUrl, '_blank', 'noopener,noreferrer');
     setUserQuestionSubmitted(true);
-    showToast('Your question has been prepared for Dr. Anjali! Connecting via WhatsApp.', 'success');
+    showToast(`Question emailed to ${CLINIC_OFFICIAL_EMAIL} and prepared for WhatsApp!`, 'success');
     setUserQuestion('');
   };
 
@@ -267,14 +279,25 @@ export const FaqSection: React.FC = () => {
               <span>Clinic Desk: {settings.phone} ({settings.weekdayHours})</span>
             </span>
 
-            <a
-              href={whatsappGeneralUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#86EFAC] hover:underline font-bold inline-flex items-center gap-1"
-            >
-              <span>Instant WhatsApp Inquiry →</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href={`mailto:${CLINIC_OFFICIAL_EMAIL}`}
+                className="text-[#86EFAC] hover:underline font-bold inline-flex items-center gap-1"
+                title="Email your question"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span>{CLINIC_OFFICIAL_EMAIL}</span>
+              </a>
+
+              <a
+                href={whatsappGeneralUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#86EFAC] hover:underline font-bold inline-flex items-center gap-1"
+              >
+                <span>Instant WhatsApp Inquiry →</span>
+              </a>
+            </div>
           </div>
         </div>
 

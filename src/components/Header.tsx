@@ -9,6 +9,7 @@ import {
   X,
   Phone,
   MessageCircle,
+  Mail,
   Calendar,
   ArrowRight,
   ChevronDown,
@@ -166,6 +167,15 @@ export const Header: React.FC = () => {
             >
               <MessageCircle className="w-3 h-3 text-[#45AC4B]" />
               <span className="font-semibold">WhatsApp: 89211 80408</span>
+            </a>
+            <span className="text-[#8FA3E8] hidden lg:inline">|</span>
+            <a
+              href="mailto:anjalihomoeoclinic@gmail.com"
+              className="hidden lg:flex items-center gap-1 text-[#D3DBF4] hover:text-white transition-colors"
+              title="Email Clinic"
+            >
+              <Mail className="w-3 h-3 text-[#86EFAC]" />
+              <span className="text-[11px]">anjalihomoeoclinic@gmail.com</span>
             </a>
             <button
               onClick={() => handleNavClick('admin')}

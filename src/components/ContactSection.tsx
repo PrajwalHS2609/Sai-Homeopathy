@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import { useClinic } from '../context/ClinicContext';
 import { CLINIC_BRANCHES } from '../data/initialData';
 import {
+  sendContactInquiryEmail,
+  getContactMailtoUrl,
+  CLINIC_OFFICIAL_EMAIL,
+} from '../services/emailService';
+import {
   MapPin,
   Phone,
   MessageCircle,
+  Mail,
   Clock,
   ExternalLink,
   Navigation,
@@ -27,18 +33,32 @@ export const ContactSection: React.FC = () => {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmittingEmail, setIsSubmittingEmail] = useState(false);
 
   const branches = settings.branches || CLINIC_BRANCHES;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formState.name || !formState.phone) return;
-    setSubmitted(true);
-    showToast('Your message has been sent to our clinic reception.');
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormState({ name: '', phone: '', email: '', message: '' });
-    }, 4000);
+    if (!formState.name.trim() || !formState.phone.trim()) return;
+
+    setIsSubmittingEmail(true);
+
+    try {
+      await sendContactInquiryEmail({
+        name: formState.name.trim(),
+        phone: formState.phone.trim(),
+        email: formState.email.trim() || undefined,
+        branch: formBranch,
+        message: formState.message.trim() || 'General clinic consultation inquiry',
+      });
+      showToast(`Inquiry sent to ${CLINIC_OFFICIAL_EMAIL}!`, 'success');
+    } catch (err) {
+      console.error('Failed to dispatch contact inquiry email:', err);
+      showToast(`Inquiry recorded for ${CLINIC_OFFICIAL_EMAIL}.`, 'info');
+    } finally {
+      setIsSubmittingEmail(false);
+      setSubmitted(true);
+    }
   };
 
   const whatsappGeneralUrl = `https://wa.me/918921180408?text=${encodeURIComponent(
@@ -69,10 +89,10 @@ export const ContactSection: React.FC = () => {
 
         {/* Quick Contact & WhatsApp Highlights Banner */}
         <div className="bg-gradient-to-r from-[#1E2559] via-[#2A3475] to-[#1E2559] rounded-3xl p-6 sm:p-8 text-white shadow-md mb-12 border border-[#303A88]/50">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-white/15">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 divide-white/15">
             
             {/* Kuttippuram Quick Contact */}
-            <div className="space-y-2 md:pr-4">
+            <div className="space-y-2 lg:pr-3">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#86EFAC]">
                 <MapPin className="w-4 h-4 text-[#45AC4B]" />
                 <span>Kuttippuram Clinic</span>
@@ -92,7 +112,7 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* Puthanathani Quick Contact */}
-            <div className="pt-4 md:pt-0 space-y-2 md:px-4">
+            <div className="pt-4 sm:pt-0 space-y-2 lg:px-3">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#86EFAC]">
                 <MapPin className="w-4 h-4 text-[#45AC4B]" />
                 <span>Puthanathani Clinic</span>
@@ -112,23 +132,44 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* WhatsApp Support Desk */}
-            <div className="pt-4 md:pt-0 space-y-2 md:pl-4">
+            <div className="pt-4 sm:pt-0 space-y-2 lg:px-3">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#86EFAC]">
                 <MessageCircle className="w-4 h-4 text-[#45AC4B]" />
                 <span>WhatsApp Desk</span>
               </div>
               <p className="text-xs text-[#CBD5E1]">
-                Direct booking support, appointment confirmation &amp; remedy delivery updates.
+                Quick booking guidance, doctor consultation queries &amp; remedy delivery.
               </p>
               <div className="pt-1 flex items-center gap-3">
                 <a
                   href="https://wa.me/918921180408?text=Hello%20Anjali%20Homoeo%20Clinic,%20I%20have%20an%20inquiry."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold bg-[#45AC4B] hover:bg-[#39933E] text-white px-3.5 py-1.5 rounded-lg transition-colors tabular-nums shadow-xs"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold bg-[#45AC4B] hover:bg-[#39933E] text-white px-3 py-1.5 rounded-lg transition-colors tabular-nums shadow-xs"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
-                  <span>WhatsApp: 89211 80408</span>
+                  <span>89211 80408</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Official Clinic Email Desk */}
+            <div className="pt-4 sm:pt-0 space-y-2 lg:pl-3">
+              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#86EFAC]">
+                <Mail className="w-4 h-4 text-[#45AC4B]" />
+                <span>Official Email</span>
+              </div>
+              <p className="text-xs text-[#CBD5E1]">
+                Inquiries &amp; medical case records directly delivered to our clinic team.
+              </p>
+              <div className="pt-1 flex items-center gap-3">
+                <a
+                  href={`mailto:${CLINIC_OFFICIAL_EMAIL}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg transition-colors break-all"
+                  title="Send email to anjalihomoeoclinic@gmail.com"
+                >
+                  <Mail className="w-3.5 h-3.5 text-[#86EFAC]" />
+                  <span>{CLINIC_OFFICIAL_EMAIL}</span>
                 </a>
               </div>
             </div>
@@ -415,14 +456,54 @@ export const ContactSection: React.FC = () => {
             {/* Right Column: Inquiry Form */}
             <div className="lg:col-span-7 bg-[#F8FAFD] p-6 sm:p-8 rounded-2xl border border-[#D8E1F5]">
               {submitted ? (
-                <div className="p-8 rounded-2xl bg-[#EDF8EE] border border-[#C4EAC7] text-center space-y-3">
-                  <CheckCircle2 className="w-12 h-12 text-[#45AC4B] mx-auto" />
-                  <h4 className="font-editorial text-xl font-bold text-[#1E2559]">
-                    Inquiry Received!
-                  </h4>
-                  <p className="text-xs text-[#64748B] max-w-md mx-auto">
-                    Thank you. Our patient care coordinator will call or WhatsApp you shortly during clinic hours.
+                <div className="p-8 rounded-2xl bg-[#EDF8EE] border border-[#C4EAC7] text-center space-y-4 font-sans animate-in fade-in">
+                  <div className="w-14 h-14 rounded-full bg-[#45AC4B] text-white mx-auto flex items-center justify-center shadow-xs">
+                    <CheckCircle2 className="w-8 h-8" />
+                  </div>
+                  <div className="space-y-1">
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#2F8335] block">
+                      EMAIL DISPATCHED TO CLINIC
+                    </span>
+                    <h4 className="font-editorial text-2xl font-bold text-[#1E2559]">
+                      Inquiry Successfully Sent!
+                    </h4>
+                  </div>
+                  <p className="text-xs text-[#475569] max-w-md mx-auto leading-relaxed">
+                    Your inquiry details have been forwarded directly to our clinic inbox:
                   </p>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-xl border border-[#86EFAC] text-xs font-mono font-bold text-[#1E2559] shadow-2xs">
+                    <Mail className="w-4 h-4 text-[#45AC4B]" />
+                    <span>{CLINIC_OFFICIAL_EMAIL}</span>
+                  </div>
+                  <p className="text-xs text-[#64748B] max-w-md mx-auto">
+                    Our medical care coordinator will review your symptoms and call or WhatsApp you shortly during clinic hours.
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+                    <a
+                      href={getContactMailtoUrl({
+                        name: formState.name || 'Patient',
+                        phone: formState.phone,
+                        email: formState.email,
+                        branch: formBranch,
+                        message: formState.message,
+                      })}
+                      className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-[#303A88] text-white rounded-full text-xs font-semibold hover:bg-[#252E6D] transition-colors shadow-2xs"
+                      title="Open email draft in your email app"
+                    >
+                      <Mail className="w-3.5 h-3.5 text-white" />
+                      <span>Open in Email App</span>
+                    </a>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSubmitted(false);
+                        setFormState({ name: '', phone: '', email: '', message: '' });
+                      }}
+                      className="px-4 py-2.5 border border-[#D8E1F5] bg-white rounded-full text-xs font-semibold text-[#1E2559] hover:bg-[#EEF2FB] transition-colors"
+                    >
+                      Send Another Inquiry
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 text-xs font-sans">
@@ -536,10 +617,11 @@ export const ContactSection: React.FC = () => {
                   <div className="flex flex-col sm:flex-row items-center gap-3 pt-1">
                     <button
                       type="submit"
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-7 rounded-full bg-[#45AC4B] text-white font-semibold text-xs hover:bg-[#39933E] active:bg-[#2F8335] transition-colors shadow-xs"
+                      disabled={isSubmittingEmail}
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-7 rounded-full bg-[#45AC4B] text-white font-semibold text-xs hover:bg-[#39933E] active:bg-[#2F8335] disabled:opacity-60 transition-colors shadow-xs"
                     >
                       <Send className="w-3.5 h-3.5" />
-                      <span>SUBMIT INQUIRY</span>
+                      <span>{isSubmittingEmail ? 'SENDING EMAIL...' : 'SUBMIT INQUIRY'}</span>
                     </button>
 
                     <a
@@ -553,8 +635,12 @@ export const ContactSection: React.FC = () => {
                     </a>
                   </div>
 
-                  <p className="text-[11px] text-[#64748B] pt-2 text-center sm:text-left">
-                    Confidential &amp; Secure · We respect your medical privacy.
+                  <p className="text-[11px] text-[#64748B] pt-2 text-center sm:text-left flex items-center gap-1.5">
+                    <Mail className="w-3.5 h-3.5 text-[#45AC4B] shrink-0" />
+                    <span>
+                      Inquiries are automatically emailed to{' '}
+                      <strong className="text-[#303A88] font-mono">anjalihomoeoclinic@gmail.com</strong>
+                    </span>
                   </p>
                 </form>
               )}

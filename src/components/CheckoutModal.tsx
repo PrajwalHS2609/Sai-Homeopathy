@@ -8,8 +8,13 @@ import {
   QrCode,
   ArrowRight,
   Package,
+  Mail,
 } from 'lucide-react';
 import { OrderCustomerInfo } from '../types';
+import {
+  sendOrderNotificationEmail,
+  CLINIC_OFFICIAL_EMAIL,
+} from '../services/emailService';
 
 export const CheckoutModal: React.FC = () => {
   const {
@@ -59,7 +64,11 @@ export const CheckoutModal: React.FC = () => {
 
     setIsProcessing(true);
     setTimeout(() => {
-      createOrder(customer, paymentMethod.toUpperCase());
+      const order = createOrder(customer, paymentMethod.toUpperCase());
+      // Dispatch order notification email to anjalihomoeoclinic@gmail.com
+      sendOrderNotificationEmail(order).catch((err) =>
+        console.error('Failed to dispatch order email:', err)
+      );
       setIsProcessing(false);
     }, 500);
   };
@@ -75,7 +84,7 @@ export const CheckoutModal: React.FC = () => {
   if (lastConfirmedOrder) {
     return (
       <div className="fixed inset-0 z-50 overflow-y-auto bg-[#1E2559]/60 backdrop-blur-xs flex items-center justify-center p-4 font-sans">
-        <div className="bg-white rounded-3xl max-w-lg w-full p-8 border border-[#D8E1F5] shadow-2xl text-center space-y-6">
+        <div className="bg-white rounded-3xl max-w-lg w-full p-8 border border-[#D8E1F5] shadow-2xl text-center space-y-6 animate-in fade-in">
           <div className="w-16 h-16 rounded-full bg-[#EEF2FB] text-[#45AC4B] mx-auto flex items-center justify-center border border-[#D3DBF4]">
             <CheckCircle2 className="w-10 h-10" />
           </div>
@@ -117,6 +126,15 @@ export const CheckoutModal: React.FC = () => {
                 ₹{lastConfirmedOrder.total} ({lastConfirmedOrder.paymentMethod})
               </span>
             </div>
+          </div>
+
+          {/* Email Notification Notice */}
+          <div className="p-3.5 rounded-xl bg-[#F0FDF4] border border-[#BBF7D0] flex items-center gap-2.5 text-left text-xs text-[#15803D]">
+            <Mail className="w-4 h-4 text-[#45AC4B] shrink-0" />
+            <span>
+              Order details dispatched to clinic inbox:{' '}
+              <strong className="font-mono font-bold text-[#14532D]">{CLINIC_OFFICIAL_EMAIL}</strong>
+            </span>
           </div>
 
           <button

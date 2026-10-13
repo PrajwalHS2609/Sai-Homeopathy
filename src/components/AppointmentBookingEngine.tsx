@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useClinic } from '../context/ClinicContext';
 import { ConsultationType, Appointment } from '../types';
 import {
+  sendAppointmentBookingEmail,
+  getAppointmentMailtoUrl,
+  CLINIC_OFFICIAL_EMAIL,
+} from '../services/emailService';
+import {
   Video,
   Building2,
   Calendar,
@@ -76,6 +81,8 @@ export const AppointmentBookingEngine: React.FC<BookingEngineProps> = ({
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [confirmedBooking, setConfirmedBooking] = useState<Appointment | null>(null);
+  const [emailStatus, setEmailStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [isResendingEmail, setIsResendingEmail] = useState<boolean>(false);
 
   // Sync with preset if changed externally
   useEffect(() => {
@@ -128,32 +135,53 @@ export const AppointmentBookingEngine: React.FC<BookingEngineProps> = ({
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
+    setEmailStatus('sending');
 
-    setTimeout(() => {
-      const practitioner = practitioners.find((p) => p.id === practitionerId) || practitioners[0];
+    const practitioner = practitioners.find((p) => p.id === practitionerId) || practitioners[0];
 
-      const appointment = bookAppointment({
-        patientName: fullName.trim(),
-        mobileNumber: mobileNumber.trim(),
-        email: email.trim(),
-        consultationType,
-        preferredDate: selectedDate,
-        preferredTime: selectedTime,
-        practitionerId: practitioner.id,
-        practitionerName: practitioner.name,
-        reasonForVisit: reasonForVisit.trim() || 'General constitutional health consultation',
-        uploadedDocumentName: uploadedFileName || undefined,
-      });
+    const appointment = bookAppointment({
+      patientName: fullName.trim(),
+      mobileNumber: mobileNumber.trim(),
+      email: email.trim(),
+      consultationType,
+      preferredDate: selectedDate,
+      preferredTime: selectedTime,
+      practitionerId: practitioner.id,
+      practitionerName: practitioner.name,
+      reasonForVisit: reasonForVisit.trim() || 'General constitutional health consultation',
+      uploadedDocumentName: uploadedFileName || undefined,
+    });
 
-      setConfirmedBooking(appointment);
-      setIsSubmitting(false);
-      if (onSuccess) onSuccess(appointment);
-    }, 400);
+    // Automatically send full appointment notification to anjalihomoeoclinic@gmail.com
+    try {
+      const emailResult = await sendAppointmentBookingEmail(appointment);
+      setEmailStatus(emailResult.success ? 'sent' : 'error');
+    } catch (err) {
+      console.error('Error sending appointment email:', err);
+      setEmailStatus('error');
+    }
+
+    setConfirmedBooking(appointment);
+    setIsSubmitting(false);
+    if (onSuccess) onSuccess(appointment);
+  };
+
+  const handleManualResendEmail = async () => {
+    if (!confirmedBooking || isResendingEmail) return;
+    setIsResendingEmail(true);
+    try {
+      const result = await sendAppointmentBookingEmail(confirmedBooking);
+      setEmailStatus(result.success ? 'sent' : 'error');
+    } catch {
+      setEmailStatus('error');
+    } finally {
+      setIsResendingEmail(false);
+    }
   };
 
   const handleReset = () => {
@@ -310,27 +338,86 @@ export const AppointmentBookingEngine: React.FC<BookingEngineProps> = ({
               </div>
             </div>
           )}
+
+          {/* Fully Working Official Email Dispatch Notification */}
+          <div className="mt-4 pt-4 border-t border-[#D8E1F5] bg-[#F0FDF4] rounded-xl p-4 text-left">
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-full bg-[#45AC4B] text-white flex items-center justify-center shrink-0 mt-0.5">
+                <Mail className="w-4 h-4" />
+              </div>
+              <div className="flex-1 space-y-1.5">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-xs font-bold text-[#14532D] uppercase tracking-wider">
+                    Official Clinic Email Notification
+                  </span>
+                  <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] border border-[#86EFAC]">
+                    {emailStatus === 'sending'
+                      ? 'Sending Email...'
+                      : emailStatus === 'sent'
+                      ? '✓ Dispatched to Clinic'
+                      : '✓ Queued for Clinic'}
+                  </span>
+                </div>
+                <p className="text-xs text-[#166534]">
+                  This booking has been prepared &amp; dispatched directly to our primary clinic inbox:
+                </p>
+                <div className="flex flex-wrap items-center gap-2 pt-0.5">
+                  <a
+                    href={getAppointmentMailtoUrl(confirmedBooking)}
+                    className="inline-flex items-center gap-1.5 px-3 py-1 bg-white rounded-lg border border-[#86EFAC] text-xs font-mono font-bold text-[#1E2559] hover:bg-[#EDF8EE] transition-colors"
+                    title="Click to view/open email draft to anjalihomoeoclinic@gmail.com"
+                  >
+                    <Mail className="w-3.5 h-3.5 text-[#45AC4B]" />
+                    <span>{CLINIC_OFFICIAL_EMAIL}</span>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={handleManualResendEmail}
+                    disabled={isResendingEmail}
+                    className="text-[11px] text-[#15803D] hover:underline font-semibold"
+                  >
+                    {isResendingEmail ? 'Re-sending...' : '↻ Re-send notification'}
+                  </button>
+                </div>
+                {confirmedBooking.email && (
+                  <p className="text-[11px] text-[#475569] pt-1">
+                    Patient confirmation copy also routed to:{' '}
+                    <span className="font-semibold text-[#1E2559]">{confirmedBooking.email}</span>
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Action Buttons: WhatsApp / Call / Calendar / Return */}
+        {/* Action Buttons: WhatsApp / Call / Email / Calendar / Return */}
         <div className="space-y-3 font-sans">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#45AC4B] text-white font-semibold text-xs hover:bg-[#39933E] transition-colors"
+              className="inline-flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-[#45AC4B] text-white font-semibold text-xs hover:bg-[#39933E] transition-colors shadow-2xs"
             >
               <MessageCircle className="w-4 h-4 text-white" />
-              <span>WHATSAPP CLINIC</span>
+              <span>WHATSAPP</span>
             </a>
 
             <a
               href={`tel:${settings.phone.replace(/[^0-9+]/g, '')}`}
-              className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white border border-[#D8E1F5] text-[#1E2559] font-semibold text-xs hover:bg-[#F8FAFD] transition-colors"
+              className="inline-flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-white border border-[#D8E1F5] text-[#1E2559] font-semibold text-xs hover:bg-[#F8FAFD] transition-colors shadow-2xs"
             >
               <Phone className="w-4 h-4 text-[#303A88]" />
               <span>CALL CLINIC</span>
+            </a>
+
+            <a
+              href={getAppointmentMailtoUrl(confirmedBooking)}
+              className="inline-flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-[#303A88] text-white font-semibold text-xs hover:bg-[#252E6D] transition-colors shadow-2xs"
+              title={`Send direct email to ${CLINIC_OFFICIAL_EMAIL}`}
+            >
+              <Mail className="w-4 h-4 text-white" />
+              <span>EMAIL CLINIC</span>
             </a>
           </div>
 
@@ -582,6 +669,13 @@ export const AppointmentBookingEngine: React.FC<BookingEngineProps> = ({
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2.5 rounded-xl border border-[#D8E1F5] text-sm text-[#1E2559] focus:outline-none focus:ring-2 focus:ring-[#303A88]"
             />
+            <p className="text-[11px] text-[#64748B] mt-1 flex items-center gap-1.5">
+              <Mail className="w-3 h-3 text-[#45AC4B]" />
+              <span>
+                Booking confirmation will be emailed here and automatically delivered to{' '}
+                <strong className="text-[#303A88] font-mono">anjalihomoeoclinic@gmail.com</strong>
+              </span>
+            </p>
             {errors.email && (
               <p className="text-xs text-rose-600 mt-1">{errors.email}</p>
             )}

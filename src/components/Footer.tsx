@@ -5,6 +5,7 @@ import { AnjaliLogo } from './AnjaliLogo';
 import {
   MapPin,
   Phone,
+  Mail,
   Clock,
   MessageCircle,
   ShieldAlert,
@@ -56,6 +57,15 @@ export const Footer: React.FC = () => {
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>WhatsApp: 89211 80408</span>
+              </a>
+
+              <a
+                href="mailto:anjalihomoeoclinic@gmail.com"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-[#86EFAC] font-semibold transition-colors"
+                title="Send email to anjalihomoeoclinic@gmail.com"
+              >
+                <Mail className="w-3.5 h-3.5 text-[#45AC4B]" />
+                <span>anjalihomoeoclinic@gmail.com</span>
               </a>
 
               <button

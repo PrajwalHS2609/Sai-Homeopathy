@@ -36,7 +36,7 @@ export const INITIAL_SETTINGS: ClinicSettings = {
   phone: '098951 01707',
   secondaryPhone: '089211 80408',
   whatsappNumber: '+918921180408',
-  email: 'consult@anjalihomoeoclinic.com',
+  email: 'anjalihomoeoclinic@gmail.com',
   addressLine1: 'Tirur - Kuttippuram Rd, Kavumopuram',
   addressLine2: 'Kuttippuram',
   city: 'Kuttippuram & Puthanathani',
@@ -272,7 +272,7 @@ export const INITIAL_FAQS: FaqItem[] = [
     id: 'faq-9',
     category: 'General',
     question: 'How can I contact the clinic?',
-    answer: 'You can reach our team via WhatsApp at 89211 80408, direct telephone at 098951 01707 (Kuttippuram) or 089211 80408 (Puthanathani), or email at consult@anjalihomoeoclinic.com. Our staff responds promptly during working hours.',
+    answer: 'You can reach our team via WhatsApp at 89211 80408, direct telephone at 098951 01707 (Kuttippuram) or 089211 80408 (Puthanathani), or email at anjalihomoeoclinic@gmail.com. Our staff responds promptly during working hours.',
   },
   {
     id: 'faq-10',
