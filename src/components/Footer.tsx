@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
   )}`;
 
   return (
-    <footer className="bg-[#1E2559] text-white pt-16 pb-12 border-t-2 border-[#303A88]">
+    <footer className="bg-[#1E2559] text-white pt-16 pb-28 sm:pb-12 border-t-2 border-[#303A88]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Main Grid */}

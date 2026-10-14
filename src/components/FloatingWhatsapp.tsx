@@ -30,12 +30,12 @@ export const FloatingWhatsapp: React.FC = () => {
       </aside>
 
       {/* Mobile Sticky Bottom CTA Bar */}
-      <nav aria-label="Mobile Quick Actions" className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-2.5 shadow-lg flex items-center gap-2 font-sans">
+      <nav aria-label="Mobile Quick Actions" className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-2.5 shadow-lg flex items-center gap-2 font-sans pb-[max(0.625rem,env(safe-area-inset-bottom))]">
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#EEF2FB] text-[#303A88] font-semibold text-xs border border-[#D3DBF4]"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 h-11 px-3 rounded-xl bg-[#EEF2FB] hover:bg-[#E2E8F8] text-[#303A88] font-semibold text-xs border border-[#D3DBF4] transition-colors"
         >
           <MessageCircle className="w-4 h-4 text-[#45AC4B]" />
           <span>WhatsApp</span>
@@ -43,7 +43,7 @@ export const FloatingWhatsapp: React.FC = () => {
 
         <button
           onClick={() => navigateToBooking('online')}
-          className="flex-2 inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-[#45AC4B] text-white font-semibold text-xs shadow-md"
+          className="flex-[1.3] inline-flex items-center justify-center gap-1.5 h-11 px-4 rounded-xl bg-[#45AC4B] hover:bg-[#39933E] active:bg-[#2F8335] text-white font-semibold text-xs shadow-md transition-colors"
         >
           <Calendar className="w-4 h-4 text-white" />
           <span>Book Appointment</span>

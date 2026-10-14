@@ -40,30 +40,30 @@ export const FeatureBar: React.FC = () => {
   ];
 
   return (
-    <div className="relative z-20 -mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="relative z-20 mt-4 sm:-mt-8 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {features.map((item) => {
           const Icon = item.icon;
           return (
             <button
               key={item.num}
               onClick={item.action}
-              className="text-left bg-white hover:bg-[#F8FAFD] rounded-2xl p-6 shadow-sm hover:shadow-md border border-[#D8E1F5] hover:border-[#45AC4B]/50 transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#303A88]"
+              className="text-left bg-white hover:bg-[#F8FAFD] rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm hover:shadow-md border border-[#D8E1F5] hover:border-[#45AC4B]/50 transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#303A88]"
             >
-              <div className="flex items-start justify-between mb-4">
-                <div className="w-12 h-12 rounded-xl bg-[#EEF2FB] group-hover:bg-[#45AC4B] flex items-center justify-center text-[#303A88] group-hover:text-white transition-all duration-200 shadow-2xs">
-                  <Icon className="w-6 h-6" />
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-[#EEF2FB] group-hover:bg-[#45AC4B] flex items-center justify-center text-[#303A88] group-hover:text-white transition-all duration-200 shadow-2xs">
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <span className="font-editorial text-xl font-bold text-[#8FA3E8] group-hover:text-[#45AC4B] transition-colors tabular-nums">
+                <span className="font-editorial text-base sm:text-xl font-bold text-[#8FA3E8] group-hover:text-[#45AC4B] transition-colors tabular-nums">
                   {item.num}
                 </span>
               </div>
 
-              <h2 className="text-sm font-bold tracking-tight text-[#1E2559] mb-1.5 group-hover:text-[#303A88] transition-colors font-sans">
+              <h2 className="text-xs sm:text-sm font-bold tracking-tight text-[#1E2559] mb-1 group-hover:text-[#303A88] transition-colors font-sans">
                 {item.title}
               </h2>
 
-              <p className="text-xs text-[#64748B] leading-relaxed font-sans">
+              <p className="text-[11px] sm:text-xs text-[#64748B] leading-relaxed font-sans">
                 {item.desc}
               </p>
             </button>

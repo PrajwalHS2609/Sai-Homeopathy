@@ -87,23 +87,23 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Primary & Secondary Call to Actions */}
-            <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={() => navigateToBooking('online')}
-                className="relative overflow-hidden inline-flex items-center justify-center gap-3 px-8 sm:px-9 py-4 sm:py-4.5 text-base sm:text-lg font-bold tracking-wide text-white bg-gradient-to-r from-[#45AC4B] via-[#3AA240] to-[#2F8535] hover:from-[#3AA240] hover:to-[#27702C] active:scale-[0.98] rounded-full transition-all duration-300 shadow-xl shadow-[#45AC4B]/35 hover:shadow-2xl hover:shadow-[#45AC4B]/50 hover:-translate-y-0.5 group focus:outline-none focus-visible:ring-4 focus-visible:ring-[#45AC4B]/40 ring-1 ring-white/30"
+                className="relative overflow-hidden inline-flex items-center justify-center gap-2.5 sm:gap-3 px-5 sm:px-9 py-3.5 sm:py-4.5 text-sm sm:text-base lg:text-lg font-bold tracking-wide text-white bg-gradient-to-r from-[#45AC4B] via-[#3AA240] to-[#2F8535] hover:from-[#3AA240] hover:to-[#27702C] active:scale-[0.98] rounded-full transition-all duration-300 shadow-xl shadow-[#45AC4B]/35 hover:shadow-2xl hover:shadow-[#45AC4B]/50 hover:-translate-y-0.5 group focus:outline-none focus-visible:ring-4 focus-visible:ring-[#45AC4B]/40 ring-1 ring-white/30 text-center"
               >
                 {/* Light shimmer highlight effect */}
                 <span className="absolute inset-0 w-1/2 h-full bg-white/20 -skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000 ease-out pointer-events-none" />
-                <Calendar className="w-5 h-5 text-white/95 shrink-0 transition-transform duration-200 group-hover:scale-110" />
+                <Calendar className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-white/95 shrink-0 transition-transform duration-200 group-hover:scale-110" />
                 <span>BOOK APPOINTMENT WITH DR. ANJALI</span>
-                <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1.5 shrink-0" />
+                <ArrowRight className="w-4.5 h-4.5 sm:w-5 sm:h-5 transition-transform duration-200 group-hover:translate-x-1.5 shrink-0" />
               </button>
 
               <button
                 onClick={handleScrollToTreatments}
-                className="inline-flex items-center justify-center gap-2.5 px-8 sm:px-9 py-4 sm:py-4.5 text-base sm:text-lg font-bold tracking-wide text-[#303A88] hover:text-[#1E2559] bg-white hover:bg-[#EEF2FB] active:scale-[0.98] border-2 border-[#303A88]/40 hover:border-[#303A88] rounded-full transition-all duration-300 shadow-md shadow-[#303A88]/10 hover:shadow-xl hover:shadow-[#303A88]/20 hover:-translate-y-0.5 group focus:outline-none focus-visible:ring-4 focus-visible:ring-[#303A88]/30"
+                className="inline-flex items-center justify-center gap-2.5 px-5 sm:px-9 py-3.5 sm:py-4.5 text-sm sm:text-base lg:text-lg font-bold tracking-wide text-[#303A88] hover:text-[#1E2559] bg-white hover:bg-[#EEF2FB] active:scale-[0.98] border-2 border-[#303A88]/40 hover:border-[#303A88] rounded-full transition-all duration-300 shadow-md shadow-[#303A88]/10 hover:shadow-xl hover:shadow-[#303A88]/20 hover:-translate-y-0.5 group focus:outline-none focus-visible:ring-4 focus-visible:ring-[#303A88]/30 text-center"
               >
-                <Stethoscope className="w-5 h-5 text-[#303A88] shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                <Stethoscope className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-[#303A88] shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                 <span>VIEW TREATMENT CATEGORIES</span>
               </button>
             </div>

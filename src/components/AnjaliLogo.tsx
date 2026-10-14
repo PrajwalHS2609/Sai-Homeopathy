@@ -20,24 +20,24 @@ export const AnjaliLogo: React.FC<AnjaliLogoProps> = ({
 
   // Sizing mappings
   const markSizeClasses = {
-    sm: 'w-8 h-8',
-    md: 'w-10 h-10 sm:w-11 sm:h-11',
-    lg: 'w-12 h-12 sm:w-14 sm:h-14',
+    sm: 'w-7 h-7 sm:w-8 sm:h-8',
+    md: 'w-9 h-9 sm:w-11 sm:h-11',
+    lg: 'w-11 h-11 sm:w-14 sm:h-14',
     xl: 'w-16 h-16 sm:w-20 sm:h-20',
   }[size];
 
   const titleSizeClasses = {
-    sm: 'text-base tracking-[0.14em]',
-    md: 'text-lg sm:text-xl tracking-[0.16em]',
-    lg: 'text-xl sm:text-2xl tracking-[0.18em]',
-    xl: 'text-2xl sm:text-3xl tracking-[0.2em]',
+    sm: 'text-xs sm:text-sm tracking-[0.10em] sm:tracking-[0.12em]',
+    md: 'text-[14px] sm:text-xl tracking-[0.09em] sm:tracking-[0.16em]',
+    lg: 'text-lg sm:text-2xl tracking-[0.14em] sm:tracking-[0.18em]',
+    xl: 'text-2xl sm:text-3xl tracking-[0.18em] sm:tracking-[0.2em]',
   }[size];
 
   const subtitleSizeClasses = {
-    sm: 'text-[9px] tracking-[0.22em]',
-    md: 'text-[10px] sm:text-[11px] tracking-[0.24em]',
-    lg: 'text-xs sm:text-[13px] tracking-[0.26em]',
-    xl: 'text-sm sm:text-base tracking-[0.28em]',
+    sm: 'text-[7.5px] sm:text-[8px] tracking-[0.16em] sm:tracking-[0.2em]',
+    md: 'text-[8px] sm:text-[11px] tracking-[0.14em] sm:tracking-[0.24em]',
+    lg: 'text-[10px] sm:text-[13px] tracking-[0.18em] sm:tracking-[0.26em]',
+    xl: 'text-xs sm:text-base tracking-[0.22em] sm:tracking-[0.28em]',
   }[size];
 
   const renderMarkSvg = (svgClass: string = '') => (
@@ -115,7 +115,7 @@ export const AnjaliLogo: React.FC<AnjaliLogoProps> = ({
 
   // Full / Horizontal Brand Identity: Emblem + Wordmark
   return (
-    <div className={`inline-flex items-center gap-3 sm:gap-3.5 ${className}`}>
+    <div className={`inline-flex items-center gap-2 sm:gap-3.5 ${className}`}>
       {/* Emblem Mark */}
       {renderMarkSvg(markSizeClasses)}
 
