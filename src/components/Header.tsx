@@ -68,6 +68,63 @@ export const Header: React.FC = () => {
   const handleSubcategoryClick = (subcatId: string) => {
     setTreatmentsDropdownOpen(false);
     setMobileMenuOpen(false);
+
+    if (subcatId === 'womens-health-gynecology') {
+      setCurrentView('womens-health-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (subcatId === 'respiratory-ent-allergy') {
+      setCurrentView('respiratory-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (subcatId === 'skin-hair-scalp') {
+      setCurrentView('skin-hair-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (subcatId === 'renal-urinary-gallbladder-thyroid') {
+      setCurrentView('renal-thyroid-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (subcatId === 'neurological-headache') {
+      setCurrentView('neurological-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (subcatId === 'anorectal-vascular' || subcatId === 'anorectal-vascular-conditions') {
+      setCurrentView('anorectal-vascular-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (
+      subcatId === 'joint-musculoskeletal' ||
+      subcatId === 'joint-musculoskeletal-chronic' ||
+      subcatId === 'joint-musculoskeletal-chronic-conditions'
+    ) {
+      setCurrentView('joint-musculoskeletal-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (
+      subcatId === 'ophthalmic-eye' ||
+      subcatId === 'eye-conditions' ||
+      subcatId === 'ophthalmic-eye-conditions'
+    ) {
+      setCurrentView('ophthalmic-eye-care');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
     setCurrentView('treatments');
 
     // Give react time to mount view before scrolling to specific anchor
@@ -140,6 +197,16 @@ export const Header: React.FC = () => {
 
           {/* Quick Contact Links Row */}
           <div className="flex flex-wrap items-center justify-center gap-x-2.5 sm:gap-x-3.5 gap-y-1 text-[10.5px] sm:text-xs font-sans">
+            <a
+              href="tel:0989101707"
+              className="flex items-center gap-1 hover:text-[#86EFAC] transition-colors whitespace-nowrap"
+              title="Call Doctor Desk: 0989101707"
+            >
+              <Phone className="w-3 h-3 text-[#45AC4B] shrink-0" />
+              <span className="text-[#D3DBF4]">Desk:</span>
+              <span className="tabular-nums font-semibold">0989101707</span>
+            </a>
+            <span className="text-[#8FA3E8]">·</span>
             <a
               href="tel:09895101707"
               className="flex items-center gap-1 hover:text-[#86EFAC] transition-colors whitespace-nowrap"

@@ -135,6 +135,78 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs text-[#CBD5E1]">
               <li>
                 <button
+                  onClick={() => handleLinkClick('womens-health-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+                  <span>Women’s Health &amp; Gynecological Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('respiratory-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8]" />
+                  <span>Respiratory, ENT &amp; Allergy Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('skin-hair-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+                  <span>Skin, Hair &amp; Scalp Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('renal-thyroid-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0284C7]" />
+                  <span>Renal, Gallbladder &amp; Thyroid Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('neurological-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6]" />
+                  <span>Neurological &amp; Headache Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('anorectal-vascular-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8]" />
+                  <span>Anorectal &amp; Vascular Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('joint-musculoskeletal-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
+                  <span>Joint, Spine &amp; Musculoskeletal Care</span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick('ophthalmic-eye-care')}
+                  className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0284C7]" />
+                  <span>Ophthalmic / Eye Conditions</span>
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleLinkClick('treatments')}
                   className="hover:text-[#45AC4B] transition-colors text-left"
                 >
@@ -183,9 +255,13 @@ export const Footer: React.FC = () => {
               <p className="text-[11px] text-[#94A3B8] leading-tight">
                 Tirur - Kuttippuram Rd, Kavumopuram, Kuttippuram, Keralam 679571
               </p>
-              <p className="pt-0.5">
-                <a href="tel:09895101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums">
-                  Ph: 098951 01707
+              <p className="pt-0.5 flex flex-wrap items-center gap-2">
+                <a href="tel:0989101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums" title="Call Doctor Desk 0989101707">
+                  Ph: 0989101707
+                </a>
+                <span className="text-[#94A3B8]">/</span>
+                <a href="tel:09895101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums" title="Call 098951 01707">
+                  098951 01707
                 </a>
               </p>
             </div>

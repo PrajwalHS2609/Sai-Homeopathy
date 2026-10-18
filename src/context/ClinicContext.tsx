@@ -31,7 +31,15 @@ export type NavView =
   | 'qa'
   | 'contact'
   | 'book-appointment'
-  | 'admin';
+  | 'admin'
+  | 'womens-health-care'
+  | 'respiratory-care'
+  | 'skin-hair-care'
+  | 'renal-thyroid-care'
+  | 'neurological-care'
+  | 'anorectal-vascular-care'
+  | 'joint-musculoskeletal-care'
+  | 'ophthalmic-eye-care';
 
 interface Toast {
   id: string;
@@ -110,11 +118,209 @@ interface ClinicContextType {
 
 const ClinicContext = createContext<ClinicContextType | undefined>(undefined);
 
+const isWomensHealthPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-womens-health-gynocological-care' ||
+    clean === '/homoeopathic-treatment-for-womens-health-gynecological-care'
+  );
+};
+
+const isRespiratoryPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions' ||
+    clean === '/homoeopathic-treatment-for-respiratory-ent-allergy' ||
+    clean === '/respiratory-ent-allergy' ||
+    clean === '/health-conditions/respiratory-ent-allergy'
+  );
+};
+
+const isSkinHairPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-skin-hair-scalp-conditions' ||
+    clean === '/homoeopathic-treatment-for-skin-hair-scalp' ||
+    clean === '/skin-hair-scalp' ||
+    clean === '/health-conditions/skin-hair-scalp'
+  );
+};
+
+const isRenalThyroidPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions' ||
+    clean === '/homoeopathic-treatment-for-renal-urinary-thyroid' ||
+    clean === '/renal-urinary-gallbladder-thyroid' ||
+    clean === '/health-conditions/renal-urinary-gallbladder-thyroid'
+  );
+};
+
+const isNeurologicalPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-neurological-headache-conditions' ||
+    clean === '/homoeopathic-treatment-for-neurological-headache' ||
+    clean === '/neurological-headache' ||
+    clean === '/health-conditions/neurological-headache'
+  );
+};
+
+const isAnorectalVascularPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-anorectal-vascular-conditions' ||
+    clean === '/homoeopathic-treatment-for-anorectal-vascular' ||
+    clean === '/anorectal-vascular-conditions' ||
+    clean === '/anorectal-vascular' ||
+    clean === '/health-conditions/anorectal-vascular'
+  );
+};
+
+const isJointMusculoskeletalPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions' ||
+    clean === '/homoeopathic-treatment-for-joint-musculoskeletal-conditions' ||
+    clean === '/joint-musculoskeletal-chronic-conditions' ||
+    clean === '/joint-musculoskeletal-conditions' ||
+    clean === '/joint-musculoskeletal' ||
+    clean === '/health-conditions/joint-musculoskeletal'
+  );
+};
+
+const isOphthalmicEyePath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-ophthalmic-eye-conditions' ||
+    clean === '/homoeopathic-treatment-for-eye-conditions' ||
+    clean === '/ophthalmic-eye-conditions' ||
+    clean === '/eye-conditions' ||
+    clean === '/health-conditions/eye-conditions'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
-  const [currentView, setCurrentView] = useState<NavView>('home');
+  const [currentView, setCurrentView] = useState<NavView>(() => {
+    if (typeof window !== 'undefined') {
+      if (isWomensHealthPath(window.location.pathname)) {
+        return 'womens-health-care';
+      }
+      if (isRespiratoryPath(window.location.pathname)) {
+        return 'respiratory-care';
+      }
+      if (isSkinHairPath(window.location.pathname)) {
+        return 'skin-hair-care';
+      }
+      if (isRenalThyroidPath(window.location.pathname)) {
+        return 'renal-thyroid-care';
+      }
+      if (isNeurologicalPath(window.location.pathname)) {
+        return 'neurological-care';
+      }
+      if (isAnorectalVascularPath(window.location.pathname)) {
+        return 'anorectal-vascular-care';
+      }
+      if (isJointMusculoskeletalPath(window.location.pathname)) {
+        return 'joint-musculoskeletal-care';
+      }
+      if (isOphthalmicEyePath(window.location.pathname)) {
+        return 'ophthalmic-eye-care';
+      }
+    }
+    return 'home';
+  });
   const [bookingTypePreset, setBookingTypePreset] = useState<ConsultationType>('online');
   const [bookingReasonPreset, setBookingReasonPreset] = useState<string>('');
+
+  // Sync URL with currentView & handle browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = () => {
+      if (isWomensHealthPath(window.location.pathname)) {
+        setCurrentView('womens-health-care');
+      } else if (isRespiratoryPath(window.location.pathname)) {
+        setCurrentView('respiratory-care');
+      } else if (isSkinHairPath(window.location.pathname)) {
+        setCurrentView('skin-hair-care');
+      } else if (isRenalThyroidPath(window.location.pathname)) {
+        setCurrentView('renal-thyroid-care');
+      } else if (isNeurologicalPath(window.location.pathname)) {
+        setCurrentView('neurological-care');
+      } else if (isAnorectalVascularPath(window.location.pathname)) {
+        setCurrentView('anorectal-vascular-care');
+      } else if (isJointMusculoskeletalPath(window.location.pathname)) {
+        setCurrentView('joint-musculoskeletal-care');
+      } else if (isOphthalmicEyePath(window.location.pathname)) {
+        setCurrentView('ophthalmic-eye-care');
+      } else {
+        const path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+        if (path === '' || path === '/') {
+          setCurrentView('home');
+        }
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  useEffect(() => {
+    if (currentView === 'womens-health-care') {
+      const targetUrl = '/homoeopathic-treatment-for-womens-health-gynocological-care/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'womens-health-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'respiratory-care') {
+      const targetUrl = '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'respiratory-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-hair-care') {
+      const targetUrl = '/homoeopathic-treatment-for-skin-hair-scalp-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-hair-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'renal-thyroid-care') {
+      const targetUrl = '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'renal-thyroid-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'neurological-care') {
+      const targetUrl = '/homoeopathic-treatment-for-neurological-headache-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'neurological-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'anorectal-vascular-care') {
+      const targetUrl = '/homoeopathic-treatment-for-anorectal-vascular-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'anorectal-vascular-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'joint-musculoskeletal-care') {
+      const targetUrl = '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'joint-musculoskeletal-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'ophthalmic-eye-care') {
+      const targetUrl = '/homoeopathic-treatment-for-ophthalmic-eye-conditions/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'ophthalmic-eye-care' }, '', targetUrl);
+      }
+    } else if (currentView === 'home') {
+      if (
+        isWomensHealthPath(window.location.pathname) ||
+        isRespiratoryPath(window.location.pathname) ||
+        isSkinHairPath(window.location.pathname) ||
+        isRenalThyroidPath(window.location.pathname) ||
+        isNeurologicalPath(window.location.pathname) ||
+        isAnorectalVascularPath(window.location.pathname) ||
+        isJointMusculoskeletalPath(window.location.pathname) ||
+        isOphthalmicEyePath(window.location.pathname)
+      ) {
+        window.history.pushState({ view: 'home' }, '', '/');
+      }
+    }
+  }, [currentView]);
 
   // Blog Posts
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {

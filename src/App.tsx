@@ -26,6 +26,14 @@ import { AdminDashboard } from './components/AdminDashboard';
 import { FloatingWhatsapp } from './components/FloatingWhatsapp';
 import { MedicalDisclaimerModal } from './components/MedicalDisclaimerModal';
 import { ToastContainer } from './components/ToastContainer';
+import { WomensHealthCarePage } from './components/WomensHealthCarePage';
+import { RespiratoryCarePage } from './components/RespiratoryCarePage';
+import { SkinHairCarePage } from './components/SkinHairCarePage';
+import { RenalThyroidCarePage } from './components/RenalThyroidCarePage';
+import { NeurologicalCarePage } from './components/NeurologicalCarePage';
+import { AnorectalVascularCarePage } from './components/AnorectalVascularCarePage';
+import { JointMusculoskeletalCarePage } from './components/JointMusculoskeletalCarePage';
+import { OphthalmicEyeCarePage } from './components/OphthalmicEyeCarePage';
 
 const MainContent: React.FC = () => {
   const { currentView } = useClinic();
@@ -104,6 +112,166 @@ const MainContent: React.FC = () => {
           <WhyChooseClinic />
           <PatientTestimonials />
           <FinalCtaBanner />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Women's Health & Gynecological Care View
+  // URL: /homoeopathic-treatment-for-womens-health-gynocological-care/
+  if (currentView === 'womens-health-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <WomensHealthCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Respiratory, ENT & Allergy Conditions View
+  // URL: /homoeopathic-treatment-for-respiratory-ent-allergy-conditions/
+  if (currentView === 'respiratory-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RespiratoryCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Skin, Hair & Scalp Conditions View
+  // URL: /homoeopathic-treatment-for-skin-hair-scalp-conditions/
+  if (currentView === 'skin-hair-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinHairCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Renal, Urinary, Gallbladder & Thyroid Conditions View
+  // URL: /homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/
+  if (currentView === 'renal-thyroid-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RenalThyroidCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Neurological & Headache Conditions View
+  // URL: /homoeopathic-treatment-for-neurological-headache-conditions/
+  if (currentView === 'neurological-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <NeurologicalCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Anorectal & Vascular Conditions View
+  // URL: /homoeopathic-treatment-for-anorectal-vascular-conditions/
+  if (currentView === 'anorectal-vascular-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AnorectalVascularCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Joint, Musculoskeletal & Chronic Conditions View
+  // URL: /homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/
+  if (currentView === 'joint-musculoskeletal-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <JointMusculoskeletalCarePage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Ophthalmic / Eye Conditions View
+  // URL: /homoeopathic-treatment-for-ophthalmic-eye-conditions/
+  if (currentView === 'ophthalmic-eye-care') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <OphthalmicEyeCarePage />
         </main>
         <Footer />
         <ProductDetailModal />

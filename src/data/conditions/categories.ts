@@ -1,0 +1,68 @@
+import { HealthCategory } from '../../types/healthConditions';
+
+export const HEALTH_CATEGORIES: HealthCategory[] = [
+  {
+    id: 'womens-health',
+    name: "Women's Health & Gynecological Conditions",
+    shortName: "Women's Health",
+    slug: 'womens-health',
+    description: 'Personalized care for menstrual wellness, hormonal balance, PCOD, and reproductive health concerns.',
+    iconType: 'women',
+  },
+  {
+    id: 'respiratory-ent-allergy',
+    name: 'Respiratory, ENT & Allergy Conditions',
+    shortName: 'Respiratory & ENT',
+    slug: 'respiratory-ent-allergy',
+    description: 'Support for chronic sinus inflammation, allergic rhinitis, asthma, tonsillitis, and breathing comfort.',
+    iconType: 'respiratory',
+  },
+  {
+    id: 'skin-hair-scalp',
+    name: 'Skin, Hair & Scalp Conditions',
+    shortName: 'Skin & Hair',
+    slug: 'skin-hair-scalp',
+    description: 'Constitutional care for eczema, psoriasis, alopecia, hair loss, acne, hives, and dermatological balance.',
+    iconType: 'skin',
+  },
+  {
+    id: 'neurological-learning',
+    name: 'Neurological, Headache & Learning Conditions',
+    shortName: 'Neurological & Learning',
+    slug: 'neurological-learning',
+    description: 'Compassionate guidance for chronic migraines, tension headaches, memory balance, ADHD, and pediatric learning differences.',
+    iconType: 'neuro',
+  },
+  {
+    id: 'renal-urinary-thyroid',
+    name: 'Renal, Urinary, Gallbladder & Thyroid Conditions',
+    shortName: 'Renal & Thyroid',
+    slug: 'renal-urinary-thyroid',
+    description: 'Careful monitoring and supportive guidance for thyroid imbalances, goiter, renal calculi, and gallbladder health.',
+    iconType: 'renal',
+  },
+  {
+    id: 'anorectal-vascular',
+    name: 'Anorectal & Vascular Conditions',
+    shortName: 'Anorectal & Vascular',
+    slug: 'anorectal-vascular',
+    description: 'Gentle approaches for hemorrhoids, anal fissures, fistulas, and lower-extremity varicose veins.',
+    iconType: 'vascular',
+  },
+  {
+    id: 'joint-musculoskeletal',
+    name: 'Joint, Musculoskeletal & Chronic Conditions',
+    shortName: 'Joint & Spine',
+    slug: 'joint-musculoskeletal',
+    description: 'Mobility support and long-term constitutional care for osteoarthritis, spondylosis, and rheumatic stiffness.',
+    iconType: 'joint',
+  },
+  {
+    id: 'eye-conditions',
+    name: 'Eye Conditions',
+    shortName: 'Eye Care',
+    slug: 'eye-conditions',
+    description: 'Supportive care for conjunctivitis, ocular discomfort, and co-management of elevated intraocular pressure with specialist oversight.',
+    iconType: 'eye',
+  },
+];

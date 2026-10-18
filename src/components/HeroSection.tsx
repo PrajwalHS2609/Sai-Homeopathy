@@ -168,101 +168,14 @@ export const HeroSection: React.FC = () => {
                       <span>4.9 / 5.0</span>
                     </div>
 
-                    {/* Doctor Portrait Graphic */}
-                    <div className="relative w-44 h-44 sm:w-52 sm:h-52 my-3">
-                      {/* Botanical halo ring */}
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#303A88]/20 via-[#D3DBF4] to-[#45AC4B]/30 blur-xs" />
-                      
-                      {/* High-Fidelity Doctor Portrait Vector Artwork */}
-                      <svg
-                        viewBox="0 0 160 160"
-                        className="w-full h-full relative z-10 drop-shadow-lg rounded-full border-4 border-white bg-white"
-                      >
-                        <defs>
-                          <linearGradient id="drBgGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#EEF2FB" />
-                            <stop offset="100%" stopColor="#DDE6F8" />
-                          </linearGradient>
-                          <linearGradient id="drCoatGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#FFFFFF" />
-                            <stop offset="100%" stopColor="#F1F4FA" />
-                          </linearGradient>
-                          <linearGradient id="drSkinGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#E2A77A" />
-                            <stop offset="100%" stopColor="#D49463" />
-                          </linearGradient>
-                        </defs>
-
-                        {/* Soft ambient background */}
-                        <circle cx="80" cy="80" r="76" fill="url(#drBgGrad)" />
-
-                        {/* Botanical indoor plant silhouettes in backdrop */}
-                        <path d="M18 70 Q32 38 48 62 Q34 88 18 70 Z" fill="#45AC4B" opacity="0.35" />
-                        <path d="M142 65 Q126 35 112 58 Q126 82 142 65 Z" fill="#45AC4B" opacity="0.35" />
-
-                        {/* Doctor Body: Clean White Medical Consultation Coat */}
-                        <path
-                          d="M32 155 Q42 108 80 108 Q118 108 128 155 Z"
-                          fill="url(#drCoatGrad)"
-                          stroke="#C8D4EE"
-                          strokeWidth="1.5"
-                        />
-                        {/* Inner royal navy / green top */}
-                        <path d="M68 110 L80 128 L92 110 Z" fill="#303A88" />
-                        {/* Stethoscope neck loop in royal navy */}
-                        <path
-                          d="M62 112 Q62 140 76 142 Q84 142 98 112"
-                          fill="none"
-                          stroke="#303A88"
-                          strokeWidth="3.2"
-                          strokeLinecap="round"
-                        />
-                        {/* Stethoscope green-accented chest piece */}
-                        <circle cx="76" cy="144" r="4.5" fill="#45AC4B" stroke="#1E2559" strokeWidth="1.5" />
-
-                        {/* White Coat Lapels */}
-                        <path d="M52 115 L74 155 L62 155 Z" fill="#FFFFFF" />
-                        <path d="M108 115 L86 155 L98 155 Z" fill="#FFFFFF" />
-
-                        {/* Neck */}
-                        <rect x="73" y="88" width="14" height="24" rx="4" fill="url(#drSkinGrad)" />
-
-                        {/* Hair (Behind head) */}
-                        <path
-                          d="M48 68 C44 40 116 40 112 68 C116 100 112 114 106 122 C96 116 64 116 54 122 C48 114 44 100 48 68 Z"
-                          fill="#1A1F2C"
-                        />
-
-                        {/* Head / Face */}
-                        <ellipse cx="80" cy="74" rx="22" ry="26" fill="url(#drSkinGrad)" />
-
-                        {/* Hair Front Styling */}
-                        <path
-                          d="M58 64 C62 50 78 44 80 44 C82 44 98 50 102 64 C96 55 86 52 80 54 C74 52 64 55 58 64 Z"
-                          fill="#1A1F2C"
-                        />
-                        <path d="M58 64 C56 76 56 86 54 94 C59 86 62 76 60 66 Z" fill="#1A1F2C" />
-                        <path d="M102 64 C104 76 104 86 106 94 C101 86 98 76 100 66 Z" fill="#1A1F2C" />
-
-                        {/* Eyes & Eyebrows */}
-                        <path d="M68 66 Q72 64 76 66" stroke="#1A1F2C" strokeWidth="1.75" fill="none" strokeLinecap="round" />
-                        <path d="M84 66 Q88 64 92 66" stroke="#1A1F2C" strokeWidth="1.75" fill="none" strokeLinecap="round" />
-                        
-                        <ellipse cx="72" cy="73" rx="2.5" ry="2" fill="#1A1F2C" />
-                        <ellipse cx="88" cy="73" rx="2.5" ry="2" fill="#1A1F2C" />
-                        <circle cx="73" cy="72" r="0.75" fill="#FFFFFF" />
-                        <circle cx="89" cy="72" r="0.75" fill="#FFFFFF" />
-
-                        {/* Nose */}
-                        <path d="M79 73 Q80 80 77 82 L82 82" stroke="#B8764B" strokeWidth="1.25" fill="none" strokeLinecap="round" />
-
-                        {/* Warm Friendly Smile */}
-                        <path d="M73 88 Q80 94 87 88" stroke="#A84C4C" strokeWidth="2" fill="none" strokeLinecap="round" />
-
-                        {/* Subtle ear rings in silver / pearl */}
-                        <circle cx="58" cy="77" r="1.5" fill="#45AC4B" />
-                        <circle cx="102" cy="77" r="1.5" fill="#45AC4B" />
-                      </svg>
+                    {/* Doctor Portrait Graphic / Authentic HD Photo */}
+                    <div className="relative w-44 h-44 sm:w-52 sm:h-52 my-3 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gradient-to-tr from-[#303A88] to-[#45AC4B] group">
+                      <img
+                        src="/images/dr-anjali-portrait-closeup.jpg"
+                        alt="Dr. Anjali Chandrasekhar - Lead Homeopathic Physician in Uniform"
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        referrerPolicy="no-referrer"
+                      />
                     </div>
 
                     {/* Doctor Name & Designation below image */}

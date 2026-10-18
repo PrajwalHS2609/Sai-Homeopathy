@@ -25,31 +25,32 @@ export const PractitionerProfile: React.FC = () => {
               {/* Main Portrait Frame with Crisp Border */}
               <div className="relative rounded-3xl bg-white p-6 sm:p-8 border border-[#D8E1F5] shadow-lg">
                 
-                {/* Doctor Avatar / Visual representation */}
-                <div className="relative aspect-square rounded-2xl bg-gradient-to-tr from-[#EEF2FB] to-[#EDF8EE] flex flex-col items-center justify-center overflow-hidden border border-[#D3DBF4] mb-6">
+                {/* Doctor Avatar / Visual representation with Authentic HD Photo */}
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#D3DBF4] mb-6 shadow-sm group">
+                  <img
+                    src="/images/dr-anjali-portrait-closeup.jpg"
+                    alt={`${practitioner.name} - Homeopathic Physician in Uniform`}
+                    className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
                   
-                  {/* Subtle botanical backdrop */}
-                  <div className="absolute top-0 right-0 p-4 opacity-15 text-[#303A88]">
-                    <svg className="w-24 h-24" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z" />
-                    </svg>
-                  </div>
+                  {/* Subtle Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1E2559]/90 via-[#1E2559]/20 to-transparent pointer-events-none" />
 
-                  {/* Doctor Monogram & Stethoscope Emblem */}
-                  <div className="w-24 h-24 rounded-full bg-[#303A88] text-white flex items-center justify-center font-editorial font-bold text-3xl shadow-md border-4 border-white mb-3">
-                    {practitioner.avatarInitial || 'AC'}
-                  </div>
-
-                  <h3 className="font-editorial text-xl font-bold text-[#1E2559]">
-                    {practitioner.name}
-                  </h3>
-                  <p className="text-xs text-[#64748B] font-medium text-center px-4 mt-1 font-sans">
-                    {practitioner.qualifications}
-                  </p>
-
-                  <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EDF8EE] text-[11px] font-semibold text-[#2F8335] border border-[#C4EAC7]">
+                  {/* Registered Doctor Pill */}
+                  <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 text-[11px] font-bold text-[#2A7B2F] border border-[#C4EAC7] shadow-xs">
                     <ShieldCheck className="w-3.5 h-3.5 text-[#45AC4B]" />
-                    <span>Registered Homeopathic Physician</span>
+                    <span>Registered Homeopath</span>
+                  </div>
+
+                  {/* Bottom Doctor Details */}
+                  <div className="absolute bottom-3 left-3 right-3 text-white">
+                    <h3 className="font-editorial text-xl font-bold text-white">
+                      {practitioner.name}
+                    </h3>
+                    <p className="text-xs text-[#CBD5E1] font-medium font-sans">
+                      {practitioner.qualifications} • Reg. {practitioner.registrationNumber || settings.registrationNumber}
+                    </p>
                   </div>
                 </div>
 
