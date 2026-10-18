@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Bright Sunlit Clinic/Living Space -->
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFCFD"/>
+      <stop offset="60%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF2F7"/>
+    </linearGradient>
+
+    <!-- Warm Daylight Window Blur -->
+    <linearGradient id="windowDaylight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#F1F5F9" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Sofa Fabric Gradient -->
+    <linearGradient id="sofaFabric" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5E7EB"/>
+      <stop offset="50%" stop-color="#D8DCE3"/>
+      <stop offset="100%" stop-color="#CBD1DC"/>
+    </linearGradient>
+
+    <!-- Sofa Cushion Shadow -->
+    <linearGradient id="cushionShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6B7280" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Rust / Terracotta Lounge Pants Gradient -->
+    <linearGradient id="terracottaPants" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2410C"/>
+      <stop offset="50%" stop-color="#9A3412"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+
+    <!-- Sand / Tan Casual T-Shirt -->
+    <linearGradient id="sandTshirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C7A7"/>
+      <stop offset="60%" stop-color="#D4B693"/>
+      <stop offset="100%" stop-color="#BF9E77"/>
+    </linearGradient>
+
+    <!-- Uterus Halo Glow -->
+    <radialGradient id="organHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE4E6"/>
+      <stop offset="65%" stop-color="#FCE7F3" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Uterus Anatomical Gradient -->
+    <linearGradient id="organShading" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="45%" stop-color="#E15249"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Sofa & Pillow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4B5563" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- Medical Doodle Pattern (Repeated faint wallpaper elements) -->
+    <pattern id="medicalDoodles" x="0" y="0" width="160" height="120" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#E15249" stroke-opacity="0.065" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Heart / Vital Pulse -->
+        <path d="M15,25 C12,18 4,18 4,26 C4,35 15,42 15,42 C15,42 26,35 26,26 C26,18 18,18 15,25 Z"/>
+        <!-- Stethoscope outline -->
+        <path d="M85,25 C85,38 95,38 95,25 L95,15"/>
+        <circle cx="102" cy="45" r="4"/>
+        <path d="M90,38 C90,48 102,48 102,45"/>
+        <!-- Small Uterus icon -->
+        <path d="M48,85 C42,75 32,80 32,85 C32,88 38,90 44,95 C45,98 48,105 48,105 C48,105 51,98 52,95 C58,90 64,88 64,85 C64,80 54,75 48,85 Z"/>
+        <!-- Cross / First Aid -->
+        <path d="M135,75 L135,95 M125,85 L145,85"/>
+        <!-- Water / Hormone drop -->
+        <path d="M125,25 C125,25 133,37 133,42 C133,46 129,50 125,50 C121,50 117,46 117,42 C117,37 125,25 125,25 Z"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- 1. BASE BACKGROUND WALL -->
+  <rect width="1200" height="600" fill="url(#wallGradient)"/>
+  <!-- Subtle Medical Line-Art Wallpaper in Header Area -->
+  <rect x="0" y="0" width="1200" height="280" fill="url(#medicalDoodles)"/>
+
+  <!-- 2. LIVING ROOM ENVIRONMENT (Left Sunlit Window & Plant) -->
+  <g transform="translate(0, 80)">
+    <!-- Tall Sunlit Window (Left Background) -->
+    <rect x="18" y="40" width="165" height="420" fill="url(#windowDaylight)" rx="4"/>
+    <line x1="18" y1="40" x2="183" y2="40" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="18" y1="200" x2="183" y2="200" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="18" y1="360" x2="183" y2="360" stroke="#CBD5E1" stroke-width="2"/>
+    <line x1="100" y1="40" x2="100" y2="460" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Lush Green Indoor Plant on Left Edge -->
+    <g transform="translate(0, 150)">
+      <path d="M-10,80 Q25,60 40,20 Q15,45 -10,80 Z" fill="#22C55E" fill-opacity="0.8"/>
+      <path d="M-20,120 Q30,90 55,50 Q20,80 -20,120 Z" fill="#16A34A" fill-opacity="0.85"/>
+      <path d="M-10,160 Q40,140 60,100 Q20,130 -10,160 Z" fill="#15803D" fill-opacity="0.9"/>
+      <path d="M-15,210 Q35,180 50,140 Q15,170 -15,210 Z" fill="#166534" fill-opacity="0.85"/>
+      <path d="M-25,250 Q25,220 38,180 Q8,210 -25,250 Z" fill="#15803D" fill-opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- 3. COMFORTABLE LIGHT GREY FABRIC SOFA -->
+  <g transform="translate(140, 320)">
+    <!-- Sofa Back Cushion Rest -->
+    <rect x="0" y="0" width="940" height="190" rx="20" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Vertical Cushion Seam Lines on Sofa Back -->
+    <line x1="310" y1="5" x2="310" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-opacity="0.45"/>
+    <line x1="620" y1="5" x2="620" y2="180" stroke="#94A3B8" stroke-width="1.8" stroke-opacity="0.45"/>
+
+    <!-- Left Armrest of Sofa (Rounded) -->
+    <rect x="-35" y="100" width="105" height="180" rx="35" fill="url(#sofaFabric)" stroke="#CBD5E1" stroke-width="2"/>
+    <ellipse cx="17" cy="115" rx="35" ry="16" fill="#F1F5F9"/>
+
+    <!-- Right Armrest of Sofa (Rounded) -->
+    <rect x="880" y="100" width="105" height="180" rx="35" fill="url(#sofaFabric)" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Main Sofa Seat Cushions (Thick, Soft, Plump) -->
+    <rect x="35" y="165" width="875" height="115" rx="16" fill="url(#sofaFabric)" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Center Seat Cushion Crease -->
+    <line x1="472" y1="170" x2="472" y2="280" stroke="#94A3B8" stroke-width="2" stroke-opacity="0.5"/>
+
+    <!-- Right Accent Cushion (Soft Oatmeal Textured Pillow) -->
+    <rect x="850" y="60" width="85" height="130" rx="16" fill="#FAF5EF" stroke="#E2D9CC" stroke-width="2" transform="rotate(-10 892 125)"/>
+
+    <!-- Left Headrest Pillow (Where Woman's Head Rests) -->
+    <g transform="translate(25, 45)">
+      <!-- Soft White Diamond-Quilted Bed Pillow -->
+      <path d="M10,40 Q130,10 240,45 Q260,110 230,150 Q120,175 15,145 Q-10,90 10,40 Z" 
+            fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#softShadow)"/>
+      <!-- Pillow Corner Shadows and Stitching -->
+      <path d="M35,60 Q125,35 215,65" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+      <path d="M45,120 Q125,145 205,125" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+      <!-- Indentation where head lies -->
+      <ellipse cx="150" cy="100" rx="45" ry="25" fill="#F8FAFC" fill-opacity="0.8"/>
+    </g>
+  </g>
+
+  <!-- 4. WOMAN LYING IN FETAL POSITION ON SOFA (Cramping Abdominal Pain) -->
+  <g transform="translate(230, 310)">
+    
+    <!-- Curly Dark Brown/Black Hair resting on pillow -->
+    <g transform="translate(105, 50)">
+      <!-- Voluminous Curly Mass -->
+      <path d="M15,10 C-15,15 -35,45 -30,85 C-25,115 -5,145 25,150 C55,155 75,135 85,115 C95,95 90,65 75,40 C60,15 35,5 15,10 Z" fill="#1C140E"/>
+      <!-- Soft Textured Curls -->
+      <circle cx="-12" cy="45" r="16" fill="#2A1B13"/>
+      <circle cx="-20" cy="75" r="18" fill="#22160F"/>
+      <circle cx="-15" cy="105" r="17" fill="#2E1C14"/>
+      <circle cx="5" cy="130" r="16" fill="#251710"/>
+      <circle cx="35" cy="135" r="15" fill="#2E1C14"/>
+      <circle cx="65" cy="115" r="16" fill="#22160F"/>
+      <circle cx="75" cy="85" r="17" fill="#2A1B13"/>
+      <circle cx="60" cy="55" r="18" fill="#1C140E"/>
+      <circle cx="30" cy="25" r="18" fill="#251710"/>
+      <circle cx="5" cy="30" r="16" fill="#2A1B13"/>
+    </g>
+
+    <!-- Face and Neck (Lying profile facing viewer, eyes closed, pained grimace) -->
+    <g transform="translate(135, 75)">
+      <!-- Smooth Warm Skin Tone -->
+      <path d="M25,35 Q65,25 75,50 Q85,85 70,110 Q45,120 20,105 Q10,75 25,35 Z" fill="#DEB087"/>
+      <path d="M28,38 Q62,30 70,52 Q78,82 66,104 Q44,112 24,100 Q16,74 28,38 Z" fill="#E8BD95"/>
+      <!-- Closed Eye in Pain (Furrowed Eyebrow & Tight Eyelid) -->
+      <path d="M36,54 Q48,46 58,52" fill="none" stroke="#5C361D" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M38,62 Q47,68 56,62" fill="none" stroke="#5C361D" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Nose & Mouth (Tight pained expression) -->
+      <path d="M52,65 L56,78 L49,81" fill="none" stroke="#CA956B" stroke-width="1.8"/>
+      <path d="M42,92 Q48,89 54,92" fill="none" stroke="#B91C1C" stroke-width="2" stroke-linecap="round"/>
+      <!-- Pained tension wrinkle near brow -->
+      <line x1="38" y1="48" x2="42" y2="52" stroke="#B47A50" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="42" y1="46" x2="45" y2="51" stroke="#B47A50" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Upper Body: Sandy-Tan Casual T-Shirt -->
+    <g transform="translate(190, 80)">
+      <!-- T-Shirt Torso lying curled sideways -->
+      <path d="M20,60 C60,40 120,45 160,55 C190,65 210,95 200,140 C170,165 90,160 30,150 C10,130 5,80 20,60 Z" fill="url(#sandTshirt)"/>
+      <!-- Neckline -->
+      <path d="M22,62 Q38,78 52,68" fill="none" stroke="#C2A078" stroke-width="2.5"/>
+      <!-- Fabric folds and wrinkles from curled posture -->
+      <path d="M70,80 Q105,95 135,85" fill="none" stroke="#B8946C" stroke-width="2"/>
+      <path d="M80,105 Q120,120 160,110" fill="none" stroke="#B8946C" stroke-width="2"/>
+      <path d="M95,130 Q130,140 170,132" fill="none" stroke="#B8946C" stroke-width="2"/>
+      
+      <!-- Right Arm curved across torso, hand gripping lower abdomen -->
+      <path d="M90,52 C150,45 180,75 165,120 C155,145 140,150 125,145" 
+            fill="none" stroke="#E8BD95" stroke-width="20" stroke-linecap="round"/>
+      <!-- Hand clutching the lower belly in distress -->
+      <ellipse cx="120" cy="142" rx="14" ry="10" fill="#DEB087" transform="rotate(-15 120 142)"/>
+      <ellipse cx="112" cy="145" rx="5" ry="4" fill="#DEB087"/>
+      <ellipse cx="118" cy="149" rx="5" ry="4" fill="#DEB087"/>
+      <ellipse cx="125" cy="148" rx="5" ry="4" fill="#DEB087"/>
+    </g>
+
+    <!-- Lower Body: Terracotta / Rust-Red Casual Lounge Pants Curled in Fetal Position -->
+    <g transform="translate(360, 115)">
+      <!-- Pelvis & Upper Thighs Bent Upward Toward Chest -->
+      <path d="M15,25 C65,15 110,40 125,75 C140,115 120,160 65,165 C20,165 -15,135 -10,80 C-5,50 5,30 15,25 Z" fill="url(#terracottaPants)"/>
+      
+      <!-- Knees Curled Up (Double leg volume) -->
+      <!-- Lower Leg / Knee Section 1 (Front Leg) -->
+      <ellipse cx="50" cy="70" rx="55" ry="32" fill="#C2410C" transform="rotate(25 50 70)"/>
+      <ellipse cx="55" cy="120" rx="55" ry="34" fill="#9A3412" transform="rotate(-10 55 120)"/>
+      
+      <!-- Creases of Bent Linen Pants -->
+      <path d="M15,65 Q55,85 85,60" fill="none" stroke="#7C2D12" stroke-width="2.5"/>
+      <path d="M25,100 Q70,115 105,95" fill="none" stroke="#7C2D12" stroke-width="2.5"/>
+      <path d="M40,135 Q75,145 110,130" fill="none" stroke="#7C2D12" stroke-width="2"/>
+
+      <!-- Lower Calves Extending Towards the Right -->
+      <path d="M110,95 C150,105 210,115 250,125 C255,145 220,155 160,150 C125,145 105,130 110,95 Z" fill="#9A3412"/>
+      
+      <!-- Bare Feet Resting on the Sofa Fabric -->
+      <g transform="translate(245, 118)">
+        <!-- Ankle & Foot 1 -->
+        <path d="M0,10 Q25,8 45,20 Q48,32 35,35 Q10,32 0,22 Z" fill="#E8BD95"/>
+        <ellipse cx="46" cy="22" rx="5" ry="4" fill="#DEB087"/>
+        <ellipse cx="44" cy="27" rx="4.5" ry="3.5" fill="#DEB087"/>
+        <ellipse cx="39" cy="31" rx="4" ry="3" fill="#DEB087"/>
+        <!-- Foot 2 (peeking behind) -->
+        <path d="M-15,5 Q10,5 30,14 Q32,24 20,26 Z" fill="#D3A277"/>
+      </g>
+    </g>
+
+  </g>
+
+  <!-- 5. TOP CENTER HEADER & TYPOGRAPHY -->
+  <g transform="translate(585, 130)" text-anchor="middle">
+    <!-- Line 1: Severe Period Pain: (Vibrant Warm Coral/Red) -->
+    <text x="0" y="0" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="48" 
+          font-weight="900" 
+          fill="#E15249" 
+          letter-spacing="-0.5">
+      Severe Period Pain:
+    </text>
+
+    <!-- Line 2 & 3: When Are Menstrual Cramps a Concern? (Deep Medical Teal / Petrol Blue) -->
+    <text x="0" y="54" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="52" 
+          font-weight="900" 
+          fill="#086982" 
+          letter-spacing="-0.8">
+      When Are Menstrual
+    </text>
+
+    <text x="0" y="106" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="52" 
+          font-weight="900" 
+          fill="#086982" 
+          letter-spacing="-0.8">
+      Cramps a Concern?
+    </text>
+
+    <!-- Coral Divider Bar -->
+    <rect x="-35" y="124" width="70" height="3.5" rx="2" fill="#E15249" fill-opacity="0.85"/>
+
+    <!-- Subtitle: Understand the causes, warning signs and treatment options -->
+    <text x="0" y="152" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+          font-size="20" 
+          font-weight="500" 
+          fill="#9C5450" 
+          letter-spacing="0.2">
+      Understand the causes, warning signs
+    </text>
+    <text x="0" y="178" 
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+          font-size="20" 
+          font-weight="500" 
+          fill="#9C5450" 
+          letter-spacing="0.2">
+      and treatment options
+    </text>
+  </g>
+
+  <!-- 6. UTERUS / OVARIES ANATOMICAL ICON WITH ACUTE PAIN FLASHES (Upper Right of Text) -->
+  <g transform="translate(950, 195)">
+    <!-- Soft Pink Circular Glow Ring -->
+    <circle cx="0" cy="0" r="54" fill="url(#organHalo)"/>
+    <circle cx="0" cy="0" r="42" fill="#FFE4E6" fill-opacity="0.45"/>
+
+    <!-- Anatomical Female Reproductive Organ Illustration -->
+    <g transform="translate(0, -5) scale(0.72)">
+      <!-- Central Uterus Body & Fundus -->
+      <path d="M-18,-15 C-25,-35 25,-35 18,-15 C14,10 8,35 6,55 C4,62 -4,62 -6,55 C-8,35 -14,10 -18,-15 Z" 
+            fill="url(#organShading)" stroke="#BE123C" stroke-width="1.8"/>
+
+      <!-- Inner Endometrial Cavity (Soft Pink) -->
+      <path d="M-10,-12 C-14,-22 14,-22 10,-12 C8,6 4,28 3,42 C2,46 -2,46 -3,42 C-4,28 -8,6 -10,-12 Z" 
+            fill="#FECDD3" fill-opacity="0.85"/>
+
+      <!-- Cervix & Vaginal Canal -->
+      <rect x="-6" y="55" width="12" height="15" rx="3" fill="#BE123C"/>
+      <line x1="0" y1="55" x2="0" y2="70" stroke="#FDA4AF" stroke-width="1.5"/>
+
+      <!-- Left Fallopian Tube & Ovary -->
+      <path d="M-16,-22 C-35,-42 -55,-25 -65,-12 C-70,-5 -62,8 -55,0" 
+            fill="none" stroke="#E15249" stroke-width="5" stroke-linecap="round"/>
+      <!-- Left Ovary (Oval with follicles) -->
+      <ellipse cx="-60" cy="8" rx="10" ry="7" fill="#FDA4AF" stroke="#BE123C" stroke-width="1.5"/>
+      <circle cx="-62" cy="7" r="1.5" fill="#BE123C"/>
+      <circle cx="-58" cy="9" r="1.5" fill="#BE123C"/>
+
+      <!-- Right Fallopian Tube & Ovary -->
+      <path d="M16,-22 C35,-42 55,-25 65,-12 C70,-5 62,8 55,0" 
+            fill="none" stroke="#E15249" stroke-width="5" stroke-linecap="round"/>
+      <!-- Right Ovary -->
+      <ellipse cx="60" cy="8" rx="10" ry="7" fill="#FDA4AF" stroke="#BE123C" stroke-width="1.5"/>
+      <circle cx="62" cy="7" r="1.5" fill="#BE123C"/>
+      <circle cx="58" cy="9" r="1.5" fill="#BE123C"/>
+    </g>
+
+    <!-- Acute Cramping Pain Radiating Lightning Bolts (Left Side) -->
+    <path d="M-55,-18 L-68,-22 L-60,-15 L-74,-16" fill="none" stroke="#E15249" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-58,10 L-72,12 L-65,18 L-78,22" fill="none" stroke="#E15249" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-50,30 L-62,38 L-55,42 L-66,50" fill="none" stroke="#E15249" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Acute Cramping Pain Radiating Lightning Bolts (Right Side) -->
+    <path d="M55,-18 L68,-22 L60,-15 L74,-16" fill="none" stroke="#E15249" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M58,10 L72,12 L65,18 L78,22" fill="none" stroke="#E15249" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50,30 L62,38 L55,42 L66,50" fill="none" stroke="#E15249" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+</svg>

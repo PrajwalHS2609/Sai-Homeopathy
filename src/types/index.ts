@@ -156,7 +156,7 @@ export interface BlogPost {
   id: string;
   title: string;
   slug: string;
-  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief';
+  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief' | "Women's Health";
   excerpt: string;
   content: string[];
   keyTakeaways: string[];
@@ -166,5 +166,9 @@ export interface BlogPost {
   publishedDate: string;
   tags: string[];
   featured?: boolean;
+  image?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  canonicalUrl?: string;
 }
 

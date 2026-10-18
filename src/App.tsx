@@ -132,6 +132,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <WomensHealthCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -152,6 +153,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <RespiratoryCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -172,6 +174,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <SkinHairCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -192,6 +195,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <RenalThyroidCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -212,6 +216,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <NeurologicalCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -232,6 +237,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <AnorectalVascularCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -252,6 +258,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <JointMusculoskeletalCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -272,6 +279,7 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <OphthalmicEyeCarePage />
+          <FinalCtaBanner />
         </main>
         <Footer />
         <ProductDetailModal />

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vascBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDFA"/>
+      <stop offset="50%" stop-color="#CCFBF1"/>
+      <stop offset="100%" stop-color="#EEF2FB"/>
+    </linearGradient>
+    <linearGradient id="tealWave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="crimsonVein" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+    <linearGradient id="deepVascNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134E4A"/>
+      <stop offset="100%" stop-color="#1E2559"/>
+    </linearGradient>
+    <filter id="vascShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F766E" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#vascBg)"/>
+  <circle cx="500" cy="120" r="180" fill="#99F6E4" opacity="0.4"/>
+  <circle cx="90" cy="680" r="210" fill="#CCFBF1" opacity="0.5"/>
+
+  <!-- Top Specialty Badge -->
+  <g transform="translate(50, 45)">
+    <rect width="500" height="42" rx="21" fill="#FFFFFF" filter="url(#vascShadow)"/>
+    <circle cx="28" cy="21" r="9" fill="#0D9488"/>
+    <path d="M25 21 L27 23 L31 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="46" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#115E59" letter-spacing="1.5">
+      ANORECTAL &amp; VASCULAR CONDITIONS
+    </text>
+  </g>
+
+  <!-- Main Illustration Board -->
+  <g transform="translate(50, 115)">
+    <rect width="500" height="520" rx="28" fill="#FFFFFF" filter="url(#vascShadow)"/>
+    <rect x="20" y="20" width="460" height="480" rx="22" fill="url(#vascBg)"/>
+
+    <!-- Concentric Venous Circulation Rings -->
+    <circle cx="250" cy="220" r="170" stroke="#99F6E4" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+    <circle cx="250" cy="220" r="130" stroke="#5EEAD4" stroke-width="2.5" fill="none"/>
+    <circle cx="250" cy="220" r="75" fill="#FFFFFF" filter="url(#vascShadow)"/>
+
+    <!-- Vascular Vein Valve & Tissue Healing Illustration -->
+    <g transform="translate(250, 220)">
+      <!-- Vertical Venous Pathway Outline -->
+      <path d="M-30 -90 L-30 90 M30 -90 L30 90" stroke="#0D9488" stroke-width="4.5" stroke-linecap="round"/>
+      
+      <!-- Venous Valve Flaps (Preventing Reflux) -->
+      <path d="M-30 -20 Q0 5 0 20 M30 -20 Q0 5 0 20" stroke="#0F766E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M-30 40 Q0 65 0 80 M30 40 Q0 65 0 80" stroke="#0F766E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Upward Blood Flow Arrows -->
+      <path d="M0 -60 L0 -35 M-5 -50 L0 -60 L5 -50" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M0 0 L0 25 M-5 10 L0 0 L5 10" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+      <!-- Soothing Mucosal Cushion Ring / Sphincter Harmony -->
+      <circle cx="0" cy="0" r="60" stroke="#2DD4BF" stroke-width="2" fill="none" stroke-dasharray="5 5"/>
+      <circle cx="0" cy="0" r="12" fill="url(#tealWave)"/>
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+
+      <!-- Microvascular Capillary Network Loops -->
+      <path d="M-60 -40 C-85 -30 -95 -10 -80 15 C-65 40 -80 60 -65 75" stroke="#E11D48" stroke-width="2" fill="none" opacity="0.75" stroke-dasharray="4 3"/>
+      <path d="M60 -40 C85 -30 95 -10 80 15 C65 40 80 60 65 75" stroke="#38BDF8" stroke-width="2" fill="none" opacity="0.85" stroke-dasharray="4 3"/>
+    </g>
+
+    <!-- 4 Specialized Pillars -->
+    <!-- Hemorrhoids / Piles -->
+    <g transform="translate(95, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#vascShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0FDFA"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#115E59" text-anchor="middle">PILES &amp;</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0D9488" text-anchor="middle">CUSHIONS</text>
+    </g>
+
+    <!-- Anal Fissures -->
+    <g transform="translate(405, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#vascShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0FDFA"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#115E59" text-anchor="middle">ANAL</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0D9488" text-anchor="middle">FISSURES</text>
+    </g>
+
+    <!-- Anal Fistulas -->
+    <g transform="translate(95, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#vascShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0FDFA"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#115E59" text-anchor="middle">FISTULA</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0D9488" text-anchor="middle">CARE</text>
+    </g>
+
+    <!-- Varicose Veins -->
+    <g transform="translate(405, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#vascShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0FDFA"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" fill="#115E59" text-anchor="middle">VARICOSE</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0D9488" text-anchor="middle">VEINS</text>
+    </g>
+
+    <!-- Treatment Highlights Box -->
+    <g transform="translate(40, 400)">
+      <rect width="420" height="80" rx="16" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.5"/>
+      <text x="210" y="27" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1E2559" text-anchor="middle">
+        Pelvic Venous Decompression Protocols
+      </text>
+      <text x="210" y="47" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="middle">
+        Relax Sphincter Spasm • Decongest Portal Stasis • Non-Surgical
+      </text>
+      <text x="210" y="67" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#0D9488" text-anchor="middle">
+        ✓ Hamamelis • Aesculus • Ratanhia • Collinsonia • Nitric Acid
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Quality Strip -->
+  <g transform="translate(50, 655)">
+    <rect width="500" height="95" rx="20" fill="url(#deepVascNavy)" filter="url(#vascShadow)"/>
+    <text x="40" y="38" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">
+      Non-Surgical Proctology &amp; Phlebology
+    </text>
+    <text x="40" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#CCFBF1">
+      Strengthening Venous Wall Elasticity and Mucosal Healing
+    </text>
+    <text x="40" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#5EEAD4">
+      ★ Gentle Defecation Comfort • Zero Chemical Laxative Dependency
+    </text>
+  </g>
+</svg>

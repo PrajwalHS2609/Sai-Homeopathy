@@ -548,35 +548,31 @@ export const WomensHealthCarePage: React.FC = () => {
                 {/* Decorative Soft Ambient Glow */}
                 <div className="absolute -inset-2 bg-gradient-to-tr from-[#303A88]/20 via-[#45AC4B]/15 to-[#EEF2FB] rounded-[36px] blur-xl opacity-80" />
 
-                {/* Main Doctor Frame */}
+                {/* Main Treatment Protocol Frame */}
                 <div className="relative rounded-3xl bg-white p-3 sm:p-4 border border-[#D8E1F5] shadow-2xl">
                   
-                  {/* Photo Container: Uncut, Crystal Clear High-Definition Presentation */}
+                  {/* Photo Container */}
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-b from-[#EEF2FB] to-[#D8E1F5] shadow-inner group">
                     <img
-                      src="/images/dr-anjali-malayali-doctor.jpg"
-                      alt="Dr. Anjali Chandrasekhar - Indian Malayali Woman Doctor in Uniform with Stethoscope and Kerala Kasavu Saree"
-                      className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = '/images/dr-anjali-portrait-closeup.jpg';
-                      }}
+                      src="/images/treatment-womens-health.svg"
+                      alt="Women's Health & Gynecology Clinical Homeopathic Treatment Protocol"
+                      className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
                     />
 
-                    {/* Subtle Corner Vignette to ensure badges pop, without hiding uniform */}
+                    {/* Subtle Corner Vignette */}
                     <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/40 to-transparent pointer-events-none" />
 
-                    {/* Top Left: Authentic Malayali Doctor Badge */}
+                    {/* Top Left: Treatment Focus Badge */}
                     <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#1E2559] border border-[#D8E1F5] shadow-md">
-                      <span className="w-2 h-2 rounded-full bg-[#45AC4B] animate-pulse" />
-                      <span>Malayali Doctor • Kerala</span>
+                      <span className="w-2 h-2 rounded-full bg-[#E11D48] animate-pulse" />
+                      <span>Gynecological & Hormonal Protocol</span>
                     </div>
 
-                    {/* Top Right: Uniform & BHMS Badge + Zoom Button */}
+                    {/* Top Right: Protocol Badge + Zoom Button */}
                     <div className="absolute top-3 right-3 flex items-center gap-1.5">
                       <div className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-[#303A88]/95 backdrop-blur-md text-white text-[11px] font-bold shadow-md">
                         <Award className="w-3.5 h-3.5 text-[#45AC4B]" />
-                        <span>BHMS • In Uniform</span>
+                        <span>Evidence-Based Care</span>
                       </div>
                       <button
                         onClick={() => setIsPhotoModalOpen(true)}
@@ -642,12 +638,11 @@ export const WomensHealthCarePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-5 bg-[#EEF2FB] rounded-3xl p-6 sm:p-8 border border-[#D8E1F5] relative">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-white shadow-md shrink-0 bg-[#303A88]">
+                <div className="w-16 h-16 rounded-2xl overflow-hidden border-2 border-white shadow-md shrink-0 bg-white">
                   <img
-                    src="/images/dr-anjali-portrait-closeup.jpg"
-                    alt="Dr. Anjali Chandrasekhar (BHMS)"
+                    src="/images/treatment-womens-health.svg"
+                    alt="Women's Health Protocol"
                     className="w-full h-full object-cover object-center"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div>
@@ -1002,14 +997,13 @@ export const WomensHealthCarePage: React.FC = () => {
             <div className="flex items-center gap-5">
               <div
                 onClick={() => setIsPhotoModalOpen(true)}
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-white/30 shadow-lg shrink-0 cursor-pointer relative group"
-                title="Click to view HD photo"
+                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-white/30 shadow-lg shrink-0 cursor-pointer relative group bg-white"
+                title="Click to view treatment artwork"
               >
                 <img
-                  src="/images/dr-anjali-malayali-doctor.jpg"
-                  alt="Dr. Anjali Chandrasekhar - Malayali Woman Doctor in Uniform"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform"
-                  referrerPolicy="no-referrer"
+                  src="/images/treatment-womens-health.svg"
+                  alt="Women's Health Treatment Protocol"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform"
                 />
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
                   <Maximize2 className="w-5 h-5 text-white" />
@@ -1196,13 +1190,12 @@ export const WomensHealthCarePage: React.FC = () => {
               </button>
             </div>
 
-            {/* High-Definition Photo Container */}
+            {/* Treatment Artwork Container */}
             <div className="relative max-h-[65vh] overflow-hidden bg-slate-900 flex items-center justify-center">
               <img
-                src="/images/dr-anjali-malayali-doctor.jpg"
-                alt="Dr. Anjali Chandrasekhar - Indian Malayali Woman Doctor in Uniform with Stethoscope"
+                src="/images/treatment-womens-health.svg"
+                alt="Women's Health Clinical Homeopathic Treatment Protocol Artwork"
                 className="w-full h-auto max-h-[65vh] object-contain"
-                referrerPolicy="no-referrer"
               />
             </div>
 

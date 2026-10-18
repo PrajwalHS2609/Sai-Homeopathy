@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0F9FF"/>
+      <stop offset="50%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#EEF2FB"/>
+    </linearGradient>
+    <linearGradient id="skyCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="aquaGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="deepRoyal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2559"/>
+      <stop offset="100%" stop-color="#303A88"/>
+    </linearGradient>
+    <filter id="rtShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284C7" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#rtBg)"/>
+  <circle cx="500" cy="120" r="180" fill="#BAE6FD" opacity="0.4"/>
+  <circle cx="90" cy="680" r="210" fill="#E0F2FE" opacity="0.5"/>
+
+  <!-- Top Specialty Badge -->
+  <g transform="translate(50, 45)">
+    <rect width="500" height="42" rx="21" fill="#FFFFFF" filter="url(#rtShadow)"/>
+    <circle cx="28" cy="21" r="9" fill="#0284C7"/>
+    <path d="M25 21 L27 23 L31 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="46" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#0369A1" letter-spacing="1.5">
+      RENAL, URINARY, GALLBLADDER &amp; THYROID
+    </text>
+  </g>
+
+  <!-- Main Illustration Board -->
+  <g transform="translate(50, 115)">
+    <rect width="500" height="520" rx="28" fill="#FFFFFF" filter="url(#rtShadow)"/>
+    <rect x="20" y="20" width="460" height="480" rx="22" fill="url(#rtBg)"/>
+
+    <!-- Concentric Filtration & Fluid Dynamics Rings -->
+    <circle cx="250" cy="220" r="170" stroke="#BAE6FD" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+    <circle cx="250" cy="220" r="130" stroke="#7DD3FC" stroke-width="2.5" fill="none"/>
+    <circle cx="250" cy="220" r="75" fill="#FFFFFF" filter="url(#rtShadow)"/>
+
+    <!-- Dual Kidney & Butterfly Thyroid Anatomy Illustration -->
+    <g transform="translate(250, 220)">
+      <!-- Left Kidney Bean Shape -->
+      <path d="M-25 -50 C-65 -45 -80 -10 -75 25 C-70 65 -45 75 -25 55 C-35 30 -35 -20 -25 -50 Z" fill="url(#skyCyan)" opacity="0.9"/>
+      <!-- Right Kidney Bean Shape -->
+      <path d="M25 -50 C65 -45 80 -10 75 25 C70 65 45 75 25 55 C35 30 35 -20 25 -50 Z" fill="url(#skyCyan)" opacity="0.9"/>
+
+      <!-- Ureter Drainage Ducts -->
+      <path d="M-30 40 C-20 65 -15 90 -10 115" stroke="#0284C7" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M30 40 C20 65 15 90 10 115" stroke="#0284C7" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Thyroid Butterfly Gland Silhouette at Top Center -->
+      <path d="M0 -75 C-15 -95 -45 -95 -40 -65 C-35 -40 -15 -55 0 -60 C15 -55 35 -40 40 -65 C45 -95 15 -95 0 -75 Z" fill="#38BDF8" opacity="0.95"/>
+      <rect x="-2" y="-72" width="4" height="15" rx="2" fill="#FFFFFF"/>
+
+      <!-- Fluid Dynamics Droplet & Dissolution Particles -->
+      <circle cx="0" cy="15" r="9" fill="url(#aquaGlow)"/>
+      <path d="M0 6 C-5 14 -7 18 0 24 C7 18 5 14 0 6 Z" fill="#FFFFFF"/>
+
+      <!-- Dissolving Micro-Crystals (Calculi Dissolution) -->
+      <circle cx="-50" cy="15" r="3" fill="#38BDF8"/>
+      <circle cx="-42" cy="25" r="2" fill="#BAE6FD"/>
+      <circle cx="50" cy="15" r="3" fill="#38BDF8"/>
+      <circle cx="42" cy="25" r="2" fill="#BAE6FD"/>
+    </g>
+
+    <!-- 4 Specialized Pillars -->
+    <!-- Kidney Stones (Calculi) -->
+    <g transform="translate(95, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#rtShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0F9FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0369A1" text-anchor="middle">KIDNEY</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">STONES</text>
+    </g>
+
+    <!-- Thyroid Imbalances -->
+    <g transform="translate(405, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#rtShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0F9FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0369A1" text-anchor="middle">THYROID</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">BALANCE</text>
+    </g>
+
+    <!-- Gallbladder Stones -->
+    <g transform="translate(95, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#rtShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0F9FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#0369A1" text-anchor="middle">GALLBLADDER</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">CALCULI</text>
+    </g>
+
+    <!-- Urinary Tract (UTI) Comfort -->
+    <g transform="translate(405, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#rtShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#F0F9FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0369A1" text-anchor="middle">URINARY</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#0284C7" text-anchor="middle">HEALTH</text>
+    </g>
+
+    <!-- Treatment Highlights Box -->
+    <g transform="translate(40, 400)">
+      <rect width="420" height="80" rx="16" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+      <text x="210" y="27" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1E2559" text-anchor="middle">
+        Litholytic &amp; Endocrine Constitutional Care
+      </text>
+      <text x="210" y="47" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="middle">
+        Promote Natural Stone Passage • Regulate TSH • Non-Surgical
+      </text>
+      <text x="210" y="67" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#0284C7" text-anchor="middle">
+        ✓ Berberis Vulgaris • Lycopodium • Thyroidinum • Sarsaparilla
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Quality Strip -->
+  <g transform="translate(50, 655)">
+    <rect width="500" height="95" rx="20" fill="url(#deepRoyal)" filter="url(#rtShadow)"/>
+    <text x="40" y="38" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">
+      Non-Invasive Renal &amp; Endocrine Care
+    </text>
+    <text x="40" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#D8E1F5">
+      Spasmolytic Relief and Urinary Tract Cleansing
+    </text>
+    <text x="40" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#38BDF8">
+      ★ Ultrasound Monitored • Renal Safe • No Synthetic Diuretics
+    </text>
+  </g>
+</svg>

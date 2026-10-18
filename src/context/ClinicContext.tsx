@@ -200,10 +200,34 @@ const isOphthalmicEyePath = (pathname: string) => {
   );
 };
 
+const isPcodBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/pcod-symptoms-causes-diagnosis-treatment' ||
+    clean === '/pcod-explained-symptoms-causes-diagnosis-and-treatment-options' ||
+    clean === '/blog/pcod-symptoms-causes-diagnosis-treatment'
+  );
+};
+
+const isSeverePeriodPainPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/severe-period-pain-when-to-worry' ||
+    clean === '/blog/severe-period-pain-when-to-worry' ||
+    clean === '/severe-period-pain-when-are-menstrual-cramps-a-concern'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
     if (typeof window !== 'undefined') {
+      if (isSeverePeriodPainPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isPcodBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
       if (isWomensHealthPath(window.location.pathname)) {
         return 'womens-health-care';
       }
@@ -234,6 +258,64 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [bookingTypePreset, setBookingTypePreset] = useState<ConsultationType>('online');
   const [bookingReasonPreset, setBookingReasonPreset] = useState<string>('');
 
+  // Blog Posts & Reader State
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
+    const removedIds = new Set(['post-1', 'post-2', 'post-3', 'post-4']);
+    const removedSlugs = new Set([
+      'understanding-constitutional-homeopathy',
+      'seasonal-allergies-respiratory-health',
+      'restoring-digestive-equilibrium-naturally',
+      'managing-sensory-overload-restful-sleep',
+    ]);
+
+    const saved = localStorage.getItem('sai_clinic_blogs');
+    if (saved) {
+      try {
+        let parsed: BlogPost[] = JSON.parse(saved);
+        // Exclude user-requested removed articles
+        parsed = parsed.filter(
+          (p) => !removedIds.has(p.id) && !removedSlugs.has(p.slug)
+        );
+
+        const severePeriodPainPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain');
+        if (severePeriodPainPost) {
+          const sIdx = parsed.findIndex((p) => p.id === 'post-severe-period-pain' || p.slug === 'severe-period-pain-when-to-worry');
+          if (sIdx >= 0) {
+            parsed[sIdx] = { ...parsed[sIdx], ...severePeriodPainPost, image: severePeriodPainPost.image };
+          } else {
+            parsed.unshift(severePeriodPainPost);
+          }
+        }
+        const pcodPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod');
+        if (pcodPost) {
+          const pIdx = parsed.findIndex((p) => p.id === 'post-pcod' || p.slug === 'pcod-symptoms-causes-diagnosis-treatment');
+          if (pIdx >= 0) {
+            parsed[pIdx] = { ...parsed[pIdx], ...pcodPost, image: pcodPost.image };
+          } else {
+            const insertIdx = parsed.some((p) => p.id === 'post-severe-period-pain') ? 1 : 0;
+            parsed.splice(insertIdx, 0, pcodPost);
+          }
+        }
+        localStorage.setItem('sai_clinic_blogs', JSON.stringify(parsed));
+        return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
+      } catch {
+        return INITIAL_BLOG_POSTS;
+      }
+    }
+    return INITIAL_BLOG_POSTS;
+  });
+  const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(() => {
+    if (typeof window !== 'undefined') {
+      if (isSeverePeriodPainPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPcodBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
+      }
+    }
+    return null;
+  });
+
   // Sync URL with currentView & handle browser back/forward buttons
   useEffect(() => {
     const handlePopState = () => {
@@ -253,6 +335,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('joint-musculoskeletal-care');
       } else if (isOphthalmicEyePath(window.location.pathname)) {
         setCurrentView('ophthalmic-eye-care');
+      } else if (isSeverePeriodPainPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const post = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(post);
+      } else if (isPcodBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const pcodPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(pcodPost);
       } else {
         const path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
         if (path === '' || path === '/') {
@@ -306,6 +396,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ophthalmic-eye-care' }, '', targetUrl);
       }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'severe-period-pain-when-to-worry') {
+      const targetUrl = '/severe-period-pain-when-to-worry/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
+      const targetUrl = '/pcod-symptoms-causes-diagnosis-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
     } else if (currentView === 'home') {
       if (
         isWomensHealthPath(window.location.pathname) ||
@@ -315,23 +415,29 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isNeurologicalPath(window.location.pathname) ||
         isAnorectalVascularPath(window.location.pathname) ||
         isJointMusculoskeletalPath(window.location.pathname) ||
-        isOphthalmicEyePath(window.location.pathname)
+        isOphthalmicEyePath(window.location.pathname) ||
+        isPcodBlogPath(window.location.pathname) ||
+        isSeverePeriodPainPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
     }
-  }, [currentView]);
-
-  // Blog Posts
-  const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_blogs');
-    return saved ? JSON.parse(saved) : INITIAL_BLOG_POSTS;
-  });
-  const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(null);
+  }, [currentView, selectedPostForReader]);
 
   const openBlogPost = (post: BlogPost) => {
     setSelectedPostForReader(post);
     setCurrentView('blog');
+    if (post.slug === 'severe-period-pain-when-to-worry') {
+      const targetUrl = '/severe-period-pain-when-to-worry/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
+      const targetUrl = '/pcod-symptoms-causes-diagnosis-treatment/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

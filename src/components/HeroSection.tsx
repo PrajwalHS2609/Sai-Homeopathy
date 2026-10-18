@@ -168,13 +168,12 @@ export const HeroSection: React.FC = () => {
                       <span>4.9 / 5.0</span>
                     </div>
 
-                    {/* Doctor Portrait Graphic / Authentic HD Photo */}
+                    {/* Clinic Treatment Graphic */}
                     <div className="relative w-44 h-44 sm:w-52 sm:h-52 my-3 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gradient-to-tr from-[#303A88] to-[#45AC4B] group">
                       <img
-                        src="/images/dr-anjali-portrait-closeup.jpg"
-                        alt="Dr. Anjali Chandrasekhar - Lead Homeopathic Physician in Uniform"
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                        referrerPolicy="no-referrer"
+                        src="/images/treatment-holistic-clinic.svg"
+                        alt="Anjali Homoeopathic Clinic & Holistic Treatment Centre"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
 

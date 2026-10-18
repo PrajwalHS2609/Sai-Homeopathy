@@ -50,6 +50,17 @@ export const HomeBlogSection: React.FC = () => {
               className="bg-white rounded-3xl border border-[#D8E1F5] hover:border-[#45AC4B]/50 p-7 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-4">
+                {/* Optional Blog Image Banner */}
+                {post.image && (
+                  <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] bg-slate-900 group-hover:shadow-md transition-shadow">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 
                 {/* Meta Header */}
                 <div className="flex items-center justify-between text-xs font-sans">

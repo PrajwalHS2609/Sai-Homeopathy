@@ -442,28 +442,22 @@ export const AnorectalVascularCarePage: React.FC = () => {
                 {/* Decorative Soft Ambient Glow */}
                 <div className="absolute -inset-2 bg-gradient-to-tr from-[#303A88]/20 via-[#0D9488]/15 to-[#EEF2FB] rounded-[36px] blur-xl opacity-80" />
 
-                {/* Main Doctor Frame */}
+                {/* Main Treatment Protocol Frame */}
                 <div className="relative rounded-3xl bg-white p-3 sm:p-4 border border-[#D8E1F5] shadow-2xl">
                   
                   {/* Photo Container */}
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-b from-[#EEF2FB] to-[#D8E1F5] shadow-inner group">
                     <img
-                      src="/images/dr-anjali-malayali-doctor.jpg"
-                      alt="Dr. Anjali Chandrasekhar BHMS - Senior Homeopathic Physician in Clinical White Coat Uniform with Stethoscope"
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-102"
+                      src="/images/treatment-anorectal-vascular.svg"
+                      alt="Anorectal & Vascular Non-Surgical Clinical Homeopathic Treatment Protocol"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-102"
                       loading="eager"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        if (!target.src.includes('dr-anjali-women-doctor.jpg')) {
-                          target.src = '/images/dr-anjali-women-doctor.jpg';
-                        }
-                      }}
                     />
 
                     {/* Subtle top pill badge */}
                     <div className="absolute top-3 left-3 bg-[#1E2559]/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 border border-white/20 shadow-md">
-                      <span className="w-2 h-2 rounded-full bg-[#45AC4B]" />
-                      <span>In Clinical Uniform • Stethoscope</span>
+                      <span className="w-2 h-2 rounded-full bg-[#0284C7]" />
+                      <span>Proctology & Vascular Protocol</span>
                     </div>
 
                     {/* Click-to-Zoom Trigger Button */}
@@ -1031,17 +1025,11 @@ export const AnorectalVascularCarePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4 text-center lg:text-left">
-              <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-white/30 shrink-0 hidden sm:block shadow-md">
+              <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-white/30 shrink-0 hidden sm:block shadow-md bg-white">
                 <img
-                  src="/images/dr-anjali-malayali-doctor.jpg"
-                  alt="Dr. Anjali Chandrasekhar"
-                  className="w-full h-full object-cover object-top"
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    if (!target.src.includes('dr-anjali-women-doctor.jpg')) {
-                      target.src = '/images/dr-anjali-women-doctor.jpg';
-                    }
-                  }}
+                  src="/images/treatment-anorectal-vascular.svg"
+                  alt="Anorectal & Vascular Treatment Protocol"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div>
@@ -1222,15 +1210,9 @@ export const AnorectalVascularCarePage: React.FC = () => {
 
             <div className="relative aspect-[3/4] bg-slate-100">
               <img
-                src="/images/dr-anjali-malayali-doctor.jpg"
-                alt="Dr. Anjali Chandrasekhar BHMS - Senior Homeopathic Physician in Uniform"
-                className="w-full h-full object-cover object-top"
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (!target.src.includes('dr-anjali-women-doctor.jpg')) {
-                    target.src = '/images/dr-anjali-women-doctor.jpg';
-                  }
-                }}
+                src="/images/treatment-anorectal-vascular.svg"
+                alt="Anorectal & Vascular Clinical Treatment Protocol Artwork"
+                className="w-full h-full object-cover object-center"
               />
             </div>
 
@@ -1249,7 +1231,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
                 </span>
               </div>
               <p className="mt-2 text-xs text-[#475569]">
-                Professional portrait in formal medical uniform with clinical coat and stethoscope, practicing at Anjali Homeo Clinic, Malappuram.
+                Clinical treatment protocol and anorectal/vascular anatomical diagram for individualized homeopathic management at Anjali Homeo Clinic, Malappuram.
               </p>
             </div>
           </div>

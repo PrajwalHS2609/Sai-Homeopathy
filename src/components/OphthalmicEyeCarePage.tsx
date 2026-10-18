@@ -335,7 +335,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                 </div>
               </div>
 
-              {/* CTA Section - Elegant Desktop & Mobile Versions */}
+              {/* CTA Section - Exactly matching standard service page CTA */}
               <div className="mt-8 space-y-4">
                 {/* Main CTA Cluster */}
                 <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 sm:gap-3.5 items-stretch">
@@ -361,39 +361,77 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                     <ArrowRight className="w-5 h-5 text-[#38BDF8] group-hover:translate-x-1 transition-transform shrink-0" />
                   </button>
 
-                  {/* Secondary CTA: Enquire via WhatsApp */}
+                  {/* WhatsApp CTA: Enquire via WhatsApp */}
                   <a
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="sm:col-span-5 inline-flex items-center justify-center gap-2.5 bg-[#EDF8EE] hover:bg-[#D3EED6] text-[#2F8335] border border-[#C4EAC7] p-4 rounded-2xl font-bold text-sm transition-all duration-200 shadow-xs hover:shadow text-center"
+                    className="sm:col-span-5 group relative inline-flex items-center justify-between sm:justify-start gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20BD5A] hover:to-[#0E776B] text-white p-4 sm:p-4.5 rounded-2xl font-bold text-sm shadow-md hover:shadow-lg transition-all duration-300 active:scale-[0.99] border border-white/25"
                   >
-                    <MessageCircle className="w-5 h-5 text-[#45AC4B] shrink-0" />
-                    <span>WhatsApp Enquiry</span>
+                    <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0 border border-white/30 group-hover:scale-105 transition-transform">
+                      <MessageCircle className="w-5 h-5 fill-white" />
+                    </div>
+                    <div className="text-left">
+                      <div className="font-bold text-white text-sm sm:text-[15px] leading-snug">
+                        Enquire via WhatsApp
+                      </div>
+                      <div className="text-[11px] sm:text-xs text-white/90 font-normal">
+                        Quick Reply within 15 mins
+                      </div>
+                    </div>
                   </a>
                 </div>
 
-                {/* Direct Dial Telephones Strip */}
-                <div className="flex flex-wrap items-center gap-3 pt-2 text-xs font-semibold text-[#475569]">
-                  <span className="text-[#64748B]">Direct Clinic Lines:</span>
+                {/* Secondary Row: Direct Phone Line 0989101707 + Kuttippuram Clinic Line */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-3.5 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#D8E1F5] shadow-xs">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-[#EEF2FB] flex items-center justify-center shrink-0 text-[#303A88] border border-[#D8E1F5]">
+                      <Phone className="w-4 h-4 text-[#45AC4B]" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-[#64748B] font-medium flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-[#45AC4B] animate-pulse" />
+                        <span>Direct Doctor Consultation Desk:</span>
+                      </div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <a
+                          href={`tel:${phonePrimary}`}
+                          className="font-bold text-base sm:text-lg text-[#1E2559] hover:text-[#303A88] tracking-tight transition-colors"
+                          title="Call 0989101707"
+                        >
+                          {phonePrimary}
+                        </a>
+                        <span className="text-[#94A3B8] text-xs">|</span>
+                        <a
+                          href={`tel:09895101707`}
+                          className="text-xs font-semibold text-[#475569] hover:text-[#303A88] transition-colors"
+                          title="Call Kuttippuram Clinic: 098951 01707"
+                        >
+                          Kuttippuram: <span className="text-[#1E2559] font-bold">{phoneSecondary}</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
                   <a
                     href={`tel:${phonePrimary}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#D8E1F5] hover:border-[#303A88] text-[#1E2559] hover:text-[#303A88] transition-colors shadow-2xs"
+                    className="inline-flex items-center justify-center gap-1.5 bg-[#EEF2FB] hover:bg-[#303A88] text-[#303A88] hover:text-white px-4 py-2.5 rounded-xl font-bold text-xs transition-colors shrink-0 shadow-2xs"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#45AC4B]" />
-                    <span>{phonePrimary}</span>
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Call Now ({phonePrimary})</span>
                   </a>
-                  <a
-                    href={`tel:${phoneSecondary.replace(/\s+/g, '')}`}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#D8E1F5] hover:border-[#303A88] text-[#1E2559] hover:text-[#303A88] transition-colors shadow-2xs"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-[#45AC4B]" />
-                    <span>{phoneSecondary}</span>
-                  </a>
-                  <span className="text-[11px] text-[#64748B] flex items-center gap-1">
-                    <Clock className="w-3 h-3 text-[#45AC4B]" />
-                    <span>Mon–Sat 9:30 AM – 7:00 PM</span>
-                  </span>
+                </div>
+
+                {/* Trust Reassurance Strip */}
+                <div className="flex items-center justify-between text-[11px] sm:text-xs text-[#64748B] pt-1 px-1">
+                  <div className="flex items-center gap-1.5">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#45AC4B]" />
+                    <span>Slit-Lamp &amp; Tonometry Informed Protocol</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <Clock className="w-3.5 h-3.5 text-[#303A88]" />
+                    <span>Mon–Sat: 9 AM – 8 PM</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -404,17 +442,13 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#0284C7]/10 rounded-bl-full pointer-events-none" />
                 
                 <div className="relative z-10 flex flex-col items-center text-center">
-                  {/* Doctor Image with Click-to-Zoom */}
+                  {/* Treatment Protocol Artwork with Click-to-Zoom */}
                   <div className="relative mb-4 cursor-pointer" onClick={() => setIsPhotoModalOpen(true)}>
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-3 border-white shadow-lg ring-4 ring-[#EEF2FB] group-hover:ring-[#303A88]/20 transition-all">
+                    <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-3 border-white shadow-lg ring-4 ring-[#EEF2FB] group-hover:ring-[#303A88]/20 transition-all bg-white">
                       <img
-                        src="/dr_anjali_portrait.png"
-                        alt="Dr. Anjali Chandrasekhar - Senior Homeopathic Consultant"
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src = "https://images.unsplash.com/photo-1594824813583-66258b444747?auto=format&fit=crop&q=80&w=600";
-                        }}
+                        src="/images/treatment-ophthalmic-eye.svg"
+                        alt="Ophthalmic & Eye Conditions Clinical Treatment Protocol"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <button
@@ -1080,34 +1114,47 @@ export const OphthalmicEyeCarePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 9. Floating Mobile Sticky Consultation Dock */}
-      {showStickyBar && (
-        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-3 shadow-2xl flex items-center justify-between gap-2 animate-in slide-in-from-bottom duration-200">
+      {/* 9. Sticky Mobile CTA Quick-Action Dock */}
+      <div
+        className={`fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-2.5 sm:hidden transition-transform duration-300 shadow-2xl ${
+          showStickyBar ? 'translate-y-0' : 'translate-y-full'
+        }`}
+      >
+        <div className="grid grid-cols-3 gap-2 items-center">
+          {/* Dial Direct Call */}
           <a
             href={`tel:${phonePrimary}`}
-            className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#EEF2FB] text-[#303A88] text-xs font-bold border border-[#D8E1F5]"
+            className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-[#EEF2FB] text-[#303A88] font-bold text-[11px] border border-[#D8E1F5]"
+            title={`Call Doctor Desk: ${phonePrimary}`}
           >
-            <Phone className="w-3.5 h-3.5 text-[#45AC4B]" />
-            <span>Call Clinic</span>
+            <Phone className="w-4 h-4 text-[#45AC4B] mb-0.5" />
+            <span>Call Desk</span>
+            <span className="text-[9px] text-[#64748B]">{phonePrimary}</span>
           </a>
+
+          {/* Enquire on WhatsApp */}
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#EDF8EE] text-[#2F8335] text-xs font-bold border border-[#C4EAC7]"
+            className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-[#EDF8EE] text-[#2F8335] font-bold text-[11px] border border-[#C4EAC7]"
           >
-            <MessageCircle className="w-3.5 h-3.5 text-[#45AC4B]" />
+            <MessageCircle className="w-4 h-4 text-[#45AC4B] mb-0.5" />
             <span>WhatsApp</span>
+            <span className="text-[9px] text-[#45AC4B]">Quick Reply</span>
           </a>
+
+          {/* Book Consultation */}
           <button
             onClick={() => handleBookConsultation()}
-            className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#303A88] hover:bg-[#252E6D] text-white text-xs font-bold shadow-xs"
+            className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-gradient-to-r from-[#303A88] to-[#1E2559] text-white font-bold text-[11px] shadow-sm"
           >
-            <Calendar className="w-3.5 h-3.5 text-[#38BDF8]" />
+            <Calendar className="w-4 h-4 text-[#38BDF8] mb-0.5" />
             <span>Book Now</span>
+            <span className="text-[9px] text-[#D8E1F5]">Slot Confirm</span>
           </button>
         </div>
-      )}
+      </div>
 
       {/* 10. Doctor Portrait Zoom Modal */}
       {isPhotoModalOpen && (
@@ -1122,13 +1169,9 @@ export const OphthalmicEyeCarePage: React.FC = () => {
             </button>
             <div className="max-h-[75vh] overflow-hidden bg-[#F8FAFD]">
               <img
-                src="/dr_anjali_portrait.png"
-                alt="Dr. Anjali Chandrasekhar - Senior Homeopathic Consultant"
+                src="/images/treatment-ophthalmic-eye.svg"
+                alt="Ophthalmic & Eye Conditions Clinical Treatment Protocol Artwork"
                 className="w-full h-auto object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1594824813583-66258b444747?auto=format&fit=crop&q=80&w=600";
-                }}
               />
             </div>
             <div className="p-5 text-center">

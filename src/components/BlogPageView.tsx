@@ -32,10 +32,7 @@ export const BlogPageView: React.FC = () => {
 
   const categories = [
     'All',
-    'Homeopathy',
-    'Patient Education',
-    'Digestive Health',
-    'Stress Relief',
+    ...Array.from(new Set(blogPosts.map((p) => p.category))),
   ];
 
   // Filtered posts
@@ -52,7 +49,7 @@ export const BlogPageView: React.FC = () => {
   const featuredPost = blogPosts.find((p) => p.featured) || blogPosts[0];
 
   const handleShare = (post: BlogPost) => {
-    const shareUrl = window.location.href;
+    const shareUrl = post.canonicalUrl || window.location.href;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(shareUrl);
       showToast('Article link copied to clipboard!');
@@ -113,6 +110,38 @@ export const BlogPageView: React.FC = () => {
               {post.title}
             </h1>
 
+            {/* Lead Excerpt Description */}
+            <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-normal pt-1">
+              {post.excerpt}
+            </p>
+
+            {/* Canonical URL Link Bar */}
+            {post.canonicalUrl && (
+              <div className="text-[11px] text-[#64748B] flex flex-wrap items-center gap-2 font-mono bg-white px-3.5 py-2 rounded-xl border border-[#D8E1F5]">
+                <span className="text-[#303A88] font-bold font-sans">Official URL:</span>
+                <a
+                  href={post.canonicalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#45AC4B] hover:underline font-mono break-all font-semibold"
+                >
+                  {post.canonicalUrl}
+                </a>
+              </div>
+            )}
+
+            {/* Dedicated Hero Image Banner */}
+            {post.image && (
+              <div className="rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-lg my-6 bg-slate-900 aspect-[16/9] w-full">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover object-[center_20%]"
+                />
+              </div>
+            )}
+
             {/* Author Profile Lockup */}
             <div className="flex items-center gap-3.5 py-4 border-y border-[#EEF2FB]">
               <div className="w-12 h-12 rounded-full bg-[#303A88] text-white flex items-center justify-center font-editorial font-bold text-lg shadow-sm">
@@ -146,12 +175,34 @@ export const BlogPageView: React.FC = () => {
           </div>
 
           {/* Full Article Body */}
-          <article className="prose prose-slate max-w-none text-sm sm:text-base text-[#334155] leading-relaxed space-y-6 font-sans">
-            {post.content.map((paragraph, index) => (
-              <p key={index} className="leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
+          <article className="prose prose-slate max-w-none text-sm sm:text-base text-[#334155] leading-relaxed space-y-5 font-sans">
+            {post.content.map((paragraph, index) => {
+              if (paragraph.startsWith('### ')) {
+                return (
+                  <h3
+                    key={index}
+                    className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] pt-6 pb-2 border-b border-[#EEF2FB]"
+                  >
+                    {paragraph.replace('### ', '')}
+                  </h3>
+                );
+              }
+              if (paragraph.startsWith('•\t') || paragraph.startsWith('• ')) {
+                return (
+                  <div key={index} className="flex items-start gap-2.5 pl-2 sm:pl-4">
+                    <CheckCircle2 className="w-4 h-4 text-[#45AC4B] shrink-0 mt-1" />
+                    <p className="leading-relaxed text-[#334155] m-0">
+                      {paragraph.replace(/^[•\t\s]+/, '')}
+                    </p>
+                  </div>
+                );
+              }
+              return (
+                <p key={index} className="leading-relaxed">
+                  {paragraph}
+                </p>
+              );
+            })}
           </article>
 
           {/* Tags */}
@@ -264,9 +315,9 @@ export const BlogPageView: React.FC = () => {
         {featuredPost && selectedCategory === 'All' && !searchQuery && (
           <div
             onClick={() => openBlogPost(featuredPost)}
-            className="rounded-3xl bg-gradient-to-br from-[#EEF2FB] via-[#F4F7FD] to-[#EDF8EE] border border-[#D8E1F5] p-8 sm:p-12 shadow-xs hover:shadow-md transition-shadow cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group font-sans"
+            className="rounded-3xl bg-gradient-to-br from-[#EEF2FB] via-[#F4F7FD] to-[#EDF8EE] border border-[#D8E1F5] p-6 sm:p-10 shadow-xs hover:shadow-md transition-shadow cursor-pointer grid grid-cols-1 lg:grid-cols-12 gap-8 items-center group font-sans"
           >
-            <div className="lg:col-span-8 space-y-4">
+            <div className="lg:col-span-7 space-y-4">
               <div className="flex items-center gap-3 text-xs">
                 <span className="font-bold text-[#303A88] bg-white px-3 py-1 rounded-full border border-[#D3DBF4]">
                   FEATURED ARTICLE
@@ -290,18 +341,30 @@ export const BlogPageView: React.FC = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-white rounded-2xl p-6 border border-[#D8E1F5] space-y-3 text-xs text-[#1E2559]">
-              <span className="font-bold uppercase tracking-wider text-[#303A88] block">
-                Article Highlights
-              </span>
-              <ul className="space-y-2 text-[#64748B]">
-                {featuredPost.keyTakeaways.slice(0, 3).map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-[#45AC4B] shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="lg:col-span-5 space-y-4">
+              {featuredPost.image && (
+                <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm bg-slate-900 group-hover:shadow-md transition-shadow">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              )}
+              <div className="bg-white rounded-2xl p-5 border border-[#D8E1F5] space-y-2 text-xs text-[#1E2559]">
+                <span className="font-bold uppercase tracking-wider text-[#303A88] block text-[11px]">
+                  Article Highlights
+                </span>
+                <ul className="space-y-1.5 text-[#64748B]">
+                  {featuredPost.keyTakeaways.slice(0, 3).map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#45AC4B] shrink-0 mt-0.5" />
+                      <span className="line-clamp-2">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         )}
@@ -371,6 +434,18 @@ export const BlogPageView: React.FC = () => {
                 className="bg-white rounded-3xl border border-[#D8E1F5] hover:border-[#45AC4B]/50 p-7 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group cursor-pointer"
               >
                 <div className="space-y-4">
+                  {/* Optional Blog Image Banner */}
+                  {post.image && (
+                    <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] bg-slate-900 group-hover:shadow-md transition-shadow">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+
                   <div className="flex items-center justify-between text-xs">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D3DBF4]">
                       {post.category}

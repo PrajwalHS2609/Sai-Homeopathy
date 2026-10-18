@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jointBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="50%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#EEF2FB"/>
+    </linearGradient>
+    <linearGradient id="cobaltBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="cyanSpark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="deepSlateNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E2559"/>
+    </linearGradient>
+    <filter id="jointShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1D4ED8" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#jointBg)"/>
+  <circle cx="500" cy="120" r="180" fill="#BFDBFE" opacity="0.4"/>
+  <circle cx="90" cy="680" r="210" fill="#DBEAFE" opacity="0.5"/>
+
+  <!-- Top Specialty Badge -->
+  <g transform="translate(50, 45)">
+    <rect width="500" height="42" rx="21" fill="#FFFFFF" filter="url(#jointShadow)"/>
+    <circle cx="28" cy="21" r="9" fill="#2563EB"/>
+    <path d="M25 21 L27 23 L31 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="46" y="26" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#1E40AF" letter-spacing="1.5">
+      JOINT, MUSCULOSKELETAL &amp; SPONDYLITIS
+    </text>
+  </g>
+
+  <!-- Main Illustration Board -->
+  <g transform="translate(50, 115)">
+    <rect width="500" height="520" rx="28" fill="#FFFFFF" filter="url(#jointShadow)"/>
+    <rect x="20" y="20" width="460" height="480" rx="22" fill="url(#jointBg)"/>
+
+    <!-- Concentric Articular Cartilage Rings -->
+    <circle cx="250" cy="220" r="170" stroke="#BFDBFE" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+    <circle cx="250" cy="220" r="130" stroke="#93C5FD" stroke-width="2.5" fill="none"/>
+    <circle cx="250" cy="220" r="75" fill="#FFFFFF" filter="url(#jointShadow)"/>
+
+    <!-- Knee Joint Articulation & Spine Vertebrae Illustration -->
+    <g transform="translate(250, 220)">
+      <!-- Upper Femur Bone Head -->
+      <path d="M-40 -90 L-35 -50 C-35 -30 -55 -20 -40 -5 C-30 5 -10 5 0 -5 C10 5 30 5 40 -5 C55 -20 35 -30 35 -50 L40 -90 Z" fill="url(#cobaltBlue)" opacity="0.9"/>
+      
+      <!-- Blue Cartilage Meniscus Cushion Spacer -->
+      <ellipse cx="-20" cy="5" rx="20" ry="6" fill="#38BDF8"/>
+      <ellipse cx="20" cy="5" rx="20" ry="6" fill="#38BDF8"/>
+
+      <!-- Lower Tibia Bone Plateau -->
+      <path d="M-45 15 C-30 12 -15 20 0 20 C15 20 30 12 45 15 C55 25 40 45 35 90 L-35 90 C-40 45 -55 25 -45 15 Z" fill="url(#cobaltBlue)" opacity="0.9"/>
+
+      <!-- Fibula Lateral Head -->
+      <ellipse cx="-52" cy="30" rx="8" ry="14" fill="#60A5FA"/>
+
+      <!-- Spine Vertebral Disc Elements Floating at Sides -->
+      <g transform="translate(-75, -20)">
+        <rect x="-15" y="-12" width="30" height="10" rx="4" fill="#1D4ED8"/>
+        <rect x="-12" y="0" width="24" height="6" rx="3" fill="#38BDF8"/>
+        <rect x="-15" y="8" width="30" height="10" rx="4" fill="#1D4ED8"/>
+      </g>
+
+      <g transform="translate(75, -20)">
+        <rect x="-15" y="-12" width="30" height="10" rx="4" fill="#1D4ED8"/>
+        <rect x="-12" y="0" width="24" height="6" rx="3" fill="#38BDF8"/>
+        <rect x="-15" y="8" width="30" height="10" rx="4" fill="#1D4ED8"/>
+      </g>
+
+      <!-- Synovial Joint Fluid Circulation Aura -->
+      <circle cx="0" cy="10" r="12" fill="#FFFFFF"/>
+      <circle cx="0" cy="10" r="7" fill="url(#cyanSpark)"/>
+    </g>
+
+    <!-- 4 Specialized Pillars -->
+    <!-- Osteoarthritis -->
+    <g transform="translate(95, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#jointShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#EFF6FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" fill="#1E40AF" text-anchor="middle">OSTEO-</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#2563EB" text-anchor="middle">ARTHRITIS</text>
+    </g>
+
+    <!-- Rheumatic Diseases -->
+    <g transform="translate(405, 150)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#jointShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#EFF6FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#1E40AF" text-anchor="middle">RHEUMATIC</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#2563EB" text-anchor="middle">DISEASES</text>
+    </g>
+
+    <!-- Cervical Spondylitis -->
+    <g transform="translate(95, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#jointShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#EFF6FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#1E40AF" text-anchor="middle">CERVICAL</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#2563EB" text-anchor="middle">SPINE</text>
+    </g>
+
+    <!-- Lumbar Spondylitis & Sciatica -->
+    <g transform="translate(405, 320)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" filter="url(#jointShadow)"/>
+      <circle cx="0" cy="0" r="28" fill="#EFF6FF"/>
+      <text x="0" y="-3" font-family="system-ui, sans-serif" font-size="9.5" font-weight="800" fill="#1E40AF" text-anchor="middle">LUMBAR &amp;</text>
+      <text x="0" y="10" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#2563EB" text-anchor="middle">SCIATICA</text>
+    </g>
+
+    <!-- Treatment Highlights Box -->
+    <g transform="translate(40, 400)">
+      <rect width="420" height="80" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+      <text x="210" y="27" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1E2559" text-anchor="middle">
+        Cartilage Preservation &amp; Spinal Mobility Protocols
+      </text>
+      <text x="210" y="47" font-family="system-ui, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="middle">
+        Calm Synovial Swelling • Decompress Pinched Nerves • Zero NSAID Toxicity
+      </text>
+      <text x="210" y="67" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#2563EB" text-anchor="middle">
+        ✓ Rhus Tox • Bryonia • Hypericum • Colocynthis • Calc Fluor
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Quality Strip -->
+  <g transform="translate(50, 655)">
+    <rect width="500" height="95" rx="20" fill="url(#deepSlateNavy)" filter="url(#jointShadow)"/>
+    <text x="40" y="38" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">
+      Gentle Orthopedic &amp; Spine Rehabilitation
+    </text>
+    <text x="40" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="400" fill="#DBEAFE">
+      Preventing Gastric Ulcers &amp; Kidney Strain from Chronic Painkillers
+    </text>
+    <text x="40" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#60A5FA">
+      ★ Restoring Natural Range of Motion • Physical Therapy Co-Care
+    </text>
+  </g>
+</svg>
