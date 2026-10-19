@@ -110,6 +110,22 @@ export const BlogPageView: React.FC = () => {
               {post.title}
             </h1>
 
+            {/* Dedicated Hero Image Banner - Directly Below Blog Title */}
+            {post.image && (
+              <div className="rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm my-6 w-full bg-white">
+                <img
+                  src={post.image}
+                  alt={post.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : post.title}
+                  width="1200"
+                  height="600"
+                  loading="eager"
+                  decoding="async"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-auto block aspect-[2/1] object-contain"
+                />
+              </div>
+            )}
+
             {/* Lead Excerpt Description */}
             <p className="text-base sm:text-lg text-[#475569] leading-relaxed font-normal pt-1">
               {post.excerpt}
@@ -127,18 +143,6 @@ export const BlogPageView: React.FC = () => {
                 >
                   {post.canonicalUrl}
                 </a>
-              </div>
-            )}
-
-            {/* Dedicated Hero Image Banner */}
-            {post.image && (
-              <div className="rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-lg my-6 bg-slate-900 aspect-[16/9] w-full">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-[center_20%]"
-                />
               </div>
             )}
 
@@ -343,10 +347,10 @@ export const BlogPageView: React.FC = () => {
 
             <div className="lg:col-span-5 space-y-4">
               {featuredPost.image && (
-                <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm bg-slate-900 group-hover:shadow-md transition-shadow">
+                <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm bg-[#FDF2F8] group-hover:shadow-md transition-shadow">
                   <img
                     src={featuredPost.image}
-                    alt={featuredPost.title}
+                    alt={featuredPost.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : featuredPost.title}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -436,10 +440,10 @@ export const BlogPageView: React.FC = () => {
                 <div className="space-y-4">
                   {/* Optional Blog Image Banner */}
                   {post.image && (
-                    <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] bg-slate-900 group-hover:shadow-md transition-shadow">
+                    <div className="w-full aspect-[16/9] rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] bg-[#FDF2F8] group-hover:shadow-md transition-shadow">
                       <img
                         src={post.image}
-                        alt={post.title}
+                        alt={post.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : post.title}
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

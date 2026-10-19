@@ -22,6 +22,7 @@ import {
   ShieldCheck,
   Eye,
   Stethoscope,
+  Globe,
 } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -32,6 +33,7 @@ export const Header: React.FC = () => {
     setIsCartOpen,
     navigateToBooking,
     settings,
+    openQuickSeoModal,
   } = useClinic();
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -253,6 +255,15 @@ export const Header: React.FC = () => {
               title="Admin CMS & Appointments Management"
             >
               Admin Portal
+            </button>
+            <span className="text-[#8FA3E8] hidden sm:inline">|</span>
+            <button
+              onClick={openQuickSeoModal}
+              className="text-[#86EFAC] hover:text-white font-medium transition-colors hidden sm:inline-flex items-center gap-1 whitespace-nowrap bg-[#303A88] px-2.5 py-0.5 rounded-full border border-[#86EFAC]/30"
+              title="Edit Title, Description, Canonical & Schema for Current Page"
+            >
+              <Globe className="w-3 h-3 text-[#86EFAC]" />
+              <span>Page SEO</span>
             </button>
           </div>
         </div>
@@ -590,12 +601,24 @@ export const Header: React.FC = () => {
                 <span>anjalihomoeoclinic@gmail.com</span>
               </a>
 
-              <button
-                onClick={() => handleNavClick('admin')}
-                className="text-xs text-center text-[#64748B] hover:text-[#303A88] py-1 transition-colors"
-              >
-                Access Admin Portal →
-              </button>
+              <div className="flex items-center justify-between pt-1 border-t border-[#EEF2FB]">
+                <button
+                  onClick={() => handleNavClick('admin')}
+                  className="text-xs text-[#64748B] hover:text-[#303A88] py-1 transition-colors"
+                >
+                  Access Admin Portal →
+                </button>
+                <button
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    openQuickSeoModal();
+                  }}
+                  className="text-xs font-semibold text-[#2F8335] hover:underline flex items-center gap-1 py-1"
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>Page SEO & Schema</span>
+                </button>
+              </div>
             </div>
           </div>
         )}

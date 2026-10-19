@@ -47,19 +47,9 @@ export const WomensHealthCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Women's Health & Gynecological Care."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Women’s Health & Gynecological Care | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    // Ensure meta description is set
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized homoeopathic treatment for women’s health & gynecological care in Malappuram & Online. Natural, non-hormonal care for PCOD/PCOS, menstrual irregularities, fibroids, cramps & menopause by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -294,11 +284,11 @@ export const WomensHealthCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynocological-care/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynocological-care/',
-                name: 'Homoeopathic Treatment for Women’s Health & Gynecological Care',
+                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+                name: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
                 description:
-                  'Comprehensive, gentle homoeopathic care for PCOD, menstrual irregularities, dysmenorrhea, uterine fibroids, and women’s hormonal health in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health and personalized consultations.",
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
@@ -332,8 +322,8 @@ export const WomensHealthCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Women’s Health & Gynecological Care',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynocological-care/',
+                    name: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
+                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
                   },
                 ],
               },

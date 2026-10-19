@@ -52,18 +52,9 @@ export const RenalThyroidCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Renal, Urinary, Gallbladder & Thyroid Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Renal, Urinary, Gallbladder & Thyroid Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized constitutional homeopathic care for Renal Calculi (Kidney Stones), Urinary Tract Stones, Gallbladder Stones (Cholelithiasis), Thyroid Imbalances & Goiter in Malappuram & Online by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -200,13 +191,13 @@ export const RenalThyroidCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
-                name: 'Homoeopathic Treatment for Renal, Urinary, Gallbladder & Thyroid Conditions',
+                name: 'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic care for Renal Calculi, Kidney Stones, Urinary Tract Stones, Gallbladder Stones (Cholelithiasis), Thyroid Imbalances & Goiter in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore consultations for renal, urinary, gallbladder and thyroid concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
-                  name: 'Anjali Homeo Clinic',
+                  name: 'Anjali Homoeo Clinic',
                   url: 'https://anjalihomoeoclinic.com',
                 },
                 about: {
@@ -237,7 +228,7 @@ export const RenalThyroidCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Renal, Urinary, Gallbladder & Thyroid Conditions',
+                    name: 'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
                   },
                 ],

@@ -24,9 +24,11 @@ import {
   DollarSign,
   ShieldCheck,
   RefreshCw,
+  Globe,
 } from 'lucide-react';
 import { Appointment, AppointmentStatus, ConsultationType, Product } from '../types';
 import { AnjaliLogo } from './AnjaliLogo';
+import { AdminSeoSection } from './AdminSeoSection';
 
 export const AdminDashboard: React.FC = () => {
   const {
@@ -44,7 +46,9 @@ export const AdminDashboard: React.FC = () => {
     setCurrentView,
   } = useClinic();
 
-  const [activeTab, setActiveTab] = useState<'appointments' | 'calendar' | 'products' | 'orders' | 'settings'>('appointments');
+  const [activeTab, setActiveTab] = useState<
+    'appointments' | 'calendar' | 'products' | 'orders' | 'settings' | 'seo'
+  >('appointments');
   const [statusFilter, setStatusFilter] = useState<string>('ALL');
   const [typeFilter, setTypeFilter] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -290,6 +294,18 @@ export const AdminDashboard: React.FC = () => {
           >
             <Settings className="w-3.5 h-3.5" />
             <span>Clinic Timings & Settings</span>
+          </button>
+
+          <button
+            onClick={() => setActiveTab('seo')}
+            className={`py-2 px-4 rounded-t-xl text-xs font-semibold transition-colors flex items-center gap-2 ${
+              activeTab === 'seo'
+                ? 'bg-white text-[#303A88] border-t-2 border-[#303A88] shadow-2xs font-bold'
+                : 'text-[#5F6F65] hover:text-[#1E2559]'
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5 text-[#45AC4B]" />
+            <span>SEO & Schema Meta Data</span>
           </button>
         </div>
 
@@ -939,6 +955,11 @@ export const AdminDashboard: React.FC = () => {
             </form>
           </div>
         )}
+
+        {/* ======================================================== */}
+        {/* TAB 6: SEO & SCHEMA METADATA MANAGER */}
+        {/* ======================================================== */}
+        {activeTab === 'seo' && <AdminSeoSection />}
 
       </div>
 

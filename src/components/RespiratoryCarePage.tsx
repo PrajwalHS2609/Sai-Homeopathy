@@ -53,18 +53,9 @@ export const RespiratoryCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Respiratory, ENT & Allergy Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Respiratory, ENT & Allergy Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Comprehensive homeopathic treatment for Respiratory, ENT & Allergy Conditions in Malappuram & Online. Non-drowsy, non-steroidal care for Chronic Sinusitis, Asthma, Allergic Rhinitis, Chronic Cough, Polyps, Tonsils & Vocal Nodules by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -210,9 +201,9 @@ export const RespiratoryCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
-                name: 'Homoeopathic Treatment for Respiratory, ENT & Allergy Conditions',
+                name: 'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homoeopathic care for Chronic Sinusitis, Asthma, Allergic Rhinitis, Chronic Cough, Nasal Polyps, Tonsils & Vocal Nodules in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore homoeopathic consultations for respiratory, ENT and allergy concerns at Anjali Homoeo Clinic in Malappuram, Kerala, with personalized healthcare guidance.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
@@ -247,7 +238,7 @@ export const RespiratoryCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Respiratory, ENT & Allergy Conditions',
+                    name: 'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
                   },
                 ],

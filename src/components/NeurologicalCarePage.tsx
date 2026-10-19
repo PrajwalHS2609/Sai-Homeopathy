@@ -53,18 +53,9 @@ export const NeurologicalCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Neurological & Headache Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Neurological & Headache Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized constitutional homeopathic care for Chronic Migraines, Tension Headaches, Memory Loss, Stress & Anxiety, Pediatric ADHD, Learning Disabilities, and Attention Deficits in Malappuram & Online by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -193,13 +184,13 @@ export const NeurologicalCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
-                name: 'Homoeopathic Treatment for Neurological & Headache Conditions',
+                name: 'Headache & Neurological Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic care for Chronic Migraines, Tension Headaches, Memory Loss, Anxiety, Pediatric ADHD, Learning Disabilities, and Attention Deficits in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore consultations for headaches and neurological concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Receive personalized healthcare guidance for your needs.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
-                  name: 'Anjali Homeo Clinic',
+                  name: 'Anjali Homoeo Clinic',
                   url: 'https://anjalihomoeoclinic.com',
                 },
                 about: {
@@ -230,7 +221,7 @@ export const NeurologicalCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Neurological & Headache Conditions',
+                    name: 'Headache & Neurological Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
                   },
                 ],

@@ -18,6 +18,13 @@ import {
   INITIAL_APPOINTMENTS,
   INITIAL_BLOG_POSTS,
 } from '../data/initialData';
+import { PageSeoMetadata } from '../types/seo';
+import { DEFAULT_SEO_PAGES } from '../data/defaultSeoData';
+import {
+  loadStoredSeoPages,
+  saveStoredSeoPages,
+  generateDefaultSchema,
+} from '../services/seoService';
 
 export type NavView =
   | 'home'
@@ -114,6 +121,18 @@ interface ClinicContextType {
   toasts: Toast[];
   showToast: (message: string, type?: 'success' | 'info' | 'warning') => void;
   removeToast: (id: string) => void;
+
+  // SEO Meta Data Management
+  seoPages: PageSeoMetadata[];
+  currentPageSeo: PageSeoMetadata;
+  updatePageSeo: (id: string, updates: Partial<PageSeoMetadata>) => void;
+  addPageSeo: (newPage: PageSeoMetadata) => void;
+  deletePageSeo: (id: string) => void;
+  resetPageSeoToDefault: (id: string) => void;
+  resetAllSeoToDefault: () => void;
+  isQuickSeoModalOpen: boolean;
+  setIsQuickSeoModalOpen: (open: boolean) => void;
+  openQuickSeoModal: () => void;
 }
 
 const ClinicContext = createContext<ClinicContextType | undefined>(undefined);
@@ -357,7 +376,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   useEffect(() => {
     if (currentView === 'womens-health-care') {
-      const targetUrl = '/homoeopathic-treatment-for-womens-health-gynocological-care/';
+      const targetUrl = '/homoeopathic-treatment-for-womens-health-gynecological-care/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'womens-health-care' }, '', targetUrl);
       }
@@ -792,6 +811,128 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // SEO Meta Data Management
+  const [seoPages, setSeoPages] = useState<PageSeoMetadata[]>(() => loadStoredSeoPages());
+  const [isQuickSeoModalOpen, setIsQuickSeoModalOpen] = useState(false);
+
+  const updatePageSeo = (id: string, updates: Partial<PageSeoMetadata>) => {
+    setSeoPages((prev) => {
+      const idx = prev.findIndex((p) => p.id === id);
+      let updated: PageSeoMetadata[];
+      if (idx >= 0) {
+        updated = [...prev];
+        updated[idx] = {
+          ...updated[idx],
+          ...updates,
+          lastUpdated: new Date().toISOString().split('T')[0],
+        };
+      } else {
+        updated = [
+          ...prev,
+          {
+            ...(updates as PageSeoMetadata),
+            id,
+            lastUpdated: new Date().toISOString().split('T')[0],
+          },
+        ];
+      }
+      saveStoredSeoPages(updated);
+      return updated;
+    });
+  };
+
+  const addPageSeo = (newPage: PageSeoMetadata) => {
+    setSeoPages((prev) => {
+      const updated = [newPage, ...prev.filter((p) => p.id !== newPage.id)];
+      saveStoredSeoPages(updated);
+      return updated;
+    });
+  };
+
+  const deletePageSeo = (id: string) => {
+    setSeoPages((prev) => {
+      const updated = prev.filter((p) => p.id !== id);
+      saveStoredSeoPages(updated);
+      return updated;
+    });
+  };
+
+  const resetPageSeoToDefault = (id: string) => {
+    const defaultPage = DEFAULT_SEO_PAGES.find((p) => p.id === id);
+    if (defaultPage) {
+      updatePageSeo(id, defaultPage);
+    }
+  };
+
+  const resetAllSeoToDefault = () => {
+    setSeoPages(DEFAULT_SEO_PAGES);
+    saveStoredSeoPages(DEFAULT_SEO_PAGES);
+  };
+
+  const openQuickSeoModal = () => {
+    setIsQuickSeoModalOpen(true);
+  };
+
+  // Dynamically resolve current page SEO configuration
+  const currentPageSeo = React.useMemo<PageSeoMetadata>(() => {
+    let targetId = 'home';
+    if (currentView === 'womens-health-care') targetId = 'womens-health-care';
+    else if (currentView === 'respiratory-care') targetId = 'respiratory-care';
+    else if (currentView === 'skin-hair-care') targetId = 'skin-hair-care';
+    else if (currentView === 'renal-thyroid-care') targetId = 'renal-thyroid-care';
+    else if (currentView === 'neurological-care') targetId = 'neurological-care';
+    else if (currentView === 'anorectal-vascular-care') targetId = 'anorectal-vascular-care';
+    else if (currentView === 'joint-musculoskeletal-care') targetId = 'joint-musculoskeletal-care';
+    else if (currentView === 'ophthalmic-eye-care') targetId = 'ophthalmic-eye-care';
+    else if (currentView === 'treatments') targetId = 'treatments';
+    else if (currentView === 'consultations') targetId = 'consultations';
+    else if (currentView === 'book-appointment') targetId = 'book-appointment';
+    else if (currentView === 'about') targetId = 'about';
+    else if (currentView === 'reviews') targetId = 'reviews';
+    else if (currentView === 'faq' || currentView === 'qa') targetId = 'faq';
+    else if (currentView === 'contact') targetId = 'contact';
+    else if (currentView === 'products') targetId = 'products';
+    else if (currentView === 'blog') {
+      if (selectedPostForReader?.slug === 'severe-period-pain-when-to-worry') {
+        targetId = 'blog-severe-period-pain';
+      } else if (selectedPostForReader?.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
+        targetId = 'blog-pcod';
+      } else if (selectedPostForReader) {
+        const found = seoPages.find(
+          (p) =>
+            p.path.includes(selectedPostForReader.slug) ||
+            p.id === `blog-${selectedPostForReader.slug}`
+        );
+        if (found) return found;
+        return {
+          id: `blog-${selectedPostForReader.slug}`,
+          pageName: `Blog: ${selectedPostForReader.title}`,
+          category: 'blog',
+          path: `/${selectedPostForReader.slug}/`,
+          title: selectedPostForReader.seoTitle || `${selectedPostForReader.title} | Anjali Homoeo Clinic`,
+          description: selectedPostForReader.seoDescription || selectedPostForReader.excerpt,
+          url: selectedPostForReader.canonicalUrl || `https://anjalihomoeoclinic.com/${selectedPostForReader.slug}`,
+          canonicalUrl: selectedPostForReader.canonicalUrl || `https://anjalihomoeoclinic.com/${selectedPostForReader.slug}`,
+          ogType: 'article',
+          schemaType: 'BlogPosting',
+          schemaJson: generateDefaultSchema(
+            'BlogPosting',
+            selectedPostForReader.title,
+            selectedPostForReader.title,
+            selectedPostForReader.excerpt,
+            selectedPostForReader.canonicalUrl || `https://anjalihomoeoclinic.com/${selectedPostForReader.slug}`
+          ),
+          lastUpdated: new Date().toISOString().split('T')[0],
+        };
+      } else {
+        targetId = 'blog';
+      }
+    }
+
+    const match = seoPages.find((p) => p.id === targetId);
+    return match || seoPages[0] || DEFAULT_SEO_PAGES[0];
+  }, [currentView, selectedPostForReader, seoPages]);
+
   return (
     <ClinicContext.Provider
       value={{
@@ -842,6 +983,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         toasts,
         showToast,
         removeToast,
+        seoPages,
+        currentPageSeo,
+        updatePageSeo,
+        addPageSeo,
+        deletePageSeo,
+        resetPageSeoToDefault,
+        resetAllSeoToDefault,
+        isQuickSeoModalOpen,
+        setIsQuickSeoModalOpen,
+        openQuickSeoModal,
       }}
     >
       {children}

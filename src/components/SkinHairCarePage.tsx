@@ -54,18 +54,9 @@ export const SkinHairCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Skin, Hair & Scalp Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Skin, Hair & Scalp Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized constitutional homeopathic care for Skin, Hair & Scalp Conditions in Malappuram & Online. Non-steroidal, root-cause healing for Eczema, Psoriasis, Melasma, Alopecia, Ringworm, Urticaria, Acne, Warts, Shingles & Dandruff by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -224,9 +215,9 @@ export const SkinHairCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
-                name: 'Homoeopathic Treatment for Skin, Hair & Scalp Conditions',
+                name: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic treatment for Eczema, Psoriasis, Melasma, Alopecia, Ringworm, Urticaria, Acne, Warts, Shingles, Cracked Heels & Dandruff in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore consultations for skin, hair and scalp concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized guidance for your healthcare needs.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
@@ -261,7 +252,7 @@ export const SkinHairCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Skin, Hair & Scalp Conditions',
+                    name: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
                   },
                 ],

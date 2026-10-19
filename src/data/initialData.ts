@@ -384,7 +384,7 @@ export const INITIAL_BLOG_POSTS: BlogPost[] = [
     seoTitle: 'Severe Period Pain: When Are Menstrual Cramps a Concern? | Anjali Homoeo Clinic',
     seoDescription: 'Learn when severe period pain is a concern, explore common causes of menstrual cramps, recognize warning signs, and discover diagnosis and treatment options.',
     canonicalUrl: 'https://anjalihomoeoclinic.com/severe-period-pain-when-to-worry',
-    image: '/images/severe-period-pain-banner.svg',
+    image: '/severe-period-pain-banner.png',
     content: [
       'Severe period pain is more than just an uncomfortable part of menstruation for some women. While mild to moderate menstrual cramps are common, intense pain that disrupts daily activities, affects sleep, or makes it difficult to attend work or school may indicate an underlying health condition. Understanding the difference between normal menstrual cramps and severe period pain can help you recognize when medical attention is necessary.',
       'Menstrual cramps, medically known as dysmenorrhea, occur when the uterus contracts to shed its lining during menstruation. These contractions can cause pain in the lower abdomen, back, and thighs. For many women, the discomfort improves with rest, heat therapy, or appropriate pain relief. However, persistent or worsening menstrual pain should not be ignored.',

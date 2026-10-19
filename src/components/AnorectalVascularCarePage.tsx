@@ -53,18 +53,9 @@ export const AnorectalVascularCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Anorectal & Vascular Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Anorectal & Vascular Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized constitutional homeopathic care for Hemorrhoids (Piles), Anal Fissures, Anal Fistulas, and Varicose Veins in Malappuram & Online by Dr. Anjali Chandrasekhar. Gentle, non-surgical venous relief.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -189,13 +180,13 @@ export const AnorectalVascularCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
-                name: 'Homoeopathic Treatment for Anorectal & Vascular Conditions',
+                name: 'Anorectal & Vascular Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic care for Hemorrhoids (Piles), Anal Fissures, Anal Fistulas, and Varicose Veins in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore consultations for anorectal and vascular concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about symptoms, healthcare options and personalized guidance.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
-                  name: 'Anjali Homeo Clinic',
+                  name: 'Anjali Homoeo Clinic',
                   url: 'https://anjalihomoeoclinic.com',
                 },
                 about: {
@@ -226,7 +217,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Anorectal & Vascular Conditions',
+                    name: 'Anorectal & Vascular Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
                   },
                 ],

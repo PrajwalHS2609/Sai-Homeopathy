@@ -34,6 +34,9 @@ import { NeurologicalCarePage } from './components/NeurologicalCarePage';
 import { AnorectalVascularCarePage } from './components/AnorectalVascularCarePage';
 import { JointMusculoskeletalCarePage } from './components/JointMusculoskeletalCarePage';
 import { OphthalmicEyeCarePage } from './components/OphthalmicEyeCarePage';
+import { SeoHead } from './components/SeoHead';
+import { SeoPageEditModal } from './components/SeoPageEditModal';
+import { FloatingSeoBadge } from './components/FloatingSeoBadge';
 
 const MainContent: React.FC = () => {
   const { currentView } = useClinic();
@@ -125,7 +128,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Women's Health & Gynecological Care View
-  // URL: /homoeopathic-treatment-for-womens-health-gynocological-care/
+  // URL: /homoeopathic-treatment-for-womens-health-gynecological-care/
   if (currentView === 'womens-health-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -512,10 +515,33 @@ const MainContent: React.FC = () => {
   );
 };
 
+const AppShell: React.FC = () => {
+  const {
+    currentPageSeo,
+    isQuickSeoModalOpen,
+    setIsQuickSeoModalOpen,
+    updatePageSeo,
+  } = useClinic();
+
+  return (
+    <>
+      <SeoHead seo={currentPageSeo} />
+      <MainContent />
+      <FloatingSeoBadge />
+      <SeoPageEditModal
+        page={currentPageSeo}
+        isOpen={isQuickSeoModalOpen}
+        onClose={() => setIsQuickSeoModalOpen(false)}
+        onSave={(updated) => updatePageSeo(updated.id, updated)}
+      />
+    </>
+  );
+};
+
 export const App: React.FC = () => {
   return (
     <ClinicProvider>
-      <MainContent />
+      <AppShell />
     </ClinicProvider>
   );
 };

@@ -56,18 +56,9 @@ export const OphthalmicEyeCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Ophthalmic & Eye Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile dock
+  // Scroll to top on mount, and track scroll for mobile dock
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Ophthalmic & Eye Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Specialized constitutional homeopathic care for Conjunctivitis (Pink Eye), Elevated Eye Pressure (Ocular Hypertension), and Glaucoma co-management in Malappuram & Online by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -191,13 +182,13 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
-                name: 'Homoeopathic Treatment for Ophthalmic & Eye Conditions',
+                name: 'Eye Care Homeopathic Consultation in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic care for Conjunctivitis (Pink Eye), Elevated Eye Pressure (Ocular Hypertension), and Glaucoma in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore eye health consultations at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about common eye concerns, symptoms and appropriate healthcare options.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
-                  name: 'Anjali Homeo Clinic',
+                  name: 'Anjali Homoeo Clinic',
                   url: 'https://anjalihomoeoclinic.com',
                 },
                 about: {
@@ -228,7 +219,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Ophthalmic / Eye Conditions',
+                    name: 'Eye Care Homeopathic Consultation in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
                   },
                 ],

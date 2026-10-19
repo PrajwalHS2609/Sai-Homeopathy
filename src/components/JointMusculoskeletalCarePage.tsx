@@ -54,18 +54,9 @@ export const JointMusculoskeletalCarePage: React.FC = () => {
     "Hello Dr. Anjali, I would like to enquire about homeopathic consultation for Joint, Musculoskeletal & Spondylitis Conditions."
   )}`;
 
-  // Set page meta, scroll to top on mount, and track scroll for mobile sticky bar
+  // Scroll to top on mount, and track scroll for mobile sticky bar
   useEffect(() => {
-    document.title = "Homoeopathic Treatment for Joint, Musculoskeletal & Chronic Conditions | Anjali Homeo Clinic";
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        'content',
-        'Advanced, non-invasive constitutional homeopathic management for Osteoarthritis, Rheumatic Diseases, Cervical Spondylitis, and Lumbar Spondylitis in Malappuram & Online by Dr. Anjali Chandrasekhar.'
-      );
-    }
 
     const handleScroll = () => {
       setShowStickyBar(window.scrollY > 380);
@@ -190,13 +181,13 @@ export const JointMusculoskeletalCarePage: React.FC = () => {
                 '@type': 'MedicalWebPage',
                 '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#webpage',
                 url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
-                name: 'Homoeopathic Treatment for Joint, Musculoskeletal & Chronic Conditions',
+                name: 'Joint & Musculoskeletal Homeopathic Treatment in Malappuram',
                 description:
-                  'Specialized constitutional homeopathic care for Osteoarthritis, Rheumatic Diseases, Cervical Spondylitis, and Lumbar Spondylitis in Malappuram & online with Dr. Anjali Chandrasekhar.',
+                  'Explore consultations for joint pain, musculoskeletal concerns and chronic conditions at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
-                  name: 'Anjali Homeo Clinic',
+                  name: 'Anjali Homoeo Clinic',
                   url: 'https://anjalihomoeoclinic.com',
                 },
                 about: {
@@ -227,7 +218,7 @@ export const JointMusculoskeletalCarePage: React.FC = () => {
                   {
                     '@type': 'ListItem',
                     position: 3,
-                    name: 'Joint, Musculoskeletal & Chronic Conditions',
+                    name: 'Joint & Musculoskeletal Homeopathic Treatment in Malappuram',
                     item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
                   },
                 ],
