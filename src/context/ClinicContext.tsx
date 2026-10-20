@@ -237,6 +237,26 @@ const isSeverePeriodPainPath = (pathname: string) => {
   );
 };
 
+const isUterineFibroidsBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/uterine-fibroids-symptoms-diagnosis-treatment' ||
+    clean === '/uterine-fibroids-symptoms-diagnosis-and-treatment-options' ||
+    clean === '/blog/uterine-fibroids-symptoms-diagnosis-treatment' ||
+    clean === '/uterine-fibroids'
+  );
+};
+
+const isChronicSinusitisBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/chronic-sinusitis-symptoms-causes-treatment' ||
+    clean === '/chronic-sinusitis-symptoms-causes-and-treatment-options' ||
+    clean === '/blog/chronic-sinusitis-symptoms-causes-treatment' ||
+    clean === '/chronic-sinusitis'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -245,6 +265,12 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return 'blog';
       }
       if (isPcodBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isUterineFibroidsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isChronicSinusitisBlogPath(window.location.pathname)) {
         return 'blog';
       }
       if (isWomensHealthPath(window.location.pathname)) {
@@ -315,6 +341,24 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.splice(insertIdx, 0, pcodPost);
           }
         }
+        const uterineFibroidsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids');
+        if (uterineFibroidsPost) {
+          const uIdx = parsed.findIndex((p) => p.id === 'post-uterine-fibroids' || p.slug === 'uterine-fibroids-symptoms-diagnosis-treatment');
+          if (uIdx >= 0) {
+            parsed[uIdx] = { ...parsed[uIdx], ...uterineFibroidsPost, image: uterineFibroidsPost.image };
+          } else {
+            parsed.push(uterineFibroidsPost);
+          }
+        }
+        const chronicSinusitisPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-chronic-sinusitis');
+        if (chronicSinusitisPost) {
+          const cIdx = parsed.findIndex((p) => p.id === 'post-chronic-sinusitis' || p.slug === 'chronic-sinusitis-symptoms-causes-treatment');
+          if (cIdx >= 0) {
+            parsed[cIdx] = { ...parsed[cIdx], ...chronicSinusitisPost, image: chronicSinusitisPost.image };
+          } else {
+            parsed.push(chronicSinusitisPost);
+          }
+        }
         localStorage.setItem('sai_clinic_blogs', JSON.stringify(parsed));
         return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
       } catch {
@@ -330,6 +374,12 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isPcodBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isUterineFibroidsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isChronicSinusitisBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-chronic-sinusitis') || INITIAL_BLOG_POSTS[0];
       }
     }
     return null;
@@ -362,6 +412,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('blog');
         const pcodPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
         setSelectedPostForReader(pcodPost);
+      } else if (isUterineFibroidsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const fibroidPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(fibroidPost);
+      } else if (isChronicSinusitisBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const sinusPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-chronic-sinusitis') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(sinusPost);
       } else {
         const path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
         if (path === '' || path === '/') {
@@ -425,6 +483,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'uterine-fibroids-symptoms-diagnosis-treatment') {
+      const targetUrl = '/uterine-fibroids-symptoms-diagnosis-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
+      const targetUrl = '/chronic-sinusitis-symptoms-causes-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
     } else if (currentView === 'home') {
       if (
         isWomensHealthPath(window.location.pathname) ||
@@ -436,7 +504,9 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isJointMusculoskeletalPath(window.location.pathname) ||
         isOphthalmicEyePath(window.location.pathname) ||
         isPcodBlogPath(window.location.pathname) ||
-        isSeverePeriodPainPath(window.location.pathname)
+        isSeverePeriodPainPath(window.location.pathname) ||
+        isUterineFibroidsBlogPath(window.location.pathname) ||
+        isChronicSinusitisBlogPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -453,6 +523,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (post.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
       const targetUrl = '/pcod-symptoms-causes-diagnosis-treatment/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'uterine-fibroids-symptoms-diagnosis-treatment') {
+      const targetUrl = '/uterine-fibroids-symptoms-diagnosis-treatment/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
+      const targetUrl = '/chronic-sinusitis-symptoms-causes-treatment/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
@@ -481,6 +561,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       // Ensure WhatsApp number is always updated to 89211 80408
       parsed.whatsappNumber = '+918921180408';
       parsed.branches = INITIAL_SETTINGS.branches;
+      parsed.instagramUrl = INITIAL_SETTINGS.instagramUrl;
+      parsed.facebookUrl = INITIAL_SETTINGS.facebookUrl;
+      parsed.practoUrl = INITIAL_SETTINGS.practoUrl;
+      parsed.justdialUrl = INITIAL_SETTINGS.justdialUrl;
       localStorage.setItem('sai_clinic_settings', JSON.stringify(parsed));
       return parsed;
     }
@@ -897,6 +981,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         targetId = 'blog-severe-period-pain';
       } else if (selectedPostForReader?.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
         targetId = 'blog-pcod';
+      } else if (selectedPostForReader?.slug === 'uterine-fibroids-symptoms-diagnosis-treatment') {
+        targetId = 'blog-uterine-fibroids';
+      } else if (selectedPostForReader?.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
+        targetId = 'blog-chronic-sinusitis';
       } else if (selectedPostForReader) {
         const found = seoPages.find(
           (p) =>

@@ -133,6 +133,10 @@ export interface ClinicSettings {
   onlineFee: number;
   clinicFee: number;
   slotDurationMinutes: number;
+  instagramUrl?: string;
+  facebookUrl?: string;
+  practoUrl?: string;
+  justdialUrl?: string;
 }
 
 export interface Testimonial {
@@ -156,7 +160,7 @@ export interface BlogPost {
   id: string;
   title: string;
   slug: string;
-  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief' | "Women's Health";
+  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief' | "Women's Health" | 'Respiratory & ENT' | 'Respiratory Health';
   excerpt: string;
   content: string[];
   keyTakeaways: string[];
@@ -170,5 +174,6 @@ export interface BlogPost {
   seoTitle?: string;
   seoDescription?: string;
   canonicalUrl?: string;
+  faqs?: { question: string; answer: string }[];
 }
 

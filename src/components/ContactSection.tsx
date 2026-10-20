@@ -20,6 +20,7 @@ import {
   Calendar,
   Check,
 } from 'lucide-react';
+import { SocialMediaBar } from './SocialIcons';
 
 export const ContactSection: React.FC = () => {
   const { settings, navigateToBooking, showToast } = useClinic();
@@ -174,6 +175,14 @@ export const ContactSection: React.FC = () => {
               </div>
             </div>
 
+          </div>
+
+          {/* Official Profiles & Directories */}
+          <div className="mt-6 pt-5 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <span className="text-xs text-[#CBD5E1] font-medium">
+              Verified Profiles &amp; Patient Reviews:
+            </span>
+            <SocialMediaBar variant="dark" showHandles={true} />
           </div>
         </div>
 

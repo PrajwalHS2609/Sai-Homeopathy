@@ -61,6 +61,12 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
                 closes: '14:00',
               },
             ],
+            sameAs: [
+              'https://www.instagram.com/anjalihomoeoclinic/',
+              'https://www.facebook.com/profile.php?id=61585723425201',
+              'https://www.practo.com/malappuram/doctor/anjali-chandrasekhar-homoeopath',
+              'https://www.justdial.com/Malappuram/Anjali-Homoeo-Clinic-Kuttippuram/9999PX483-X483-240210031557-B5V4_BZDET',
+            ],
           },
           {
             '@type': 'Physician',
@@ -72,6 +78,12 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
             worksFor: {
               '@id': 'https://anjalihomoeoclinic.com/#clinic',
             },
+            sameAs: [
+              'https://www.practo.com/malappuram/doctor/anjali-chandrasekhar-homoeopath',
+              'https://www.instagram.com/anjalihomoeoclinic/',
+              'https://www.facebook.com/profile.php?id=61585723425201',
+              'https://www.justdial.com/Malappuram/Anjali-Homoeo-Clinic-Kuttippuram/9999PX483-X483-240210031557-B5V4_BZDET',
+            ],
           },
         ],
       },
@@ -810,5 +822,225 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
       2
     ),
     lastUpdated: '2026-10-19',
+  },
+  {
+    id: 'blog-uterine-fibroids',
+    pageName: 'Blog: Uterine Fibroids Symptoms Diagnosis and Treatment',
+    category: 'blog',
+    path: '/uterine-fibroids-symptoms-diagnosis-treatment/',
+    title:
+      'Uterine Fibroids: Symptoms, Diagnosis and Treatment Options | Anjali Homoeo Clinic',
+    description:
+      'Comprehensive clinical guide to uterine fibroid causes, heavy bleeding, pelvic pressure, ultrasound diagnosis, and individualized treatment options at Anjali Homoeo Clinic, Malappuram.',
+    url: 'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Uterine_Fibroids_Medical_Infographic_0f41f481.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Uterine fibroids homeopathy, leiomyomas symptoms Malappuram, myoma treatment without surgery Kerala, heavy menstrual bleeding fibroid, pelvic ultrasound fibroids',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/#article',
+            headline:
+              'Uterine Fibroids: Symptoms, Diagnosis and Available Treatment Options',
+            description:
+              'Uterine fibroids are common, noncancerous growths that develop in or around the uterus. Explore causes, symptoms, diagnosis, and medical, non-surgical, and surgical treatment options.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Uterine_Fibroids_Medical_Infographic_0f41f481.png',
+            url: 'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-20',
+            dateModified: '2026-10-20',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/uterine-fibroids-symptoms-diagnosis-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Are uterine fibroids cancerous?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Uterine fibroids are almost always benign, meaning they are not cancerous. However, unusual symptoms or changes should be assessed by a qualified healthcare professional rather than automatically attributed to known fibroids.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can uterine fibroids disappear without treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some fibroids remain stable, while others may change in size over time. Fibroids often shrink after menopause, but spontaneous disappearance cannot be guaranteed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can women with uterine fibroids become pregnant?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Many women with uterine fibroids conceive naturally. However, certain fibroids may affect fertility or pregnancy outcomes, so individual assessment is important when planning a pregnancy.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does every uterine fibroid require surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Many fibroids do not require treatment, particularly when they cause no symptoms. Monitoring or medication may be appropriate in some cases, while procedures or surgery may be recommended for more significant problems.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which treatment is best for uterine fibroids?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The most appropriate treatment depends on symptoms, fibroid size and location, age, general health, and pregnancy plans. A gynecologist can help compare the available options and recommend an individualized approach.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-20',
+  },
+  {
+    id: 'blog-chronic-sinusitis',
+    pageName: 'Blog: Chronic Sinusitis Symptoms Causes and Treatment',
+    category: 'blog',
+    path: '/chronic-sinusitis-symptoms-causes-treatment/',
+    title:
+      'Chronic Sinusitis: Symptoms, Causes & Treatment Options | Anjali Homoeo Clinic',
+    description:
+      'Understand chronic sinusitis symptoms, facial pressure, nasal polyps, diagnostic endoscopy, CT evaluation, and individualized treatments at Anjali Homoeo Clinic, Malappuram.',
+    url: 'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Chronic_Sinusitis__Symptoms_and_Treatment_e14a9354.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Chronic sinusitis homeopathy Kerala, sinusitis treatment Malappuram, nasal polyps without surgery, facial pain sinus pressure, saline nasal irrigation',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/#article',
+            headline:
+              'Chronic Sinusitis: Symptoms, Causes & Treatment Options',
+            description:
+              'Chronic sinusitis is a persistent inflammatory condition affecting the sinuses for 12 weeks or longer. Explore common symptoms, underlying causes, diagnostic procedures, and medical and home treatment options.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Chronic_Sinusitis__Symptoms_and_Treatment_e14a9354.png',
+            url: 'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-20',
+            dateModified: '2026-10-20',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/chronic-sinusitis-symptoms-causes-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How long does chronic sinusitis last?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Chronic sinusitis is defined by symptoms lasting at least 12 weeks. The duration can vary, and some people require ongoing treatment to control inflammation and reduce recurring symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can chronic sinusitis be cured permanently?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some people achieve long-lasting relief, while others experience recurring symptoms that require continued management. The outcome depends on factors such as nasal polyps, allergies, structural problems, and response to treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is chronic sinusitis always caused by bacteria?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Chronic sinusitis is often associated with persistent inflammation rather than an ongoing bacterial infection. Antibiotics are therefore not necessary in every case.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can allergies cause chronic sinusitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Allergies can contribute to nasal inflammation and may coexist with chronic sinusitis. However, not everyone with chronic sinusitis has allergies, so assessment should be based on the individual\'s symptoms and medical history.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is surgery always required for chronic sinusitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Many people can manage their symptoms with appropriate medical treatment. Surgery may be considered when symptoms remain troublesome despite suitable treatment or when structural problems or nasal polyps require intervention.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can chronic sinusitis affect sleep?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Persistent nasal congestion, postnasal drip, and coughing may interrupt sleep and contribute to daytime fatigue. Treating the underlying condition may improve sleep quality.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-20',
   },
 ];

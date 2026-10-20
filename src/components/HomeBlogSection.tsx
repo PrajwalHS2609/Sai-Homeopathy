@@ -52,12 +52,26 @@ export const HomeBlogSection: React.FC = () => {
               <div className="space-y-4">
                 {/* Optional Blog Image Banner */}
                 {post.image && (
-                  <div className={`w-full ${post.id === 'post-severe-period-pain' ? 'aspect-[2/1] bg-white' : 'aspect-[16/9] bg-[#FDF2F8]'} rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}>
+                  <div
+                    className={`w-full ${
+                      post.id === 'post-severe-period-pain' ||
+                      post.id === 'post-uterine-fibroids' ||
+                      post.id === 'post-chronic-sinusitis'
+                        ? 'aspect-[2/1] bg-white'
+                        : 'aspect-[16/9] bg-[#FDF2F8]'
+                    } rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}
+                  >
                     <img
                       src={post.image}
-                      alt={post.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : post.title}
+                      alt={post.title}
                       referrerPolicy="no-referrer"
-                      className={`w-full h-full ${post.id === 'post-severe-period-pain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
+                      className={`w-full h-full ${
+                        post.id === 'post-severe-period-pain' ||
+                        post.id === 'post-uterine-fibroids' ||
+                        post.id === 'post-chronic-sinusitis'
+                          ? 'object-contain'
+                          : 'object-cover'
+                      } group-hover:scale-105 transition-transform duration-300`}
                     />
                   </div>
                 )}

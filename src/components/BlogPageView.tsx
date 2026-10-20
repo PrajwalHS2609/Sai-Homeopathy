@@ -14,6 +14,10 @@ import {
   Building2,
   Sparkles,
   ShieldAlert,
+  HelpCircle,
+  ChevronDown,
+  ChevronUp,
+  Info,
 } from 'lucide-react';
 
 export const BlogPageView: React.FC = () => {
@@ -29,6 +33,20 @@ export const BlogPageView: React.FC = () => {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [openFaqs, setOpenFaqs] = useState<{ [key: number]: boolean }>({
+    0: true,
+    1: true,
+    2: true,
+    3: true,
+    4: true,
+  });
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqs((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   const categories = [
     'All',
@@ -115,7 +133,7 @@ export const BlogPageView: React.FC = () => {
               <div className="rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm my-6 w-full bg-white">
                 <img
                   src={post.image}
-                  alt={post.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : post.title}
+                  alt={post.title}
                   width="1200"
                   height="600"
                   loading="eager"
@@ -181,16 +199,177 @@ export const BlogPageView: React.FC = () => {
           {/* Full Article Body */}
           <article className="prose prose-slate max-w-none text-sm sm:text-base text-[#334155] leading-relaxed space-y-5 font-sans">
             {post.content.map((paragraph, index) => {
-              if (paragraph.startsWith('### ')) {
+              // Skip raw FAQ lines if interactive FAQ accordion is active
+              if (
+                post.faqs &&
+                post.faqs.length > 0 &&
+                post.faqs.some(
+                  (faq, fIdx) =>
+                    paragraph.startsWith(`${fIdx + 1}. `) &&
+                    paragraph.toLowerCase().includes(faq.question.toLowerCase().slice(0, 15))
+                )
+              ) {
+                return null;
+              }
+
+              // Medical Disclaimer block
+              if (paragraph.startsWith('Medical disclaimer:')) {
                 return (
-                  <h3
+                  <div
                     key={index}
-                    className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] pt-6 pb-2 border-b border-[#EEF2FB]"
+                    className="rounded-2xl bg-[#FFFBEB] p-5 sm:p-6 border border-[#FDE68A] text-xs sm:text-sm text-[#92400E] flex items-start gap-3.5 my-8 shadow-2xs not-prose"
                   >
-                    {paragraph.replace('### ', '')}
-                  </h3>
+                    <ShieldAlert className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-bold block text-[#78350F] uppercase tracking-wider text-[11px] mb-1">
+                        Medical Disclaimer
+                      </span>
+                      <p className="m-0 leading-relaxed text-[#92400E]">
+                        {paragraph.replace('Medical disclaimer:', '').trim()}
+                      </p>
+                    </div>
+                  </div>
                 );
               }
+
+              // FAQ Section Accordion
+              if (
+                paragraph.startsWith('### Frequently Asked Questions') &&
+                post.faqs &&
+                post.faqs.length > 0
+              ) {
+                return (
+                  <div key={index} className="my-10 pt-4 not-prose">
+                    <div className="flex items-center gap-3 mb-5 pb-3 border-b border-[#EEF2FB]">
+                      <div className="w-9 h-9 rounded-xl bg-[#EDF8EE] flex items-center justify-center text-[#2F8335] shrink-0">
+                        <HelpCircle className="w-5 h-5 text-[#45AC4B]" />
+                      </div>
+                      <div>
+                        <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] m-0">
+                          {paragraph.replace('### ', '')}
+                        </h3>
+                        <p className="text-xs text-[#64748B] m-0 mt-1">
+                          Frequently asked clinical questions regarding {post.title.toLowerCase().replace(/[:|].*$/, '')}, symptoms, and individualized care.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 font-sans">
+                      {post.faqs.map((faq, fIdx) => {
+                        const isOpen = openFaqs[fIdx] ?? true;
+                        return (
+                          <div
+                            key={fIdx}
+                            className="rounded-2xl border border-[#D8E1F5] bg-white overflow-hidden shadow-2xs hover:border-[#303A88]/30 transition-all"
+                          >
+                            <button
+                              type="button"
+                              onClick={() => toggleFaq(fIdx)}
+                              className="w-full px-5 py-4 text-left flex items-center justify-between gap-4 bg-white hover:bg-[#F8FAFD] transition-colors cursor-pointer"
+                            >
+                              <div className="flex items-center gap-3">
+                                <span className="w-6 h-6 rounded-full bg-[#EEF2FB] text-[#303A88] text-xs font-bold flex items-center justify-center shrink-0">
+                                  Q{fIdx + 1}
+                                </span>
+                                <span className="text-sm sm:text-base font-bold text-[#1E2559]">
+                                  {faq.question}
+                                </span>
+                              </div>
+                              <div className="w-7 h-7 rounded-full bg-[#F1F5F9] flex items-center justify-center text-[#64748B] shrink-0">
+                                {isOpen ? (
+                                  <ChevronUp className="w-4 h-4 text-[#303A88]" />
+                                ) : (
+                                  <ChevronDown className="w-4 h-4 text-[#64748B]" />
+                                )}
+                              </div>
+                            </button>
+                            {isOpen && (
+                              <div className="px-5 pb-5 pt-2 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-[#F1F5F9] bg-[#FDFEFE]">
+                                <p className="m-0">{faq.answer}</p>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              }
+
+              // Embedded attached image in content body for Uterine Fibroids article
+              const isUterineTreatmentHeading =
+                post.id === 'post-uterine-fibroids' &&
+                paragraph.startsWith('### Available Treatment Options');
+
+              // Embedded attached image in content body for Chronic Sinusitis article
+              const isSinusitisTreatmentHeading =
+                post.id === 'post-chronic-sinusitis' &&
+                paragraph.startsWith('### Treatment Options for Chronic Sinusitis');
+
+              if (paragraph.startsWith('### ')) {
+                return (
+                  <React.Fragment key={index}>
+                    {isUterineTreatmentHeading && (
+                      <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
+                        <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
+                            Attached Clinical Infographic · Uterine Fibroids
+                          </span>
+                          <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
+                            Patient Education
+                          </span>
+                        </div>
+                        <div className="p-2 sm:p-5 bg-white flex justify-center">
+                          <img
+                            src="/assets/aistudio/Uterine_Fibroids_Medical_Infographic_0f41f481.png"
+                            alt="Uterine Fibroids: Symptoms, Diagnosis and Available Treatment Options Medical Infographic"
+                            className="w-full h-auto max-h-[520px] object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                        </div>
+                        <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
+                          <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
+                          <span>
+                            Visual guide illustrating uterine fibroid types, common clinical presentations (menstrual pain, heavy bleeding), ultrasound evaluation, and treatment choices.
+                          </span>
+                        </figcaption>
+                      </figure>
+                    )}
+
+                    {isSinusitisTreatmentHeading && (
+                      <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
+                        <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
+                            Attached Clinical Guide · Chronic Sinusitis
+                          </span>
+                          <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
+                            Patient Education
+                          </span>
+                        </div>
+                        <div className="p-2 sm:p-5 bg-white flex justify-center">
+                          <img
+                            src="/assets/aistudio/Chronic_Sinusitis__Symptoms_and_Treatment_e14a9354.png"
+                            alt="Chronic Sinusitis: Symptoms and Treatment Options Clinical Guide"
+                            className="w-full h-auto max-h-[520px] object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                        </div>
+                        <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
+                          <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
+                          <span>
+                            Clinical reference illustrating chronic sinusitis symptoms, facial pressure patterns, diagnostic assessment, and evidence-informed treatment pathways.
+                          </span>
+                        </figcaption>
+                      </figure>
+                    )}
+                    <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] pt-6 pb-2 border-b border-[#EEF2FB]">
+                      {paragraph.replace('### ', '')}
+                    </h3>
+                  </React.Fragment>
+                );
+              }
+
+              // Bullet points
               if (paragraph.startsWith('•\t') || paragraph.startsWith('• ')) {
                 return (
                   <div key={index} className="flex items-start gap-2.5 pl-2 sm:pl-4">
@@ -201,6 +380,25 @@ export const BlogPageView: React.FC = () => {
                   </div>
                 );
               }
+
+              // Numbered points with bold headers (e.g. 1. Intramural Fibroids: ...)
+              const numMatch = paragraph.match(/^([1-7])\.\s+([^:]+):(.*)$/);
+              if (numMatch) {
+                return (
+                  <div key={index} className="pt-2">
+                    <h4 className="text-sm sm:text-base font-bold text-[#1E2559] flex items-center gap-2 mb-1.5">
+                      <span className="w-5 h-5 rounded-md bg-[#EEF2FB] text-[#303A88] text-xs font-bold flex items-center justify-center shrink-0">
+                        {numMatch[1]}
+                      </span>
+                      <span>{numMatch[2]}</span>
+                    </h4>
+                    <p className="leading-relaxed pl-7 m-0 text-[#334155]">
+                      {numMatch[3].trim()}
+                    </p>
+                  </div>
+                );
+              }
+
               return (
                 <p key={index} className="leading-relaxed">
                   {paragraph}
@@ -347,12 +545,24 @@ export const BlogPageView: React.FC = () => {
 
             <div className="lg:col-span-5 space-y-4">
               {featuredPost.image && (
-                <div className={`w-full ${featuredPost.id === 'post-severe-period-pain' ? 'aspect-[2/1] bg-white' : 'aspect-[16/9] bg-[#FDF2F8]'} rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm group-hover:shadow-md transition-shadow`}>
+                <div
+                  className={`w-full ${
+                    featuredPost.id === 'post-severe-period-pain' ||
+                    featuredPost.id === 'post-uterine-fibroids'
+                      ? 'aspect-[2/1] bg-white'
+                      : 'aspect-[16/9] bg-[#FDF2F8]'
+                  } rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm group-hover:shadow-md transition-shadow`}
+                >
                   <img
                     src={featuredPost.image}
-                    alt={featuredPost.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : featuredPost.title}
+                    alt={featuredPost.title}
                     referrerPolicy="no-referrer"
-                    className={`w-full h-full ${featuredPost.id === 'post-severe-period-pain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
+                    className={`w-full h-full ${
+                      featuredPost.id === 'post-severe-period-pain' ||
+                      featuredPost.id === 'post-uterine-fibroids'
+                        ? 'object-contain'
+                        : 'object-cover'
+                    } group-hover:scale-105 transition-transform duration-300`}
                   />
                 </div>
               )}
@@ -440,12 +650,22 @@ export const BlogPageView: React.FC = () => {
                 <div className="space-y-4">
                   {/* Optional Blog Image Banner */}
                   {post.image && (
-                    <div className={`w-full ${post.id === 'post-severe-period-pain' ? 'aspect-[2/1] bg-white' : 'aspect-[16/9] bg-[#FDF2F8]'} rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}>
+                    <div
+                      className={`w-full ${
+                        post.id === 'post-severe-period-pain' || post.id === 'post-uterine-fibroids'
+                          ? 'aspect-[2/1] bg-white'
+                          : 'aspect-[16/9] bg-[#FDF2F8]'
+                      } rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}
+                    >
                       <img
                         src={post.image}
-                        alt={post.id === 'post-severe-period-pain' ? "Severe period pain: when are menstrual cramps a concern?" : post.title}
+                        alt={post.title}
                         referrerPolicy="no-referrer"
-                        className={`w-full h-full ${post.id === 'post-severe-period-pain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
+                        className={`w-full h-full ${
+                          post.id === 'post-severe-period-pain' || post.id === 'post-uterine-fibroids'
+                            ? 'object-contain'
+                            : 'object-cover'
+                        } group-hover:scale-105 transition-transform duration-300`}
                       />
                     </div>
                   )}

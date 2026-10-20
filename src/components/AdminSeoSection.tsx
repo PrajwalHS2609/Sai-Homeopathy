@@ -150,6 +150,10 @@ export const AdminSeoSection: React.FC = () => {
       const p = blogPosts.find((b) => b.id === 'post-pcod');
       if (p) openBlogPost(p);
       else setCurrentView('blog');
+    } else if (page.id === 'blog-uterine-fibroids') {
+      const p = blogPosts.find((b) => b.id === 'post-uterine-fibroids');
+      if (p) openBlogPost(p);
+      else setCurrentView('blog');
     } else {
       // Default to home or alert
       setCurrentView('home');

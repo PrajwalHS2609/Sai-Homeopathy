@@ -11,6 +11,7 @@ import {
   ShieldAlert,
   Lock,
 } from 'lucide-react';
+import { SocialMediaBar } from './SocialIcons';
 
 export const Footer: React.FC = () => {
   const {
@@ -47,6 +48,14 @@ export const Footer: React.FC = () => {
               convenient online video visits and in-person clinic appointments
               at Kuttippuram and Puthanathani, Kerala.
             </p>
+
+            {/* Official Social Media & Verified Profiles */}
+            <div className="pt-2 space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#45AC4B] block font-sans">
+                Official Profiles &amp; Reviews
+              </span>
+              <SocialMediaBar variant="dark" showHandles={true} />
+            </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-2.5 text-xs">
               <a

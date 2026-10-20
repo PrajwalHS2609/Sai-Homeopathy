@@ -1,7 +1,7 @@
 import { PageSeoMetadata, SeoAuditReport, SeoSchemaType } from '../types/seo';
 import { DEFAULT_SEO_PAGES } from '../data/defaultSeoData';
 
-const STORAGE_KEY = 'anjali_clinic_seo_metadata_v3';
+const STORAGE_KEY = 'anjali_clinic_seo_metadata_v4';
 
 export const loadStoredSeoPages = (): PageSeoMetadata[] => {
   if (typeof window === 'undefined') return DEFAULT_SEO_PAGES;
