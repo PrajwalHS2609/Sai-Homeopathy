@@ -75,22 +75,35 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
             medicalSpecialty: 'Homeopathy',
             jobTitle: 'Lead Homoeopathic Physician',
             alumniOf: 'BHMS (Bachelor of Homeopathic Medicine and Surgery)',
-            worksFor: {
+          },
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/#webpage',
+            name: 'Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+            description:
+              'Comprehensive guide to choosing a homoeopathic clinic in Malappuram, Kerala. Patient-focused consultations, verified qualifications (BHMS), transparent communication, and evidence-informed health assessments.',
+            about: [
+              {
+                '@type': 'MedicalClinic',
+                name: 'Anjali Homoeo Clinic',
+              },
+              {
+                '@type': 'MedicalSpecialty',
+                name: 'Classical Homeopathy',
+              },
+            ],
+            mainEntity: {
               '@id': 'https://anjalihomoeoclinic.com/#clinic',
             },
-            sameAs: [
-              'https://www.practo.com/malappuram/doctor/anjali-chandrasekhar-homoeopath',
-              'https://www.instagram.com/anjalihomoeoclinic/',
-              'https://www.facebook.com/profile.php?id=61585723425201',
-              'https://www.justdial.com/Malappuram/Anjali-Homoeo-Clinic-Kuttippuram/9999PX483-X483-240210031557-B5V4_BZDET',
-            ],
           },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'womens-health-care',
@@ -1042,5 +1055,355 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
       2
     ),
     lastUpdated: '2026-10-20',
+  },
+  {
+    id: 'blog-asthma-symptoms',
+    pageName: 'Blog: Asthma Symptoms Early Warning Signs',
+    category: 'blog',
+    path: '/asthma-symptoms-early-warning-signs/',
+    title:
+      'Asthma Symptoms: Early Warning Signs You Should Recognize | Anjali Homoeo Clinic',
+    description:
+      'Learn the early warning signs of asthma, common triggers, diagnostic spirometry, nighttime coughing, and individualized respiratory care at Anjali Homoeo Clinic, Malappuram.',
+    url: 'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Asthma_Symptoms_Awareness_Banner_fe3d3622.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Asthma symptoms, early warning signs of asthma, wheezing and coughing, asthma triggers, homeopathic asthma treatment Malappuram Kerala, exercise induced asthma, respiratory care',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/#article',
+            headline:
+              'Asthma Symptoms: Early Warning Signs You Should Recognize',
+            description:
+              'Asthma is a chronic respiratory condition that affects the airways. Learn to recognize persistent coughing, wheezing, nighttime breathlessness, triggers, and evidence-informed care.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Asthma_Symptoms_Awareness_Banner_fe3d3622.png',
+            url: 'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-22',
+            dateModified: '2026-10-22',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/asthma-symptoms-early-warning-signs/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the earliest symptoms of asthma?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Early asthma symptoms may include recurring coughing, mild wheezing, chest tightness, or breathlessness during exercise. Symptoms may be more noticeable at night or after exposure to triggers.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can asthma begin in adulthood?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Although asthma often develops during childhood, it can also begin in adulthood. New or persistent breathing problems should be evaluated to determine the cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can asthma occur without wheezing?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some people experience coughing or breathlessness without noticeable wheezing. However, these symptoms can have several causes, so diagnostic testing may be needed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does nighttime coughing always mean asthma?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Nighttime coughing may be associated with asthma, but acid reflux, postnasal drip, respiratory infections, and other conditions can also cause it.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can asthma be controlled?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many people can achieve good symptom control with appropriate treatment, trigger management, and regular medical follow-up. Individual outcomes vary, and some people require adjustments to their treatment plan over time.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is asthma contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Asthma itself is not contagious and cannot be passed directly from one person to another. However, respiratory infections that trigger asthma symptoms can spread between people.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-22',
+  },
+  {
+    id: 'blog-homoeopathic-clinic-in-malappuram',
+    pageName: 'Blog: Homoeopathic Clinic in Malappuram Guide',
+    category: 'blog',
+    path: '/homoeopathic-clinic-in-malappuram-guide/',
+    title:
+      'Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic | Anjali Homoeo Clinic',
+    description:
+      'Comprehensive guide on choosing a homoeopathic clinic in Malappuram, Kerala. Check doctor qualifications (BHMS), consultation expectations, questions to ask, and patient safety precautions.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic clinic in Malappuram, Homoeopathic doctor in Malappuram, Homoeopathic treatment in Malappuram, best homoeopathic clinic in Malappuram, Dr Anjali Chandrasekhar, patient safety homoeopathy Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/#article',
+            headline:
+              'Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic',
+            description:
+              'Choosing the right healthcare provider is an important step. Explore how to choose a homoeopathic clinic in Malappuram, what to expect during consultation, credentials to verify, and patient safety guidelines.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-22',
+            dateModified: '2026-10-22',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How do I choose a homoeopathic clinic in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Check the practitioner\'s qualifications and registration, confirm the services offered, ask about consultation fees, and assess the clarity of communication. Be cautious of claims that promise guaranteed cures or discourage necessary medical treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I check before choosing a homoeopathic doctor in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Verify the practitioner\'s educational qualifications and professional registration. Ask about their consultation process, the limitations of the proposed treatment, and whether your symptoms require further medical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What happens during a homoeopathy consultation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The practitioner may discuss your symptoms, medical history, existing medicines, and previous treatments. Ask questions about diagnosis, safety, evidence-based alternatives, and follow-up arrangements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for every health condition?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Reliable scientific evidence has not established that homoeopathy is effective for treating most health conditions. It should not replace proven treatments or delay appropriate medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I take homoeopathic remedies alongside prescribed medicines?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Do not assume that combining treatments is safe. Discuss every remedy with your treating healthcare professional, and never stop or change prescribed medicines without medical advice.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I bring to my first consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring relevant medical records, previous test results, a list of medicines and supplements, and notes about your symptoms. You can also prepare questions about consultation fees, treatment limitations, and follow-up care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find reliable information about homoeopathic treatment in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Review clinic information carefully, verify practitioner credentials, and consult qualified healthcare professionals. Evaluate health claims critically, especially when they promise guaranteed results or suggest avoiding established medical treatments.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-22',
+  },
+  {
+    id: 'blog-what-causes-piles',
+    pageName: 'Blog: What Causes Piles? Risk Factors & Prevention',
+    category: 'blog',
+    path: '/what-causes-piles-risk-factors-prevention/',
+    title:
+      'What Causes Piles? Common Risk Factors and Prevention Tips | Anjali Homoeo Clinic',
+    description:
+      'Explore the causes of piles (haemorrhoids), risk factors including chronic constipation and straining, prevention tips, early symptoms, and treatment options in Malappuram, Kerala.',
+    url: 'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/What_Causes_Piles__Risk_Factors___Prevention_9dd18daf.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'What causes piles, Piles causes, haemorrhoids risk factors, piles prevention tips, Piles treatment in Malappuram, homoeopathic clinic in Malappuram, anorectal bleeding causes Kerala, Dr Anjali Chandrasekhar',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/#article',
+            headline:
+              'What Causes Piles? Common Risk Factors and Prevention Tips',
+            description:
+              'Piles (haemorrhoids) affect millions of individuals. Explore what causes piles, key risk factors like constipation and straining, practical prevention tips, early symptoms, and evidence-informed care.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/What_Causes_Piles__Risk_Factors___Prevention_9dd18daf.png',
+            url: 'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-22',
+            dateModified: '2026-10-22',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/what-causes-piles-risk-factors-prevention/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is the most common cause of piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Constipation and straining during bowel movements are common contributing factors. Other factors include pregnancy, prolonged toilet sitting, ageing, and repeated irritation around the anus.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles be prevented completely?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not always. However, eating enough fibre, maintaining adequate hydration, staying physically active, and avoiding excessive straining can help reduce common risk factors.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does sitting for long periods cause piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Prolonged sitting on the toilet may increase pressure around the anal region. Sitting for long periods elsewhere is not necessarily a direct cause, but regular movement can support general health and bowel function.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is rectal bleeding always caused by piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Rectal bleeding can result from anal fissures, inflammatory bowel conditions, polyps, colorectal cancer, and other medical problems. Persistent or unexplained bleeding should be assessed by a healthcare professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established that homoeopathy cures piles. Evidence-based options include lifestyle changes, appropriate medicines, office-based procedures, and surgery when indicated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I see a doctor for piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice for recurrent bleeding, persistent pain, a new anal lump, or symptoms that do not improve. Heavy bleeding, fainting, black stools, or severe pain with fever requires urgent assessment.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-22',
   },
 ];

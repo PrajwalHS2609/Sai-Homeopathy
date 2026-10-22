@@ -257,6 +257,38 @@ const isChronicSinusitisBlogPath = (pathname: string) => {
   );
 };
 
+const isAsthmaSymptomsBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/asthma-symptoms-early-warning-signs' ||
+    clean === '/asthma-symptoms-early-warning-signs-you-should-recognize' ||
+    clean === '/blog/asthma-symptoms-early-warning-signs' ||
+    clean === '/asthma-symptoms'
+  );
+};
+
+const isHomoeoClinicMalappuramBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-clinic-in-malappuram-guide' ||
+    clean === '/homoeopathic-clinic-in-malappuram' ||
+    clean === '/blog/homoeopathic-clinic-in-malappuram-guide' ||
+    clean === '/homoeopathic-clinic-malappuram' ||
+    clean === '/homoeopathic-clinic-in-malappuram-a-guide-to-choosing-a-clinic'
+  );
+};
+
+const isPilesBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/what-causes-piles-risk-factors-prevention' ||
+    clean === '/what-causes-piles' ||
+    clean === '/blog/what-causes-piles-risk-factors-prevention' ||
+    clean === '/piles-causes-risk-factors-prevention' ||
+    clean === '/what-causes-piles-common-risk-factors-and-prevention-tips'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -271,6 +303,15 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return 'blog';
       }
       if (isChronicSinusitisBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isAsthmaSymptomsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isHomoeoClinicMalappuramBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isPilesBlogPath(window.location.pathname)) {
         return 'blog';
       }
       if (isWomensHealthPath(window.location.pathname)) {
@@ -359,6 +400,33 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.push(chronicSinusitisPost);
           }
         }
+        const asthmaPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-asthma-symptoms');
+        if (asthmaPost) {
+          const aIdx = parsed.findIndex((p) => p.id === 'post-asthma-symptoms' || p.slug === 'asthma-symptoms-early-warning-signs');
+          if (aIdx >= 0) {
+            parsed[aIdx] = { ...parsed[aIdx], ...asthmaPost, image: asthmaPost.image };
+          } else {
+            parsed.push(asthmaPost);
+          }
+        }
+        const clinicGuidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram');
+        if (clinicGuidePost) {
+          const cgIdx = parsed.findIndex((p) => p.id === 'post-homoeopathic-clinic-in-malappuram' || p.slug === 'homoeopathic-clinic-in-malappuram-guide');
+          if (cgIdx >= 0) {
+            parsed[cgIdx] = { ...parsed[cgIdx], ...clinicGuidePost, image: clinicGuidePost.image };
+          } else {
+            parsed.push(clinicGuidePost);
+          }
+        }
+        const pilesPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-what-causes-piles');
+        if (pilesPost) {
+          const piIdx = parsed.findIndex((p) => p.id === 'post-what-causes-piles' || p.slug === 'what-causes-piles-risk-factors-prevention');
+          if (piIdx >= 0) {
+            parsed[piIdx] = { ...parsed[piIdx], ...pilesPost, image: pilesPost.image };
+          } else {
+            parsed.unshift(pilesPost);
+          }
+        }
         localStorage.setItem('sai_clinic_blogs', JSON.stringify(parsed));
         return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
       } catch {
@@ -380,6 +448,15 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isChronicSinusitisBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-chronic-sinusitis') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isAsthmaSymptomsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-asthma-symptoms') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isHomoeoClinicMalappuramBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPilesBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-what-causes-piles') || INITIAL_BLOG_POSTS[0];
       }
     }
     return null;
@@ -420,6 +497,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('blog');
         const sinusPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-chronic-sinusitis') || INITIAL_BLOG_POSTS[0];
         setSelectedPostForReader(sinusPost);
+      } else if (isAsthmaSymptomsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const asthmaPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-asthma-symptoms') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(asthmaPost);
+      } else if (isHomoeoClinicMalappuramBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const guidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(guidePost);
+      } else if (isPilesBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const pilesPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-what-causes-piles') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(pilesPost);
       } else {
         const path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
         if (path === '' || path === '/') {
@@ -493,6 +582,21 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'asthma-symptoms-early-warning-signs') {
+      const targetUrl = '/asthma-symptoms-early-warning-signs/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'homoeopathic-clinic-in-malappuram-guide') {
+      const targetUrl = '/homoeopathic-clinic-in-malappuram-guide/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'what-causes-piles-risk-factors-prevention') {
+      const targetUrl = '/what-causes-piles-risk-factors-prevention/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
     } else if (currentView === 'home') {
       if (
         isWomensHealthPath(window.location.pathname) ||
@@ -506,7 +610,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isPcodBlogPath(window.location.pathname) ||
         isSeverePeriodPainPath(window.location.pathname) ||
         isUterineFibroidsBlogPath(window.location.pathname) ||
-        isChronicSinusitisBlogPath(window.location.pathname)
+        isChronicSinusitisBlogPath(window.location.pathname) ||
+        isAsthmaSymptomsBlogPath(window.location.pathname) ||
+        isHomoeoClinicMalappuramBlogPath(window.location.pathname) ||
+        isPilesBlogPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -533,6 +640,21 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (post.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
       const targetUrl = '/chronic-sinusitis-symptoms-causes-treatment/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'asthma-symptoms-early-warning-signs') {
+      const targetUrl = '/asthma-symptoms-early-warning-signs/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'homoeopathic-clinic-in-malappuram-guide') {
+      const targetUrl = '/homoeopathic-clinic-in-malappuram-guide/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'what-causes-piles-risk-factors-prevention') {
+      const targetUrl = '/what-causes-piles-risk-factors-prevention/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
@@ -985,6 +1107,12 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         targetId = 'blog-uterine-fibroids';
       } else if (selectedPostForReader?.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
         targetId = 'blog-chronic-sinusitis';
+      } else if (selectedPostForReader?.slug === 'asthma-symptoms-early-warning-signs') {
+        targetId = 'blog-asthma-symptoms';
+      } else if (selectedPostForReader?.slug === 'homoeopathic-clinic-in-malappuram-guide') {
+        targetId = 'blog-homoeopathic-clinic-in-malappuram';
+      } else if (selectedPostForReader?.slug === 'what-causes-piles-risk-factors-prevention') {
+        targetId = 'blog-what-causes-piles';
       } else if (selectedPostForReader) {
         const found = seoPages.find(
           (p) =>

@@ -306,6 +306,21 @@ export const BlogPageView: React.FC = () => {
                 post.id === 'post-chronic-sinusitis' &&
                 paragraph.startsWith('### Treatment Options for Chronic Sinusitis');
 
+              // Embedded attached image in content body for Asthma Symptoms article
+              const isAsthmaTreatmentHeading =
+                post.id === 'post-asthma-symptoms' &&
+                paragraph.startsWith('### Available Treatment Options for Asthma');
+
+              // Embedded attached image in content body for Homoeopathic Clinic in Malappuram guide
+              const isClinicGuideHeading =
+                post.id === 'post-homoeopathic-clinic-in-malappuram' &&
+                paragraph.startsWith('### 6. How to Identify the Best Homoeopathic Clinic');
+
+              // Embedded attached image in content body for What Causes Piles article
+              const isPilesPreventionHeading =
+                post.id === 'post-what-causes-piles' &&
+                paragraph.startsWith('### 5. Prevention Tips');
+
               if (paragraph.startsWith('### ')) {
                 return (
                   <React.Fragment key={index}>
@@ -358,6 +373,87 @@ export const BlogPageView: React.FC = () => {
                           <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
                           <span>
                             Clinical reference illustrating chronic sinusitis symptoms, facial pressure patterns, diagnostic assessment, and evidence-informed treatment pathways.
+                          </span>
+                        </figcaption>
+                      </figure>
+                    )}
+
+                    {isAsthmaTreatmentHeading && (
+                      <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
+                        <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
+                            Attached Clinical Guide · Asthma Early Warning Signs
+                          </span>
+                          <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
+                            Patient Education
+                          </span>
+                        </div>
+                        <div className="p-2 sm:p-5 bg-white flex justify-center">
+                          <img
+                            src="/assets/aistudio/Asthma_Symptoms_Awareness_Banner_fe3d3622.png"
+                            alt="Asthma Symptoms: Early Warning Signs You Should Recognize Clinical Guide"
+                            className="w-full h-auto max-h-[520px] object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                        </div>
+                        <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
+                          <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
+                          <span>
+                            Clinical guide illustrating early asthma warning signs (persistent cough, wheezing, nighttime breathlessness), common triggers, spirometry assessment, and personalized management pathways.
+                          </span>
+                        </figcaption>
+                      </figure>
+                    )}
+
+                    {isClinicGuideHeading && (
+                      <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
+                        <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
+                            Attached Clinical Guide · Choosing a Homoeopathic Clinic in Malappuram
+                          </span>
+                          <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
+                            Patient Education
+                          </span>
+                        </div>
+                        <div className="p-2 sm:p-5 bg-white flex justify-center">
+                          <img
+                            src="/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png"
+                            alt="Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic"
+                            className="w-full h-auto max-h-[520px] object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                        </div>
+                        <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
+                          <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
+                          <span>
+                            Clinical guide illustrating key steps in selecting a homoeopathic clinic in Malappuram: verifying credentials, assessing communication, reviewing services, and prioritizing patient safety.
+                          </span>
+                        </figcaption>
+                      </figure>
+                    )}
+
+                    {isPilesPreventionHeading && (
+                      <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
+                        <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
+                          <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
+                            Attached Clinical Guide · Causes, Risk Factors & Prevention of Piles
+                          </span>
+                          <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
+                            Patient Education
+                          </span>
+                        </div>
+                        <div className="p-2 sm:p-5 bg-white flex justify-center">
+                          <img
+                            src="/assets/aistudio/What_Causes_Piles__Risk_Factors___Prevention_9dd18daf.png"
+                            alt="What Causes Piles? Common Risk Factors and Prevention Tips Clinical Guide"
+                            className="w-full h-auto max-h-[520px] object-contain rounded-xl"
+                            loading="lazy"
+                          />
+                        </div>
+                        <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
+                          <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
+                          <span>
+                            Clinical guide highlighting primary causes of piles (chronic constipation, straining, low dietary fibre), common risk factors, evidence-based prevention habits, and warning signs requiring medical assessment.
                           </span>
                         </figcaption>
                       </figure>
@@ -548,7 +644,11 @@ export const BlogPageView: React.FC = () => {
                 <div
                   className={`w-full ${
                     featuredPost.id === 'post-severe-period-pain' ||
-                    featuredPost.id === 'post-uterine-fibroids'
+                    featuredPost.id === 'post-uterine-fibroids' ||
+                    featuredPost.id === 'post-chronic-sinusitis' ||
+                    featuredPost.id === 'post-asthma-symptoms' ||
+                    featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                    featuredPost.id === 'post-what-causes-piles'
                       ? 'aspect-[2/1] bg-white'
                       : 'aspect-[16/9] bg-[#FDF2F8]'
                   } rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm group-hover:shadow-md transition-shadow`}
@@ -559,7 +659,11 @@ export const BlogPageView: React.FC = () => {
                     referrerPolicy="no-referrer"
                     className={`w-full h-full ${
                       featuredPost.id === 'post-severe-period-pain' ||
-                      featuredPost.id === 'post-uterine-fibroids'
+                      featuredPost.id === 'post-uterine-fibroids' ||
+                      featuredPost.id === 'post-chronic-sinusitis' ||
+                      featuredPost.id === 'post-asthma-symptoms' ||
+                      featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                      featuredPost.id === 'post-what-causes-piles'
                         ? 'object-contain'
                         : 'object-cover'
                     } group-hover:scale-105 transition-transform duration-300`}
@@ -652,7 +756,12 @@ export const BlogPageView: React.FC = () => {
                   {post.image && (
                     <div
                       className={`w-full ${
-                        post.id === 'post-severe-period-pain' || post.id === 'post-uterine-fibroids'
+                        post.id === 'post-severe-period-pain' ||
+                        post.id === 'post-uterine-fibroids' ||
+                        post.id === 'post-chronic-sinusitis' ||
+                        post.id === 'post-asthma-symptoms' ||
+                        post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                        post.id === 'post-what-causes-piles'
                           ? 'aspect-[2/1] bg-white'
                           : 'aspect-[16/9] bg-[#FDF2F8]'
                       } rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}
@@ -662,7 +771,12 @@ export const BlogPageView: React.FC = () => {
                         alt={post.title}
                         referrerPolicy="no-referrer"
                         className={`w-full h-full ${
-                          post.id === 'post-severe-period-pain' || post.id === 'post-uterine-fibroids'
+                          post.id === 'post-severe-period-pain' ||
+                          post.id === 'post-uterine-fibroids' ||
+                          post.id === 'post-chronic-sinusitis' ||
+                          post.id === 'post-asthma-symptoms' ||
+                          post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                          post.id === 'post-what-causes-piles'
                             ? 'object-contain'
                             : 'object-cover'
                         } group-hover:scale-105 transition-transform duration-300`}

@@ -15,6 +15,7 @@ import { AppointmentBookingEngine } from './components/AppointmentBookingEngine'
 import { ContactSection } from './components/ContactSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCtaBanner } from './components/FinalCtaBanner';
+import { HomeSeoArticleSection } from './components/HomeSeoArticleSection';
 import { Footer } from './components/Footer';
 import { ProductsCatalogView } from './components/ProductsCatalogView';
 import { HomeBlogSection } from './components/HomeBlogSection';
@@ -499,9 +500,12 @@ const MainContent: React.FC = () => {
 
         {/* 17. Final CTA Banner */}
         <FinalCtaBanner />
+
+        {/* 18. Website SEO Content: Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic */}
+        <HomeSeoArticleSection />
       </main>
 
-      {/* 18. Multi-Column Footer */}
+      {/* 19. Multi-Column Footer */}
       <Footer />
 
       {/* Modals, Drawers & Overlays */}
