@@ -120,56 +120,119 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      "Women's health homeopathy, PCOD treatment Kerala, PCOS homoeopathy, menstrual cramps dysmenorrhea, fibroid homeopathy, Dr Anjali Chandrasekhar",
+      "Women's health clinic in Malappuram, PCOS Consultation in Malappuram, PCOD consultation, menstrual irregularities Malappuram, uterine fibroids consultation, menopause consultation Malappuram, Dr Anjali Chandrasekhar",
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
-        headline:
-          'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
-        description:
-          "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health and personalized consultations.",
-        about: [
+        '@graph': [
           {
-            '@type': 'MedicalCondition',
-            name: 'PCOD / PCOS (Polycystic Ovarian Disease)',
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#webpage',
+            name: "Women's Health Consultation in Malappuram – Anjali Homoeo Clinic",
+            headline:
+              "Women's Health Consultation in Malappuram – Consultations for PCOS, Fibroids & Menopause",
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+            description:
+              "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health, PCOS, uterine fibroids, and menopause consultations.",
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'PCOD / PCOS (Polycystic Ovarian Disease)',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Severe Dysmenorrhea (Menstrual Pain)',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Irregular Menstruation & Hormonal Imbalance',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Uterine Fibroids & Ovarian Cysts',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Menopause & Perimenopause Symptoms',
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking personalized women\'s health consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
           },
           {
-            '@type': 'MedicalCondition',
-            name: 'Severe Dysmenorrhea (Menstrual Pain)',
-          },
-          {
-            '@type': 'MedicalCondition',
-            name: 'Irregular Menstruation & Hormonal Imbalance',
-          },
-          {
-            '@type': 'MedicalCondition',
-            name: 'Uterine Fibroids & Ovarian Cysts',
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: "Where can I find a Women's Health Clinic in Malappuram?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can research local healthcare providers, including Anjali Homoeo Clinic, and verify their services and practitioner qualifications. For reproductive health concerns, confirm that you can access appropriate medical assessment and specialist referral when necessary.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is included in a PCOS Consultation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A medical assessment for suspected PCOS may involve reviewing menstrual history, symptoms, medical history, and relevant examination findings. Blood tests or imaging may be recommended when appropriate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek care for menstrual irregularities?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if your periods become persistently irregular, stop unexpectedly, or involve unusually heavy bleeding or severe pain. Urgent symptoms require prompt medical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do uterine fibroids always require treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Some fibroids cause no symptoms and may only require monitoring. Others need medication, procedures, or surgery depending on their size, location, symptoms, and the patient\'s circumstances.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I discuss during a menopause consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Discuss your symptoms, menstrual changes, sleep, mood, medical history, and any effect on your daily life. A qualified healthcare professional can help you understand the available evidence-based management options.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy treat PCOS, fibroids, or menopause symptoms?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established that homoeopathy effectively treats PCOS, uterine fibroids, or menopause symptoms beyond placebo effects. It should not replace evidence-based treatment or delay medical evaluation.',
+                },
+              },
+            ],
           },
         ],
-        medicalAudience: {
-          '@type': 'MedicalAudience',
-          audienceType: 'Patients seeking non-hormonal, constitutional homoeopathic care',
-        },
-        mainEntity: {
-          '@type': 'MedicalClinic',
-          name: 'Anjali Homoeo Clinic',
-          telephone: '098951 01707',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Kuttippuram',
-            addressRegion: 'Keralam',
-            addressCountry: 'IN',
-          },
-        },
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'respiratory-care',
@@ -177,75 +240,234 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     title:
-      'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
+      'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
     description:
-      'Explore homoeopathic consultations for respiratory, ENT and allergy concerns at Anjali Homoeo Clinic in Malappuram, Kerala, with personalized healthcare guidance.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for respiratory, ENT & allergy conditions in Malappuram. Guidance for sinusitis, dust allergy, chronic cough, asthma support & adenoids.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Asthma homeopathy Kerala, allergic rhinitis homeopathy, sinusitis treatment Malappuram, chronic bronchitis, tonsillitis homeo',
+      'Homoeopathic doctor for respiratory in Malappuram, homoeopathic clinic for sinus problems in Malappuram, respiratory allergies Malappuram, dust allergy clinic, chronic cough consultation, asthma homeopathy Malappuram, tonsillitis, adenoids children',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
-        headline:
-          'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
-        description:
-          'Explore homoeopathic consultations for respiratory, ENT and allergy concerns at Anjali Homoeo Clinic in Malappuram, Kerala, with personalized healthcare guidance.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Bronchial Asthma' },
-          { '@type': 'MedicalCondition', name: 'Allergic Rhinitis' },
-          { '@type': 'MedicalCondition', name: 'Chronic Sinusitis' },
-          { '@type': 'MedicalCondition', name: 'Recurrent Tonsillitis' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
+            name: 'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions – Anjali Homoeo Clinic',
+            headline:
+              'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+            description:
+              'Comprehensive patient guide to respiratory, ENT, sinus, allergy, chronic cough, asthma, tonsillitis, and voice strain care at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Chronic Sinusitis & Sinus Congestion' },
+              { '@type': 'MedicalCondition', name: 'Allergic Rhinitis & Respiratory Allergies' },
+              { '@type': 'MedicalCondition', name: 'House Dust Mite Allergy' },
+              { '@type': 'MedicalCondition', name: 'Bronchial Asthma & Wheezing' },
+              { '@type': 'MedicalCondition', name: 'Chronic Cough (Dry & Productive)' },
+              { '@type': 'MedicalCondition', name: 'Recurrent Tonsillitis & Pharyngitis' },
+              { '@type': 'MedicalCondition', name: 'Adenoid Hypertrophy in Children' },
+              { '@type': 'MedicalCondition', name: 'Vocal Fatigue & Voice Strain' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking respiratory, ENT, and allergy consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for recurring sinus problems in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek medical evaluation if sinus symptoms such as facial pressure, persistent nasal obstruction, headache, or thick discharge last for several weeks or return frequently. Seek urgent medical care if you experience vision changes, swelling around the eyes, or severe headache.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure asthma or replace prescribed inhalers?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Reliable scientific evidence has not shown homoeopathy to be an effective replacement for evidence-based asthma treatment. Patients should never discontinue or reduce prescribed inhalers, steroid preventers, or emergency bronchodilators without explicit medical instruction.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the main causes of dust allergy and persistent sneezing?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dust allergy is commonly triggered by microscopic house dust mites, mould spores, animal dander, and fabric fibres. When inhaled, these airborne allergens induce histamine release in sensitive individuals, causing sneezing, runny nose, and ocular itching.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I know if my child has enlarged adenoids?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Signs of enlarged adenoids include persistent mouth breathing, loud snoring, restless sleep, paused breathing during sleep (suspected sleep apnoea), recurrent ear fullness or infections, and persistent nasal speech. Assessment by a paediatrician or ENT specialist is recommended.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When does a chronic cough require urgent medical investigation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A cough persisting beyond 3 to 4 weeks warrants comprehensive medical investigation. Immediate emergency assessment is critical if the cough is accompanied by coughing up blood (haemoptysis), unexplained weight loss, shortness of breath, severe chest pain, or high fever.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What vocal hygiene measures are recommended for teachers and singers experiencing voice strain?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Professional voice users should maintain adequate hydration, schedule deliberate vocal rest periods, avoid frequent throat-clearing and whispering, use microphone amplification in large classrooms, and seek an ENT evaluation if hoarseness persists beyond 3 to 4 weeks.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'skin-hair-care',
     pageName: 'Skin, Hair & Scalp Conditions',
     category: 'clinical',
     path: '/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
-    title: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
+    title: 'Skin & Hair Homoeopathic Clinic in Malappuram',
     description:
-      'Explore consultations for skin, hair and scalp concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized guidance for your healthcare needs.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for skin, hair & scalp concerns in Malappuram. Clinical guidance for eczema, psoriasis, acne, melasma, alopecia areata & dandruff.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Psoriasis homeopathy Kerala, eczema treatment Malappuram, alopecia areata homeo, acne vulgaris treatment, chronic hives urticaria',
+      'Skin & hair homoeopathic clinic in Malappuram, homoeopathic skin clinic Malappuram, homoeopathic doctor for skin problems, eczema, psoriasis, acne, melasma, alopecia areata, dandruff, Dr Anjali Chandrasekhar',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
-        headline: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
-        description:
-          'Explore consultations for skin, hair and scalp concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized guidance for your healthcare needs.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Psoriasis & Chronic Dermatitis' },
-          { '@type': 'MedicalCondition', name: 'Eczema & Atopic Dermatitis' },
-          { '@type': 'MedicalCondition', name: 'Alopecia Areata & Hair Loss' },
-          { '@type': 'MedicalCondition', name: 'Acne Vulgaris' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
+            name: 'Skin & Hair Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Skin & Hair Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+            description:
+              'Comprehensive patient guide to eczema, psoriasis, melasma, cystic acne, hair loss, alopecia areata, dandruff, urticaria, warts, and shingles care at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Eczema & Atopic Dermatitis' },
+              { '@type': 'MedicalCondition', name: 'Psoriasis & Scaly Plaques' },
+              { '@type': 'MedicalCondition', name: 'Melasma & Facial Pigmentation' },
+              { '@type': 'MedicalCondition', name: 'Acne Vulgaris & Cystic Acne' },
+              { '@type': 'MedicalCondition', name: 'Alopecia Areata & Patchy Hair Loss' },
+              { '@type': 'MedicalCondition', name: 'Seborrhoeic Dermatitis & Dandruff' },
+              { '@type': 'MedicalCondition', name: 'Chronic Urticaria & Skin Allergies' },
+              { '@type': 'MedicalCondition', name: 'Warts (HPV) & Skin Lesions' },
+              { '@type': 'MedicalCondition', name: 'Herpes Zoster (Shingles) & Postherpetic Neuralgia' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking skin, hair, and scalp care consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for recurring skin problems in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek medical evaluation if skin symptoms such as intense itching, spreading redness, scaling patches, painful cystic acne, or unexplained pigmentation persist for several weeks or recur repeatedly. Any rapidly changing, bleeding, or unusual mole requires immediate dermatological assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure chronic eczema or psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homoeopathy as a curative treatment for eczema or psoriasis. These chronic inflammatory conditions require evidence-based management, skin barrier restoration, and medical supervision to prevent flare-ups, skin infections, and complications such as psoriatic arthritis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between ordinary hair shedding and alopecia areata?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ordinary hair shedding (telogen effluvium) typically involves diffuse, uniform thinning across the scalp often triggered by stress, illness, or nutritional deficits. In contrast, alopecia areata is an autoimmune condition causing distinct, smooth, circular or oval bald patches that require clinical evaluation by a healthcare professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How should severe cystic acne be treated to prevent permanent scarring?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Severe or cystic acne involves deep follicular inflammation that risks permanent pitted scars and post-inflammatory hyperpigmentation. Evidence-based care with topical retinoids, benzoyl peroxide, or oral medications prescribed by a qualified clinician should be initiated early, while avoiding picking or squeezing lesions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What triggers chronic urticaria (hives) and when is it an emergency?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Chronic urticaria produces itchy welts that persist or recur over more than six weeks, often linked to autoimmune factors, viral infections, or physical triggers. It requires immediate emergency medical attention if accompanied by lip, tongue, or facial swelling (angioedema), difficulty breathing, or dizziness.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why is early antiviral treatment essential for shingles (herpes zoster)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Shingles causes a painful blistering rash following a nerve pathway. Prompt medical assessment within 72 hours allows prescription of antiviral therapy that limits rash severity and substantially reduces the risk of long-term debilitating nerve pain known as postherpetic neuralgia.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'renal-thyroid-care',
@@ -253,38 +475,115 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     title:
-      'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
+      'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram',
     description:
-      'Explore consultations for renal, urinary, gallbladder and thyroid concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for kidney stones, urinary calculi, gallstones, hypothyroidism, Hashimoto’s & goiter in Malappuram. Evidence-aware clinical care.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Kidney stones homeopathy Kerala, urinary tract infection homeo, gallbladder stone homeopathy, hypothyroidism treatment Malappuram',
+      'Renal urinary gallbladder thyroid homoeopathic clinic in Malappuram, kidney stone consultation Malappuram, urinary stone consultation, gallbladder stone consultation, hypothyroidism consultation, Hashimoto thyroiditis, goiter Malappuram',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
-        headline:
-          'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
-        description:
-          'Explore consultations for renal, urinary, gallbladder and thyroid concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Renal Calculi (Kidney Stones)' },
-          { '@type': 'MedicalCondition', name: 'Recurrent Urinary Tract Infections' },
-          { '@type': 'MedicalCondition', name: 'Cholelithiasis (Gallbladder Stones)' },
-          { '@type': 'MedicalCondition', name: 'Hypothyroidism & Thyroid Nodules' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
+            name: 'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline:
+              'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+            description:
+              'Comprehensive patient guide to renal calculi, ureteral stones, cholelithiasis, hypothyroidism, Hashimoto’s thyroiditis, and goiter consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Renal Calculi (Kidney Stones)' },
+              { '@type': 'MedicalCondition', name: 'Ureteral & Bladder Calculi' },
+              { '@type': 'MedicalCondition', name: 'Cholelithiasis (Gallbladder Stones)' },
+              { '@type': 'MedicalCondition', name: 'Hypothyroidism (Underactive Thyroid)' },
+              { '@type': 'MedicalCondition', name: 'Hashimoto’s Autoimmune Thyroiditis' },
+              { '@type': 'MedicalCondition', name: 'Goiter & Thyroid Enlargement' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking kidney stone, gallbladder, and thyroid consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'When does a kidney stone or urinary calculus require emergency hospital care?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek immediate emergency medical care if flank or abdominal pain is accompanied by high fever, shaking chills, persistent vomiting, complete inability to pass urine (anuria), or if you have a single functioning kidney. An obstructing stone combined with a urinary tract infection is a urological emergency (sepsis risk).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathic remedies dissolve kidney stones or gallbladder stones?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not demonstrated that homoeopathic remedies can dissolve kidney stones or gallstones or eliminate urinary obstruction. Clinical management depends on stone dimensions, composition, and location, often requiring urological evaluation or surgical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can thyroid hormone medication (Levothyroxine) be replaced with homoeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. In primary hypothyroidism and advanced Hashimoto’s thyroiditis, the thyroid gland lacks the biological capacity to synthesize sufficient thyroxine (T4). Discontinuing or replacing prescribed levothyroxine with unproven remedies can lead to worsening fatigue, cardiovascular strain, severe metabolic slowing, and myxoedema coma.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the classic warning signs of acute gallbladder complications?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek urgent medical attention if gallstone pain (biliary colic) does not subside within a few hours, or is accompanied by jaundice (yellowing of the skin or eyes), fever, chills, dark tea-colored urine, or pale clay-colored stools. These signs indicate acute cholecystitis, cholangitis, or common bile duct obstruction.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What tests are necessary for a comprehensive thyroid consultation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A thorough thyroid evaluation typically involves serum Thyroid Stimulating Hormone (TSH), Free T4, and Free T3. When autoimmune thyroiditis or structural enlargement (goiter/nodules) is suspected, thyroid peroxidase antibodies (anti-TPO), thyroglobulin antibodies (anti-Tg), and high-resolution thyroid ultrasound are recommended.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why should people with Hashimoto’s thyroiditis be cautious with iodine supplements?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Excessive iodine intake (from kelp, seaweed extracts, or high-dose supplements) can aggravate autoimmune thyroid inflammation, trigger antibody spikes, and precipitate acute thyroid dysfunction (Wolff-Chaikoff effect or iodine-induced thyrotoxicosis). Supplementation should only occur under medical supervision.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'neurological-care',
@@ -292,38 +591,116 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-neurological-headache-conditions/',
     title:
-      'Headache & Neurological Homeopathic Treatment in Malappuram',
+      'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram',
     description:
-      'Explore consultations for headaches and neurological concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Receive personalized healthcare guidance for your needs.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for headaches, migraines, stress, anxiety, memory fog & child development in Malappuram. Evidence-aware clinical care.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Migraine homeopathy Kerala, cluster headache treatment, trigeminal neuralgia, vertigo Meniere disease, neuropathy homeo',
+      'Neurological & headache conditions homoeopathic clinic in Malappuram, headache consultation Malappuram, migraine consultation, stress management, anxiety consultation, memory problems, child development ADHD Malappuram',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Headache & Neurological Homeopathic Treatment in Malappuram',
-        headline:
-          'Headache & Neurological Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
-        description:
-          'Explore consultations for headaches and neurological concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Receive personalized healthcare guidance for your needs.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Migraine with and without Aura' },
-          { '@type': 'MedicalCondition', name: 'Chronic Tension Headache' },
-          { '@type': 'MedicalCondition', name: 'Trigeminal Neuralgia' },
-          { '@type': 'MedicalCondition', name: 'Vertigo & Vestibular Dysfunction' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#webpage',
+            name: 'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline:
+              'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+            description:
+              'Comprehensive patient guide to migraines, tension headaches, stress management, anxiety, memory fog, and child development consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Migraine with and without Aura' },
+              { '@type': 'MedicalCondition', name: 'Chronic Tension Headache' },
+              { '@type': 'MedicalCondition', name: 'Medication-Overuse Headache' },
+              { '@type': 'MedicalCondition', name: 'Stress & Mental Fatigue' },
+              { '@type': 'MedicalCondition', name: 'Generalized Anxiety Symptoms' },
+              { '@type': 'MedicalCondition', name: 'Memory Difficulties & Brain Fog' },
+              { '@type': 'MedicalCondition', name: 'Child Attention & ADHD Evaluation' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking headache, migraine, stress, and neurological consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'When does a headache or migraine require emergency medical attention?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek immediate emergency medical care for a sudden, extremely severe headache (thunderclap headache), a headache accompanied by facial weakness, speech difficulty, vision loss, confusion, high fever with neck stiffness, or headache following a head injury.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between a tension headache and a migraine attack?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Tension-type headaches usually cause a dull, steady aching pressure or band-like tightness around both sides of the head and neck. In contrast, migraines typically cause moderate-to-severe throbbing pain (often on one side), accompanied by nausea, vomiting, and marked sensitivity to light and sound.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are medication-overuse headaches (rebound headaches)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Medication-overuse headaches occur when acute pain relievers, triptans, or combination analgesics are taken frequently (typically 10 to 15 days or more per month). Over time, the medicine causes headaches to become more frequent and daily, requiring structured medication withdrawal under clinical supervision.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure clinical anxiety disorders or depression?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not shown homoeopathy to effectively treat clinical anxiety disorders, panic disorders, or depression. These mental health conditions benefit from evidence-based care, including cognitive behavioural therapy (CBT) and prescribed medical treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes persistent brain fog and memory difficulties in adults?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Brain fog and concentration difficulties can arise from chronic sleep deprivation, severe psychological stress, anxiety, depressive disorders, thyroid dysfunction (hypothyroidism), nutritional deficiencies (vitamin B12, iron), medication side effects, or neurological disorders.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How should child attention and learning difficulties (suspected ADHD) be evaluated?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Child developmental, attention, or learning concerns should never be diagnosed via brief online checklists or unproven therapies. They require a comprehensive multidisciplinary clinical assessment involving paediatricians, child psychologists, educators, and developmental specialists.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'anorectal-vascular-care',
@@ -331,38 +708,115 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-anorectal-vascular-conditions/',
     title:
-      'Anorectal & Vascular Homeopathic Treatment in Malappuram',
+      'Anorectal & Vascular Homoeopathic Clinic in Malappuram',
     description:
-      'Explore consultations for anorectal and vascular concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about symptoms, healthcare options and personalized guidance.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for hemorrhoids (piles), anal fissures, fistula-in-ano, and varicose veins in Malappuram, Kerala. Responsible clinical guidance.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Piles treatment without surgery Kerala, hemorrhoids homeopathy Malappuram, anal fissure homeo, varicose veins non-surgical homeopathic cure',
+      'Anorectal & vascular homoeopathic clinic in Malappuram, piles consultation Malappuram, hemorrhoids treatment, anal fissure clinic, fistula-in-ano, varicose veins Kerala, venous insufficiency',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Anorectal & Vascular Homeopathic Treatment in Malappuram',
-        headline:
-          'Anorectal & Vascular Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
-        description:
-          'Explore consultations for anorectal and vascular concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about symptoms, healthcare options and personalized guidance.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Hemorrhoids (Piles - Bleeding & Non-bleeding)' },
-          { '@type': 'MedicalCondition', name: 'Anal Fissures' },
-          { '@type': 'MedicalCondition', name: 'Fistula-in-ano' },
-          { '@type': 'MedicalCondition', name: 'Varicose Veins & Venous Insufficiency' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/#webpage',
+            name: 'Anorectal & Vascular Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline:
+              'Anorectal & Vascular Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
+            description:
+              'Comprehensive patient guide to hemorrhoids (piles), anal fissures, perianal fistulas, and lower-extremity varicose veins consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Hemorrhoids (Piles - Internal & External)' },
+              { '@type': 'MedicalCondition', name: 'Anal Fissure & Sphincter Spasm' },
+              { '@type': 'MedicalCondition', name: 'Perianal Fistula (Fistula-in-ano)' },
+              { '@type': 'MedicalCondition', name: 'Perianal Abscess' },
+              { '@type': 'MedicalCondition', name: 'Lower-Extremity Varicose Veins' },
+              { '@type': 'MedicalCondition', name: 'Chronic Venous Insufficiency (CVI)' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking anorectal and vascular health consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Why is it dangerous to assume that all rectal bleeding is caused by piles (hemorrhoids)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While hemorrhoids are a frequent cause of bright red rectal bleeding, assuming that every episode of rectal bleeding is benign piles can delay the diagnosis of serious colorectal pathology. Conditions such as anal fissures, inflammatory bowel disease, polyps, and colorectal cancer can present with identical bleeding symptoms. Any rectal bleeding requires formal clinical examination by a qualified physician.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure a complex perianal fistula without surgical evaluation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A perianal fistula is an abnormal epithelialized tract connecting the anal canal to the perianal skin. While homoeopathic supportive care can assist in symptom relief and constitutional well-being, reliable scientific evidence has not shown that homoeopathic remedies can eliminate complex epithelialized fistula tracts or replace surgical evaluation. Evaluation with pelvic MRI and colorectal consultation is essential.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the fundamental difference between an anal fissure and hemorrhoids?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'An anal fissure is a sharp, painful tear in the lining of the lower anal canal, characterized by severe cutting pain during defecation that lingers for hours. In contrast, uncomplicated internal hemorrhoids are swollen vascular cushions located higher in the anal canal that typically bleed painlessly into the toilet bowl without severe acute cutting pain.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I relieve excruciating pain during and after bowel movements caused by an anal fissure?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Immediate supportive care focuses on relaxing the hypertonic internal anal sphincter muscle with warm water sitz baths for 15 minutes twice daily and after defecation. Increasing dietary soluble fiber and water intake prevents hard stools from re-tearing the fissure. Clinical evaluation is advised for medical management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can varicose veins in the legs lead to serious or life-threatening blood clots?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Varicose veins occur in the superficial venous system and can lead to superficial thrombophlebitis or increase the risk of Deep Vein Thrombosis (DVT). A DVT clot can travel to the lungs, causing a potentially fatal pulmonary embolism. Sudden unilateral calf swelling, redness, deep calf pain, or sudden shortness of breath requires immediate emergency hospital care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I bring and expect during an anorectal or vascular consultation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring previous diagnostic reports including colonoscopy, anoscopy, pelvic scans, or lower-limb venous Doppler ultrasound reports, along with current medications. The doctor conducts a confidential review of your symptoms, bowel patterns, standing/sitting habits, and overall health to formulate a personalized supportive care plan.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'joint-musculoskeletal-care',
@@ -370,38 +824,115 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     title:
-      'Joint & Musculoskeletal Homeopathic Treatment in Malappuram',
+      'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram',
     description:
-      'Explore consultations for joint pain, musculoskeletal concerns and chronic conditions at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for joint pain, knee osteoarthritis, cervical & lumbar spondylosis, sciatica & chronic pain in Malappuram, Kerala.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Arthritis homeopathy Kerala, osteoarthritis knee pain, cervical spondylosis homeo, sciatica pain relief, gout hyperuricemia',
+      'Joint musculoskeletal chronic homoeopathic clinic in Malappuram, joint pain consultation Malappuram, knee osteoarthritis Malappuram, arthritis consultation, cervical spondylosis neck pain, lumbar spondylosis back pain, sciatica treatment',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Joint & Musculoskeletal Homeopathic Treatment in Malappuram',
-        headline:
-          'Joint & Musculoskeletal Homeopathic Treatment in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
-        description:
-          'Explore consultations for joint pain, musculoskeletal concerns and chronic conditions at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Osteoarthritis & Degenerative Joint Disease' },
-          { '@type': 'MedicalCondition', name: 'Rheumatoid Arthritis' },
-          { '@type': 'MedicalCondition', name: 'Cervical & Lumbar Spondylosis' },
-          { '@type': 'MedicalCondition', name: 'Sciatica & Disc Prolapse' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#webpage',
+            name: 'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline:
+              'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
+            description:
+              'Comprehensive patient guide to joint pain, knee osteoarthritis, rheumatoid arthritis, cervical spondylosis, lumbar spondylosis, and sciatica consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Knee Osteoarthritis' },
+              { '@type': 'MedicalCondition', name: 'Rheumatoid Arthritis & Autoimmune Arthropathies' },
+              { '@type': 'MedicalCondition', name: 'Cervical Spondylosis & Neck Pain' },
+              { '@type': 'MedicalCondition', name: 'Lumbar Spondylosis & Lower Back Pain' },
+              { '@type': 'MedicalCondition', name: 'Sciatica & Lumbar Radiculopathy' },
+              { '@type': 'MedicalCondition', name: 'Chronic Musculoskeletal Pain Syndromes' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking joint, spine, and musculoskeletal consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure knee osteoarthritis or regenerate eroded cartilage?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not shown that homoeopathic remedies can reverse osteoarthritis, rebuild lost articular cartilage, or alter bone-on-bone joint deformity. In osteoarthritis, the loss of hyaline cartilage is a progressive biomechanical and degenerative process. Homoeopathic consultations provide supportive constitutional care and general lifestyle comfort, but must never replace proven interventions such as physiotherapy, quadriceps strengthening, weight management, and orthopaedic evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I do if my lower back pain radiates down into my leg (sciatica)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Pain traveling from the lower back through the buttock down the leg indicates irritation or mechanical compression of the sciatic nerve roots. Arrange a medical evaluation to determine the precise anatomical cause. Remain gently active, avoid heavy lifting or prolonged sitting, and seek urgent hospital care if leg weakness worsens rapidly or if you experience numbness around the groin or bladder changes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When does back or neck pain become an emergency medical situation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek immediate emergency hospital attention if back or neck pain is accompanied by loss of bowel or bladder control, saddle anesthesia (numbness in groin or perineum), progressive leg or foot weakness (foot drop), high fever with spinal tenderness, or follows high-impact trauma. These signs indicate Cauda Equina Syndrome or acute cord compression requiring urgent surgical decompression.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the fundamental difference between osteoarthritis and rheumatoid arthritis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Osteoarthritis is predominantly a degenerative wear-and-tear condition of joint cartilage worsened by weight-bearing movement and eased by rest. Rheumatoid arthritis is a systemic autoimmune disease where the immune system attacks the synovial joint lining, causing symmetrical joint swelling, warmth, and prolonged morning stiffness lasting over an hour, requiring rheumatologist care and disease-modifying drugs (DMARDs).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I take homoeopathic remedies alongside my prescribed arthritis or pain medications?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, homoeopathic micro-dilutions can generally be taken alongside conventional medications. However, you must never discontinue, reduce, or substitute prescribed anti-inflammatory drugs, DMARDs, immunosuppressants, or painkillers on your own. Always inform both your prescribing doctor and homoeopathic practitioner.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What diagnostic tests or imaging should I bring to a joint and spine consultation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring available spinal or joint X-rays, MRI scans, CT reports, DEXA scans, and recent blood test panels (such as Complete Blood Count, ESR, CRP, Rheumatoid Factor, Anti-CCP, and Uric Acid). Reviewing these existing reports allows Dr. Anjali Chandrasekhar (BHMS) to assess your condition and guide supportive care safely.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'ophthalmic-eye-care',
@@ -409,38 +940,115 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     category: 'clinical',
     path: '/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
     title:
-      'Eye Care Homeopathic Consultation in Malappuram',
+      'Ophthalmic & Eye Homoeopathic Clinic in Malappuram',
     description:
-      'Explore eye health consultations at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about common eye concerns, symptoms and appropriate healthcare options.',
+      'Consult Dr. Anjali Chandrasekhar (BHMS) for recurrent conjunctivitis, pink eye support, ocular hypertension & eye health co-management in Malappuram, Kerala.',
     url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
     canonicalUrl:
       'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
     ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Allergic conjunctivitis homeopathy, dry eyes homeopathic eye drops, styes chalazion treatment, blepharitis Malappuram',
+      'Ophthalmic eye homoeopathic clinic in Malappuram, eye consultation Malappuram, recurrent conjunctivitis pink eye, ocular hypertension, glaucoma risk Malappuram, eye health Kerala',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Eye Care Homeopathic Consultation in Malappuram',
-        headline:
-          'Eye Care Homeopathic Consultation in Malappuram',
-        url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
-        description:
-          'Explore eye health consultations at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about common eye concerns, symptoms and appropriate healthcare options.',
-        about: [
-          { '@type': 'MedicalCondition', name: 'Allergic Conjunctivitis' },
-          { '@type': 'MedicalCondition', name: 'Chronic Blepharitis' },
-          { '@type': 'MedicalCondition', name: 'Recurrent Styes (Hordeolum)' },
-          { '@type': 'MedicalCondition', name: 'Dry Eye Syndrome' },
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
+            name: 'Ophthalmic & Eye Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline:
+              'Ophthalmic & Eye Homoeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+            description:
+              'Comprehensive patient guide to recurrent conjunctivitis, pink eye, ocular hypertension, and glaucoma co-management consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
+            about: [
+              { '@type': 'MedicalCondition', name: 'Recurrent Conjunctivitis (Pink Eye)' },
+              { '@type': 'MedicalCondition', name: 'Allergic Conjunctivitis' },
+              { '@type': 'MedicalCondition', name: 'Ocular Hypertension & Elevated Eye Pressure' },
+              { '@type': 'MedicalCondition', name: 'Glaucoma & Optic Nerve Protection' },
+              { '@type': 'MedicalCondition', name: 'Chronic Blepharitis & Eyelid Inflammation' },
+              { '@type': 'MedicalCondition', name: 'Dry Eye Disease & Digital Eye Strain' },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType: 'Patients seeking eye, vision, and ocular health consultations',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure glaucoma or lower elevated intraocular pressure (IOP)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Reliable scientific evidence has not shown that homoeopathic remedies can lower intraocular pressure, reverse optic nerve damage, or prevent glaucoma progression. Evidence-based treatment requires prescription pressure-lowering eye drops, laser procedures, or filtration surgery directed by a qualified ophthalmologist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I do if I develop sudden, severe eye pain accompanied by nausea and a red eye?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'This combination of symptoms is a hallmark of acute angle-closure glaucoma, an ophthalmic emergency. Sudden blockage in the drainage angle causes intraocular pressure to spike rapidly, risking permanent blindness within hours. Proceed immediately to the nearest hospital emergency eye department for acute decompression.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why does my conjunctivitis (pink eye) keep recurring repeatedly?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Recurrent red, irritated eyes are frequently not a single lingering infection, but can arise from chronic underlying conditions such as allergic conjunctivitis, chronic blepharitis (eyelid margin inflammation), dry eye disease, poor contact lens hygiene, or unsterile self-medication. A comprehensive slit-lamp examination by an eye care professional is needed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is it safe to put homoeopathic eye drops or diluted solutions directly into my eyes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Never instill unsterile, non-prescribed liquid preparations or home-diluted substances into your eyes. Non-sterile drops introduce serious risks of corneal ulcers, severe chemical irritation, and sight-threatening microbial infections. Only use sterile ophthalmic drops prescribed by an eye specialist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the fundamental difference between ocular hypertension and glaucoma?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ocular hypertension means that fluid pressure inside the eye is higher than typical (above 21 mm Hg), but there is currently no detectable damage to the optic nerve and no visual field loss. In contrast, glaucoma is diagnosed when characteristic optic nerve fiber damage and visual field deficits are present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can a homoeopathic consultation support my overall eye health responsibly?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'At Anjali Homoeo Clinic, supportive care focuses on whole-person constitutional health, exploring lifestyle ergonomics, allergic tendencies, and general wellness. Dr. Anjali Chandrasekhar (BHMS) provides transparent guidance, emphasizes the strict necessity of ophthalmologist appointments and prescription eye-drop adherence, and ensures timely referral for medical eye care.',
+                },
+              },
+            ],
+          },
         ],
       },
       null,
       2
     ),
-    lastUpdated: '2026-10-19',
+    lastUpdated: '2026-10-22',
   },
   {
     id: 'treatments',

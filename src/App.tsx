@@ -16,6 +16,14 @@ import { ContactSection } from './components/ContactSection';
 import { FaqSection } from './components/FaqSection';
 import { FinalCtaBanner } from './components/FinalCtaBanner';
 import { HomeSeoArticleSection } from './components/HomeSeoArticleSection';
+import { WomensHealthSeoArticleSection } from './components/WomensHealthSeoArticleSection';
+import { RespiratorySeoArticleSection } from './components/RespiratorySeoArticleSection';
+import { SkinHairSeoArticleSection } from './components/SkinHairSeoArticleSection';
+import { NeurologicalSeoArticleSection } from './components/NeurologicalSeoArticleSection';
+import { RenalThyroidSeoArticleSection } from './components/RenalThyroidSeoArticleSection';
+import { AnorectalVascularSeoArticleSection } from './components/AnorectalVascularSeoArticleSection';
+import { JointMusculoskeletalSeoArticleSection } from './components/JointMusculoskeletalSeoArticleSection';
+import { OphthalmicEyeSeoArticleSection } from './components/OphthalmicEyeSeoArticleSection';
 import { Footer } from './components/Footer';
 import { ProductsCatalogView } from './components/ProductsCatalogView';
 import { HomeBlogSection } from './components/HomeBlogSection';
@@ -137,6 +145,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <WomensHealthCarePage />
           <FinalCtaBanner />
+          <WomensHealthSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -158,6 +167,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <RespiratoryCarePage />
           <FinalCtaBanner />
+          <RespiratorySeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -179,6 +189,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <SkinHairCarePage />
           <FinalCtaBanner />
+          <SkinHairSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -200,6 +211,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <RenalThyroidCarePage />
           <FinalCtaBanner />
+          <RenalThyroidSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -221,6 +233,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <NeurologicalCarePage />
           <FinalCtaBanner />
+          <NeurologicalSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -242,6 +255,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <AnorectalVascularCarePage />
           <FinalCtaBanner />
+          <AnorectalVascularSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -263,6 +277,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <JointMusculoskeletalCarePage />
           <FinalCtaBanner />
+          <JointMusculoskeletalSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -284,6 +299,7 @@ const MainContent: React.FC = () => {
         <main className="flex-1">
           <OphthalmicEyeCarePage />
           <FinalCtaBanner />
+          <OphthalmicEyeSeoArticleSection />
         </main>
         <Footer />
         <ProductDetailModal />
@@ -505,7 +521,7 @@ const MainContent: React.FC = () => {
         <HomeSeoArticleSection />
       </main>
 
-      {/* 19. Multi-Column Footer */}
+      {/* 20. Multi-Column Footer */}
       <Footer />
 
       {/* Modals, Drawers & Overlays */}

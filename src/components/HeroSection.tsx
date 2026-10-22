@@ -51,10 +51,10 @@ export const HeroSection: React.FC = () => {
               <span>MALAPPURAM CLINIC & ONLINE CONSULTATIONS</span>
             </div>
 
-            {/* Main Title (Requested: Homeopathy Clinic in Malappuram | Gentle Care, Personalized Treatment) */}
+            {/* Main Title (Requested: Homoeopathic Clinic in Malappuram | Gentle Care, Personalized Treatment) */}
             <div className="space-y-3">
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#1E2559] leading-[1.18] text-balance">
-                Homeopathy Clinic in Malappuram{' '}
+                Homoeopathic Clinic in Malappuram{' '}
                 <span className="text-[#45AC4B] font-lato font-normal block text-2xl sm:text-3xl lg:text-4xl mt-2 tracking-normal">
                   | Gentle Care, Personalized Treatment
                 </span>
