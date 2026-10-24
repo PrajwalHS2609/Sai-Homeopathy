@@ -59,7 +59,12 @@ export const HomeBlogSection: React.FC = () => {
                       post.id === 'post-chronic-sinusitis' ||
                       post.id === 'post-asthma-symptoms' ||
                       post.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                      post.id === 'post-what-causes-piles'
+                      post.id === 'post-what-causes-piles' ||
+                      post.id === 'post-pcod-and-fertility' ||
+                      post.id === 'post-hormonal-imbalance' ||
+                      post.id === 'post-painful-periods' ||
+                      post.id === 'post-ovarian-cysts' ||
+                      post.id === 'post-nasal-polyps'
                         ? 'aspect-[2/1] bg-white'
                         : 'aspect-[16/9] bg-[#FDF2F8]'
                     } rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}
@@ -74,7 +79,12 @@ export const HomeBlogSection: React.FC = () => {
                         post.id === 'post-chronic-sinusitis' ||
                         post.id === 'post-asthma-symptoms' ||
                         post.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                        post.id === 'post-what-causes-piles'
+                        post.id === 'post-what-causes-piles' ||
+                        post.id === 'post-pcod-and-fertility' ||
+                        post.id === 'post-hormonal-imbalance' ||
+                        post.id === 'post-painful-periods' ||
+                        post.id === 'post-ovarian-cysts' ||
+                        post.id === 'post-nasal-polyps'
                           ? 'object-contain'
                           : 'object-cover'
                       } group-hover:scale-105 transition-transform duration-300`}

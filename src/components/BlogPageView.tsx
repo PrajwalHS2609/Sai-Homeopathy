@@ -478,7 +478,7 @@ export const BlogPageView: React.FC = () => {
               }
 
               // Numbered points with bold headers (e.g. 1. Intramural Fibroids: ...)
-              const numMatch = paragraph.match(/^([1-7])\.\s+([^:]+):(.*)$/);
+              const numMatch = paragraph.match(/^(\d+)\.\s+([^:]+):(.*)$/);
               if (numMatch) {
                 return (
                   <div key={index} className="pt-2">
@@ -648,7 +648,12 @@ export const BlogPageView: React.FC = () => {
                     featuredPost.id === 'post-chronic-sinusitis' ||
                     featuredPost.id === 'post-asthma-symptoms' ||
                     featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                    featuredPost.id === 'post-what-causes-piles'
+                    featuredPost.id === 'post-what-causes-piles' ||
+                    featuredPost.id === 'post-pcod-and-fertility' ||
+                    featuredPost.id === 'post-hormonal-imbalance' ||
+                    featuredPost.id === 'post-painful-periods' ||
+                    featuredPost.id === 'post-ovarian-cysts' ||
+                    featuredPost.id === 'post-nasal-polyps'
                       ? 'aspect-[2/1] bg-white'
                       : 'aspect-[16/9] bg-[#FDF2F8]'
                   } rounded-2xl overflow-hidden border border-[#D8E1F5] shadow-sm group-hover:shadow-md transition-shadow`}
@@ -663,7 +668,12 @@ export const BlogPageView: React.FC = () => {
                       featuredPost.id === 'post-chronic-sinusitis' ||
                       featuredPost.id === 'post-asthma-symptoms' ||
                       featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                      featuredPost.id === 'post-what-causes-piles'
+                      featuredPost.id === 'post-what-causes-piles' ||
+                      featuredPost.id === 'post-pcod-and-fertility' ||
+                      featuredPost.id === 'post-hormonal-imbalance' ||
+                      featuredPost.id === 'post-painful-periods' ||
+                      featuredPost.id === 'post-ovarian-cysts' ||
+                      featuredPost.id === 'post-nasal-polyps'
                         ? 'object-contain'
                         : 'object-cover'
                     } group-hover:scale-105 transition-transform duration-300`}
@@ -761,7 +771,12 @@ export const BlogPageView: React.FC = () => {
                         post.id === 'post-chronic-sinusitis' ||
                         post.id === 'post-asthma-symptoms' ||
                         post.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                        post.id === 'post-what-causes-piles'
+                        post.id === 'post-what-causes-piles' ||
+                        post.id === 'post-pcod-and-fertility' ||
+                        post.id === 'post-hormonal-imbalance' ||
+                        post.id === 'post-painful-periods' ||
+                        post.id === 'post-ovarian-cysts' ||
+                        post.id === 'post-nasal-polyps'
                           ? 'aspect-[2/1] bg-white'
                           : 'aspect-[16/9] bg-[#FDF2F8]'
                       } rounded-2xl overflow-hidden mb-3 border border-[#D8E1F5] group-hover:shadow-md transition-shadow`}
@@ -776,7 +791,12 @@ export const BlogPageView: React.FC = () => {
                           post.id === 'post-chronic-sinusitis' ||
                           post.id === 'post-asthma-symptoms' ||
                           post.id === 'post-homoeopathic-clinic-in-malappuram' ||
-                          post.id === 'post-what-causes-piles'
+                          post.id === 'post-what-causes-piles' ||
+                          post.id === 'post-pcod-and-fertility' ||
+                          post.id === 'post-hormonal-imbalance' ||
+                          post.id === 'post-painful-periods' ||
+                          post.id === 'post-ovarian-cysts' ||
+                          post.id === 'post-nasal-polyps'
                             ? 'object-contain'
                             : 'object-cover'
                         } group-hover:scale-105 transition-transform duration-300`}

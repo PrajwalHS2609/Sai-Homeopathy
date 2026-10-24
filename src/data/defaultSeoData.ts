@@ -2014,4 +2014,733 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-22',
   },
+  {
+    id: 'blog-pcod-and-fertility',
+    pageName: 'Blog: PCOD and Fertility - What Every Woman Should Know',
+    category: 'blog',
+    path: '/pcod-and-fertility-what-every-woman-should-know/',
+    title: 'PCOD and Fertility: What Every Woman Should Know | Anjali Homoeo Clinic',
+    description:
+      'Learn how PCOD affects ovulation, egg development, and fertility. Discover practical diet, exercise, medical treatments, and supportive care for starting your family.',
+    url: 'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/PCOD_and_Fertility__What_Every_Woman_Should_Know_5aeed90b.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'PCOD and fertility, can women with PCOD get pregnant, PCOD ovulation, PCOS fertility, PCOD pregnancy diet, Anjali Homoeo Clinic Malappuram, Dr Anjali Chandrasekhar, homeopathic fertility care Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/#article',
+            headline: 'PCOD and Fertility: What Every Woman Should Know',
+            description:
+              'Comprehensive clinical guide explaining how PCOD affects ovulation, egg development, and fertility. Discover practical diet, exercise, medical treatments, and supportive care for starting your family.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/PCOD_and_Fertility__What_Every_Woman_Should_Know_5aeed90b.png',
+            url: 'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-23',
+            dateModified: '2026-10-23',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/pcod-and-fertility-what-every-woman-should-know/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can I get pregnant naturally if my periods are irregular?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, many women with irregular periods due to PCOD conceive naturally. Irregular periods indicate that ovulation occurs less frequently or unpredictably, rather than not at all. Identifying your fertile window, improving metabolic health, and consulting a healthcare professional can significantly enhance natural conception chances.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does PCOD affect egg quality?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'PCOD primarily affects the frequency and regularity of ovulation rather than the intrinsic genetic quality of the eggs. However, high levels of insulin resistance, chronic inflammation, and androgen excess can affect the ovarian follicular environment. Optimizing nutrition, managing insulin levels, and targeted lifestyle improvements support healthier follicular development.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does it take for a woman with PCOD to conceive?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The time it takes to conceive varies from person to person. Some women conceive within a few months of tracking their cycles or making basic dietary adjustments, while others may require medical ovulation induction or additional fertility support. If you are under 35 and have been trying for a year (or six months if over 35 or having very irregular cycles), consult a doctor.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle changes alone improve fertility in PCOD?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'For many women with PCOD, lifestyle modifications are remarkably effective. Research shows that losing just 5% to 10% of body weight (for those who are overweight) or adopting a nutrient-rich, low-glycaemic diet and regular exercise can restore regular menstrual cycles and spontaneous ovulation without immediate pharmaceutical intervention.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is PCOD the same condition as PCOS?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While the terms are often used interchangeably in everyday discussion, PCOS (Polycystic Ovary Syndrome) is a broader metabolic and endocrine disorder characterized by hyperandrogenism, chronic anovulation, and metabolic risks. PCOD is commonly used in regional clinical contexts to describe ovaries with multiple immature follicles, often with milder metabolic consequences.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I consult a fertility specialist immediately after a PCOD diagnosis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not necessarily right away. If you have just been diagnosed and are not yet actively planning pregnancy, the focus is on cycle regularity, metabolic health, and overall wellness. If you are actively trying to conceive and have very irregular or absent periods, consulting a gynecologist or fertility specialist early can save time by checking ovulation and evaluating both partners.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can PCOD return after pregnancy or treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. PCOD is a chronic hormonal and metabolic tendency rather than a one-time infection. While symptoms often improve during or after pregnancy due to hormonal changes, they can return later. Maintaining consistent healthy lifestyle habits, balanced nutrition, and regular medical checkups helps keep symptoms well-managed over the long term.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-23',
+  },
+  {
+    id: 'blog-hormonal-imbalance',
+    pageName: 'Blog: Hormonal Imbalance in Women - Signs, Causes and Tests',
+    category: 'blog',
+    path: '/hormonal-imbalance-in-women-signs-causes-tests/',
+    title: 'Hormonal Imbalance in Women: Signs, Causes and Tests | Anjali Homoeo Clinic',
+    description:
+      'Understand hormonal imbalance in women: key signs, causes like PCOS and thyroid disorders, recommended blood tests, and evidence-grounded treatment options.',
+    url: 'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Hormonal_Imbalance_in_Women_Infographic_782d5dc4.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'hormonal imbalance in women, signs of hormonal imbalance, hormone tests for women, PCOS hormonal imbalance, thyroid hormonal symptoms, Anjali Homoeo Clinic Malappuram, Dr Anjali Chandrasekhar, womens hormonal health Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/#article',
+            headline: 'Hormonal Imbalance in Women: Signs, Causes and Tests',
+            description:
+              'Comprehensive clinical guide explaining hormonal imbalance in women, key signs, causes like PCOS and thyroid disorders, blood tests, and evidence-grounded treatment options.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Hormonal_Imbalance_in_Women_Infographic_782d5dc4.png',
+            url: 'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-24',
+            dateModified: '2026-10-24',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/hormonal-imbalance-in-women-signs-causes-tests/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the most common signs of hormonal imbalance in women?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Commonly reported signs include irregular periods, acne, excess facial hair, hair thinning, fatigue, weight changes, sleep problems, mood changes, reduced libido, and difficulty conceiving. These symptoms are not specific to hormonal disorders, so medical evaluation may be needed to identify their cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I know if I have a hormonal imbalance?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You cannot reliably diagnose a hormonal imbalance from symptoms alone. A healthcare professional will review your medical history, symptoms, and examination findings and may recommend selected blood tests or imaging studies.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which blood tests are used to evaluate hormonal imbalance?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Depending on the symptoms, tests may include TSH, free T4, prolactin, androgen measurements, FSH, oestradiol, progesterone, and blood glucose tests. Not every person needs every test, and timing can influence some results.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hormonal imbalance affect fertility?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Conditions that disrupt ovulation, such as PCOS, thyroid disorders, or elevated prolactin, can affect fertility. However, fertility also depends on age, sperm health, the fallopian tubes, and other factors. A comprehensive assessment can help determine the relevant cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause hormonal changes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stress and inadequate sleep can influence the body\'s regulatory systems and may contribute to menstrual disruption in some circumstances. However, persistent symptoms should not automatically be blamed on stress. Other medical causes may need to be investigated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hormonal imbalance be treated naturally?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Healthy habits such as balanced nutrition, regular activity, and sufficient sleep can support overall health. However, these measures do not replace treatment for every endocrine condition. The appropriate approach depends on the underlying diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do all women with irregular periods need hormone tests?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. The need for testing depends on age, menstrual history, pregnancy possibility, symptoms, and medical history. A clinician can determine which investigations are appropriate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is hormonal imbalance common during menopause?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hormonal changes are a normal part of perimenopause and menopause. Some women experience hot flushes, night sweats, sleep disturbances, vaginal dryness, or changes in menstrual patterns. Treatment may be available when symptoms are troublesome.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hormonal imbalance cause acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Increased androgen activity can contribute to acne in some women, including women with PCOS. However, acne can also occur without a diagnosable hormonal disorder. Persistent acne accompanied by irregular periods or excess facial hair may warrant assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a gynaecologist or endocrinologist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A gynaecologist may be appropriate for menstrual changes, fertility concerns, or other reproductive symptoms. An endocrinologist may be involved when a complex thyroid, pituitary, adrenal, or other endocrine disorder is suspected. Your primary healthcare professional can help determine the most suitable starting point.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-24',
+  },
+  {
+    id: 'blog-painful-periods',
+    pageName: 'Blog: Painful Periods - Diagnosis and Treatment Options Explained',
+    category: 'blog',
+    path: '/painful-periods-diagnosis-and-treatment-options/',
+    title: 'Painful Periods: Diagnosis and Treatment Options Explained | Anjali Homoeo Clinic',
+    description:
+      'Comprehensive guide to painful periods (dysmenorrhea): causes, endometriosis, diagnostic evaluations, medical treatments, home remedies, red flag symptoms, and 12 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Painful_Periods__Diagnosis_and_Treatment_Options_44c60a43.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'painful periods, dysmenorrhea causes and treatment, menstrual cramps relief, endometriosis period pain, adenomyosis cramps, Anjali Homoeo Clinic Malappuram, Dr Anjali Chandrasekhar, period pain doctor Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/#article',
+            headline: 'Painful Periods: Diagnosis and Treatment Options Explained',
+            description:
+              'Comprehensive guide to painful periods (dysmenorrhea): causes, endometriosis, diagnostic evaluations, medical treatments, home remedies, red flag symptoms, and 12 FAQs.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Painful_Periods__Diagnosis_and_Treatment_Options_44c60a43.png',
+            url: 'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-24',
+            dateModified: '2026-10-24',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/painful-periods-diagnosis-and-treatment-options/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is the main cause of painful periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The most common cause of primary dysmenorrhea is increased prostaglandin activity, which leads to stronger uterine contractions. Secondary dysmenorrhea may result from endometriosis, adenomyosis, fibroids, pelvic inflammatory disease, or other conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I relieve menstrual cramps quickly?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A heating pad, rest, and appropriate pain-relieving medication may help. NSAIDs are often effective for primary dysmenorrhea, but they are not suitable for everyone. Follow the medicine label and seek professional advice if you have medical conditions, take other medicines, or may be pregnant.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When is period pain considered abnormal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Pain that prevents normal activities, worsens over time, occurs outside menstruation, or is accompanied by heavy bleeding, fever, unusual discharge, or pain during intercourse should be medically assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can painful periods be a sign of endometriosis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Severe or progressively worsening menstrual cramps can be associated with endometriosis, particularly when accompanied by pain during intercourse, bowel movements, or urination. However, symptoms alone cannot confirm the diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I manage painful periods without medication?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some women obtain relief from heat therapy, gentle exercise, adequate sleep, and relaxation techniques. These measures may help with mild symptoms but are not sufficient for everyone. Persistent or severe pain should be evaluated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does drinking warm water help with period pain?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Warm drinks may provide comfort and support hydration, but strong evidence that warm water alone significantly reduces menstrual cramps is limited. Heat applied externally may be more helpful for some women.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can painful periods affect fertility?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Primary dysmenorrhea generally does not indicate infertility. However, conditions such as endometriosis or pelvic inflammatory disease may affect fertility. Women with persistent pain who are planning pregnancy should discuss an evaluation with a clinician.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I get an ultrasound for painful periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not everyone needs an ultrasound. A clinician may recommend pelvic imaging when symptoms suggest an underlying condition, when the diagnosis is unclear, or when initial treatment has not helped.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are painful periods common in teenagers?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Menstrual cramps are common in adolescents, but severe pain that causes repeated school absences or interferes with daily life should not be ignored. A healthcare professional can assess whether further evaluation is needed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can painful periods be permanently cured?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The outcome depends on the cause. Primary dysmenorrhea can often be managed effectively, while secondary dysmenorrhea may require treatment of the underlying condition. Some conditions are chronic and may need ongoing symptom management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is heavy bleeding always associated with painful periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Some women experience severe cramps without heavy bleeding, while others have heavy periods with relatively little pain. Both severe pain and unusually heavy bleeding may warrant assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for severe period pain?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A gynaecologist is an appropriate specialist for persistent or severe menstrual pain. A primary care doctor can also begin the assessment and refer you to a specialist when needed.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-24',
+  },
+  {
+    id: 'blog-ovarian-cysts',
+    pageName: 'Blog: Ovarian Cysts - Common Symptoms, Diagnosis and Follow-Up Care',
+    category: 'blog',
+    path: '/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/',
+    title: 'Ovarian Cysts: Common Symptoms, Diagnosis and Follow-Up Care | Anjali Homoeo Clinic',
+    description:
+      'Comprehensive clinical guide to ovarian cysts: functional cysts, endometriomas, dermoids, symptoms, ultrasound diagnosis, watchful waiting, fertility impact, and 10 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Ovarian_Cysts__Symptoms_and_Care_757bb71a.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'ovarian cysts, ovarian cyst symptoms, ovarian cyst diagnosis ultrasound, chocolate cyst endometrioma, watchful waiting ovarian cyst, Dr Anjali Chandrasekhar, Anjali Homoeo Clinic Malappuram, gynecological care Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/#article',
+            headline: 'Ovarian Cysts: Common Symptoms, Diagnosis and Follow-Up Care',
+            description:
+              'Comprehensive clinical guide explaining ovarian cysts, functional cysts, symptoms, ultrasound diagnosis, conservative watchful waiting, fertility considerations, and 10 FAQs.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Ovarian_Cysts__Symptoms_and_Care_757bb71a.png',
+            url: 'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-24',
+            dateModified: '2026-10-24',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Do ovarian cysts go away on their own?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many functional ovarian cysts disappear naturally within a few weeks or menstrual cycles. Other cysts, including dermoid cysts and endometriomas, may persist and need monitoring or treatment. The expected outcome depends on the cyst type and clinical findings.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I know if an ovarian cyst is serious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Symptoms alone cannot reliably determine whether a cyst is serious. Ultrasound findings, cyst size, age, menopausal status, and medical history help guide assessment. Sudden severe pain, fainting, or pain with vomiting requires urgent medical attention.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ovarian cysts cause irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some ovarian conditions may be associated with menstrual changes, but many cysts do not affect periods. Irregular menstruation can also result from pregnancy, thyroid conditions, PCOS, stress, and other causes. A clinician can help determine the reason.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ovarian cysts affect pregnancy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many women with ovarian cysts conceive and have healthy pregnancies. Some cysts may require monitoring during pregnancy, while others may need treatment depending on symptoms and risk. Pregnancy-related pelvic pain should be assessed promptly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What size ovarian cyst requires surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no single size threshold that determines surgery for every patient. The decision also depends on the cyst\'s appearance, symptoms, growth, menopausal status, and risk of complications. Your clinician can explain the recommendation based on your ultrasound findings.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is an ovarian cyst the same as PCOS?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. An ovarian cyst is an individual fluid-filled or tissue-containing structure. PCOS is a hormonal and metabolic condition diagnosed using specific clinical criteria. A woman may have one condition without having the other.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ovarian cysts come back after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some women develop new functional cysts after a previous cyst resolves or is removed. Recurrence depends on the cyst type, underlying conditions, and treatment. Persistent or repeated symptoms deserve medical review.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How often should an ovarian cyst be checked?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The follow-up interval depends on the cyst\'s characteristics and the patient\'s circumstances. Some cysts need no repeat scan, while others require ultrasound monitoring after a defined interval. Follow the plan recommended by your clinician.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can exercise make an ovarian cyst worse?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Exercise does not cause every ovarian cyst to grow. However, a large cyst may increase the risk of complications such as torsion, and certain movements may worsen discomfort. Ask your clinician whether you need to modify physical activity.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should every ovarian cyst be removed after menopause?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Some postmenopausal cysts can be monitored, depending on their size, ultrasound appearance, symptoms, and overall risk assessment. Others may require further investigation or surgery. A gynaecologist should guide the decision.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-24',
+  },
+  {
+    id: 'blog-nasal-polyps',
+    pageName: 'Blog: Nasal Polyps - Symptoms, Diagnosis and Available Treatments',
+    category: 'blog',
+    path: '/nasal-polyps-symptoms-diagnosis-and-available-treatments/',
+    title: 'Nasal Polyps: Symptoms, Diagnosis and Available Treatments | Anjali Homoeo Clinic',
+    description:
+      'Comprehensive clinical guide to nasal polyps: common symptoms, reduced smell, asthma links, ENT endoscopy diagnosis, sinus surgery, and 12 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Nasal_Polyps__Symptoms_and_Treatments_f3d87c51.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'nasal polyps, nasal polyp symptoms, loss of smell hyposmia, chronic rhinosinusitis with nasal polyps, nasal endoscopy, endoscopic sinus surgery FESS, asthma and nasal polyps, Dr Anjali Chandrasekhar, Anjali Homoeo Clinic Malappuram, ENT care Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id':
+              'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/#article',
+            headline: 'Nasal Polyps: Symptoms, Diagnosis and Available Treatments',
+            description:
+              'Comprehensive clinical guide explaining nasal polyps, common symptoms, reduced smell, asthma links, ENT endoscopy diagnosis, sinus surgery, and 12 FAQs.',
+            image:
+              'https://anjalihomoeoclinic.com/assets/aistudio/Nasal_Polyps__Symptoms_and_Treatments_f3d87c51.png',
+            url: 'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/',
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id':
+                'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-10-24',
+            dateModified: '2026-10-24',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/nasal-polyps-symptoms-diagnosis-and-available-treatments/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the first symptoms of nasal polyps?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Early symptoms may include persistent nasal congestion, a reduced sense of smell, postnasal drip, or difficulty breathing through the nose. Small polyps may cause no noticeable symptoms. A nasal examination is needed to confirm the diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nasal polyps disappear on their own?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some mild symptoms may improve as inflammation settles, but established nasal polyps do not reliably disappear without treatment. A clinician can determine whether medication, monitoring, or another approach is appropriate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the most effective treatment for nasal polyps?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Intranasal corticosteroids and saline irrigation are common first-line treatments. Selected patients may benefit from short courses of oral corticosteroids, biologic medicines, or endoscopic sinus surgery. The most appropriate option depends on disease severity and individual circumstances.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nasal polyps cause loss of smell?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Nasal polyps and associated inflammation can interfere with the normal movement of odour molecules to the smell receptors. Treating the inflammation may improve smell, although recovery varies and is not guaranteed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are nasal polyps related to asthma?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Nasal polyps and asthma can occur together and may share inflammatory mechanisms. People with both conditions may need coordinated treatment to manage upper and lower airway symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do nasal polyps cause headaches?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some people with chronic rhinosinusitis and nasal polyps experience facial pressure or headaches. However, headaches have many causes, and a headache alone does not establish that nasal polyps are present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is nasal polyp surgery painful?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Discomfort after surgery varies. Patients may experience temporary congestion, mild pain, or blood-stained discharge during recovery. The surgical team will explain expected symptoms and recommend appropriate pain management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does recovery from nasal polyp surgery take?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Recovery depends on the extent of surgery and individual healing. Nasal congestion and crusting may persist during the early recovery period, with improvement occurring gradually. Follow-up appointments help the surgeon assess healing and guide ongoing treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nasal polyps return after surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Recurrence is possible because surgery does not necessarily eliminate the underlying inflammation. Regular use of prescribed treatment and appropriate follow-up may help control symptoms and manage recurrence.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nasal polyps be prevented?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no guaranteed way to prevent nasal polyps. Managing chronic rhinosinusitis, asthma, and allergies where present may help control associated inflammation. Early assessment of persistent symptoms can support timely treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are nasal polyps contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Nasal polyps themselves are not contagious. They are inflammatory growths rather than an infection that spreads from person to person.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nasal polyps affect sleep?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Nasal obstruction may contribute to snoring, mouth breathing, and disturbed sleep. Persistent sleep problems should be evaluated because other conditions, including obstructive sleep apnoea, may also be involved.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-24',
+  },
 ];
+

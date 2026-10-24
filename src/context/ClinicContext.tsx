@@ -228,6 +228,58 @@ const isPcodBlogPath = (pathname: string) => {
   );
 };
 
+const isPcodFertilityBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/pcod-and-fertility-what-every-woman-should-know' ||
+    clean === '/blog/pcod-and-fertility-what-every-woman-should-know' ||
+    clean === '/pcod-and-fertility' ||
+    clean === '/pcod-fertility'
+  );
+};
+
+const isHormonalImbalanceBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/hormonal-imbalance-in-women-signs-causes-tests' ||
+    clean === '/blog/hormonal-imbalance-in-women-signs-causes-tests' ||
+    clean === '/hormonal-imbalance-in-women' ||
+    clean === '/hormonal-imbalance'
+  );
+};
+
+const isPainfulPeriodsBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/painful-periods-diagnosis-and-treatment-options' ||
+    clean === '/blog/painful-periods-diagnosis-and-treatment-options' ||
+    clean === '/painful-periods' ||
+    clean === '/painful-periods-diagnosis-and-treatment'
+  );
+};
+
+const isOvarianCystsBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/ovarian-cysts-symptoms-diagnosis-and-follow-up-care' ||
+    clean === '/ovarian-cysts-symptoms-diagnosis-follow-up-care' ||
+    clean === '/blog/ovarian-cysts-symptoms-diagnosis-and-follow-up-care' ||
+    clean === '/ovarian-cysts-symptoms-and-care' ||
+    clean === '/ovarian-cysts'
+  );
+};
+
+const isNasalPolypsBlogPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/nasal-polyps-symptoms-diagnosis-and-available-treatments' ||
+    clean === '/nasal-polyps-symptoms-diagnosis-available-treatments' ||
+    clean === '/blog/nasal-polyps-symptoms-diagnosis-and-available-treatments' ||
+    clean === '/nasal-polyps-symptoms-and-treatments' ||
+    clean === '/nasal-polyps'
+  );
+};
+
 const isSeverePeriodPainPath = (pathname: string) => {
   const clean = pathname.toLowerCase().replace(/\/+$/, '');
   return (
@@ -297,6 +349,21 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return 'blog';
       }
       if (isPcodBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isPcodFertilityBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isHormonalImbalanceBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isPainfulPeriodsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isOvarianCystsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isNasalPolypsBlogPath(window.location.pathname)) {
         return 'blog';
       }
       if (isUterineFibroidsBlogPath(window.location.pathname)) {
@@ -427,6 +494,51 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.unshift(pilesPost);
           }
         }
+        const pcodFertilityPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod-and-fertility');
+        if (pcodFertilityPost) {
+          const pfIdx = parsed.findIndex((p) => p.id === 'post-pcod-and-fertility' || p.slug === 'pcod-and-fertility-what-every-woman-should-know');
+          if (pfIdx >= 0) {
+            parsed[pfIdx] = { ...parsed[pfIdx], ...pcodFertilityPost, image: pcodFertilityPost.image };
+          } else {
+            parsed.unshift(pcodFertilityPost);
+          }
+        }
+        const hormonalImbalancePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hormonal-imbalance');
+        if (hormonalImbalancePost) {
+          const hiIdx = parsed.findIndex((p) => p.id === 'post-hormonal-imbalance' || p.slug === 'hormonal-imbalance-in-women-signs-causes-tests');
+          if (hiIdx >= 0) {
+            parsed[hiIdx] = { ...parsed[hiIdx], ...hormonalImbalancePost, image: hormonalImbalancePost.image };
+          } else {
+            parsed.unshift(hormonalImbalancePost);
+          }
+        }
+        const painfulPeriodsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-painful-periods');
+        if (painfulPeriodsPost) {
+          const ppIdx = parsed.findIndex((p) => p.id === 'post-painful-periods' || p.slug === 'painful-periods-diagnosis-and-treatment-options');
+          if (ppIdx >= 0) {
+            parsed[ppIdx] = { ...parsed[ppIdx], ...painfulPeriodsPost, image: painfulPeriodsPost.image };
+          } else {
+            parsed.unshift(painfulPeriodsPost);
+          }
+        }
+        const ovarianCystsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-ovarian-cysts');
+        if (ovarianCystsPost) {
+          const ocIdx = parsed.findIndex((p) => p.id === 'post-ovarian-cysts' || p.slug === 'ovarian-cysts-symptoms-diagnosis-and-follow-up-care');
+          if (ocIdx >= 0) {
+            parsed[ocIdx] = { ...parsed[ocIdx], ...ovarianCystsPost, image: ovarianCystsPost.image };
+          } else {
+            parsed.unshift(ovarianCystsPost);
+          }
+        }
+        const nasalPolypsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-nasal-polyps');
+        if (nasalPolypsPost) {
+          const npIdx = parsed.findIndex((p) => p.id === 'post-nasal-polyps' || p.slug === 'nasal-polyps-symptoms-diagnosis-and-available-treatments');
+          if (npIdx >= 0) {
+            parsed[npIdx] = { ...parsed[npIdx], ...nasalPolypsPost, image: nasalPolypsPost.image };
+          } else {
+            parsed.unshift(nasalPolypsPost);
+          }
+        }
         localStorage.setItem('sai_clinic_blogs', JSON.stringify(parsed));
         return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
       } catch {
@@ -442,6 +554,21 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isPcodBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPcodFertilityBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod-and-fertility') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isHormonalImbalanceBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hormonal-imbalance') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPainfulPeriodsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-painful-periods') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isOvarianCystsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-ovarian-cysts') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isNasalPolypsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-nasal-polyps') || INITIAL_BLOG_POSTS[0];
       }
       if (isUterineFibroidsBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids') || INITIAL_BLOG_POSTS[0];
@@ -489,6 +616,26 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('blog');
         const pcodPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod') || INITIAL_BLOG_POSTS[0];
         setSelectedPostForReader(pcodPost);
+      } else if (isPcodFertilityBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const pfPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pcod-and-fertility') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(pfPost);
+      } else if (isHormonalImbalanceBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const hiPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hormonal-imbalance') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(hiPost);
+      } else if (isPainfulPeriodsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const ppPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-painful-periods') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(ppPost);
+      } else if (isOvarianCystsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const ocPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-ovarian-cysts') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(ocPost);
+      } else if (isNasalPolypsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const npPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-nasal-polyps') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(npPost);
       } else if (isUterineFibroidsBlogPath(window.location.pathname)) {
         setCurrentView('blog');
         const fibroidPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids') || INITIAL_BLOG_POSTS[0];
@@ -572,6 +719,31 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'pcod-and-fertility-what-every-woman-should-know') {
+      const targetUrl = '/pcod-and-fertility-what-every-woman-should-know/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'hormonal-imbalance-in-women-signs-causes-tests') {
+      const targetUrl = '/hormonal-imbalance-in-women-signs-causes-tests/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'painful-periods-diagnosis-and-treatment-options') {
+      const targetUrl = '/painful-periods-diagnosis-and-treatment-options/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'ovarian-cysts-symptoms-diagnosis-and-follow-up-care') {
+      const targetUrl = '/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'nasal-polyps-symptoms-diagnosis-and-available-treatments') {
+      const targetUrl = '/nasal-polyps-symptoms-diagnosis-and-available-treatments/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'uterine-fibroids-symptoms-diagnosis-treatment') {
       const targetUrl = '/uterine-fibroids-symptoms-diagnosis-treatment/';
       if (window.location.pathname !== targetUrl) {
@@ -608,6 +780,11 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isJointMusculoskeletalPath(window.location.pathname) ||
         isOphthalmicEyePath(window.location.pathname) ||
         isPcodBlogPath(window.location.pathname) ||
+        isPcodFertilityBlogPath(window.location.pathname) ||
+        isHormonalImbalanceBlogPath(window.location.pathname) ||
+        isPainfulPeriodsBlogPath(window.location.pathname) ||
+        isOvarianCystsBlogPath(window.location.pathname) ||
+        isNasalPolypsBlogPath(window.location.pathname) ||
         isSeverePeriodPainPath(window.location.pathname) ||
         isUterineFibroidsBlogPath(window.location.pathname) ||
         isChronicSinusitisBlogPath(window.location.pathname) ||
@@ -630,6 +807,31 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (post.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
       const targetUrl = '/pcod-symptoms-causes-diagnosis-treatment/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'pcod-and-fertility-what-every-woman-should-know') {
+      const targetUrl = '/pcod-and-fertility-what-every-woman-should-know/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'hormonal-imbalance-in-women-signs-causes-tests') {
+      const targetUrl = '/hormonal-imbalance-in-women-signs-causes-tests/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'painful-periods-diagnosis-and-treatment-options') {
+      const targetUrl = '/painful-periods-diagnosis-and-treatment-options/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'ovarian-cysts-symptoms-diagnosis-and-follow-up-care') {
+      const targetUrl = '/ovarian-cysts-symptoms-diagnosis-and-follow-up-care/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'nasal-polyps-symptoms-diagnosis-and-available-treatments') {
+      const targetUrl = '/nasal-polyps-symptoms-diagnosis-and-available-treatments/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
@@ -1103,6 +1305,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         targetId = 'blog-severe-period-pain';
       } else if (selectedPostForReader?.slug === 'pcod-symptoms-causes-diagnosis-treatment') {
         targetId = 'blog-pcod';
+      } else if (selectedPostForReader?.slug === 'pcod-and-fertility-what-every-woman-should-know') {
+        targetId = 'blog-pcod-and-fertility';
+      } else if (selectedPostForReader?.slug === 'hormonal-imbalance-in-women-signs-causes-tests') {
+        targetId = 'blog-hormonal-imbalance';
+      } else if (selectedPostForReader?.slug === 'painful-periods-diagnosis-and-treatment-options') {
+        targetId = 'blog-painful-periods';
+      } else if (selectedPostForReader?.slug === 'ovarian-cysts-symptoms-diagnosis-and-follow-up-care') {
+        targetId = 'blog-ovarian-cysts';
+      } else if (selectedPostForReader?.slug === 'nasal-polyps-symptoms-diagnosis-and-available-treatments') {
+        targetId = 'blog-nasal-polyps';
       } else if (selectedPostForReader?.slug === 'uterine-fibroids-symptoms-diagnosis-treatment') {
         targetId = 'blog-uterine-fibroids';
       } else if (selectedPostForReader?.slug === 'chronic-sinusitis-symptoms-causes-treatment') {
