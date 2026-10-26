@@ -43,6 +43,17 @@ import { NeurologicalCarePage } from './components/NeurologicalCarePage';
 import { AnorectalVascularCarePage } from './components/AnorectalVascularCarePage';
 import { JointMusculoskeletalCarePage } from './components/JointMusculoskeletalCarePage';
 import { OphthalmicEyeCarePage } from './components/OphthalmicEyeCarePage';
+import { PilesManjeriPage } from './components/PilesManjeriPage';
+import { MenstrualManjeriPage } from './components/MenstrualManjeriPage';
+import { SkinManjeriPage } from './components/SkinManjeriPage';
+import { HairManjeriPage } from './components/HairManjeriPage';
+import { AllergicRhinitisManjeriPage } from './components/AllergicRhinitisManjeriPage';
+import { AcneManjeriPage } from './components/AcneManjeriPage';
+import { EczemaManjeriPage } from './components/EczemaManjeriPage';
+import { WartsManjeriPage } from './components/WartsManjeriPage';
+import { CornsManjeriPage } from './components/CornsManjeriPage';
+import { PsoriasisManjeriPage } from './components/PsoriasisManjeriPage';
+import { RingwormManjeriPage } from './components/RingwormManjeriPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -300,6 +311,226 @@ const MainContent: React.FC = () => {
           <OphthalmicEyeCarePage />
           <FinalCtaBanner />
           <OphthalmicEyeSeoArticleSection />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Piles Homoeopathic Clinic in Manjeri View
+  // URL: /piles-homoeopathic-clinic-in-manjeri/
+  if (currentView === 'piles-homoeopathic-clinic-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Menstrual Homoeopathic Treatment in Manjeri View
+  // URL: /menstrual-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'menstrual-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Skin Homoeopathic Treatment in Manjeri View
+  // URL: /skin-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'skin-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Hair Homoeopathic Treatment in Manjeri View
+  // URL: /hair-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'hair-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Allergic Rhinitis Homoeopathic Treatment in Manjeri View
+  // URL: /allergic-rhinitis-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'allergic-rhinitis-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AllergicRhinitisManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Treatment for Acne Skin Problems in Manjeri View
+  // URL: /homoeopathic-treatment-for-acne-skin-problems-in-manjeri/
+  if (currentView === 'acne-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AcneManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Treatment for Eczema Skin Problems in Manjeri View
+  // URL: /homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/
+  if (currentView === 'eczema-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <EczemaManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Skin Warts Homoeopathic Treatment in Manjeri View
+  // URL: /skin-warts-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'warts-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <WartsManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Skin Corns Homoeopathic Treatment in Manjeri View
+  // URL: /skin-corns-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'corns-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <CornsManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Psoriasis Homoeopathic Treatment in Manjeri View
+  // URL: /psoriasis-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'psoriasis-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PsoriasisManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Ringworm Homoeopathic Treatment in Manjeri View
+  // URL: /ringworm-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'ringworm-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RingwormManjeriPage />
         </main>
         <Footer />
         <ProductDetailModal />

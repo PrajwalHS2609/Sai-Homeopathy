@@ -1357,8 +1357,8 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     title: 'Severe Period Pain: When Are Menstrual Cramps a Concern? | Anjali Homoeo Clinic',
     description:
       'Learn when severe period pain is a concern, explore common causes of menstrual cramps, recognize warning signs, and discover diagnosis and treatment options.',
-    url: 'https://anjalihomoeoclinic.com/severe-period-pain-when-to-worry',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/severe-period-pain-when-to-worry',
+    url: 'https://anjalihomoeoclinic.com/severe-period-pain-when-to-worry/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/severe-period-pain-when-to-worry/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/severe-period-pain-banner.png',
     twitterCard: 'summary_large_image',
@@ -2742,5 +2742,1416 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-24',
   },
+  {
+    id: 'piles-homoeopathic-clinic-manjeri',
+    pageName: 'Piles Homoeopathic Clinic in Manjeri',
+    category: 'clinical',
+    path: '/piles-homoeopathic-clinic-in-manjeri/',
+    title: 'Piles Homoeopathic Clinic in Manjeri | Consultation & Care Guide',
+    description:
+      'Information on piles consultation and treatment options in Manjeri, Kerala. Learn about symptoms, diagnosis, evidence-informed care, and when to seek urgent medical attention.',
+    url: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Piles Homoeopathic Clinic in Manjeri, Piles Consultation in Manjeri, Piles Treatment in Manjeri, Piles Clinic in Manjeri, Piles Doctor in Manjeri, haemorrhoids treatment Malappuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
+            name: 'Piles Homoeopathic Clinic in Manjeri | Consultation & Care Guide',
+            description:
+              'Information on piles consultation and treatment options in Manjeri, Kerala. Learn about symptoms, diagnosis, evidence-informed care, and when to seek urgent medical attention.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is the difference between internal and external piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Piles (haemorrhoids) are classified by their anatomical location relative to the dentate line in the anal canal. Internal haemorrhoids originate inside the rectum above the dentate line; because this area lacks somatic pain receptors, they often cause painless bright-red bleeding during bowel movements or may prolapse during defecation. External haemorrhoids develop beneath the skin around the anal verge, where sensory nerves are abundant. They can cause swelling, itching, burning, and sudden severe pain if a blood clot forms inside (thrombosed external piles).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles heal on their own without medical intervention?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Mild, early-stage haemorrhoids (Grade I) often improve spontaneously or with conservative lifestyle measures such as increasing dietary fibre, drinking adequate water, avoiding prolonged toilet straining, and utilizing warm sitz baths. However, if symptoms persist, bleeding is recurrent, or prolapse develops, medical consultation is essential to confirm the diagnosis and rule out other anorectal or gastrointestinal conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for piles symptoms in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should arrange a consultation whenever you notice rectal bleeding, anal pain, persistent itching, or a newly felt lump near the anus. A proper assessment ensures an accurate diagnosis. Immediate medical attention is vital if you experience severe pain, heavy or continuous bleeding, dizziness, blood mixed with black stools, or fever.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What does current medical evidence say about homeopathic treatment for piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Current rigorous scientific clinical trials have not established homoeopathy as an effective medical treatment for piles beyond a placebo response. While individual patients may explore constitutional homoeopathy alongside lifestyle and dietary habits, responsible healthcare mandates that patients understand the scientific evidence, obtain a clear medical diagnosis, and do not delay necessary conventional medical or surgical interventions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What lifestyle changes help prevent piles from recurring?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Key preventive habits include maintaining a high-fibre diet (whole grains, vegetables, fruits, legumes), drinking at least 2 litres of water daily, engaging in regular moderate physical exercise (such as brisk walking), avoiding prolonged toilet sitting, responding promptly to the urge to pass stool, and maintaining gentle perianal hygiene.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I differentiate between piles and an anal fissure or other condition?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While piles frequently cause painless bleeding or soft external lumps, an anal fissure is a mucosal tear that typically triggers sharp, razor-cutting pain during and for several hours after passing stool. Other conditions such as anal fistulas, perianal abscesses, polyps, or inflammatory bowel diseases have distinct clinical features. Because symptoms can overlap, a clinical examination by a qualified practitioner is the only reliable way to distinguish between them.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I prepare for a piles consultation at the clinic in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Note down when your symptoms began, how frequently they occur, whether bleeding is present, and what makes symptoms better or worse. Bring a list of your current medications, dietary supplements, and details of any previous treatments or examinations. Write down any questions you wish to ask your doctor regarding your diagnosis and care plan.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-24',
+  },
+  {
+    id: 'menstrual-treatment-manjeri',
+    pageName: 'Menstrual Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/menstrual-homoeopathic-treatment-in-manjeri/',
+    title: 'Menstrual Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    description:
+      'Information on menstrual health consultation and treatment in Manjeri, Kerala. Learn about period problems, irregular cycles, cramps, evidence-based care, and when to seek medical advice.',
+    url: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-women-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Menstrual Homoeopathic Treatment in Manjeri, Menstrual Treatment in Manjeri, Menstrual Problems Doctor in Manjeri, Period Problems Treatment in Manjeri, Period Pain Consultation in Manjeri, Menstrual Health Clinic in Manjeri, Homoeopathy Clinic for Menstrual Problems in Manjeri, Women Health Doctor in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
+            name: 'Menstrual Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            description:
+              'Information on menstrual health consultation and treatment in Manjeri, Kerala. Learn about period problems, irregular cycles, cramps, evidence-based care, and when to seek medical advice.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Menstrual Cycle Disorders',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N91-N94',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I seek Menstrual Homoeopathic Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Women in Manjeri can research local healthcare providers and check their recognized qualifications (such as BHMS), registration with state medical councils, and services offered. Before choosing a homoeopathic provider, understand that homoeopathy has not been shown reliably to treat menstrual disorders in scientific trials. Persistent, painful, or severe symptoms should always be assessed by a qualified medical doctor or gynaecologist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include irregular cycles, painful abdominal cramps, unusually heavy bleeding, missed periods, bloating, cyclical headaches, breast tenderness, fatigue, and mood fluctuations. The clinical significance of these symptoms depends on their frequency, severity, duration, and the extent to which they affect daily life.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Menstrual Problems Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Arrange an appointment if your periods become persistently irregular, bleeding is unusually heavy, pain interferes with everyday activities, or you experience repeated missed periods. Sudden severe pelvic pain, fainting, or extremely heavy bleeding requires immediate emergency medical attention.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable scientific evidence that homoeopathy cures irregular periods or permanently eliminates their underlying biological causes. Irregular menstruation can stem from conditions such as polycystic ovary syndrome (PCOS), thyroid disorders, significant weight changes, chronic stress, or pregnancy. Appropriate clinical assessment helps identify the true cause and guide effective care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I discuss during a Period Pain Consultation in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Explain exactly when the pain begins, its location and severity, how long it lasts, and whether it prevents you from working, studying, or sleeping. Mention any heavy bleeding, fever, dizziness, unusual vaginal discharge, or possibility of pregnancy. This detailed information allows the clinician to determine whether further investigations (such as a pelvic ultrasound) are warranted.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle changes improve menstrual health?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Regular physical activity, balanced nutrition rich in iron and wholesome nutrients, adequate sleep, and mindful stress management support general hormonal balance and may help many women manage mild symptoms. However, lifestyle habits alone cannot cure structural conditions like endometriosis, uterine fibroids, or severe hormonal disorders, which require medical management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do irregular periods always indicate a medical problem?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Menstrual cycle length naturally varies across life stages—such as during adolescence, after childbirth, during breastfeeding, and during perimenopause. Temporary changes can also occur due to stress, travel, or acute illness. However, persistent irregularity, repeated missed cycles, or accompanying symptoms like severe pain and heavy bleeding should always be evaluated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for in a Homoeopathy Clinic for Menstrual Problems in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for verified qualifications (BHMS from recognized universities), active medical council registration, clear and honest communication regarding treatment scope and evidence, strict patient confidentiality, and a willingness to refer to gynaecologists for diagnostic ultrasound or blood work. Avoid providers who guarantee miraculous cures, promise to reverse PCOS, or advise stopping prescribed conventional medications.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'skin-treatment-manjeri',
+    pageName: 'Skin Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/skin-homoeopathic-treatment-in-manjeri/',
+    title: 'Skin Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    description:
+      'Information on skin health consultation and treatment options in Manjeri, Kerala. Learn about acne, eczema, psoriasis, fungal infections, evidence-based care, and when to see a doctor.',
+    url: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-portrait-closeup.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Skin Homoeopathic Treatment in Manjeri, Skin Treatment in Manjeri, Skin Health Clinic in Manjeri, Skin Problems Treatment in Manjeri, Skin Homoeopathy Clinic in Manjeri, Skin Disease Treatment in Manjeri, Skin Doctor in Manjeri, Skin Specialist in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
+            name: 'Skin Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            description:
+              'Information on skin health consultation and treatment options in Manjeri, Kerala. Learn about acne, eczema, psoriasis, fungal infections, evidence-based care, and when to see a doctor.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatological Skin Conditions',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L00-L99',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Skin Homoeopathic Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can research healthcare providers in Manjeri and check their qualifications, registration where applicable, and services offered. Before choosing a homoeopathic provider, understand that homoeopathy has not been shown reliably to treat skin diseases. Persistent or severe skin symptoms should be assessed by a qualified medical professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What skin problems may require medical consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Skin concerns that may need assessment include persistent acne, eczema, psoriasis, recurring rashes, fungal infections, unexplained itching, changing moles, and wounds that do not heal. The urgency depends on the symptoms and their severity.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Skin Treatment in Manjeri effective for eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homoeopathy as an effective treatment for eczema. Evidence-based care may include moisturisers, avoiding triggers, and prescribed medication. A qualified healthcare professional can recommend an approach based on the severity of the condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Skin Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if a rash persists or spreads, itching becomes severe, acne causes scarring, or skin symptoms do not improve. Urgent assessment is needed for serious allergic symptoms, extensive blistering, severe skin pain, or rapidly spreading redness accompanied by fever.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can fungal skin infections be treated with homoeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homoeopathy has not been demonstrated to cure fungal skin infections. These infections generally require appropriate antifungal treatment. Accurate diagnosis is important because fungal infections can resemble eczema and other skin conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for when choosing a Skin Specialist in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Check the practitioner\'s qualifications, relevant registration, experience, communication, and willingness to recommend appropriate testing or referral. A qualified dermatologist is an appropriate option for persistent, complex, or difficult-to-diagnose skin conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain healthy skin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use gentle skincare products, moisturise regularly, protect your skin from excessive sun exposure, maintain a balanced diet, and avoid products that cause irritation. Consult a healthcare professional if symptoms persist or worsen.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I stop prescribed skin medication if I want to try homoeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Do not stop or change prescribed treatment without discussing it with the healthcare professional who prescribed it. Delaying effective treatment can allow certain skin conditions to worsen or lead to complications.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'hair-treatment-manjeri',
+    pageName: 'Hair Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/hair-homoeopathic-treatment-in-manjeri/',
+    title: 'Hair Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    description:
+      'Information on hair loss consultation and treatment options in Manjeri, Kerala. Learn about hair fall causes, thinning, scalp health, evidence-based care, and when to see a specialist.',
+    url: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Hair Homoeopathic Treatment in Manjeri, Hair Treatment in Manjeri, Hair Care Clinic in Manjeri, Hair Fall Treatment in Manjeri, Hair Homoeopathy Clinic in Manjeri, Hair Loss Treatment in Manjeri, Hair Doctor in Manjeri, Hair Specialist in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
+            name: 'Hair Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            description:
+              'Information on hair loss consultation and treatment options in Manjeri, Kerala. Learn about hair fall causes, thinning, scalp health, evidence-based care, and when to see a specialist.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Hair and Scalp Disorders',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63-L66',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Hair Homoeopathic Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can research local healthcare clinics in Manjeri and check the practitioner’s accredited qualifications (such as BHMS) and state medical council registration. It is important to understand that homoeopathy has not been established as an effective medical treatment for hair loss in scientific trials. Persistent, rapid, or patchy hair loss should always be evaluated by a qualified doctor or dermatologist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes excessive hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Excessive hair shedding can stem from multiple biological factors, including androgenetic alopecia (genetic hair loss), recent high fever or severe illness (telogen effluvium), acute stress, nutritional deficiencies (especially iron, ferritin, and protein), thyroid imbalance, hormonal shifts (PCOS, postpartum), certain prescription drugs, or inflammatory scalp conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Hair Treatment in Manjeri effective for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific clinical evidence has not established homoeopathy as an effective treatment for hair loss, alopecia areata, or scalp disorders beyond a placebo response. Evidence-based care relies on identifying the underlying cause and applying proven therapies—such as correcting iron deficiency, treating scalp infections with antifungals, or using medically approved topical and systemic treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Hair Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek medical advice if your hair shedding is sudden, persistent, progressive, or patchy, or if it coincides with scalp pain, redness, scaling, or burning. Early medical assessment is vital to distinguish between temporary shedding and progressive conditions that require timely intervention.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deficiencies in iron (low ferritin stores), zinc, vitamin D, and inadequate dietary protein are well-documented contributors to telogen shedding and hair thinning. However, because hair fall has many possible causes, targeted blood testing and professional guidance are recommended before taking supplements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for in a Hair Specialist in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for verified medical qualifications, registration with medical councils, clinical experience, trichoscopic scalp examination capabilities, and transparent communication regarding treatment options. A qualified dermatologist is appropriate for complex, unexplained, or rapidly progressing hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain healthy hair?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Support your hair by consuming a balanced diet rich in protein and micronutrients, handling wet hair gently, avoiding excessive heat and harsh chemical treatments, washing with suitable mild cleansers, and seeking timely clinical evaluation if excessive shedding persists.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dandruff itself does not usually cause direct permanent hair follicle loss. However, intense itching and repetitive scratching can physically injure hair shafts and follicles, causing breakage. Furthermore, severe untreated seborrhoeic dermatitis with heavy scaling can exacerbate hair shedding.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'allergic-rhinitis-manjeri',
+    pageName: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
+    title: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Information on allergic rhinitis consultation, nasal triggers, sneezing, congestion, and evidence-informed care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Allergic Rhinitis Homoeopathic Treatment in Manjeri, Allergic Rhinitis Treatment in Manjeri, Allergic Rhinitis Doctor in Manjeri, Allergic Rhinitis Specialist in Manjeri, Nasal Allergy Treatment in Manjeri, Seasonal Allergy Treatment in Manjeri, Homoeopathic Doctor for Allergic Rhinitis in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
+            name: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri | Care Guide',
+            description:
+              'Information on allergic rhinitis consultation, nasal triggers, sneezing, congestion, and evidence-informed care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Allergic Rhinitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'J30',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is allergic rhinitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Allergic rhinitis is an IgE-mediated inflammatory response of the nasal mucous membranes triggered by exposure to airborne environmental allergens. In sensitized individuals, mast cells in the nasal mucosa release histamine and leukotrienes upon allergen contact, causing paroxysmal sneezing, nasal congestion, a watery runny nose, and itching of the nose and eyes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I seek allergic rhinitis treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'If you are seeking allergic rhinitis care in Manjeri, consult a qualified medical professional or ENT specialist who can perform a formal anterior rhinoscopy, evaluate suspected triggers, recommend diagnostic IgE allergy tests, and formulate an evidence-based management plan suited to your lifestyle.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure allergic rhinitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homoeopathy has not been established by reliable scientific clinical evidence as an effective medical treatment or cure for allergic rhinitis beyond a placebo effect. Evidence-based care relies on proven interventions such as allergen avoidance, sterile saline nasal irrigation, second-generation antihistamines, intranasal corticosteroid sprays, and allergen immunotherapy.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common triggers of allergic rhinitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The most common indoor and outdoor allergens include house dust mites, plant and tree pollens, mould spores, and animal dander proteins (cats, dogs, birds). In addition, airborne irritants like vehicle exhaust, cigarette smoke, strong perfumes, and ambient air pollution can exacerbate symptoms in hyperreactive nasal passages.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between seasonal and perennial allergic rhinitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seasonal allergic rhinitis (often called hay fever) flares up during specific times of the year corresponding to outdoor pollination seasons of trees, grasses, and weeds. Perennial allergic rhinitis persists throughout the entire year, typically triggered by continuous exposure to indoor aeroallergens such as house dust mites, indoor moulds, or domestic pets.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can allergic rhinitis affect sleep?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, significantly. Chronic mucosal swelling causes nasal airway resistance, leading to mandatory mouth breathing, dry mouth, frequent nocturnal awakenings, snoring, and fragmented sleep. This frequently produces morning headaches, cognitive grogginess, daytime somnolence, and impaired concentration at work or school.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is allergic rhinitis the same as sinusitis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Allergic rhinitis is an allergic inflammation limited primarily to the nasal passages, characterized by clear watery discharge and itching. Sinusitis involves bacterial, viral, or chronic inflammatory involvement of the paranasal sinus cavities, typically presenting with thick discoloured mucus, facial pain or pressure over the cheeks/forehead, reduced smell, and sometimes fever. However, uncontrolled allergic rhinitis can block sinus ostia, predisposing patients to secondary sinusitis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an allergic rhinitis specialist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek specialist evaluation if your symptoms persist despite basic over-the-counter measures, if nasal congestion severely impairs your sleep or quality of life, if you experience co-existing asthma symptoms (wheezing, shortness of breath), or if you require formal allergy testing (skin prick or blood specific-IgE) to evaluate eligibility for allergen immunotherapy.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'acne-treatment-manjeri',
+    pageName: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri',
+    category: 'clinical',
+    path: '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    title: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
+    description:
+      'Information on acne causes, pimples, blackheads, hormonal breakouts, scar prevention, and clinical care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Treatment for Acne Skin Problems in Manjeri, Acne Treatment in Manjeri, Pimples Treatment in Manjeri, Acne Clinic in Manjeri, Acne Doctor in Manjeri, Acne Specialist in Manjeri, Homoeopathic Acne Treatment in Manjeri, Skin Problems Treatment in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+            name: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
+            description:
+              'Information on acne causes, pimples, blackheads, hormonal breakouts, scar prevention, and clinical care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Acne develops when hair follicles (pores) become clogged with a mixture of excess sebum (oil) and dead skin cells. Hormonal fluctuations, genetics, cutaneous bacterial activity (Cutibacterium acnes), localized inflammation, and certain medications or comedogenic skincare products all contribute to breakouts.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I seek Acne Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can consult a qualified healthcare professional in Manjeri for an in-depth clinical assessment and diagnostic guidance. A qualified dermatologist or physician is particularly recommended for persistent, severe, nodulocystic, or scarring acne to establish an evidence-based management plan.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Acne Treatment in Manjeri scientifically proven?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment or cure for acne. Patients are advised to explore evidence-based therapies—such as topical benzoyl peroxide, retinoids, azelaic acid, or systemic medications—under qualified medical supervision.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can pimples leave permanent scars?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deep, highly inflamed pimples, nodules, and cysts can destroy dermal collagen, leaving behind permanent pitted, ice-pick, boxcar, or hypertrophic scars, as well as prolonged post-inflammatory hyperpigmentation. Early, appropriate medical treatment is vital to minimise scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does acne treatment take to work?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Most evidence-based acne treatments require between 6 to 12 weeks of daily, consistent application to demonstrate noticeable clinical improvement. Acne does not resolve overnight, and patience with a prescribed therapeutic regimen is essential.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I squeeze pimples?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Squeezing or picking pimples forces infectious material and sebum deeper into surrounding dermal tissue. This amplifies localized inflammation, prolongs healing time, and dramatically increases the risk of permanent pitted scars and bacterial superinfection.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can adults develop acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Adult-onset acne is common, particularly in women. It is frequently influenced by hormonal fluctuations, chronic stress, skincare products, or underlying endocrine disorders such as Polycystic Ovary Syndrome (PCOS). Persistent adult breakouts deserve comprehensive medical evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an Acne Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek medical advice if your acne is painful, persistent, widespread across the chest/back, leaving visible dark marks or scars, or causing significant emotional distress. Sudden, atypical breakouts in adulthood also warrant clinical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is acne caused by poor hygiene?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not usually. Acne is an internal inflammatory process driven by follicular biology, sebum chemistry, and hormones—not surface dirt. Over-washing, scrubbing aggressively, or using harsh astringents actually strips the epidermal barrier, causing irritation and worsening breakouts.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy guarantee permanent acne removal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Homoeopathy has not been established as an effective acne treatment in scientific trials, and no reputable medical professional can guarantee permanent eradication of acne. Responsible healthcare focuses on accurate diagnosis, addressing root triggers, and preventing permanent scarring.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'eczema-treatment-manjeri',
+    pageName: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri',
+    category: 'clinical',
+    path: '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    title: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
+    description:
+      'Information on eczema causes, symptoms, everyday skincare, and clinical guidance in Manjeri, Kerala. Evidence-based care insights with Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Treatment for Eczema Skin Problems in Manjeri, Eczema Treatment in Manjeri, Eczema Clinic in Manjeri, Eczema Doctor in Manjeri, Eczema Specialist in Manjeri, Homoeopathic Eczema Treatment in Manjeri, Atopic Dermatitis Manjeri, Skin Problems Treatment in Manjeri',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+            name: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
+            description:
+              'Information on eczema causes, symptoms, everyday skincare, and clinical guidance in Manjeri, Kerala. Evidence-based care insights with Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Eczema / Atopic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Eczema develops due to a combination of genetic factors (such as filaggrin gene mutations causing skin barrier dysfunction), immune system hyper-reactivity, and environmental triggers including harsh soaps, dust mites, dry weather, sweat, and emotional stress.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I find Eczema Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can consult healthcare practitioners and dermatology clinics in and around Manjeri. If you are seeking homoeopathic consultations, Anjali Homoeo Clinic offers online and in-person evaluations focused on constitutional assessment, trigger management, and barrier care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Eczema Treatment in Manjeri scientifically proven?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Reliable scientific evidence has not demonstrated that homoeopathy is an effective treatment or cure for eczema. Prescribed conventional medications must not be stopped or replaced without consulting your medical doctor.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can eczema be cured permanently?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently no definitive permanent cure for atopic eczema. However, symptoms can be effectively managed and flare-ups significantly reduced through daily barrier moisturisation, trigger avoidance, and appropriate medical therapies.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between eczema and psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Eczema typically causes intensely itchy, red, weeping, or dry cracked patches frequently located in flexural skin folds (behind knees, elbow creases). Psoriasis produces well-defined plaques with silvery-white scales typically over extensor surfaces (outer elbows, knees, scalp) and involves accelerated skin cell turnover.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I manage eczema flare-ups at home?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Apply thick, fragrance-free emollient creams within 3 minutes of short lukewarm showers, wear soft breathable cotton clothing, avoid harsh soaps and detergents, use cool compresses for itch relief, and resist scratching to prevent secondary bacterial infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an Eczema Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek immediate medical assessment if your skin develops yellow crusting, pus blisters, sudden fever, rapid spreading redness (cellulitis), severe pain, or cluster blisters resembling eczema herpeticum.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does diet affect eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Food allergies can sometimes trigger or worsen eczema, especially in infants and young children (common allergens include cow milk, eggs, peanuts, and soy). However, unnecessary dietary elimination without medical confirmation is not recommended as it may cause nutritional deficiencies.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'warts-treatment-manjeri',
+    pageName: 'Skin Warts Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/skin-warts-homoeopathic-treatment-in-manjeri/',
+    title: 'Skin Warts Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Understanding skin warts causes, HPV types, clinical assessment, evidence-based removal, and consultation options in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Skin Warts Homoeopathic Treatment in Manjeri, Skin Warts Treatment in Manjeri, Homoeopathic Treatment for Skin Warts in Manjeri, Skin Warts Consultation in Manjeri, Skin Warts Doctor in Manjeri, Skin Warts Specialist in Manjeri, Skin Wart Removal Treatment in Manjeri, Plantar Warts Manjeri, Common Warts',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
+            name: 'Skin Warts Homoeopathic Treatment in Manjeri | Care Guide',
+            description:
+              'Understanding skin warts causes, HPV types, clinical assessment, evidence-based removal, and consultation options in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Viral Warts (Verruca)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B07',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Skin Warts Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can look for qualified healthcare professionals offering skin assessments and wart treatment in Manjeri. Check their qualifications and available services, and ask whether they can refer you to a dermatologist if necessary.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Skin Warts in Manjeri effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for skin warts. Discuss treatment choices with a qualified healthcare professional and do not delay assessment of an unusual or changing lesion.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes skin warts?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Most common skin warts are caused by certain types of HPV that infect the outer layer of the skin. The virus may spread through direct contact or contaminated surfaces, although exposure does not always lead to a wart.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skin warts disappear without treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some warts disappear naturally as the immune system responds to the virus. Others may persist for months or years, and treatment may be considered if they cause discomfort, spread, or create cosmetic concerns.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What treatments are available for skin wart removal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Depending on the wart and its location, options may include observation, selected salicylic acid products, professional cryotherapy, or other clinical procedures. A healthcare professional can explain which options are appropriate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I remove a wart at home?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Avoid cutting, burning, or using harsh chemicals on a skin growth. Some over-the-counter wart products may be suitable for specific warts, but they are not appropriate for every location or patient. Seek professional advice if you are unsure of the diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Skin Warts Specialist in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek an assessment if a growth changes rapidly, bleeds, becomes painful, develops an open sore, or appears in a sensitive area. Professional advice is also important if you have a weakened immune system or are uncertain whether the growth is a wart.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skin warts return after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Treatment removes or destroys the visible wart, but it may not eliminate the virus from surrounding skin. Recurrence is possible, and some people develop new warts after treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are skin warts contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Warts can spread through direct contact and, in some situations, through contaminated surfaces. Avoid picking at them, sharing personal nail-care tools, or shaving directly over affected skin to reduce the risk of spreading them.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'corns-treatment-manjeri',
+    pageName: 'Skin Corns Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/skin-corns-homoeopathic-treatment-in-manjeri/',
+    title: 'Skin Corns Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Information on foot corns, hard and soft corns, friction causes, safe management, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Skin Corns Homoeopathic Treatment in Manjeri, Corns Treatment in Manjeri, Homoeopathic Treatment for Corns in Manjeri, Foot Corn Treatment in Manjeri, Corn Removal Treatment in Manjeri, Corns Doctor in Manjeri, Corns Specialist in Manjeri, Hard Corns, Soft Corns',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
+            name: 'Skin Corns Homoeopathic Treatment in Manjeri | Care Guide',
+            description:
+              'Information on foot corns, hard and soft corns, friction causes, safe management, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Corns and Callosities (Heloma / Clavus)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L84',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Corns Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can look for qualified healthcare professionals offering foot or skin assessments in Manjeri. Check their qualifications and ask whether they can assess the lesion, recommend appropriate treatment, or refer you to a foot-care specialist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Corns in Manjeri effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for corns. Management generally focuses on relieving pressure, reducing friction, and safely addressing the thickened skin.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes corns on the feet?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Corns usually develop because of repeated friction or pressure. Tight shoes, poorly fitting footwear, toe deformities, and pressure during walking can contribute to their formation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are corns and calluses the same?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Both involve thickened skin caused by pressure or friction, but corns are generally smaller and more localised, often with a central core. Calluses tend to cover broader areas of thickened skin.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I remove a corn at home?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Avoid cutting a corn with blades or scissors. Gentle care may be suitable for some people, but medicated products and filing are not appropriate for everyone. People with diabetes, poor circulation, or reduced foot sensation should seek professional advice.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can corns return after removal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Corns can return if the pressure or friction that caused them continues. Well-fitting footwear, suitable cushioning, and correction of contributing pressure points can help reduce recurrence.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Corns Specialist in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek professional advice if a corn is very painful, repeatedly returns, affects walking, or becomes red, swollen, or infected-looking. Assessment is particularly important if you have diabetes, poor circulation, or reduced foot sensation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prevent foot corns?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wear comfortable shoes with adequate toe space, avoid footwear that rubs, consider appropriate cushioning, and check your feet regularly. If corns repeatedly develop in the same place, seek advice about the underlying pressure.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'psoriasis-treatment-manjeri',
+    pageName: 'Psoriasis Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/psoriasis-homoeopathic-treatment-in-manjeri/',
+    title: 'Psoriasis Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Understanding psoriasis symptoms, plaque and scalp care, immune triggers, evidence-based therapies, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
+    ogType: 'article',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Psoriasis Homoeopathic Treatment in Manjeri, Psoriasis Treatment in Manjeri, Homoeopathic Treatment for Psoriasis in Manjeri, Skin Psoriasis Treatment in Manjeri, Chronic Psoriasis Treatment in Manjeri, Psoriasis Clinic in Manjeri, Psoriasis Doctor in Manjeri, Psoriasis Specialist in Manjeri, Plaque Psoriasis, Scalp Psoriasis',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
+            name: 'Psoriasis Homoeopathic Treatment in Manjeri | Care Guide',
+            description:
+              'Understanding psoriasis symptoms, plaque and scalp care, immune triggers, evidence-based therapies, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            publisher: {
+              '@id': 'https://anjalihomoeoclinic.com/#clinic',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Psoriasis Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can search for qualified healthcare professionals offering skin-condition assessments in Manjeri. Check their qualifications and available services, and ask whether dermatology referral is available if needed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Psoriasis in Manjeri effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence does not establish homoeopathy as an effective treatment for psoriasis. Discuss treatment options with a qualified healthcare professional and do not discontinue prescribed medicines without medical advice.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include thickened or discoloured skin patches, scaling, itching, dryness, and cracked skin. Some people also experience nail changes or joint symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis be cured permanently?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Psoriasis is a chronic condition, and there is currently no established permanent cure. However, appropriate treatments can help control symptoms, reduce flare-ups, and improve quality of life.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What treatments are available for psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Depending on the severity and affected areas, treatments may include moisturisers, topical medicines, phototherapy, systemic medicines, or biologic therapies. A healthcare professional can recommend a suitable plan.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is Chronic Psoriasis Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Chronic psoriasis management focuses on controlling recurring symptoms, protecting the skin, monitoring complications, and adjusting treatment when necessary. The plan should be tailored to the person\'s condition and medical history.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis affect the scalp and nails?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Scalp psoriasis may cause itching and scaling, while nail psoriasis can lead to pitting, thickening, discolouration, or separation of the nail. Professional assessment can help distinguish nail psoriasis from fungal infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Psoriasis is not contagious and cannot be spread through touching, sharing household items, or being near someone who has the condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Psoriasis Specialist in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek professional advice if the rash is persistent, widespread, painful, or difficult to manage. Joint pain, swelling, or stiffness should also be assessed because these symptoms may indicate psoriatic arthritis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can daily skincare help manage psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Regular moisturising, gentle bathing, avoiding skin injury, and following prescribed treatment can help reduce dryness and support overall symptom management.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
+  {
+    id: 'ringworm-treatment-manjeri',
+    pageName: 'Ringworm Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/ringworm-homoeopathic-treatment-in-manjeri/',
+    title: 'Ringworm Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Patient guide on Ringworm & Fungal Skin Infections in Manjeri. Learn symptoms, causes, diagnosis, evidence-based antifungal medicine & consultation details with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+    ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Ringworm Treatment in Manjeri, Ringworm Homoeopathic Treatment in Manjeri, Fungal Skin Infection Treatment in Manjeri, Tinea Corporis Manjeri, Tinea Cruris Jock Itch Manjeri, Athlete Foot Manjeri, Scalp Ringworm Tinea Capitis Malappuram, Ringworm Doctor in Manjeri, Ringworm Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/#webpage',
+            name: 'Ringworm Homoeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
+            headline: 'Ringworm Homoeopathic Treatment in Manjeri',
+            url: 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+            description:
+              'In-depth patient guide to ringworm symptoms, dermatophyte fungi causes, differential mimics, evidence-based antifungal medicine, and consultation expectations in Manjeri and Malappuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatophytosis (Ringworm / Tinea)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Corporis (Body Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.4',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Cruris (Groin Ringworm / Jock Itch)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Pedis (Athlete’s Foot)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.3',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking ringworm, fungal infection, and itchy skin consultation in Manjeri and Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find Ringworm Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can search for qualified healthcare professionals offering skin-condition assessments in Manjeri. Choose a provider who can assess the rash, recommend appropriate treatment, and arrange further testing or referral when necessary.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Ringworm in Manjeri effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homoeopathy has not been shown reliably to eliminate the fungi responsible for ringworm and is not an established treatment for fungal skin infections. Appropriate antifungal treatment is the recommended approach.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Symptoms may include itchy, circular or oval patches, scaling, raised edges, and gradually expanding areas of affected skin. Scalp infections may cause broken hairs or patches of hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is ringworm contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Ringworm can spread through direct contact with infected skin, infected animals, or contaminated objects such as towels, clothing, and combs.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How is ringworm treated?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many infections affecting the body, groin, or feet can be treated with topical antifungal medicines. Scalp infections and certain extensive or persistent infections may require prescription oral medicines.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I use steroid cream for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Steroid creams should not be used alone to treat suspected ringworm because they do not kill the fungus and may mask or worsen the infection. Ask a healthcare professional to assess the rash and recommend appropriate treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Ringworm Doctor in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if the rash spreads, repeatedly returns, affects the scalp or nails, becomes painful, or does not improve with appropriate treatment. Prompt assessment is important if signs of infection develop.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prevent ringworm from returning?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Keep affected skin clean and dry, avoid sharing towels and clothing, change damp garments, wear footwear in communal wet areas, and follow the recommended treatment course. If the infection returns, seek reassessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Scalp ringworm can cause broken hairs and patches of hair loss. Severe inflammatory infections may lead to scarring and permanent hair loss, so suspected scalp ringworm should be assessed promptly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is a ringworm infection caused by poor hygiene?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Ringworm is a common fungal infection and can affect anyone. Good hygiene can help reduce transmission, but having ringworm does not necessarily mean someone has poor personal hygiene.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
 ];
+
+
+
 

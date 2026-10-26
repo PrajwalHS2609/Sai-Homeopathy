@@ -3,6 +3,7 @@ import { useClinic } from '../context/ClinicContext';
 import { PageSeoMetadata, SeoCategory } from '../types/seo';
 import { auditSeoPage } from '../services/seoService';
 import { SeoPageEditModal } from './SeoPageEditModal';
+import { SitemapModal } from './SitemapModal';
 import {
   Globe,
   Search,
@@ -19,6 +20,7 @@ import {
   Sparkles,
   Layers,
   ArrowRight,
+  FileCode2,
 } from 'lucide-react';
 
 export const AdminSeoSection: React.FC = () => {
@@ -42,6 +44,7 @@ export const AdminSeoSection: React.FC = () => {
   const [editingPage, setEditingPage] = useState<PageSeoMetadata | null>(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isNewModal, setIsNewModal] = useState(false);
+  const [isSitemapModalOpen, setIsSitemapModalOpen] = useState(false);
 
   // Compute metrics
   const totalPages = seoPages.length;
@@ -225,6 +228,15 @@ export const AdminSeoSection: React.FC = () => {
             >
               <Plus className="w-4 h-4 text-[#86D68B]" />
               <span>Add SEO for New Page</span>
+            </button>
+
+            <button
+              onClick={() => setIsSitemapModalOpen(true)}
+              className="px-3.5 py-2.5 text-xs font-semibold text-[#2F8335] bg-[#EDF8EE] hover:bg-[#D5EED7] rounded-xl transition-colors flex items-center gap-1.5 border border-[#C4EAC7] shadow-2xs"
+              title="View, copy & download Google XML Sitemap"
+            >
+              <FileCode2 className="w-4 h-4 text-[#45AC4B]" />
+              <span>Sitemap (XML)</span>
             </button>
 
             <button
@@ -529,6 +541,14 @@ export const AdminSeoSection: React.FC = () => {
         }}
         onSave={handleSavePage}
         isNew={isNewModal}
+      />
+
+      {/* Google XML Sitemap Modal */}
+      <SitemapModal
+        isOpen={isSitemapModalOpen}
+        onClose={() => setIsSitemapModalOpen(false)}
+        seoPages={seoPages}
+        showToast={showToast}
       />
     </div>
   );

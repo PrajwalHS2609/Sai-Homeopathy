@@ -1,0 +1,8 @@
+# Robots.txt for Anjali Homoeo Clinic
+# https://anjalihomoeoclinic.com
+
+User-agent: *
+Allow: /
+
+# Direct Google and search engine crawlers to XML Sitemap
+Sitemap: https://anjalihomoeoclinic.com/sitemap.xml

@@ -46,7 +46,18 @@ export type NavView =
   | 'neurological-care'
   | 'anorectal-vascular-care'
   | 'joint-musculoskeletal-care'
-  | 'ophthalmic-eye-care';
+  | 'ophthalmic-eye-care'
+  | 'piles-homoeopathic-clinic-manjeri'
+  | 'menstrual-treatment-manjeri'
+  | 'skin-treatment-manjeri'
+  | 'hair-treatment-manjeri'
+  | 'allergic-rhinitis-manjeri'
+  | 'acne-treatment-manjeri'
+  | 'eczema-treatment-manjeri'
+  | 'warts-treatment-manjeri'
+  | 'corns-treatment-manjeri'
+  | 'psoriasis-treatment-manjeri'
+  | 'ringworm-treatment-manjeri';
 
 interface Toast {
   id: string;
@@ -341,6 +352,178 @@ const isPilesBlogPath = (pathname: string) => {
   );
 };
 
+const isPilesManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/piles-homoeopathic-clinic-in-manjeri' ||
+    clean === '/piles-homoeopathic-clinic-manjeri' ||
+    clean === '/piles-clinic-manjeri' ||
+    clean === '/piles-clinic-in-manjeri' ||
+    clean === '/piles-consultation-in-manjeri'
+  );
+};
+
+const isMenstrualManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/menstrual-homoeopathic-treatment-in-manjeri' ||
+    clean === '/menstrual-homoeopathic-treatment-manjeri' ||
+    clean === '/menstrual-treatment-manjeri' ||
+    clean === '/menstrual-treatment-in-manjeri' ||
+    clean === '/menstrual-health-clinic-in-manjeri' ||
+    clean === '/menstrual-problems-doctor-in-manjeri'
+  );
+};
+
+const isSkinManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/skin-homoeopathic-treatment-in-manjeri' ||
+    clean === '/skin-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-treatment-manjeri' ||
+    clean === '/skin-treatment-in-manjeri' ||
+    clean === '/skin-health-clinic-in-manjeri' ||
+    clean === '/skin-problems-treatment-in-manjeri' ||
+    clean === '/skin-disease-treatment-in-manjeri'
+  );
+};
+
+const isHairManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/hair-homoeopathic-treatment-in-manjeri' ||
+    clean === '/hair-homoeopathic-treatment-manjeri' ||
+    clean === '/hair-treatment-manjeri' ||
+    clean === '/hair-treatment-in-manjeri' ||
+    clean === '/hair-health-clinic-in-manjeri' ||
+    clean === '/hair-fall-treatment-in-manjeri' ||
+    clean === '/hair-loss-treatment-in-manjeri' ||
+    clean === '/hair-doctor-in-manjeri' ||
+    clean === '/hair-specialist-in-manjeri'
+  );
+};
+
+const isAllergicRhinitisManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/allergic-rhinitis-homoeopathic-treatment-in-manjeri' ||
+    clean === '/allergic-rhinitis-homoeopathic-treatment-manjeri' ||
+    clean === '/allergic-rhinitis-treatment-in-manjeri' ||
+    clean === '/allergic-rhinitis-treatment-manjeri' ||
+    clean === '/allergic-rhinitis-clinic-in-manjeri' ||
+    clean === '/allergic-rhinitis-doctor-in-manjeri' ||
+    clean === '/allergic-rhinitis-specialist-in-manjeri' ||
+    clean === '/nasal-allergy-treatment-in-manjeri' ||
+    clean === '/seasonal-allergy-treatment-in-manjeri'
+  );
+};
+
+const isAcneManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-acne-skin-problems-manjeri' ||
+    clean === '/acne-skin-problems-treatment-in-manjeri' ||
+    clean === '/acne-treatment-in-manjeri' ||
+    clean === '/acne-treatment-manjeri' ||
+    clean === '/acne-clinic-in-manjeri' ||
+    clean === '/acne-doctor-in-manjeri' ||
+    clean === '/acne-specialist-in-manjeri' ||
+    clean === '/pimples-treatment-in-manjeri' ||
+    clean === '/homoeopathic-acne-treatment-in-manjeri' ||
+    clean === '/acne-homoeopathic-treatment-in-manjeri'
+  );
+};
+
+const isEczemaManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-eczema-skin-problems-manjeri' ||
+    clean === '/eczema-skin-problems-treatment-in-manjeri' ||
+    clean === '/eczema-treatment-in-manjeri' ||
+    clean === '/eczema-treatment-manjeri' ||
+    clean === '/eczema-clinic-in-manjeri' ||
+    clean === '/eczema-doctor-in-manjeri' ||
+    clean === '/eczema-specialist-in-manjeri' ||
+    clean === '/homoeopathic-eczema-treatment-in-manjeri' ||
+    clean === '/eczema-homoeopathic-treatment-in-manjeri'
+  );
+};
+
+const isWartsManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/skin-warts-homoeopathic-treatment-in-manjeri' ||
+    clean === '/skin-warts-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-warts-treatment-in-manjeri' ||
+    clean === '/skin-warts-treatment-manjeri' ||
+    clean === '/warts-treatment-in-manjeri' ||
+    clean === '/warts-treatment-manjeri' ||
+    clean === '/skin-warts-clinic-in-manjeri' ||
+    clean === '/skin-warts-doctor-in-manjeri' ||
+    clean === '/skin-warts-specialist-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-skin-warts-in-manjeri' ||
+    clean === '/skin-wart-removal-treatment-in-manjeri'
+  );
+};
+
+const isCornsManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/skin-corns-homoeopathic-treatment-in-manjeri' ||
+    clean === '/skin-corns-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-corns-treatment-in-manjeri' ||
+    clean === '/skin-corns-treatment-manjeri' ||
+    clean === '/corns-treatment-in-manjeri' ||
+    clean === '/corns-treatment-manjeri' ||
+    clean === '/corn-treatment-in-manjeri' ||
+    clean === '/foot-corn-treatment-in-manjeri' ||
+    clean === '/corns-clinic-in-manjeri' ||
+    clean === '/foot-corn-clinic-in-manjeri' ||
+    clean === '/corns-doctor-in-manjeri' ||
+    clean === '/corns-specialist-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-corns-in-manjeri' ||
+    clean === '/corn-removal-treatment-in-manjeri'
+  );
+};
+
+const isPsoriasisManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/psoriasis-homoeopathic-treatment-in-manjeri' ||
+    clean === '/psoriasis-homoeopathic-treatment-manjeri' ||
+    clean === '/psoriasis-treatment-in-manjeri' ||
+    clean === '/psoriasis-treatment-manjeri' ||
+    clean === '/skin-psoriasis-treatment-in-manjeri' ||
+    clean === '/chronic-psoriasis-treatment-in-manjeri' ||
+    clean === '/psoriasis-clinic-in-manjeri' ||
+    clean === '/psoriasis-doctor-in-manjeri' ||
+    clean === '/psoriasis-specialist-in-manjeri' ||
+    clean === '/homoeopathy-for-psoriasis-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-psoriasis-in-manjeri' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-manjeri'
+  );
+};
+
+const isRingwormManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/ringworm-homoeopathic-treatment-in-manjeri' ||
+    clean === '/ringworm-homoeopathic-treatment-manjeri' ||
+    clean === '/ringworm-treatment-in-manjeri' ||
+    clean === '/ringworm-treatment-manjeri' ||
+    clean === '/skin-ringworm-treatment-in-manjeri' ||
+    clean === '/fungal-skin-infection-treatment-in-manjeri' ||
+    clean === '/ringworm-clinic-in-manjeri' ||
+    clean === '/ringworm-doctor-in-manjeri' ||
+    clean === '/ringworm-specialist-in-manjeri' ||
+    clean === '/homoeopathy-for-ringworm-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-ringworm-in-manjeri' ||
+    clean === '/ringworm-consultation-in-manjeri'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -404,6 +587,39 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isOphthalmicEyePath(window.location.pathname)) {
         return 'ophthalmic-eye-care';
+      }
+      if (isPilesManjeriPath(window.location.pathname)) {
+        return 'piles-homoeopathic-clinic-manjeri';
+      }
+      if (isMenstrualManjeriPath(window.location.pathname)) {
+        return 'menstrual-treatment-manjeri';
+      }
+      if (isSkinManjeriPath(window.location.pathname)) {
+        return 'skin-treatment-manjeri';
+      }
+      if (isHairManjeriPath(window.location.pathname)) {
+        return 'hair-treatment-manjeri';
+      }
+      if (isAllergicRhinitisManjeriPath(window.location.pathname)) {
+        return 'allergic-rhinitis-manjeri';
+      }
+      if (isAcneManjeriPath(window.location.pathname)) {
+        return 'acne-treatment-manjeri';
+      }
+      if (isEczemaManjeriPath(window.location.pathname)) {
+        return 'eczema-treatment-manjeri';
+      }
+      if (isWartsManjeriPath(window.location.pathname)) {
+        return 'warts-treatment-manjeri';
+      }
+      if (isCornsManjeriPath(window.location.pathname)) {
+        return 'corns-treatment-manjeri';
+      }
+      if (isPsoriasisManjeriPath(window.location.pathname)) {
+        return 'psoriasis-treatment-manjeri';
+      }
+      if (isRingwormManjeriPath(window.location.pathname)) {
+        return 'ringworm-treatment-manjeri';
       }
     }
     return 'home';
@@ -608,6 +824,28 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('joint-musculoskeletal-care');
       } else if (isOphthalmicEyePath(window.location.pathname)) {
         setCurrentView('ophthalmic-eye-care');
+      } else if (isPilesManjeriPath(window.location.pathname)) {
+        setCurrentView('piles-homoeopathic-clinic-manjeri');
+      } else if (isMenstrualManjeriPath(window.location.pathname)) {
+        setCurrentView('menstrual-treatment-manjeri');
+      } else if (isSkinManjeriPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-manjeri');
+      } else if (isHairManjeriPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-manjeri');
+      } else if (isAllergicRhinitisManjeriPath(window.location.pathname)) {
+        setCurrentView('allergic-rhinitis-manjeri');
+      } else if (isAcneManjeriPath(window.location.pathname)) {
+        setCurrentView('acne-treatment-manjeri');
+      } else if (isEczemaManjeriPath(window.location.pathname)) {
+        setCurrentView('eczema-treatment-manjeri');
+      } else if (isWartsManjeriPath(window.location.pathname)) {
+        setCurrentView('warts-treatment-manjeri');
+      } else if (isCornsManjeriPath(window.location.pathname)) {
+        setCurrentView('corns-treatment-manjeri');
+      } else if (isPsoriasisManjeriPath(window.location.pathname)) {
+        setCurrentView('psoriasis-treatment-manjeri');
+      } else if (isRingwormManjeriPath(window.location.pathname)) {
+        setCurrentView('ringworm-treatment-manjeri');
       } else if (isSeverePeriodPainPath(window.location.pathname)) {
         setCurrentView('blog');
         const post = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
@@ -709,6 +947,61 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ophthalmic-eye-care' }, '', targetUrl);
       }
+    } else if (currentView === 'piles-homoeopathic-clinic-manjeri') {
+      const targetUrl = '/piles-homoeopathic-clinic-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-homoeopathic-clinic-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'menstrual-treatment-manjeri') {
+      const targetUrl = '/menstrual-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-treatment-manjeri') {
+      const targetUrl = '/skin-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'hair-treatment-manjeri') {
+      const targetUrl = '/hair-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'allergic-rhinitis-manjeri') {
+      const targetUrl = '/allergic-rhinitis-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'allergic-rhinitis-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'acne-treatment-manjeri') {
+      const targetUrl = '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'acne-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'eczema-treatment-manjeri') {
+      const targetUrl = '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'eczema-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'warts-treatment-manjeri') {
+      const targetUrl = '/skin-warts-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'warts-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'corns-treatment-manjeri') {
+      const targetUrl = '/skin-corns-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'corns-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'psoriasis-treatment-manjeri') {
+      const targetUrl = '/psoriasis-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'psoriasis-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'ringworm-treatment-manjeri') {
+      const targetUrl = '/ringworm-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'ringworm-treatment-manjeri' }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'severe-period-pain-when-to-worry') {
       const targetUrl = '/severe-period-pain-when-to-worry/';
       if (window.location.pathname !== targetUrl) {
@@ -790,7 +1083,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isChronicSinusitisBlogPath(window.location.pathname) ||
         isAsthmaSymptomsBlogPath(window.location.pathname) ||
         isHomoeoClinicMalappuramBlogPath(window.location.pathname) ||
-        isPilesBlogPath(window.location.pathname)
+        isPilesBlogPath(window.location.pathname) ||
+        isPilesManjeriPath(window.location.pathname) ||
+        isMenstrualManjeriPath(window.location.pathname) ||
+        isSkinManjeriPath(window.location.pathname) ||
+        isHairManjeriPath(window.location.pathname) ||
+        isAllergicRhinitisManjeriPath(window.location.pathname) ||
+        isAcneManjeriPath(window.location.pathname) ||
+        isEczemaManjeriPath(window.location.pathname) ||
+        isWartsManjeriPath(window.location.pathname) ||
+        isCornsManjeriPath(window.location.pathname) ||
+        isPsoriasisManjeriPath(window.location.pathname) ||
+        isRingwormManjeriPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -1292,6 +1596,17 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'anorectal-vascular-care') targetId = 'anorectal-vascular-care';
     else if (currentView === 'joint-musculoskeletal-care') targetId = 'joint-musculoskeletal-care';
     else if (currentView === 'ophthalmic-eye-care') targetId = 'ophthalmic-eye-care';
+    else if (currentView === 'piles-homoeopathic-clinic-manjeri') targetId = 'piles-homoeopathic-clinic-manjeri';
+    else if (currentView === 'menstrual-treatment-manjeri') targetId = 'menstrual-treatment-manjeri';
+    else if (currentView === 'skin-treatment-manjeri') targetId = 'skin-treatment-manjeri';
+    else if (currentView === 'hair-treatment-manjeri') targetId = 'hair-treatment-manjeri';
+    else if (currentView === 'allergic-rhinitis-manjeri') targetId = 'allergic-rhinitis-manjeri';
+    else if (currentView === 'acne-treatment-manjeri') targetId = 'acne-treatment-manjeri';
+    else if (currentView === 'eczema-treatment-manjeri') targetId = 'eczema-treatment-manjeri';
+    else if (currentView === 'warts-treatment-manjeri') targetId = 'warts-treatment-manjeri';
+    else if (currentView === 'corns-treatment-manjeri') targetId = 'corns-treatment-manjeri';
+    else if (currentView === 'psoriasis-treatment-manjeri') targetId = 'psoriasis-treatment-manjeri';
+    else if (currentView === 'ringworm-treatment-manjeri') targetId = 'ringworm-treatment-manjeri';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';
     else if (currentView === 'book-appointment') targetId = 'book-appointment';

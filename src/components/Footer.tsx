@@ -305,6 +305,153 @@ export const Footer: React.FC = () => {
 
         </div>
 
+        {/* Regional Clinic Guides & Other Pages Section */}
+        <div className="pt-8 border-t border-white/10 space-y-3 font-sans">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[#45AC4B]">
+              REGIONAL CLINIC GUIDES &amp; OTHER PAGES
+            </h4>
+            <span className="text-[11px] text-[#94A3B8]">
+              Specialized patient information guides across Malappuram &amp; Kerala
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-[#CBD5E1]">
+            <button
+              onClick={() => handleLinkClick('piles-homoeopathic-clinic-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#45AC4B]" />
+              <span>Piles Homoeopathic Clinic in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('menstrual-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Menstrual Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('skin-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('hair-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('allergic-rhinitis-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0284C7]" />
+              <span>Allergic Rhinitis in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('acne-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Acne Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('eczema-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Eczema Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('warts-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Skin Warts Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('corns-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#D97706]" />
+              <span>Skin Corns Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('psoriasis-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Psoriasis Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('ringworm-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Ringworm Treatment in Manjeri</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('anorectal-vascular-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8]" />
+              <span>Anorectal &amp; Vascular Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('womens-health-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Women’s Health Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('respiratory-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8]" />
+              <span>Respiratory &amp; Allergy Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('skin-hair-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin &amp; Hair Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('renal-thyroid-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0284C7]" />
+              <span>Renal &amp; Thyroid Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('neurological-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6]" />
+              <span>Neurological Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('joint-musculoskeletal-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]" />
+              <span>Joint &amp; Musculoskeletal Care</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('ophthalmic-eye-care')}
+              className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0284C7]" />
+              <span>Ophthalmic Eye Care</span>
+            </button>
+          </div>
+        </div>
+
         {/* Medical Notice Bar */}
         <div className="rounded-2xl bg-[#141A42] p-4 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#94A3B8]">
           <div className="flex items-center gap-2">
@@ -355,6 +502,15 @@ export const Footer: React.FC = () => {
             >
               Shipping Policy
             </button>
+            <span>·</span>
+            <a
+              href="/sitemap.xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              XML Sitemap
+            </a>
           </div>
         </div>
 
