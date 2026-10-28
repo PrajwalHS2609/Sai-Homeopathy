@@ -39,7 +39,7 @@ export const INITIAL_SETTINGS: ClinicSettings = {
   tagline: 'Gentle Care. Personalized Treatment.',
   practitionerName: 'Dr. Anjali Chandrasekhar',
   practitionerQualification: 'BHMS (Bachelor of Homeopathic Medicine and Surgery)',
-  registrationNumber: 'KA-HOM-48192',
+  registrationNumber: 'KA-HOM-15563',
   phone: '098951 01707',
   secondaryPhone: '089211 80408',
   whatsappNumber: '+918921180408',
@@ -68,7 +68,7 @@ export const INITIAL_PRACTITIONERS: Practitioner[] = [
     qualifications: 'BHMS (Bachelor of Homeopathic Medicine and Surgery)',
     title: 'Senior Homeopathic Physician & Consultant',
     experienceYears: 10,
-    registrationNumber: 'KA-HOM-48192',
+    registrationNumber: 'KA-HOM-15563',
     bio: 'With a patient-focused approach to homeopathic consultation, Dr. Anjali Chandrasekhar provides consultations through both online and in-clinic appointments. The consultation focuses on understanding the patient’s history, concerns, and individual constitutional factors before determining gentle, customized therapeutic guidance.',
     specialties: [
       'Chronic Lifestyle Conditions',

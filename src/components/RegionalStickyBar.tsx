@@ -23,7 +23,7 @@ export const RegionalStickyBar: React.FC<RegionalStickyBarProps> = ({
             {pageTitle}
           </span>
           <span className="hidden md:inline text-white/70">
-            | Dr. Anjali Chandrasekhar (BHMS, Reg: 16503)
+            | Dr. Anjali Chandrasekhar (BHMS, Board Reg. KA-HOM-15563)
           </span>
         </div>
         <div className="flex items-center gap-2">

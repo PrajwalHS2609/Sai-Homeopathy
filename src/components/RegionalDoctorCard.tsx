@@ -40,7 +40,7 @@ export const RegionalDoctorCard: React.FC<RegionalDoctorCardProps> = ({
         <div className="flex-1 w-full">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EEF2FB] text-[#303A88] text-xs font-bold mb-2">
             <Award className="w-3.5 h-3.5 text-[#303A88]" />
-            <span>Kerala State Council Reg: 16503</span>
+            <span>Board Reg. KA-HOM-15563</span>
           </div>
           <h3 className="font-editorial text-2xl font-bold text-[#1E2559]">
             Dr. Anjali Chandrasekhar

@@ -49,7 +49,7 @@ export const PractitionerProfile: React.FC = () => {
                       {practitioner.name}
                     </h3>
                     <p className="text-xs text-[#CBD5E1] font-medium font-sans">
-                      {practitioner.qualifications} • Reg. {practitioner.registrationNumber || settings.registrationNumber}
+                      {practitioner.qualifications} • Board Reg. {practitioner.registrationNumber || settings.registrationNumber}
                     </p>
                   </div>
                 </div>

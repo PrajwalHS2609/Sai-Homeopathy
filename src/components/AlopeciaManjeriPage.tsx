@@ -318,7 +318,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
                 Alopecia &amp; Hair Loss Consultation – Manjeri &amp; Malappuram Patient Guide
               </span>
               <span className="hidden md:inline text-white/70">
-                | Dr. Anjali Chandrasekhar (BHMS, Reg: 16503)
+                | Dr. Anjali Chandrasekhar (BHMS, Board Reg. KA-HOM-15563)
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -416,7 +416,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
                   <div className="flex-1">
                     <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EEF2FB] text-[#303A88] text-xs font-bold mb-2">
                       <Award className="w-3.5 h-3.5 text-[#303A88]" />
-                      <span>Kerala State Council Reg: 16503</span>
+                      <span>Board Reg. KA-HOM-15563</span>
                     </div>
                     <h3 className="font-editorial text-2xl font-bold text-[#1E2559]">
                       Dr. Anjali Chandrasekhar

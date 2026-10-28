@@ -461,7 +461,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                       Dr. Anjali Chandrasekhar
                     </h3>
                     <p className="text-xs sm:text-sm font-semibold text-[#303A88]">
-                      BHMS • Kerala State Medical Registration No. 16503
+                      BHMS • Board Reg. KA-HOM-15563
                     </p>
                     <p className="text-xs text-[#64748B] max-w-xs mt-1">
                       10+ Years Clinical Practice • 12,500+ Patients Treated • Special Focus on Ocular Mucosal Allergies &amp; Chronic Conditions
@@ -1167,7 +1167,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
             </div>
             <div className="p-5 text-center">
               <h3 className="font-heading text-lg font-bold text-[#1E2559]">Dr. Anjali Chandrasekhar</h3>
-              <p className="text-xs text-[#303A88] font-semibold mt-0.5">BHMS • Reg. No. 16503</p>
+              <p className="text-xs text-[#303A88] font-semibold mt-0.5">BHMS • Board Reg. KA-HOM-15563</p>
               <p className="text-xs text-[#64748B] mt-1">
                 Senior Physician specializing in Constitutional Homeopathy and Ophthalmic Mucosal Care at Anjali Homeo Clinic.
               </p>

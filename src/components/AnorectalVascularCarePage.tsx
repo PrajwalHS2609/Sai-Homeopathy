@@ -474,7 +474,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
                           </div>
                         </div>
                         <span className="text-[10px] font-bold text-[#303A88] bg-[#EEF2FB] px-2 py-0.5 rounded-md border border-[#D8E1F5]">
-                          Reg No. 16503
+                          Board Reg. KA-HOM-15563
                         </span>
                       </div>
                     </div>
@@ -1218,7 +1218,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
                   </p>
                 </div>
                 <span className="text-xs font-bold text-[#303A88] bg-[#EEF2FB] px-2.5 py-1 rounded-full border border-[#D8E1F5]">
-                  Reg: 16503
+                  Board Reg. KA-HOM-15563
                 </span>
               </div>
               <p className="mt-2 text-xs text-[#475569]">

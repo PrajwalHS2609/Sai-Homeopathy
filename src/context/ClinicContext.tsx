@@ -1220,6 +1220,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       parsed.email = 'anjalihomoeoclinic@gmail.com';
       // Ensure WhatsApp number is always updated to 89211 80408
       parsed.whatsappNumber = '+918921180408';
+      parsed.registrationNumber = 'KA-HOM-15563';
       parsed.branches = INITIAL_SETTINGS.branches;
       parsed.instagramUrl = INITIAL_SETTINGS.instagramUrl;
       parsed.facebookUrl = INITIAL_SETTINGS.facebookUrl;
@@ -1237,16 +1238,20 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     if (saved) {
       const parsed = JSON.parse(saved);
       const migrated = parsed.map((p: Practitioner) => {
+        const updated = {
+          ...p,
+          registrationNumber: 'KA-HOM-15563',
+        };
         if (p.name && p.name.includes('Ananya')) {
           return {
-            ...p,
+            ...updated,
             id: 'dr-anjali',
             name: 'Dr. Anjali Chandrasekhar',
             avatarInitial: 'AC',
             bio: p.bio.replace(/Dr\. Ananya Sharma/g, 'Dr. Anjali Chandrasekhar'),
           };
         }
-        return p;
+        return updated;
       });
       localStorage.setItem('sai_clinic_practitioners', JSON.stringify(migrated));
       return migrated;

@@ -596,7 +596,7 @@ export const WomensHealthCarePage: React.FC = () => {
                           <span className="bg-[#45AC4B] text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                             Lead Physician
                           </span>
-                          <span className="text-[11px] text-[#303A88] font-bold">Reg. No. 12489</span>
+                          <span className="text-[11px] text-[#303A88] font-bold">Board Reg. KA-HOM-15563</span>
                         </div>
                         <h3 className="font-editorial text-lg sm:text-xl font-bold text-[#1E2559] mt-1 leading-tight">
                           Dr. Anjali Chandrasekhar (BHMS)
@@ -637,7 +637,7 @@ export const WomensHealthCarePage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-editorial text-xl font-bold text-[#1E2559]">Dr. Anjali Chandrasekhar</h3>
-                  <p className="text-xs font-semibold text-[#303A88]">BHMS • Reg. No. 12489</p>
+                  <p className="text-xs font-semibold text-[#303A88]">BHMS • Board Reg. KA-HOM-15563</p>
                   <p className="text-xs text-[#64748B]">Lead Homeopathic Physician & Women’s Health Consultant</p>
                 </div>
               </div>
@@ -1197,7 +1197,7 @@ export const WomensHealthCarePage: React.FC = () => {
                     Dr. Anjali Chandrasekhar
                   </h4>
                   <p className="text-xs font-semibold text-[#303A88]">
-                    BHMS • Kerala State Homeopathic Medical Council Reg. 12489
+                    BHMS • Board Reg. KA-HOM-15563
                   </p>
                   <p className="text-xs text-[#64748B] mt-0.5">
                     Lead Physician • Indian Malayali Doctor in Official Uniform &amp; Stethoscope
