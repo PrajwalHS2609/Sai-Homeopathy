@@ -4150,6 +4150,199 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-26',
   },
+  {
+    id: 'alopecia-treatment-manjeri',
+    pageName: 'Alopecia Homoeopathic Treatment in Manjeri',
+    category: 'clinical',
+    path: '/alopecia-homoeopathic-treatment-in-manjeri/',
+    title: 'Alopecia Homoeopathic Treatment in Manjeri | Care Guide',
+    description:
+      'Patient guide on Alopecia, hair fall & thinning in Manjeri. Learn types, causes, evidence-based trichological options & consultation with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+    ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Alopecia Treatment in Manjeri, Alopecia Homoeopathic Treatment in Manjeri, Hair Loss Treatment in Manjeri, Hair Fall Treatment in Manjeri, Hair Thinning Treatment in Manjeri, Alopecia Areata Treatment Manjeri, Androgenetic Alopecia Malappuram, Alopecia Doctor in Manjeri, Alopecia Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/#webpage',
+            name: 'Alopecia Homoeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
+            headline: 'Alopecia Homoeopathic Treatment in Manjeri',
+            url: 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+            description:
+              'In-depth patient guide to alopecia symptoms, hair loss subtypes, contributing causes, evidence-based trichological options, and consultation expectations in Manjeri and Malappuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking hair loss, thinning hair, and alopecia consultation in Manjeri and Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia is the medical term for hair loss. It may affect the scalp or other parts of the body and can occur in patches or across larger areas. The cause may be genetic, autoimmune, hormonal, nutritional, medication-related, or associated with a scalp condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Alopecia in Manjeri effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable scientific evidence that homoeopathy effectively treats alopecia or consistently stimulates hair regrowth. People considering homoeopathy should understand these limitations and should not delay medical evaluation or proven treatment options.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes excessive hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Excessive hair fall may be associated with genetic pattern hair loss, physical or emotional stress, recent illness, nutritional deficiencies, thyroid problems, certain medications, or scalp disorders. A healthcare professional can help identify the likely cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek Alopecia Treatment in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consider seeking medical advice if hair loss persists, becomes extensive, develops suddenly, or occurs in distinct patches. Scalp pain, inflammation, scaling, or signs of scarring also require assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can alopecia be reversed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some forms of hair loss are reversible or may improve with appropriate treatment, particularly when the underlying cause can be addressed. Other forms may be persistent or cause permanent follicle damage. The outlook depends on the diagnosis and how early treatment begins.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between hair fall and alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair fall generally refers to shedding hair. Alopecia is a broader medical term for hair loss, which may result from excessive shedding, reduced hair growth, or damage to hair follicles. Persistent or unusual shedding may be a sign of an underlying condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Hair Loss Treatment in Manjeri different for men and women?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment depends primarily on the cause of hair loss, but age, sex, medical history, pregnancy considerations, and other individual factors can affect which treatments are appropriate. A healthcare professional can recommend suitable options after assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Significant physical or emotional stress can trigger a condition called telogen effluvium, which causes increased shedding. Hair loss may become noticeable several weeks or months after the triggering event. Persistent shedding should be assessed to exclude other causes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I expect during an Alopecia Consultation in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A consultation may include a review of your symptoms, medical history, medications, diet, recent illnesses, and family history, along with an examination of the scalp. Depending on the findings, investigations or referral to a dermatologist may be recommended.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can diet and supplements stop hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A balanced diet supports normal hair growth, and correcting a confirmed nutritional deficiency may help when that deficiency contributes to hair loss. However, supplements do not treat every type of alopecia, and excessive supplementation can be harmful. Seek professional advice before taking high-dose supplements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does it take for hair to grow back?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair growth is gradual. Depending on the cause and treatment, visible improvement may take several months or longer. Some conditions respond well to treatment, while others may require long-term management or may not be fully reversible.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I choose an Alopecia Clinic in Manjeri?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified healthcare professional who provides clear information, avoids guaranteed-cure claims, and recommends appropriate investigations or specialist referrals when needed. Ensure that any proposed treatment is explained transparently and that evidence-based care is not unnecessarily delayed.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-26',
+  },
 ];
 
 

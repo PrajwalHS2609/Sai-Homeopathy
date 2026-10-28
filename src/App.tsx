@@ -54,6 +54,7 @@ import { WartsManjeriPage } from './components/WartsManjeriPage';
 import { CornsManjeriPage } from './components/CornsManjeriPage';
 import { PsoriasisManjeriPage } from './components/PsoriasisManjeriPage';
 import { RingwormManjeriPage } from './components/RingwormManjeriPage';
+import { AlopeciaManjeriPage } from './components/AlopeciaManjeriPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -531,6 +532,26 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <RingwormManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Alopecia Homoeopathic Treatment in Manjeri View
+  // URL: /alopecia-homoeopathic-treatment-in-manjeri/
+  if (currentView === 'alopecia-treatment-manjeri') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AlopeciaManjeriPage />
         </main>
         <Footer />
         <ProductDetailModal />

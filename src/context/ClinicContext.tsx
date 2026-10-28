@@ -57,7 +57,8 @@ export type NavView =
   | 'warts-treatment-manjeri'
   | 'corns-treatment-manjeri'
   | 'psoriasis-treatment-manjeri'
-  | 'ringworm-treatment-manjeri';
+  | 'ringworm-treatment-manjeri'
+  | 'alopecia-treatment-manjeri';
 
 interface Toast {
   id: string;
@@ -524,6 +525,26 @@ const isRingwormManjeriPath = (pathname: string) => {
   );
 };
 
+const isAlopeciaManjeriPath = (pathname: string) => {
+  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  return (
+    clean === '/alopecia-homoeopathic-treatment-in-manjeri' ||
+    clean === '/alopecia-homoeopathic-treatment-manjeri' ||
+    clean === '/alopecia-treatment-in-manjeri' ||
+    clean === '/alopecia-treatment-manjeri' ||
+    clean === '/hair-loss-treatment-in-manjeri' ||
+    clean === '/hair-loss-homoeopathic-treatment-in-manjeri' ||
+    clean === '/hair-thinning-treatment-in-manjeri' ||
+    clean === '/alopecia-clinic-in-manjeri' ||
+    clean === '/alopecia-doctor-in-manjeri' ||
+    clean === '/alopecia-specialist-in-manjeri' ||
+    clean === '/homoeopathy-for-alopecia-in-manjeri' ||
+    clean === '/homoeopathic-treatment-for-alopecia-in-manjeri' ||
+    clean === '/alopecia-consultation-in-manjeri' ||
+    clean === '/alopecia-areata-treatment-in-manjeri'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -620,6 +641,9 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isRingwormManjeriPath(window.location.pathname)) {
         return 'ringworm-treatment-manjeri';
+      }
+      if (isAlopeciaManjeriPath(window.location.pathname)) {
+        return 'alopecia-treatment-manjeri';
       }
     }
     return 'home';
@@ -846,6 +870,8 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('psoriasis-treatment-manjeri');
       } else if (isRingwormManjeriPath(window.location.pathname)) {
         setCurrentView('ringworm-treatment-manjeri');
+      } else if (isAlopeciaManjeriPath(window.location.pathname)) {
+        setCurrentView('alopecia-treatment-manjeri');
       } else if (isSeverePeriodPainPath(window.location.pathname)) {
         setCurrentView('blog');
         const post = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
@@ -1002,6 +1028,11 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ringworm-treatment-manjeri' }, '', targetUrl);
       }
+    } else if (currentView === 'alopecia-treatment-manjeri') {
+      const targetUrl = '/alopecia-homoeopathic-treatment-in-manjeri/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'alopecia-treatment-manjeri' }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'severe-period-pain-when-to-worry') {
       const targetUrl = '/severe-period-pain-when-to-worry/';
       if (window.location.pathname !== targetUrl) {
@@ -1094,7 +1125,8 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isWartsManjeriPath(window.location.pathname) ||
         isCornsManjeriPath(window.location.pathname) ||
         isPsoriasisManjeriPath(window.location.pathname) ||
-        isRingwormManjeriPath(window.location.pathname)
+        isRingwormManjeriPath(window.location.pathname) ||
+        isAlopeciaManjeriPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -1607,6 +1639,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'corns-treatment-manjeri') targetId = 'corns-treatment-manjeri';
     else if (currentView === 'psoriasis-treatment-manjeri') targetId = 'psoriasis-treatment-manjeri';
     else if (currentView === 'ringworm-treatment-manjeri') targetId = 'ringworm-treatment-manjeri';
+    else if (currentView === 'alopecia-treatment-manjeri') targetId = 'alopecia-treatment-manjeri';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';
     else if (currentView === 'book-appointment') targetId = 'book-appointment';

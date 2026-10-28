@@ -31,6 +31,7 @@ import {
   Bug,
   Flame,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const RingwormManjeriPage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -395,10 +396,13 @@ export const RingwormManjeriPage: React.FC = () => {
                   <div className="relative group">
                     <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-[#EEF2FB] shadow-lg mx-auto bg-[#F1F5F9]">
                       <img
-                        src="/images/dr-anjali-malayali-doctor.jpg"
+                        src="/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png"
                         alt="Dr. Anjali Chandrasekhar, BHMS Doctor consulting for Ringworm and Skin Care in Manjeri and Malappuram"
                         className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300"
                         loading="eager"
+                        onError={(e) => {
+                          e.currentTarget.src = '/images/dr-anjali-malayali-doctor.jpg';
+                        }}
                       />
                     </div>
                     <span className="absolute bottom-1 right-2 bg-[#10B981] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow border border-white">
@@ -1197,85 +1201,8 @@ export const RingwormManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* RELATED REGIONAL GUIDES */}
-      <section className="py-12 bg-white border-t border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88]">
-              EXPLORE OTHER CLINIC GUIDES
-            </span>
-            <h2 className="font-editorial text-xl sm:text-2xl font-bold text-[#1E2559] mt-1">
-              Related Regional Patient Resources for Manjeri
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            <button
-              onClick={() => setCurrentView('psoriasis-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Psoriasis</span>
-              <span className="text-[10px] text-[#64748B] mt-1">Scalp &amp; Plaque Care</span>
-            </button>
-            <button
-              onClick={() => setCurrentView('eczema-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Eczema</span>
-              <span className="text-[10px] text-[#64748B] mt-1">Dry &amp; Itchy Flare-ups</span>
-            </button>
-            <button
-              onClick={() => setCurrentView('acne-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Acne &amp; Pimples</span>
-              <span className="text-[10px] text-[#64748B] mt-1">Facial Breakouts</span>
-            </button>
-            <button
-              onClick={() => setCurrentView('warts-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Skin Warts</span>
-              <span className="text-[10px] text-[#64748B] mt-1">HPV &amp; Plantar Warts</span>
-            </button>
-            <button
-              onClick={() => setCurrentView('corns-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Skin Corns</span>
-              <span className="text-[10px] text-[#64748B] mt-1">Foot Pressure Hyperkeratosis</span>
-            </button>
-            <button
-              onClick={() => setCurrentView('skin-treatment-manjeri')}
-              className="p-3.5 rounded-2xl bg-[#F8FAFD] border border-[#E2E8F0] hover:border-[#303A88] hover:bg-white transition-all text-left flex flex-col justify-between"
-            >
-              <span className="text-xs font-bold text-[#1E2559]">Skin Care</span>
-              <span className="text-[10px] text-[#64748B] mt-1">Comprehensive Dermatology</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* CLINIC LOCATIONS FOOTNOTE */}
-      <section className="py-8 bg-[#1E2559] text-white text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-[#10B981]" />
-            <span>
-              <strong>Anjali Homoeo Clinic:</strong> Kuttippuram (Main Clinic) &amp; Puthanathani (Branch Clinic), Malappuram District, Kerala. Serving Manjeri patients via outpatient consultations and online appointments.
-            </span>
-          </div>
-          <div className="flex items-center gap-3 shrink-0">
-            <a href={`tel:${phonePrimary}`} className="text-[#86EFAC] font-bold hover:underline">
-              {phonePrimary}
-            </a>
-            <span>•</span>
-            <a href={`tel:${phoneSecondary}`} className="text-white hover:underline">
-              {phoneSecondary}
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Common Regional Guides Cross-Linking & Footer Notes */}
+      <RegionalRelatedGuides currentGuideKey="ringworm-treatment-manjeri" />
     </div>
   );
 };

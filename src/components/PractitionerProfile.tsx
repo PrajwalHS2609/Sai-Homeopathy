@@ -25,12 +25,13 @@ export const PractitionerProfile: React.FC = () => {
               {/* Main Portrait Frame with Crisp Border */}
               <div className="relative rounded-3xl bg-white p-6 sm:p-8 border border-[#D8E1F5] shadow-lg">
                 
-                {/* Clinic Treatment Artwork */}
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#D3DBF4] mb-6 shadow-sm group bg-white">
+                {/* Doctor Portrait Artwork */}
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#D3DBF4] mb-6 shadow-sm group bg-slate-100">
                   <img
-                    src="/images/treatment-holistic-clinic.svg"
-                    alt={`${practitioner.name} - Holistic Classical Homeopathic Care`}
-                    className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
+                    src="/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png"
+                    alt={`${practitioner.name} - Senior Homeopathic Physician`}
+                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
+                    loading="eager"
                   />
                   
                   {/* Subtle Gradient Overlay */}

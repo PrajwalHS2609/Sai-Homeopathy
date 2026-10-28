@@ -24,6 +24,10 @@ import {
   BookOpen,
   Sparkles,
 } from 'lucide-react';
+import { RegionalStickyBar } from './RegionalStickyBar';
+import { RegionalBreadcrumb } from './RegionalBreadcrumb';
+import { RegionalHeroSection } from './RegionalHeroSection';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const PilesManjeriPage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -226,101 +230,41 @@ export const PilesManjeriPage: React.FC = () => {
 
   return (
     <div className="bg-[#F8FAFD] text-[#1E2559] min-h-screen">
-      {/* Sticky Mobile / Quick Action Bar */}
+      {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
-        <div className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-3 shadow-lg flex items-center justify-between sm:hidden">
-          <div className="flex flex-col">
-            <span className="text-[11px] font-bold text-[#303A88] uppercase tracking-wide">
-              Piles Clinic Guide
-            </span>
-            <span className="text-xs font-semibold text-[#1E2559]">
-              Manjeri & Malappuram
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <a
-              href={`tel:${phonePrimary}`}
-              className="px-3 py-2 rounded-lg bg-[#303A88] text-white text-xs font-bold flex items-center gap-1 shadow-sm"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>Call</span>
-            </a>
-            <button
-              onClick={handleBookConsultation}
-              className="px-3.5 py-2 rounded-lg bg-[#45AC4B] text-white text-xs font-bold flex items-center gap-1 shadow-sm"
-            >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Consult</span>
-            </button>
-          </div>
-        </div>
+        <RegionalStickyBar
+          pageTitle="Piles Homoeopathic Clinic in Manjeri"
+          phonePrimary={phonePrimary}
+          whatsappUrl={whatsappUrl}
+          onBookClick={handleBookConsultation}
+        />
       )}
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#EEF2FB] via-[#F4F7FC] to-[#F8FAFD] pt-12 pb-16 sm:pt-16 sm:pb-20 border-b border-[#D8E1F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            {/* Badges */}
-            <div className="flex flex-wrap items-center gap-2.5 mb-4">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#303A88]/10 text-[#303A88] border border-[#303A88]/20">
-                <MapPin className="w-3.5 h-3.5 text-[#303A88]" />
-                Manjeri Patient Information
-              </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#45AC4B]/15 text-[#1F5C24] border border-[#45AC4B]/30">
-                <ShieldCheck className="w-3.5 h-3.5 text-[#45AC4B]" />
-                Evidence-Informed Healthcare
-              </span>
-            </div>
+      {/* Breadcrumb Navigation */}
+      <RegionalBreadcrumb
+        categoryView="anorectal-vascular-care"
+        categoryLabel="Anorectal & Vascular Care"
+        pageTitle="Piles Homoeopathic Clinic in Manjeri"
+      />
 
-            <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight">
-              Piles Homoeopathic Clinic in Manjeri
-            </h1>
-
-            <p className="mt-4 text-base sm:text-lg text-[#475569] leading-relaxed">
-              Are you looking for information about piles consultation and treatment options in Manjeri, Kerala? Piles, also known as haemorrhoids, are a common condition affecting the blood vessels in and around the lower rectum and anus. Symptoms such as rectal bleeding, itching, swelling, and discomfort can interfere with daily activities and affect your quality of life. Understanding these symptoms and seeking appropriate medical advice are important steps towards managing the condition.
-            </p>
-
-            <p className="mt-3 text-sm sm:text-base text-[#475569] leading-relaxed">
-              Our Piles Homoeopathic Clinic in Manjeri aims to provide a welcoming environment where patients can discuss their health concerns, understand their symptoms, and receive information about available healthcare options. We encourage individuals experiencing piles-related symptoms to seek a proper medical assessment before deciding on a treatment approach.
-            </p>
-
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <button
-                onClick={handleBookConsultation}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#45AC4B] hover:bg-[#39933E] text-white font-semibold text-sm shadow-md shadow-[#45AC4B]/20 transition-all hover:shadow-lg"
-              >
-                <Calendar className="w-4 h-4" />
-                <span>Book Doctor Consultation</span>
-              </button>
-
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#1E2559] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-              >
-                <MessageCircle className="w-4 h-4 text-[#45AC4B]" />
-                <span>WhatsApp: {phoneWhatsApp}</span>
-              </a>
-
-              <a
-                href={`tel:${phonePrimary}`}
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#303A88] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Ph: {phonePrimary}</span>
-              </a>
-            </div>
-
-            <p className="mt-4 text-xs text-[#64748B] flex items-center gap-1.5">
-              <Info className="w-4 h-4 text-[#303A88] shrink-0" />
-              <span>
-                Whether you are searching for Piles Consultation in Manjeri, Piles Treatment in Manjeri, or a Piles Clinic in Manjeri, understanding the available options helps you make informed decisions.
-              </span>
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with Doctor Profile on Left */}
+      <RegionalHeroSection
+        badgeIcon={<MapPin className="w-3.5 h-3.5 text-[#86EFAC]" />}
+        badgeText="Regional Clinical Proctology Guide • Manjeri Patients"
+        title="Piles Homoeopathic Clinic in Manjeri"
+        subtitle="Clinical guidance and evidence-informed consultations for patients in Manjeri and Malappuram experiencing piles, haemorrhoids, rectal bleeding, anal fissures, or anorectal discomfort."
+        metrics={[
+          { label: 'Condition Type', value: 'Anorectal Vascular' },
+          { label: 'Clinical Assessment', value: 'Grading & Proctoscopy' },
+          { label: 'Evidence Disclosure', value: 'Transparent Care' },
+        ]}
+        doctorSubtitle="BHMS | Anorectal, Piles & Constitutional Care"
+        doctorBio="10+ years of dedicated clinical experience conducting confidential anorectal assessments, dietary fiber evaluations, conservative lifestyle guidance, and evidence-guided homoeopathic care across Malappuram district."
+        phonePrimary={phonePrimary}
+        phoneWhatsApp={phoneWhatsApp}
+        whatsappUrl={whatsappUrl}
+        onBookClick={handleBookConsultation}
+      />
 
       {/* Key Takeaways Section */}
       <section className="py-12 bg-white border-b border-[#D8E1F5]">
@@ -839,6 +783,9 @@ export const PilesManjeriPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Common Regional Guides Cross-Linking & Footer Notes */}
+      <RegionalRelatedGuides currentGuideKey="piles-homoeopathic-clinic-manjeri" />
     </div>
   );
 };

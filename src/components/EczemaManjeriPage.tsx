@@ -28,6 +28,10 @@ import {
   Baby,
   Users,
 } from 'lucide-react';
+import { RegionalStickyBar } from './RegionalStickyBar';
+import { RegionalBreadcrumb } from './RegionalBreadcrumb';
+import { RegionalHeroSection } from './RegionalHeroSection';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const EczemaManjeriPage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -260,240 +264,41 @@ export const EczemaManjeriPage: React.FC = () => {
 
   return (
     <div className="bg-[#F8FAFD] text-[#1E2559] min-h-screen">
-      {/* Sticky Mobile / Quick Action Bar */}
+      {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
-        <div className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-3 shadow-lg flex items-center justify-between sm:hidden">
-          <div className="flex flex-col">
-            <span className="text-[11px] font-bold text-[#D97706] uppercase tracking-wide">
-              Eczema Care Guide
-            </span>
-            <span className="text-xs text-[#475569] font-medium truncate max-w-[200px]">
-              Dr. Anjali Chandrasekhar (BHMS)
-            </span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <a
-              href={`tel:${phonePrimary}`}
-              className="p-2 rounded-lg bg-[#303A88] text-white text-xs font-bold flex items-center justify-center"
-              aria-label="Call Doctor Desk"
-            >
-              <Phone className="w-4 h-4" />
-            </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-[#45AC4B] text-white text-xs font-bold flex items-center justify-center"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle className="w-4 h-4" />
-            </a>
-            <button
-              onClick={handleBookConsultation}
-              className="px-3.5 py-2 rounded-lg bg-[#D97706] text-white text-xs font-bold flex items-center gap-1 shadow-sm"
-            >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Consult</span>
-            </button>
-          </div>
-        </div>
+        <RegionalStickyBar
+          pageTitle="Eczema Treatment in Manjeri"
+          phonePrimary={phonePrimary}
+          whatsappUrl={whatsappUrl}
+          onBookClick={handleBookConsultation}
+        />
       )}
 
+      {/* Breadcrumb Navigation */}
+      <RegionalBreadcrumb
+        categoryView="skin-hair-care"
+        categoryLabel="Skin & Hair Care"
+        pageTitle="Eczema Treatment in Manjeri"
+      />
+
       {/* Hero Section with Doctor Profile on Left */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FFFBEB] via-[#F8FAFD] to-[#F8FAFD] pt-10 pb-16 sm:pt-14 sm:pb-20 border-b border-[#FDE68A]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-            
-            {/* Left Column: Doctor Profile Card */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-3xl bg-white p-5 sm:p-7 border border-[#FDE68A] shadow-md hover:shadow-lg transition-all">
-                
-                {/* Doctor Visual & Credentials */}
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#FDE68A] mb-5 group bg-slate-100">
-                  <img
-                    src="/images/dr-anjali-malayali-doctor.jpg"
-                    alt="Dr. Anjali Chandrasekhar (BHMS) - Eczema & Skin Problems Care"
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
-                    onError={(e) => {
-                      e.currentTarget.src = '/images/treatment-skin-hair.svg';
-                    }}
-                  />
-                  
-                  {/* Subtle Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1E2559]/90 via-[#1E2559]/20 to-transparent pointer-events-none" />
-
-                  {/* Registered Medical Council Badge */}
-                  <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 text-[11px] font-bold text-[#B45309] border border-[#FDE68A] shadow-xs">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#D97706]" />
-                    <span>Kerala Council Reg: 16503</span>
-                  </div>
-
-                  {/* Doctor Details at bottom of portrait */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <h3 className="font-editorial text-xl font-bold text-white">
-                      Dr. Anjali Chandrasekhar
-                    </h3>
-                    <p className="text-xs text-[#FDE68A] font-medium font-sans">
-                      BHMS • Senior Homeopathic Physician
-                    </p>
-                    <p className="text-[11px] text-white/80 font-sans mt-0.5">
-                      Eczema, Dermatological &amp; Constitutional Consultations
-                    </p>
-                  </div>
-                </div>
-
-                {/* 4 Interactive Credentials Cards */}
-                <div className="grid grid-cols-2 gap-2.5 text-center font-sans mb-4">
-                  <div className="bg-[#FFFBEB] rounded-xl p-2.5 border border-[#FEF3C7]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#B45309] block tabular-nums">
-                      10+ Years
-                    </span>
-                    <span className="text-[10px] text-[#92400E] font-semibold uppercase tracking-wider">
-                      Clinical Care
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#303A88] block tabular-nums">
-                      2,000+
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Patients Consulted
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#303A88] block">
-                      Kuttippuram
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Main Clinic
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#45AC4B] block">
-                      Puthanathani
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Branch Clinic
-                    </span>
-                  </div>
-                </div>
-
-                <div className="space-y-2 text-xs text-[#475569] border-t border-[#FDE68A] pt-3">
-                  <p className="flex items-center gap-1.5 text-[#1E2559] font-medium">
-                    <UserCheck className="w-3.5 h-3.5 text-[#D97706]" />
-                    <span>Confidential, patient-focused skin consultations for families in Manjeri and Malappuram district.</span>
-                  </p>
-                  <p className="flex items-center gap-1.5 text-[#64748B]">
-                    <Lock className="w-3.5 h-3.5 text-[#303A88]" />
-                    <span>Private online video consultations &amp; in-clinic visits available.</span>
-                  </p>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-[#FDE68A] flex items-center justify-between gap-2">
-                  <a
-                    href={`tel:${phonePrimary}`}
-                    className="flex-1 py-2 px-3 rounded-lg bg-[#303A88] text-white text-xs font-bold text-center hover:bg-[#252E6D] transition-colors"
-                  >
-                    Call: {phonePrimary}
-                  </a>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 py-2 px-3 rounded-lg bg-[#45AC4B] text-white text-xs font-bold text-center hover:bg-[#39933E] transition-colors flex items-center justify-center gap-1"
-                  >
-                    <MessageCircle className="w-3.5 h-3.5" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Hero Content */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              
-              {/* Badges */}
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#D97706]/10 text-[#B45309] border border-[#D97706]/20">
-                  <MapPin className="w-3.5 h-3.5 text-[#D97706]" />
-                  Manjeri Patient Information
-                </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#303A88]/10 text-[#303A88] border border-[#303A88]/20">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#303A88]" />
-                  Evidence-Informed Healthcare
-                </span>
-              </div>
-
-              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight">
-                Homoeopathic Treatment for Eczema Skin Problems in Manjeri
-              </h1>
-
-              <div className="prose text-[#475569] space-y-3 text-sm sm:text-base leading-relaxed">
-                <p>
-                  Eczema is a common skin condition that can cause persistent itching, dryness, redness, irritation, and inflammation. It may affect different parts of the body, including the hands, face, neck, arms, legs, and skin folds. For some people, eczema symptoms appear occasionally, while others experience recurring flare-ups that interfere with sleep, work, and daily activities. Understanding the condition and seeking appropriate medical guidance can help people manage their symptoms and protect their skin.
-                </p>
-
-                <p>
-                  If you are looking for <strong>Eczema Treatment in Manjeri</strong>, understanding the possible causes, common symptoms, available treatment options, and everyday skincare measures is an important first step. People exploring <strong>Eczema Homoeopathic Treatment in Manjeri</strong> may also wish to discuss their symptoms and treatment preferences with a qualified healthcare professional.
-                </p>
-
-                <p>
-                  Eczema can affect children, teenagers, and adults. Although its symptoms may look similar to those of other skin conditions, the underlying cause and appropriate treatment can vary. A proper assessment is therefore essential before deciding on a treatment plan.
-                </p>
-
-                <div className="p-4 rounded-xl bg-white border border-[#FDE68A] shadow-2xs">
-                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    A responsible approach to eczema focuses on barrier repair, trigger management, and objective medical diagnosis. <strong>Homoeopathy has not been shown reliably to treat or cure eczema, and there is insufficient high-quality scientific evidence to establish it as an effective treatment</strong>. Individuals considering complementary healthcare should understand its limitations and avoid postponing evidence-based medical treatments.
-                  </p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center gap-3">
-                <button
-                  onClick={handleBookConsultation}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#D97706] hover:bg-[#B45309] text-white font-semibold text-sm shadow-md shadow-[#D97706]/20 transition-all hover:shadow-lg"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Eczema Consultation</span>
-                </button>
-
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#1E2559] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-                >
-                  <MessageCircle className="w-4 h-4 text-[#45AC4B]" />
-                  <span>WhatsApp: {phoneWhatsApp}</span>
-                </a>
-
-                <a
-                  href={`tel:${phonePrimary}`}
-                  className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#303A88] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>Call: {phonePrimary}</span>
-                </a>
-              </div>
-
-              <p className="text-xs text-[#64748B] flex items-center gap-1.5 pt-1">
-                <Info className="w-4 h-4 text-[#D97706] shrink-0" />
-                <span>
-                  Consultations prioritize skin barrier evaluation, differential diagnosis, and evidence-informed supportive care.
-                </span>
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
+      <RegionalHeroSection
+        badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />}
+        badgeText="Regional Clinical Eczema Guide • Manjeri Patients"
+        title="Homoeopathic Treatment for Eczema Skin Problems in Manjeri"
+        subtitle="Individualized clinical guidance for children, teenagers, and adults in Manjeri and Malappuram experiencing persistent itching, dryness, skin barrier disruption, and recurring atopic flare-ups."
+        metrics={[
+          { label: 'Condition Category', value: 'Atopic & Contact Eczema' },
+          { label: 'Evaluation Protocol', value: 'Barrier & Trigger Analysis' },
+          { label: 'Clinical Transparency', value: 'Evidence Grounded' },
+        ]}
+        doctorSubtitle="BHMS | Eczema & Skin Consultations"
+        doctorBio="10+ years of dedicated clinical experience assessing atopic dermatitis, allergic contact eczema, dyshidrotic hand eczema, barrier dysfunction, and evidence-informed supportive homeopathic care across Malappuram district."
+        phonePrimary={phonePrimary}
+        phoneWhatsApp={phoneWhatsApp}
+        whatsappUrl={whatsappUrl}
+        onBookClick={handleBookConsultation}
+      />
 
       {/* Important Key Takeaways */}
       <section className="py-12 bg-white border-b border-[#D8E1F5]">
@@ -1170,6 +975,9 @@ export const EczemaManjeriPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Common Regional Guides Cross-Linking & Footer Notes */}
+      <RegionalRelatedGuides currentGuideKey="eczema-treatment-manjeri" />
     </div>
   );
 };

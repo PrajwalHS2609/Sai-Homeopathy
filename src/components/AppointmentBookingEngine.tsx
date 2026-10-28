@@ -517,8 +517,15 @@ export const AppointmentBookingEngine: React.FC<BookingEngineProps> = ({
           </label>
           <div className="p-3.5 rounded-2xl border border-[#D8E1F5] bg-[#F8FAFD] flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#303A88] text-white flex items-center justify-center font-editorial font-bold text-sm">
-                AC
+              <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-[#303A88]/20 bg-[#303A88] text-white flex items-center justify-center font-editorial font-bold text-sm shrink-0">
+                <img
+                  src="/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png"
+                  alt={practitioners[0]?.name || 'Dr. Anjali Chandrasekhar'}
+                  className="w-full h-full object-cover object-top"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
               </div>
               <div>
                 <span className="text-sm font-bold text-[#1E2559] block">

@@ -29,6 +29,10 @@ import {
   Scissors,
   Sparkle,
 } from 'lucide-react';
+import { RegionalStickyBar } from './RegionalStickyBar';
+import { RegionalBreadcrumb } from './RegionalBreadcrumb';
+import { RegionalHeroSection } from './RegionalHeroSection';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const HairManjeriPage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -272,230 +276,41 @@ export const HairManjeriPage: React.FC = () => {
 
   return (
     <div className="bg-[#F8FAFD] text-[#1E2559] min-h-screen">
-      {/* Sticky Mobile / Quick Action Bar */}
+      {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
-        <div className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-[#D8E1F5] p-3 shadow-lg flex items-center justify-between sm:hidden">
-          <div className="flex flex-col">
-            <span className="text-[11px] font-bold text-[#0D9488] uppercase tracking-wide">
-              Hair Health Guide
-            </span>
-            <span className="text-xs font-semibold text-[#1E2559]">
-              Manjeri & Malappuram
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <a
-              href={`tel:${phonePrimary}`}
-              className="px-3 py-2 rounded-lg bg-[#303A88] text-white text-xs font-bold flex items-center gap-1 shadow-sm"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>Call</span>
-            </a>
-            <button
-              onClick={handleBookConsultation}
-              className="px-3.5 py-2 rounded-lg bg-[#0D9488] text-white text-xs font-bold flex items-center gap-1 shadow-sm"
-            >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Consult</span>
-            </button>
-          </div>
-        </div>
+        <RegionalStickyBar
+          pageTitle="Hair Treatment in Manjeri"
+          phonePrimary={phonePrimary}
+          whatsappUrl={whatsappUrl}
+          onBookClick={handleBookConsultation}
+        />
       )}
 
+      {/* Breadcrumb Navigation */}
+      <RegionalBreadcrumb
+        categoryView="skin-hair-care"
+        categoryLabel="Skin & Hair Care"
+        pageTitle="Hair Treatment in Manjeri"
+      />
+
       {/* Hero Section with Doctor Profile on Left */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#F0FDFA] via-[#F8FAFD] to-[#F8FAFD] pt-10 pb-16 sm:pt-14 sm:pb-20 border-b border-[#CCFBF1]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-            
-            {/* Left Column: Doctor Profile Card */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-3xl bg-white p-5 sm:p-7 border border-[#99F6E4] shadow-md hover:shadow-lg transition-all">
-                
-                {/* Doctor Visual & Credentials */}
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-[#99F6E4] mb-5 group bg-slate-100">
-                  <img
-                    src="/images/dr-anjali-malayali-doctor.jpg"
-                    alt="Dr. Anjali Chandrasekhar (BHMS) - Hair Health & Constitutional Consultations"
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
-                    onError={(e) => {
-                      e.currentTarget.src = '/images/treatment-skin-hair.svg';
-                    }}
-                  />
-                  
-                  {/* Subtle Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1E2559]/90 via-[#1E2559]/20 to-transparent pointer-events-none" />
-
-                  {/* Registered Medical Council Badge */}
-                  <div className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 text-[11px] font-bold text-[#0F766E] border border-[#99F6E4] shadow-xs">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#0D9488]" />
-                    <span>Kerala Council Reg: 16503</span>
-                  </div>
-
-                  {/* Doctor Details at bottom of portrait */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white">
-                    <h3 className="font-editorial text-xl font-bold text-white">
-                      Dr. Anjali Chandrasekhar
-                    </h3>
-                    <p className="text-xs text-[#99F6E4] font-medium font-sans">
-                      BHMS • Senior Homeopathic Physician
-                    </p>
-                    <p className="text-[11px] text-white/80 font-sans mt-0.5">
-                      Hair, Scalp &amp; Constitutional Consultations
-                    </p>
-                  </div>
-                </div>
-
-                {/* 4 Interactive Credentials Cards */}
-                <div className="grid grid-cols-2 gap-2.5 text-center font-sans mb-4">
-                  <div className="bg-[#F0FDFA] rounded-xl p-2.5 border border-[#CCFBF1]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#0F766E] block tabular-nums">
-                      10+ Years
-                    </span>
-                    <span className="text-[10px] text-[#115E59] font-semibold uppercase tracking-wider">
-                      Clinical Care
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#303A88] block tabular-nums">
-                      2,000+
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Patients Consulted
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#303A88] block">
-                      Kuttippuram
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Main Clinic
-                    </span>
-                  </div>
-
-                  <div className="bg-[#F8FAFD] rounded-xl p-2.5 border border-[#D8E1F5]">
-                    <span className="font-editorial text-base sm:text-lg font-bold text-[#45AC4B] block">
-                      Puthanathani
-                    </span>
-                    <span className="text-[10px] text-[#475569] font-semibold uppercase tracking-wider">
-                      Branch Clinic
-                    </span>
-                  </div>
-                </div>
-
-                <div className="space-y-2 text-xs text-[#475569] border-t border-[#99F6E4] pt-3">
-                  <p className="flex items-center gap-1.5 text-[#1E2559] font-medium">
-                    <UserCheck className="w-3.5 h-3.5 text-[#0D9488]" />
-                    <span>Confidential, patient-focused consultations for individuals in Manjeri and Malappuram district.</span>
-                  </p>
-                  <p className="flex items-center gap-1.5 text-[#64748B]">
-                    <Lock className="w-3.5 h-3.5 text-[#303A88]" />
-                    <span>Private online video consultations &amp; in-clinic visits available.</span>
-                  </p>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-[#99F6E4] flex items-center justify-between gap-2">
-                  <a
-                    href={`tel:${phonePrimary}`}
-                    className="flex-1 py-2 px-3 rounded-lg bg-[#303A88] text-white text-xs font-bold text-center hover:bg-[#252E6D] transition-colors"
-                  >
-                    Call: {phonePrimary}
-                  </a>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 py-2 px-3 rounded-lg bg-[#45AC4B] text-white text-xs font-bold text-center hover:bg-[#39933E] transition-colors flex items-center justify-center gap-1"
-                  >
-                    <MessageCircle className="w-3.5 h-3.5" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Hero Content */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              
-              {/* Badges */}
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#0D9488]/10 text-[#0F766E] border border-[#0D9488]/20">
-                  <MapPin className="w-3.5 h-3.5 text-[#0D9488]" />
-                  Manjeri Patient Information
-                </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#303A88]/10 text-[#303A88] border border-[#303A88]/20">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#303A88]" />
-                  Evidence-Informed Healthcare
-                </span>
-              </div>
-
-              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight">
-                Hair Homoeopathic Treatment in Manjeri
-              </h1>
-
-              <div className="prose text-[#475569] space-y-3 text-sm sm:text-base leading-relaxed">
-                <p>
-                  Healthy hair is often associated with personal confidence and overall well-being. However, hair-related concerns such as excessive hair fall, thinning hair, scalp irritation, dandruff, and patchy hair loss affect people of different ages. These problems may develop because of genetic factors, hormonal changes, nutritional deficiencies, stress, scalp conditions, certain medications, or underlying health concerns. Understanding the possible cause is an important first step towards choosing appropriate care.
-                </p>
-
-                <p>
-                  For individuals searching for <strong>Hair Homoeopathic Treatment in Manjeri</strong>, it is important to understand the different factors that influence hair growth and scalp health. Hair concerns can vary considerably from one person to another, and a treatment approach that may be suitable for one condition may not be appropriate for another.
-                </p>
-
-                <p>
-                  People looking for <strong>Hair Treatment in Manjeri</strong> may have questions about persistent hair fall, a receding hairline, reduced hair density, or recurring scalp problems. A healthcare consultation can help assess these symptoms, review relevant medical history, and determine whether further investigation is needed.
-                </p>
-
-                <div className="p-4 rounded-xl bg-white border border-[#99F6E4] shadow-2xs">
-                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    A responsible approach to hair health focuses on identifying the underlying cause rather than simply addressing the visible symptoms. <strong>Homoeopathy has not been established by reliable scientific evidence as an effective treatment for hair loss or scalp disorders</strong>. Therefore, individuals considering complementary healthcare should understand its limitations and avoid delaying proven medical treatments.
-                  </p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center gap-3">
-                <button
-                  onClick={handleBookConsultation}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0D9488] hover:bg-[#0F766E] text-white font-semibold text-sm shadow-md shadow-[#0D9488]/20 transition-all hover:shadow-lg"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Doctor Consultation</span>
-                </button>
-
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#1E2559] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-                >
-                  <MessageCircle className="w-4 h-4 text-[#45AC4B]" />
-                  <span>WhatsApp: {phoneWhatsApp}</span>
-                </a>
-
-                <a
-                  href={`tel:${phonePrimary}`}
-                  className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-50 text-[#303A88] border border-[#D8E1F5] font-semibold text-sm shadow-sm transition-all"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>Call: {phonePrimary}</span>
-                </a>
-              </div>
-
-              <p className="text-xs text-[#64748B] flex items-center gap-1.5 pt-1">
-                <Info className="w-4 h-4 text-[#0D9488] shrink-0" />
-                <span>
-                  Consultations prioritize diagnostic assessment of hair loss patterns, nutritional markers, and scalp health.
-                </span>
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
+      <RegionalHeroSection
+        badgeIcon={<Scissors className="w-3.5 h-3.5 text-[#86EFAC]" />}
+        badgeText="Regional Clinical Trichology Guide • Manjeri Patients"
+        title="Hair Homoeopathic Treatment in Manjeri"
+        subtitle="Individualized clinical guidance for patients in Manjeri and Malappuram experiencing excessive hair fall, thinning hair, receding hairlines, dandruff, and scalp health concerns."
+        metrics={[
+          { label: 'Condition Focus', value: 'Hair & Scalp Health' },
+          { label: 'Diagnostic Standard', value: 'Trichology & Labs' },
+          { label: 'Evidence Policy', value: 'Transparent Care' },
+        ]}
+        doctorSubtitle="BHMS | Trichology & Constitutional Hair Care"
+        doctorBio="10+ years of dedicated clinical experience assessing hair loss etiology, scalp disorders, nutritional deficiency screening, and evidence-grounded constitutional care in Malappuram district."
+        phonePrimary={phonePrimary}
+        phoneWhatsApp={phoneWhatsApp}
+        whatsappUrl={whatsappUrl}
+        onBookClick={handleBookConsultation}
+      />
 
       {/* Important Key Takeaways */}
       <section className="py-12 bg-white border-b border-[#D8E1F5]">
@@ -1193,6 +1008,9 @@ export const HairManjeriPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Common Regional Guides Cross-Linking & Footer Notes */}
+      <RegionalRelatedGuides currentGuideKey="hair-treatment-manjeri" />
     </div>
   );
 };

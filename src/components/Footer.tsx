@@ -394,6 +394,13 @@ export const Footer: React.FC = () => {
               <span>Ringworm Treatment in Manjeri</span>
             </button>
             <button
+              onClick={() => handleLinkClick('alopecia-treatment-manjeri')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Alopecia Treatment in Manjeri</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('anorectal-vascular-care')}
               className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
             >
