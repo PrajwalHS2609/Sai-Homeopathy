@@ -96,7 +96,7 @@ export const CornsManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'High-quality scientific trials have not established homoeopathy as an effective treatment or removal method for mechanical corns.',
+      desc: 'High-quality scientific trials have not established homeopathy as an effective treatment or removal method for mechanical corns.',
     },
     {
       title: 'Diabetic Foot Warning',
@@ -214,9 +214,9 @@ export const CornsManjeriPage: React.FC = () => {
         'You can seek consultation with qualified healthcare professionals, clinics, and foot-care practitioners in and around Manjeri. A healthcare provider will inspect your feet, differentiate corns from plantar warts or calluses, discuss footwear ergonomics, safely debride thickened skin if appropriate, and advise on offloading orthotics.',
     },
     {
-      question: '2. Is Homoeopathic Treatment for Corns in Manjeri effective?',
+      question: '2. Is Homeopathic Treatment for Corns in Manjeri effective?',
       answer:
-        'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective medical treatment or permanent cure for corns. Because corns develop purely from mechanical friction and focal pressure, sustainable resolution requires removing the physical pressure source through proper footwear, orthotic offloading, and safe skin care. Homoeopathy should never replace appropriate foot assessment or pressure reduction.',
+        'There is no reliable, high-quality scientific evidence establishing homeopathy as an effective medical treatment or permanent cure for corns. Because corns develop purely from mechanical friction and focal pressure, sustainable resolution requires removing the physical pressure source through proper footwear, orthotic offloading, and safe skin care. Homeopathy should never replace appropriate foot assessment or pressure reduction.',
     },
     {
       question: '3. What causes corns on the feet?',
@@ -273,7 +273,7 @@ export const CornsManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#D97706]" />}
         badgeText="Regional Clinical Corns Guide • Manjeri Patients"
-        title="Skin Corns Homoeopathic Treatment in Manjeri"
+        title="Skin Corns Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for men, women, and seniors in Manjeri and Malappuram experiencing painful foot corns, helomas, deep pressure calluses, and footwear friction discomfort."
         metrics={[
           { label: 'Condition Category', value: 'Hyperkeratotic Corns' },
@@ -516,7 +516,7 @@ export const CornsManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Exploring Homoeopathic Treatment for Corns in Manjeri */}
+      {/* Exploring Homeopathic Treatment for Corns in Manjeri */}
       <section className="py-14 bg-[#F8FAFD] border-b border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 font-sans">
           
@@ -525,13 +525,13 @@ export const CornsManjeriPage: React.FC = () => {
               CLINICAL EVIDENCE & TRANSPARENCY
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-              Exploring Homoeopathic Treatment for Corns in Manjeri
+              Exploring Homeopathic Treatment for Corns in Manjeri
             </h2>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              Some people search for <strong className="text-[#1E2559]">Homoeopathic Corns Treatment in Manjeri</strong> because they are interested in homoeopathy or prefer to discuss different approaches to managing recurring skin concerns.
+              Some people search for <strong className="text-[#1E2559]">Homeopathic Corns Treatment in Manjeri</strong> because they are interested in homeopathy or prefer to discuss different approaches to managing recurring skin concerns.
             </p>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              A consultation with a qualified homoeopathic practitioner may provide an opportunity to discuss the history of the corn, the discomfort it causes, footwear habits, and previous treatment experiences.
+              A consultation with a qualified homeopathic practitioner may provide an opportunity to discuss the history of the corn, the discomfort it causes, footwear habits, and previous treatment experiences.
             </p>
           </div>
 
@@ -541,13 +541,13 @@ export const CornsManjeriPage: React.FC = () => {
               <span>Scientific Evidence &amp; Mechanical Stress Reality</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              However, it is important to understand the scientific evidence. There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for corns or demonstrating that it removes the thickened skin caused by repeated pressure.
+              However, it is important to understand the scientific evidence. There is no reliable, high-quality scientific evidence establishing homeopathy as an effective treatment for corns or demonstrating that it removes the thickened skin caused by repeated pressure.
             </p>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
               Corns develop mainly because of mechanical stress rather than an internal infection. Reducing that stress is therefore central to management. A corn may improve when pressure is relieved, but improvement should not automatically be attributed to an unproven treatment.
             </p>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              People considering Homoeopathic Treatment for Corns in Manjeri should discuss their options openly with a qualified healthcare professional. They should not delay appropriate foot care or rely on homoeopathy as a substitute for treating the underlying pressure. This is especially important for people with diabetes, poor circulation, reduced foot sensation, or other conditions that increase the risk of foot complications.
+              People considering Homeopathic Treatment for Corns in Manjeri should discuss their options openly with a qualified healthcare professional. They should not delay appropriate foot care or rely on homeopathy as a substitute for treating the underlying pressure. This is especially important for people with diabetes, poor circulation, reduced foot sensation, or other conditions that increase the risk of foot complications.
             </p>
             <p className="text-xs text-[#64748B] italic pt-1">
               A responsible consultation should explain the available options, the limitations of the evidence, and when specialist foot care is needed.
@@ -746,7 +746,7 @@ export const CornsManjeriPage: React.FC = () => {
               Using the wrong treatment can irritate the skin or delay appropriate care. A professional assessment is especially important when a lesion is painful, bleeding, changing, or difficult to identify.
             </p>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              People exploring <strong className="text-[#1E2559]">Homoeopathic Doctor for Corns in Manjeri</strong> services should ask about practitioner qualifications, the evidence for the proposed treatment, and whether the approach addresses the mechanical pressure responsible for the corn. Homoeopathy has not been established as an effective treatment for corns. It should not replace appropriate foot assessment, pressure reduction, or necessary medical care.
+              People exploring <strong className="text-[#1E2559]">Homeopathic Doctor for Corns in Manjeri</strong> services should ask about practitioner qualifications, the evidence for the proposed treatment, and whether the approach addresses the mechanical pressure responsible for the corn. Homeopathy has not been established as an effective treatment for corns. It should not replace appropriate foot assessment, pressure reduction, or necessary medical care.
             </p>
           </div>
 
@@ -775,7 +775,7 @@ export const CornsManjeriPage: React.FC = () => {
             Corns are areas of thickened skin that usually develop because of repeated friction or pressure. They most often occur on the toes and soles of the feet and may cause pain when walking or wearing certain shoes. If you are looking for Corns Treatment in Manjeri, start by identifying the cause of the pressure and choosing appropriate footwear. Depending on the severity, management may include protective padding, careful skin care, professional reduction of thickened skin, and specialist assessment when necessary.
           </p>
           <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-            People interested in Homoeopathic Corns Treatment in Manjeri should understand that reliable scientific evidence does not establish homoeopathy as an effective treatment for corns. Removing pressure and protecting the affected area remain important aspects of appropriate care. Avoid cutting corns yourself, and seek professional advice before using medicated corn-removal products, especially if you have diabetes, poor circulation, or reduced foot sensation.
+            People interested in Homeopathic Corns Treatment in Manjeri should understand that reliable scientific evidence does not establish homeopathy as an effective treatment for corns. Removing pressure and protecting the affected area remain important aspects of appropriate care. Avoid cutting corns yourself, and seek professional advice before using medicated corn-removal products, especially if you have diabetes, poor circulation, or reduced foot sensation.
           </p>
           <div className="pt-2">
             <button

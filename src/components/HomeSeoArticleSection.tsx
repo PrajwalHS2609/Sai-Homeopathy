@@ -58,7 +58,7 @@ export const HomeSeoArticleSection: React.FC = () => {
 
   return (
     <section
-      id="malappuram-homoeopathic-clinic-guide"
+      id="malappuram-homeopathic-clinic-guide"
       aria-labelledby="malappuram-guide-heading"
       className="bg-white border-t border-[#D8E1F5] py-16 lg:py-24 relative font-sans text-[#334155]"
     >
@@ -75,7 +75,7 @@ export const HomeSeoArticleSection: React.FC = () => {
             id="malappuram-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic
+            Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -100,14 +100,14 @@ export const HomeSeoArticleSection: React.FC = () => {
         <div className="prose prose-slate max-w-none text-base sm:text-lg leading-relaxed text-[#475569] space-y-4 font-normal">
           <p>
             Finding the right healthcare provider is an important step towards maintaining your health and well-being. If you are searching for a{' '}
-            <strong className="text-[#1E2559] font-semibold">Homoeopathic Clinic in Malappuram</strong>, Anjali Homoeo Clinic offers a patient-focused approach to consultations, health assessments, and individualized care. Understanding your symptoms, medical history, lifestyle, and health concerns is an important part of making informed healthcare decisions.
+            <strong className="text-[#1E2559] font-semibold">Homeopathic Clinic in Malappuram</strong>, Anjali Homoeo Clinic offers a patient-focused approach to consultations, health assessments, and individualized care. Understanding your symptoms, medical history, lifestyle, and health concerns is an important part of making informed healthcare decisions.
           </p>
           <p>
-            Located in Malappuram, Kerala, Anjali Homoeo Clinic aims to provide a welcoming environment where patients can discuss their health concerns and receive appropriate guidance. Whether you are exploring homoeopathy as a complementary healthcare option or seeking advice about a long-standing health concern, a professional consultation can help you understand the available options and determine the next steps.
+            Located in Malappuram, Kerala, Anjali Homoeo Clinic aims to provide a welcoming environment where patients can discuss their health concerns and receive appropriate guidance. Whether you are exploring homeopathy as a complementary healthcare option or seeking advice about a long-standing health concern, a professional consultation can help you understand the available options and determine the next steps.
           </p>
           <p>
             Choosing among the{' '}
-            <strong className="text-[#1E2559] font-semibold">Homoeopathic Doctors in Malappuram</strong> involves considering factors such as qualifications, experience, communication, and the quality of patient care. At Anjali Homoeo Clinic, the focus is on understanding each patient's concerns and discussing suitable care options while recognizing the importance of evidence-based medical advice.
+            <strong className="text-[#1E2559] font-semibold">Homeopathic Doctors in Malappuram</strong> involves considering factors such as qualifications, experience, communication, and the quality of patient care. At Anjali Homoeo Clinic, the focus is on understanding each patient's concerns and discussing suitable care options while recognizing the importance of evidence-based medical advice.
           </p>
         </div>
 
@@ -163,7 +163,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               Every patient has a different medical history, lifestyle, and set of concerns. A consultation should therefore begin with a careful discussion of the patient's symptoms, their duration, previous diagnoses, current medications, and any treatment already received.
             </p>
             <p>
-              For individuals searching online for Anjali Homoeopathic Clinic, choosing a healthcare provider should involve more than location alone. Patients should consider the practitioner's professional qualifications, registration where applicable, experience, consultation process, and willingness to explain treatment options and their limitations.
+              For individuals searching online for Anjali Homeopathic Clinic, choosing a healthcare provider should involve more than location alone. Patients should consider the practitioner's professional qualifications, registration where applicable, experience, consultation process, and willingness to explain treatment options and their limitations.
             </p>
             <p>
               The clinic's patient-focused approach supports informed discussions about healthcare needs. Patients should always share complete and accurate medical information so that their care can be considered in the context of their overall health.
@@ -171,14 +171,14 @@ export const HomeSeoArticleSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Why Choose a Homoeopathic Clinic in Malappuram? */}
+        {/* Section 2: Why Choose a Homeopathic Clinic in Malappuram? */}
         <div className="space-y-6 pt-10 border-t border-[#EEF2FB]">
           <div>
             <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-              Why Choose a Homoeopathic Clinic in Malappuram?
+              Why Choose a Homeopathic Clinic in Malappuram?
             </h3>
             <p className="text-sm sm:text-base text-[#64748B] mt-2 leading-relaxed">
-              Malappuram has a diverse community with healthcare needs that vary by age, lifestyle, and medical history. Finding a clinic that is accessible and encourages open communication can make it easier to discuss health concerns and understand available options. When considering a Homoeopathic Clinic in Malappuram, patients may look for the following qualities:
+              Malappuram has a diverse community with healthcare needs that vary by age, lifestyle, and medical history. Finding a clinic that is accessible and encourages open communication can make it easier to discuss health concerns and understand available options. When considering a Homeopathic Clinic in Malappuram, patients may look for the following qualities:
             </p>
           </div>
 
@@ -219,29 +219,29 @@ export const HomeSeoArticleSection: React.FC = () => {
               <span className="w-8 h-8 rounded-lg bg-[#45AC4B] text-white flex items-center justify-center text-sm font-bold">5</span>
               <h4 className="text-base font-bold text-[#1E2559] pt-1">Responsible Healthcare Guidance</h4>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                No healthcare approach should promise guaranteed results or discourage necessary medical treatment. Patients should receive balanced information about treatment options, including the quality of available scientific evidence. These considerations help people evaluate different Homoeopathic Doctors in Malappuram and select a provider who communicates clearly and supports informed decision-making.
+                No healthcare approach should promise guaranteed results or discourage necessary medical treatment. Patients should receive balanced information about treatment options, including the quality of available scientific evidence. These considerations help people evaluate different Homeopathic Doctors in Malappuram and select a provider who communicates clearly and supports informed decision-making.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Section 3: Understanding Homoeopathy and Its Role in Healthcare */}
+        {/* Section 3: Understanding Homeopathy and Its Role in Healthcare */}
         <div className="space-y-4 pt-10 border-t border-[#EEF2FB]">
           <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-            Understanding Homoeopathy and Its Role in Healthcare
+            Understanding Homeopathy and Its Role in Healthcare
           </h3>
           <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-[#334155] space-y-3.5">
             <p>
-              Homoeopathy is a system of alternative medicine based on historical principles of treatment. It is important, however, to distinguish its traditional principles from established scientific evidence.
+              Homeopathy is a system of alternative medicine based on historical principles of treatment. It is important, however, to distinguish its traditional principles from established scientific evidence.
             </p>
             <p>
-              Scientific evidence has not established that homoeopathic remedies are effective treatments for specific health conditions beyond placebo effects. Some products labelled as homoeopathic may also contain ingredients that could cause side effects or interact with other medicines.
+              Scientific evidence has not established that homeopathic remedies are effective treatments for specific health conditions beyond placebo effects. Some products labelled as homeopathic may also contain ingredients that could cause side effects or interact with other medicines.
             </p>
             <p>
-              Patients considering homoeopathy should understand these limitations before making healthcare decisions. They should not discontinue prescribed medicines, delay diagnosis, or replace evidence-based treatment for serious or chronic illnesses with homoeopathic remedies.
+              Patients considering homeopathy should understand these limitations before making healthcare decisions. They should not discontinue prescribed medicines, delay diagnosis, or replace evidence-based treatment for serious or chronic illnesses with homeopathic remedies.
             </p>
             <p>
-              A responsible consultation at a Homeopathic Clinic in Malappuram should support transparent discussions about a treatment's evidence, potential risks, and appropriate alternatives. If you are considering homoeopathy, discuss your decision with a qualified healthcare professional who can help you understand the available evidence and the role of conventional medical care in managing your condition.
+              A responsible consultation at a Homeopathic Clinic in Malappuram should support transparent discussions about a treatment's evidence, potential risks, and appropriate alternatives. If you are considering homeopathy, discuss your decision with a qualified healthcare professional who can help you understand the available evidence and the role of conventional medical care in managing your condition.
             </p>
           </div>
         </div>
@@ -277,7 +277,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               </div>
               <div className="pt-3 border-t border-[#EEF2FB]">
                 <a
-                  href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+                  href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
                   onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] hover:text-[#45AC4B] transition-colors"
                 >
@@ -302,7 +302,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               </div>
               <div className="pt-3 border-t border-[#EEF2FB] flex flex-col gap-1.5">
                 <a
-                  href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+                  href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
                   onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] hover:text-[#45AC4B] transition-colors"
                 >
@@ -335,7 +335,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               </div>
               <div className="pt-3 border-t border-[#EEF2FB] flex flex-col gap-1.5">
                 <a
-                  href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+                  href="/homeopathic-treatment-for-womens-health-gynecological-care/"
                   onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] hover:text-[#45AC4B] transition-colors"
                 >
@@ -383,7 +383,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               </div>
               <div className="pt-3 border-t border-[#EEF2FB]">
                 <a
-                  href="/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
+                  href="/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
                   onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] hover:text-[#45AC4B] transition-colors"
                 >
@@ -408,7 +408,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               </div>
               <div className="pt-3 border-t border-[#EEF2FB] flex flex-wrap items-center justify-between gap-3">
                 <a
-                  href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+                  href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
                   onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] hover:text-[#45AC4B] transition-colors"
                 >
@@ -439,7 +439,7 @@ export const HomeSeoArticleSection: React.FC = () => {
           <div className="p-4 rounded-2xl bg-[#FFFBEB] border border-[#FDE68A] text-xs text-[#92400E] flex items-start gap-3">
             <ShieldAlert className="w-4 h-4 text-[#D97706] shrink-0 mt-0.5" />
             <p className="m-0 leading-relaxed">
-              <strong>Important Clinical Distinction:</strong> The examples above describe common health concerns, not conditions that homoeopathy has been proven to treat. A consultation should help patients understand the need for appropriate diagnosis and evidence-based care.
+              <strong>Important Clinical Distinction:</strong> The examples above describe common health concerns, not conditions that homeopathy has been proven to treat. A consultation should help patients understand the need for appropriate diagnosis and evidence-based care.
             </p>
           </div>
         </div>
@@ -508,20 +508,20 @@ export const HomeSeoArticleSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 6: How to Choose the Right Homoeopathic Doctors in Malappuram */}
+        {/* Section 6: How to Choose the Right Homeopathic Doctors in Malappuram */}
         <div className="space-y-6 pt-10 border-t border-[#EEF2FB]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                How to Choose the Right Homoeopathic Doctors in Malappuram
+                How to Choose the Right Homeopathic Doctors in Malappuram
               </h3>
               <p className="text-sm sm:text-base text-[#64748B] mt-1 leading-relaxed">
                 Use the following practical checklist to evaluate your healthcare options:
               </p>
             </div>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] bg-[#EEF2FB] hover:bg-[#D3DBF4] px-4 py-2 rounded-full transition-colors shrink-0"
             >
               <span>Read Full Clinic Guide Article</span>
@@ -612,7 +612,7 @@ export const HomeSeoArticleSection: React.FC = () => {
               <span>Emergency Warning Signs & Urgent Medical Care</span>
             </div>
             <p className="leading-relaxed m-0 text-[#7F1D1D]">
-              Seek prompt medical attention for unexplained bleeding, persistent fever, severe pain, sudden weakness, new neurological symptoms, or symptoms that continue to worsen. For emergencies such as severe breathing difficulty, chest pain, loss of consciousness, or signs of stroke, contact local emergency services immediately. A visit to a Homoeopathic Clinic in Malappuram should never delay emergency treatment or necessary diagnostic evaluation.
+              Seek prompt medical attention for unexplained bleeding, persistent fever, severe pain, sudden weakness, new neurological symptoms, or symptoms that continue to worsen. For emergencies such as severe breathing difficulty, chest pain, loss of consciousness, or signs of stroke, contact local emergency services immediately. A visit to a Homeopathic Clinic in Malappuram should never delay emergency treatment or necessary diagnostic evaluation.
             </p>
           </div>
         </div>
@@ -676,10 +676,10 @@ export const HomeSeoArticleSection: React.FC = () => {
                 Make Informed Healthcare Decisions in Malappuram
               </h3>
               <p className="text-sm text-[#475569] leading-relaxed">
-                When looking for Anjali Homoeopathic Clinic in Malappuram, patients should consider whether the clinic's services meet their needs and whether the consultation process provides clear, responsible guidance. A positive healthcare experience includes respectful communication, careful consideration of medical history, and the opportunity to ask questions.
+                When looking for Anjali Homeopathic Clinic in Malappuram, patients should consider whether the clinic's services meet their needs and whether the consultation process provides clear, responsible guidance. A positive healthcare experience includes respectful communication, careful consideration of medical history, and the opportunity to ask questions.
               </p>
               <p className="text-sm text-[#475569] leading-relaxed">
-                When comparing Homoeopathic Doctors in Malappuram, prioritize transparent information and responsible guidance. Understand the scientific evidence behind proposed treatments, continue necessary prescribed medication, and seek appropriate medical assessment whenever symptoms require it. Your health deserves thoughtful decisions, accurate information, and care that puts your well-being first.
+                When comparing Homeopathic Doctors in Malappuram, prioritize transparent information and responsible guidance. Understand the scientific evidence behind proposed treatments, continue necessary prescribed medication, and seek appropriate medical assessment whenever symptoms require it. Your health deserves thoughtful decisions, accurate information, and care that puts your well-being first.
               </p>
             </div>
 
@@ -712,68 +712,68 @@ export const HomeSeoArticleSection: React.FC = () => {
         {/* Directory of All Additional Treatment Pages for Complete SEO Linking */}
         <div className="mt-12 pt-8 border-t border-[#EEF2FB] space-y-3 font-sans">
           <span className="text-xs font-bold text-[#1E2559] uppercase tracking-wider block">
-            Related Homoeopathic Treatment Pages & Patient Services in Malappuram:
+            Related Homeopathic Treatment Pages & Patient Services in Malappuram:
           </span>
           <div className="flex flex-wrap items-center gap-2">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Women's Health & Gynecological Care
             </a>
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Respiratory, ENT & Allergy Care
             </a>
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Skin, Hair & Scalp Conditions
             </a>
             <a
-              href="/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
+              href="/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Renal, Urinary & Thyroid Care
             </a>
             <a
-              href="/homoeopathic-treatment-for-neurological-headache-conditions/"
+              href="/homeopathic-treatment-for-neurological-headache-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Neurological & Headache Conditions
             </a>
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Anorectal & Vascular Care
             </a>
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Joint & Musculoskeletal Care
             </a>
             <a
-              href="/homoeopathic-treatment-for-ophthalmic-eye-conditions/"
+              href="/homeopathic-treatment-for-ophthalmic-eye-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'ophthalmic-eye-care')}
               className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#303A88] border border-[#D8E1F5] px-3 py-1.5 rounded-full transition-colors font-medium"
             >
               Ophthalmic & Eye Conditions
             </a>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="text-xs bg-[#EDF8EE] hover:bg-[#DCF3DE] text-[#2F8335] border border-[#C4EAC7] px-3 py-1.5 rounded-full transition-colors font-semibold"
             >
               Choosing a Clinic Guide

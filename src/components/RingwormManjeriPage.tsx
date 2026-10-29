@@ -96,7 +96,7 @@ export const RingwormManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'High-quality scientific trials have not established homoeopathy as an effective treatment, cure, or pathogen eliminator for fungal ringworm.',
+      desc: 'High-quality scientific trials have not established homeopathy as an effective treatment, cure, or pathogen eliminator for fungal ringworm.',
     },
     {
       title: 'Danger of Steroid Creams Alone',
@@ -266,8 +266,8 @@ export const RingwormManjeriPage: React.FC = () => {
       a: 'You can consult qualified healthcare professionals and clinics offering clinical dermatology and skin assessments in the Manjeri and wider Malappuram region. Dr. Anjali Chandrasekhar offers comprehensive outpatient skin evaluations at Anjali Homoeo Clinic (located at Kuttippuram with a branch at Puthanathani, accessible to Manjeri patients) as well as secure online video consultations for initial rash assessment, differential diagnosis, and appropriate treatment recommendations.',
     },
     {
-      q: 'Is Homoeopathic Treatment for Ringworm in Manjeri effective?',
-      a: 'Rigorous scientific and clinical evidence does not establish homoeopathy as an effective treatment, cure, or pathogen eliminator for fungal skin infections such as ringworm. Ringworm is caused by dermatophyte fungi that require established antifungal medicines to eradicate. Relying solely on unproven therapies can lead to spreading, severe inflammation, scarring, and transmission to household members. Patients should always discuss treatment options transparently with a qualified practitioner and must not discontinue or delay prescribed antifungal medicines.',
+      q: 'Is Homeopathic Treatment for Ringworm in Manjeri effective?',
+      a: 'Rigorous scientific and clinical evidence does not establish homeopathy as an effective treatment, cure, or pathogen eliminator for fungal skin infections such as ringworm. Ringworm is caused by dermatophyte fungi that require established antifungal medicines to eradicate. Relying solely on unproven therapies can lead to spreading, severe inflammation, scarring, and transmission to household members. Patients should always discuss treatment options transparently with a qualified practitioner and must not discontinue or delay prescribed antifungal medicines.',
     },
     {
       q: 'What are the common symptoms of ringworm?',
@@ -373,7 +373,7 @@ export const RingwormManjeriPage: React.FC = () => {
             </button>
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-[#1E2559] font-semibold">
-              Ringworm Homoeopathic Treatment in Manjeri
+              Ringworm Homeopathic Treatment in Manjeri
             </span>
           </div>
         </div>
@@ -419,7 +419,7 @@ export const RingwormManjeriPage: React.FC = () => {
                       Dr. Anjali Chandrasekhar
                     </h3>
                     <p className="text-xs font-semibold text-[#0D9488] mt-0.5">
-                      BHMS | Chief Homoeopathic Physician
+                      BHMS | Chief Homeopathic Physician
                     </p>
                     <p className="text-xs text-[#64748B] mt-2 leading-relaxed">
                       10+ years of clinical experience in dermatology evaluations, chronic fungal skin management, and evidence-based patient consultations across Malappuram district.
@@ -482,7 +482,7 @@ export const RingwormManjeriPage: React.FC = () => {
               </div>
 
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-                Ringworm Homoeopathic Treatment in Manjeri
+                Ringworm Homeopathic Treatment in Manjeri
               </h1>
 
               <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed font-normal">
@@ -558,10 +558,10 @@ export const RingwormManjeriPage: React.FC = () => {
             </div>
             <div>
               <h4 className="text-sm font-bold text-[#1E3A8A]">
-                Medical Evidence Disclosure Regarding Ringworm &amp; Homoeopathy
+                Medical Evidence Disclosure Regarding Ringworm &amp; Homeopathy
               </h4>
               <p className="text-xs text-[#1E40AF] mt-0.5 leading-relaxed">
-                Ringworm is caused by infectious dermatophyte fungi. Homoeopathy has not been established by rigorous scientific trials to kill fungi or cure ringworm. Effective elimination requires established antifungal medications. Never discontinue or delay prescribed antifungal therapies in favour of unproven alternative treatments.
+                Ringworm is caused by infectious dermatophyte fungi. Homeopathy has not been established by rigorous scientific trials to kill fungi or cure ringworm. Effective elimination requires established antifungal medications. Never discontinue or delay prescribed antifungal therapies in favour of unproven alternative treatments.
               </p>
             </div>
           </div>
@@ -950,10 +950,10 @@ export const RingwormManjeriPage: React.FC = () => {
               CLINICAL ETHICS &amp; EVIDENCE TRANSPARENCY
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-2">
-              Exploring Homoeopathic Treatment for Ringworm in Manjeri
+              Exploring Homeopathic Treatment for Ringworm in Manjeri
             </h2>
             <p className="text-sm sm:text-base text-[#475569] mt-3">
-              Clear, transparent communication regarding the scientific standing of homoeopathy in infectious fungal diseases.
+              Clear, transparent communication regarding the scientific standing of homeopathy in infectious fungal diseases.
             </p>
           </div>
 
@@ -964,16 +964,16 @@ export const RingwormManjeriPage: React.FC = () => {
               </div>
               <div className="space-y-3">
                 <h3 className="font-bold text-lg text-[#1E2559]">
-                  What Does Scientific Evidence Say About Homoeopathy for Fungal Ringworm?
+                  What Does Scientific Evidence Say About Homeopathy for Fungal Ringworm?
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  Some individuals in Manjeri search for <em>Homoeopathy for Ringworm in Manjeri</em> because they prefer natural treatment modalities, have concerns regarding conventional side effects, or wish to address frequent recurrent skin complaints.
+                  Some individuals in Manjeri search for <em>Homeopathy for Ringworm in Manjeri</em> because they prefer natural treatment modalities, have concerns regarding conventional side effects, or wish to address frequent recurrent skin complaints.
                 </p>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  However, it is clinically essential to understand the scientific consensus: <strong>Homoeopathy has not been shown reliably in rigorous randomized controlled clinical trials to kill dermatophyte fungi or eliminate fungal skin infections</strong>. It is not an established primary treatment for active tinea infections.
+                  However, it is clinically essential to understand the scientific consensus: <strong>Homeopathy has not been shown reliably in rigorous randomized controlled clinical trials to kill dermatophyte fungi or eliminate fungal skin infections</strong>. It is not an established primary treatment for active tinea infections.
                 </p>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  Because ringworm is an active infectious process caused by invasive micro-organisms feeding on bodily keratin, effective resolution requires established antifungal medications that dismantle the fungal cell membrane. Relying solely on homoeopathy while delaying antifungal treatment can allow the infection to spread across the body, worsen into deep kerions, and transmit to children and household family members.
+                  Because ringworm is an active infectious process caused by invasive micro-organisms feeding on bodily keratin, effective resolution requires established antifungal medications that dismantle the fungal cell membrane. Relying solely on homeopathy while delaying antifungal treatment can allow the infection to spread across the body, worsen into deep kerions, and transmit to children and household family members.
                 </p>
               </div>
             </div>
@@ -985,7 +985,7 @@ export const RingwormManjeriPage: React.FC = () => {
                   <span>The Role of an Ethical Consultation</span>
                 </h4>
                 <p className="text-xs text-[#475569] leading-relaxed">
-                  A consultation with a qualified homoeopathic physician provides an opportunity to evaluate the full health history, past steroid abuse, constitutional skin susceptibility, and recurring tendencies. A responsible practitioner will always prioritize patient safety and direct you to evidence-based antifungal therapy where infection is active.
+                  A consultation with a qualified homeopathic physician provides an opportunity to evaluate the full health history, past steroid abuse, constitutional skin susceptibility, and recurring tendencies. A responsible practitioner will always prioritize patient safety and direct you to evidence-based antifungal therapy where infection is active.
                 </p>
               </div>
 
@@ -1166,7 +1166,7 @@ export const RingwormManjeriPage: React.FC = () => {
               Frequently Asked Questions (FAQs)
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-              Common enquiries regarding Ringworm Treatment, homoeopathy disclosures, and fungal skincare in Manjeri and Malappuram.
+              Common enquiries regarding Ringworm Treatment, homeopathy disclosures, and fungal skincare in Manjeri and Malappuram.
             </p>
           </div>
 

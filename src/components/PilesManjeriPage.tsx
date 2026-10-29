@@ -80,7 +80,7 @@ export const PilesManjeriPage: React.FC = () => {
     },
     {
       title: 'Understand the evidence',
-      desc: 'Current scientific evidence does not establish homoeopathy as an effective treatment for piles beyond placebo.',
+      desc: 'Current scientific evidence does not establish homeopathy as an effective treatment for piles beyond placebo.',
     },
     {
       title: 'Avoid delaying care',
@@ -209,7 +209,7 @@ export const PilesManjeriPage: React.FC = () => {
     {
       question: 'What does current medical evidence say about homeopathic treatment for piles?',
       answer:
-        'Current rigorous scientific clinical trials have not established homoeopathy as an effective medical treatment for piles beyond a placebo response. While individual patients may explore constitutional homoeopathy alongside lifestyle and dietary habits, responsible healthcare mandates that patients understand the scientific evidence, obtain a clear medical diagnosis, and do not delay necessary conventional medical or surgical interventions.',
+        'Current rigorous scientific clinical trials have not established homeopathy as an effective medical treatment for piles beyond a placebo response. While individual patients may explore constitutional homeopathy alongside lifestyle and dietary habits, responsible healthcare mandates that patients understand the scientific evidence, obtain a clear medical diagnosis, and do not delay necessary conventional medical or surgical interventions.',
     },
     {
       question: 'What lifestyle changes help prevent piles from recurring?',
@@ -233,7 +233,7 @@ export const PilesManjeriPage: React.FC = () => {
       {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
         <RegionalStickyBar
-          pageTitle="Piles Homoeopathic Clinic in Manjeri"
+          pageTitle="Piles Homeopathic Clinic in Manjeri"
           phonePrimary={phonePrimary}
           whatsappUrl={whatsappUrl}
           onBookClick={handleBookConsultation}
@@ -244,14 +244,14 @@ export const PilesManjeriPage: React.FC = () => {
       <RegionalBreadcrumb
         categoryView="anorectal-vascular-care"
         categoryLabel="Anorectal & Vascular Care"
-        pageTitle="Piles Homoeopathic Clinic in Manjeri"
+        pageTitle="Piles Homeopathic Clinic in Manjeri"
       />
 
       {/* Hero Section with Doctor Profile on Left */}
       <RegionalHeroSection
         badgeIcon={<MapPin className="w-3.5 h-3.5 text-[#86EFAC]" />}
         badgeText="Regional Clinical Proctology Guide • Manjeri Patients"
-        title="Piles Homoeopathic Clinic in Manjeri"
+        title="Piles Homeopathic Clinic in Manjeri"
         subtitle="Clinical guidance and evidence-informed consultations for patients in Manjeri and Malappuram experiencing piles, haemorrhoids, rectal bleeding, anal fissures, or anorectal discomfort."
         metrics={[
           { label: 'Condition Type', value: 'Anorectal Vascular' },
@@ -259,7 +259,7 @@ export const PilesManjeriPage: React.FC = () => {
           { label: 'Evidence Disclosure', value: 'Transparent Care' },
         ]}
         doctorSubtitle="BHMS | Anorectal, Piles & Constitutional Care"
-        doctorBio="10+ years of dedicated clinical experience conducting confidential anorectal assessments, dietary fiber evaluations, conservative lifestyle guidance, and evidence-guided homoeopathic care across Malappuram district."
+        doctorBio="10+ years of dedicated clinical experience conducting confidential anorectal assessments, dietary fiber evaluations, conservative lifestyle guidance, and evidence-guided homeopathic care across Malappuram district."
         phonePrimary={phonePrimary}
         phoneWhatsApp={phoneWhatsApp}
         whatsappUrl={whatsappUrl}
@@ -477,13 +477,13 @@ export const PilesManjeriPage: React.FC = () => {
                 <ShieldCheck className="w-6 h-6 text-[#303A88] shrink-0 mt-0.5" />
                 <div className="space-y-2">
                   <h3 className="font-bold text-[#1E2559] text-base sm:text-lg">
-                    Scientific Evidence on Homoeopathic Treatment for Piles
+                    Scientific Evidence on Homeopathic Treatment for Piles
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    Patients in Manjeri often inquire whether homoeopathy can treat piles without procedural intervention. It is essential to communicate transparently: <strong>current scientific evidence from peer-reviewed clinical trials does not establish homoeopathy as an effective treatment for haemorrhoids beyond placebo.</strong>
+                    Patients in Manjeri often inquire whether homeopathy can treat piles without procedural intervention. It is essential to communicate transparently: <strong>current scientific evidence from peer-reviewed clinical trials does not establish homeopathy as an effective treatment for haemorrhoids beyond placebo.</strong>
                   </p>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    While some patients choose to explore homoeopathy alongside dietary and lifestyle adjustments, it should never replace a proper clinical diagnosis, nor should it be used as a reason to postpone necessary conventional medical or surgical interventions when red flags or advanced disease are present.
+                    While some patients choose to explore homeopathy alongside dietary and lifestyle adjustments, it should never replace a proper clinical diagnosis, nor should it be used as a reason to postpone necessary conventional medical or surgical interventions when red flags or advanced disease are present.
                   </p>
                 </div>
               </div>
@@ -501,7 +501,7 @@ export const PilesManjeriPage: React.FC = () => {
                 SELECTION CRITERIA
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-                Piles Homoeopathic Clinic in Manjeri: Making an Informed Choice
+                Piles Homeopathic Clinic in Manjeri: Making an Informed Choice
               </h2>
             </div>
 
@@ -542,7 +542,7 @@ export const PilesManjeriPage: React.FC = () => {
                 PATIENT ADVOCACY
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-                Homoeopathy Clinic for Piles in Manjeri: What Patients Should Know
+                Homeopathy Clinic for Piles in Manjeri: What Patients Should Know
               </h2>
             </div>
 
@@ -785,7 +785,7 @@ export const PilesManjeriPage: React.FC = () => {
       </section>
 
       {/* Common Regional Guides Cross-Linking & Footer Notes */}
-      <RegionalRelatedGuides currentGuideKey="piles-homoeopathic-clinic-manjeri" />
+      <RegionalRelatedGuides currentGuideKey="piles-homeopathic-clinic-manjeri" />
     </div>
   );
 };

@@ -284,8 +284,8 @@ export const WomensHealthCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/',
                 name: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
                 description:
                   "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health and personalized consultations.",
@@ -323,7 +323,7 @@ export const WomensHealthCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/',
                   },
                 ],
               },
@@ -401,7 +401,7 @@ export const WomensHealthCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Women’s Health & Gynecological Care
+                Homeopathic Treatment for Women’s Health & Gynecological Care
               </h1>
 
               {/* Lead Narrative */}

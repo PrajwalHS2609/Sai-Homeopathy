@@ -182,8 +182,8 @@ export const NeurologicalCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/',
                 name: 'Headache & Neurological Homeopathic Treatment in Malappuram',
                 description:
                   'Explore consultations for headaches and neurological concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Receive personalized healthcare guidance for your needs.',
@@ -222,7 +222,7 @@ export const NeurologicalCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Headache & Neurological Homeopathic Treatment in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/',
                   },
                 ],
               },
@@ -300,7 +300,7 @@ export const NeurologicalCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Neurological &amp; Headache Conditions
+                Homeopathic Treatment for Neurological &amp; Headache Conditions
               </h1>
 
               {/* Lead Narrative */}

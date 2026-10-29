@@ -149,7 +149,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Women's Health & Gynecological Care View
-  // URL: /homoeopathic-treatment-for-womens-health-gynecological-care/
+  // URL: /homeopathic-treatment-for-womens-health-gynecological-care/
   if (currentView === 'womens-health-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -171,7 +171,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Respiratory, ENT & Allergy Conditions View
-  // URL: /homoeopathic-treatment-for-respiratory-ent-allergy-conditions/
+  // URL: /homeopathic-treatment-for-respiratory-ent-allergy-conditions/
   if (currentView === 'respiratory-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -193,7 +193,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Skin, Hair & Scalp Conditions View
-  // URL: /homoeopathic-treatment-for-skin-hair-scalp-conditions/
+  // URL: /homeopathic-treatment-for-skin-hair-scalp-conditions/
   if (currentView === 'skin-hair-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -215,7 +215,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Renal, Urinary, Gallbladder & Thyroid Conditions View
-  // URL: /homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/
+  // URL: /homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/
   if (currentView === 'renal-thyroid-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -237,7 +237,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Neurological & Headache Conditions View
-  // URL: /homoeopathic-treatment-for-neurological-headache-conditions/
+  // URL: /homeopathic-treatment-for-neurological-headache-conditions/
   if (currentView === 'neurological-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -259,7 +259,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Anorectal & Vascular Conditions View
-  // URL: /homoeopathic-treatment-for-anorectal-vascular-conditions/
+  // URL: /homeopathic-treatment-for-anorectal-vascular-conditions/
   if (currentView === 'anorectal-vascular-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -281,7 +281,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Joint, Musculoskeletal & Chronic Conditions View
-  // URL: /homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/
+  // URL: /homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/
   if (currentView === 'joint-musculoskeletal-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -303,7 +303,7 @@ const MainContent: React.FC = () => {
   }
 
   // Route: Dedicated Ophthalmic / Eye Conditions View
-  // URL: /homoeopathic-treatment-for-ophthalmic-eye-conditions/
+  // URL: /homeopathic-treatment-for-ophthalmic-eye-conditions/
   if (currentView === 'ophthalmic-eye-care') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -324,9 +324,9 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Piles Homoeopathic Clinic in Manjeri View
-  // URL: /piles-homoeopathic-clinic-in-manjeri/
-  if (currentView === 'piles-homoeopathic-clinic-manjeri') {
+  // Route: Dedicated Piles Homeopathic Clinic in Manjeri View
+  // URL: /piles-homeopathic-clinic-in-manjeri/
+  if (currentView === 'piles-homeopathic-clinic-manjeri' || currentView === ('piles-homoeopathic-clinic-manjeri' as any)) {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
         <Header />
@@ -344,8 +344,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Menstrual Homoeopathic Treatment in Manjeri View
-  // URL: /menstrual-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Menstrual Homeopathic Treatment in Manjeri View
+  // URL: /menstrual-homeopathic-treatment-in-manjeri/
   if (currentView === 'menstrual-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -364,8 +364,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Skin Homoeopathic Treatment in Manjeri View
-  // URL: /skin-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Skin Homeopathic Treatment in Manjeri View
+  // URL: /skin-homeopathic-treatment-in-manjeri/
   if (currentView === 'skin-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -384,8 +384,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Hair Homoeopathic Treatment in Manjeri View
-  // URL: /hair-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Hair Homeopathic Treatment in Manjeri View
+  // URL: /hair-homeopathic-treatment-in-manjeri/
   if (currentView === 'hair-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -404,8 +404,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Allergic Rhinitis Homoeopathic Treatment in Manjeri View
-  // URL: /allergic-rhinitis-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Allergic Rhinitis Homeopathic Treatment in Manjeri View
+  // URL: /allergic-rhinitis-homeopathic-treatment-in-manjeri/
   if (currentView === 'allergic-rhinitis-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -424,8 +424,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Homoeopathic Treatment for Acne Skin Problems in Manjeri View
-  // URL: /homoeopathic-treatment-for-acne-skin-problems-in-manjeri/
+  // Route: Dedicated Homeopathic Treatment for Acne Skin Problems in Manjeri View
+  // URL: /homeopathic-treatment-for-acne-skin-problems-in-manjeri/
   if (currentView === 'acne-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -444,8 +444,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Homoeopathic Treatment for Eczema Skin Problems in Manjeri View
-  // URL: /homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/
+  // Route: Dedicated Homeopathic Treatment for Eczema Skin Problems in Manjeri View
+  // URL: /homeopathic-treatment-for-eczema-skin-problems-in-manjeri/
   if (currentView === 'eczema-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -464,8 +464,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Skin Warts Homoeopathic Treatment in Manjeri View
-  // URL: /skin-warts-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Skin Warts Homeopathic Treatment in Manjeri View
+  // URL: /skin-warts-homeopathic-treatment-in-manjeri/
   if (currentView === 'warts-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -484,8 +484,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Skin Corns Homoeopathic Treatment in Manjeri View
-  // URL: /skin-corns-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Skin Corns Homeopathic Treatment in Manjeri View
+  // URL: /skin-corns-homeopathic-treatment-in-manjeri/
   if (currentView === 'corns-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -504,8 +504,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Psoriasis Homoeopathic Treatment in Manjeri View
-  // URL: /psoriasis-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Psoriasis Homeopathic Treatment in Manjeri View
+  // URL: /psoriasis-homeopathic-treatment-in-manjeri/
   if (currentView === 'psoriasis-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -524,8 +524,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Ringworm Homoeopathic Treatment in Manjeri View
-  // URL: /ringworm-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Ringworm Homeopathic Treatment in Manjeri View
+  // URL: /ringworm-homeopathic-treatment-in-manjeri/
   if (currentView === 'ringworm-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -544,8 +544,8 @@ const MainContent: React.FC = () => {
     );
   }
 
-  // Route: Dedicated Alopecia Homoeopathic Treatment in Manjeri View
-  // URL: /alopecia-homoeopathic-treatment-in-manjeri/
+  // Route: Dedicated Alopecia Homeopathic Treatment in Manjeri View
+  // URL: /alopecia-homeopathic-treatment-in-manjeri/
   if (currentView === 'alopecia-treatment-manjeri') {
     return (
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
@@ -769,7 +769,7 @@ const MainContent: React.FC = () => {
         {/* 17. Final CTA Banner */}
         <FinalCtaBanner />
 
-        {/* 18. Website SEO Content: Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic */}
+        {/* 18. Website SEO Content: Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic */}
         <HomeSeoArticleSection />
       </main>
 

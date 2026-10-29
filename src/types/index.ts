@@ -160,7 +160,7 @@ export interface BlogPost {
   id: string;
   title: string;
   slug: string;
-  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief' | "Women's Health" | 'Respiratory & ENT' | 'Respiratory Health';
+  category: 'Homeopathy' | 'Wellness' | 'Patient Education' | 'Lifestyle' | 'Digestive Health' | 'Stress Relief' | "Women's Health" | 'Respiratory & ENT' | 'Respiratory Health' | 'Skin & Hair';
   excerpt: string;
   content: string[];
   keyTakeaways: string[];

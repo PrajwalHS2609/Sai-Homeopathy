@@ -317,11 +317,11 @@ export const Footer: React.FC = () => {
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 text-xs text-[#CBD5E1]">
             <button
-              onClick={() => handleLinkClick('piles-homoeopathic-clinic-manjeri')}
+              onClick={() => handleLinkClick('piles-homeopathic-clinic-manjeri')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#45AC4B]" />
-              <span>Piles Homoeopathic Clinic in Manjeri</span>
+              <span>Piles Homeopathic Clinic in Manjeri</span>
             </button>
             <button
               onClick={() => handleLinkClick('menstrual-treatment-manjeri')}

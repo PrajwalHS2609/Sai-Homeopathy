@@ -68,9 +68,9 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Can homoeopathy cure knee osteoarthritis or regenerate eroded cartilage?',
+      question: 'Can homeopathy cure knee osteoarthritis or regenerate eroded cartilage?',
       answer:
-        'Reliable scientific evidence has not shown that homoeopathic remedies can reverse osteoarthritis, rebuild lost articular cartilage, or alter bone-on-bone joint deformity. In osteoarthritis, the loss of hyaline cartilage is a progressive biomechanical and degenerative process. Homoeopathic consultations can provide supportive constitutional care, address general lifestyle comfort, and assist with muscle relaxation, but they must never replace proven evidence-based interventions such as physiotherapy, quadriceps strengthening, weight management, and orthopaedic evaluation.',
+        'Reliable scientific evidence has not shown that homeopathic remedies can reverse osteoarthritis, rebuild lost articular cartilage, or alter bone-on-bone joint deformity. In osteoarthritis, the loss of hyaline cartilage is a progressive biomechanical and degenerative process. Homeopathic consultations can provide supportive constitutional care, address general lifestyle comfort, and assist with muscle relaxation, but they must never replace proven evidence-based interventions such as physiotherapy, quadriceps strengthening, weight management, and orthopaedic evaluation.',
     },
     {
       question: 'What should I do if my lower back pain radiates down into my leg (sciatica)?',
@@ -88,9 +88,9 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
         'Osteoarthritis is predominantly a degenerative "wear-and-repair" condition of joint cartilage and underlying bone, typically worsened by weight-bearing movement and eased by rest, with brief morning stiffness (under 30 minutes). In contrast, rheumatoid arthritis is a systemic autoimmune disease where the immune system attacks the synovial joint lining, causing symmetrical joint swelling, warmth, systemic fatigue, and prolonged morning stiffness lasting over an hour. Rheumatoid arthritis requires specialized rheumatologist care and disease-modifying antirheumatic drugs (DMARDs) to prevent permanent joint destruction.',
     },
     {
-      question: 'Can I take homoeopathic remedies alongside my prescribed arthritis or pain medications?',
+      question: 'Can I take homeopathic remedies alongside my prescribed arthritis or pain medications?',
       answer:
-        'Yes, homoeopathic micro-dilutions can generally be taken alongside conventional medications without harmful pharmacological interactions. However, it is vital that you never discontinue, reduce, or substitute prescribed anti-inflammatory drugs, DMARDs, immunosuppressants, or painkillers on your own. Always inform both your prescribing doctor and your homoeopathic practitioner about all medications, supplements, and remedies you are taking.',
+        'Yes, homeopathic micro-dilutions can generally be taken alongside conventional medications without harmful pharmacological interactions. However, it is vital that you never discontinue, reduce, or substitute prescribed anti-inflammatory drugs, DMARDs, immunosuppressants, or painkillers on your own. Always inform both your prescribing doctor and your homeopathic practitioner about all medications, supplements, and remedies you are taking.',
     },
     {
       question: 'What diagnostic tests or imaging should I bring to a joint and spine consultation in Malappuram?',
@@ -118,7 +118,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
             id="joint-musculoskeletal-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Joint, Musculoskeletal &amp; Chronic Homoeopathic Clinic in Malappuram
+            Joint, Musculoskeletal &amp; Chronic Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -145,7 +145,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
             Joint pain, stiffness, back discomfort, and neck pain can affect everyday activities, mobility, sleep, and overall quality of life. Whether you experience occasional knee discomfort or have been living with a long-term musculoskeletal condition, understanding the cause of your symptoms is an important first step towards appropriate care.
           </p>
           <p>
-            The <strong className="text-[#1E2559] font-semibold">Joint, Musculoskeletal &amp; Chronic Homoeopathic Clinic in Malappuram</strong> focuses on providing information and consultation opportunities for individuals experiencing joint discomfort, osteoarthritis, arthritis-related symptoms, cervical spine problems, lumbar spondylosis, and other chronic musculoskeletal concerns. The aim is to help individuals understand their symptoms, recognize when medical assessment is necessary, and make informed decisions about their healthcare.
+            The <strong className="text-[#1E2559] font-semibold">Joint, Musculoskeletal &amp; Chronic Homeopathic Clinic in Malappuram</strong> focuses on providing information and consultation opportunities for individuals experiencing joint discomfort, osteoarthritis, arthritis-related symptoms, cervical spine problems, lumbar spondylosis, and other chronic musculoskeletal concerns. The aim is to help individuals understand their symptoms, recognize when medical assessment is necessary, and make informed decisions about their healthcare.
           </p>
           <p>
             People searching for <strong className="text-[#1E2559] font-semibold">Joint Pain Consultation in Malappuram</strong> may have different concerns. Some experience pain while walking or climbing stairs, while others struggle with morning stiffness, persistent back discomfort, or pain that travels from the lower back into the leg. Identifying the underlying problem is essential because similar symptoms can occur in several different conditions, each requiring an appropriate assessment and management plan.
@@ -182,7 +182,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
-              <span><strong>Scientific Boundaries:</strong> Homoeopathy has not been established by reliable scientific evidence as an effective treatment for osteoarthritis, autoimmune rheumatic diseases, spondylosis, or sciatica.</span>
+              <span><strong>Scientific Boundaries:</strong> Homeopathy has not been established by reliable scientific evidence as an effective treatment for osteoarthritis, autoimmune rheumatic diseases, spondylosis, or sciatica.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
@@ -301,7 +301,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               </ul>
             </div>
             <p>
-              Homoeopathy has not been shown by reliable scientific evidence to reverse osteoarthritis or reliably relieve its symptoms. Individuals considering homoeopathic consultation should understand this limitation and should not use it as a replacement for proven treatment. Appropriate exercise, pain management, and medical follow-up remain important parts of care.
+              Homeopathy has not been shown by reliable scientific evidence to reverse osteoarthritis or reliably relieve its symptoms. Individuals considering homeopathic consultation should understand this limitation and should not use it as a replacement for proven treatment. Appropriate exercise, pain management, and medical follow-up remain important parts of care.
             </p>
           </div>
         </div>
@@ -330,7 +330,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
                 <span>Critical Safety Note on Autoimmune Rheumatic Medications</span>
               </h4>
               <p className="text-xs sm:text-sm text-[#78350F] leading-relaxed">
-                Autoimmune rheumatic diseases may require disease-modifying antirheumatic drugs (DMARDs) and regular monitoring to control systemic inflammation and reduce the risk of permanent joint destruction or internal organ complications. Early treatment can be particularly vital to preserve joint architecture. Homoeopathy has not been established as an effective treatment for autoimmune rheumatic diseases. It should never replace specialist-directed treatment, and prescribed medications must never be discontinued without medical guidance.
+                Autoimmune rheumatic diseases may require disease-modifying antirheumatic drugs (DMARDs) and regular monitoring to control systemic inflammation and reduce the risk of permanent joint destruction or internal organ complications. Early treatment can be particularly vital to preserve joint architecture. Homeopathy has not been established as an effective treatment for autoimmune rheumatic diseases. It should never replace specialist-directed treatment, and prescribed medications must never be discontinued without medical guidance.
               </p>
             </div>
           </div>
@@ -406,7 +406,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               Medical evaluation is particularly important when pain is severe, persistent, worsening, or accompanied by neurological deficits. Treatment depends on the underlying cause and may involve guided rehabilitation exercises, physiotherapy, neuropathic or analgesic medication, or orthopaedic/neurosurgical review.
             </p>
             <p>
-              Homoeopathy has not been established as an effective treatment for sciatica or the underlying mechanical causes of nerve root compression. It should never delay diagnostic imaging or appropriate neuro-orthopaedic treatment.
+              Homeopathy has not been established as an effective treatment for sciatica or the underlying mechanical causes of nerve root compression. It should never delay diagnostic imaging or appropriate neuro-orthopaedic treatment.
             </p>
           </div>
         </div>
@@ -424,7 +424,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               A consultation should help clarify the symptoms, identify warning signs, and determine whether further investigations or referral are needed. Where appropriate, a care plan may involve evidence-based pain management, physical rehabilitation, lifestyle adjustments, and follow-up with a relevant specialist.
             </p>
             <p>
-              Individuals considering a homoeopathic consultation should receive clear information about the limits of the evidence. There is no reliable scientific evidence that homoeopathy cures osteoarthritis, autoimmune rheumatic diseases, cervical or lumbar spondylosis, or sciatica. Any consultation should complement—not replace or delay—necessary medical assessment and proven treatment.
+              Individuals considering a homeopathic consultation should receive clear information about the limits of the evidence. There is no reliable scientific evidence that homeopathy cures osteoarthritis, autoimmune rheumatic diseases, cervical or lumbar spondylosis, or sciatica. Any consultation should complement—not replace or delay—necessary medical assessment and proven treatment.
             </p>
             <p>
               For those seeking a <strong className="text-[#1E2559] font-semibold">Joint Pain Consultation in Malappuram</strong>, clear communication about symptom duration, previous diagnoses, current medication, and changes in mobility can help healthcare professionals assess the situation more effectively.
@@ -555,7 +555,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               Joint pain, osteoarthritis, inflammatory rheumatic diseases, neck discomfort, and lower back problems can affect many aspects of daily life. Understanding the cause of symptoms is an important step towards choosing appropriate care and maintaining mobility.
             </p>
             <p>
-              The <strong className="text-[#1E2559] font-semibold">Joint, Musculoskeletal &amp; Chronic Homoeopathic Clinic in Malappuram</strong> provides a focused context for people seeking information about chronic joint and musculoskeletal concerns. If you are considering a consultation, make sure you understand the available evidence, the purpose of the proposed approach, and when conventional medical assessment or specialist treatment is needed.
+              The <strong className="text-[#1E2559] font-semibold">Joint, Musculoskeletal &amp; Chronic Homeopathic Clinic in Malappuram</strong> provides a focused context for people seeking information about chronic joint and musculoskeletal concerns. If you are considering a consultation, make sure you understand the available evidence, the purpose of the proposed approach, and when conventional medical assessment or specialist treatment is needed.
             </p>
             <p>
               Whether you are experiencing knee discomfort, persistent joint stiffness, cervical spine symptoms, or lower back pain, prioritize a clear diagnosis and a responsible care plan. For individuals seeking <strong className="text-[#1E2559] font-semibold">Chronic Joint Pain Consultation in Malappuram</strong>, informed decisions, appropriate medical follow-up, and evidence-based management are essential to protecting long-term health and function.
@@ -571,15 +571,15 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               Clinical Guide
             </span>
             <p className="text-sm font-semibold text-[#1E2559]">
-              How to Choose a Homoeopathic Clinic in Malappuram
+              How to Choose a Homeopathic Clinic in Malappuram
             </p>
             <p className="text-xs text-[#475569]">
               Read our comprehensive patient checklist on practitioner qualifications, consultation ethics, and healthcare safety.
             </p>
           </div>
           <a
-            href="/homoeopathic-clinic-in-malappuram-guide/"
-            onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+            href="/homeopathic-clinic-in-malappuram-guide/"
+            onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
             className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#45AC4B] text-white text-xs font-bold hover:bg-[#3d9842] transition-colors shadow-2xs"
           >
             <span>Read Clinic Guide</span>
@@ -644,7 +644,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -652,7 +652,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -660,7 +660,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -668,7 +668,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
+              href="/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -676,7 +676,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-neurological-headache-conditions/"
+              href="/homeopathic-treatment-for-neurological-headache-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -684,7 +684,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -692,7 +692,7 @@ export const JointMusculoskeletalSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-ophthalmic-eye-conditions/"
+              href="/homeopathic-treatment-for-ophthalmic-eye-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'ophthalmic-eye-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >

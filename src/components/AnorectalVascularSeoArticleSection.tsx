@@ -73,9 +73,9 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
         'While hemorrhoids are a frequent cause of bright red rectal bleeding, assuming that every episode of rectal bleeding is benign piles can delay the diagnosis of serious colorectal pathology. Conditions such as anal fissures, inflammatory bowel disease (Crohn’s disease or ulcerative colitis), diverticular bleeding, polyps, and colorectal cancer can present with identical or overlapping bleeding symptoms. Any rectal bleeding—especially if accompanied by altered bowel habits, unexplained weight loss, fatigue, persistent mucus, or in individuals over 40—requires a formal clinical examination (such as digital rectal exam, anoscopy, or colonoscopy) by a qualified physician.',
     },
     {
-      question: 'Can homoeopathy cure a complex perianal fistula without surgical evaluation?',
+      question: 'Can homeopathy cure a complex perianal fistula without surgical evaluation?',
       answer:
-        'A perianal fistula (fistula-in-ano) is a chronic epithelialized abnormal tract that connects the anal canal to the perianal skin. While homoeopathic supportive care can assist in symptom relief, wound healing support, and managing constitutional factors, reliable scientific evidence has not shown that homoeopathic remedies can eliminate complex epithelialized fistula tracts or replace surgical evaluation. Because complex fistulas carry risks of branching, recurrent abscesses, and sphincter damage, patients should be evaluated with appropriate imaging (such as MRI fistulogram) and reviewed by a colorectal or general surgeon.',
+        'A perianal fistula (fistula-in-ano) is a chronic epithelialized abnormal tract that connects the anal canal to the perianal skin. While homeopathic supportive care can assist in symptom relief, wound healing support, and managing constitutional factors, reliable scientific evidence has not shown that homeopathic remedies can eliminate complex epithelialized fistula tracts or replace surgical evaluation. Because complex fistulas carry risks of branching, recurrent abscesses, and sphincter damage, patients should be evaluated with appropriate imaging (such as MRI fistulogram) and reviewed by a colorectal or general surgeon.',
     },
     {
       question: 'What is the fundamental difference between an anal fissure and hemorrhoids?',
@@ -118,7 +118,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             id="anorectal-vascular-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Anorectal &amp; Vascular Homoeopathic Clinic in Malappuram
+            Anorectal &amp; Vascular Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -145,13 +145,13 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             Anorectal and vascular health are important aspects of overall well-being. Conditions such as hemorrhoids (piles), painful anal fissures, perianal fistulas, and lower-extremity varicose veins can cause discomfort, interfere with everyday activities, and affect quality of life. Recognizing symptoms early and obtaining an appropriate medical assessment can help individuals understand their condition and make informed decisions about care.
           </p>
           <p>
-            The <strong className="text-[#1E2559] font-semibold">Anorectal &amp; Vascular Homoeopathic Clinic in Malappuram</strong> provides a setting for discussing concerns related to anorectal discomfort and visible or symptomatic leg veins. People searching for an <strong className="text-[#1E2559] font-semibold">Anorectal Consultation in Malappuram</strong> may be experiencing rectal bleeding, pain during bowel movements, swelling around the anus, or persistent discharge. Others seeking a <strong className="text-[#1E2559] font-semibold">Vascular Consultation in Malappuram</strong> may have concerns about prominent leg veins, leg heaviness, ankle swelling, or discomfort after prolonged standing.
+            The <strong className="text-[#1E2559] font-semibold">Anorectal &amp; Vascular Homeopathic Clinic in Malappuram</strong> provides a setting for discussing concerns related to anorectal discomfort and visible or symptomatic leg veins. People searching for an <strong className="text-[#1E2559] font-semibold">Anorectal Consultation in Malappuram</strong> may be experiencing rectal bleeding, pain during bowel movements, swelling around the anus, or persistent discharge. Others seeking a <strong className="text-[#1E2559] font-semibold">Vascular Consultation in Malappuram</strong> may have concerns about prominent leg veins, leg heaviness, ankle swelling, or discomfort after prolonged standing.
           </p>
           <p>
             Although these conditions affect distinct anatomical regions, they often share underlying physiological risk factors, such as increased venous congestion, elevated intra-abdominal pressure, chronic straining, sedentary habits, occupational standing, and pelvic circulatory impairment. Early clinical evaluation ensures accurate differentiation between benign functional conditions and deeper pathologies requiring surgical or vascular intervention.
           </p>
           <p>
-            It is essential to distinguish between supportive homoeopathic consultations and necessary medical or surgical interventions. Advanced hemorrhoidal prolapse, acute perianal abscesses, complex branched fistulas, and deep vein thrombosis require prompt conventional clinical, radiologic, and surgical management. Homoeopathy offers supportive and individualized care alongside evidence-based medical diagnostics.
+            It is essential to distinguish between supportive homeopathic consultations and necessary medical or surgical interventions. Advanced hemorrhoidal prolapse, acute perianal abscesses, complex branched fistulas, and deep vein thrombosis require prompt conventional clinical, radiologic, and surgical management. Homeopathy offers supportive and individualized care alongside evidence-based medical diagnostics.
           </p>
         </div>
 
@@ -169,7 +169,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm text-[#1E2559]">
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0 mt-0.5" />
-              <span><strong>Hemorrhoids (Piles):</strong> Swollen anorectal vascular cushions cause rectal bleeding, itching, and swelling. Clinical grading determines whether supportive homoeopathy, dietary adjustments, or surgical evaluation is appropriate.</span>
+              <span><strong>Hemorrhoids (Piles):</strong> Swollen anorectal vascular cushions cause rectal bleeding, itching, and swelling. Clinical grading determines whether supportive homeopathy, dietary adjustments, or surgical evaluation is appropriate.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0 mt-0.5" />
@@ -189,7 +189,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0 mt-0.5" />
-              <span><strong>Evidence-Based &amp; Referral Minded:</strong> Homoeopathy provides complementary symptom relief and lifestyle guidance; urgent red flags require immediate emergency or surgical care.</span>
+              <span><strong>Evidence-Based &amp; Referral Minded:</strong> Homeopathy provides complementary symptom relief and lifestyle guidance; urgent red flags require immediate emergency or surgical care.</span>
             </li>
           </ul>
         </div>
@@ -252,7 +252,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             </div>
 
             <p>
-              Conservative management and supportive homoeopathic consultations focus on reducing venous congestion, improving portal circulation, and restoring natural, effortless bowel evacuations. However, when hemorrhoids progress to severe irreducible prolapse (Grade IV), strangulation, gangrenous tissue changes, or cause chronic blood loss with systemic iron-deficiency anemia, surgical and proctological interventions (such as rubber band ligation, laser hemorrhoidoplasty, or hemorrhoidectomy) are essential.
+              Conservative management and supportive homeopathic consultations focus on reducing venous congestion, improving portal circulation, and restoring natural, effortless bowel evacuations. However, when hemorrhoids progress to severe irreducible prolapse (Grade IV), strangulation, gangrenous tissue changes, or cause chronic blood loss with systemic iron-deficiency anemia, surgical and proctological interventions (such as rubber band ligation, laser hemorrhoidoplasty, or hemorrhoidectomy) are essential.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               Fissures that persist beyond six weeks often develop chronic anatomical features, including an external skin tag (sentinel pile), a hypertrophied anal papilla at the proximal end, and visible horizontal fibers of the internal anal sphincter at the base of the ulcer. 
             </p>
             <p>
-              Supportive measures include warm sitz baths to relax sphincter muscle hypertonicity, dietary modification with abundant soluble fiber and water, and individualized constitutional homoeopathy. Furthermore, fissures located in atypical positions (lateral or multiple) warrant thorough medical investigation to rule out inflammatory bowel disease (Crohn’s disease), sexually transmitted infections, or neoplasia.
+              Supportive measures include warm sitz baths to relax sphincter muscle hypertonicity, dietary modification with abundant soluble fiber and water, and individualized constitutional homeopathy. Furthermore, fissures located in atypical positions (lateral or multiple) warrant thorough medical investigation to rule out inflammatory bowel disease (Crohn’s disease), sexually transmitted infections, or neoplasia.
             </p>
           </div>
         </div>
@@ -328,7 +328,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             </div>
 
             <p>
-              Homoeopathic consultations can provide supportive adjunctive care focused on constitutional health, reduction of chronic perianal inflammation, and post-procedural comfort. However, homoeopathy must never replace surgical diagnosis or urgent drainage when an acute locked abscess is present.
+              Homeopathic consultations can provide supportive adjunctive care focused on constitutional health, reduction of chronic perianal inflammation, and post-procedural comfort. However, homeopathy must never replace surgical diagnosis or urgent drainage when an acute locked abscess is present.
             </p>
           </div>
         </div>
@@ -368,7 +368,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             </div>
 
             <p>
-              A lower-limb venous duplex ultrasound scan is the gold standard diagnostic tool to map incompetent saphenofemoral or saphenopopliteal junctions and assess the patency of deep veins. Supportive non-surgical management includes graduated compression stockings, calf muscle pump activation exercises, avoiding prolonged stationary standing, and constitutional homoeopathic care for vascular tone and systemic comfort.
+              A lower-limb venous duplex ultrasound scan is the gold standard diagnostic tool to map incompetent saphenofemoral or saphenopopliteal junctions and assess the patency of deep veins. Supportive non-surgical management includes graduated compression stockings, calf muscle pump activation exercises, avoiding prolonged stationary standing, and constitutional homeopathic care for vascular tone and systemic comfort.
             </p>
           </div>
         </div>
@@ -412,7 +412,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               </div>
             </div>
             <p>
-              The consultation clarifies whether your condition can be managed safely with supportive homoeopathic constitutional care, lifestyle adaptation, and conservative measures, or whether formal referral for surgical intervention or further endoscopic investigation is medically indicated.
+              The consultation clarifies whether your condition can be managed safely with supportive homeopathic constitutional care, lifestyle adaptation, and conservative measures, or whether formal referral for surgical intervention or further endoscopic investigation is medically indicated.
             </p>
           </div>
         </div>
@@ -467,7 +467,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
             </h3>
           </div>
           <p className="text-sm text-[#7F1D1D] leading-relaxed">
-            Homoeopathy provides supportive consultation. Certain anorectal and vascular symptoms represent serious medical emergencies requiring immediate hospital emergency department evaluation or urgent surgical intervention:
+            Homeopathy provides supportive consultation. Certain anorectal and vascular symptoms represent serious medical emergencies requiring immediate hospital emergency department evaluation or urgent surgical intervention:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm text-[#991B1B] pt-2">
             <div className="flex items-start gap-2 bg-white/70 p-3 rounded-xl border border-[#FECACA]">
@@ -554,7 +554,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -562,7 +562,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -570,7 +570,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -578,7 +578,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
+              href="/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -586,7 +586,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-neurological-headache-conditions/"
+              href="/homeopathic-treatment-for-neurological-headache-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -594,7 +594,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -602,7 +602,7 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-ophthalmic-eye-conditions/"
+              href="/homeopathic-treatment-for-ophthalmic-eye-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'ophthalmic-eye-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -610,8 +610,8 @@ export const AnorectalVascularSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
               <span>Malappuram Clinic Guide</span>

@@ -180,8 +180,8 @@ export const OphthalmicEyeCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/',
                 name: 'Eye Care Homeopathic Consultation in Malappuram',
                 description:
                   'Explore eye health consultations at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about common eye concerns, symptoms and appropriate healthcare options.',
@@ -220,7 +220,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Eye Care Homeopathic Consultation in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/',
                   },
                 ],
               },
@@ -298,7 +298,7 @@ export const OphthalmicEyeCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Ophthalmic &amp; Eye Conditions
+                Homeopathic Treatment for Ophthalmic &amp; Eye Conditions
               </h1>
 
               {/* Lead Narrative */}

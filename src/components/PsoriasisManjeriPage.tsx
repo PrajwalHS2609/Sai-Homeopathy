@@ -92,7 +92,7 @@ export const PsoriasisManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'High-quality scientific trials have not established homoeopathy as an effective treatment, cure, or recurrence preventative for psoriasis.',
+      desc: 'High-quality scientific trials have not established homeopathy as an effective treatment, cure, or recurrence preventative for psoriasis.',
     },
     {
       title: 'Do Not Stop Prescriptions',
@@ -240,9 +240,9 @@ export const PsoriasisManjeriPage: React.FC = () => {
         'You can consult qualified healthcare professionals, dermatology clinics, and physician centres in and around Manjeri. A medical practitioner will assess the extent of plaque involvement, rule out fungal or eczematous mimics, provide comprehensive evidence-based treatment guidance (emollients, prescription topicals, phototherapy, or systemic therapies), and arrange dermatologist referral when necessary.',
     },
     {
-      question: '2. Is Homoeopathic Treatment for Psoriasis in Manjeri effective?',
+      question: '2. Is Homeopathic Treatment for Psoriasis in Manjeri effective?',
       answer:
-        'Reliable, high-quality scientific clinical trials have not established homoeopathy as an effective medical treatment or cure for psoriasis, nor has it been shown to prevent long-term disease recurrence. Because psoriasis is an immune-mediated chronic disease with systemic inflammation, delaying proven medical treatments can lead to worsening plaques and joint damage. Patients are strongly advised never to stop prescribed conventional medications.',
+        'Reliable, high-quality scientific clinical trials have not established homeopathy as an effective medical treatment or cure for psoriasis, nor has it been shown to prevent long-term disease recurrence. Because psoriasis is an immune-mediated chronic disease with systemic inflammation, delaying proven medical treatments can lead to worsening plaques and joint damage. Patients are strongly advised never to stop prescribed conventional medications.',
     },
     {
       question: '3. What are the common symptoms of psoriasis?',
@@ -309,7 +309,7 @@ export const PsoriasisManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#E11D48]" />}
         badgeText="Regional Clinical Psoriasis Guide • Manjeri Patients"
-        title="Psoriasis Homoeopathic Treatment in Manjeri"
+        title="Psoriasis Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for adults and families in Manjeri and Malappuram experiencing chronic plaque psoriasis, scalp scaling, guttate eruptions, flare-up triggers, and skin barrier compromise."
         metrics={[
           { label: 'Condition Category', value: 'Chronic Plaque & Scalp' },
@@ -552,7 +552,7 @@ export const PsoriasisManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Exploring Homoeopathic Treatment for Psoriasis in Manjeri */}
+      {/* Exploring Homeopathic Treatment for Psoriasis in Manjeri */}
       <section className="py-14 bg-[#F8FAFD] border-b border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 font-sans">
           
@@ -561,13 +561,13 @@ export const PsoriasisManjeriPage: React.FC = () => {
               CLINICAL EVIDENCE &amp; SCIENTIFIC TRANSPARENCY
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-              Exploring Homoeopathic Treatment for Psoriasis in Manjeri
+              Exploring Homeopathic Treatment for Psoriasis in Manjeri
             </h2>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              Some people search for <strong className="text-[#1E2559]">Homoeopathy for Psoriasis in Manjeri</strong> because they are interested in homoeopathy or want to discuss different approaches to managing recurring skin symptoms.
+              Some people search for <strong className="text-[#1E2559]">Homeopathy for Psoriasis in Manjeri</strong> because they are interested in homeopathy or want to discuss different approaches to managing recurring skin symptoms.
             </p>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              A consultation with a qualified homoeopathic practitioner may provide an opportunity to discuss the history of the skin condition, previous treatments, the pattern of flare-ups, and concerns about long-term management.
+              A consultation with a qualified homeopathic practitioner may provide an opportunity to discuss the history of the skin condition, previous treatments, the pattern of flare-ups, and concerns about long-term management.
             </p>
           </div>
 
@@ -577,10 +577,10 @@ export const PsoriasisManjeriPage: React.FC = () => {
               <span>Scientific Evidence &amp; Systemic Risk Disclosure</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              However, it is important to understand the scientific evidence. There is insufficient reliable scientific evidence to establish homoeopathy as an effective treatment for psoriasis. It has not been shown reliably to cure psoriasis or prevent its recurrence.
+              However, it is important to understand the scientific evidence. There is insufficient reliable scientific evidence to establish homeopathy as an effective treatment for psoriasis. It has not been shown reliably to cure psoriasis or prevent its recurrence.
             </p>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              Psoriasis is an immune-mediated condition that may require ongoing management. Delaying effective treatment can allow symptoms to worsen and may increase the risk of complications in some people. Anyone considering Homoeopathic Treatment for Psoriasis in Manjeri should discuss the evidence and limitations with a qualified healthcare professional. Do not stop prescribed medicines, postpone recommended treatment, or discontinue specialist follow-up in favour of an unproven approach.
+              Psoriasis is an immune-mediated condition that may require ongoing management. Delaying effective treatment can allow symptoms to worsen and may increase the risk of complications in some people. Anyone considering Homeopathic Treatment for Psoriasis in Manjeri should discuss the evidence and limitations with a qualified healthcare professional. Do not stop prescribed medicines, postpone recommended treatment, or discontinue specialist follow-up in favour of an unproven approach.
             </p>
             <p className="text-xs text-[#64748B] italic pt-1">
               The goal should be to manage symptoms safely, protect skin health, and ensure that any treatment decisions are based on informed discussion.
@@ -788,7 +788,7 @@ export const PsoriasisManjeriPage: React.FC = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-white border border-[#FECDD3] text-xs text-[#475569]">
-            People searching for a <strong className="text-[#1E2559]">Psoriasis Clinic in Manjeri</strong> or a <strong className="text-[#1E2559]">Psoriasis Homoeopathy Clinic in Manjeri</strong> should check practitioner qualifications and confirm which services are actually available. If you are considering homoeopathy, ask about the quality of evidence, possible risks, and how the proposed approach fits alongside established medical care. Do not allow an unproven treatment to delay appropriate assessment or effective therapy.
+            People searching for a <strong className="text-[#1E2559]">Psoriasis Clinic in Manjeri</strong> or a <strong className="text-[#1E2559]">Psoriasis Homeopathy Clinic in Manjeri</strong> should check practitioner qualifications and confirm which services are actually available. If you are considering homeopathy, ask about the quality of evidence, possible risks, and how the proposed approach fits alongside established medical care. Do not allow an unproven treatment to delay appropriate assessment or effective therapy.
           </div>
 
         </div>
@@ -807,7 +807,7 @@ export const PsoriasisManjeriPage: React.FC = () => {
             Psoriasis is a chronic inflammatory skin condition that can cause scaling, itching, thickened patches, and recurring flare-ups. It may affect the skin, scalp, nails, and, in some people, the joints. Although psoriasis can be persistent, appropriate medical treatment and regular skincare can help many people manage symptoms and improve quality of life.
           </p>
           <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-            If you are searching for Psoriasis Treatment in Manjeri, start with an accurate assessment and a discussion of the available evidence-based options. People interested in Homoeopathic Treatment for Psoriasis in Manjeri should understand that reliable scientific evidence does not establish homoeopathy as an effective treatment for psoriasis. Avoid stopping prescribed medicines or delaying dermatology care in favour of an unproven approach.
+            If you are searching for Psoriasis Treatment in Manjeri, start with an accurate assessment and a discussion of the available evidence-based options. People interested in Homeopathic Treatment for Psoriasis in Manjeri should understand that reliable scientific evidence does not establish homeopathy as an effective treatment for psoriasis. Avoid stopping prescribed medicines or delaying dermatology care in favour of an unproven approach.
           </p>
           <div className="pt-2">
             <button

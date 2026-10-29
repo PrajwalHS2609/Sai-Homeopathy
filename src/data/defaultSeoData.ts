@@ -2,13 +2,589 @@ import { PageSeoMetadata } from '../types/seo';
 
 export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   {
+    id: "blog-eczema-vs-psoriasis",
+    pageName: "Blog: Eczema vs Psoriasis How to Understand the Differences",
+    category: "blog",
+    path: "/eczema-vs-psoriasis-how-to-understand-the-differences/",
+    title: "Eczema vs. Psoriasis: How to Understand the Differences | Anjali Homoeo Clinic",
+    description: "Learn the key differences between eczema and psoriasis: compare symptoms, underlying causes, typical body locations, diagnostic tests, treatments, and home care.",
+    url: "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Eczema_vs_Psoriasis__Understanding_Differences_b0c63b9d.png",
+    twitterCard: "summary_large_image",
+    keywords: "Eczema vs psoriasis, differences between eczema and psoriasis, atopic dermatitis, plaque psoriasis, itchy skin, silvery scales, homeopathic eczema treatment, homeopathic psoriasis Malappuram Kerala",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": "BlogPosting",
+                  "@id": "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/#article",
+                  "headline": "Eczema vs. Psoriasis: How to Understand the Differences",
+                  "description": "Comprehensive medical guide comparing eczema and psoriasis: explore symptom differences, immune causes, diagnostic tests, treatments, and home care.",
+                  "image": "https://anjalihomoeoclinic.com/assets/aistudio/Eczema_vs_Psoriasis__Understanding_Differences_b0c63b9d.png",
+                  "url": "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/",
+                  "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/"
+                  },
+                  "author": {
+                        "@type": "Person",
+                        "name": "Dr. Anjali Chandrasekhar",
+                        "jobTitle": "Senior Homeopathic Physician"
+                  },
+                  "publisher": {
+                        "@type": "MedicalClinic",
+                        "name": "Anjali Homoeo Clinic",
+                        "url": "https://anjalihomoeoclinic.com/"
+                  },
+                  "datePublished": "2026-10-29",
+                  "dateModified": "2026-10-29"
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://anjalihomoeoclinic.com/eczema-vs-psoriasis-how-to-understand-the-differences/#faq",
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "What is the main difference between eczema and psoriasis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Eczema is commonly associated with a weakened skin barrier, dryness, inflammation, and intense itching. Psoriasis is an immune-mediated condition that causes faster skin cell turnover, often resulting in raised, well-defined plaques with thick scales. Both conditions can itch and produce inflamed skin, so a medical assessment may be needed to distinguish them."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is eczema or psoriasis more itchy?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Eczema is often associated with particularly intense itching, which may interfere with sleep. Psoriasis can also cause significant itching, burning, or discomfort. The level of itching varies according to the individual and the severity of the condition."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can eczema turn into psoriasis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Eczema does not ordinarily transform into psoriasis because they are different conditions. However, their symptoms can overlap, and someone may develop both. If a rash changes appearance or fails to respond to treatment, a dermatologist can reassess the diagnosis."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Are eczema and psoriasis contagious?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "No. Neither eczema nor psoriasis is contagious. They cannot be spread through touching, sharing clothing, or ordinary social contact. Some infections can trigger or worsen certain inflammatory skin conditions, but that does not make eczema or psoriasis infectious."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can stress cause eczema or psoriasis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Stress may trigger or worsen flares in some people with eczema or psoriasis. However, stress is not the sole cause of either condition. Genetic susceptibility, immune activity, skin barrier function, environmental exposures, and other factors contribute to their development."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can eczema and psoriasis affect the scalp?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Eczema-related conditions, particularly seborrhoeic dermatitis and atopic dermatitis, can affect the scalp. Scalp psoriasis may produce thick, clearly defined plaques with visible scaling. The two can sometimes look similar, and other conditions, including fungal infections, may also cause scalp symptoms."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Which condition is more serious?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Neither condition is automatically more serious in every case. Mild eczema and mild psoriasis may be manageable with topical treatment, while severe forms of either can substantially affect quality of life. Psoriasis can be associated with psoriatic arthritis and other health conditions. Severe eczema can lead to skin infections, sleep disruption, and significant discomfort. The severity and complications of each person's condition determine the level of care needed."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can diet improve eczema or psoriasis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "A balanced diet supports general health, but no single diet reliably cures eczema or psoriasis. Some people have specific food allergies or notice individual dietary associations, but unnecessary restrictions can create nutritional problems. Discuss suspected food triggers with a qualified healthcare professional, particularly when considering dietary changes for children."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can I use the same cream for eczema and psoriasis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Not necessarily. Some treatments, such as moisturizers and certain prescription anti-inflammatory medicines, may be used for both conditions. However, the appropriate product, strength, location, and duration may differ. A cream that helps one condition may not adequately treat another. Confirm the diagnosis and follow the instructions provided by your clinician or pharmacist."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "When should I seek urgent medical attention?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Seek urgent assessment if a rash is rapidly worsening, the skin becomes extensively painful or blistered, or symptoms occur with fever or significant illness. Widespread redness and scaling, particularly in someone with psoriasis, may require urgent treatment. Persistent joint swelling or stiffness in someone with psoriasis also warrants prompt medical evaluation."
+                              }
+                        }
+                  ]
+            }
+      ]
+}),
+    lastUpdated: "2026-10-29",
+  },
+
+  {
+    id: "blog-tonsillitis",
+    pageName: "Blog: Tonsillitis Symptoms, Causes and Available Treatment Options",
+    category: "blog",
+    path: "/tonsillitis-symptoms-causes-and-available-treatment-options/",
+    title: "Tonsillitis: Symptoms, Causes and Available Treatment Options | Anjali Homoeo Clinic",
+    description: "Comprehensive medical guide on tonsillitis: discover symptoms, viral vs strep throat causes, diagnostic rapid tests, treatments, home care, and when to seek urgent medical care.",
+    url: "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Tonsillitis_Symptoms_and_Treatment_Banner_16c92860.png",
+    twitterCard: "summary_large_image",
+    keywords: "Tonsillitis, tonsillitis symptoms, swollen tonsils, painful swallowing, strep throat, rapid strep test, tonsillectomy, white spots on tonsils, homeopathic tonsillitis treatment Malappuram Kerala",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": "BlogPosting",
+                  "@id": "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/#article",
+                  "headline": "Tonsillitis: Symptoms, Causes and Available Treatment Options",
+                  "description": "Comprehensive medical guide on tonsillitis: discover symptoms, viral vs strep throat causes, diagnostic rapid tests, treatments, home care, and when to seek urgent medical care.",
+                  "image": "https://anjalihomoeoclinic.com/assets/aistudio/Tonsillitis_Symptoms_and_Treatment_Banner_16c92860.png",
+                  "url": "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/",
+                  "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/"
+                  },
+                  "author": {
+                        "@type": "Person",
+                        "name": "Dr. Anjali Chandrasekhar",
+                        "jobTitle": "Senior Homeopathic Physician"
+                  },
+                  "publisher": {
+                        "@type": "MedicalClinic",
+                        "name": "Anjali Homoeo Clinic",
+                        "url": "https://anjalihomoeoclinic.com/"
+                  },
+                  "datePublished": "2026-10-29",
+                  "dateModified": "2026-10-29"
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://anjalihomoeoclinic.com/tonsillitis-symptoms-causes-and-available-treatment-options/#faq",
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "How Long Does Tonsillitis Last?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Many cases of acute tonsillitis improve within several days and resolve within around one or two weeks. The duration depends on the cause, severity, and individual health. Symptoms that persist, worsen, or repeatedly return should be assessed by a healthcare professional."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is Tonsillitis Contagious?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The infections that cause tonsillitis can be contagious. Viral infections and group A streptococcal infections can spread through respiratory droplets and particles or close contact. Good hand hygiene, avoiding shared personal items, and following medical advice can help reduce transmission."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can Tonsillitis Go Away Without Antibiotics?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Viral tonsillitis generally improves without antibiotics. Supportive care, including rest, fluids, and appropriate pain relief, can help manage symptoms. Bacterial infections such as confirmed group A streptococcal throat infection may require antibiotics. A healthcare professional can determine whether testing and treatment are needed."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Do White Spots on the Tonsils Always Mean a Bacterial Infection?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "No. White spots or patches can occur in both bacterial and viral infections. Their presence alone does not establish the cause. A clinician may consider the overall symptoms, examination findings, and appropriate testing before recommending antibiotics."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "What Is the Fastest Way to Recover From Tonsillitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "There is no single treatment that guarantees immediate recovery. Getting adequate rest, drinking enough fluids, using appropriate pain relief, and following medical advice can help. If a bacterial infection requires antibiotics, taking the prescribed treatment as directed is important. Antibiotics will not speed recovery from an ordinary viral infection."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can Adults Get Tonsillitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Although tonsillitis is common among children and teenagers, adults can develop it too. Adults should seek medical assessment for severe or persistent throat pain, fever, difficulty swallowing, recurrent infections, or other concerning symptoms."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "When Are Antibiotics Needed for Tonsillitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Antibiotics may be needed when a bacterial infection, particularly group A streptococcal infection, is confirmed or otherwise considered sufficiently likely under the applicable clinical guidelines. They are not effective against viruses. The decision to prescribe antibiotics should be based on clinical assessment and, when appropriate, diagnostic testing."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is Tonsillectomy Necessary for Recurrent Tonsillitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Not always. Many people with recurrent sore throats do not need surgery. Tonsillectomy may be considered when episodes are frequent, documented, sufficiently severe, and disruptive, or when complications or obstructive symptoms are present. An ear, nose, and throat specialist can discuss the potential benefits, risks, and alternatives based on the patient's medical history."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can Tonsillitis Cause Bad Breath?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Inflammation and changes in the mouth's environment can contribute to bad breath during tonsillitis. If bad breath continues after the infection resolves, other causes such as tonsil stones, dental problems, gum disease, or dry mouth may need to be considered."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is Tonsillitis Dangerous?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Most uncomplicated cases resolve without serious complications. However, some cases can lead to dehydration, an abscess around a tonsil, or other problems. Difficulty breathing, inability to swallow saliva, rapidly increasing swelling, or severe deterioration requires urgent medical attention."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can You Prevent Tonsillitis Completely?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "No. Because many different viruses and bacteria can cause tonsillitis, complete prevention is not possible. Hand hygiene, avoiding shared personal items, reducing close contact during illness, and following appropriate treatment advice can lower the risk of spreading infection."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can Tonsillitis Return After Treatment?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. A person can develop tonsillitis again after recovering from an earlier episode because new infections can occur. Repeated episodes should be assessed to determine the likely causes, whether testing is needed, and whether additional treatment or specialist referral may be appropriate."
+                              }
+                        }
+                  ]
+            }
+      ]
+}),
+    lastUpdated: "2026-10-29",
+  },
+
+  {
+    id: "blog-persistent-cough",
+    pageName: "Blog: Persistent Cough Common Causes and When to See a Doctor",
+    category: "blog",
+    path: "/persistent-cough-common-causes-and-when-to-see-a-doctor/",
+    title: "Persistent Cough: Common Causes and When to See a Doctor | Anjali Homoeo Clinic",
+    description: "Comprehensive clinical guide on persistent cough: explore dry vs productive coughs, post-viral causes, asthma, GERD, diagnostic evaluations, treatments, and warning signs.",
+    url: "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Persistent_Cough__Causes_and_Care_ad58bb6f.png",
+    twitterCard: "summary_large_image",
+    keywords: "Persistent cough, chronic cough causes, dry cough, cough with phlegm, post-viral cough, asthma cough, GERD cough, homeopathic cough treatment Malappuram Kerala",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": "BlogPosting",
+                  "@id": "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/#article",
+                  "headline": "Persistent Cough: Common Causes and When to See a Doctor",
+                  "description": "Comprehensive medical guide on persistent cough: understand dry vs. productive coughs, post-viral causes, asthma, acid reflux, diagnostic tests, treatments, and when to seek medical care.",
+                  "image": "https://anjalihomoeoclinic.com/assets/aistudio/Persistent_Cough__Causes_and_Care_ad58bb6f.png",
+                  "url": "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/",
+                  "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/"
+                  },
+                  "author": {
+                        "@type": "Person",
+                        "name": "Dr. Anjali Chandrasekhar",
+                        "jobTitle": "Senior Homeopathic Physician"
+                  },
+                  "publisher": {
+                        "@type": "MedicalClinic",
+                        "name": "Anjali Homoeo Clinic",
+                        "url": "https://anjalihomoeoclinic.com/"
+                  },
+                  "datePublished": "2026-10-29",
+                  "dateModified": "2026-10-29"
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://anjalihomoeoclinic.com/persistent-cough-common-causes-and-when-to-see-a-doctor/#faq",
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "How long is too long for a cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "An acute cough usually lasts less than three weeks. A cough lasting three to eight weeks is often classified as subacute, while a cough lasting more than eight weeks in adults is considered chronic. A child with a daily cough lasting more than four weeks should generally be assessed. Seek medical advice sooner if symptoms worsen or warning signs appear."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "What is the most common cause of a persistent cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Common causes include a cough following a viral infection, asthma, upper airway conditions such as allergic rhinitis, and acid reflux. Smoking, COPD, medication effects, and other respiratory conditions may also contribute. The most likely cause depends on the person's symptoms, medical history, exposures, and examination findings."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Why does my cough get worse at night?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Night-time coughing may be associated with asthma, acid reflux, nasal congestion, or mucus draining into the throat. Bedroom allergens and dry or irritating air may also contribute. If the cough repeatedly disrupts sleep or is accompanied by wheezing or breathlessness, arrange a medical assessment."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can allergies cause a persistent cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Allergic rhinitis can cause nasal inflammation, congestion, and throat irritation that trigger coughing. Allergies may also coexist with asthma. A clinician can help determine whether allergy treatment is appropriate and whether another condition may be contributing."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can acid reflux cause a cough without heartburn?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. Some people with reflux-related coughing do not experience typical heartburn. However, a cough alone does not prove that reflux is responsible. A healthcare professional can assess the pattern of symptoms and decide whether lifestyle measures, treatment, or further investigation is appropriate."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is a persistent cough always a sign of a serious illness?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "No. Many persistent coughs occur after respiratory infections or are associated with treatable conditions such as asthma, allergies, and reflux. Nevertheless, a cough that remains unexplained, worsens, or occurs with warning signs should be evaluated."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Should I take antibiotics for a persistent cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Not necessarily. Antibiotics treat certain bacterial infections but do not work against viruses and are not routinely appropriate for every prolonged cough. A clinician should determine whether a bacterial infection is likely and whether antibiotics are indicated."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "What does green or yellow phlegm mean?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Green or yellow sputum can occur during respiratory infections and inflammation. Its colour alone cannot reliably establish whether an infection is bacterial or whether antibiotics are needed. The duration of symptoms, fever, breathing difficulties, examination findings, and other clinical factors are more informative."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can stress cause a persistent cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Stress can intensify the perception of symptoms and may contribute to certain patterns of coughing, but it should not be assumed to be the cause of an unexplained persistent cough. Medical causes should be considered first, particularly when symptoms are new, prolonged, or associated with other warning signs."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "When should I worry about coughing up blood?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Blood in the sputum should be assessed promptly, even if the amount appears small. Seek emergency care if there is substantial bleeding, severe breathlessness, chest pain, faintness, or rapid deterioration."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can a persistent cough damage the body?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Frequent coughing can cause muscle soreness, throat irritation, sleep disruption, headaches, urinary leakage, and exhaustion. Severe coughing can occasionally cause more significant complications. More importantly, a prolonged cough may be a sign of an underlying condition that needs treatment."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "What is the best medicine for a persistent cough?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "There is no single best medicine for every persistent cough. Treatment depends on the cause, which may include asthma, reflux, allergies, infection, or medication effects. A healthcare professional can recommend targeted treatment rather than relying on a product that only temporarily suppresses symptoms."
+                              }
+                        }
+                  ]
+            }
+      ]
+}),
+    lastUpdated: "2026-10-29",
+  },
+
+  {
+    id: "blog-allergic-rhinitis",
+    pageName: "Blog: Allergic Rhinitis Symptoms, Causes and Treatment Options",
+    category: "blog",
+    path: "/allergic-rhinitis-symptoms-causes-and-treatment-options/",
+    title: "Allergic Rhinitis: Symptoms, Causes and Treatment Options | Anjali Homoeo Clinic",
+    description: "Comprehensive clinical guide on allergic rhinitis: discover symptoms, pollen & dust mite triggers, diagnostic skin-prick testing, medication options, and prevention tips.",
+    url: "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/images/allergic-rhinitis-symptoms-causes-treatment-banner.jpg",
+    twitterCard: "summary_large_image",
+    keywords: "Allergic rhinitis, allergic rhinitis symptoms, causes of nasal allergy, hay fever treatment, seasonal allergic rhinitis, perennial allergic rhinitis, dust mite allergy, pollen allergy, homeopathic allergy treatment Malappuram Kerala",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+            {
+                  "@type": "BlogPosting",
+                  "@id": "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/#article",
+                  "headline": "Allergic Rhinitis: Symptoms, Causes and Treatment Options",
+                  "description": "Comprehensive medical guide exploring allergic rhinitis symptoms, causes, diagnostic testing, medical treatments, prevention tips, and expert clinical advice.",
+                  "image": "https://anjalihomoeoclinic.com/images/allergic-rhinitis-symptoms-causes-treatment-banner.jpg",
+                  "url": "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/",
+                  "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/"
+                  },
+                  "author": {
+                        "@type": "Person",
+                        "name": "Dr. Anjali Chandrasekhar",
+                        "jobTitle": "Senior Homeopathic Physician"
+                  },
+                  "publisher": {
+                        "@type": "MedicalClinic",
+                        "name": "Anjali Homoeo Clinic",
+                        "url": "https://anjalihomoeoclinic.com/"
+                  },
+                  "datePublished": "2026-10-29",
+                  "dateModified": "2026-10-29"
+            },
+            {
+                  "@type": "FAQPage",
+                  "@id": "https://anjalihomoeoclinic.com/allergic-rhinitis-symptoms-causes-and-treatment-options/#faq",
+                  "mainEntity": [
+                        {
+                              "@type": "Question",
+                              "name": "What is the main cause of allergic rhinitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Allergic rhinitis is caused by an immune reaction to allergens such as pollen, dust mite allergens, animal dander, or mould. The relevant trigger differs between individuals."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "What are the first signs of allergic rhinitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Common early symptoms include repeated sneezing, an itchy nose, clear nasal discharge, and itchy or watery eyes. Symptoms may begin shortly after exposure to a relevant allergen."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "How can I tell allergic rhinitis from a cold?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Allergic rhinitis often causes itching, repeated sneezing, and watery discharge, especially after exposure to a known trigger. A cold is caused by a virus and commonly improves over several days. However, symptoms overlap, so medical assessment may be needed when the cause is uncertain."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Is allergic rhinitis a lifelong condition?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "It can be persistent, intermittent, or seasonal. Some people experience changes in symptoms over time, while others continue to react to the same allergens. The course varies between individuals."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Which medicine is best for allergic rhinitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "There is no single best medicine for everyone. Intranasal corticosteroids are commonly used for persistent symptoms, while antihistamines can help with sneezing, itching, and a runny nose. The best choice depends on symptom severity, age, medical history, and individual response."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can allergic rhinitis be cured permanently?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "There is no universal permanent cure. Many people can achieve good symptom control with allergen management and appropriate treatment. Allergen immunotherapy may provide sustained benefits for selected patients, but it is not suitable for everyone and does not guarantee a permanent cure."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can allergic rhinitis cause headaches?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Nasal congestion and coexisting sinus problems may contribute to facial pressure or discomfort. However, headaches have many possible causes. Severe, recurrent, or unusual headaches should be evaluated rather than automatically attributed to nasal allergies."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Does allergic rhinitis cause coughing?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "It can contribute to coughing through postnasal drip or throat irritation. However, persistent coughing may also be associated with asthma, reflux, infection, or other conditions and may need further assessment."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Are nasal sprays safe for long-term use?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Safety depends on the type of nasal spray. Intranasal corticosteroids are commonly used for ongoing allergic rhinitis when appropriate, with attention to dose and side effects. Decongestant nasal sprays can cause rebound congestion if used for too long. Always follow the product instructions or your clinician's advice."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Can children outgrow allergic rhinitis?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Symptoms can change as children grow, but the condition does not disappear in every child. Appropriate assessment and symptom management remain important when allergies affect sleep, school, or daily activities."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "Does avoiding dust completely prevent allergies?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Complete avoidance is rarely possible, and not every person with nasal symptoms is allergic to dust mite allergens. Identifying relevant triggers and using practical exposure-reduction measures is more useful than trying to eliminate every particle of dust."
+                              }
+                        },
+                        {
+                              "@type": "Question",
+                              "name": "When should allergic rhinitis be treated by a specialist?",
+                              "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "An allergy specialist or ear, nose, and throat specialist may be helpful when symptoms are severe, persistent, difficult to diagnose, or poorly controlled despite appropriate treatment. Specialist assessment may also be useful when considering allergen immunotherapy."
+                              }
+                        }
+                  ]
+            }
+      ]
+}),
+    lastUpdated: "2026-10-29",
+  },
+
+  {
     id: 'home',
     pageName: 'Homepage',
     category: 'core',
     path: '/',
-    title: 'Homeopathic Clinic in Malappuram, Keralam | Homoeopathic Treatment near Malappuram',
+    title: 'Homeopathic Clinic in Malappuram, Keralam | Homeopathic Treatment near Malappuram',
     description:
-      'Anjali Homoeo Clinic in Malappuram, Kerala, offers personalized homoeopathic consultations for various health concerns, with an individual-focused approach to healthcare.',
+      'Anjali Homoeo Clinic in Malappuram, Kerala, offers personalized homeopathic consultations for various health concerns, with an individual-focused approach to healthcare.',
     url: 'https://anjalihomoeoclinic.com/',
     canonicalUrl: 'https://anjalihomoeoclinic.com/',
     ogType: 'website',
@@ -26,7 +602,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
             '@id': 'https://anjalihomoeoclinic.com/#clinic',
             name: 'Anjali Homoeo Clinic',
             description:
-              'Anjali Homoeo Clinic in Malappuram, Kerala, offers personalized homoeopathic consultations for various health concerns, with an individual-focused approach to healthcare.',
+              'Anjali Homoeo Clinic in Malappuram, Kerala, offers personalized homeopathic consultations for various health concerns, with an individual-focused approach to healthcare.',
             url: 'https://anjalihomoeoclinic.com/',
             telephone: '098951 01707',
             email: 'anjalihomoeoclinic@gmail.com',
@@ -73,17 +649,17 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
             '@id': 'https://anjalihomoeoclinic.com/#practitioner',
             name: 'Dr. Anjali Chandrasekhar',
             medicalSpecialty: 'Homeopathy',
-            jobTitle: 'Lead Homoeopathic Physician',
+            jobTitle: 'Lead Homeopathic Physician',
             alumniOf: 'BHMS (Bachelor of Homeopathic Medicine and Surgery)',
           },
           {
             '@type': 'MedicalWebPage',
             '@id': 'https://anjalihomoeoclinic.com/#webpage',
-            name: 'Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
-            headline: 'Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            name: 'Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             url: 'https://anjalihomoeoclinic.com/',
             description:
-              'Comprehensive guide to choosing a homoeopathic clinic in Malappuram, Kerala. Patient-focused consultations, verified qualifications (BHMS), transparent communication, and evidence-informed health assessments.',
+              'Comprehensive guide to choosing a homeopathic clinic in Malappuram, Kerala. Patient-focused consultations, verified qualifications (BHMS), transparent communication, and evidence-informed health assessments.',
             about: [
               {
                 '@type': 'MedicalClinic',
@@ -109,13 +685,13 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'womens-health-care',
     pageName: "Women's Health & Gynecological Care",
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-womens-health-gynecological-care/',
+    path: '/homeopathic-treatment-for-womens-health-gynecological-care/',
     title: 'Women’s Health Gynecological Homeopathic Treatment in Malappuram',
     description:
       "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health and personalized consultations.",
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
@@ -128,11 +704,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#webpage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/#webpage',
             name: "Women's Health Consultation in Malappuram – Anjali Homoeo Clinic",
             headline:
               "Women's Health Consultation in Malappuram – Consultations for PCOS, Fibroids & Menopause",
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/',
             description:
               "Explore women's health and gynecological care at Anjali Homoeo Clinic in Malappuram, Kerala. Learn about menstrual health, PCOS, uterine fibroids, and menopause consultations.",
             about: [
@@ -175,7 +751,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-womens-health-gynecological-care/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-womens-health-gynecological-care/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -219,10 +795,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy treat PCOS, fibroids, or menopause symptoms?',
+                name: 'Can homeopathy treat PCOS, fibroids, or menopause symptoms?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not established that homoeopathy effectively treats PCOS, uterine fibroids, or menopause symptoms beyond placebo effects. It should not replace evidence-based treatment or delay medical evaluation.',
+                  text: 'Reliable scientific evidence has not established that homeopathy effectively treats PCOS, uterine fibroids, or menopause symptoms beyond placebo effects. It should not replace evidence-based treatment or delay medical evaluation.',
                 },
               },
             ],
@@ -238,19 +814,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'respiratory-care',
     pageName: 'Respiratory, ENT & Allergy Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+    path: '/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     title:
-      'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
+      'Homeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for respiratory, ENT & allergy conditions in Malappuram. Guidance for sinusitis, dust allergy, chronic cough, asthma support & adenoids.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Homoeopathic doctor for respiratory in Malappuram, homoeopathic clinic for sinus problems in Malappuram, respiratory allergies Malappuram, dust allergy clinic, chronic cough consultation, asthma homeopathy Malappuram, tonsillitis, adenoids children',
+      'Homeopathic doctor for respiratory in Malappuram, homeopathic clinic for sinus problems in Malappuram, respiratory allergies Malappuram, dust allergy clinic, chronic cough consultation, asthma homeopathy Malappuram, tonsillitis, adenoids children',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -258,11 +834,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
-            name: 'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
+            name: 'Homeopathic Doctor for Respiratory, ENT & Allergy Conditions – Anjali Homoeo Clinic',
             headline:
-              'Homoeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+              'Homeopathic Doctor for Respiratory, ENT & Allergy Conditions in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
             description:
               'Comprehensive patient guide to respiratory, ENT, sinus, allergy, chronic cough, asthma, tonsillitis, and voice strain care at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -293,7 +869,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -305,10 +881,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure asthma or replace prescribed inhalers?',
+                name: 'Can homeopathy cure asthma or replace prescribed inhalers?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Reliable scientific evidence has not shown homoeopathy to be an effective replacement for evidence-based asthma treatment. Patients should never discontinue or reduce prescribed inhalers, steroid preventers, or emergency bronchodilators without explicit medical instruction.',
+                  text: 'No. Reliable scientific evidence has not shown homeopathy to be an effective replacement for evidence-based asthma treatment. Patients should never discontinue or reduce prescribed inhalers, steroid preventers, or emergency bronchodilators without explicit medical instruction.',
                 },
               },
               {
@@ -356,18 +932,18 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'skin-hair-care',
     pageName: 'Skin, Hair & Scalp Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
-    title: 'Skin & Hair Homoeopathic Clinic in Malappuram',
+    path: '/homeopathic-treatment-for-skin-hair-scalp-conditions/',
+    title: 'Skin & Hair Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for skin, hair & scalp concerns in Malappuram. Clinical guidance for eczema, psoriasis, acne, melasma, alopecia areata & dandruff.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Skin & hair homoeopathic clinic in Malappuram, homoeopathic skin clinic Malappuram, homoeopathic doctor for skin problems, eczema, psoriasis, acne, melasma, alopecia areata, dandruff, Dr Anjali Chandrasekhar',
+      'Skin & hair homeopathic clinic in Malappuram, homeopathic skin clinic Malappuram, homeopathic doctor for skin problems, eczema, psoriasis, acne, melasma, alopecia areata, dandruff, Dr Anjali Chandrasekhar',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -375,10 +951,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
-            name: 'Skin & Hair Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
-            headline: 'Skin & Hair Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
+            name: 'Skin & Hair Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Skin & Hair Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/',
             description:
               'Comprehensive patient guide to eczema, psoriasis, melasma, cystic acne, hair loss, alopecia areata, dandruff, urticaria, warts, and shingles care at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -410,7 +986,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -422,10 +998,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure chronic eczema or psoriasis?',
+                name: 'Can homeopathy cure chronic eczema or psoriasis?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not established homoeopathy as a curative treatment for eczema or psoriasis. These chronic inflammatory conditions require evidence-based management, skin barrier restoration, and medical supervision to prevent flare-ups, skin infections, and complications such as psoriatic arthritis.',
+                  text: 'Reliable scientific evidence has not established homeopathy as a curative treatment for eczema or psoriasis. These chronic inflammatory conditions require evidence-based management, skin barrier restoration, and medical supervision to prevent flare-ups, skin infections, and complications such as psoriatic arthritis.',
                 },
               },
               {
@@ -473,19 +1049,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'renal-thyroid-care',
     pageName: 'Renal, Urinary, Gallbladder & Thyroid Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+    path: '/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     title:
-      'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram',
+      'Renal, Urinary, Gallbladder & Thyroid Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for kidney stones, urinary calculi, gallstones, hypothyroidism, Hashimoto’s & goiter in Malappuram. Evidence-aware clinical care.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Renal urinary gallbladder thyroid homoeopathic clinic in Malappuram, kidney stone consultation Malappuram, urinary stone consultation, gallbladder stone consultation, hypothyroidism consultation, Hashimoto thyroiditis, goiter Malappuram',
+      'Renal urinary gallbladder thyroid homeopathic clinic in Malappuram, kidney stone consultation Malappuram, urinary stone consultation, gallbladder stone consultation, hypothyroidism consultation, Hashimoto thyroiditis, goiter Malappuram',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -493,11 +1069,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
-            name: 'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
+            name: 'Renal, Urinary, Gallbladder & Thyroid Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             headline:
-              'Renal, Urinary, Gallbladder & Thyroid Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+              'Renal, Urinary, Gallbladder & Thyroid Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
             description:
               'Comprehensive patient guide to renal calculi, ureteral stones, cholelithiasis, hypothyroidism, Hashimoto’s thyroiditis, and goiter consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -526,7 +1102,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -538,15 +1114,15 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathic remedies dissolve kidney stones or gallbladder stones?',
+                name: 'Can homeopathic remedies dissolve kidney stones or gallbladder stones?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not demonstrated that homoeopathic remedies can dissolve kidney stones or gallstones or eliminate urinary obstruction. Clinical management depends on stone dimensions, composition, and location, often requiring urological evaluation or surgical assessment.',
+                  text: 'Reliable scientific evidence has not demonstrated that homeopathic remedies can dissolve kidney stones or gallstones or eliminate urinary obstruction. Clinical management depends on stone dimensions, composition, and location, often requiring urological evaluation or surgical assessment.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Can thyroid hormone medication (Levothyroxine) be replaced with homoeopathy?',
+                name: 'Can thyroid hormone medication (Levothyroxine) be replaced with homeopathy?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'No. In primary hypothyroidism and advanced Hashimoto’s thyroiditis, the thyroid gland lacks the biological capacity to synthesize sufficient thyroxine (T4). Discontinuing or replacing prescribed levothyroxine with unproven remedies can lead to worsening fatigue, cardiovascular strain, severe metabolic slowing, and myxoedema coma.',
@@ -589,19 +1165,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'neurological-care',
     pageName: 'Neurological & Headache Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-neurological-headache-conditions/',
+    path: '/homeopathic-treatment-for-neurological-headache-conditions/',
     title:
-      'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram',
+      'Neurological & Headache Conditions Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for headaches, migraines, stress, anxiety, memory fog & child development in Malappuram. Evidence-aware clinical care.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Neurological & headache conditions homoeopathic clinic in Malappuram, headache consultation Malappuram, migraine consultation, stress management, anxiety consultation, memory problems, child development ADHD Malappuram',
+      'Neurological & headache conditions homeopathic clinic in Malappuram, headache consultation Malappuram, migraine consultation, stress management, anxiety consultation, memory problems, child development ADHD Malappuram',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -609,11 +1185,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#webpage',
-            name: 'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/#webpage',
+            name: 'Neurological & Headache Conditions Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             headline:
-              'Neurological & Headache Conditions Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/',
+              'Neurological & Headache Conditions Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/',
             description:
               'Comprehensive patient guide to migraines, tension headaches, stress management, anxiety, memory fog, and child development consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -643,7 +1219,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-neurological-headache-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-neurological-headache-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -671,10 +1247,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure clinical anxiety disorders or depression?',
+                name: 'Can homeopathy cure clinical anxiety disorders or depression?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not shown homoeopathy to effectively treat clinical anxiety disorders, panic disorders, or depression. These mental health conditions benefit from evidence-based care, including cognitive behavioural therapy (CBT) and prescribed medical treatments.',
+                  text: 'Reliable scientific evidence has not shown homeopathy to effectively treat clinical anxiety disorders, panic disorders, or depression. These mental health conditions benefit from evidence-based care, including cognitive behavioural therapy (CBT) and prescribed medical treatments.',
                 },
               },
               {
@@ -706,19 +1282,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'anorectal-vascular-care',
     pageName: 'Anorectal & Vascular Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-anorectal-vascular-conditions/',
+    path: '/homeopathic-treatment-for-anorectal-vascular-conditions/',
     title:
-      'Anorectal & Vascular Homoeopathic Clinic in Malappuram',
+      'Anorectal & Vascular Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for hemorrhoids (piles), anal fissures, fistula-in-ano, and varicose veins in Malappuram, Kerala. Responsible clinical guidance.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-anorectal-vascular-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-anorectal-vascular-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Anorectal & vascular homoeopathic clinic in Malappuram, piles consultation Malappuram, hemorrhoids treatment, anal fissure clinic, fistula-in-ano, varicose veins Kerala, venous insufficiency',
+      'Anorectal & vascular homeopathic clinic in Malappuram, piles consultation Malappuram, hemorrhoids treatment, anal fissure clinic, fistula-in-ano, varicose veins Kerala, venous insufficiency',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -726,11 +1302,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/#webpage',
-            name: 'Anorectal & Vascular Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-anorectal-vascular-conditions/#webpage',
+            name: 'Anorectal & Vascular Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             headline:
-              'Anorectal & Vascular Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/',
+              'Anorectal & Vascular Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-anorectal-vascular-conditions/',
             description:
               'Comprehensive patient guide to hemorrhoids (piles), anal fissures, perianal fistulas, and lower-extremity varicose veins consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -759,7 +1335,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-anorectal-vascular-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-anorectal-vascular-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -771,10 +1347,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure a complex perianal fistula without surgical evaluation?',
+                name: 'Can homeopathy cure a complex perianal fistula without surgical evaluation?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'A perianal fistula is an abnormal epithelialized tract connecting the anal canal to the perianal skin. While homoeopathic supportive care can assist in symptom relief and constitutional well-being, reliable scientific evidence has not shown that homoeopathic remedies can eliminate complex epithelialized fistula tracts or replace surgical evaluation. Evaluation with pelvic MRI and colorectal consultation is essential.',
+                  text: 'A perianal fistula is an abnormal epithelialized tract connecting the anal canal to the perianal skin. While homeopathic supportive care can assist in symptom relief and constitutional well-being, reliable scientific evidence has not shown that homeopathic remedies can eliminate complex epithelialized fistula tracts or replace surgical evaluation. Evaluation with pelvic MRI and colorectal consultation is essential.',
                 },
               },
               {
@@ -822,19 +1398,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'joint-musculoskeletal-care',
     pageName: 'Joint, Musculoskeletal & Chronic Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
+    path: '/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     title:
-      'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram',
+      'Joint, Musculoskeletal & Chronic Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for joint pain, knee osteoarthritis, cervical & lumbar spondylosis, sciatica & chronic pain in Malappuram, Kerala.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Joint musculoskeletal chronic homoeopathic clinic in Malappuram, joint pain consultation Malappuram, knee osteoarthritis Malappuram, arthritis consultation, cervical spondylosis neck pain, lumbar spondylosis back pain, sciatica treatment',
+      'Joint musculoskeletal chronic homeopathic clinic in Malappuram, joint pain consultation Malappuram, knee osteoarthritis Malappuram, arthritis consultation, cervical spondylosis neck pain, lumbar spondylosis back pain, sciatica treatment',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -842,11 +1418,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#webpage',
-            name: 'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#webpage',
+            name: 'Joint, Musculoskeletal & Chronic Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             headline:
-              'Joint, Musculoskeletal & Chronic Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
+              'Joint, Musculoskeletal & Chronic Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/',
             description:
               'Comprehensive patient guide to joint pain, knee osteoarthritis, rheumatoid arthritis, cervical spondylosis, lumbar spondylosis, and sciatica consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -875,14 +1451,14 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure knee osteoarthritis or regenerate eroded cartilage?',
+                name: 'Can homeopathy cure knee osteoarthritis or regenerate eroded cartilage?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not shown that homoeopathic remedies can reverse osteoarthritis, rebuild lost articular cartilage, or alter bone-on-bone joint deformity. In osteoarthritis, the loss of hyaline cartilage is a progressive biomechanical and degenerative process. Homoeopathic consultations provide supportive constitutional care and general lifestyle comfort, but must never replace proven interventions such as physiotherapy, quadriceps strengthening, weight management, and orthopaedic evaluation.',
+                  text: 'Reliable scientific evidence has not shown that homeopathic remedies can reverse osteoarthritis, rebuild lost articular cartilage, or alter bone-on-bone joint deformity. In osteoarthritis, the loss of hyaline cartilage is a progressive biomechanical and degenerative process. Homeopathic consultations provide supportive constitutional care and general lifestyle comfort, but must never replace proven interventions such as physiotherapy, quadriceps strengthening, weight management, and orthopaedic evaluation.',
                 },
               },
               {
@@ -911,10 +1487,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can I take homoeopathic remedies alongside my prescribed arthritis or pain medications?',
+                name: 'Can I take homeopathic remedies alongside my prescribed arthritis or pain medications?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Yes, homoeopathic micro-dilutions can generally be taken alongside conventional medications. However, you must never discontinue, reduce, or substitute prescribed anti-inflammatory drugs, DMARDs, immunosuppressants, or painkillers on your own. Always inform both your prescribing doctor and homoeopathic practitioner.',
+                  text: 'Yes, homeopathic micro-dilutions can generally be taken alongside conventional medications. However, you must never discontinue, reduce, or substitute prescribed anti-inflammatory drugs, DMARDs, immunosuppressants, or painkillers on your own. Always inform both your prescribing doctor and homeopathic practitioner.',
                 },
               },
               {
@@ -938,19 +1514,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     id: 'ophthalmic-eye-care',
     pageName: 'Ophthalmic & Eye Conditions',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+    path: '/homeopathic-treatment-for-ophthalmic-eye-conditions/',
     title:
-      'Ophthalmic & Eye Homoeopathic Clinic in Malappuram',
+      'Ophthalmic & Eye Homeopathic Clinic in Malappuram',
     description:
       'Consult Dr. Anjali Chandrasekhar (BHMS) for recurrent conjunctivitis, pink eye support, ocular hypertension & eye health co-management in Malappuram, Kerala.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+      'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Ophthalmic eye homoeopathic clinic in Malappuram, eye consultation Malappuram, recurrent conjunctivitis pink eye, ocular hypertension, glaucoma risk Malappuram, eye health Kerala',
+      'Ophthalmic eye homeopathic clinic in Malappuram, eye consultation Malappuram, recurrent conjunctivitis pink eye, ocular hypertension, glaucoma risk Malappuram, eye health Kerala',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -958,11 +1534,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
-            name: 'Ophthalmic & Eye Homoeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/#webpage',
+            name: 'Ophthalmic & Eye Homeopathic Clinic in Malappuram – Anjali Homoeo Clinic',
             headline:
-              'Ophthalmic & Eye Homoeopathic Clinic in Malappuram',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/',
+              'Ophthalmic & Eye Homeopathic Clinic in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/',
             description:
               'Comprehensive patient guide to recurrent conjunctivitis, pink eye, ocular hypertension, and glaucoma co-management consultations at Anjali Homoeo Clinic in Malappuram, Kerala.',
             about: [
@@ -991,14 +1567,14 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-ophthalmic-eye-conditions/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-ophthalmic-eye-conditions/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure glaucoma or lower elevated intraocular pressure (IOP)?',
+                name: 'Can homeopathy cure glaucoma or lower elevated intraocular pressure (IOP)?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Reliable scientific evidence has not shown that homoeopathic remedies can lower intraocular pressure, reverse optic nerve damage, or prevent glaucoma progression. Evidence-based treatment requires prescription pressure-lowering eye drops, laser procedures, or filtration surgery directed by a qualified ophthalmologist.',
+                  text: 'No. Reliable scientific evidence has not shown that homeopathic remedies can lower intraocular pressure, reverse optic nerve damage, or prevent glaucoma progression. Evidence-based treatment requires prescription pressure-lowering eye drops, laser procedures, or filtration surgery directed by a qualified ophthalmologist.',
                 },
               },
               {
@@ -1019,7 +1595,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is it safe to put homoeopathic eye drops or diluted solutions directly into my eyes?',
+                name: 'Is it safe to put homeopathic eye drops or diluted solutions directly into my eyes?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Never instill unsterile, non-prescribed liquid preparations or home-diluted substances into your eyes. Non-sterile drops introduce serious risks of corneal ulcers, severe chemical irritation, and sight-threatening microbial infections. Only use sterile ophthalmic drops prescribed by an eye specialist.',
@@ -1035,7 +1611,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'How can a homoeopathic consultation support my overall eye health responsibly?',
+                name: 'How can a homeopathic consultation support my overall eye health responsibly?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'At Anjali Homoeo Clinic, supportive care focuses on whole-person constitutional health, exploring lifestyle ergonomics, allergic tendencies, and general wellness. Dr. Anjali Chandrasekhar (BHMS) provides transparent guidance, emphasizes the strict necessity of ophthalmologist appointments and prescription eye-drop adherence, and ensures timely referral for medical eye care.',
@@ -1779,23 +2355,23 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     lastUpdated: '2026-10-22',
   },
   {
-    id: 'blog-homoeopathic-clinic-in-malappuram',
-    pageName: 'Blog: Homoeopathic Clinic in Malappuram Guide',
+    id: 'blog-homeopathic-clinic-in-malappuram',
+    pageName: 'Blog: Homeopathic Clinic in Malappuram Guide',
     category: 'blog',
-    path: '/homoeopathic-clinic-in-malappuram-guide/',
+    path: '/homeopathic-clinic-in-malappuram-guide/',
     title:
-      'Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic | Anjali Homoeo Clinic',
+      'Homeopathic Clinic in Malappuram: A Guide to Choosing a Clinic | Anjali Homoeo Clinic',
     description:
-      'Comprehensive guide on choosing a homoeopathic clinic in Malappuram, Kerala. Check doctor qualifications (BHMS), consultation expectations, questions to ask, and patient safety precautions.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+      'Comprehensive guide on choosing a homeopathic clinic in Malappuram, Kerala. Check doctor qualifications (BHMS), consultation expectations, questions to ask, and patient safety precautions.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+      'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/',
     ogType: 'article',
     ogImage:
-      'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png',
+      'https://anjalihomoeoclinic.com/assets/aistudio/Homeopathic_Clinic_in_Malappuram_3c8baf0d.png',
     twitterCard: 'summary_large_image',
     keywords:
-      'Homoeopathic clinic in Malappuram, Homoeopathic doctor in Malappuram, Homoeopathic treatment in Malappuram, best homoeopathic clinic in Malappuram, Dr Anjali Chandrasekhar, patient safety homoeopathy Kerala',
+      'Homeopathic clinic in Malappuram, Homeopathic doctor in Malappuram, Homeopathic treatment in Malappuram, best homeopathic clinic in Malappuram, Dr Anjali Chandrasekhar, patient safety homeopathy Kerala',
     schemaType: 'BlogPosting',
     schemaJson: JSON.stringify(
       {
@@ -1804,18 +2380,18 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           {
             '@type': 'BlogPosting',
             '@id':
-              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/#article',
+              'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/#article',
             headline:
-              'Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic',
+              'Homeopathic Clinic in Malappuram: A Guide to Choosing a Clinic',
             description:
-              'Choosing the right healthcare provider is an important step. Explore how to choose a homoeopathic clinic in Malappuram, what to expect during consultation, credentials to verify, and patient safety guidelines.',
+              'Choosing the right healthcare provider is an important step. Explore how to choose a homeopathic clinic in Malappuram, what to expect during consultation, credentials to verify, and patient safety guidelines.',
             image:
-              'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+              'https://anjalihomoeoclinic.com/assets/aistudio/Homeopathic_Clinic_in_Malappuram_3c8baf0d.png',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/',
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id':
-                'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/',
+                'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/',
             },
             author: {
               '@type': 'Person',
@@ -1833,11 +2409,11 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           {
             '@type': 'FAQPage',
             '@id':
-              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-malappuram-guide/#faq',
+              'https://anjalihomoeoclinic.com/homeopathic-clinic-in-malappuram-guide/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'How do I choose a homoeopathic clinic in Malappuram?',
+                name: 'How do I choose a homeopathic clinic in Malappuram?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Check the practitioner\'s qualifications and registration, confirm the services offered, ask about consultation fees, and assess the clarity of communication. Be cautious of claims that promise guaranteed cures or discourage necessary medical treatment.',
@@ -1845,7 +2421,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'What should I check before choosing a homoeopathic doctor in Malappuram?',
+                name: 'What should I check before choosing a homeopathic doctor in Malappuram?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Verify the practitioner\'s educational qualifications and professional registration. Ask about their consultation process, the limitations of the proposed treatment, and whether your symptoms require further medical assessment.',
@@ -1853,7 +2429,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'What happens during a homoeopathy consultation in Malappuram?',
+                name: 'What happens during a homeopathy consultation in Malappuram?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'The practitioner may discuss your symptoms, medical history, existing medicines, and previous treatments. Ask questions about diagnosis, safety, evidence-based alternatives, and follow-up arrangements.',
@@ -1861,15 +2437,15 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is homoeopathy effective for every health condition?',
+                name: 'Is homeopathy effective for every health condition?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Reliable scientific evidence has not established that homoeopathy is effective for treating most health conditions. It should not replace proven treatments or delay appropriate medical care.',
+                  text: 'No. Reliable scientific evidence has not established that homeopathy is effective for treating most health conditions. It should not replace proven treatments or delay appropriate medical care.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Can I take homoeopathic remedies alongside prescribed medicines?',
+                name: 'Can I take homeopathic remedies alongside prescribed medicines?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Do not assume that combining treatments is safe. Discuss every remedy with your treating healthcare professional, and never stop or change prescribed medicines without medical advice.',
@@ -1885,7 +2461,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'How can I find reliable information about homoeopathic treatment in Malappuram?',
+                name: 'How can I find reliable information about homeopathic treatment in Malappuram?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Review clinic information carefully, verify practitioner credentials, and consult qualified healthcare professionals. Evaluate health claims critically, especially when they promise guaranteed results or suggest avoiding established medical treatments.',
@@ -1917,7 +2493,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
       'https://anjalihomoeoclinic.com/assets/aistudio/What_Causes_Piles__Risk_Factors___Prevention_9dd18daf.png',
     twitterCard: 'summary_large_image',
     keywords:
-      'What causes piles, Piles causes, haemorrhoids risk factors, piles prevention tips, Piles treatment in Malappuram, homoeopathic clinic in Malappuram, anorectal bleeding causes Kerala, Dr Anjali Chandrasekhar',
+      'What causes piles, Piles causes, haemorrhoids risk factors, piles prevention tips, Piles treatment in Malappuram, homeopathic clinic in Malappuram, anorectal bleeding causes Kerala, Dr Anjali Chandrasekhar',
     schemaType: 'BlogPosting',
     schemaJson: JSON.stringify(
       {
@@ -1991,10 +2567,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure piles?',
+                name: 'Can homeopathy cure piles?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not established that homoeopathy cures piles. Evidence-based options include lifestyle changes, appropriate medicines, office-based procedures, and surgery when indicated.',
+                  text: 'Reliable scientific evidence has not established that homeopathy cures piles. Evidence-based options include lifestyle changes, appropriate medicines, office-based procedures, and surgery when indicated.',
                 },
               },
               {
@@ -2743,20 +3319,20 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     lastUpdated: '2026-10-24',
   },
   {
-    id: 'piles-homoeopathic-clinic-manjeri',
-    pageName: 'Piles Homoeopathic Clinic in Manjeri',
+    id: 'piles-homeopathic-clinic-manjeri',
+    pageName: 'Piles Homeopathic Clinic in Manjeri',
     category: 'clinical',
-    path: '/piles-homoeopathic-clinic-in-manjeri/',
-    title: 'Piles Homoeopathic Clinic in Manjeri | Consultation & Care Guide',
+    path: '/piles-homeopathic-clinic-in-manjeri/',
+    title: 'Piles Homeopathic Clinic in Manjeri | Consultation & Care Guide',
     description:
       'Information on piles consultation and treatment options in Manjeri, Kerala. Learn about symptoms, diagnosis, evidence-informed care, and when to seek urgent medical attention.',
-    url: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/piles-homeopathic-clinic-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/piles-homeopathic-clinic-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Piles Homoeopathic Clinic in Manjeri, Piles Consultation in Manjeri, Piles Treatment in Manjeri, Piles Clinic in Manjeri, Piles Doctor in Manjeri, haemorrhoids treatment Malappuram',
+      'Piles Homeopathic Clinic in Manjeri, Piles Consultation in Manjeri, Piles Treatment in Manjeri, Piles Clinic in Manjeri, Piles Doctor in Manjeri, haemorrhoids treatment Malappuram',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -2764,9 +3340,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/',
-            name: 'Piles Homoeopathic Clinic in Manjeri | Consultation & Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/piles-homeopathic-clinic-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/piles-homeopathic-clinic-in-manjeri/',
+            name: 'Piles Homeopathic Clinic in Manjeri | Consultation & Care Guide',
             description:
               'Information on piles consultation and treatment options in Manjeri, Kerala. Learn about symptoms, diagnosis, evidence-informed care, and when to seek urgent medical attention.',
             about: [
@@ -2786,7 +3362,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/piles-homoeopathic-clinic-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/piles-homeopathic-clinic-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -2817,7 +3393,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
                 name: 'What does current medical evidence say about homeopathic treatment for piles?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Current rigorous scientific clinical trials have not established homoeopathy as an effective medical treatment for piles beyond a placebo response. While individual patients may explore constitutional homoeopathy alongside lifestyle and dietary habits, responsible healthcare mandates that patients understand the scientific evidence, obtain a clear medical diagnosis, and do not delay necessary conventional medical or surgical interventions.',
+                  text: 'Current rigorous scientific clinical trials have not established homeopathy as an effective medical treatment for piles beyond a placebo response. While individual patients may explore constitutional homeopathy alongside lifestyle and dietary habits, responsible healthcare mandates that patients understand the scientific evidence, obtain a clear medical diagnosis, and do not delay necessary conventional medical or surgical interventions.',
                 },
               },
               {
@@ -2855,19 +3431,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'menstrual-treatment-manjeri',
-    pageName: 'Menstrual Homoeopathic Treatment in Manjeri',
+    pageName: 'Menstrual Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/menstrual-homoeopathic-treatment-in-manjeri/',
-    title: 'Menstrual Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    path: '/menstrual-homeopathic-treatment-in-manjeri/',
+    title: 'Menstrual Homeopathic Treatment in Manjeri | Consultation & Care Guide',
     description:
       'Information on menstrual health consultation and treatment in Manjeri, Kerala. Learn about period problems, irregular cycles, cramps, evidence-based care, and when to seek medical advice.',
-    url: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-women-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Menstrual Homoeopathic Treatment in Manjeri, Menstrual Treatment in Manjeri, Menstrual Problems Doctor in Manjeri, Period Problems Treatment in Manjeri, Period Pain Consultation in Manjeri, Menstrual Health Clinic in Manjeri, Homoeopathy Clinic for Menstrual Problems in Manjeri, Women Health Doctor in Manjeri',
+      'Menstrual Homeopathic Treatment in Manjeri, Menstrual Treatment in Manjeri, Menstrual Problems Doctor in Manjeri, Period Problems Treatment in Manjeri, Period Pain Consultation in Manjeri, Menstrual Health Clinic in Manjeri, Homeopathy Clinic for Menstrual Problems in Manjeri, Women Health Doctor in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -2875,9 +3451,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/',
-            name: 'Menstrual Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-manjeri/',
+            name: 'Menstrual Homeopathic Treatment in Manjeri | Consultation & Care Guide',
             description:
               'Information on menstrual health consultation and treatment in Manjeri, Kerala. Learn about period problems, irregular cycles, cramps, evidence-based care, and when to seek medical advice.',
             about: [
@@ -2897,14 +3473,14 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/menstrual-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Where can I seek Menstrual Homoeopathic Treatment in Manjeri?',
+                name: 'Where can I seek Menstrual Homeopathic Treatment in Manjeri?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Women in Manjeri can research local healthcare providers and check their recognized qualifications (such as BHMS), registration with state medical councils, and services offered. Before choosing a homoeopathic provider, understand that homoeopathy has not been shown reliably to treat menstrual disorders in scientific trials. Persistent, painful, or severe symptoms should always be assessed by a qualified medical doctor or gynaecologist.',
+                  text: 'Women in Manjeri can research local healthcare providers and check their recognized qualifications (such as BHMS), registration with state medical councils, and services offered. Before choosing a homeopathic provider, understand that homeopathy has not been shown reliably to treat menstrual disorders in scientific trials. Persistent, painful, or severe symptoms should always be assessed by a qualified medical doctor or gynaecologist.',
                 },
               },
               {
@@ -2925,10 +3501,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure irregular periods?',
+                name: 'Can homeopathy cure irregular periods?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'There is no reliable scientific evidence that homoeopathy cures irregular periods or permanently eliminates their underlying biological causes. Irregular menstruation can stem from conditions such as polycystic ovary syndrome (PCOS), thyroid disorders, significant weight changes, chronic stress, or pregnancy. Appropriate clinical assessment helps identify the true cause and guide effective care.',
+                  text: 'There is no reliable scientific evidence that homeopathy cures irregular periods or permanently eliminates their underlying biological causes. Irregular menstruation can stem from conditions such as polycystic ovary syndrome (PCOS), thyroid disorders, significant weight changes, chronic stress, or pregnancy. Appropriate clinical assessment helps identify the true cause and guide effective care.',
                 },
               },
               {
@@ -2957,7 +3533,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'What should I look for in a Homoeopathy Clinic for Menstrual Problems in Manjeri?',
+                name: 'What should I look for in a Homeopathy Clinic for Menstrual Problems in Manjeri?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Look for verified qualifications (BHMS from recognized universities), active medical council registration, clear and honest communication regarding treatment scope and evidence, strict patient confidentiality, and a willingness to refer to gynaecologists for diagnostic ultrasound or blood work. Avoid providers who guarantee miraculous cures, promise to reverse PCOS, or advise stopping prescribed conventional medications.',
@@ -2974,19 +3550,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'skin-treatment-manjeri',
-    pageName: 'Skin Homoeopathic Treatment in Manjeri',
+    pageName: 'Skin Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/skin-homoeopathic-treatment-in-manjeri/',
-    title: 'Skin Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    path: '/skin-homeopathic-treatment-in-manjeri/',
+    title: 'Skin Homeopathic Treatment in Manjeri | Consultation & Care Guide',
     description:
       'Information on skin health consultation and treatment options in Manjeri, Kerala. Learn about acne, eczema, psoriasis, fungal infections, evidence-based care, and when to see a doctor.',
-    url: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-portrait-closeup.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Skin Homoeopathic Treatment in Manjeri, Skin Treatment in Manjeri, Skin Health Clinic in Manjeri, Skin Problems Treatment in Manjeri, Skin Homoeopathy Clinic in Manjeri, Skin Disease Treatment in Manjeri, Skin Doctor in Manjeri, Skin Specialist in Manjeri',
+      'Skin Homeopathic Treatment in Manjeri, Skin Treatment in Manjeri, Skin Health Clinic in Manjeri, Skin Problems Treatment in Manjeri, Skin Homeopathy Clinic in Manjeri, Skin Disease Treatment in Manjeri, Skin Doctor in Manjeri, Skin Specialist in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -2994,9 +3570,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/',
-            name: 'Skin Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-manjeri/',
+            name: 'Skin Homeopathic Treatment in Manjeri | Consultation & Care Guide',
             description:
               'Information on skin health consultation and treatment options in Manjeri, Kerala. Learn about acne, eczema, psoriasis, fungal infections, evidence-based care, and when to see a doctor.',
             about: [
@@ -3016,14 +3592,14 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Where can I find Skin Homoeopathic Treatment in Manjeri?',
+                name: 'Where can I find Skin Homeopathic Treatment in Manjeri?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'You can research healthcare providers in Manjeri and check their qualifications, registration where applicable, and services offered. Before choosing a homoeopathic provider, understand that homoeopathy has not been shown reliably to treat skin diseases. Persistent or severe skin symptoms should be assessed by a qualified medical professional.',
+                  text: 'You can research healthcare providers in Manjeri and check their qualifications, registration where applicable, and services offered. Before choosing a homeopathic provider, understand that homeopathy has not been shown reliably to treat skin diseases. Persistent or severe skin symptoms should be assessed by a qualified medical professional.',
                 },
               },
               {
@@ -3036,10 +3612,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Skin Treatment in Manjeri effective for eczema?',
+                name: 'Is Homeopathic Skin Treatment in Manjeri effective for eczema?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence has not established homoeopathy as an effective treatment for eczema. Evidence-based care may include moisturisers, avoiding triggers, and prescribed medication. A qualified healthcare professional can recommend an approach based on the severity of the condition.',
+                  text: 'Reliable scientific evidence has not established homeopathy as an effective treatment for eczema. Evidence-based care may include moisturisers, avoiding triggers, and prescribed medication. A qualified healthcare professional can recommend an approach based on the severity of the condition.',
                 },
               },
               {
@@ -3052,10 +3628,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can fungal skin infections be treated with homoeopathy?',
+                name: 'Can fungal skin infections be treated with homeopathy?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Homoeopathy has not been demonstrated to cure fungal skin infections. These infections generally require appropriate antifungal treatment. Accurate diagnosis is important because fungal infections can resemble eczema and other skin conditions.',
+                  text: 'Homeopathy has not been demonstrated to cure fungal skin infections. These infections generally require appropriate antifungal treatment. Accurate diagnosis is important because fungal infections can resemble eczema and other skin conditions.',
                 },
               },
               {
@@ -3076,7 +3652,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can I stop prescribed skin medication if I want to try homoeopathy?',
+                name: 'Can I stop prescribed skin medication if I want to try homeopathy?',
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'Do not stop or change prescribed treatment without discussing it with the healthcare professional who prescribed it. Delaying effective treatment can allow certain skin conditions to worsen or lead to complications.',
@@ -3093,19 +3669,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'hair-treatment-manjeri',
-    pageName: 'Hair Homoeopathic Treatment in Manjeri',
+    pageName: 'Hair Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/hair-homoeopathic-treatment-in-manjeri/',
-    title: 'Hair Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+    path: '/hair-homeopathic-treatment-in-manjeri/',
+    title: 'Hair Homeopathic Treatment in Manjeri | Consultation & Care Guide',
     description:
       'Information on hair loss consultation and treatment options in Manjeri, Kerala. Learn about hair fall causes, thinning, scalp health, evidence-based care, and when to see a specialist.',
-    url: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/hair-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/hair-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Hair Homoeopathic Treatment in Manjeri, Hair Treatment in Manjeri, Hair Care Clinic in Manjeri, Hair Fall Treatment in Manjeri, Hair Homoeopathy Clinic in Manjeri, Hair Loss Treatment in Manjeri, Hair Doctor in Manjeri, Hair Specialist in Manjeri',
+      'Hair Homeopathic Treatment in Manjeri, Hair Treatment in Manjeri, Hair Care Clinic in Manjeri, Hair Fall Treatment in Manjeri, Hair Homeopathy Clinic in Manjeri, Hair Loss Treatment in Manjeri, Hair Doctor in Manjeri, Hair Specialist in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3113,9 +3689,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/',
-            name: 'Hair Homoeopathic Treatment in Manjeri | Consultation & Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/hair-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/hair-homeopathic-treatment-in-manjeri/',
+            name: 'Hair Homeopathic Treatment in Manjeri | Consultation & Care Guide',
             description:
               'Information on hair loss consultation and treatment options in Manjeri, Kerala. Learn about hair fall causes, thinning, scalp health, evidence-based care, and when to see a specialist.',
             about: [
@@ -3135,14 +3711,14 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/hair-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/hair-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
-                name: 'Where can I find Hair Homoeopathic Treatment in Manjeri?',
+                name: 'Where can I find Hair Homeopathic Treatment in Manjeri?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'You can research local healthcare clinics in Manjeri and check the practitioner’s accredited qualifications (such as BHMS) and state medical council registration. It is important to understand that homoeopathy has not been established as an effective medical treatment for hair loss in scientific trials. Persistent, rapid, or patchy hair loss should always be evaluated by a qualified doctor or dermatologist.',
+                  text: 'You can research local healthcare clinics in Manjeri and check the practitioner’s accredited qualifications (such as BHMS) and state medical council registration. It is important to understand that homeopathy has not been established as an effective medical treatment for hair loss in scientific trials. Persistent, rapid, or patchy hair loss should always be evaluated by a qualified doctor or dermatologist.',
                 },
               },
               {
@@ -3155,10 +3731,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Hair Treatment in Manjeri effective for hair loss?',
+                name: 'Is Homeopathic Hair Treatment in Manjeri effective for hair loss?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific clinical evidence has not established homoeopathy as an effective treatment for hair loss, alopecia areata, or scalp disorders beyond a placebo response. Evidence-based care relies on identifying the underlying cause and applying proven therapies—such as correcting iron deficiency, treating scalp infections with antifungals, or using medically approved topical and systemic treatments.',
+                  text: 'Reliable scientific clinical evidence has not established homeopathy as an effective treatment for hair loss, alopecia areata, or scalp disorders beyond a placebo response. Evidence-based care relies on identifying the underlying cause and applying proven therapies—such as correcting iron deficiency, treating scalp infections with antifungals, or using medically approved topical and systemic treatments.',
                 },
               },
               {
@@ -3212,19 +3788,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'allergic-rhinitis-manjeri',
-    pageName: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri',
+    pageName: 'Allergic Rhinitis Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
-    title: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/allergic-rhinitis-homeopathic-treatment-in-manjeri/',
+    title: 'Allergic Rhinitis Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Information on allergic rhinitis consultation, nasal triggers, sneezing, congestion, and evidence-informed care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Allergic Rhinitis Homoeopathic Treatment in Manjeri, Allergic Rhinitis Treatment in Manjeri, Allergic Rhinitis Doctor in Manjeri, Allergic Rhinitis Specialist in Manjeri, Nasal Allergy Treatment in Manjeri, Seasonal Allergy Treatment in Manjeri, Homoeopathic Doctor for Allergic Rhinitis in Manjeri',
+      'Allergic Rhinitis Homeopathic Treatment in Manjeri, Allergic Rhinitis Treatment in Manjeri, Allergic Rhinitis Doctor in Manjeri, Allergic Rhinitis Specialist in Manjeri, Nasal Allergy Treatment in Manjeri, Seasonal Allergy Treatment in Manjeri, Homeopathic Doctor for Allergic Rhinitis in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3232,9 +3808,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/',
-            name: 'Allergic Rhinitis Homoeopathic Treatment in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/allergic-rhinitis-homeopathic-treatment-in-manjeri/',
+            name: 'Allergic Rhinitis Homeopathic Treatment in Manjeri | Care Guide',
             description:
               'Information on allergic rhinitis consultation, nasal triggers, sneezing, congestion, and evidence-informed care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
             about: [
@@ -3254,7 +3830,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/allergic-rhinitis-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3274,10 +3850,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy cure allergic rhinitis?',
+                name: 'Can homeopathy cure allergic rhinitis?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Homoeopathy has not been established by reliable scientific clinical evidence as an effective medical treatment or cure for allergic rhinitis beyond a placebo effect. Evidence-based care relies on proven interventions such as allergen avoidance, sterile saline nasal irrigation, second-generation antihistamines, intranasal corticosteroid sprays, and allergen immunotherapy.',
+                  text: 'Homeopathy has not been established by reliable scientific clinical evidence as an effective medical treatment or cure for allergic rhinitis beyond a placebo effect. Evidence-based care relies on proven interventions such as allergen avoidance, sterile saline nasal irrigation, second-generation antihistamines, intranasal corticosteroid sprays, and allergen immunotherapy.',
                 },
               },
               {
@@ -3331,19 +3907,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'acne-treatment-manjeri',
-    pageName: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri',
+    pageName: 'Homeopathic Treatment for Acne Skin Problems in Manjeri',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
-    title: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
+    path: '/homeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    title: 'Homeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
     description:
       'Information on acne causes, pimples, blackheads, hormonal breakouts, scar prevention, and clinical care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-acne-skin-problems-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Homoeopathic Treatment for Acne Skin Problems in Manjeri, Acne Treatment in Manjeri, Pimples Treatment in Manjeri, Acne Clinic in Manjeri, Acne Doctor in Manjeri, Acne Specialist in Manjeri, Homoeopathic Acne Treatment in Manjeri, Skin Problems Treatment in Manjeri',
+      'Homeopathic Treatment for Acne Skin Problems in Manjeri, Acne Treatment in Manjeri, Pimples Treatment in Manjeri, Acne Clinic in Manjeri, Acne Doctor in Manjeri, Acne Specialist in Manjeri, Homeopathic Acne Treatment in Manjeri, Skin Problems Treatment in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3351,9 +3927,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/',
-            name: 'Homoeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-acne-skin-problems-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-acne-skin-problems-in-manjeri/',
+            name: 'Homeopathic Treatment for Acne Skin Problems in Manjeri | Care Guide',
             description:
               'Information on acne causes, pimples, blackheads, hormonal breakouts, scar prevention, and clinical care in Manjeri, Kerala. Consult Dr. Anjali Chandrasekhar.',
             about: [
@@ -3373,7 +3949,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-acne-skin-problems-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3393,10 +3969,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Acne Treatment in Manjeri scientifically proven?',
+                name: 'Is Homeopathic Acne Treatment in Manjeri scientifically proven?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment or cure for acne. Patients are advised to explore evidence-based therapies—such as topical benzoyl peroxide, retinoids, azelaic acid, or systemic medications—under qualified medical supervision.',
+                  text: 'No. Reliable scientific clinical evidence has not established homeopathy as an effective medical treatment or cure for acne. Patients are advised to explore evidence-based therapies—such as topical benzoyl peroxide, retinoids, azelaic acid, or systemic medications—under qualified medical supervision.',
                 },
               },
               {
@@ -3449,10 +4025,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Can homoeopathy guarantee permanent acne removal?',
+                name: 'Can homeopathy guarantee permanent acne removal?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Homoeopathy has not been established as an effective acne treatment in scientific trials, and no reputable medical professional can guarantee permanent eradication of acne. Responsible healthcare focuses on accurate diagnosis, addressing root triggers, and preventing permanent scarring.',
+                  text: 'No. Homeopathy has not been established as an effective acne treatment in scientific trials, and no reputable medical professional can guarantee permanent eradication of acne. Responsible healthcare focuses on accurate diagnosis, addressing root triggers, and preventing permanent scarring.',
                 },
               },
             ],
@@ -3466,19 +4042,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'eczema-treatment-manjeri',
-    pageName: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri',
+    pageName: 'Homeopathic Treatment for Eczema Skin Problems in Manjeri',
     category: 'clinical',
-    path: '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
-    title: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
+    path: '/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    title: 'Homeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
     description:
       'Information on eczema causes, symptoms, everyday skincare, and clinical guidance in Manjeri, Kerala. Evidence-based care insights with Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Homoeopathic Treatment for Eczema Skin Problems in Manjeri, Eczema Treatment in Manjeri, Eczema Clinic in Manjeri, Eczema Doctor in Manjeri, Eczema Specialist in Manjeri, Homoeopathic Eczema Treatment in Manjeri, Atopic Dermatitis Manjeri, Skin Problems Treatment in Manjeri',
+      'Homeopathic Treatment for Eczema Skin Problems in Manjeri, Eczema Treatment in Manjeri, Eczema Clinic in Manjeri, Eczema Doctor in Manjeri, Eczema Specialist in Manjeri, Homeopathic Eczema Treatment in Manjeri, Atopic Dermatitis Manjeri, Skin Problems Treatment in Manjeri',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3486,9 +4062,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
-            name: 'Homoeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/',
+            name: 'Homeopathic Treatment for Eczema Skin Problems in Manjeri | Care Guide',
             description:
               'Information on eczema causes, symptoms, everyday skincare, and clinical guidance in Manjeri, Kerala. Evidence-based care insights with Dr. Anjali Chandrasekhar.',
             about: [
@@ -3508,7 +4084,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3523,15 +4099,15 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
                 name: 'Where can I find Eczema Treatment in Manjeri?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'You can consult healthcare practitioners and dermatology clinics in and around Manjeri. If you are seeking homoeopathic consultations, Anjali Homoeo Clinic offers online and in-person evaluations focused on constitutional assessment, trigger management, and barrier care.',
+                  text: 'You can consult healthcare practitioners and dermatology clinics in and around Manjeri. If you are seeking homeopathic consultations, Anjali Homoeo Clinic offers online and in-person evaluations focused on constitutional assessment, trigger management, and barrier care.',
                 },
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Eczema Treatment in Manjeri scientifically proven?',
+                name: 'Is Homeopathic Eczema Treatment in Manjeri scientifically proven?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'No. Reliable scientific evidence has not demonstrated that homoeopathy is an effective treatment or cure for eczema. Prescribed conventional medications must not be stopped or replaced without consulting your medical doctor.',
+                  text: 'No. Reliable scientific evidence has not demonstrated that homeopathy is an effective treatment or cure for eczema. Prescribed conventional medications must not be stopped or replaced without consulting your medical doctor.',
                 },
               },
               {
@@ -3585,19 +4161,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'warts-treatment-manjeri',
-    pageName: 'Skin Warts Homoeopathic Treatment in Manjeri',
+    pageName: 'Skin Warts Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/skin-warts-homoeopathic-treatment-in-manjeri/',
-    title: 'Skin Warts Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/skin-warts-homeopathic-treatment-in-manjeri/',
+    title: 'Skin Warts Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Understanding skin warts causes, HPV types, clinical assessment, evidence-based removal, and consultation options in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/skin-warts-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-warts-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Skin Warts Homoeopathic Treatment in Manjeri, Skin Warts Treatment in Manjeri, Homoeopathic Treatment for Skin Warts in Manjeri, Skin Warts Consultation in Manjeri, Skin Warts Doctor in Manjeri, Skin Warts Specialist in Manjeri, Skin Wart Removal Treatment in Manjeri, Plantar Warts Manjeri, Common Warts',
+      'Skin Warts Homeopathic Treatment in Manjeri, Skin Warts Treatment in Manjeri, Homeopathic Treatment for Skin Warts in Manjeri, Skin Warts Consultation in Manjeri, Skin Warts Doctor in Manjeri, Skin Warts Specialist in Manjeri, Skin Wart Removal Treatment in Manjeri, Plantar Warts Manjeri, Common Warts',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3605,9 +4181,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/',
-            name: 'Skin Warts Homoeopathic Treatment in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-warts-homeopathic-treatment-in-manjeri/',
+            name: 'Skin Warts Homeopathic Treatment in Manjeri | Care Guide',
             description:
               'Understanding skin warts causes, HPV types, clinical assessment, evidence-based removal, and consultation options in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
             about: [
@@ -3627,7 +4203,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/skin-warts-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3639,10 +4215,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Treatment for Skin Warts in Manjeri effective?',
+                name: 'Is Homeopathic Treatment for Skin Warts in Manjeri effective?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for skin warts. Discuss treatment choices with a qualified healthcare professional and do not delay assessment of an unusual or changing lesion.',
+                  text: 'There is no reliable, high-quality scientific evidence establishing homeopathy as an effective treatment for skin warts. Discuss treatment choices with a qualified healthcare professional and do not delay assessment of an unusual or changing lesion.',
                 },
               },
               {
@@ -3712,19 +4288,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'corns-treatment-manjeri',
-    pageName: 'Skin Corns Homoeopathic Treatment in Manjeri',
+    pageName: 'Skin Corns Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/skin-corns-homoeopathic-treatment-in-manjeri/',
-    title: 'Skin Corns Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/skin-corns-homeopathic-treatment-in-manjeri/',
+    title: 'Skin Corns Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Information on foot corns, hard and soft corns, friction causes, safe management, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/skin-corns-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/skin-corns-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Skin Corns Homoeopathic Treatment in Manjeri, Corns Treatment in Manjeri, Homoeopathic Treatment for Corns in Manjeri, Foot Corn Treatment in Manjeri, Corn Removal Treatment in Manjeri, Corns Doctor in Manjeri, Corns Specialist in Manjeri, Hard Corns, Soft Corns',
+      'Skin Corns Homeopathic Treatment in Manjeri, Corns Treatment in Manjeri, Homeopathic Treatment for Corns in Manjeri, Foot Corn Treatment in Manjeri, Corn Removal Treatment in Manjeri, Corns Doctor in Manjeri, Corns Specialist in Manjeri, Hard Corns, Soft Corns',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3732,9 +4308,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/',
-            name: 'Skin Corns Homoeopathic Treatment in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/skin-corns-homeopathic-treatment-in-manjeri/',
+            name: 'Skin Corns Homeopathic Treatment in Manjeri | Care Guide',
             description:
               'Information on foot corns, hard and soft corns, friction causes, safe management, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
             about: [
@@ -3754,7 +4330,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/skin-corns-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3766,10 +4342,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Treatment for Corns in Manjeri effective?',
+                name: 'Is Homeopathic Treatment for Corns in Manjeri effective?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for corns. Management generally focuses on relieving pressure, reducing friction, and safely addressing the thickened skin.',
+                  text: 'There is no reliable, high-quality scientific evidence establishing homeopathy as an effective treatment for corns. Management generally focuses on relieving pressure, reducing friction, and safely addressing the thickened skin.',
                 },
               },
               {
@@ -3831,19 +4407,19 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'psoriasis-treatment-manjeri',
-    pageName: 'Psoriasis Homoeopathic Treatment in Manjeri',
+    pageName: 'Psoriasis Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/psoriasis-homoeopathic-treatment-in-manjeri/',
-    title: 'Psoriasis Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/psoriasis-homeopathic-treatment-in-manjeri/',
+    title: 'Psoriasis Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Understanding psoriasis symptoms, plaque and scalp care, immune triggers, evidence-based therapies, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
-    url: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
-    canonicalUrl: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/psoriasis-homeopathic-treatment-in-manjeri/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/psoriasis-homeopathic-treatment-in-manjeri/',
     ogType: 'article',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Psoriasis Homoeopathic Treatment in Manjeri, Psoriasis Treatment in Manjeri, Homoeopathic Treatment for Psoriasis in Manjeri, Skin Psoriasis Treatment in Manjeri, Chronic Psoriasis Treatment in Manjeri, Psoriasis Clinic in Manjeri, Psoriasis Doctor in Manjeri, Psoriasis Specialist in Manjeri, Plaque Psoriasis, Scalp Psoriasis',
+      'Psoriasis Homeopathic Treatment in Manjeri, Psoriasis Treatment in Manjeri, Homeopathic Treatment for Psoriasis in Manjeri, Skin Psoriasis Treatment in Manjeri, Chronic Psoriasis Treatment in Manjeri, Psoriasis Clinic in Manjeri, Psoriasis Doctor in Manjeri, Psoriasis Specialist in Manjeri, Plaque Psoriasis, Scalp Psoriasis',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3851,9 +4427,9 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/#webpage',
-            url: 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/',
-            name: 'Psoriasis Homoeopathic Treatment in Manjeri | Care Guide',
+            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homeopathic-treatment-in-manjeri/#webpage',
+            url: 'https://anjalihomoeoclinic.com/psoriasis-homeopathic-treatment-in-manjeri/',
+            name: 'Psoriasis Homeopathic Treatment in Manjeri | Care Guide',
             description:
               'Understanding psoriasis symptoms, plaque and scalp care, immune triggers, evidence-based therapies, and clinical consultation in Manjeri, Kerala. Dr. Anjali Chandrasekhar.',
             about: [
@@ -3873,7 +4449,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/psoriasis-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -3885,10 +4461,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Treatment for Psoriasis in Manjeri effective?',
+                name: 'Is Homeopathic Treatment for Psoriasis in Manjeri effective?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Reliable scientific evidence does not establish homoeopathy as an effective treatment for psoriasis. Discuss treatment options with a qualified healthcare professional and do not discontinue prescribed medicines without medical advice.',
+                  text: 'Reliable scientific evidence does not establish homeopathy as an effective treatment for psoriasis. Discuss treatment options with a qualified healthcare professional and do not discontinue prescribed medicines without medical advice.',
                 },
               },
               {
@@ -3966,20 +4542,20 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'ringworm-treatment-manjeri',
-    pageName: 'Ringworm Homoeopathic Treatment in Manjeri',
+    pageName: 'Ringworm Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/ringworm-homoeopathic-treatment-in-manjeri/',
-    title: 'Ringworm Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/ringworm-homeopathic-treatment-in-manjeri/',
+    title: 'Ringworm Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Patient guide on Ringworm & Fungal Skin Infections in Manjeri. Learn symptoms, causes, diagnosis, evidence-based antifungal medicine & consultation details with Dr. Anjali Chandrasekhar (BHMS).',
-    url: 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/ringworm-homeopathic-treatment-in-manjeri/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+      'https://anjalihomoeoclinic.com/ringworm-homeopathic-treatment-in-manjeri/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Ringworm Treatment in Manjeri, Ringworm Homoeopathic Treatment in Manjeri, Fungal Skin Infection Treatment in Manjeri, Tinea Corporis Manjeri, Tinea Cruris Jock Itch Manjeri, Athlete Foot Manjeri, Scalp Ringworm Tinea Capitis Malappuram, Ringworm Doctor in Manjeri, Ringworm Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
+      'Ringworm Treatment in Manjeri, Ringworm Homeopathic Treatment in Manjeri, Fungal Skin Infection Treatment in Manjeri, Tinea Corporis Manjeri, Tinea Cruris Jock Itch Manjeri, Athlete Foot Manjeri, Scalp Ringworm Tinea Capitis Malappuram, Ringworm Doctor in Manjeri, Ringworm Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -3987,10 +4563,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/#webpage',
-            name: 'Ringworm Homoeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
-            headline: 'Ringworm Homoeopathic Treatment in Manjeri',
-            url: 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/',
+            '@id': 'https://anjalihomoeoclinic.com/ringworm-homeopathic-treatment-in-manjeri/#webpage',
+            name: 'Ringworm Homeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
+            headline: 'Ringworm Homeopathic Treatment in Manjeri',
+            url: 'https://anjalihomoeoclinic.com/ringworm-homeopathic-treatment-in-manjeri/',
             description:
               'In-depth patient guide to ringworm symptoms, dermatophyte fungi causes, differential mimics, evidence-based antifungal medicine, and consultation expectations in Manjeri and Malappuram.',
             about: [
@@ -4059,7 +4635,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/ringworm-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/ringworm-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -4071,10 +4647,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Treatment for Ringworm in Manjeri effective?',
+                name: 'Is Homeopathic Treatment for Ringworm in Manjeri effective?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Homoeopathy has not been shown reliably to eliminate the fungi responsible for ringworm and is not an established treatment for fungal skin infections. Appropriate antifungal treatment is the recommended approach.',
+                  text: 'Homeopathy has not been shown reliably to eliminate the fungi responsible for ringworm and is not an established treatment for fungal skin infections. Appropriate antifungal treatment is the recommended approach.',
                 },
               },
               {
@@ -4152,20 +4728,20 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   },
   {
     id: 'alopecia-treatment-manjeri',
-    pageName: 'Alopecia Homoeopathic Treatment in Manjeri',
+    pageName: 'Alopecia Homeopathic Treatment in Manjeri',
     category: 'clinical',
-    path: '/alopecia-homoeopathic-treatment-in-manjeri/',
-    title: 'Alopecia Homoeopathic Treatment in Manjeri | Care Guide',
+    path: '/alopecia-homeopathic-treatment-in-manjeri/',
+    title: 'Alopecia Homeopathic Treatment in Manjeri | Care Guide',
     description:
       'Patient guide on Alopecia, hair fall & thinning in Manjeri. Learn types, causes, evidence-based trichological options & consultation with Dr. Anjali Chandrasekhar (BHMS).',
-    url: 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+    url: 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-manjeri/',
     canonicalUrl:
-      'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+      'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-manjeri/',
     ogType: 'website',
     ogImage: 'https://anjalihomoeoclinic.com/images/dr-anjali-malayali-doctor.jpg',
     twitterCard: 'summary_large_image',
     keywords:
-      'Alopecia Treatment in Manjeri, Alopecia Homoeopathic Treatment in Manjeri, Hair Loss Treatment in Manjeri, Hair Fall Treatment in Manjeri, Hair Thinning Treatment in Manjeri, Alopecia Areata Treatment Manjeri, Androgenetic Alopecia Malappuram, Alopecia Doctor in Manjeri, Alopecia Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
+      'Alopecia Treatment in Manjeri, Alopecia Homeopathic Treatment in Manjeri, Hair Loss Treatment in Manjeri, Hair Fall Treatment in Manjeri, Hair Thinning Treatment in Manjeri, Alopecia Areata Treatment Manjeri, Androgenetic Alopecia Malappuram, Alopecia Doctor in Manjeri, Alopecia Clinic in Manjeri, Dr Anjali Chandrasekhar BHMS',
     schemaType: 'MedicalWebPage',
     schemaJson: JSON.stringify(
       {
@@ -4173,10 +4749,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
         '@graph': [
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/#webpage',
-            name: 'Alopecia Homoeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
-            headline: 'Alopecia Homoeopathic Treatment in Manjeri',
-            url: 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/',
+            '@id': 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-manjeri/#webpage',
+            name: 'Alopecia Homeopathic Treatment in Manjeri – Anjali Homoeo Clinic',
+            headline: 'Alopecia Homeopathic Treatment in Manjeri',
+            url: 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-manjeri/',
             description:
               'In-depth patient guide to alopecia symptoms, hair loss subtypes, contributing causes, evidence-based trichological options, and consultation expectations in Manjeri and Malappuram.',
             about: [
@@ -4236,7 +4812,7 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
           },
           {
             '@type': 'FAQPage',
-            '@id': 'https://anjalihomoeoclinic.com/alopecia-homoeopathic-treatment-in-manjeri/#faq',
+            '@id': 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-manjeri/#faq',
             mainEntity: [
               {
                 '@type': 'Question',
@@ -4248,10 +4824,10 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
               },
               {
                 '@type': 'Question',
-                name: 'Is Homoeopathic Treatment for Alopecia in Manjeri effective?',
+                name: 'Is Homeopathic Treatment for Alopecia in Manjeri effective?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'There is no reliable scientific evidence that homoeopathy effectively treats alopecia or consistently stimulates hair regrowth. People considering homoeopathy should understand these limitations and should not delay medical evaluation or proven treatment options.',
+                  text: 'There is no reliable scientific evidence that homeopathy effectively treats alopecia or consistently stimulates hair regrowth. People considering homeopathy should understand these limitations and should not delay medical evaluation or proven treatment options.',
                 },
               },
               {

@@ -213,8 +213,8 @@ export const SkinHairCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/',
                 name: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
                 description:
                   'Explore consultations for skin, hair and scalp concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized guidance for your healthcare needs.',
@@ -253,7 +253,7 @@ export const SkinHairCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Skin, Hair & Scalp Homeopathic Treatment in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-skin-hair-scalp-conditions/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-skin-hair-scalp-conditions/',
                   },
                 ],
               },
@@ -331,7 +331,7 @@ export const SkinHairCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Skin, Hair &amp; Scalp Conditions
+                Homeopathic Treatment for Skin, Hair &amp; Scalp Conditions
               </h1>
 
               {/* Lead Narrative */}

@@ -84,7 +84,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Transparency',
-      desc: 'Rigorous scientific trials have not established homoeopathy as an effective treatment to reverse alopecia, restore destroyed follicles, or regrow lost hair.',
+      desc: 'Rigorous scientific trials have not established homeopathy as an effective treatment to reverse alopecia, restore destroyed follicles, or regrow lost hair.',
     },
     {
       title: 'Do Not Delay Medical Care',
@@ -261,8 +261,8 @@ export const AlopeciaManjeriPage: React.FC = () => {
       a: 'Alopecia is the general medical term for hair loss. It can affect the scalp, beard, eyebrows, or other parts of the body, occurring as diffuse thinning, receding hairlines, or distinct circular bald patches. Causes range from genetic and hormonal influences to autoimmune attacks, acute stress, nutritional deficiencies, and inflammatory scalp diseases.',
     },
     {
-      q: 'Is Homoeopathic Treatment for Alopecia in Manjeri effective?',
-      a: 'There is no reliable scientific evidence demonstrating that homoeopathy can effectively treat alopecia, reverse hair follicle miniaturisation, or reliably stimulate hair regrowth. While individuals may choose homoeopathic consultations for holistic health discussions, patients should be fully aware of these clinical limitations and should never delay evidence-based medical assessment or proven conventional treatments.',
+      q: 'Is Homeopathic Treatment for Alopecia in Manjeri effective?',
+      a: 'There is no reliable scientific evidence demonstrating that homeopathy can effectively treat alopecia, reverse hair follicle miniaturisation, or reliably stimulate hair regrowth. While individuals may choose homeopathic consultations for holistic health discussions, patients should be fully aware of these clinical limitations and should never delay evidence-based medical assessment or proven conventional treatments.',
     },
     {
       q: 'What causes excessive hair fall?',
@@ -376,7 +376,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
             </button>
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-[#1E2559] font-semibold">
-              Alopecia Homoeopathic Treatment in Manjeri
+              Alopecia Homeopathic Treatment in Manjeri
             </span>
           </div>
         </div>
@@ -422,7 +422,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
                       Dr. Anjali Chandrasekhar
                     </h3>
                     <p className="text-xs font-semibold text-[#0D9488] mt-0.5">
-                      BHMS | Chief Homoeopathic Physician
+                      BHMS | Chief Homeopathic Physician
                     </p>
                     <p className="text-xs text-[#64748B] mt-2 leading-relaxed">
                       10+ years of clinical experience conducting comprehensive hair loss assessments, nutritional screening, constitutional consultations, and evidence-guided patient care across Malappuram district.
@@ -485,7 +485,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
               </div>
 
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-                Alopecia Homoeopathic Treatment in Manjeri
+                Alopecia Homeopathic Treatment in Manjeri
               </h1>
 
               <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed font-normal">
@@ -561,10 +561,10 @@ export const AlopeciaManjeriPage: React.FC = () => {
             </div>
             <div>
               <h4 className="text-sm font-bold text-[#1E3A8A]">
-                Medical Evidence Disclosure Regarding Alopecia &amp; Homoeopathy
+                Medical Evidence Disclosure Regarding Alopecia &amp; Homeopathy
               </h4>
               <p className="text-xs text-[#1E40AF] mt-0.5 leading-relaxed">
-                Scientific evidence has not established homoeopathy as an effective treatment for alopecia or as a reliable way to regrow lost hair. A proper medical assessment can help identify the underlying cause and determine which evidence-based treatments are suitable. Never discontinue or delay clinically proven treatments in favour of unproven alternatives.
+                Scientific evidence has not established homeopathy as an effective treatment for alopecia or as a reliable way to regrow lost hair. A proper medical assessment can help identify the underlying cause and determine which evidence-based treatments are suitable. Never discontinue or delay clinically proven treatments in favour of unproven alternatives.
               </p>
             </div>
           </div>
@@ -875,10 +875,10 @@ export const AlopeciaManjeriPage: React.FC = () => {
               CLINICAL ETHICS &amp; EVIDENCE TRANSPARENCY
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-2">
-              Homoeopathic Treatment for Alopecia in Manjeri
+              Homeopathic Treatment for Alopecia in Manjeri
             </h2>
             <p className="text-sm sm:text-base text-[#475569] mt-3">
-              Clear, transparent communication regarding the scientific standing and clinical limitations of homoeopathy in hair loss.
+              Clear, transparent communication regarding the scientific standing and clinical limitations of homeopathy in hair loss.
             </p>
           </div>
 
@@ -889,16 +889,16 @@ export const AlopeciaManjeriPage: React.FC = () => {
               </div>
               <div className="space-y-3">
                 <h3 className="font-bold text-lg text-[#1E2559]">
-                  What Does Reliable Scientific Evidence Say About Homoeopathy for Hair Regrowth?
+                  What Does Reliable Scientific Evidence Say About Homeopathy for Hair Regrowth?
                 </h3>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  Individuals searching online for <em>Homoeopathic Treatment for Alopecia in Manjeri</em> frequently explore homoeopathic clinics to discuss hair loss, past failed treatments, and personal preferences regarding natural therapies.
+                  Individuals searching online for <em>Homeopathic Treatment for Alopecia in Manjeri</em> frequently explore homeopathic clinics to discuss hair loss, past failed treatments, and personal preferences regarding natural therapies.
                 </p>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  However, it is clinically essential to understand the scientific reality: <strong>There is currently no reliable scientific evidence that homoeopathy effectively treats alopecia, reverses follicular miniaturisation, halts autoimmune follicular destruction, or reliably stimulates hair regrowth</strong>.
+                  However, it is clinically essential to understand the scientific reality: <strong>There is currently no reliable scientific evidence that homeopathy effectively treats alopecia, reverses follicular miniaturisation, halts autoimmune follicular destruction, or reliably stimulates hair regrowth</strong>.
                 </p>
                 <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                  Homoeopathic care must not replace appropriate medical evaluation or evidence-based treatments, especially when hair loss is sudden, extensive, painful, or associated with scalp inflammation. Delaying proven therapy or substituting unproven remedies can lead to irreversible scarring and permanent follicle loss.
+                  Homeopathic care must not replace appropriate medical evaluation or evidence-based treatments, especially when hair loss is sudden, extensive, painful, or associated with scalp inflammation. Delaying proven therapy or substituting unproven remedies can lead to irreversible scarring and permanent follicle loss.
                 </p>
               </div>
             </div>
@@ -920,7 +920,7 @@ export const AlopeciaManjeriPage: React.FC = () => {
                   <span>Do Not Discontinue Prescribed Medications</span>
                 </h4>
                 <p className="text-xs text-[#475569] leading-relaxed">
-                  Patients must never discontinue prescribed medical treatments (such as minoxidil or dermatological therapies) without consulting their prescribing physician. If homoeopathy is pursued alongside conventional care, all healthcare providers should be fully informed about all remedies and supplements being used.
+                  Patients must never discontinue prescribed medical treatments (such as minoxidil or dermatological therapies) without consulting their prescribing physician. If homeopathy is pursued alongside conventional care, all healthcare providers should be fully informed about all remedies and supplements being used.
                 </p>
               </div>
             </div>
@@ -1054,15 +1054,15 @@ export const AlopeciaManjeriPage: React.FC = () => {
                 CONSUMER SAFETY &amp; PROFESSIONAL STANDARDS
               </span>
               <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                Choosing an Alopecia Homoeopathy Clinic in Manjeri
+                Choosing an Alopecia Homeopathy Clinic in Manjeri
               </h2>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                When researching homoeopathic or alternative clinics in Manjeri for hair loss, look for practitioners who adhere to strict clinical ethics and transparent communication:
+                When researching homeopathic or alternative clinics in Manjeri for hair loss, look for practitioners who adhere to strict clinical ethics and transparent communication:
               </p>
 
               <div className="space-y-3 text-xs text-[#334155]">
                 <div className="p-3 bg-[#F8FAFD] rounded-xl border border-[#E2E8F0]">
-                  <strong>1. Clear &amp; Honest Communication:</strong> The practitioner should explain what homoeopathy can and cannot do without exaggerating outcomes.
+                  <strong>1. Clear &amp; Honest Communication:</strong> The practitioner should explain what homeopathy can and cannot do without exaggerating outcomes.
                 </div>
                 <div className="p-3 bg-[#F8FAFD] rounded-xl border border-[#E2E8F0]">
                   <strong>2. Realistic Expectations:</strong> Strict avoidance of guaranteed regrowth claims or proprietary secret oil concoctions.

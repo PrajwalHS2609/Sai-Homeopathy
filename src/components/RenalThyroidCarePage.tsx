@@ -189,8 +189,8 @@ export const RenalThyroidCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
                 name: 'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
                 description:
                   'Explore consultations for renal, urinary, gallbladder and thyroid concerns at Anjali Homoeo Clinic in Malappuram, Kerala. Get personalized healthcare guidance.',
@@ -229,7 +229,7 @@ export const RenalThyroidCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Renal, Urinary & Thyroid Homeopathic Treatment in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/',
                   },
                 ],
               },
@@ -307,7 +307,7 @@ export const RenalThyroidCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Renal, Urinary, Gallbladder &amp; Thyroid Conditions
+                Homeopathic Treatment for Renal, Urinary, Gallbladder &amp; Thyroid Conditions
               </h1>
 
               {/* Lead Narrative */}

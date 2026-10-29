@@ -68,9 +68,9 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
 
   const faqs = [
     {
-      question: 'Can homoeopathy cure glaucoma or lower elevated intraocular pressure (IOP)?',
+      question: 'Can homeopathy cure glaucoma or lower elevated intraocular pressure (IOP)?',
       answer:
-        'No. Reliable scientific evidence has not shown that homoeopathic remedies can lower intraocular pressure, reverse optic nerve damage, or prevent glaucoma progression. Glaucoma is a progressive optic neuropathy that can lead to irreversible visual field loss and blindness if left untreated. Evidence-based treatment requires prescription pressure-lowering eye drops, laser trabeculoplasty, or surgical filtering procedures directed by a qualified ophthalmologist. Homoeopathy should never replace or delay ophthalmologist-directed medical treatment.',
+        'No. Reliable scientific evidence has not shown that homeopathic remedies can lower intraocular pressure, reverse optic nerve damage, or prevent glaucoma progression. Glaucoma is a progressive optic neuropathy that can lead to irreversible visual field loss and blindness if left untreated. Evidence-based treatment requires prescription pressure-lowering eye drops, laser trabeculoplasty, or surgical filtering procedures directed by a qualified ophthalmologist. Homeopathy should never replace or delay ophthalmologist-directed medical treatment.',
     },
     {
       question: 'What should I do if I develop sudden, severe eye pain accompanied by nausea and a red eye?',
@@ -83,7 +83,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
         'Recurrent red, irritated eyes are frequently not a single lingering infection, but can arise from chronic underlying conditions such as allergic conjunctivitis (triggered by dust mites or pollen in Kerala’s climate), chronic blepharitis (meibomian gland dysfunction and eyelid margin inflammation), severe dry eye disease, poor contact lens hygiene, or unsterile self-medication. A comprehensive slit-lamp examination by an eye care professional is needed to pinpoint the exact root cause.',
     },
     {
-      question: 'Is it safe to put homoeopathic eye drops or diluted solutions directly into my eyes?',
+      question: 'Is it safe to put homeopathic eye drops or diluted solutions directly into my eyes?',
       answer:
         'You should never instill unsterile, non-prescribed liquid preparations, homemade concoctions, or unverified drops into your eyes. The cornea and conjunctiva are extremely delicate tissues; non-sterile drops introduce serious risks of corneal ulcers, severe chemical irritation, and sight-threatening microbial infections. Only use sterile ophthalmic drops prescribed by a licensed eye specialist or manufactured strictly in sterile pharmaceutical conditions.',
     },
@@ -93,7 +93,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
         'Ocular hypertension means that fluid pressure inside the eye (intraocular pressure) is consistently higher than the typical statistical threshold (usually above 21 mm Hg), but there is currently no detectable damage to the optic nerve and no peripheral visual field loss. In contrast, glaucoma is diagnosed when characteristic optic nerve fiber layer thinning and corresponding visual field deficits are present, regardless of whether the measured pressure is high or within the statistically normal range (normal-tension glaucoma).',
     },
     {
-      question: 'How can a homoeopathic consultation support my overall eye health responsibly?',
+      question: 'How can a homeopathic consultation support my overall eye health responsibly?',
       answer:
         'At Anjali Homoeo Clinic, supportive care focuses on whole-person constitutional health, exploring lifestyle ergonomics (such as screen fatigue and 20-20-20 rule adoption), allergic tendencies, and emotional well-being. Dr. Anjali Chandrasekhar (BHMS) provides transparent guidance, emphasizes the strict necessity of ophthalmologist appointments and prescription eye-drop adherence, and ensures timely referral for any condition requiring medical or surgical eye care.',
     },
@@ -118,7 +118,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
             id="ophthalmic-eye-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Ophthalmic &amp; Eye Homoeopathic Clinic in Malappuram
+            Ophthalmic &amp; Eye Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -145,13 +145,13 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
             Eye health plays an essential role in maintaining independence, comfort, and quality of life. From reading and working to driving and performing everyday activities, healthy vision helps people interact confidently with the world around them. However, recurrent eye redness, irritation, watering, and concerns about elevated eye pressure can cause discomfort and anxiety. Understanding these symptoms and seeking appropriate professional evaluation are important steps towards protecting your vision.
           </p>
           <p>
-            The <strong className="text-[#1E2559] font-semibold">Ophthalmic &amp; Eye Homoeopathic Clinic in Malappuram</strong> is a dedicated topic for individuals seeking information about recurrent conjunctivitis, pink eye, ocular hypertension, and supportive care alongside conventional ophthalmic treatment. The aim of this page is to help readers understand common eye conditions, recognize warning signs, and make informed decisions about appropriate eye health services.
+            The <strong className="text-[#1E2559] font-semibold">Ophthalmic &amp; Eye Homeopathic Clinic in Malappuram</strong> is a dedicated topic for individuals seeking information about recurrent conjunctivitis, pink eye, ocular hypertension, and supportive care alongside conventional ophthalmic treatment. The aim of this page is to help readers understand common eye conditions, recognize warning signs, and make informed decisions about appropriate eye health services.
           </p>
           <p>
             People searching for an <strong className="text-[#1E2559] font-semibold">Eye Consultation in Malappuram</strong> may have different concerns. Some may experience repeated episodes of red or watery eyes, while others may have been informed that their intraocular pressure is elevated or that they are at risk of glaucoma. Since these conditions have different causes and potential complications, a proper eye examination by a qualified ophthalmologist is essential.
           </p>
           <p>
-            Homoeopathy has not been established by reliable scientific evidence as an effective treatment for conjunctivitis, ocular hypertension, or glaucoma. It should not replace ophthalmologist-directed treatment, prescribed eye drops, or regular monitoring. Appropriate eye care begins with accurate assessment, clear information, and timely medical attention.
+            Homeopathy has not been established by reliable scientific evidence as an effective treatment for conjunctivitis, ocular hypertension, or glaucoma. It should not replace ophthalmologist-directed treatment, prescribed eye drops, or regular monitoring. Appropriate eye care begins with accurate assessment, clear information, and timely medical attention.
           </p>
         </div>
 
@@ -185,7 +185,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0 mt-0.5" />
-              <span><strong>Scientific Boundaries:</strong> Homoeopathy has not been shown reliably to treat conjunctivitis, lower eye pressure, or prevent glaucoma progression.</span>
+              <span><strong>Scientific Boundaries:</strong> Homeopathy has not been shown reliably to treat conjunctivitis, lower eye pressure, or prevent glaucoma progression.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0 mt-0.5" />
@@ -211,7 +211,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               For example, eye redness may be associated with allergic irritation, a viral or bacterial infection, dry eyes, or a more serious problem inside the eye such as anterior uveitis or acute glaucoma. Elevated eye pressure, meanwhile, may not cause any obvious symptoms initially but can be an important risk factor for permanent optic nerve damage.
             </p>
             <p>
-              An <strong className="text-[#1E2559] font-semibold">Eye Health Consultation in Malappuram</strong> may be sought by individuals who want to understand recurring symptoms or learn about appropriate eye health assessment. However, a homoeopathic consultation is not a substitute for an ophthalmic examination, particularly when a condition could affect vision.
+              An <strong className="text-[#1E2559] font-semibold">Eye Health Consultation in Malappuram</strong> may be sought by individuals who want to understand recurring symptoms or learn about appropriate eye health assessment. However, a homeopathic consultation is not a substitute for an ophthalmic examination, particularly when a condition could affect vision.
             </p>
             <p>
               A qualified eye specialist can assess visual acuity, examine the anterior and posterior eye structures under a slit lamp, measure intraocular pressure using applanation tonometry, and evaluate the optic nerve head. Further testing may be recommended according to the patient's symptoms and medical history.
@@ -297,7 +297,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
                 <span>Critical Safety Warning on Eye Preparations</span>
               </h4>
               <p className="text-xs sm:text-sm text-[#78350F] leading-relaxed">
-                Homoeopathy has not been established as an effective treatment for infectious or allergic conjunctivitis. Homoeopathic preparations should never be used in place of appropriate diagnosis or prescribed treatment. <strong>Never put unsterile preparations, non-prescribed tinctures, or home-diluted substances into the eyes</strong>, as these may cause severe chemical injury, corneal ulceration, or permanent vision loss.
+                Homeopathy has not been established as an effective treatment for infectious or allergic conjunctivitis. Homeopathic preparations should never be used in place of appropriate diagnosis or prescribed treatment. <strong>Never put unsterile preparations, non-prescribed tinctures, or home-diluted substances into the eyes</strong>, as these may cause severe chemical injury, corneal ulceration, or permanent vision loss.
               </p>
             </div>
             <p>
@@ -340,7 +340,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <li>Scheduling regular follow-up examinations according to individual risk stratification.</li>
             </ul>
             <p>
-              Depending on the person's risk, the ophthalmologist may recommend regular observation or pressure-lowering drops. Homoeopathy has not been shown reliably to lower intraocular pressure or prevent glaucoma. Individuals with ocular hypertension must continue recommended monitoring and follow the advice of their ophthalmologist.
+              Depending on the person's risk, the ophthalmologist may recommend regular observation or pressure-lowering drops. Homeopathy has not been shown reliably to lower intraocular pressure or prevent glaucoma. Individuals with ocular hypertension must continue recommended monitoring and follow the advice of their ophthalmologist.
             </p>
           </div>
         </div>
@@ -381,7 +381,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               A <strong className="text-[#1E2559] font-semibold">Glaucoma Consultation in Malappuram</strong> should involve appropriate ophthalmic assessment or a clear referral to a qualified eye specialist. Treatment options may include prescription prostaglandin analogs, beta-blockers, alpha-agonists, laser trabeculoplasty, or filtration surgery.
             </p>
             <p>
-              Patients should use prescribed eye drops consistently as directed and attend all recommended follow-up appointments, even when vision feels completely normal. Homoeopathy has not been established as an effective treatment for glaucoma, and must never replace proven medical care.
+              Patients should use prescribed eye drops consistently as directed and attend all recommended follow-up appointments, even when vision feels completely normal. Homeopathy has not been established as an effective treatment for glaucoma, and must never replace proven medical care.
             </p>
           </div>
         </div>
@@ -396,7 +396,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               Individuals living with chronic eye conditions may need ongoing education, reassurance, and practical reminders about the vital importance of regular follow-up and daily eye-drop compliance.
             </p>
             <p>
-              The term <em>supportive co-management</em> should be used only when it accurately reflects genuine educational support alongside conventional ophthalmic care. It should never imply that homoeopathy can reduce eye pressure, reverse optic nerve cupping, or control glaucoma independently.
+              The term <em>supportive co-management</em> should be used only when it accurately reflects genuine educational support alongside conventional ophthalmic care. It should never imply that homeopathy can reduce eye pressure, reverse optic nerve cupping, or control glaucoma independently.
             </p>
             <p>
               Supportive care discussions focus on understanding the diagnosis, recognizing urgent warning signs, maintaining medication routines, adopting digital eye-strain hygiene, and attending scheduled ophthalmologist reviews. These supportive steps foster patient engagement with their established treatment plan without substituting for medical ophthalmology.
@@ -545,7 +545,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               Recurrent conjunctivitis, ocular hypertension, and glaucoma require different approaches to assessment and management. Recognizing symptoms, understanding risk factors, and seeking appropriate professional care can help people make informed decisions about their eye health.
             </p>
             <p>
-              The <strong className="text-[#1E2559] font-semibold">Ophthalmic &amp; Eye Homoeopathic Clinic in Malappuram</strong> is a relevant website topic for individuals exploring eye health information and consultation options. However, homoeopathy should not be presented as a proven treatment for eye infections, elevated intraocular pressure, or glaucoma.
+              The <strong className="text-[#1E2559] font-semibold">Ophthalmic &amp; Eye Homeopathic Clinic in Malappuram</strong> is a relevant website topic for individuals exploring eye health information and consultation options. However, homeopathy should not be presented as a proven treatment for eye infections, elevated intraocular pressure, or glaucoma.
             </p>
             <p>
               For people seeking an <strong className="text-[#1E2559] font-semibold">Eye Health Consultation in Malappuram</strong>, the priority should be an accurate diagnosis, timely referral when necessary, and adherence to evidence-based treatment. If you have been diagnosed with ocular hypertension or glaucoma, continue your ophthalmologist-directed care and attend regular monitoring appointments.
@@ -564,15 +564,15 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               Clinical Guide
             </span>
             <p className="text-sm font-semibold text-[#1E2559]">
-              How to Choose a Homoeopathic Clinic in Malappuram
+              How to Choose a Homeopathic Clinic in Malappuram
             </p>
             <p className="text-xs text-[#475569]">
               Read our comprehensive patient checklist on practitioner credentials, consultation ethics, and evidence-based safety.
             </p>
           </div>
           <a
-            href="/homoeopathic-clinic-in-malappuram-guide/"
-            onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+            href="/homeopathic-clinic-in-malappuram-guide/"
+            onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
             className="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#45AC4B] text-white text-xs font-bold hover:bg-[#3d9842] transition-colors shadow-2xs"
           >
             <span>Read Clinic Guide</span>
@@ -637,7 +637,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -645,7 +645,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -653,7 +653,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -661,7 +661,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
+              href="/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -669,7 +669,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-neurological-headache-conditions/"
+              href="/homeopathic-treatment-for-neurological-headache-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -677,7 +677,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >
@@ -685,7 +685,7 @@ export const OphthalmicEyeSeoArticleSection: React.FC = () => {
               <ArrowRight className="w-3.5 h-3.5 text-[#303A88] group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88] hover:bg-[#EEF2FB] transition-colors text-xs font-semibold text-[#1E2559] flex items-center justify-between group"
             >

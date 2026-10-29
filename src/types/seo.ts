@@ -16,7 +16,7 @@ export interface PageSeoMetadata {
   id: string; // e.g. 'home', 'womens-health-care', 'blog-severe-period-pain'
   pageName: string; // Human-friendly label
   category: SeoCategory;
-  path: string; // Relative URL e.g. '/', '/homoeopathic-treatment-for-womens-health-gynecological-care/'
+  path: string; // Relative URL e.g. '/', '/homeopathic-treatment-for-womens-health-gynecological-care/'
   title: string; // Document title and og:title (30-60 chars recommended)
   description: string; // Meta description and og:description (120-160 chars recommended)
   url: string; // Full canonical URL

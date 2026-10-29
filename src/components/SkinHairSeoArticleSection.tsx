@@ -74,9 +74,9 @@ export const SkinHairSeoArticleSection: React.FC = () => {
         'You should seek medical evaluation if skin symptoms such as intense itching, spreading redness, scaling patches, painful cystic acne, or unexplained pigmentation persist for several weeks or recur repeatedly. Any rapidly changing, bleeding, or unusual mole requires immediate dermatological assessment.',
     },
     {
-      question: 'Can homoeopathy cure chronic eczema or psoriasis?',
+      question: 'Can homeopathy cure chronic eczema or psoriasis?',
       answer:
-        'Reliable scientific evidence has not established homoeopathy as a curative treatment for eczema or psoriasis. These chronic inflammatory conditions require evidence-based management, skin barrier restoration, and medical supervision to prevent flare-ups, skin infections, and complications such as psoriatic arthritis.',
+        'Reliable scientific evidence has not established homeopathy as a curative treatment for eczema or psoriasis. These chronic inflammatory conditions require evidence-based management, skin barrier restoration, and medical supervision to prevent flare-ups, skin infections, and complications such as psoriatic arthritis.',
     },
     {
       question: 'What is the difference between ordinary hair shedding and alopecia areata?',
@@ -119,7 +119,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             id="skin-hair-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Skin &amp; Hair Homoeopathic Clinic in Malappuram
+            Skin &amp; Hair Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -146,13 +146,13 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             Healthy skin and hair contribute to comfort, confidence, and overall well-being. However, recurring skin irritation, persistent itching, acne, pigmentation, hair thinning, patchy hair loss, and scalp problems can affect people of different ages. These concerns may develop gradually or appear suddenly, and they can sometimes interfere with daily activities, sleep, work, and self-confidence.
           </p>
           <p>
-            Understanding the possible causes of skin and hair changes is an important first step towards choosing appropriate care. If you are looking for a <strong className="text-[#1E2559] font-semibold">Skin &amp; Hair Homoeopathic Clinic in Malappuram</strong>, consider a healthcare provider who listens carefully to your concerns, explains available options, and recognises when examination or specialist referral is necessary.
+            Understanding the possible causes of skin and hair changes is an important first step towards choosing appropriate care. If you are looking for a <strong className="text-[#1E2559] font-semibold">Skin &amp; Hair Homeopathic Clinic in Malappuram</strong>, consider a healthcare provider who listens carefully to your concerns, explains available options, and recognises when examination or specialist referral is necessary.
           </p>
           <p>
             Skin and hair conditions can have different causes, including inflammation, infections, allergies, hormonal changes, genetics, environmental factors, and underlying medical conditions. An accurate assessment helps determine which treatment options may be appropriate.
           </p>
           <p>
-            A homoeopathic consultation may provide an opportunity to discuss your symptoms and health history. However, reliable scientific evidence has not established homoeopathy as an effective treatment for skin or hair disorders. It should not replace proven medical care, particularly for severe, persistent, or potentially serious conditions.
+            A homeopathic consultation may provide an opportunity to discuss your symptoms and health history. However, reliable scientific evidence has not established homeopathy as an effective treatment for skin or hair disorders. It should not replace proven medical care, particularly for severe, persistent, or potentially serious conditions.
           </p>
         </div>
 
@@ -178,7 +178,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#16A34A] shrink-0 mt-0.5" />
-              <span>A <strong>Homoeopathic Skin Clinic in Malappuram</strong> should communicate clearly about the limitations of homoeopathy and the importance of appropriate medical care.</span>
+              <span>A <strong>Homeopathic Skin Clinic in Malappuram</strong> should communicate clearly about the limitations of homeopathy and the importance of appropriate medical care.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#16A34A] shrink-0 mt-0.5" />
@@ -219,18 +219,18 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               Although some symptoms appear similar, their causes can differ considerably. For example, an itchy rash may be related to eczema, contact dermatitis, an infection, or another skin condition. Likewise, hair loss may be associated with genetics, nutritional deficiencies, hormonal changes, autoimmune conditions, medication effects, or scalp disorders.
             </p>
             <p>
-              People seeking a <strong className="text-[#1E2559] font-semibold">Homoeopathic Doctor for Skin Problems in Malappuram</strong> should consider the importance of identifying the underlying condition rather than relying on symptoms alone. A healthcare professional may examine the affected area, review medical history, ask about symptom duration, and recommend tests or referrals when appropriate.
+              People seeking a <strong className="text-[#1E2559] font-semibold">Homeopathic Doctor for Skin Problems in Malappuram</strong> should consider the importance of identifying the underlying condition rather than relying on symptoms alone. A healthcare professional may examine the affected area, review medical history, ask about symptom duration, and recommend tests or referrals when appropriate.
             </p>
           </div>
         </div>
 
-        {/* Section 2: Homoeopathic Skin Clinic in Malappuram for Recurring Skin Concerns */}
+        {/* Section 2: Homeopathic Skin Clinic in Malappuram for Recurring Skin Concerns */}
         <div className="space-y-5 pt-10 border-t border-[#EEF2FB]">
           <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-            Homoeopathic Skin Clinic in Malappuram for Recurring Skin Concerns
+            Homeopathic Skin Clinic in Malappuram for Recurring Skin Concerns
           </h3>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            Skin problems can affect comfort and everyday life, particularly when symptoms recur or remain unexplained. Redness, dryness, itching, scaling, swelling, and changes in skin colour may indicate different underlying conditions. If you are searching for a <strong className="text-[#1E2559] font-semibold">Homoeopathic Skin Clinic in Malappuram</strong>, it is helpful to understand the range of skin concerns that may require professional assessment.
+            Skin problems can affect comfort and everyday life, particularly when symptoms recur or remain unexplained. Redness, dryness, itching, scaling, swelling, and changes in skin colour may indicate different underlying conditions. If you are searching for a <strong className="text-[#1E2559] font-semibold">Homeopathic Skin Clinic in Malappuram</strong>, it is helpful to understand the range of skin concerns that may require professional assessment.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -247,7 +247,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
                 Persistent itching can disturb sleep and may lead to scratching, skin damage, or secondary infection. Appropriate management depends on the type and severity of eczema. Evidence-based options may include moisturisers, trigger avoidance, prescribed topical treatments, and other therapies recommended by a healthcare professional.
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathy has not been established as an effective treatment for eczema. Patients with persistent symptoms should seek appropriate medical advice, especially when the skin becomes painful, warm, swollen, or infected.
+                Homeopathy has not been established as an effective treatment for eczema. Patients with persistent symptoms should seek appropriate medical advice, especially when the skin becomes painful, warm, swollen, or infected.
               </p>
             </div>
 
@@ -267,7 +267,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
                 A healthcare professional can help distinguish psoriasis from other skin conditions and recommend appropriate treatment. Depending on severity, management may involve topical medicines, phototherapy, or systemic treatments.
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathy has not been shown reliably to control psoriasis. People with suspected psoriasis should seek an accurate diagnosis and discuss evidence-based treatment options.
+                Homeopathy has not been shown reliably to control psoriasis. People with suspected psoriasis should seek an accurate diagnosis and discuss evidence-based treatment options.
               </p>
             </div>
           </div>
@@ -316,21 +316,21 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               </div>
             </div>
             <p className="text-xs text-[#991B1B] pt-2 leading-relaxed">
-              <strong>Clinical alert:</strong> Homoeopathy has not been established as an effective treatment for melasma or other pigmentation disorders. If a dark spot changes rapidly, bleeds, becomes painful, or has an unusual asymmetrical appearance, seek medical assessment rather than assuming it is ordinary pigmentation.
+              <strong>Clinical alert:</strong> Homeopathy has not been established as an effective treatment for melasma or other pigmentation disorders. If a dark spot changes rapidly, bleeds, becomes painful, or has an unusual asymmetrical appearance, seek medical assessment rather than assuming it is ordinary pigmentation.
             </p>
           </div>
         </div>
 
-        {/* Section 4: Homoeopathic Doctor for Skin Problems in Malappuram: Acne and Cystic Acne */}
+        {/* Section 4: Homeopathic Doctor for Skin Problems in Malappuram: Acne and Cystic Acne */}
         <div className="space-y-5 pt-10 border-t border-[#EEF2FB]">
           <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-            Homoeopathic Doctor for Skin Problems in Malappuram: Acne and Cystic Acne
+            Homeopathic Doctor for Skin Problems in Malappuram: Acne and Cystic Acne
           </h3>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Acne is a common skin condition that develops when hair follicles become blocked and inflamed. It may produce blackheads, whiteheads, pimples, deeper nodules, or painful cyst-like lesions. Acne can affect the face, chest, shoulders, and back. In more severe cases, it may cause permanent scars and changes in skin pigmentation.
           </p>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            A <strong className="text-[#1E2559] font-semibold">Homoeopathic Doctor for Skin Problems in Malappuram</strong> may be one of the practitioners people consider when looking for advice about recurring skin complaints. However, it is important to understand that homoeopathy has not been shown reliably to treat acne.
+            A <strong className="text-[#1E2559] font-semibold">Homeopathic Doctor for Skin Problems in Malappuram</strong> may be one of the practitioners people consider when looking for advice about recurring skin complaints. However, it is important to understand that homeopathy has not been shown reliably to treat acne.
           </p>
 
           <div className="p-6 rounded-2xl bg-white border border-[#D8E1F5] shadow-2xs space-y-3">
@@ -347,13 +347,13 @@ export const SkinHairSeoArticleSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 5: Homoeopathic Hair Clinic in Malappuram for Hair and Scalp Concerns */}
+        {/* Section 5: Homeopathic Hair Clinic in Malappuram for Hair and Scalp Concerns */}
         <div className="space-y-5 pt-10 border-t border-[#EEF2FB]">
           <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-            Homoeopathic Hair Clinic in Malappuram for Hair and Scalp Concerns
+            Homeopathic Hair Clinic in Malappuram for Hair and Scalp Concerns
           </h3>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            Hair loss and scalp irritation can have several possible causes. Some people experience gradual thinning, while others notice sudden shedding or distinct patches of missing hair. If you are searching for a <strong className="text-[#1E2559] font-semibold">Homoeopathic Hair Clinic in Malappuram</strong>, it is important to consider whether the hair changes require medical examination.
+            Hair loss and scalp irritation can have several possible causes. Some people experience gradual thinning, while others notice sudden shedding or distinct patches of missing hair. If you are searching for a <strong className="text-[#1E2559] font-semibold">Homeopathic Hair Clinic in Malappuram</strong>, it is important to consider whether the hair changes require medical examination.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -406,22 +406,22 @@ export const SkinHairSeoArticleSection: React.FC = () => {
                 Sudden patchy hair loss should not automatically be attributed to stress or nutritional problems. Early assessment by a dermatologist can help establish the diagnosis and rule out other causes, including fungal scalp infections (tinea capitis).
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathy has not been established as an effective treatment for hair loss. Avoid relying on unproven remedies when hair loss is sudden, extensive, painful, or associated with scalp inflammation.
+                Homeopathy has not been established as an effective treatment for hair loss. Avoid relying on unproven remedies when hair loss is sudden, extensive, painful, or associated with scalp inflammation.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Section 6: Homoeopathic Doctor for Hair Problems in Malappuram: Understanding Dandruff */}
+        {/* Section 6: Homeopathic Doctor for Hair Problems in Malappuram: Understanding Dandruff */}
         <div className="space-y-5 pt-10 border-t border-[#EEF2FB]">
           <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-            Homoeopathic Doctor for Hair Problems in Malappuram: Understanding Dandruff
+            Homeopathic Doctor for Hair Problems in Malappuram: Understanding Dandruff
           </h3>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
             Dandruff is a common scalp condition associated with flaking and sometimes itching. More persistent scalp symptoms may be related to seborrhoeic dermatitis, psoriasis, eczema, contact dermatitis, or other conditions.
           </p>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            People looking for a <strong className="text-[#1E2559] font-semibold">Homoeopathic Doctor for Hair Problems in Malappuram</strong> may want to discuss persistent dandruff, scalp discomfort, or hair shedding.
+            People looking for a <strong className="text-[#1E2559] font-semibold">Homeopathic Doctor for Hair Problems in Malappuram</strong> may want to discuss persistent dandruff, scalp discomfort, or hair shedding.
           </p>
 
           <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#D8E1F5] space-y-3">
@@ -457,7 +457,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
                 The cause is not always identifiable. Some episodes may be associated with infections, medications, physical triggers, or other factors, while many cases have no clear external trigger. Antihistamines are commonly used for urticaria, with additional treatment considered when symptoms are not adequately controlled.
               </p>
               <p className="text-xs text-[#64748B] italic">
-                Homoeopathy has not been established as an effective treatment for chronic urticaria.
+                Homeopathy has not been established as an effective treatment for chronic urticaria.
               </p>
             </div>
 
@@ -489,7 +489,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               Persistent growths should be assessed when their diagnosis is uncertain, they become painful, bleed, change in appearance, or occur in sensitive areas. Evidence-based treatments may include salicylic acid, cryotherapy, or other options recommended by a healthcare professional. Treatment choice depends on the location, size, and type of lesion.
             </p>
             <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed font-medium">
-              Homoeopathy has not been shown reliably to eliminate warts. Avoid cutting, burning, or applying harsh chemicals to skin growths without appropriate medical guidance, as this risks scarring and severe infection.
+              Homeopathy has not been shown reliably to eliminate warts. Avoid cutting, burning, or applying harsh chemicals to skin growths without appropriate medical guidance, as this risks scarring and severe infection.
             </p>
           </div>
         </div>
@@ -507,7 +507,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               Prompt medical assessment is crucial because prescription antiviral medication is most effective when started early (within 72 hours of rash onset). Shingles affecting the eye or face requires urgent ophthalmological evaluation to prevent vision damage.
             </p>
             <p>
-              Some people experience persistent burning or shooting nerve pain long after the rash has healed. This is known as postherpetic neuralgia and requires specific pain-management treatment. Homoeopathy has not been established as an effective treatment for shingles or postherpetic neuralgia. Do not delay medical care while trying unproven remedies.
+              Some people experience persistent burning or shooting nerve pain long after the rash has healed. This is known as postherpetic neuralgia and requires specific pain-management treatment. Homeopathy has not been established as an effective treatment for shingles or postherpetic neuralgia. Do not delay medical care while trying unproven remedies.
             </p>
           </div>
         </div>
@@ -518,7 +518,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             What to Expect During a Skin or Hair Consultation
           </h3>
           <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-            Whether you are considering a <strong className="text-[#1E2559] font-semibold">Homoeopathic Skin Clinic in Malappuram</strong> or a <strong className="text-[#1E2559] font-semibold">Homoeopathic Hair Clinic in Malappuram</strong>, a useful consultation should provide an opportunity to explain your concerns and understand the next steps:
+            Whether you are considering a <strong className="text-[#1E2559] font-semibold">Homeopathic Skin Clinic in Malappuram</strong> or a <strong className="text-[#1E2559] font-semibold">Homeopathic Hair Clinic in Malappuram</strong>, a useful consultation should provide an opportunity to explain your concerns and understand the next steps:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm">
@@ -584,8 +584,8 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               </p>
             </div>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] bg-[#EEF2FB] hover:bg-[#D3DBF4] px-4 py-2 rounded-full transition-colors shrink-0"
             >
               <span>Guide to Choosing a Clinic</span>
@@ -707,7 +707,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-1">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -726,7 +726,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -745,7 +745,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-renal-calculi-thyroid-dysfunction/"
+              href="/homeopathic-treatment-for-renal-calculi-thyroid-dysfunction/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -764,7 +764,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -783,7 +783,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-disorders/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-disorders/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -802,7 +802,7 @@ export const SkinHairSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-neurological-lifestyle-disorders/"
+              href="/homeopathic-treatment-for-neurological-lifestyle-disorders/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -835,10 +835,10 @@ export const SkinHairSeoArticleSection: React.FC = () => {
               Skin and hair concerns can affect physical comfort, confidence, and everyday life. Conditions such as eczema, psoriasis, melasma, acne, urticaria, alopecia areata, warts, and persistent dandruff may have different causes and require different approaches to assessment and management.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-              If you are searching for a Homoeopathic Skin Clinic in Malappuram, a Homoeopathic Hair Clinic in Malappuram, or a Homoeopathic Doctor for Skin Problems in Malappuram, prioritise clear communication, accurate health information, and appropriate medical referral. A Hair Loss Consultation in Malappuram can be an opportunity to discuss changes in hair growth and understand why further assessment may be necessary. Similarly, a Skin Allergy Consultation in Malappuram can help address recurring symptoms and identify whether additional investigation is appropriate.
+              If you are searching for a Homeopathic Skin Clinic in Malappuram, a Homeopathic Hair Clinic in Malappuram, or a Homeopathic Doctor for Skin Problems in Malappuram, prioritise clear communication, accurate health information, and appropriate medical referral. A Hair Loss Consultation in Malappuram can be an opportunity to discuss changes in hair growth and understand why further assessment may be necessary. Similarly, a Skin Allergy Consultation in Malappuram can help address recurring symptoms and identify whether additional investigation is appropriate.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-              Choosing a Homoeopathic Doctor for Hair Problems in Malappuram or another healthcare provider should involve understanding the practitioner's qualifications and the evidence supporting any proposed treatment. A responsible approach to skin and hair health focuses on identifying the underlying condition, considering proven treatment options, and seeking specialist care when necessary. Homoeopathy should not replace evidence-based treatment for skin and hair disorders, and patients should not delay appropriate medical assessment for persistent or concerning symptoms.
+              Choosing a Homeopathic Doctor for Hair Problems in Malappuram or another healthcare provider should involve understanding the practitioner's qualifications and the evidence supporting any proposed treatment. A responsible approach to skin and hair health focuses on identifying the underlying condition, considering proven treatment options, and seeking specialist care when necessary. Homeopathy should not replace evidence-based treatment for skin and hair disorders, and patients should not delay appropriate medical assessment for persistent or concerning symptoms.
             </p>
             <div className="pt-3 flex flex-wrap items-center gap-3">
               <button

@@ -84,9 +84,9 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
         'Medication-overuse headaches occur when acute pain relievers, triptans, or combination analgesics are taken frequently (typically 10 to 15 days or more per month). Over time, the medicine causes headaches to become more frequent and daily, requiring structured medication withdrawal under clinical supervision.',
     },
     {
-      question: 'Can homoeopathy cure clinical anxiety disorders or depression?',
+      question: 'Can homeopathy cure clinical anxiety disorders or depression?',
       answer:
-        'Reliable scientific evidence has not shown homoeopathy to effectively treat clinical anxiety disorders, panic disorders, or depression. These mental health conditions benefit from evidence-based care, including cognitive behavioural therapy (CBT) and prescribed medical treatments.',
+        'Reliable scientific evidence has not shown homeopathy to effectively treat clinical anxiety disorders, panic disorders, or depression. These mental health conditions benefit from evidence-based care, including cognitive behavioural therapy (CBT) and prescribed medical treatments.',
     },
     {
       question: 'What causes persistent brain fog and memory difficulties in adults?',
@@ -119,7 +119,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             id="neurological-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Neurological &amp; Headache Conditions Homoeopathic Clinic in Malappuram
+            Neurological &amp; Headache Conditions Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -146,13 +146,13 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             Headaches, recurring migraines, stress, anxiety, memory difficulties, and concentration problems can affect everyday comfort, productivity, sleep, and quality of life. These concerns may develop gradually or appear during periods of physical strain, emotional pressure, illness, or changes in daily routines. When symptoms occur frequently, understanding their possible causes and seeking appropriate professional guidance are important steps towards better health management.
           </p>
           <p>
-            If you are searching for a <strong className="text-[#1E2559] font-semibold">Neurological &amp; Headache Conditions Homoeopathic Clinic in Malappuram</strong>, it is important to choose a healthcare provider who takes your concerns seriously, reviews your health history, and explains when further medical assessment may be necessary.
+            If you are searching for a <strong className="text-[#1E2559] font-semibold">Neurological &amp; Headache Conditions Homeopathic Clinic in Malappuram</strong>, it is important to choose a healthcare provider who takes your concerns seriously, reviews your health history, and explains when further medical assessment may be necessary.
           </p>
           <p>
             Headaches and memory problems can have several causes, including migraine disorders, tension-type headaches, sleep disturbances, medication effects, and other medical conditions. Similarly, stress and anxiety can affect concentration, energy levels, and emotional well-being. Children who experience attention or learning difficulties may also need an individualised developmental assessment.
           </p>
           <p>
-            A consultation can help you discuss your symptoms, understand possible contributing factors, and identify appropriate next steps. However, reliable scientific evidence has not established homoeopathy as an effective treatment for migraines, neurological disorders, anxiety disorders, or developmental conditions. Homoeopathic consultation should not replace evidence-based medical care or delay an appropriate diagnosis.
+            A consultation can help you discuss your symptoms, understand possible contributing factors, and identify appropriate next steps. However, reliable scientific evidence has not established homeopathy as an effective treatment for migraines, neurological disorders, anxiety disorders, or developmental conditions. Homeopathic consultation should not replace evidence-based medical care or delay an appropriate diagnosis.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
-              <span>Homoeopathy has not been shown reliably to treat migraine disorders, anxiety disorders, or neurological conditions.</span>
+              <span>Homeopathy has not been shown reliably to treat migraine disorders, anxiety disorders, or neurological conditions.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#2563EB] shrink-0 mt-0.5" />
@@ -301,7 +301,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
           </div>
 
           <p className="text-xs text-[#64748B] italic pt-1">
-            A proper assessment helps distinguish between these possibilities. Homoeopathy has not been established as an effective treatment for headache disorders, so people with recurring or disabling headaches should discuss evidence-based management with a qualified healthcare professional.
+            A proper assessment helps distinguish between these possibilities. Homeopathy has not been established as an effective treatment for headache disorders, so people with recurring or disabling headaches should discuss evidence-based management with a qualified healthcare professional.
           </p>
         </div>
 
@@ -447,7 +447,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 </div>
               </div>
               <p className="text-xs text-[#64748B] italic pt-1">
-                Homoeopathy has not been established as an effective treatment for chronic stress-related or mental health disorders.
+                Homeopathy has not been established as an effective treatment for chronic stress-related or mental health disorders.
               </p>
             </div>
           </div>
@@ -503,7 +503,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 Depending on the person's needs, treatment may include psychological therapies such as cognitive behavioural therapy (CBT), medication, or a combination of approaches. Lifestyle measures and social support may also contribute to well-being.
               </p>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                If anxiety is affecting daily activities, professional assessment can help identify suitable support. Homoeopathy has not been shown reliably to treat anxiety disorders and should not replace established mental health care.
+                If anxiety is affecting daily activities, professional assessment can help identify suitable support. Homeopathy has not been shown reliably to treat anxiety disorders and should not replace established mental health care.
               </p>
               <div className="p-3 bg-[#FEF2F2] rounded-xl border border-[#FCA5A5] text-xs text-[#991B1B] leading-relaxed font-semibold">
                 Crisis Support Note: Anyone experiencing severe emotional distress or thoughts of self-harm should seek immediate support from a qualified mental health professional or emergency service.
@@ -568,7 +568,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 Urgent Warning: Sudden confusion or an abrupt change in memory, especially when accompanied by weakness, speech difficulties, severe headache, or other neurological symptoms, requires urgent medical assessment.
               </div>
               <p className="text-xs text-[#64748B] italic">
-                Homoeopathy has not been established as an effective treatment for memory disorders or cognitive impairment.
+                Homeopathy has not been established as an effective treatment for memory disorders or cognitive impairment.
               </p>
             </div>
           </div>
@@ -630,7 +630,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 Specific learning disabilities may affect reading, written expression, or mathematics. Children may benefit from formal educational or psychological assessment, targeted learning support, and appropriate school accommodations.
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathy has not been shown reliably to treat ADHD or specific learning disabilities. It should not replace established assessment, educational support, behavioural interventions, or prescribed treatment. Parents should seek advice from qualified paediatric, developmental, psychological, or educational professionals.
+                Homeopathy has not been shown reliably to treat ADHD or specific learning disabilities. It should not replace established assessment, educational support, behavioural interventions, or prescribed treatment. Parents should seek advice from qualified paediatric, developmental, psychological, or educational professionals.
               </p>
             </div>
           </div>
@@ -704,12 +704,12 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 Choosing a Healthcare Clinic in Malappuram
               </h3>
               <p className="text-sm sm:text-base text-[#64748B] mt-1 leading-relaxed">
-                When looking for a <strong className="text-[#1E2559] font-semibold">Neurological &amp; Headache Conditions Homoeopathic Clinic in Malappuram</strong>, consider whether the provider communicates transparently about professional qualifications, treatment limitations, and the need for medical referral:
+                When looking for a <strong className="text-[#1E2559] font-semibold">Neurological &amp; Headache Conditions Homeopathic Clinic in Malappuram</strong>, consider whether the provider communicates transparently about professional qualifications, treatment limitations, and the need for medical referral:
               </p>
             </div>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] bg-[#EEF2FB] hover:bg-[#D3DBF4] px-4 py-2 rounded-full transition-colors shrink-0"
             >
               <span>Guide to Choosing a Clinic</span>
@@ -824,14 +824,14 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
                 Explore Related Clinical Care Programs
               </h3>
               <p className="text-xs sm:text-sm text-[#64748B] mt-0.5">
-                Anjali Homoeo Clinic offers personalized homoeopathic consultations across multiple clinical specialties:
+                Anjali Homoeo Clinic offers personalized homeopathic consultations across multiple clinical specialties:
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-1">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -850,7 +850,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -869,7 +869,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -888,7 +888,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-renal-calculi-thyroid-dysfunction/"
+              href="/homeopathic-treatment-for-renal-calculi-thyroid-dysfunction/"
               onClick={(e) => handleNavigateTreatment(e, 'renal-thyroid-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -907,7 +907,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -926,7 +926,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-disorders/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-disorders/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -962,7 +962,7 @@ export const NeurologicalSeoArticleSection: React.FC = () => {
               If you are searching for a Headache Consultation in Malappuram, a Migraine Consultation in Malappuram, or a Stress Management Consultation in Malappuram, prioritise clear communication, accurate assessment, and evidence-based treatment options. Similarly, people seeking an Anxiety Consultation in Malappuram, a Child Development Consultation in Malappuram, or a Pediatric Consultation in Malappuram should ensure that their needs are assessed by professionals with appropriate qualifications.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-              For persistent forgetfulness or changes in concentration, a Memory Problems Consultation in Malappuram may be a starting point for discussing symptoms and identifying the need for further evaluation. A responsible approach to health focuses on understanding the cause of symptoms, choosing appropriate care, and recognising when specialist support is necessary. Homoeopathic consultation should not replace proven treatment for migraines, neurological disorders, anxiety disorders, ADHD, or learning disabilities. Seek appropriate medical attention whenever symptoms are persistent, severe, sudden, or worsening.
+              For persistent forgetfulness or changes in concentration, a Memory Problems Consultation in Malappuram may be a starting point for discussing symptoms and identifying the need for further evaluation. A responsible approach to health focuses on understanding the cause of symptoms, choosing appropriate care, and recognising when specialist support is necessary. Homeopathic consultation should not replace proven treatment for migraines, neurological disorders, anxiety disorders, ADHD, or learning disabilities. Seek appropriate medical attention whenever symptoms are persistent, severe, sudden, or worsening.
             </p>
             <div className="pt-3 flex flex-wrap items-center gap-3">
               <button

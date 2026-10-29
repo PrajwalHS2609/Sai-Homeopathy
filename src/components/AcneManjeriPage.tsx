@@ -87,7 +87,7 @@ export const AcneManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'Reliable scientific clinical evidence does not establish homoeopathy as an effective treatment or cure for chronic acne or hormonal breakouts.',
+      desc: 'Reliable scientific clinical evidence does not establish homeopathy as an effective treatment or cure for chronic acne or hormonal breakouts.',
     },
     {
       title: 'Evidence-Based Modalities',
@@ -191,9 +191,9 @@ export const AcneManjeriPage: React.FC = () => {
         'You can consult a qualified healthcare professional in Manjeri for an in-depth clinical assessment and diagnostic guidance. A qualified dermatologist or physician is particularly recommended for persistent, severe, nodulocystic, or scarring acne to establish an evidence-based management plan.',
     },
     {
-      question: '3. Is Homoeopathic Acne Treatment in Manjeri scientifically proven?',
+      question: '3. Is Homeopathic Acne Treatment in Manjeri scientifically proven?',
       answer:
-        'No. Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment or cure for acne. Patients are advised to explore evidence-based therapies—such as topical benzoyl peroxide, retinoids, azelaic acid, or systemic medications—under qualified medical supervision.',
+        'No. Reliable scientific clinical evidence has not established homeopathy as an effective medical treatment or cure for acne. Patients are advised to explore evidence-based therapies—such as topical benzoyl peroxide, retinoids, azelaic acid, or systemic medications—under qualified medical supervision.',
     },
     {
       question: '4. Can pimples leave permanent scars?',
@@ -226,9 +226,9 @@ export const AcneManjeriPage: React.FC = () => {
         'Not usually. Acne is an internal inflammatory process driven by follicular biology, sebum chemistry, and hormones—not surface dirt. Over-washing, scrubbing aggressively, or using harsh astringents actually strips the epidermal barrier, causing irritation and worsening breakouts.',
     },
     {
-      question: '10. Can homoeopathy guarantee permanent acne removal?',
+      question: '10. Can homeopathy guarantee permanent acne removal?',
       answer:
-        'No. Homoeopathy has not been established as an effective acne treatment in scientific trials, and no reputable medical professional can guarantee permanent eradication of acne. Responsible healthcare focuses on accurate diagnosis, addressing root triggers, and preventing permanent scarring.',
+        'No. Homeopathy has not been established as an effective acne treatment in scientific trials, and no reputable medical professional can guarantee permanent eradication of acne. Responsible healthcare focuses on accurate diagnosis, addressing root triggers, and preventing permanent scarring.',
     },
   ];
 
@@ -255,7 +255,7 @@ export const AcneManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#F43F5E]" />}
         badgeText="Regional Clinical Acne Guide • Manjeri Patients"
-        title="Homoeopathic Treatment for Acne Skin Problems in Manjeri"
+        title="Homeopathic Treatment for Acne Skin Problems in Manjeri"
         subtitle="Individualized clinical guidance for teenagers and adults in Manjeri and Malappuram experiencing persistent acne breakouts, pimples, cystic spots, hormonal flare-ups, and post-acne scarring concerns."
         metrics={[
           { label: 'Condition Category', value: 'Pilosebaceous Acne' },
@@ -450,7 +450,7 @@ export const AcneManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 4: Homoeopathic Acne Treatment in Manjeri: Understanding the Evidence */}
+      {/* Section 4: Homeopathic Acne Treatment in Manjeri: Understanding the Evidence */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -458,17 +458,17 @@ export const AcneManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Homoeopathic Acne Treatment in Manjeri: Understanding the Evidence
+              Homeopathic Acne Treatment in Manjeri: Understanding the Evidence
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              Some people search for <strong>Homoeopathic Acne Treatment in Manjeri</strong> because they prefer a personalised consultation or are interested in alternative approaches to managing skin problems.
+              Some people search for <strong>Homeopathic Acne Treatment in Manjeri</strong> because they prefer a personalised consultation or are interested in alternative approaches to managing skin problems.
             </p>
 
             <p>
-              Homoeopathy is a system of alternative medicine that uses highly diluted preparations. However, reliable scientific evidence has not established homoeopathy as an effective treatment for acne. It should not be presented as a proven way to clear pimples, balance hormones, prevent acne scars, or permanently cure chronic acne.
+              Homeopathy is a system of alternative medicine that uses highly diluted preparations. However, reliable scientific evidence has not established homeopathy as an effective treatment for acne. It should not be presented as a proven way to clear pimples, balance hormones, prevent acne scars, or permanently cure chronic acne.
             </p>
 
             <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 text-xs sm:text-sm space-y-2">
@@ -477,18 +477,18 @@ export const AcneManjeriPage: React.FC = () => {
                 <span>Evidence Limitation Disclosure</span>
               </div>
               <p className="leading-relaxed">
-                A person considering <strong>Acne Homoeopathic Treatment in Manjeri</strong> should understand this evidence limitation before making a treatment decision. Consultation should not replace an appropriate medical assessment, particularly when acne is painful, widespread, persistent, or leaving scars.
+                A person considering <strong>Acne Homeopathic Treatment in Manjeri</strong> should understand this evidence limitation before making a treatment decision. Consultation should not replace an appropriate medical assessment, particularly when acne is painful, widespread, persistent, or leaving scars.
               </p>
             </div>
 
             <p>
-              People who choose to consult a homoeopathic practitioner should also discuss any ongoing acne medicines with their qualified healthcare professional. They should not stop prescribed treatments or delay evidence-based care because of unsupported promises.
+              People who choose to consult a homeopathic practitioner should also discuss any ongoing acne medicines with their qualified healthcare professional. They should not stop prescribed treatments or delay evidence-based care because of unsupported promises.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Section 5: Homoeopathic Doctor for Acne in Manjeri: What to Consider */}
+      {/* Section 5: Homeopathic Doctor for Acne in Manjeri: What to Consider */}
       <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -496,13 +496,13 @@ export const AcneManjeriPage: React.FC = () => {
               PRACTITIONER STANDARDS
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Homoeopathic Doctor for Acne in Manjeri: What to Consider
+              Homeopathic Doctor for Acne in Manjeri: What to Consider
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              People searching for a <strong>Homoeopathic Doctor for Acne in Manjeri</strong> may want to discuss their skin concerns, previous treatment experiences, and questions about available options.
+              People searching for a <strong>Homeopathic Doctor for Acne in Manjeri</strong> may want to discuss their skin concerns, previous treatment experiences, and questions about available options.
             </p>
 
             <p>
@@ -514,7 +514,7 @@ export const AcneManjeriPage: React.FC = () => {
             </p>
 
             <div className="p-4 rounded-xl bg-white border border-[#D8E1F5] text-xs sm:text-sm text-[#1E2559] font-medium leading-relaxed">
-              Although some individuals search for <strong>Homoeopathic Skin Treatment in Manjeri</strong>, it is important to distinguish a consultation service from a treatment whose effectiveness has been scientifically established. Patients deserve clear information about the evidence, potential risks, and available alternatives.
+              Although some individuals search for <strong>Homeopathic Skin Treatment in Manjeri</strong>, it is important to distinguish a consultation service from a treatment whose effectiveness has been scientifically established. Patients deserve clear information about the evidence, potential risks, and available alternatives.
             </div>
           </div>
         </div>
@@ -621,13 +621,13 @@ export const AcneManjeriPage: React.FC = () => {
 
             <div className="pt-4">
               <h3 className="text-xl sm:text-2xl font-bold text-[#1E2559] mb-2">
-                Skin Homoeopathy Clinic in Manjeri: Making an Informed Choice
+                Skin Homeopathy Clinic in Manjeri: Making an Informed Choice
               </h3>
               <p>
-                People looking for a <strong>Skin Homoeopathy Clinic in Manjeri</strong> may want to discuss acne alongside other skin complaints. When considering any clinic, check the practitioner's qualifications and ensure that information about treatment benefits is transparent and evidence-based.
+                People looking for a <strong>Skin Homeopathy Clinic in Manjeri</strong> may want to discuss acne alongside other skin complaints. When considering any clinic, check the practitioner's qualifications and ensure that information about treatment benefits is transparent and evidence-based.
               </p>
               <p>
-                Homoeopathy has not been established as an effective acne treatment. A consultation should not include guarantees of permanent acne removal, claims that all acne originates from internal toxins, or advice to discontinue prescribed medicines without consulting the prescriber.
+                Homeopathy has not been established as an effective acne treatment. A consultation should not include guarantees of permanent acne removal, claims that all acne originates from internal toxins, or advice to discontinue prescribed medicines without consulting the prescriber.
               </p>
               <p className="font-medium text-[#1E2559]">
                 For patients with ongoing acne, the priority should be an accurate diagnosis, appropriate treatment, and a plan to reduce the risk of scarring. A qualified healthcare professional can explain the available options and help determine whether referral to a dermatologist is appropriate.
@@ -826,7 +826,7 @@ export const AcneManjeriPage: React.FC = () => {
               Acne can affect people of different ages and may range from occasional pimples to persistent inflammatory lesions that leave scars. Understanding its causes, recognising the symptoms, and seeking appropriate professional guidance can help people make informed decisions about their skin health.
             </p>
             <p>
-              If you are researching <strong>Homoeopathic Treatment for Acne Skin Problems in Manjeri</strong>, take time to understand the available options and the scientific evidence behind them. Although terms such as <strong>Acne Homoeopathic Treatment in Manjeri</strong>, <strong>Homoeopathic Acne Treatment in Manjeri</strong>, and <strong>Pimples Treatment in Manjeri</strong> may be useful when searching for local services, they do not establish that a particular treatment is effective.
+              If you are researching <strong>Homeopathic Treatment for Acne Skin Problems in Manjeri</strong>, take time to understand the available options and the scientific evidence behind them. Although terms such as <strong>Acne Homeopathic Treatment in Manjeri</strong>, <strong>Homeopathic Acne Treatment in Manjeri</strong>, and <strong>Pimples Treatment in Manjeri</strong> may be useful when searching for local services, they do not establish that a particular treatment is effective.
             </p>
             <p>
               Choose a qualified practitioner who communicates clearly about treatment limitations and supports appropriate medical assessment. For persistent, painful, or scarring acne, timely evidence-based care is especially important to help control breakouts and reduce the risk of lasting skin changes.

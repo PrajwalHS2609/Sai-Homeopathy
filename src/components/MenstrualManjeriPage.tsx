@@ -91,7 +91,7 @@ export const MenstrualManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'Reliable scientific evidence has not established homoeopathy as an effective treatment for menstrual disorders.',
+      desc: 'Reliable scientific evidence has not established homeopathy as an effective treatment for menstrual disorders.',
     },
     {
       title: 'Do Not Replace Care',
@@ -252,9 +252,9 @@ export const MenstrualManjeriPage: React.FC = () => {
 
   const faqs = [
     {
-      question: '1. Where can I seek Menstrual Homoeopathic Treatment in Manjeri?',
+      question: '1. Where can I seek Menstrual Homeopathic Treatment in Manjeri?',
       answer:
-        'Women in Manjeri can research local healthcare providers and check their recognized qualifications (such as BHMS), registration with state medical councils, and services offered. Before choosing a homoeopathic provider, understand that homoeopathy has not been shown reliably to treat menstrual disorders in scientific trials. Persistent, painful, or severe symptoms should always be assessed by a qualified medical doctor or gynaecologist.',
+        'Women in Manjeri can research local healthcare providers and check their recognized qualifications (such as BHMS), registration with state medical councils, and services offered. Before choosing a homeopathic provider, understand that homeopathy has not been shown reliably to treat menstrual disorders in scientific trials. Persistent, painful, or severe symptoms should always be assessed by a qualified medical doctor or gynaecologist.',
     },
     {
       question: '2. What are the common symptoms of menstrual problems?',
@@ -267,9 +267,9 @@ export const MenstrualManjeriPage: React.FC = () => {
         'Arrange an appointment if your periods become persistently irregular, bleeding is unusually heavy, pain interferes with everyday activities, or you experience repeated missed periods. Sudden severe pelvic pain, fainting, or extremely heavy bleeding requires immediate emergency medical attention.',
     },
     {
-      question: '4. Can homoeopathy cure irregular periods?',
+      question: '4. Can homeopathy cure irregular periods?',
       answer:
-        'There is no reliable scientific evidence that homoeopathy cures irregular periods or permanently eliminates their underlying biological causes. Irregular menstruation can stem from conditions such as polycystic ovary syndrome (PCOS), thyroid disorders, significant weight changes, chronic stress, or pregnancy. Appropriate clinical assessment helps identify the true cause and guide effective care.',
+        'There is no reliable scientific evidence that homeopathy cures irregular periods or permanently eliminates their underlying biological causes. Irregular menstruation can stem from conditions such as polycystic ovary syndrome (PCOS), thyroid disorders, significant weight changes, chronic stress, or pregnancy. Appropriate clinical assessment helps identify the true cause and guide effective care.',
     },
     {
       question: '5. What should I discuss during a Period Pain Consultation in Manjeri?',
@@ -287,7 +287,7 @@ export const MenstrualManjeriPage: React.FC = () => {
         'No. Menstrual cycle length naturally varies across life stages—such as during adolescence, after childbirth, during breastfeeding, and during perimenopause. Temporary changes can also occur due to stress, travel, or acute illness. However, persistent irregularity, repeated missed cycles, or accompanying symptoms like severe pain and heavy bleeding should always be evaluated.',
     },
     {
-      question: '8. What should I look for in a Homoeopathy Clinic for Menstrual Problems in Manjeri?',
+      question: '8. What should I look for in a Homeopathy Clinic for Menstrual Problems in Manjeri?',
       answer:
         'Look for verified qualifications (BHMS from recognized universities), active medical council registration, clear and honest communication regarding treatment scope and evidence, strict patient confidentiality, and a willingness to refer to gynaecologists for diagnostic ultrasound or blood work. Avoid providers who guarantee miraculous cures, promise to reverse PCOS, or advise stopping prescribed conventional medications.',
     },
@@ -316,7 +316,7 @@ export const MenstrualManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Heart className="w-3.5 h-3.5 text-[#F43F5E]" />}
         badgeText="Regional Women’s Health Guide • Manjeri Patients"
-        title="Menstrual Homoeopathic Treatment in Manjeri"
+        title="Menstrual Homeopathic Treatment in Manjeri"
         subtitle="Empathetic clinical consultations for women across Manjeri and Malappuram experiencing irregular periods, dysmenorrhoea, heavy bleeding, delayed cycles, PCOS symptoms, and hormonal health concerns."
         metrics={[
           { label: 'Condition Focus', value: 'Menstrual Health' },
@@ -423,7 +423,7 @@ export const MenstrualManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 2: Menstrual Homoeopathic Treatment in Manjeri: Understanding Your Options */}
+      {/* Section 2: Menstrual Homeopathic Treatment in Manjeri: Understanding Your Options */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -431,13 +431,13 @@ export const MenstrualManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Menstrual Homoeopathic Treatment in Manjeri: Understanding Your Options
+              Menstrual Homeopathic Treatment in Manjeri: Understanding Your Options
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              Women exploring <strong>Homoeopathic Treatment for Menstrual Problems in Manjeri</strong> may be interested in discussing their symptoms, general health, and treatment preferences with a healthcare professional. A consultation can provide an opportunity to explain the nature of the problem, how long it has been occurring, and how it affects everyday life.
+              Women exploring <strong>Homeopathic Treatment for Menstrual Problems in Manjeri</strong> may be interested in discussing their symptoms, general health, and treatment preferences with a healthcare professional. A consultation can provide an opportunity to explain the nature of the problem, how long it has been occurring, and how it affects everyday life.
             </p>
 
             <p>
@@ -453,7 +453,7 @@ export const MenstrualManjeriPage: React.FC = () => {
                     Distinguishing Consultation from Scientific Evidence
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    It is important to distinguish between discussing homoeopathy and establishing that it is effective. <strong>Current reliable scientific evidence does not demonstrate that homoeopathy can reliably treat menstrual disorders.</strong> Patients should therefore be informed about established treatment options and the importance of investigating persistent or severe symptoms.
+                    It is important to distinguish between discussing homeopathy and establishing that it is effective. <strong>Current reliable scientific evidence does not demonstrate that homeopathy can reliably treat menstrual disorders.</strong> Patients should therefore be informed about established treatment options and the importance of investigating persistent or severe symptoms.
                   </p>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                     Evidence-based care for menstrual problems varies according to the underlying cause. For example, a healthcare professional may recommend appropriate pain-relieving medication, hormonal treatment, iron supplementation for confirmed iron deficiency, or further evaluation for conditions such as fibroids, endometriosis, thyroid disorders, or PCOS.
@@ -555,7 +555,7 @@ export const MenstrualManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 5: Choosing a Women's Health Homoeopathy Clinic in Manjeri */}
+      {/* Section 5: Choosing a Women's Health Homeopathy Clinic in Manjeri */}
       <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -563,10 +563,10 @@ export const MenstrualManjeriPage: React.FC = () => {
               CLINIC EVALUATION
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Choosing a Women's Health Homoeopathy Clinic in Manjeri
+              Choosing a Women's Health Homeopathy Clinic in Manjeri
             </h2>
             <p className="text-xs sm:text-sm text-[#475569] mt-1 leading-relaxed">
-              Women researching a <strong>Homoeopathy Clinic for Menstrual Problems in Manjeri</strong> may want a healthcare setting where they can discuss their concerns comfortably and receive clear information about available care. When choosing a provider, consider the following standards:
+              Women researching a <strong>Homeopathy Clinic for Menstrual Problems in Manjeri</strong> may want a healthcare setting where they can discuss their concerns comfortably and receive clear information about available care. When choosing a provider, consider the following standards:
             </p>
           </div>
 
@@ -592,12 +592,12 @@ export const MenstrualManjeriPage: React.FC = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-white border border-[#D8E1F5] text-xs sm:text-sm text-[#475569] leading-relaxed">
-            A Women's Health Homoeopathy Clinic in Manjeri should communicate honestly about the evidence supporting its services. Homoeopathy has not been proven to cure menstrual disorders, and patients should not be encouraged to stop prescribed medication or postpone appropriate medical care. The goal of any healthcare consultation should be to support informed decisions, recognise potential health risks, and help patients access suitable treatment.
+            A Women's Health Homeopathy Clinic in Manjeri should communicate honestly about the evidence supporting its services. Homeopathy has not been proven to cure menstrual disorders, and patients should not be encouraged to stop prescribed medication or postpone appropriate medical care. The goal of any healthcare consultation should be to support informed decisions, recognise potential health risks, and help patients access suitable treatment.
           </div>
         </div>
       </section>
 
-      {/* Section 6: The Role of a Homoeopathic Doctor for Women's Health in Manjeri */}
+      {/* Section 6: The Role of a Homeopathic Doctor for Women's Health in Manjeri */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -605,13 +605,13 @@ export const MenstrualManjeriPage: React.FC = () => {
               PROFESSIONAL SCOPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              The Role of a Homoeopathic Doctor for Women's Health in Manjeri
+              The Role of a Homeopathic Doctor for Women's Health in Manjeri
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              A <strong>Homoeopathic Doctor for Women's Health in Manjeri</strong> may provide a setting for patients to discuss menstrual concerns and ask questions about complementary healthcare. However, patients should confirm the practitioner's qualifications and understand the distinction between a homoeopathic consultation and specialist gynaecological assessment.
+              A <strong>Homeopathic Doctor for Women's Health in Manjeri</strong> may provide a setting for patients to discuss menstrual concerns and ask questions about complementary healthcare. However, patients should confirm the practitioner's qualifications and understand the distinction between a homeopathic consultation and specialist gynaecological assessment.
             </p>
 
             <p>
@@ -762,7 +762,7 @@ export const MenstrualManjeriPage: React.FC = () => {
             </p>
 
             <div className="p-4 rounded-xl bg-white border border-[#D8E1F5] text-xs sm:text-sm text-[#1E2559] font-medium leading-relaxed">
-              Women seeking Homoeopathic Treatment for Menstrual Problems in Manjeri should ask questions about the scientific evidence for any proposed remedy and ensure that necessary medical investigations are not delayed. A patient-centred approach should prioritise safety, informed consent, realistic expectations, and access to evidence-based treatment.
+              Women seeking Homeopathic Treatment for Menstrual Problems in Manjeri should ask questions about the scientific evidence for any proposed remedy and ensure that necessary medical investigations are not delayed. A patient-centred approach should prioritise safety, informed consent, realistic expectations, and access to evidence-based treatment.
             </div>
           </div>
         </div>
@@ -852,10 +852,10 @@ export const MenstrualManjeriPage: React.FC = () => {
               Menstrual health concerns deserve careful attention, clear information, and appropriate medical assessment. Whether you are experiencing irregular periods, painful menstruation, heavy bleeding, or premenstrual symptoms, understanding the possible causes is an important step towards making informed decisions about your health.
             </p>
             <p>
-              Women searching online for <strong>Menstrual Homoeopathic Treatment in Manjeri</strong>, <strong>Menstrual Health Clinic in Manjeri</strong>, or <strong>Period Problems Treatment in Manjeri</strong> should prioritise qualified healthcare providers who communicate honestly about treatment options and their limitations.
+              Women searching online for <strong>Menstrual Homeopathic Treatment in Manjeri</strong>, <strong>Menstrual Health Clinic in Manjeri</strong>, or <strong>Period Problems Treatment in Manjeri</strong> should prioritise qualified healthcare providers who communicate honestly about treatment options and their limitations.
             </p>
             <p>
-              A consultation can help you discuss your symptoms, understand whether further investigations are needed, and identify appropriate next steps. Homoeopathy has not been established as an effective treatment for menstrual disorders, so it should not replace evidence-based care.
+              A consultation can help you discuss your symptoms, understand whether further investigations are needed, and identify appropriate next steps. Homeopathy has not been established as an effective treatment for menstrual disorders, so it should not replace evidence-based care.
             </p>
             <p className="font-medium text-white">
               By tracking menstrual changes, seeking timely medical advice, and choosing healthcare services that prioritise patient safety, women can take informed steps towards better menstrual health and overall well-being.

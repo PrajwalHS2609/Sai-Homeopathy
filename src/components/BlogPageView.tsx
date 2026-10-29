@@ -311,10 +311,10 @@ export const BlogPageView: React.FC = () => {
                 post.id === 'post-asthma-symptoms' &&
                 paragraph.startsWith('### Available Treatment Options for Asthma');
 
-              // Embedded attached image in content body for Homoeopathic Clinic in Malappuram guide
+              // Embedded attached image in content body for Homeopathic Clinic in Malappuram guide
               const isClinicGuideHeading =
-                post.id === 'post-homoeopathic-clinic-in-malappuram' &&
-                paragraph.startsWith('### 6. How to Identify the Best Homoeopathic Clinic');
+                post.id === 'post-homeopathic-clinic-in-malappuram' &&
+                paragraph.startsWith('### 6. How to Identify the Best Homeopathic Clinic');
 
               // Embedded attached image in content body for What Causes Piles article
               const isPilesPreventionHeading =
@@ -409,7 +409,7 @@ export const BlogPageView: React.FC = () => {
                       <figure className="my-8 rounded-3xl overflow-hidden border border-[#D8E1F5] shadow-md bg-white not-prose">
                         <div className="bg-[#F8FAFD] px-5 py-3 border-b border-[#EEF2FB] flex items-center justify-between">
                           <span className="text-xs font-bold uppercase tracking-wider text-[#303A88]">
-                            Attached Clinical Guide · Choosing a Homoeopathic Clinic in Malappuram
+                            Attached Clinical Guide · Choosing a Homeopathic Clinic in Malappuram
                           </span>
                           <span className="text-[11px] text-[#45AC4B] font-semibold bg-[#EDF8EE] px-2.5 py-0.5 rounded-full border border-[#C4EAC7]">
                             Patient Education
@@ -417,8 +417,8 @@ export const BlogPageView: React.FC = () => {
                         </div>
                         <div className="p-2 sm:p-5 bg-white flex justify-center">
                           <img
-                            src="/assets/aistudio/Homoeopathic_Clinic_in_Malappuram_3c8baf0d.png"
-                            alt="Homoeopathic Clinic in Malappuram: A Guide to Choosing a Clinic"
+                            src="/assets/aistudio/Homeopathic_Clinic_in_Malappuram_3c8baf0d.png"
+                            alt="Homeopathic Clinic in Malappuram: A Guide to Choosing a Clinic"
                             className="w-full h-auto max-h-[520px] object-contain rounded-xl"
                             loading="lazy"
                           />
@@ -426,7 +426,7 @@ export const BlogPageView: React.FC = () => {
                         <figcaption className="p-4 bg-[#F8FAFD] border-t border-[#EEF2FB] text-xs text-[#64748B] flex items-start gap-2">
                           <Info className="w-4 h-4 text-[#303A88] shrink-0 mt-0.5" />
                           <span>
-                            Clinical guide illustrating key steps in selecting a homoeopathic clinic in Malappuram: verifying credentials, assessing communication, reviewing services, and prioritizing patient safety.
+                            Clinical guide illustrating key steps in selecting a homeopathic clinic in Malappuram: verifying credentials, assessing communication, reviewing services, and prioritizing patient safety.
                           </span>
                         </figcaption>
                       </figure>
@@ -647,7 +647,7 @@ export const BlogPageView: React.FC = () => {
                     featuredPost.id === 'post-uterine-fibroids' ||
                     featuredPost.id === 'post-chronic-sinusitis' ||
                     featuredPost.id === 'post-asthma-symptoms' ||
-                    featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                    featuredPost.id === 'post-homeopathic-clinic-in-malappuram' ||
                     featuredPost.id === 'post-what-causes-piles' ||
                     featuredPost.id === 'post-pcod-and-fertility' ||
                     featuredPost.id === 'post-hormonal-imbalance' ||
@@ -667,7 +667,7 @@ export const BlogPageView: React.FC = () => {
                       featuredPost.id === 'post-uterine-fibroids' ||
                       featuredPost.id === 'post-chronic-sinusitis' ||
                       featuredPost.id === 'post-asthma-symptoms' ||
-                      featuredPost.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                      featuredPost.id === 'post-homeopathic-clinic-in-malappuram' ||
                       featuredPost.id === 'post-what-causes-piles' ||
                       featuredPost.id === 'post-pcod-and-fertility' ||
                       featuredPost.id === 'post-hormonal-imbalance' ||
@@ -770,7 +770,7 @@ export const BlogPageView: React.FC = () => {
                         post.id === 'post-uterine-fibroids' ||
                         post.id === 'post-chronic-sinusitis' ||
                         post.id === 'post-asthma-symptoms' ||
-                        post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                        post.id === 'post-homeopathic-clinic-in-malappuram' ||
                         post.id === 'post-what-causes-piles' ||
                         post.id === 'post-pcod-and-fertility' ||
                         post.id === 'post-hormonal-imbalance' ||
@@ -790,7 +790,7 @@ export const BlogPageView: React.FC = () => {
                           post.id === 'post-uterine-fibroids' ||
                           post.id === 'post-chronic-sinusitis' ||
                           post.id === 'post-asthma-symptoms' ||
-                          post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                          post.id === 'post-homeopathic-clinic-in-malappuram' ||
                           post.id === 'post-what-causes-piles' ||
                           post.id === 'post-pcod-and-fertility' ||
                           post.id === 'post-hormonal-imbalance' ||

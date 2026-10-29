@@ -28,8 +28,8 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
     dotColor: string;
   }> = [
     {
-      key: 'piles-homoeopathic-clinic-manjeri',
-      title: 'Piles Homoeopathic Clinic in Manjeri',
+      key: 'piles-homeopathic-clinic-manjeri',
+      title: 'Piles Homeopathic Clinic in Manjeri',
       condition: 'Haemorrhoids & Fissures',
       badge: 'Proctology',
       badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -287,7 +287,7 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
           <div className="space-y-1 text-xs">
             <p className="font-bold text-[#1E2559] flex items-center gap-1.5 text-sm">
               <MapPin className="w-4 h-4 text-[#0D9488]" />
-              <span>Dr. Anjali's Homoeopathic Multispeciality Clinic</span>
+              <span>Dr. Anjali's Homeopathic Multispeciality Clinic</span>
             </p>
             <p className="text-[#64748B]">
               <strong className="text-[#1E2559]">Kuttippuram Main Clinic:</strong> Near Railway Station, Kuttippuram, Malappuram |{' '}

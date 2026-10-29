@@ -58,7 +58,7 @@ export const HomeBlogSection: React.FC = () => {
                       post.id === 'post-uterine-fibroids' ||
                       post.id === 'post-chronic-sinusitis' ||
                       post.id === 'post-asthma-symptoms' ||
-                      post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                      post.id === 'post-homeopathic-clinic-in-malappuram' ||
                       post.id === 'post-what-causes-piles' ||
                       post.id === 'post-pcod-and-fertility' ||
                       post.id === 'post-hormonal-imbalance' ||
@@ -78,7 +78,7 @@ export const HomeBlogSection: React.FC = () => {
                         post.id === 'post-uterine-fibroids' ||
                         post.id === 'post-chronic-sinusitis' ||
                         post.id === 'post-asthma-symptoms' ||
-                        post.id === 'post-homoeopathic-clinic-in-malappuram' ||
+                        post.id === 'post-homeopathic-clinic-in-malappuram' ||
                         post.id === 'post-what-causes-piles' ||
                         post.id === 'post-pcod-and-fertility' ||
                         post.id === 'post-hormonal-imbalance' ||

@@ -81,7 +81,7 @@ export const SkinManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'People searching for Skin Homoeopathic Treatment in Manjeri should understand that homoeopathy has not been proven effective for treating skin diseases.',
+      desc: 'People searching for Skin Homeopathic Treatment in Manjeri should understand that homeopathy has not been proven effective for treating skin diseases.',
     },
     {
       title: 'Professional Medical Care',
@@ -267,9 +267,9 @@ export const SkinManjeriPage: React.FC = () => {
 
   const faqs = [
     {
-      question: '1. Where can I find Skin Homoeopathic Treatment in Manjeri?',
+      question: '1. Where can I find Skin Homeopathic Treatment in Manjeri?',
       answer:
-        'You can research healthcare providers in Manjeri and verify their accredited qualifications (such as BHMS), registration with the state medical council, and clinical experience. Before selecting a homoeopathic provider, understand that homoeopathy has not been shown reliably in scientific trials to treat skin diseases. Persistent, painful, or severe skin conditions should always be evaluated by a qualified medical practitioner or dermatologist.',
+        'You can research healthcare providers in Manjeri and verify their accredited qualifications (such as BHMS), registration with the state medical council, and clinical experience. Before selecting a homeopathic provider, understand that homeopathy has not been shown reliably in scientific trials to treat skin diseases. Persistent, painful, or severe skin conditions should always be evaluated by a qualified medical practitioner or dermatologist.',
     },
     {
       question: '2. What skin problems may require medical consultation?',
@@ -277,9 +277,9 @@ export const SkinManjeriPage: React.FC = () => {
         'Skin concerns warranting medical assessment include persistent acne, eczema, psoriasis, recurrent rashes, suspected fungal infections, unexplained chronic itching, changing moles, and non-healing sores. The degree of urgency depends on symptom severity, duration, and whether signs of infection are present.',
     },
     {
-      question: '3. Is Homoeopathic Skin Treatment in Manjeri effective for eczema?',
+      question: '3. Is Homeopathic Skin Treatment in Manjeri effective for eczema?',
       answer:
-        'Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment for eczema beyond placebo. Evidence-based care relies on regular emollient barrier repair, identifying and avoiding environmental triggers, and medically prescribed anti-inflammatory treatments tailored to flare severity.',
+        'Reliable scientific clinical evidence has not established homeopathy as an effective medical treatment for eczema beyond placebo. Evidence-based care relies on regular emollient barrier repair, identifying and avoiding environmental triggers, and medically prescribed anti-inflammatory treatments tailored to flare severity.',
     },
     {
       question: '4. When should I consult a Skin Doctor in Manjeri?',
@@ -287,9 +287,9 @@ export const SkinManjeriPage: React.FC = () => {
         'Consult a doctor if a rash spreads, itching becomes intractable, acne causes scarring, or symptoms fail to improve with gentle skincare. Immediate emergency care is essential for serious allergic reactions, extensive skin blistering, rapidly spreading redness with fever, or severe skin pain.',
     },
     {
-      question: '5. Can fungal skin infections be treated with homoeopathy?',
+      question: '5. Can fungal skin infections be treated with homeopathy?',
       answer:
-        'Homoeopathy has not been demonstrated to cure fungal skin infections. Fungal conditions (like ringworm, athlete’s foot, or jock itch) generally require targeted topical or oral antifungal medications. Accurate diagnosis is vital because fungal infections closely resemble eczema, and improper steroid use can cause fungal spreading (tinea incognito).',
+        'Homeopathy has not been demonstrated to cure fungal skin infections. Fungal conditions (like ringworm, athlete’s foot, or jock itch) generally require targeted topical or oral antifungal medications. Accurate diagnosis is vital because fungal infections closely resemble eczema, and improper steroid use can cause fungal spreading (tinea incognito).',
     },
     {
       question: '6. What should I look for when choosing a Skin Specialist in Manjeri?',
@@ -302,7 +302,7 @@ export const SkinManjeriPage: React.FC = () => {
         'Adopt a gentle daily skincare regimen with soap-free cleansers, moisturize within minutes of bathing, wear daily sun protection (SPF 30+), eat a wholesome nutrient-rich diet, avoid harsh self-prescribed steroid creams, and seek timely professional advice when skin concerns arise.',
     },
     {
-      question: '8. Can I stop prescribed skin medication if I want to try homoeopathy?',
+      question: '8. Can I stop prescribed skin medication if I want to try homeopathy?',
       answer:
         'No. Never discontinue or alter prescribed medical treatments—such as oral antibiotics, antifungals, immunosuppressants, or prescription topicals—without direct consultation with your prescribing doctor. Abruptly stopping prescribed medications can cause severe flare-ups, infection spread, or disease complications.',
     },
@@ -331,7 +331,7 @@ export const SkinManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#FBBF24]" />}
         badgeText="Regional Clinical Dermatology Guide • Manjeri Patients"
-        title="Skin Homoeopathic Treatment in Manjeri"
+        title="Skin Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for patients in Manjeri and Malappuram experiencing persistent rashes, itching, chronic dermatological conditions, barrier damage, and inflammatory skin disorders."
         metrics={[
           { label: 'Condition Category', value: 'Clinical Dermatology' },
@@ -438,7 +438,7 @@ export const SkinManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 2: Skin Homoeopathic Treatment in Manjeri: Understanding Your Options */}
+      {/* Section 2: Skin Homeopathic Treatment in Manjeri: Understanding Your Options */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -446,13 +446,13 @@ export const SkinManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Skin Homoeopathic Treatment in Manjeri: Understanding Your Options
+              Skin Homeopathic Treatment in Manjeri: Understanding Your Options
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              People exploring <strong>Homoeopathic Skin Treatment in Manjeri</strong> may want to discuss recurring skin symptoms, their treatment preferences, and general health concerns with a healthcare professional.
+              People exploring <strong>Homeopathic Skin Treatment in Manjeri</strong> may want to discuss recurring skin symptoms, their treatment preferences, and general health concerns with a healthcare professional.
             </p>
 
             <p>
@@ -468,7 +468,7 @@ export const SkinManjeriPage: React.FC = () => {
                     Distinguishing Consultation from Scientific Evidence
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    It is important to distinguish between discussing homoeopathy and establishing that it is effective. <strong>Reliable scientific evidence has not demonstrated that homoeopathy can effectively treat skin diseases.</strong> Patients should be informed about evidence-based treatment options and the limitations of complementary approaches.
+                    It is important to distinguish between discussing homeopathy and establishing that it is effective. <strong>Reliable scientific evidence has not demonstrated that homeopathy can effectively treat skin diseases.</strong> Patients should be informed about evidence-based treatment options and the limitations of complementary approaches.
                   </p>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                     Established treatments vary according to the diagnosis:
@@ -528,7 +528,7 @@ export const SkinManjeriPage: React.FC = () => {
           </div>
 
           <p className="text-xs sm:text-sm text-[#64748B]">
-            This information helps a healthcare professional assess possible causes and decide whether treatment or further investigation is appropriate. When choosing a <strong>Skin Homoeopathy Clinic in Manjeri</strong>, patients should look for clear communication, appropriate qualifications, respect for privacy, and honest information about the limitations of proposed treatments.
+            This information helps a healthcare professional assess possible causes and decide whether treatment or further investigation is appropriate. When choosing a <strong>Skin Homeopathy Clinic in Manjeri</strong>, patients should look for clear communication, appropriate qualifications, respect for privacy, and honest information about the limitations of proposed treatments.
           </p>
         </div>
       </section>
@@ -572,7 +572,7 @@ export const SkinManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 5: Choosing a Skin Homoeopathy Clinic in Manjeri */}
+      {/* Section 5: Choosing a Skin Homeopathy Clinic in Manjeri */}
       <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -580,10 +580,10 @@ export const SkinManjeriPage: React.FC = () => {
               CLINIC SELECTION STANDARDS
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Choosing a Skin Homoeopathy Clinic in Manjeri
+              Choosing a Skin Homeopathy Clinic in Manjeri
             </h2>
             <p className="text-xs sm:text-sm text-[#475569] mt-1 leading-relaxed">
-              People researching a <strong>Skin Homoeopathy Clinic in Manjeri</strong> should consider more than convenience or promotional claims. The quality of communication, professional qualifications, and willingness to recommend appropriate medical care are essential:
+              People researching a <strong>Skin Homeopathy Clinic in Manjeri</strong> should consider more than convenience or promotional claims. The quality of communication, professional qualifications, and willingness to recommend appropriate medical care are essential:
             </p>
           </div>
 
@@ -611,7 +611,7 @@ export const SkinManjeriPage: React.FC = () => {
           </div>
 
           <div className="p-4 rounded-xl bg-white border border-[#D8E1F5] text-xs sm:text-sm text-[#475569] leading-relaxed">
-            A <strong>Homoeopathy Clinic for Skin Problems in Manjeri</strong> should communicate honestly about the scientific evidence supporting its services. Homoeopathy has not been proven to cure eczema, psoriasis, acne, fungal infections, or other skin diseases. Patients should be encouraged to seek evidence-based medical care when needed and to discuss all remedies and supplements they use with their healthcare providers.
+            A <strong>Homeopathy Clinic for Skin Problems in Manjeri</strong> should communicate honestly about the scientific evidence supporting its services. Homeopathy has not been proven to cure eczema, psoriasis, acne, fungal infections, or other skin diseases. Patients should be encouraged to seek evidence-based medical care when needed and to discuss all remedies and supplements they use with their healthcare providers.
           </div>
         </div>
       </section>
@@ -739,7 +739,7 @@ export const SkinManjeriPage: React.FC = () => {
             </p>
 
             <div className="p-4 rounded-xl bg-[#EEF2FB] border border-[#D8E1F5] text-xs sm:text-sm text-[#1E2559] font-medium leading-relaxed">
-              People looking for <strong>Skin Disease Treatment in Manjeri</strong> should choose a provider who values accurate diagnosis and explains the evidence supporting the recommended care. For patients interested in homoeopathy, it is important to understand that reliable scientific evidence does not establish it as an effective treatment for skin diseases. Any complementary approach should be discussed openly with a qualified healthcare professional and should never delay necessary medical treatment.
+              People looking for <strong>Skin Disease Treatment in Manjeri</strong> should choose a provider who values accurate diagnosis and explains the evidence supporting the recommended care. For patients interested in homeopathy, it is important to understand that reliable scientific evidence does not establish it as an effective treatment for skin diseases. Any complementary approach should be discussed openly with a qualified healthcare professional and should never delay necessary medical treatment.
             </div>
           </div>
         </div>
@@ -829,10 +829,10 @@ export const SkinManjeriPage: React.FC = () => {
               Healthy skin starts with understanding your symptoms, identifying possible triggers, and seeking appropriate medical advice when necessary. Whether you are experiencing acne, itching, eczema, psoriasis, dryness, or recurring skin irritation, an accurate assessment can help determine the next steps.
             </p>
             <p>
-              People searching for <strong>Skin Homoeopathic Treatment in Manjeri</strong>, <strong>Skin Treatment in Manjeri</strong>, or a <strong>Homoeopathy Clinic for Skin Problems in Manjeri</strong> should prioritise healthcare providers who communicate clearly, respect patient privacy, and explain the limitations of proposed treatments.
+              People searching for <strong>Skin Homeopathic Treatment in Manjeri</strong>, <strong>Skin Treatment in Manjeri</strong>, or a <strong>Homeopathy Clinic for Skin Problems in Manjeri</strong> should prioritise healthcare providers who communicate clearly, respect patient privacy, and explain the limitations of proposed treatments.
             </p>
             <p>
-              Homoeopathy has not been established as an effective treatment for skin diseases, so it should not replace evidence-based medical care. Persistent, severe, or unexplained skin symptoms deserve proper evaluation by a qualified healthcare professional.
+              Homeopathy has not been established as an effective treatment for skin diseases, so it should not replace evidence-based medical care. Persistent, severe, or unexplained skin symptoms deserve proper evaluation by a qualified healthcare professional.
             </p>
             <p className="font-medium text-white">
               By following appropriate skincare practices, avoiding unsuitable self-treatment, and seeking timely medical advice, individuals can make informed decisions about their skin health and overall well-being.

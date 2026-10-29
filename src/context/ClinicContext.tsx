@@ -47,6 +47,7 @@ export type NavView =
   | 'anorectal-vascular-care'
   | 'joint-musculoskeletal-care'
   | 'ophthalmic-eye-care'
+  | 'piles-homeopathic-clinic-manjeri'
   | 'piles-homoeopathic-clinic-manjeri'
   | 'menstrual-treatment-manjeri'
   | 'skin-treatment-manjeri'
@@ -149,59 +150,63 @@ interface ClinicContextType {
 
 const ClinicContext = createContext<ClinicContextType | undefined>(undefined);
 
+const normalizeRoutePath = (pathname: string) => {
+  return pathname.toLowerCase().replace(/\/+$/, '').replace(/homoeopathic/g, 'homeopathic');
+};
+
 const isWomensHealthPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-womens-health-gynocological-care' ||
-    clean === '/homoeopathic-treatment-for-womens-health-gynecological-care'
+    clean === '/homeopathic-treatment-for-womens-health-gynocological-care' ||
+    clean === '/homeopathic-treatment-for-womens-health-gynecological-care'
   );
 };
 
 const isRespiratoryPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions' ||
-    clean === '/homoeopathic-treatment-for-respiratory-ent-allergy' ||
+    clean === '/homeopathic-treatment-for-respiratory-ent-allergy-conditions' ||
+    clean === '/homeopathic-treatment-for-respiratory-ent-allergy' ||
     clean === '/respiratory-ent-allergy' ||
     clean === '/health-conditions/respiratory-ent-allergy'
   );
 };
 
 const isSkinHairPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-skin-hair-scalp-conditions' ||
-    clean === '/homoeopathic-treatment-for-skin-hair-scalp' ||
+    clean === '/homeopathic-treatment-for-skin-hair-scalp-conditions' ||
+    clean === '/homeopathic-treatment-for-skin-hair-scalp' ||
     clean === '/skin-hair-scalp' ||
     clean === '/health-conditions/skin-hair-scalp'
   );
 };
 
 const isRenalThyroidPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions' ||
-    clean === '/homoeopathic-treatment-for-renal-urinary-thyroid' ||
+    clean === '/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions' ||
+    clean === '/homeopathic-treatment-for-renal-urinary-thyroid' ||
     clean === '/renal-urinary-gallbladder-thyroid' ||
     clean === '/health-conditions/renal-urinary-gallbladder-thyroid'
   );
 };
 
 const isNeurologicalPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-neurological-headache-conditions' ||
-    clean === '/homoeopathic-treatment-for-neurological-headache' ||
+    clean === '/homeopathic-treatment-for-neurological-headache-conditions' ||
+    clean === '/homeopathic-treatment-for-neurological-headache' ||
     clean === '/neurological-headache' ||
     clean === '/health-conditions/neurological-headache'
   );
 };
 
 const isAnorectalVascularPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-anorectal-vascular-conditions' ||
-    clean === '/homoeopathic-treatment-for-anorectal-vascular' ||
+    clean === '/homeopathic-treatment-for-anorectal-vascular-conditions' ||
+    clean === '/homeopathic-treatment-for-anorectal-vascular' ||
     clean === '/anorectal-vascular-conditions' ||
     clean === '/anorectal-vascular' ||
     clean === '/health-conditions/anorectal-vascular'
@@ -209,10 +214,10 @@ const isAnorectalVascularPath = (pathname: string) => {
 };
 
 const isJointMusculoskeletalPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions' ||
-    clean === '/homoeopathic-treatment-for-joint-musculoskeletal-conditions' ||
+    clean === '/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions' ||
+    clean === '/homeopathic-treatment-for-joint-musculoskeletal-conditions' ||
     clean === '/joint-musculoskeletal-chronic-conditions' ||
     clean === '/joint-musculoskeletal-conditions' ||
     clean === '/joint-musculoskeletal' ||
@@ -221,10 +226,10 @@ const isJointMusculoskeletalPath = (pathname: string) => {
 };
 
 const isOphthalmicEyePath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-ophthalmic-eye-conditions' ||
-    clean === '/homoeopathic-treatment-for-eye-conditions' ||
+    clean === '/homeopathic-treatment-for-ophthalmic-eye-conditions' ||
+    clean === '/homeopathic-treatment-for-eye-conditions' ||
     clean === '/ophthalmic-eye-conditions' ||
     clean === '/eye-conditions' ||
     clean === '/health-conditions/eye-conditions'
@@ -232,7 +237,7 @@ const isOphthalmicEyePath = (pathname: string) => {
 };
 
 const isPcodBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/pcod-symptoms-causes-diagnosis-treatment' ||
     clean === '/pcod-explained-symptoms-causes-diagnosis-and-treatment-options' ||
@@ -241,7 +246,7 @@ const isPcodBlogPath = (pathname: string) => {
 };
 
 const isPcodFertilityBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/pcod-and-fertility-what-every-woman-should-know' ||
     clean === '/blog/pcod-and-fertility-what-every-woman-should-know' ||
@@ -251,7 +256,7 @@ const isPcodFertilityBlogPath = (pathname: string) => {
 };
 
 const isHormonalImbalanceBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/hormonal-imbalance-in-women-signs-causes-tests' ||
     clean === '/blog/hormonal-imbalance-in-women-signs-causes-tests' ||
@@ -261,7 +266,7 @@ const isHormonalImbalanceBlogPath = (pathname: string) => {
 };
 
 const isPainfulPeriodsBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/painful-periods-diagnosis-and-treatment-options' ||
     clean === '/blog/painful-periods-diagnosis-and-treatment-options' ||
@@ -271,7 +276,7 @@ const isPainfulPeriodsBlogPath = (pathname: string) => {
 };
 
 const isOvarianCystsBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/ovarian-cysts-symptoms-diagnosis-and-follow-up-care' ||
     clean === '/ovarian-cysts-symptoms-diagnosis-follow-up-care' ||
@@ -282,7 +287,7 @@ const isOvarianCystsBlogPath = (pathname: string) => {
 };
 
 const isNasalPolypsBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/nasal-polyps-symptoms-diagnosis-and-available-treatments' ||
     clean === '/nasal-polyps-symptoms-diagnosis-available-treatments' ||
@@ -293,7 +298,7 @@ const isNasalPolypsBlogPath = (pathname: string) => {
 };
 
 const isSeverePeriodPainPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/severe-period-pain-when-to-worry' ||
     clean === '/blog/severe-period-pain-when-to-worry' ||
@@ -302,7 +307,7 @@ const isSeverePeriodPainPath = (pathname: string) => {
 };
 
 const isUterineFibroidsBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/uterine-fibroids-symptoms-diagnosis-treatment' ||
     clean === '/uterine-fibroids-symptoms-diagnosis-and-treatment-options' ||
@@ -312,7 +317,7 @@ const isUterineFibroidsBlogPath = (pathname: string) => {
 };
 
 const isChronicSinusitisBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/chronic-sinusitis-symptoms-causes-treatment' ||
     clean === '/chronic-sinusitis-symptoms-causes-and-treatment-options' ||
@@ -322,7 +327,7 @@ const isChronicSinusitisBlogPath = (pathname: string) => {
 };
 
 const isAsthmaSymptomsBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/asthma-symptoms-early-warning-signs' ||
     clean === '/asthma-symptoms-early-warning-signs-you-should-recognize' ||
@@ -331,19 +336,66 @@ const isAsthmaSymptomsBlogPath = (pathname: string) => {
   );
 };
 
-const isHomoeoClinicMalappuramBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+const isAllergicRhinitisBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-clinic-in-malappuram-guide' ||
-    clean === '/homoeopathic-clinic-in-malappuram' ||
-    clean === '/blog/homoeopathic-clinic-in-malappuram-guide' ||
-    clean === '/homoeopathic-clinic-malappuram' ||
-    clean === '/homoeopathic-clinic-in-malappuram-a-guide-to-choosing-a-clinic'
+    clean === '/allergic-rhinitis-symptoms-causes-and-treatment-options' ||
+    clean === '/allergic-rhinitis-symptoms-causes-treatment-options' ||
+    clean === '/blog/allergic-rhinitis-symptoms-causes-and-treatment-options' ||
+    clean === '/blog/allergic-rhinitis-symptoms-causes-treatment-options' ||
+    clean === '/allergic-rhinitis-symptoms-causes-treatment' ||
+    clean === '/allergic-rhinitis-guide'
+  );
+};
+
+const isPersistentCoughBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/persistent-cough-common-causes-and-when-to-see-a-doctor' ||
+    clean === '/persistent-cough-causes-and-when-to-see-a-doctor' ||
+    clean === '/persistent-cough-causes-when-to-see-a-doctor' ||
+    clean === '/blog/persistent-cough-common-causes-and-when-to-see-a-doctor' ||
+    clean === '/persistent-cough-causes' ||
+    clean === '/persistent-cough'
+  );
+};
+
+const isTonsillitisBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/tonsillitis-symptoms-causes-and-available-treatment-options' ||
+    clean === '/tonsillitis-symptoms-causes-treatment-options' ||
+    clean === '/tonsillitis-symptoms-causes-and-treatment-options' ||
+    clean === '/blog/tonsillitis-symptoms-causes-and-available-treatment-options' ||
+    clean === '/tonsillitis-symptoms-causes' ||
+    clean === '/tonsillitis'
+  );
+};
+
+const isEczemaVsPsoriasisBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/eczema-vs-psoriasis-how-to-understand-the-differences' ||
+    clean === '/eczema-vs-psoriasis-understanding-differences' ||
+    clean === '/eczema-vs-psoriasis-differences' ||
+    clean === '/blog/eczema-vs-psoriasis-how-to-understand-the-differences' ||
+    clean === '/eczema-vs-psoriasis'
+  );
+};
+
+const isHomoeoClinicMalappuramBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-clinic-in-malappuram-guide' ||
+    clean === '/homeopathic-clinic-in-malappuram' ||
+    clean === '/blog/homeopathic-clinic-in-malappuram-guide' ||
+    clean === '/homeopathic-clinic-malappuram' ||
+    clean === '/homeopathic-clinic-in-malappuram-a-guide-to-choosing-a-clinic'
   );
 };
 
 const isPilesBlogPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
     clean === '/what-causes-piles-risk-factors-prevention' ||
     clean === '/what-causes-piles' ||
@@ -354,10 +406,10 @@ const isPilesBlogPath = (pathname: string) => {
 };
 
 const isPilesManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/piles-homoeopathic-clinic-in-manjeri' ||
-    clean === '/piles-homoeopathic-clinic-manjeri' ||
+    clean === '/piles-homeopathic-clinic-in-manjeri' ||
+    clean === '/piles-homeopathic-clinic-manjeri' ||
     clean === '/piles-clinic-manjeri' ||
     clean === '/piles-clinic-in-manjeri' ||
     clean === '/piles-consultation-in-manjeri'
@@ -365,10 +417,10 @@ const isPilesManjeriPath = (pathname: string) => {
 };
 
 const isMenstrualManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/menstrual-homoeopathic-treatment-in-manjeri' ||
-    clean === '/menstrual-homoeopathic-treatment-manjeri' ||
+    clean === '/menstrual-homeopathic-treatment-in-manjeri' ||
+    clean === '/menstrual-homeopathic-treatment-manjeri' ||
     clean === '/menstrual-treatment-manjeri' ||
     clean === '/menstrual-treatment-in-manjeri' ||
     clean === '/menstrual-health-clinic-in-manjeri' ||
@@ -377,10 +429,10 @@ const isMenstrualManjeriPath = (pathname: string) => {
 };
 
 const isSkinManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/skin-homoeopathic-treatment-in-manjeri' ||
-    clean === '/skin-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-homeopathic-treatment-in-manjeri' ||
+    clean === '/skin-homeopathic-treatment-manjeri' ||
     clean === '/skin-treatment-manjeri' ||
     clean === '/skin-treatment-in-manjeri' ||
     clean === '/skin-health-clinic-in-manjeri' ||
@@ -390,10 +442,10 @@ const isSkinManjeriPath = (pathname: string) => {
 };
 
 const isHairManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/hair-homoeopathic-treatment-in-manjeri' ||
-    clean === '/hair-homoeopathic-treatment-manjeri' ||
+    clean === '/hair-homeopathic-treatment-in-manjeri' ||
+    clean === '/hair-homeopathic-treatment-manjeri' ||
     clean === '/hair-treatment-manjeri' ||
     clean === '/hair-treatment-in-manjeri' ||
     clean === '/hair-health-clinic-in-manjeri' ||
@@ -405,10 +457,10 @@ const isHairManjeriPath = (pathname: string) => {
 };
 
 const isAllergicRhinitisManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/allergic-rhinitis-homoeopathic-treatment-in-manjeri' ||
-    clean === '/allergic-rhinitis-homoeopathic-treatment-manjeri' ||
+    clean === '/allergic-rhinitis-homeopathic-treatment-in-manjeri' ||
+    clean === '/allergic-rhinitis-homeopathic-treatment-manjeri' ||
     clean === '/allergic-rhinitis-treatment-in-manjeri' ||
     clean === '/allergic-rhinitis-treatment-manjeri' ||
     clean === '/allergic-rhinitis-clinic-in-manjeri' ||
@@ -420,10 +472,10 @@ const isAllergicRhinitisManjeriPath = (pathname: string) => {
 };
 
 const isAcneManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-acne-skin-problems-manjeri' ||
+    clean === '/homeopathic-treatment-for-acne-skin-problems-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-acne-skin-problems-manjeri' ||
     clean === '/acne-skin-problems-treatment-in-manjeri' ||
     clean === '/acne-treatment-in-manjeri' ||
     clean === '/acne-treatment-manjeri' ||
@@ -431,32 +483,32 @@ const isAcneManjeriPath = (pathname: string) => {
     clean === '/acne-doctor-in-manjeri' ||
     clean === '/acne-specialist-in-manjeri' ||
     clean === '/pimples-treatment-in-manjeri' ||
-    clean === '/homoeopathic-acne-treatment-in-manjeri' ||
-    clean === '/acne-homoeopathic-treatment-in-manjeri'
+    clean === '/homeopathic-acne-treatment-in-manjeri' ||
+    clean === '/acne-homeopathic-treatment-in-manjeri'
   );
 };
 
 const isEczemaManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-eczema-skin-problems-manjeri' ||
+    clean === '/homeopathic-treatment-for-eczema-skin-problems-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-eczema-skin-problems-manjeri' ||
     clean === '/eczema-skin-problems-treatment-in-manjeri' ||
     clean === '/eczema-treatment-in-manjeri' ||
     clean === '/eczema-treatment-manjeri' ||
     clean === '/eczema-clinic-in-manjeri' ||
     clean === '/eczema-doctor-in-manjeri' ||
     clean === '/eczema-specialist-in-manjeri' ||
-    clean === '/homoeopathic-eczema-treatment-in-manjeri' ||
-    clean === '/eczema-homoeopathic-treatment-in-manjeri'
+    clean === '/homeopathic-eczema-treatment-in-manjeri' ||
+    clean === '/eczema-homeopathic-treatment-in-manjeri'
   );
 };
 
 const isWartsManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/skin-warts-homoeopathic-treatment-in-manjeri' ||
-    clean === '/skin-warts-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-warts-homeopathic-treatment-in-manjeri' ||
+    clean === '/skin-warts-homeopathic-treatment-manjeri' ||
     clean === '/skin-warts-treatment-in-manjeri' ||
     clean === '/skin-warts-treatment-manjeri' ||
     clean === '/warts-treatment-in-manjeri' ||
@@ -464,16 +516,16 @@ const isWartsManjeriPath = (pathname: string) => {
     clean === '/skin-warts-clinic-in-manjeri' ||
     clean === '/skin-warts-doctor-in-manjeri' ||
     clean === '/skin-warts-specialist-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-skin-warts-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-skin-warts-in-manjeri' ||
     clean === '/skin-wart-removal-treatment-in-manjeri'
   );
 };
 
 const isCornsManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/skin-corns-homoeopathic-treatment-in-manjeri' ||
-    clean === '/skin-corns-homoeopathic-treatment-manjeri' ||
+    clean === '/skin-corns-homeopathic-treatment-in-manjeri' ||
+    clean === '/skin-corns-homeopathic-treatment-manjeri' ||
     clean === '/skin-corns-treatment-in-manjeri' ||
     clean === '/skin-corns-treatment-manjeri' ||
     clean === '/corns-treatment-in-manjeri' ||
@@ -484,16 +536,16 @@ const isCornsManjeriPath = (pathname: string) => {
     clean === '/foot-corn-clinic-in-manjeri' ||
     clean === '/corns-doctor-in-manjeri' ||
     clean === '/corns-specialist-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-corns-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-corns-in-manjeri' ||
     clean === '/corn-removal-treatment-in-manjeri'
   );
 };
 
 const isPsoriasisManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/psoriasis-homoeopathic-treatment-in-manjeri' ||
-    clean === '/psoriasis-homoeopathic-treatment-manjeri' ||
+    clean === '/psoriasis-homeopathic-treatment-in-manjeri' ||
+    clean === '/psoriasis-homeopathic-treatment-manjeri' ||
     clean === '/psoriasis-treatment-in-manjeri' ||
     clean === '/psoriasis-treatment-manjeri' ||
     clean === '/skin-psoriasis-treatment-in-manjeri' ||
@@ -501,17 +553,17 @@ const isPsoriasisManjeriPath = (pathname: string) => {
     clean === '/psoriasis-clinic-in-manjeri' ||
     clean === '/psoriasis-doctor-in-manjeri' ||
     clean === '/psoriasis-specialist-in-manjeri' ||
-    clean === '/homoeopathy-for-psoriasis-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-psoriasis-in-manjeri' ||
-    clean === '/psoriasis-homoeopathy-clinic-in-manjeri'
+    clean === '/homeopathy-for-psoriasis-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-psoriasis-in-manjeri' ||
+    clean === '/psoriasis-homeopathy-clinic-in-manjeri'
   );
 };
 
 const isRingwormManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/ringworm-homoeopathic-treatment-in-manjeri' ||
-    clean === '/ringworm-homoeopathic-treatment-manjeri' ||
+    clean === '/ringworm-homeopathic-treatment-in-manjeri' ||
+    clean === '/ringworm-homeopathic-treatment-manjeri' ||
     clean === '/ringworm-treatment-in-manjeri' ||
     clean === '/ringworm-treatment-manjeri' ||
     clean === '/skin-ringworm-treatment-in-manjeri' ||
@@ -519,27 +571,27 @@ const isRingwormManjeriPath = (pathname: string) => {
     clean === '/ringworm-clinic-in-manjeri' ||
     clean === '/ringworm-doctor-in-manjeri' ||
     clean === '/ringworm-specialist-in-manjeri' ||
-    clean === '/homoeopathy-for-ringworm-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-ringworm-in-manjeri' ||
+    clean === '/homeopathy-for-ringworm-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-ringworm-in-manjeri' ||
     clean === '/ringworm-consultation-in-manjeri'
   );
 };
 
 const isAlopeciaManjeriPath = (pathname: string) => {
-  const clean = pathname.toLowerCase().replace(/\/+$/, '');
+  const clean = normalizeRoutePath(pathname);
   return (
-    clean === '/alopecia-homoeopathic-treatment-in-manjeri' ||
-    clean === '/alopecia-homoeopathic-treatment-manjeri' ||
+    clean === '/alopecia-homeopathic-treatment-in-manjeri' ||
+    clean === '/alopecia-homeopathic-treatment-manjeri' ||
     clean === '/alopecia-treatment-in-manjeri' ||
     clean === '/alopecia-treatment-manjeri' ||
     clean === '/hair-loss-treatment-in-manjeri' ||
-    clean === '/hair-loss-homoeopathic-treatment-in-manjeri' ||
+    clean === '/hair-loss-homeopathic-treatment-in-manjeri' ||
     clean === '/hair-thinning-treatment-in-manjeri' ||
     clean === '/alopecia-clinic-in-manjeri' ||
     clean === '/alopecia-doctor-in-manjeri' ||
     clean === '/alopecia-specialist-in-manjeri' ||
-    clean === '/homoeopathy-for-alopecia-in-manjeri' ||
-    clean === '/homoeopathic-treatment-for-alopecia-in-manjeri' ||
+    clean === '/homeopathy-for-alopecia-in-manjeri' ||
+    clean === '/homeopathic-treatment-for-alopecia-in-manjeri' ||
     clean === '/alopecia-consultation-in-manjeri' ||
     clean === '/alopecia-areata-treatment-in-manjeri'
   );
@@ -610,7 +662,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return 'ophthalmic-eye-care';
       }
       if (isPilesManjeriPath(window.location.pathname)) {
-        return 'piles-homoeopathic-clinic-manjeri';
+        return 'piles-homeopathic-clinic-manjeri';
       }
       if (isMenstrualManjeriPath(window.location.pathname)) {
         return 'menstrual-treatment-manjeri';
@@ -670,6 +722,46 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
           (p) => !removedIds.has(p.id) && !removedSlugs.has(p.slug)
         );
 
+        const eczemaPsoriasisPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis');
+        if (eczemaPsoriasisPost) {
+          const epIdx = parsed.findIndex((p) => p.id === 'post-eczema-vs-psoriasis' || p.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences');
+          if (epIdx >= 0) {
+            parsed[epIdx] = { ...parsed[epIdx], ...eczemaPsoriasisPost, image: eczemaPsoriasisPost.image };
+          } else {
+            parsed.unshift(eczemaPsoriasisPost);
+          }
+        }
+
+        const tonsillitisPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-tonsillitis');
+        if (tonsillitisPost) {
+          const tonIdx = parsed.findIndex((p) => p.id === 'post-tonsillitis' || p.slug === 'tonsillitis-symptoms-causes-and-available-treatment-options');
+          if (tonIdx >= 0) {
+            parsed[tonIdx] = { ...parsed[tonIdx], ...tonsillitisPost, image: tonsillitisPost.image };
+          } else {
+            parsed.unshift(tonsillitisPost);
+          }
+        }
+
+        const persistentCoughPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-persistent-cough');
+        if (persistentCoughPost) {
+          const pcIdx = parsed.findIndex((p) => p.id === 'post-persistent-cough' || p.slug === 'persistent-cough-common-causes-and-when-to-see-a-doctor');
+          if (pcIdx >= 0) {
+            parsed[pcIdx] = { ...parsed[pcIdx], ...persistentCoughPost, image: persistentCoughPost.image };
+          } else {
+            parsed.unshift(persistentCoughPost);
+          }
+        }
+
+        const allergicRhinitisPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-allergic-rhinitis');
+        if (allergicRhinitisPost) {
+          const arIdx = parsed.findIndex((p) => p.id === 'post-allergic-rhinitis' || p.slug === 'allergic-rhinitis-symptoms-causes-and-treatment-options');
+          if (arIdx >= 0) {
+            parsed[arIdx] = { ...parsed[arIdx], ...allergicRhinitisPost, image: allergicRhinitisPost.image };
+          } else {
+            parsed.unshift(allergicRhinitisPost);
+          }
+        }
+
         const severePeriodPainPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain');
         if (severePeriodPainPost) {
           const sIdx = parsed.findIndex((p) => p.id === 'post-severe-period-pain' || p.slug === 'severe-period-pain-when-to-worry');
@@ -716,9 +808,9 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.push(asthmaPost);
           }
         }
-        const clinicGuidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram');
+        const clinicGuidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homeopathic-clinic-in-malappuram');
         if (clinicGuidePost) {
-          const cgIdx = parsed.findIndex((p) => p.id === 'post-homoeopathic-clinic-in-malappuram' || p.slug === 'homoeopathic-clinic-in-malappuram-guide');
+          const cgIdx = parsed.findIndex((p) => p.id === 'post-homeopathic-clinic-in-malappuram' || p.slug === 'homeopathic-clinic-in-malappuram-guide');
           if (cgIdx >= 0) {
             parsed[cgIdx] = { ...parsed[cgIdx], ...clinicGuidePost, image: clinicGuidePost.image };
           } else {
@@ -789,6 +881,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   });
   const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(() => {
     if (typeof window !== 'undefined') {
+      if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isTonsillitisBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-tonsillitis') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPersistentCoughBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-persistent-cough') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isAllergicRhinitisBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-allergic-rhinitis') || INITIAL_BLOG_POSTS[0];
+      }
       if (isSeverePeriodPainPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
       }
@@ -820,7 +924,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-asthma-symptoms') || INITIAL_BLOG_POSTS[0];
       }
       if (isHomoeoClinicMalappuramBlogPath(window.location.pathname)) {
-        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
       }
       if (isPilesBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-what-causes-piles') || INITIAL_BLOG_POSTS[0];
@@ -849,7 +953,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       } else if (isOphthalmicEyePath(window.location.pathname)) {
         setCurrentView('ophthalmic-eye-care');
       } else if (isPilesManjeriPath(window.location.pathname)) {
-        setCurrentView('piles-homoeopathic-clinic-manjeri');
+        setCurrentView('piles-homeopathic-clinic-manjeri');
       } else if (isMenstrualManjeriPath(window.location.pathname)) {
         setCurrentView('menstrual-treatment-manjeri');
       } else if (isSkinManjeriPath(window.location.pathname)) {
@@ -872,6 +976,22 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('ringworm-treatment-manjeri');
       } else if (isAlopeciaManjeriPath(window.location.pathname)) {
         setCurrentView('alopecia-treatment-manjeri');
+      } else if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const epPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(epPost);
+      } else if (isTonsillitisBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const tonPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-tonsillitis') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(tonPost);
+      } else if (isPersistentCoughBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const pcPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-persistent-cough') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(pcPost);
+      } else if (isAllergicRhinitisBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const arPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-allergic-rhinitis') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(arPost);
       } else if (isSeverePeriodPainPath(window.location.pathname)) {
         setCurrentView('blog');
         const post = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-severe-period-pain') || INITIAL_BLOG_POSTS[0];
@@ -914,7 +1034,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setSelectedPostForReader(asthmaPost);
       } else if (isHomoeoClinicMalappuramBlogPath(window.location.pathname)) {
         setCurrentView('blog');
-        const guidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
+        const guidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homeopathic-clinic-in-malappuram') || INITIAL_BLOG_POSTS[0];
         setSelectedPostForReader(guidePost);
       } else if (isPilesBlogPath(window.location.pathname)) {
         setCurrentView('blog');
@@ -934,104 +1054,124 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   useEffect(() => {
     if (currentView === 'womens-health-care') {
-      const targetUrl = '/homoeopathic-treatment-for-womens-health-gynecological-care/';
+      const targetUrl = '/homeopathic-treatment-for-womens-health-gynecological-care/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'womens-health-care' }, '', targetUrl);
       }
     } else if (currentView === 'respiratory-care') {
-      const targetUrl = '/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-respiratory-ent-allergy-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'respiratory-care' }, '', targetUrl);
       }
     } else if (currentView === 'skin-hair-care') {
-      const targetUrl = '/homoeopathic-treatment-for-skin-hair-scalp-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-skin-hair-scalp-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'skin-hair-care' }, '', targetUrl);
       }
     } else if (currentView === 'renal-thyroid-care') {
-      const targetUrl = '/homoeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-renal-urinary-gallbladder-thyroid-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'renal-thyroid-care' }, '', targetUrl);
       }
     } else if (currentView === 'neurological-care') {
-      const targetUrl = '/homoeopathic-treatment-for-neurological-headache-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-neurological-headache-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'neurological-care' }, '', targetUrl);
       }
     } else if (currentView === 'anorectal-vascular-care') {
-      const targetUrl = '/homoeopathic-treatment-for-anorectal-vascular-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-anorectal-vascular-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'anorectal-vascular-care' }, '', targetUrl);
       }
     } else if (currentView === 'joint-musculoskeletal-care') {
-      const targetUrl = '/homoeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-joint-musculoskeletal-chronic-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'joint-musculoskeletal-care' }, '', targetUrl);
       }
     } else if (currentView === 'ophthalmic-eye-care') {
-      const targetUrl = '/homoeopathic-treatment-for-ophthalmic-eye-conditions/';
+      const targetUrl = '/homeopathic-treatment-for-ophthalmic-eye-conditions/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ophthalmic-eye-care' }, '', targetUrl);
       }
-    } else if (currentView === 'piles-homoeopathic-clinic-manjeri') {
-      const targetUrl = '/piles-homoeopathic-clinic-in-manjeri/';
+    } else if (currentView === 'piles-homeopathic-clinic-manjeri') {
+      const targetUrl = '/piles-homeopathic-clinic-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'piles-homoeopathic-clinic-manjeri' }, '', targetUrl);
+        window.history.pushState({ view: 'piles-homeopathic-clinic-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'menstrual-treatment-manjeri') {
-      const targetUrl = '/menstrual-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/menstrual-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'menstrual-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'skin-treatment-manjeri') {
-      const targetUrl = '/skin-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/skin-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'skin-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'hair-treatment-manjeri') {
-      const targetUrl = '/hair-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/hair-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'hair-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'allergic-rhinitis-manjeri') {
-      const targetUrl = '/allergic-rhinitis-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/allergic-rhinitis-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'allergic-rhinitis-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'acne-treatment-manjeri') {
-      const targetUrl = '/homoeopathic-treatment-for-acne-skin-problems-in-manjeri/';
+      const targetUrl = '/homeopathic-treatment-for-acne-skin-problems-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'acne-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'eczema-treatment-manjeri') {
-      const targetUrl = '/homoeopathic-treatment-for-eczema-skin-problems-in-manjeri/';
+      const targetUrl = '/homeopathic-treatment-for-eczema-skin-problems-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'eczema-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'warts-treatment-manjeri') {
-      const targetUrl = '/skin-warts-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/skin-warts-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'warts-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'corns-treatment-manjeri') {
-      const targetUrl = '/skin-corns-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/skin-corns-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'corns-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'psoriasis-treatment-manjeri') {
-      const targetUrl = '/psoriasis-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/psoriasis-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'psoriasis-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'ringworm-treatment-manjeri') {
-      const targetUrl = '/ringworm-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/ringworm-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ringworm-treatment-manjeri' }, '', targetUrl);
       }
     } else if (currentView === 'alopecia-treatment-manjeri') {
-      const targetUrl = '/alopecia-homoeopathic-treatment-in-manjeri/';
+      const targetUrl = '/alopecia-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'alopecia-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences') {
+      const targetUrl = '/eczema-vs-psoriasis-how-to-understand-the-differences/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'tonsillitis-symptoms-causes-and-available-treatment-options') {
+      const targetUrl = '/tonsillitis-symptoms-causes-and-available-treatment-options/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'persistent-cough-common-causes-and-when-to-see-a-doctor') {
+      const targetUrl = '/persistent-cough-common-causes-and-when-to-see-a-doctor/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'allergic-rhinitis-symptoms-causes-and-treatment-options') {
+      const targetUrl = '/allergic-rhinitis-symptoms-causes-and-treatment-options/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'severe-period-pain-when-to-worry') {
       const targetUrl = '/severe-period-pain-when-to-worry/';
@@ -1083,8 +1223,8 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
-    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'homoeopathic-clinic-in-malappuram-guide') {
-      const targetUrl = '/homoeopathic-clinic-in-malappuram-guide/';
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'homeopathic-clinic-in-malappuram-guide') {
+      const targetUrl = '/homeopathic-clinic-in-malappuram-guide/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
       }
@@ -1186,13 +1326,33 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
-    } else if (post.slug === 'homoeopathic-clinic-in-malappuram-guide') {
-      const targetUrl = '/homoeopathic-clinic-in-malappuram-guide/';
+    } else if (post.slug === 'homeopathic-clinic-in-malappuram-guide') {
+      const targetUrl = '/homeopathic-clinic-in-malappuram-guide/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
     } else if (post.slug === 'what-causes-piles-risk-factors-prevention') {
       const targetUrl = '/what-causes-piles-risk-factors-prevention/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'allergic-rhinitis-symptoms-causes-and-treatment-options') {
+      const targetUrl = '/allergic-rhinitis-symptoms-causes-and-treatment-options/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'persistent-cough-common-causes-and-when-to-see-a-doctor') {
+      const targetUrl = '/persistent-cough-common-causes-and-when-to-see-a-doctor/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'tonsillitis-symptoms-causes-and-available-treatment-options') {
+      const targetUrl = '/tonsillitis-symptoms-causes-and-available-treatment-options/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences') {
+      const targetUrl = '/eczema-vs-psoriasis-how-to-understand-the-differences/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
@@ -1633,7 +1793,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'anorectal-vascular-care') targetId = 'anorectal-vascular-care';
     else if (currentView === 'joint-musculoskeletal-care') targetId = 'joint-musculoskeletal-care';
     else if (currentView === 'ophthalmic-eye-care') targetId = 'ophthalmic-eye-care';
-    else if (currentView === 'piles-homoeopathic-clinic-manjeri') targetId = 'piles-homoeopathic-clinic-manjeri';
+    else if (currentView === 'piles-homeopathic-clinic-manjeri') targetId = 'piles-homeopathic-clinic-manjeri';
     else if (currentView === 'menstrual-treatment-manjeri') targetId = 'menstrual-treatment-manjeri';
     else if (currentView === 'skin-treatment-manjeri') targetId = 'skin-treatment-manjeri';
     else if (currentView === 'hair-treatment-manjeri') targetId = 'hair-treatment-manjeri';
@@ -1674,8 +1834,8 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         targetId = 'blog-chronic-sinusitis';
       } else if (selectedPostForReader?.slug === 'asthma-symptoms-early-warning-signs') {
         targetId = 'blog-asthma-symptoms';
-      } else if (selectedPostForReader?.slug === 'homoeopathic-clinic-in-malappuram-guide') {
-        targetId = 'blog-homoeopathic-clinic-in-malappuram';
+      } else if (selectedPostForReader?.slug === 'homeopathic-clinic-in-malappuram-guide') {
+        targetId = 'blog-homeopathic-clinic-in-malappuram';
       } else if (selectedPostForReader?.slug === 'what-causes-piles-risk-factors-prevention') {
         targetId = 'blog-what-causes-piles';
       } else if (selectedPostForReader) {

@@ -91,7 +91,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Disclosure',
-      desc: 'Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment or cure for allergic rhinitis beyond placebo.',
+      desc: 'Reliable scientific clinical evidence has not established homeopathy as an effective medical treatment or cure for allergic rhinitis beyond placebo.',
     },
     {
       title: 'Maintain Prescribed Therapies',
@@ -222,9 +222,9 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
         'If you are seeking allergic rhinitis care in Manjeri, consult a qualified medical professional or ENT specialist who can perform a formal anterior rhinoscopy, evaluate suspected triggers, recommend diagnostic IgE allergy tests, and formulate an evidence-based management plan suited to your lifestyle.',
     },
     {
-      question: '3. Can homoeopathy cure allergic rhinitis?',
+      question: '3. Can homeopathy cure allergic rhinitis?',
       answer:
-        'Homoeopathy has not been established by reliable scientific clinical evidence as an effective medical treatment or cure for allergic rhinitis beyond a placebo effect. Evidence-based care relies on proven interventions such as allergen avoidance, sterile saline nasal irrigation, second-generation antihistamines, intranasal corticosteroid sprays, and allergen immunotherapy.',
+        'Homeopathy has not been established by reliable scientific clinical evidence as an effective medical treatment or cure for allergic rhinitis beyond a placebo effect. Evidence-based care relies on proven interventions such as allergen avoidance, sterile saline nasal irrigation, second-generation antihistamines, intranasal corticosteroid sprays, and allergen immunotherapy.',
     },
     {
       question: '4. What are the common triggers of allergic rhinitis?',
@@ -276,7 +276,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Wind className="w-3.5 h-3.5 text-[#38BDF8]" />}
         badgeText="Regional Respiratory & Allergy Guide • Manjeri Patients"
-        title="Allergic Rhinitis Homoeopathic Treatment in Manjeri"
+        title="Allergic Rhinitis Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for individuals in Manjeri and Malappuram experiencing persistent sneezing, nasal congestion, runny nose, allergic sinusitis, itchy watery eyes, and environmental aeroallergen sensitivities."
         metrics={[
           { label: 'Condition Category', value: 'Respiratory & ENT Allergy' },
@@ -508,7 +508,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 5: Homoeopathic Treatment for Allergic Rhinitis in Manjeri */}
+      {/* Section 5: Homeopathic Treatment for Allergic Rhinitis in Manjeri */}
       <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -516,17 +516,17 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Homoeopathic Treatment for Allergic Rhinitis in Manjeri
+              Homeopathic Treatment for Allergic Rhinitis in Manjeri
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              People interested in complementary healthcare may search for <strong>Homoeopathic Treatment for Allergic Rhinitis in Manjeri</strong> or a <strong>Homoeopathic Doctor for Allergic Rhinitis in Manjeri</strong>.
+              People interested in complementary healthcare may search for <strong>Homeopathic Treatment for Allergic Rhinitis in Manjeri</strong> or a <strong>Homeopathic Doctor for Allergic Rhinitis in Manjeri</strong>.
             </p>
 
             <p>
-              Homoeopathy is a system of alternative medicine based on principles such as the use of highly diluted substances. Some people seek homoeopathic consultations because they prefer an individualised discussion of their symptoms, health history, and general wellbeing.
+              Homeopathy is a system of alternative medicine based on principles such as the use of highly diluted substances. Some people seek homeopathic consultations because they prefer an individualised discussion of their symptoms, health history, and general wellbeing.
             </p>
 
             <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 text-xs sm:text-sm space-y-2">
@@ -535,12 +535,12 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
                 <span>Scientific Evidence Clarification</span>
               </div>
               <p className="leading-relaxed">
-                Reliable scientific clinical evidence has not established that homoeopathy is effective for treating allergic rhinitis beyond placebo effects. It should not be presented as a proven cure or as a replacement for evidence-based allergy treatment.
+                Reliable scientific clinical evidence has not established that homeopathy is effective for treating allergic rhinitis beyond placebo effects. It should not be presented as a proven cure or as a replacement for evidence-based allergy treatment.
               </p>
             </div>
 
             <p>
-              If you are considering <strong>Allergy Homoeopathic Treatment in Manjeri</strong>, discuss your options openly with a qualified healthcare professional. Make sure you understand the evidence, limitations, and potential risks associated with any proposed treatment. Do not stop prescribed medicines or delay appropriate medical care in favour of an unproven approach.
+              If you are considering <strong>Allergy Homeopathic Treatment in Manjeri</strong>, discuss your options openly with a qualified healthcare professional. Make sure you understand the evidence, limitations, and potential risks associated with any proposed treatment. Do not stop prescribed medicines or delay appropriate medical care in favour of an unproven approach.
             </p>
 
             <p>
@@ -853,7 +853,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
 
             <button
               onClick={() => {
-                setCurrentView('piles-homoeopathic-clinic-manjeri');
+                setCurrentView('piles-homeopathic-clinic-manjeri');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               className="p-4 rounded-xl bg-white border border-[#D8E1F5] hover:border-[#45AC4B] hover:shadow-xs transition-all text-left flex flex-col justify-between group cursor-pointer"
@@ -891,7 +891,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
               Allergic rhinitis can affect comfort, sleep, concentration, and quality of life, particularly when symptoms occur frequently or continue throughout the year. Understanding possible triggers and obtaining an appropriate assessment are important steps towards effective symptom management.
             </p>
             <p>
-              If you are searching for <strong>Allergic Rhinitis Homoeopathic Treatment in Manjeri</strong>, <strong>Allergic Rhinitis Clinic in Manjeri</strong>, or <strong>Homoeopathic Doctor for Allergic Rhinitis in Manjeri</strong>, make sure your healthcare decisions are guided by accurate information about the condition and the available evidence.
+              If you are searching for <strong>Allergic Rhinitis Homeopathic Treatment in Manjeri</strong>, <strong>Allergic Rhinitis Clinic in Manjeri</strong>, or <strong>Homeopathic Doctor for Allergic Rhinitis in Manjeri</strong>, make sure your healthcare decisions are guided by accurate information about the condition and the available evidence.
             </p>
             <p>
               A suitable care plan should consider your symptoms, medical history, potential allergens, and evidence-based treatment options. For persistent or severe symptoms, consult a qualified healthcare professional to determine the most appropriate next steps.

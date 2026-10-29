@@ -65,7 +65,7 @@ export const SeoPageEditModal: React.FC<SeoPageEditModalProps> = ({
         path: '/new-page/',
         title: 'New Page Title | Anjali Homoeo Clinic',
         description:
-          'Personalized homoeopathic care and consultation services at Anjali Homoeo Clinic in Malappuram, Kerala.',
+          'Personalized homeopathic care and consultation services at Anjali Homoeo Clinic in Malappuram, Kerala.',
         url: 'https://anjalihomoeoclinic.com/new-page/',
         canonicalUrl: 'https://anjalihomoeoclinic.com/new-page/',
         ogType: 'website',
@@ -77,7 +77,7 @@ export const SeoPageEditModal: React.FC<SeoPageEditModalProps> = ({
           'MedicalWebPage',
           'New Healthcare Page',
           'New Page Title | Anjali Homoeo Clinic',
-          'Personalized homoeopathic care and consultation services at Anjali Homoeo Clinic.',
+          'Personalized homeopathic care and consultation services at Anjali Homoeo Clinic.',
           'https://anjalihomoeoclinic.com/new-page/'
         ),
         isCustom: true,

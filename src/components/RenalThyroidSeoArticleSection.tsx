@@ -73,12 +73,12 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
         'Seek immediate emergency medical care if flank or abdominal pain is accompanied by high fever, shaking chills, persistent vomiting, complete inability to pass urine (anuria), or if you have a single functioning kidney. An obstructing stone combined with a urinary tract infection is a urological emergency (sepsis risk).',
     },
     {
-      question: 'Can homoeopathic remedies dissolve kidney stones or gallbladder stones?',
+      question: 'Can homeopathic remedies dissolve kidney stones or gallbladder stones?',
       answer:
-        'Reliable scientific evidence has not demonstrated that homoeopathic remedies can dissolve kidney stones or gallstones or eliminate urinary obstruction. Clinical management depends on stone dimensions, composition, and location, often requiring urological evaluation or surgical assessment.',
+        'Reliable scientific evidence has not demonstrated that homeopathic remedies can dissolve kidney stones or gallstones or eliminate urinary obstruction. Clinical management depends on stone dimensions, composition, and location, often requiring urological evaluation or surgical assessment.',
     },
     {
-      question: 'Can thyroid hormone medication (Levothyroxine) be replaced with homoeopathy?',
+      question: 'Can thyroid hormone medication (Levothyroxine) be replaced with homeopathy?',
       answer:
         'No. In primary hypothyroidism and advanced Hashimoto’s thyroiditis, the thyroid gland lacks the biological capacity to synthesize sufficient thyroxine (T4). Discontinuing or replacing prescribed levothyroxine with unproven remedies can lead to worsening fatigue, cardiovascular strain, severe metabolic slowing, and myxoedema coma.',
     },
@@ -118,7 +118,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             id="renal-thyroid-guide-heading"
             className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-tight"
           >
-            Renal, Urinary, Gallbladder &amp; Thyroid Homoeopathic Clinic in Malappuram
+            Renal, Urinary, Gallbladder &amp; Thyroid Homeopathic Clinic in Malappuram
           </h2>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs text-[#64748B] pt-1 border-b border-[#EEF2FB] pb-4">
@@ -145,13 +145,13 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             The kidneys, urinary tract, gallbladder, and thyroid gland play important roles in maintaining the body's normal functioning. Health conditions affecting these organs can cause discomfort, changes in daily activities, and concerns about long-term well-being. Kidney stones, urinary calculi, gallbladder stones, hypothyroidism, Hashimoto’s thyroiditis, and goiter are among the conditions that require appropriate assessment, accurate diagnosis, and suitable medical management.
           </p>
           <p>
-            The <strong className="text-[#1E2559] font-semibold">Renal, Urinary, Gallbladder &amp; Thyroid Homoeopathic Clinic in Malappuram</strong> focuses on providing a setting where individuals can discuss their health concerns, understand their existing medical reports, and learn about appropriate care options. People searching for a <strong className="text-[#1E2559] font-semibold">Homoeopathic Clinic in Malappuram</strong> may have questions about recurrent urinary stones, abdominal discomfort, thyroid hormone imbalances, or enlargement of the thyroid gland.
+            The <strong className="text-[#1E2559] font-semibold">Renal, Urinary, Gallbladder &amp; Thyroid Homeopathic Clinic in Malappuram</strong> focuses on providing a setting where individuals can discuss their health concerns, understand their existing medical reports, and learn about appropriate care options. People searching for a <strong className="text-[#1E2559] font-semibold">Homeopathic Clinic in Malappuram</strong> may have questions about recurrent urinary stones, abdominal discomfort, thyroid hormone imbalances, or enlargement of the thyroid gland.
           </p>
           <p>
             Every patient has a different medical history, symptom pattern, and set of healthcare needs. Therefore, a careful approach should consider the individual's symptoms, diagnostic findings, current medications, and previous treatment history. Kidney and gallbladder stones may sometimes lead to serious complications, while thyroid disorders can require ongoing monitoring and long-term treatment.
           </p>
           <p>
-            It is important to distinguish between discussing complementary healthcare and treating a diagnosed medical condition. Reliable scientific evidence has not established homoeopathy as an effective treatment for dissolving kidney or gallbladder stones, correcting thyroid hormone deficiencies, or reversing autoimmune thyroid disease. Homoeopathic consultation should not replace appropriate medical assessment, prescribed treatment, or specialist care.
+            It is important to distinguish between discussing complementary healthcare and treating a diagnosed medical condition. Reliable scientific evidence has not established homeopathy as an effective treatment for dissolving kidney or gallbladder stones, correcting thyroid hormone deficiencies, or reversing autoimmune thyroid disease. Homeopathic consultation should not replace appropriate medical assessment, prescribed treatment, or specialist care.
           </p>
         </div>
 
@@ -189,7 +189,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#D97706] shrink-0 mt-0.5" />
-              <span><strong>Evidence-based treatment:</strong> Homoeopathy should not replace established treatment for stones or thyroid disorders, and urgent symptoms require prompt medical attention.</span>
+              <span><strong>Evidence-based treatment:</strong> Homeopathy should not replace established treatment for stones or thyroid disorders, and urgent symptoms require prompt medical attention.</span>
             </li>
           </ul>
         </div>
@@ -235,7 +235,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
                 A urinary stone associated with infection and obstruction can rapidly progress to urosepsis, which is a life-threatening medical emergency. Individuals with a solitary functioning kidney, transplanted kidney, or chronic kidney disease should never delay evaluation.
               </p>
               <div className="p-3 bg-white/80 rounded-xl border border-[#FCA5A5] text-xs text-[#7F1D1D]">
-                Homoeopathy has not been shown reliably to dissolve renal calculi or relieve acute urinary tract obstruction.
+                Homeopathy has not been shown reliably to dissolve renal calculi or relieve acute urinary tract obstruction.
               </div>
             </div>
           </div>
@@ -267,7 +267,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
                 A <strong className="text-[#1E2559] font-semibold">Urinary Stone Consultation in Malappuram</strong> should involve careful review of prior stone episodes, biochemical urine profiles, imaging studies, and renal function. Treatment depends on stone caliber, degree of hydronephrosis, and infection markers.
               </p>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                Some stones require cystoscopic or endoscopic extraction. Patients interested in complementary care should maintain coordinated urological supervision; homoeopathy has not been established as an effective means of dissolving ureteral or bladder calculi.
+                Some stones require cystoscopic or endoscopic extraction. Patients interested in complementary care should maintain coordinated urological supervision; homeopathy has not been established as an effective means of dissolving ureteral or bladder calculi.
               </p>
             </div>
           </div>
@@ -292,7 +292,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
                 Medical evaluation for suspected gallstones involves abdominal ultrasound, liver function tests (LFTs), and clinical examination. Asymptomatic stones generally require observation rather than surgical intervention.
               </p>
               <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                However, recurrent biliary colic or complicated disease usually requires surgical assessment for laparoscopic cholecystectomy. There is no reliable scientific evidence that homoeopathy dissolves or expels gallstones, and attempting unverified stone flushes can risk acute ductal impaction.
+                However, recurrent biliary colic or complicated disease usually requires surgical assessment for laparoscopic cholecystectomy. There is no reliable scientific evidence that homeopathy dissolves or expels gallstones, and attempting unverified stone flushes can risk acute ductal impaction.
               </p>
             </div>
 
@@ -329,7 +329,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
               Assessment begins with comprehensive symptom history and neck palpation, followed by blood tests: Thyroid-Stimulating Hormone (TSH) and Free T4. When autoimmune disease or structural changes are suspected, anti-thyroid peroxidase (anti-TPO) antibodies, anti-thyroglobulin (anti-Tg) antibodies, and high-resolution thyroid ultrasonography are indicated.
             </p>
             <p className="text-xs text-[#64748B] italic">
-              Homoeopathy has not been shown reliably to restore normal hormone levels in clinical hypothyroidism or replace evidence-based hormone replacement therapy.
+              Homeopathy has not been shown reliably to restore normal hormone levels in clinical hypothyroidism or replace evidence-based hormone replacement therapy.
             </p>
           </div>
         </div>
@@ -357,7 +357,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#FEF2F2] border border-[#FCA5A5] text-[#991B1B] space-y-3">
               <h4 className="text-base font-bold text-[#991B1B]">Essential Safety &amp; Medication Compliance</h4>
               <p className="text-xs sm:text-sm text-[#7F1D1D] leading-relaxed font-semibold">
-                Patients taking thyroid hormone replacement must never stop, reduce, or substitute prescribed levothyroxine with homoeopathic formulations without explicit medical supervision.
+                Patients taking thyroid hormone replacement must never stop, reduce, or substitute prescribed levothyroxine with homeopathic formulations without explicit medical supervision.
               </p>
               <p className="text-xs sm:text-sm text-[#7F1D1D] leading-relaxed">
                 Discontinuing hormone replacement can cause severe symptom relapse, dyslipidemia, cardiac dysfunction, and in advanced untreated cases, life-threatening myxoedema coma. Lifestyle and nutritional measures provide valuable supportive well-being but cannot synthesize absent hormone molecules.
@@ -384,7 +384,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
               <strong>Iodine Warning:</strong> Excessive dietary or supplemental iodine (from kelp, spirulina, bladderwrack, or unverified homeo-ayurvedic tinctures) can exacerbate autoimmune thyroid damage and worsen hypothyroidism. Never start high-dose iodine supplements without consulting your endocrinologist.
             </div>
             <p className="text-xs text-[#64748B] italic">
-              There is no reliable clinical evidence that homoeopathy halts autoimmune destructive pathways or reverses established Hashimoto’s thyroiditis.
+              There is no reliable clinical evidence that homeopathy halts autoimmune destructive pathways or reverses established Hashimoto’s thyroiditis.
             </p>
           </div>
         </div>
@@ -528,7 +528,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-1">
             <a
-              href="/homoeopathic-treatment-for-womens-health-gynecological-care/"
+              href="/homeopathic-treatment-for-womens-health-gynecological-care/"
               onClick={(e) => handleNavigateTreatment(e, 'womens-health-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -547,7 +547,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/"
+              href="/homeopathic-treatment-for-respiratory-ent-allergy-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'respiratory-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -566,7 +566,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-skin-hair-scalp-conditions/"
+              href="/homeopathic-treatment-for-skin-hair-scalp-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'skin-hair-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -585,7 +585,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-neurological-lifestyle-disorders/"
+              href="/homeopathic-treatment-for-neurological-lifestyle-disorders/"
               onClick={(e) => handleNavigateTreatment(e, 'neurological-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -604,7 +604,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-anorectal-vascular-conditions/"
+              href="/homeopathic-treatment-for-anorectal-vascular-conditions/"
               onClick={(e) => handleNavigateTreatment(e, 'anorectal-vascular-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -623,7 +623,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
             </a>
 
             <a
-              href="/homoeopathic-treatment-for-joint-musculoskeletal-disorders/"
+              href="/homeopathic-treatment-for-joint-musculoskeletal-disorders/"
               onClick={(e) => handleNavigateTreatment(e, 'joint-musculoskeletal-care')}
               className="p-4 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#303A88] transition-all group flex items-start gap-3 shadow-2xs"
             >
@@ -656,7 +656,7 @@ export const RenalThyroidSeoArticleSection: React.FC = () => {
               Kidney stones, ureteral and bladder calculi, gallbladder stones, hypothyroidism, Hashimoto’s thyroiditis, and goiter are distinct medical conditions that require appropriate assessment and individualized management. Understanding symptoms and obtaining an accurate diagnosis can help patients make informed decisions about their health.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-              The Renal, Urinary, Gallbladder &amp; Thyroid Homoeopathic Clinic in Malappuram provides a relevant setting for people wishing to discuss these health concerns and their questions about complementary care. Any consultation should be approached responsibly, with appropriate medical investigations, prescribed treatment, and specialist assessment remaining priorities. People searching for Kidney Stone Consultation in Malappuram, Urinary Stone Consultation in Malappuram, or Gallbladder Stone Consultation in Malappuram should prioritize identifying the cause of symptoms and preventing complications.
+              The Renal, Urinary, Gallbladder &amp; Thyroid Homeopathic Clinic in Malappuram provides a relevant setting for people wishing to discuss these health concerns and their questions about complementary care. Any consultation should be approached responsibly, with appropriate medical investigations, prescribed treatment, and specialist assessment remaining priorities. People searching for Kidney Stone Consultation in Malappuram, Urinary Stone Consultation in Malappuram, or Gallbladder Stone Consultation in Malappuram should prioritize identifying the cause of symptoms and preventing complications.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
               Similarly, those seeking Thyroid Consultation in Malappuram, Hypothyroidism Consultation in Malappuram, Hashimoto’s Thyroiditis Consultation in Malappuram, or Goiter Consultation in Malappuram should receive clear information about diagnostic testing, treatment options, and follow-up. Informed healthcare decisions, timely medical evaluation, and ongoing communication with qualified healthcare professionals are essential for protecting long-term well-being.

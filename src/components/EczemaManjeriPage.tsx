@@ -88,7 +88,7 @@ export const EczemaManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Disclosure',
-      desc: 'Reliable scientific clinical evidence has not shown homoeopathy to reliably treat or cure eczema beyond non-specific placebo effects.',
+      desc: 'Reliable scientific clinical evidence has not shown homeopathy to reliably treat or cure eczema beyond non-specific placebo effects.',
     },
     {
       title: 'Preserve Prescribed Medications',
@@ -226,9 +226,9 @@ export const EczemaManjeriPage: React.FC = () => {
         'You can consult qualified healthcare professionals offering clinical dermatology and general medicine assessments in Manjeri. Verify the clinician\'s recognized qualifications (such as MBBS/MD Dermatology or BHMS for complementary consultations), transparent communication regarding evidence, and willingness to collaborate with specialists.',
     },
     {
-      question: '2. Is Homoeopathic Eczema Treatment in Manjeri effective?',
+      question: '2. Is Homeopathic Eczema Treatment in Manjeri effective?',
       answer:
-        'Current reliable scientific clinical evidence has not established homoeopathy as an effective treatment or cure for eczema. Patients exploring complementary consultations should understand that evidence-based medical treatments (emollients, topical anti-inflammatories) remain the standard of care, and prescribed medications must not be discontinued.',
+        'Current reliable scientific clinical evidence has not established homeopathy as an effective treatment or cure for eczema. Patients exploring complementary consultations should understand that evidence-based medical treatments (emollients, topical anti-inflammatories) remain the standard of care, and prescribed medications must not be discontinued.',
     },
     {
       question: '3. What are the common symptoms of eczema?',
@@ -285,7 +285,7 @@ export const EczemaManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#F59E0B]" />}
         badgeText="Regional Clinical Eczema Guide • Manjeri Patients"
-        title="Homoeopathic Treatment for Eczema Skin Problems in Manjeri"
+        title="Homeopathic Treatment for Eczema Skin Problems in Manjeri"
         subtitle="Individualized clinical guidance for children, teenagers, and adults in Manjeri and Malappuram experiencing persistent itching, dryness, skin barrier disruption, and recurring atopic flare-ups."
         metrics={[
           { label: 'Condition Category', value: 'Atopic & Contact Eczema' },
@@ -491,7 +491,7 @@ export const EczemaManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 4: Exploring Homoeopathic Eczema Treatment in Manjeri */}
+      {/* Section 4: Exploring Homeopathic Eczema Treatment in Manjeri */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -499,17 +499,17 @@ export const EczemaManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Exploring Homoeopathic Eczema Treatment in Manjeri
+              Exploring Homeopathic Eczema Treatment in Manjeri
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              Some individuals search for <strong>Homoeopathic Eczema Treatment in Manjeri</strong> because they are interested in homoeopathy or prefer to discuss different approaches to managing recurring skin complaints.
+              Some individuals search for <strong>Homeopathic Eczema Treatment in Manjeri</strong> because they are interested in homeopathy or prefer to discuss different approaches to managing recurring skin complaints.
             </p>
 
             <p>
-              A consultation with a qualified homoeopathic practitioner may provide an opportunity to discuss the history of the skin problem, the frequency of flare-ups, previous treatments, and concerns about day-to-day skin care. Patients should receive clear information about the limitations of the proposed approach and when other medical care is necessary.
+              A consultation with a qualified homeopathic practitioner may provide an opportunity to discuss the history of the skin problem, the frequency of flare-ups, previous treatments, and concerns about day-to-day skin care. Patients should receive clear information about the limitations of the proposed approach and when other medical care is necessary.
             </p>
 
             <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 text-xs sm:text-sm space-y-2">
@@ -518,12 +518,12 @@ export const EczemaManjeriPage: React.FC = () => {
                 <span>Scientific Evidence Clarification</span>
               </div>
               <p className="leading-relaxed">
-                Homoeopathy has not been shown reliably to treat or cure eczema, and there is insufficient high-quality scientific evidence to establish it as an effective treatment for this condition. Patients should not stop prescribed medicines or postpone proven care in favour of homoeopathy.
+                Homeopathy has not been shown reliably to treat or cure eczema, and there is insufficient high-quality scientific evidence to establish it as an effective treatment for this condition. Patients should not stop prescribed medicines or postpone proven care in favour of homeopathy.
               </p>
             </div>
 
             <p>
-              People considering <strong>Eczema Homoeopathic Treatment in Manjeri</strong> should discuss their options openly with their healthcare providers, especially when symptoms are persistent, severe, or affecting sleep and everyday activities. An appropriate care plan should prioritise symptom control, skin-barrier protection, prevention of complications, and timely access to evidence-based treatment.
+              People considering <strong>Eczema Homeopathic Treatment in Manjeri</strong> should discuss their options openly with their healthcare providers, especially when symptoms are persistent, severe, or affecting sleep and everyday activities. An appropriate care plan should prioritise symptom control, skin-barrier protection, prevention of complications, and timely access to evidence-based treatment.
             </p>
           </div>
         </div>
@@ -918,7 +918,7 @@ export const EczemaManjeriPage: React.FC = () => {
               Eczema can cause persistent itching, dryness, inflammation, and recurring discomfort, but appropriate care can help many people manage their symptoms and protect their skin. Understanding the condition, recognising possible triggers, moisturising regularly, and using suitable medical treatments are important parts of eczema management.
             </p>
             <p>
-              If you are searching for <strong>Eczema Treatment in Manjeri</strong>, choose a qualified healthcare professional who can assess your symptoms and explain the available options. People interested in <strong>Homoeopathic Eczema Treatment in Manjeri</strong> should understand the limitations of the scientific evidence and avoid delaying established medical care.
+              If you are searching for <strong>Eczema Treatment in Manjeri</strong>, choose a qualified healthcare professional who can assess your symptoms and explain the available options. People interested in <strong>Homeopathic Eczema Treatment in Manjeri</strong> should understand the limitations of the scientific evidence and avoid delaying established medical care.
             </p>
             <p>
               Whether you need advice about a new rash or support with longstanding symptoms, a careful assessment is the first step towards a safer, more informed approach to skin health.

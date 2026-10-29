@@ -93,7 +93,7 @@ export const HairManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'Reliable scientific clinical evidence has not established homoeopathy as an effective medical treatment for hair loss, alopecia, or scalp disorders.',
+      desc: 'Reliable scientific clinical evidence has not established homeopathy as an effective medical treatment for hair loss, alopecia, or scalp disorders.',
     },
     {
       title: 'Beware Guaranteed Regrowth Claims',
@@ -233,9 +233,9 @@ export const HairManjeriPage: React.FC = () => {
 
   const faqs = [
     {
-      question: '1. Where can I find Hair Homoeopathic Treatment in Manjeri?',
+      question: '1. Where can I find Hair Homeopathic Treatment in Manjeri?',
       answer:
-        'You can research local healthcare clinics in Manjeri and check the practitioner’s accredited qualifications (such as BHMS) and state medical council registration. It is important to understand that homoeopathy has not been established as an effective medical treatment for hair loss in scientific trials. Persistent, rapid, or patchy hair loss should always be evaluated by a qualified doctor or dermatologist.',
+        'You can research local healthcare clinics in Manjeri and check the practitioner’s accredited qualifications (such as BHMS) and state medical council registration. It is important to understand that homeopathy has not been established as an effective medical treatment for hair loss in scientific trials. Persistent, rapid, or patchy hair loss should always be evaluated by a qualified doctor or dermatologist.',
     },
     {
       question: '2. What causes excessive hair fall?',
@@ -243,9 +243,9 @@ export const HairManjeriPage: React.FC = () => {
         'Excessive hair shedding can stem from multiple biological factors, including androgenetic alopecia (genetic hair loss), recent high fever or severe illness (telogen effluvium), acute stress, nutritional deficiencies (especially iron, ferritin, and protein), thyroid imbalance, hormonal shifts (PCOS, postpartum), certain prescription drugs, or inflammatory scalp conditions.',
     },
     {
-      question: '3. Is Homoeopathic Hair Treatment in Manjeri effective for hair loss?',
+      question: '3. Is Homeopathic Hair Treatment in Manjeri effective for hair loss?',
       answer:
-        'Reliable scientific clinical evidence has not established homoeopathy as an effective treatment for hair loss, alopecia areata, or scalp disorders beyond a placebo response. Evidence-based care relies on identifying the underlying cause and applying proven therapies—such as correcting iron deficiency, treating scalp infections with antifungals, or using medically approved topical and systemic treatments.',
+        'Reliable scientific clinical evidence has not established homeopathy as an effective treatment for hair loss, alopecia areata, or scalp disorders beyond a placebo response. Evidence-based care relies on identifying the underlying cause and applying proven therapies—such as correcting iron deficiency, treating scalp infections with antifungals, or using medically approved topical and systemic treatments.',
     },
     {
       question: '4. When should I consult a Hair Doctor in Manjeri?',
@@ -297,7 +297,7 @@ export const HairManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Scissors className="w-3.5 h-3.5 text-[#86EFAC]" />}
         badgeText="Regional Clinical Trichology Guide • Manjeri Patients"
-        title="Hair Homoeopathic Treatment in Manjeri"
+        title="Hair Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for patients in Manjeri and Malappuram experiencing excessive hair fall, thinning hair, receding hairlines, dandruff, and scalp health concerns."
         metrics={[
           { label: 'Condition Focus', value: 'Hair & Scalp Health' },
@@ -400,7 +400,7 @@ export const HairManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 2: Hair Homoeopathic Treatment in Manjeri: Understanding Your Options */}
+      {/* Section 2: Hair Homeopathic Treatment in Manjeri: Understanding Your Options */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -408,13 +408,13 @@ export const HairManjeriPage: React.FC = () => {
               TREATMENT LANDSCAPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              Hair Homoeopathic Treatment in Manjeri: Understanding Your Options
+              Hair Homeopathic Treatment in Manjeri: Understanding Your Options
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              People exploring <strong>Homoeopathic Hair Treatment in Manjeri</strong> may wish to discuss hair fall, scalp concerns, or their general health with a healthcare provider.
+              People exploring <strong>Homeopathic Hair Treatment in Manjeri</strong> may wish to discuss hair fall, scalp concerns, or their general health with a healthcare provider.
             </p>
 
             <p>
@@ -430,7 +430,7 @@ export const HairManjeriPage: React.FC = () => {
                     Distinguishing Consultation from Scientific Evidence
                   </h3>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-                    It is important to distinguish between receiving a consultation and having evidence that a particular treatment works. <strong>Reliable scientific evidence has not established homoeopathy as an effective treatment for hair loss, alopecia, or other scalp disorders.</strong> Patients should receive accurate information about established treatment options before making decisions.
+                    It is important to distinguish between receiving a consultation and having evidence that a particular treatment works. <strong>Reliable scientific evidence has not established homeopathy as an effective treatment for hair loss, alopecia, or other scalp disorders.</strong> Patients should receive accurate information about established treatment options before making decisions.
                   </p>
                   <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                     Evidence-based management depends on the cause of the problem:
@@ -555,7 +555,7 @@ export const HairManjeriPage: React.FC = () => {
                 Exercise Caution Regarding Guaranteed Regrowth Claims
               </h3>
               <p className="text-xs sm:text-sm leading-relaxed text-amber-900/90">
-                Patients should be cautious about products or clinics that promise guaranteed hair regrowth, permanent cures, or dramatic results within a fixed number of days. Hair growth biological cycles take months, and outcomes depend fundamentally on the specific diagnosis and adherence to treatment. Homoeopathy has not been proven to treat hair loss effectively and should not replace medical assessment.
+                Patients should be cautious about products or clinics that promise guaranteed hair regrowth, permanent cures, or dramatic results within a fixed number of days. Hair growth biological cycles take months, and outcomes depend fundamentally on the specific diagnosis and adherence to treatment. Homeopathy has not been proven to treat hair loss effectively and should not replace medical assessment.
               </p>
             </div>
           </div>
@@ -628,7 +628,7 @@ export const HairManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 8: The Role of a Homoeopathic Doctor for Hair Problems in Manjeri */}
+      {/* Section 8: The Role of a Homeopathic Doctor for Hair Problems in Manjeri */}
       <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div>
@@ -636,13 +636,13 @@ export const HairManjeriPage: React.FC = () => {
               PROFESSIONAL SCOPE
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
-              The Role of a Homoeopathic Doctor for Hair Problems in Manjeri
+              The Role of a Homeopathic Doctor for Hair Problems in Manjeri
             </h2>
           </div>
 
           <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
             <p>
-              A <strong>Homoeopathic Doctor for Hair Problems in Manjeri</strong> may offer consultations for individuals who want to discuss hair and scalp concerns. However, patients should understand that homoeopathy has not been established as an effective treatment for hair loss or scalp disorders.
+              A <strong>Homeopathic Doctor for Hair Problems in Manjeri</strong> may offer consultations for individuals who want to discuss hair and scalp concerns. However, patients should understand that homeopathy has not been established as an effective treatment for hair loss or scalp disorders.
             </p>
 
             <p>
@@ -753,7 +753,7 @@ export const HairManjeriPage: React.FC = () => {
             </p>
 
             <div className="p-4 rounded-xl bg-white border border-[#D8E1F5] text-xs sm:text-sm text-[#1E2559] font-medium leading-relaxed">
-              A Homoeopathy Clinic for Hair Problems in Manjeri should communicate honestly about the evidence supporting its services. Homoeopathy has not been established as an effective treatment for hair loss, and patients should not be advised to postpone necessary medical evaluation.
+              A Homeopathy Clinic for Hair Problems in Manjeri should communicate honestly about the evidence supporting its services. Homeopathy has not been established as an effective treatment for hair loss, and patients should not be advised to postpone necessary medical evaluation.
             </div>
           </div>
         </div>
@@ -889,7 +889,7 @@ export const HairManjeriPage: React.FC = () => {
 
             <button
               onClick={() => {
-                setCurrentView('piles-homoeopathic-clinic-manjeri');
+                setCurrentView('piles-homeopathic-clinic-manjeri');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               className="p-4 rounded-xl bg-white border border-[#D8E1F5] hover:border-[#45AC4B] hover:shadow-xs transition-all text-left flex flex-col justify-between group cursor-pointer"
@@ -948,10 +948,10 @@ export const HairManjeriPage: React.FC = () => {
               Hair and scalp concerns can have several causes, and understanding the underlying problem is essential for choosing appropriate care. Whether you are experiencing excessive hair fall, thinning hair, dandruff, scalp irritation, or patchy hair loss, timely assessment can help you understand your options.
             </p>
             <p>
-              People searching for <strong>Hair Homoeopathic Treatment in Manjeri</strong>, <strong>Hair Fall Treatment in Manjeri</strong>, or a <strong>Homoeopathy Clinic for Hair Problems in Manjeri</strong> should look for providers who communicate transparently, respect patient privacy, and recognise when medical evaluation is necessary.
+              People searching for <strong>Hair Homeopathic Treatment in Manjeri</strong>, <strong>Hair Fall Treatment in Manjeri</strong>, or a <strong>Homeopathy Clinic for Hair Problems in Manjeri</strong> should look for providers who communicate transparently, respect patient privacy, and recognise when medical evaluation is necessary.
             </p>
             <p>
-              Homoeopathy has not been established as an effective treatment for hair loss or scalp disorders. It should not replace evidence-based medical care or delay diagnosis of an underlying condition.
+              Homeopathy has not been established as an effective treatment for hair loss or scalp disorders. It should not replace evidence-based medical care or delay diagnosis of an underlying condition.
             </p>
             <p className="font-medium text-white">
               By maintaining healthy hair-care habits, seeking qualified medical advice, and making informed decisions about treatment, individuals can take practical steps towards protecting their hair and scalp health.

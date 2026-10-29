@@ -93,7 +93,7 @@ export const WartsManjeriPage: React.FC = () => {
     },
     {
       title: 'Scientific Evidence Note',
-      desc: 'High-quality scientific trials have not established homoeopathy as an effective treatment or definitive cure for skin warts.',
+      desc: 'High-quality scientific trials have not established homeopathy as an effective treatment or definitive cure for skin warts.',
     },
     {
       title: 'Avoid Dangerous DIY Removal',
@@ -225,9 +225,9 @@ export const WartsManjeriPage: React.FC = () => {
         'You can seek consultation with qualified healthcare professionals and clinics in and around Manjeri. A medical practitioner will carefully inspect the lesion, confirm whether it is genuinely an HPV-related wart, explain evidence-based clinical options (such as topical keratolytics or cryotherapy), and refer you to a dermatologist if the growth is atypical or resistant.',
     },
     {
-      question: '2. Is Homoeopathic Treatment for Skin Warts in Manjeri effective?',
+      question: '2. Is Homeopathic Treatment for Skin Warts in Manjeri effective?',
       answer:
-        'There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment or definitive cure for skin warts. Because warts frequently resolve spontaneously as the patient’s immune system clears HPV, clinical improvements are often mistaken for therapeutic efficacy. Patients should understand these evidence boundaries and ensure that changing, bleeding, or unusual growths receive prompt medical evaluation.',
+        'There is no reliable, high-quality scientific evidence establishing homeopathy as an effective treatment or definitive cure for skin warts. Because warts frequently resolve spontaneously as the patient’s immune system clears HPV, clinical improvements are often mistaken for therapeutic efficacy. Patients should understand these evidence boundaries and ensure that changing, bleeding, or unusual growths receive prompt medical evaluation.',
     },
     {
       question: '3. What causes skin warts?',
@@ -289,7 +289,7 @@ export const WartsManjeriPage: React.FC = () => {
       <RegionalHeroSection
         badgeIcon={<Sparkles className="w-3.5 h-3.5 text-[#0D9488]" />}
         badgeText="Regional Clinical Warts Guide • Manjeri Patients"
-        title="Skin Warts Homoeopathic Treatment in Manjeri"
+        title="Skin Warts Homeopathic Treatment in Manjeri"
         subtitle="Individualized clinical guidance for children, teenagers, and adults in Manjeri and Malappuram experiencing viral HPV warts, verrucae, plantar warts, flat facial lesions, and filiform skin growths."
         metrics={[
           { label: 'Condition Category', value: 'Benign HPV Lesions' },
@@ -536,7 +536,7 @@ export const WartsManjeriPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Exploring Homoeopathic Treatment for Skin Warts in Manjeri */}
+      {/* Exploring Homeopathic Treatment for Skin Warts in Manjeri */}
       <section className="py-14 bg-[#F8FAFD] border-b border-[#E2E8F0]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 font-sans">
           
@@ -545,13 +545,13 @@ export const WartsManjeriPage: React.FC = () => {
               CLINICAL TRANSPARENCY & SCIENTIFIC PERSPECTIVE
             </span>
             <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-              Exploring Homoeopathic Treatment for Skin Warts in Manjeri
+              Exploring Homeopathic Treatment for Skin Warts in Manjeri
             </h2>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              Some people search for <strong className="text-[#1E2559]">Homoeopathic Skin Warts Treatment in Manjeri</strong> because they are interested in homoeopathy or wish to discuss different approaches to recurring skin complaints.
+              Some people search for <strong className="text-[#1E2559]">Homeopathic Skin Warts Treatment in Manjeri</strong> because they are interested in homeopathy or wish to discuss different approaches to recurring skin complaints.
             </p>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              A consultation with a qualified homoeopathic practitioner may provide an opportunity to discuss the history of the skin growth, previous treatments, concerns about appearance, and preferences regarding care. However, it is important to distinguish a consultation from evidence that a treatment is effective.
+              A consultation with a qualified homeopathic practitioner may provide an opportunity to discuss the history of the skin growth, previous treatments, concerns about appearance, and preferences regarding care. However, it is important to distinguish a consultation from evidence that a treatment is effective.
             </p>
           </div>
 
@@ -561,10 +561,10 @@ export const WartsManjeriPage: React.FC = () => {
               <span>Scientific Evidence &amp; Natural Regression</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              There is no reliable, high-quality scientific evidence establishing homoeopathy as an effective treatment for skin warts. Warts may also disappear naturally as the immune system responds to the virus, making it difficult to attribute improvement to a particular unproven treatment.
+              There is no reliable, high-quality scientific evidence establishing homeopathy as an effective treatment for skin warts. Warts may also disappear naturally as the immune system responds to the virus, making it difficult to attribute improvement to a particular unproven treatment.
             </p>
             <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-              People considering Homoeopathic Treatment for Skin Warts in Manjeri should understand these limitations and avoid delaying appropriate medical assessment, especially when a growth is changing, painful, bleeding, or located near sensitive areas.
+              People considering Homeopathic Treatment for Skin Warts in Manjeri should understand these limitations and avoid delaying appropriate medical assessment, especially when a growth is changing, painful, bleeding, or located near sensitive areas.
             </p>
             <p className="text-xs text-[#64748B] italic">
               A healthcare professional should provide clear information about the likely diagnosis, available evidence-based treatments, possible risks, and circumstances in which specialist care is recommended. No treatment should be promoted as a guaranteed way to remove every wart or prevent all future warts.
@@ -759,7 +759,7 @@ export const WartsManjeriPage: React.FC = () => {
               A correct diagnosis is particularly important before removing a lesion. Using acids, sharp tools, or home remedies on an incorrectly identified growth can cause burns, infection, bleeding, or scarring.
             </p>
             <p className="text-sm sm:text-base text-[#475569] leading-relaxed">
-              People exploring <strong className="text-[#1E2559]">Homoeopathic Skin Treatment in Manjeri</strong> should receive accurate information about the evidence for the treatment being considered. Homoeopathy has not been established as an effective treatment for skin warts and should not replace appropriate diagnosis or proven treatment options.
+              People exploring <strong className="text-[#1E2559]">Homeopathic Skin Treatment in Manjeri</strong> should receive accurate information about the evidence for the treatment being considered. Homeopathy has not been established as an effective treatment for skin warts and should not replace appropriate diagnosis or proven treatment options.
             </p>
           </div>
 
@@ -788,7 +788,7 @@ export const WartsManjeriPage: React.FC = () => {
             Skin warts are common growths usually associated with certain types of HPV. Although they are generally harmless, they can spread, cause discomfort, or create cosmetic concerns. Some disappear naturally, while others may benefit from established treatments such as salicylic acid or professional cryotherapy.
           </p>
           <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
-            If you are searching for Skin Warts Treatment in Manjeri, the first step is to confirm the diagnosis and understand the available treatment options. People interested in Homoeopathic Skin Warts Treatment in Manjeri should be aware that scientific evidence does not establish homoeopathy as an effective wart treatment. Avoid cutting, burning, or using harsh substances on skin growths at home. Seek professional assessment if a lesion changes, bleeds, becomes painful, or appears in a sensitive area.
+            If you are searching for Skin Warts Treatment in Manjeri, the first step is to confirm the diagnosis and understand the available treatment options. People interested in Homeopathic Skin Warts Treatment in Manjeri should be aware that scientific evidence does not establish homeopathy as an effective wart treatment. Avoid cutting, burning, or using harsh substances on skin growths at home. Seek professional assessment if a lesion changes, bleeds, becomes painful, or appears in a sensitive area.
           </p>
           <div className="pt-2">
             <button

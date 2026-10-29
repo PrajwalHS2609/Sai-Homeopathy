@@ -199,11 +199,11 @@ export const RespiratoryCarePage: React.FC = () => {
             '@graph': [
               {
                 '@type': 'MedicalWebPage',
-                '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
-                url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+                '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/#webpage',
+                url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
                 name: 'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
                 description:
-                  'Explore homoeopathic consultations for respiratory, ENT and allergy concerns at Anjali Homoeo Clinic in Malappuram, Kerala, with personalized healthcare guidance.',
+                  'Explore homeopathic consultations for respiratory, ENT and allergy concerns at Anjali Homoeo Clinic in Malappuram, Kerala, with personalized healthcare guidance.',
                 isPartOf: {
                   '@type': 'WebSite',
                   '@id': 'https://anjalihomoeoclinic.com/#website',
@@ -239,7 +239,7 @@ export const RespiratoryCarePage: React.FC = () => {
                     '@type': 'ListItem',
                     position: 3,
                     name: 'Respiratory, ENT & Allergy Conditions Homeopathic Treatment in Malappuram',
-                    item: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-for-respiratory-ent-allergy-conditions/',
+                    item: 'https://anjalihomoeoclinic.com/homeopathic-treatment-for-respiratory-ent-allergy-conditions/',
                   },
                 ],
               },
@@ -317,7 +317,7 @@ export const RespiratoryCarePage: React.FC = () => {
 
               {/* H1 Main Title */}
               <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E2559] leading-[1.15] tracking-tight">
-                Homoeopathic Treatment for Respiratory, ENT &amp; Allergy Conditions
+                Homeopathic Treatment for Respiratory, ENT &amp; Allergy Conditions
               </h1>
 
               {/* Lead Narrative */}

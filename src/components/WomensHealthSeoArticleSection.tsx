@@ -88,9 +88,9 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
         'Discuss your symptoms, menstrual changes, sleep, mood, medical history, and any effect on your daily life. A qualified healthcare professional can help you understand the available evidence-based management options.',
     },
     {
-      question: 'Can homoeopathy treat PCOS, fibroids, or menopause symptoms?',
+      question: 'Can homeopathy treat PCOS, fibroids, or menopause symptoms?',
       answer:
-        'Reliable scientific evidence has not established that homoeopathy effectively treats PCOS, uterine fibroids, or menopause symptoms beyond placebo effects. It should not replace evidence-based treatment or delay medical evaluation.',
+        'Reliable scientific evidence has not established that homeopathy effectively treats PCOS, uterine fibroids, or menopause symptoms beyond placebo effects. It should not replace evidence-based treatment or delay medical evaluation.',
     },
   ];
 
@@ -140,7 +140,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
             Women's health requires attention, understanding, and appropriate medical care at every stage of life. From menstrual irregularities and PCOS to uterine fibroids and menopause-related changes, women may experience different health concerns that affect their physical comfort, emotional well-being, and daily activities.
           </p>
           <p>
-            If you are searching for a <strong className="text-[#1E2559] font-semibold">Homoeopathic Clinic in Malappuram</strong>, understanding your symptoms and exploring appropriate healthcare options is an important first step. Anjali Homoeo Clinic provides a local point of contact for individuals seeking information about homoeopathic consultations and available services in Malappuram, Kerala.
+            If you are searching for a <strong className="text-[#1E2559] font-semibold">Homeopathic Clinic in Malappuram</strong>, understanding your symptoms and exploring appropriate healthcare options is an important first step. Anjali Homoeo Clinic provides a local point of contact for individuals seeking information about homeopathic consultations and available services in Malappuram, Kerala.
           </p>
           <p>
             Women's health concerns can have several underlying causes, and the right approach begins with an appropriate medical assessment. Symptoms such as irregular periods, severe menstrual cramps, persistent pelvic discomfort, and unexpected bleeding should not be ignored. A qualified healthcare professional can help determine whether further investigations, specialist care, or evidence-based treatment are needed.
@@ -188,7 +188,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
             </li>
             <li className="flex items-start gap-2.5 md:col-span-2">
               <CheckCircle2 className="w-4 h-4 text-[#DB2777] shrink-0 mt-0.5" />
-              <span>Homoeopathy has not been shown to effectively treat specific health conditions beyond placebo effects and should not replace evidence-based medical care.</span>
+              <span>Homeopathy has not been shown to effectively treat specific health conditions beyond placebo effects and should not replace evidence-based medical care.</span>
             </li>
           </ul>
         </div>
@@ -212,7 +212,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
               These concerns should be evaluated according to their symptoms and possible causes. A careful medical history and appropriate investigations can help guide decisions about diagnosis and treatment.
             </p>
             <p>
-              Anjali Homoeo Clinic is a local clinic to contact when enquiring about homoeopathic consultation services in Malappuram. Before booking, confirm the available services, practitioner qualifications, and whether your specific concern falls within the clinic's scope of practice.
+              Anjali Homoeo Clinic is a local clinic to contact when enquiring about homeopathic consultation services in Malappuram. Before booking, confirm the available services, practitioner qualifications, and whether your specific concern falls within the clinic's scope of practice.
             </p>
           </div>
         </div>
@@ -286,7 +286,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
                 Management depends on the individual's symptoms, reproductive goals, and overall health. Evidence-based options may include lifestyle support and medicines for specific concerns.
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathy has not been established as an effective treatment for PCOS. Women should not rely on homoeopathic remedies in place of appropriate medical assessment or proven treatment options.
+                Homeopathy has not been established as an effective treatment for PCOS. Women should not rely on homeopathic remedies in place of appropriate medical assessment or proven treatment options.
               </p>
             </div>
           </div>
@@ -446,7 +446,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
                 A healthcare professional may recommend an examination, pelvic ultrasound, or other investigations based on symptoms. Management depends on the size and location of the fibroids, symptom severity, age, and reproductive plans. Options may include monitoring, medication, minimally invasive procedures, or surgery when indicated.
               </p>
               <p className="text-xs text-[#991B1B] bg-[#FEF2F2] p-3 rounded-xl border border-[#FCA5A5] leading-relaxed">
-                Homoeopathic remedies have not been shown to reliably shrink uterine fibroids or treat their complications. Women should seek appropriate gynaecological care and should not delay investigations or effective treatment.
+                Homeopathic remedies have not been shown to reliably shrink uterine fibroids or treat their complications. Women should seek appropriate gynaecological care and should not delay investigations or effective treatment.
               </p>
             </div>
           </div>
@@ -508,26 +508,26 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
                 Unexpected bleeding after menopause requires prompt medical evaluation. Women should also seek advice if symptoms substantially affect sleep, work, relationships, or daily life.
               </p>
               <p className="text-xs text-[#475569] italic">
-                Homoeopathy has not been established as an effective treatment for menopause symptoms. Discuss available options with a qualified healthcare professional before starting or changing treatment.
+                Homeopathy has not been established as an effective treatment for menopause symptoms. Discuss available options with a qualified healthcare professional before starting or changing treatment.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Section 7: Choosing the Right Homoeopathic Clinic in Malappuram */}
+        {/* Section 7: Choosing the Right Homeopathic Clinic in Malappuram */}
         <div className="space-y-6 pt-10 border-t border-[#EEF2FB]">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                Choosing the Right Homoeopathic Clinic in Malappuram
+                Choosing the Right Homeopathic Clinic in Malappuram
               </h3>
               <p className="text-sm sm:text-base text-[#64748B] mt-1 leading-relaxed">
                 Selecting a healthcare provider is an important decision, particularly when symptoms are persistent or involve reproductive health:
               </p>
             </div>
             <a
-              href="/homoeopathic-clinic-in-malappuram-guide/"
-              onClick={(e) => handleNavigateBlog(e, 'homoeopathic-clinic-in-malappuram-guide')}
+              href="/homeopathic-clinic-in-malappuram-guide/"
+              onClick={(e) => handleNavigateBlog(e, 'homeopathic-clinic-in-malappuram-guide')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#303A88] bg-[#EEF2FB] hover:bg-[#D3DBF4] px-4 py-2 rounded-full transition-colors shrink-0"
             >
               <span>Guide to Choosing a Clinic</span>
@@ -564,7 +564,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
               <span className="w-6 h-6 rounded-md bg-[#303A88] text-white text-xs font-bold flex items-center justify-center">4</span>
               <h4 className="font-bold text-[#1E2559] pt-1">Understand Treatment Limitations</h4>
               <p className="text-[#475569] leading-relaxed m-0 text-xs">
-                Be cautious of claims promising guaranteed cures, permanent results, or treatment for every hormonal condition. Homoeopathy has not been shown to treat these conditions beyond placebo effects.
+                Be cautious of claims promising guaranteed cures, permanent results, or treatment for every hormonal condition. Homeopathy has not been shown to treat these conditions beyond placebo effects.
               </p>
             </div>
 
@@ -585,7 +585,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
           </h3>
           <div className="prose prose-slate max-w-none text-sm sm:text-base leading-relaxed text-[#334155] space-y-3.5">
             <p>
-              Anjali Homoeo Clinic is a local healthcare option to consider when researching homoeopathic consultation services in Malappuram, Kerala.
+              Anjali Homoeo Clinic is a local healthcare option to consider when researching homeopathic consultation services in Malappuram, Kerala.
             </p>
             <p>
               Patients interested in the clinic should confirm its current consultation services, practitioner credentials, operating hours, and appointment arrangements before visiting.
@@ -660,7 +660,7 @@ export const WomensHealthSeoArticleSection: React.FC = () => {
               Women's health concerns deserve careful assessment, accurate information, and appropriate medical care. Whether you are experiencing PCOS symptoms, irregular periods, suspected uterine fibroids, persistent pelvic discomfort, or menopause-related changes, understanding the possible causes is an important first step.
             </p>
             <p className="text-xs sm:text-sm text-[#CBD5E1] leading-relaxed">
-              If you are searching for a Homoeopathic Clinic in Malappuram, Anjali Homoeo Clinic is one local option to enquire about for information on its services and consultations. For PCOS Consultation in Malappuram, PCOD Consultation in Malappuram, Menstrual Irregularities in Malappuram, Menopause Consultation in Malappuram, or Uterine Fibroids Consultation in Malappuram, prioritize qualified medical advice and evidence-based care. Your health and well-being should always come first.
+              If you are searching for a Homeopathic Clinic in Malappuram, Anjali Homoeo Clinic is one local option to enquire about for information on its services and consultations. For PCOS Consultation in Malappuram, PCOD Consultation in Malappuram, Menstrual Irregularities in Malappuram, Menopause Consultation in Malappuram, or Uterine Fibroids Consultation in Malappuram, prioritize qualified medical advice and evidence-based care. Your health and well-being should always come first.
             </p>
             <div className="pt-3 flex flex-wrap items-center gap-3">
               <button
