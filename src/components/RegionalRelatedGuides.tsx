@@ -123,6 +123,46 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
       badgeColor: 'bg-teal-50 text-teal-700 border-teal-200',
       dotColor: 'bg-[#0D9488]',
     },
+    {
+      key: 'alopecia-treatment-malappuram',
+      title: 'Alopecia Treatment in Malappuram',
+      condition: 'Alopecia Subtypes & Scalp Assessment',
+      badge: 'Trichology Care',
+      badgeColor: 'bg-teal-50 text-teal-700 border-teal-200',
+      dotColor: 'bg-[#14B8A6]',
+    },
+    {
+      key: 'hair-treatment-malappuram',
+      title: 'Hair & Scalp Treatment in Malappuram',
+      condition: 'Hair Fall, Dandruff & Scalp Health',
+      badge: 'Hair & Scalp',
+      badgeColor: 'bg-teal-50 text-teal-700 border-teal-200',
+      dotColor: 'bg-[#0D9488]',
+    },
+    {
+      key: 'skin-treatment-malappuram',
+      title: 'Skin Treatment in Malappuram',
+      condition: 'Acne, Eczema, Psoriasis & Rashes',
+      badge: 'Dermatology Care',
+      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+      dotColor: 'bg-[#F59E0B]',
+    },
+    {
+      key: 'menstrual-treatment-malappuram',
+      title: 'Menstrual Treatment in Malappuram',
+      condition: 'Irregular Cycles, Period Pain & PCOS',
+      badge: 'Women’s Care',
+      badgeColor: 'bg-rose-50 text-rose-700 border-rose-200',
+      dotColor: 'bg-[#E11D48]',
+    },
+    {
+      key: 'piles-clinic-malappuram',
+      title: 'Piles Clinic in Malappuram',
+      condition: 'Haemorrhoids, Fissures & Anorectal Care',
+      badge: 'Proctology Care',
+      badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      dotColor: 'bg-[#10B981]',
+    },
   ];
 
   const departmentCarePages: Array<{

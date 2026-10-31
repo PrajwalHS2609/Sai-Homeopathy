@@ -59,7 +59,12 @@ export type NavView =
   | 'corns-treatment-manjeri'
   | 'psoriasis-treatment-manjeri'
   | 'ringworm-treatment-manjeri'
-  | 'alopecia-treatment-manjeri';
+  | 'alopecia-treatment-manjeri'
+  | 'alopecia-treatment-malappuram'
+  | 'hair-treatment-malappuram'
+  | 'skin-treatment-malappuram'
+  | 'menstrual-treatment-malappuram'
+  | 'piles-clinic-malappuram';
 
 interface Toast {
   id: string;
@@ -597,6 +602,99 @@ const isAlopeciaManjeriPath = (pathname: string) => {
   );
 };
 
+const isAlopeciaMalappuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/alopecia-homeopathic-treatment-in-malappuram' ||
+    clean === '/alopecia-homoeopathic-treatment-in-malappuram' ||
+    clean === '/alopecia-treatment-in-malappuram' ||
+    clean === '/alopecia-treatment-malappuram' ||
+    clean === '/hair-loss-treatment-in-malappuram' ||
+    clean === '/hair-fall-treatment-in-malappuram' ||
+    clean === '/hair-loss-homeopathic-treatment-in-malappuram' ||
+    clean === '/hair-thinning-treatment-in-malappuram' ||
+    clean === '/alopecia-clinic-in-malappuram' ||
+    clean === '/alopecia-doctor-in-malappuram' ||
+    clean === '/alopecia-specialist-in-malappuram' ||
+    clean === '/homeopathy-for-alopecia-in-malappuram' ||
+    clean === '/homeopathic-treatment-for-alopecia-in-malappuram' ||
+    clean === '/alopecia-consultation-in-malappuram' ||
+    clean === '/alopecia-areata-treatment-in-malappuram'
+  );
+};
+
+const isHairMalappuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/hair-and-scalp-homoeopathic-treatment-in-malappuram' ||
+    clean === '/hair-and-scalp-homeopathic-treatment-in-malappuram' ||
+    clean === '/hair-and-scalp-treatment-in-malappuram' ||
+    clean === '/hair-treatment-in-malappuram' ||
+    clean === '/hair-treatment-malappuram' ||
+    clean === '/scalp-treatment-in-malappuram' ||
+    clean === '/hair-doctor-in-malappuram' ||
+    clean === '/hair-specialist-in-malappuram' ||
+    clean === '/hair-homoeopathy-clinic-in-malappuram' ||
+    clean === '/hair-homeopathy-clinic-in-malappuram' ||
+    clean === '/homoeopathic-doctor-for-hair-problems-in-malappuram' ||
+    clean === '/homeopathic-doctor-for-hair-problems-in-malappuram' ||
+    clean === '/hair-care-clinic-in-malappuram' ||
+    clean === '/hair-health-clinic-in-malappuram'
+  );
+};
+
+const isSkinMalappuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/skin-homeopathic-treatment-in-malappuram' ||
+    clean === '/skin-homoeopathic-treatment-in-malappuram' ||
+    clean === '/skin-treatment-in-malappuram' ||
+    clean === '/skin-treatment-malappuram' ||
+    clean === '/skin-problems-treatment-in-malappuram' ||
+    clean === '/skin-disease-treatment-in-malappuram' ||
+    clean === '/skin-doctor-in-malappuram' ||
+    clean === '/skin-specialist-in-malappuram' ||
+    clean === '/skin-homeopathy-clinic-in-malappuram' ||
+    clean === '/skin-homoeopathy-clinic-in-malappuram' ||
+    clean === '/homeopathic-doctor-for-skin-problems-in-malappuram' ||
+    clean === '/homoeopathic-doctor-for-skin-problems-in-malappuram' ||
+    clean === '/skin-health-clinic-in-malappuram'
+  );
+};
+
+const isMenstrualMalappuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/menstrual-homeopathic-treatment-in-malappuram' ||
+    clean === '/menstrual-homoeopathic-treatment-in-malappuram' ||
+    clean === '/menstrual-treatment-in-malappuram' ||
+    clean === '/menstrual-treatment-malappuram' ||
+    clean === '/period-pain-treatment-in-malappuram' ||
+    clean === '/period-problems-treatment-in-malappuram' ||
+    clean === '/menstrual-problems-doctor-in-malappuram' ||
+    clean === '/womens-health-doctor-in-malappuram' ||
+    clean === '/menstrual-disorder-consultation-in-malappuram' ||
+    clean === '/menstrual-health-clinic-in-malappuram' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-malappuram' ||
+    clean === '/homoeopathy-clinic-for-menstrual-problems-in-malappuram'
+  );
+};
+
+const isPilesMalappuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathy-clinic-for-piles-in-malappuram' ||
+    clean === '/homoeopathy-clinic-for-piles-in-malappuram' ||
+    clean === '/piles-homeopathic-clinic-in-malappuram' ||
+    clean === '/piles-homoeopathic-clinic-in-malappuram' ||
+    clean === '/piles-treatment-in-malappuram' ||
+    clean === '/piles-clinic-in-malappuram' ||
+    clean === '/piles-specialist-in-malappuram' ||
+    clean === '/piles-doctor-in-malappuram' ||
+    clean === '/haemorrhoids-treatment-in-malappuram'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -696,6 +794,21 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isAlopeciaManjeriPath(window.location.pathname)) {
         return 'alopecia-treatment-manjeri';
+      }
+      if (isAlopeciaMalappuramPath(window.location.pathname)) {
+        return 'alopecia-treatment-malappuram';
+      }
+      if (isHairMalappuramPath(window.location.pathname)) {
+        return 'hair-treatment-malappuram';
+      }
+      if (isSkinMalappuramPath(window.location.pathname)) {
+        return 'skin-treatment-malappuram';
+      }
+      if (isMenstrualMalappuramPath(window.location.pathname)) {
+        return 'menstrual-treatment-malappuram';
+      }
+      if (isPilesMalappuramPath(window.location.pathname)) {
+        return 'piles-clinic-malappuram';
       }
     }
     return 'home';
@@ -976,6 +1089,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('ringworm-treatment-manjeri');
       } else if (isAlopeciaManjeriPath(window.location.pathname)) {
         setCurrentView('alopecia-treatment-manjeri');
+      } else if (isAlopeciaMalappuramPath(window.location.pathname)) {
+        setCurrentView('alopecia-treatment-malappuram');
+      } else if (isHairMalappuramPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-malappuram');
+      } else if (isSkinMalappuramPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-malappuram');
+      } else if (isMenstrualMalappuramPath(window.location.pathname)) {
+        setCurrentView('menstrual-treatment-malappuram');
+      } else if (isPilesMalappuramPath(window.location.pathname)) {
+        setCurrentView('piles-clinic-malappuram');
       } else if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
         setCurrentView('blog');
         const epPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
@@ -1152,6 +1275,31 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       const targetUrl = '/alopecia-homeopathic-treatment-in-manjeri/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'alopecia-treatment-manjeri' }, '', targetUrl);
+      }
+    } else if (currentView === 'alopecia-treatment-malappuram') {
+      const targetUrl = '/alopecia-homeopathic-treatment-in-malappuram/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'alopecia-treatment-malappuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'hair-treatment-malappuram') {
+      const targetUrl = '/hair-and-scalp-homoeopathic-treatment-in-malappuram/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-malappuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-treatment-malappuram') {
+      const targetUrl = '/skin-homeopathic-treatment-in-malappuram/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-malappuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'menstrual-treatment-malappuram') {
+      const targetUrl = '/menstrual-homeopathic-treatment-in-malappuram/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-treatment-malappuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'piles-clinic-malappuram') {
+      const targetUrl = '/homeopathy-clinic-for-piles-in-malappuram/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-clinic-malappuram' }, '', targetUrl);
       }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences') {
       const targetUrl = '/eczema-vs-psoriasis-how-to-understand-the-differences/';
@@ -1805,6 +1953,11 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'psoriasis-treatment-manjeri') targetId = 'psoriasis-treatment-manjeri';
     else if (currentView === 'ringworm-treatment-manjeri') targetId = 'ringworm-treatment-manjeri';
     else if (currentView === 'alopecia-treatment-manjeri') targetId = 'alopecia-treatment-manjeri';
+    else if (currentView === 'alopecia-treatment-malappuram') targetId = 'alopecia-treatment-malappuram';
+    else if (currentView === 'hair-treatment-malappuram') targetId = 'hair-treatment-malappuram';
+    else if (currentView === 'skin-treatment-malappuram') targetId = 'skin-treatment-malappuram';
+    else if (currentView === 'menstrual-treatment-malappuram') targetId = 'menstrual-treatment-malappuram';
+    else if (currentView === 'piles-clinic-malappuram') targetId = 'piles-clinic-malappuram';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';
     else if (currentView === 'book-appointment') targetId = 'book-appointment';

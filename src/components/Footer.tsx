@@ -401,6 +401,41 @@ export const Footer: React.FC = () => {
               <span>Alopecia Treatment in Manjeri</span>
             </button>
             <button
+              onClick={() => handleLinkClick('alopecia-treatment-malappuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#14B8A6]" />
+              <span>Alopecia Treatment in Malappuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('hair-treatment-malappuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair &amp; Scalp Treatment in Malappuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('skin-treatment-malappuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin Treatment in Malappuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('menstrual-treatment-malappuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Menstrual Treatment in Malappuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('piles-clinic-malappuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Piles Clinic in Malappuram</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('anorectal-vascular-care')}
               className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
             >

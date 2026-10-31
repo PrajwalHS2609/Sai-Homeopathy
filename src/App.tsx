@@ -55,6 +55,11 @@ import { CornsManjeriPage } from './components/CornsManjeriPage';
 import { PsoriasisManjeriPage } from './components/PsoriasisManjeriPage';
 import { RingwormManjeriPage } from './components/RingwormManjeriPage';
 import { AlopeciaManjeriPage } from './components/AlopeciaManjeriPage';
+import { AlopeciaMalappuramPage } from './components/AlopeciaMalappuramPage';
+import { HairMalappuramPage } from './components/HairMalappuramPage';
+import { SkinMalappuramPage } from './components/SkinMalappuramPage';
+import { MenstrualMalappuramPage } from './components/MenstrualMalappuramPage';
+import { PilesMalappuramPage } from './components/PilesMalappuramPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -552,6 +557,106 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <AlopeciaManjeriPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Alopecia Homoeopathic Treatment in Malappuram View
+  // URL: /alopecia-homeopathic-treatment-in-malappuram/
+  if (currentView === 'alopecia-treatment-malappuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AlopeciaMalappuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Hair and Scalp Homoeopathic Treatment in Malappuram View
+  // URL: /hair-and-scalp-homoeopathic-treatment-in-malappuram/
+  if (currentView === 'hair-treatment-malappuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairMalappuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Skin Homeopathic Treatment in Malappuram View
+  // URL: /skin-homeopathic-treatment-in-malappuram/
+  if (currentView === 'skin-treatment-malappuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinMalappuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Menstrual Homeopathic Treatment in Malappuram View
+  // URL: /menstrual-homeopathic-treatment-in-malappuram/
+  if (currentView === 'menstrual-treatment-malappuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualMalappuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathy Clinic for Piles in Malappuram View
+  // URL: /homeopathy-clinic-for-piles-in-malappuram/
+  if (currentView === 'piles-clinic-malappuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesMalappuramPage />
         </main>
         <Footer />
         <ProductDetailModal />

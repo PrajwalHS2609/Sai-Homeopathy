@@ -4919,6 +4919,884 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-26',
   },
+  {
+    id: 'alopecia-treatment-malappuram',
+    pageName: 'Alopecia Homoeopathic Treatment in Malappuram',
+    category: 'clinical',
+    path: '/alopecia-homeopathic-treatment-in-malappuram/',
+    title: 'Alopecia Homoeopathic Treatment in Malappuram | Symptoms, Causes & Care',
+    description:
+      'Comprehensive guide on alopecia homoeopathic treatment in Malappuram. Learn about hair loss types, autoimmune causes, evidence-based options, and consultations with Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-malappuram/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-malappuram/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Alopecia homoeopathic treatment in Malappuram, hair loss treatment Malappuram, alopecia areata Malappuram, androgenetic alopecia Kerala, hair thinning doctor Malappuram, homeopathy hair clinic Malappuram, Dr Anjali Chandrasekhar',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-malappuram/#webpage',
+            name: 'Alopecia Homoeopathic Treatment in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Alopecia Homoeopathic Treatment in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-malappuram/',
+            description:
+              'Comprehensive patient guide explaining alopecia symptoms, clinical subtypes, root causes, evidence-based trichological options, and consultation expectations in Malappuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking hair loss assessment, alopecia information, and consultations in Malappuram and Kerala',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/alopecia-homeopathic-treatment-in-malappuram/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia can result from autoimmune conditions, genetics, hormonal changes, nutritional deficiencies, medications, scalp disorders, or physical and emotional stress. The cause varies from person to person, so a proper diagnostic assessment is essential before starting any treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established that homoeopathy effectively treats alopecia or reliably promotes hair regrowth. While some individuals choose homoeopathic consultations for general supportive care, people experiencing persistent hair loss should consider formal medical assessment and discuss evidence-based treatment options with a qualified healthcare professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find an Alopecia Clinic in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'When searching for an Alopecia Clinic in Malappuram, look for clear professional qualifications, appropriate diagnostic practices, transparent costs, and realistic treatment information without unproven regrowth guarantees. A dermatologist is the most appropriate specialist for evaluating complex or scarring hair and scalp disorders.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair grow back after alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair regrowth depends entirely on the type of alopecia and whether the hair follicles remain viable. Reversible conditions such as telogen effluvium or mild alopecia areata often show regrowth once triggers resolve. However, scarring (cicatricial) alopecia causes permanent destruction of hair follicles, which is why early medical intervention is critical.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I take supplements for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Supplements may be helpful when a specific nutritional deficiency (such as low iron/ferritin, zinc, or vitamin D) has been confirmed through blood tests. However, they are not a universal cure for hair loss, and excessive intake of certain vitamins (like vitamin A or selenium) can actually trigger or worsen hair loss. Seek professional medical guidance before taking high doses.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor about hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice for sudden or persistent hair loss, rapidly developing bald patches, scalp pain, burning, redness, or inflammation, or hair loss involving the eyebrows and eyelashes. Early assessment helps identify treatable conditions and prevents irreversible follicle damage.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'hair-treatment-malappuram',
+    pageName: 'Hair and Scalp Homoeopathic Treatment in Malappuram',
+    category: 'clinical',
+    path: '/hair-and-scalp-homoeopathic-treatment-in-malappuram/',
+    title: 'Hair and Scalp Homoeopathic Treatment in Malappuram | Care Guide',
+    description:
+      'Patient guide on hair fall, thinning hair, dandruff & scalp itching in Malappuram. Learn causes, evidence-based options, and consultations with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/hair-and-scalp-homoeopathic-treatment-in-malappuram/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/hair-and-scalp-homoeopathic-treatment-in-malappuram/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Hair Treatment in Malappuram, Homoeopathic Hair Treatment in Malappuram, Hair Doctor in Malappuram, Hair Specialist in Malappuram, Hair Fall Treatment in Malappuram, Hair Loss Treatment in Malappuram, Hair and Scalp Treatment in Malappuram, Hair Thinning Treatment in Malappuram, Hair Homoeopathy Clinic in Malappuram, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/hair-and-scalp-homoeopathic-treatment-in-malappuram/#webpage',
+            name: 'Hair and Scalp Homoeopathic Treatment in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Hair and Scalp Homoeopathic Treatment in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/hair-and-scalp-homoeopathic-treatment-in-malappuram/',
+            description:
+              'Comprehensive patient guide explaining common hair and scalp concerns, biological causes, professional assessment, and evidence-informed trichology options in Malappuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis of Scalp (Dandruff)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Pruritus',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L29.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking hair fall, dandruff, scalp itching, and hair thinning care in Malappuram and Kerala',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/hair-and-scalp-homoeopathic-treatment-in-malappuram/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes excessive hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Excessive hair fall may be associated with genetics, stress, illness, hormonal changes, nutritional deficiencies, medications, scalp conditions, or damaging hair practices. Identifying the cause is important for selecting an appropriate treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Current scientific evidence does not establish homeopathy as an effective treatment for hair loss or scalp disorders. People experiencing persistent hair fall should seek an appropriate medical assessment and should not delay evidence-based treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find a Hair Doctor in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified healthcare professional with appropriate credentials and experience assessing hair and scalp conditions. A dermatologist may be particularly suitable for unexplained, sudden, patchy, or inflammatory hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair thinning?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Certain deficiencies, including iron deficiency, may contribute to hair shedding. However, not all hair loss is caused by poor nutrition. Appropriate assessment and testing can help identify whether a deficiency is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek treatment for scalp itching?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if itching is persistent, severe, or accompanied by redness, thick scaling, sores, hair loss, or signs of infection. The appropriate treatment depends on the underlying cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair loss be reversed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some forms of hair loss are reversible or manageable, particularly when the underlying cause is identified and treated. Other forms may be progressive or permanent. Outcomes depend on the condition and the treatment used.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for in a Hair Homoeopathy Clinic in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Check the practitioner\'s qualifications and registration, ask about the evidence supporting the proposed treatment, and confirm that appropriate medical assessment will not be delayed. Homeopathy has not been established as an effective treatment for hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is hair fall always a sign of illness?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Some daily hair shedding is normal, and temporary increases can occur after certain life events. However, persistent, severe, patchy, or unexplained hair loss should be evaluated.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'skin-treatment-malappuram',
+    pageName: 'Skin Homeopathic Treatment in Malappuram',
+    category: 'clinical',
+    path: '/skin-homeopathic-treatment-in-malappuram/',
+    title: 'Skin Homeopathic Treatment in Malappuram | Symptoms, Causes & Care',
+    description:
+      'Patient guide on acne, eczema, psoriasis, rashes & skin itching in Malappuram. Learn causes, evidence-based options, and consultations with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-malappuram/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-malappuram/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Skin Homeopathic Treatment in Malappuram, Homeopathic Skin Treatment in Malappuram, Skin Treatment in Malappuram, Skin Doctor in Malappuram, Skin Specialist in Malappuram, Skin Problems Treatment in Malappuram, Skin Disease Treatment in Malappuram, Skin Homeopathy Clinic in Malappuram, Homeopathic Doctor for Skin Problems in Malappuram, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-malappuram/#webpage',
+            name: 'Skin Homeopathic Treatment in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Skin Homeopathic Treatment in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-malappuram/',
+            description:
+              'Comprehensive patient guide explaining acne, eczema, psoriasis, fungal infections, allergic rashes, diagnostic assessment, and evidence-informed dermatological options in Malappuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Atopic Dermatitis (Eczema)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Allergic Contact Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L23.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Pruritus',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L29.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking acne, eczema, psoriasis, itching, and skin disease consultations in Malappuram and Kerala',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/skin-homeopathic-treatment-in-malappuram/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes common skin problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Skin problems may result from inflammation, allergies, infections (bacterial, fungal, viral), hormonal fluctuations (such as in acne), genetics, environmental irritants, or underlying medical conditions. An appropriate clinical assessment by a qualified doctor is essential to identify the accurate cause before starting any treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for skin diseases?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Current scientific evidence does not establish homeopathy as an effective treatment for skin diseases like eczema, psoriasis, acne, or fungal infections. While some patients seek homeopathic consultations for supportive complementary care, it should never replace evidence-based medical assessment or prescribed conventional treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find a Skin Doctor in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified healthcare professional with verified credentials and council registration. For persistent, severe, blistering, or unexplained skin symptoms, consulting a board-certified dermatologist is the most appropriate step.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skin problems be managed with daily skincare alone?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Gentle cleansing, regular moisturizing, sun protection, and avoiding known chemical irritants actively support skin health and barrier repair. However, active skin infections and chronic inflammatory diseases like psoriasis require specific medical therapies and cannot be resolved with cosmetic skincare alone.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek medical attention for a rash?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek prompt medical advice if a rash is persistent, rapidly spreading, intensely painful, or accompanied by fever, swelling, pus, or blistering. Any skin reaction accompanied by facial swelling, lip swelling, or difficulty breathing is a medical emergency requiring immediate hospital care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is every skin condition contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Major inflammatory skin conditions such as eczema, psoriasis, contact dermatitis, and acne are completely non-contagious and cannot spread to others. Certain fungal, bacterial, or viral skin infections can spread through direct contact or shared towels, which is why an accurate diagnosis is essential.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can pigmentation be treated?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment depends on the specific cause of pigmentation. Post-inflammatory dark spots and melasma benefit from strict daily broad-spectrum sun protection and suitable topical agents. Any new, bleeding, or irregularly shaped pigment spot must be examined by a dermatologist to exclude skin malignancies.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for in a Skin Homeopathy Clinic in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Check the practitioner’s formal qualifications and council registration, ask transparently about scientific evidence and realistic expectations, and confirm that conventional diagnostic investigations or dermatologist referrals will not be delayed.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'menstrual-treatment-malappuram',
+    pageName: 'Menstrual Homeopathic Treatment in Malappuram',
+    category: 'clinical',
+    path: '/menstrual-homeopathic-treatment-in-malappuram/',
+    title:
+      'Menstrual Homeopathic Treatment in Malappuram | Women’s Health Guide',
+    description:
+      'Guide to menstrual homeopathic treatment in Malappuram. Understand causes of irregular periods, severe period pain (dysmenorrhea), heavy bleeding, and evidence-based care.',
+    url: 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-malappuram/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-malappuram/',
+    ogType: 'website',
+    ogImage: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Menstrual Homeopathic Treatment in Malappuram, Period Pain Doctor Malappuram, Irregular Periods Clinic Malappuram, Dysmenorrhea Homeopathy Malappuram, Heavy Bleeding Menorrhagia Kerala, PCOS Menstrual Irregularity, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-malappuram/#webpage',
+            name: 'Menstrual Homeopathic Treatment in Malappuram – Clinical Overview & Patient Guide',
+            headline: 'Menstrual Homeopathic Treatment in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-malappuram/',
+            description:
+              'Comprehensive medical and clinical guide discussing irregular menstrual cycles, severe period pain (dysmenorrhea), heavy menstrual bleeding, and evidence-based treatment pathways in Malappuram district, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dysmenorrhea (Painful Periods)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Oligomenorrhea & Irregular Menstruation',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N91',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Heavy Menstrual Bleeding (Menorrhagia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Polycystic Ovary Syndrome (PCOS)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'E28.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Premenstrual Syndrome & PMDD',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.3',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Women and individuals experiencing menstrual irregularity, pelvic pain, or abnormal bleeding in Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/menstrual-homeopathic-treatment-in-malappuram/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can homeopathy cure irregular periods or severe period pain?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Current high-quality scientific evidence does not show that homeopathy can cure menstrual disorders, correct hormonal imbalances, or resolve pelvic pathology. Conventional medical therapies provide evidence-based, predictable relief and address root causes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long can a menstrual cycle normally vary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A normal menstrual cycle typically ranges from 21 to 35 days in adult women. An occasional variation of a few days is common due to temporary stress or minor illness, but cycles persistently under 21 days or over 35 days warrant formal evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When is period pain considered abnormal and requiring medical evaluation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Period pain is abnormal if it impairs daily activities, does not respond to standard over-the-counter pain relievers, worsens progressively over months, begins years after menarche, or is accompanied by painful intercourse or bowel movements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes heavy menstrual bleeding (menorrhagia)?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Heavy menstrual bleeding may be caused by uterine fibroids, endometrial polyps, adenomyosis, hormonal anovulation (common in PCOS or perimenopause), bleeding disorders, copper intrauterine devices, or medication side effects.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find a Menstrual Health Doctor in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consulting a qualified gynaecologist or women’s healthcare specialist registered with state medical councils in Malappuram is the recommended approach for thorough pelvic examination and evidence-based clinical management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle habits help balance menstrual cycles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Regular moderate exercise, balanced nutrition with adequate iron and healthy fats, consistent sleep hygiene, and active stress management can support hormonal regularity, particularly in conditions like PCOS.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I look for in a Menstrual Homeopathy Clinic in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Choose a practitioner with verified qualifications and council registration who communicates transparently about evidence, maintains realistic expectations, and coordinates promptly with gynaecologists when diagnostic imaging or medical intervention is required.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What investigations are standard for evaluating menstrual irregularities?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Standard investigations include pelvic ultrasound (to evaluate the uterus, endometrium, and ovaries), hormonal blood panels (FSH, LH, prolactin, estradiol, and androgen levels), thyroid function testing (TSH), and complete blood counts with ferritin to check for anaemia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can severe period pain be a sign of endometriosis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Endometriosis occurs when tissue resembling the uterine lining grows outside the uterus, causing progressive, debilitating menstrual pain, chronic pelvic discomfort, pain with intercourse, and potential subfertility.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does PCOS always cause irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While infrequent, irregular, or missed periods are hallmark criteria of Polycystic Ovary Syndrome (PCOS), some women have regular bleeds while still experiencing anovulation, ovarian cysts, or elevated androgen levels.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How is heavy menstrual bleeding treated in medical practice?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Medical management includes antifibrinolytics like tranexamic acid taken during bleeding days, NSAIDs to reduce flow and cramps, combined hormonal oral contraceptives, progestin therapy, or levonorgestrel-releasing intrauterine systems (LNG-IUS).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should someone go to an emergency department for menstrual bleeding?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Immediate emergency care is required if bleeding is so heavy that you soak through two or more thick sanitary pads or tampons every hour for two consecutive hours, pass blood clots larger than a 50-rupee coin, or experience severe dizziness, fainting, shortness of breath, or sudden unbearable pelvic pain.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'piles-clinic-malappuram',
+    pageName: 'Homeopathy Clinic for Piles in Malappuram',
+    category: 'clinical',
+    path: '/homeopathy-clinic-for-piles-in-malappuram/',
+    title:
+      'Homeopathy Clinic for Piles in Malappuram | Symptoms, Causes & Care',
+    description:
+      'Looking for a piles clinic in Malappuram? Learn about haemorrhoids symptoms, rectal bleeding, causes, evidence-based treatments, and consultations with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-in-malappuram/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-in-malappuram/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathy Clinic for Piles in Malappuram, Piles Clinic in Malappuram, Piles Treatment in Malappuram, Piles Homeopathic Clinic in Malappuram, Piles Specialist in Malappuram, Piles Doctor in Malappuram, Piles Consultation in Malappuram, Haemorrhoids Treatment Malappuram, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-in-malappuram/#webpage',
+            name: 'Homeopathy Clinic for Piles in Malappuram – Anjali Homoeo Clinic',
+            headline: 'Homeopathy Clinic for Piles in Malappuram',
+            url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-in-malappuram/',
+            description:
+              'Comprehensive patient clinical guide explaining piles (haemorrhoids), rectal bleeding causes, internal vs external grading, thrombosed piles, evidence-based medical modalities, and triage pathways in Malappuram, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Anal Fissure',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K60.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Rectal Bleeding (Hematochezia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K92.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients experiencing piles, rectal bleeding, anal pain, or bowel discomfort in Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Kuttippuram & Puthanathani',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-in-malappuram/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is a homeopathy clinic for piles in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The term generally refers to a homeopathy clinic offering consultations to people experiencing symptoms they associate with piles (haemorrhoids). However, homeopathy has not been established by reliable scientific evidence as an effective treatment for haemorrhoids. People experiencing persistent bleeding, pain, or lumps should seek appropriate medical assessment from qualified clinicians to confirm an accurate diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles be treated without surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Many mild to moderate cases improve significantly with dietary fibre, adequate fluid intake, avoiding toilet straining, and appropriate symptom management such as warm sitz baths and short-term topical treatments. If symptoms persist or haemorrhoids become severe or prolapsed (grades III–IV), medical procedures such as rubber band ligation, sclerotherapy, or surgery may be recommended.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homeopathy as an effective treatment for haemorrhoids. It should not replace physical medical examination, evidence-based pharmacological treatments, or surgical interventions when rectal bleeding, severe pain, or prolapse is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for piles in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified general physician, general surgeon, or colorectal specialist (proctologist) is the appropriate professional to assess suspected haemorrhoids. If you consult a homeopathic physician like Dr. Anjali Chandrasekhar (BHMS) for constitutional supportive care, clinical evaluation and triage are provided, with prompt referral to surgeons for proctoscopy or advanced intervention when indicated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What foods may help manage piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Fibre-rich foods such as vegetables, whole grains (brown rice, oats), legumes, lentils, and fruits (pears, apples with skin, figs, papaya) help soften stools and reduce straining. Dietary fibre should be increased gradually alongside sufficient fluid intake to prevent gas and bloating.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek urgent care for piles symptoms?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek urgent hospital care if you experience heavy or continuous rectal bleeding, dizziness, lightheadedness, fainting, severe unbearable anal pain, black or tarry stools, or fever accompanied by worsening anal swelling and discharge.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prevent piles from getting worse?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Helpful preventive habits include eating 25–35 grams of dietary fibre daily, drinking adequate fluids throughout the day, never straining on the toilet, limiting toilet sitting to less than 3–5 minutes, staying physically active, and responding promptly to the urge to defecate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between piles (haemorrhoids) and an anal fissure?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Piles are swollen, dilated venous cushions in the lower rectum and anal verge that typically cause painless bright-red bleeding or swelling. An anal fissure is a small superficial tear or crack in the anal mucosa that causes intense, sharp, burning or cutting pain during bowel movements, often persisting for hours after passing stool.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can rectal bleeding be a sign of something more serious than piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. While haemorrhoids are a common cause of bright-red bleeding, rectal bleeding can also indicate anal fissures, colorectal polyps, inflammatory bowel disease (Crohn’s disease or ulcerative colitis), diverticular disease, or colorectal cancer. Any new, unexplained, recurrent, or changing rectal bleeding requires medical evaluation rather than self-diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is a thrombosed external haemorrhoid and how is it managed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A thrombosed external haemorrhoid occurs when a small blood clot forms inside an external haemorrhoidal vein, creating a firm, tense, bluish-purple lump at the anal verge accompanied by sudden, severe pain. Within the first 48 to 72 hours, a simple in-office minor procedure can evacuate the clot under local anaesthesia to provide rapid relief.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What does a clinical piles consultation in Malappuram involve?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A clinical evaluation begins with a detailed confidential history of bowel habits, bleeding, and pain patterns. The clinician then conducts a gentle physical visual inspection and, if indicated, a digital rectal examination or anoscopy/proctoscopy to grade haemorrhoids and exclude other anorectal pathology.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does Dr. Anjali Chandrasekhar provide both in-clinic and online piles consultations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar offers confidential in-clinic consultations at Kuttippuram and Puthanathani clinics as well as online video consultations. Online consultations are suitable for initial symptom review, dietary planning, and medical triage. If physical examination, proctoscopy, or procedural intervention is warranted, in-person assessment or surgeon referral is coordinated.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
 ];
 
 
