@@ -64,7 +64,11 @@ export type NavView =
   | 'hair-treatment-malappuram'
   | 'skin-treatment-malappuram'
   | 'menstrual-treatment-malappuram'
-  | 'piles-clinic-malappuram';
+  | 'piles-clinic-malappuram'
+  | 'piles-clinic-tirur'
+  | 'menstrual-doctor-tirur'
+  | 'skin-treatment-tirur'
+  | 'hair-treatment-tirur';
 
 interface Toast {
   id: string;
@@ -695,6 +699,78 @@ const isPilesMalappuramPath = (pathname: string) => {
   );
 };
 
+const isPilesTirurPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathy-clinic-for-piles-near-tirur' ||
+    clean === '/homoeopathy-clinic-for-piles-near-tirur' ||
+    clean === '/piles-homeopathic-clinic-near-tirur' ||
+    clean === '/piles-homoeopathic-clinic-near-tirur' ||
+    clean === '/piles-treatment-in-tirur' ||
+    clean === '/piles-clinic-in-tirur' ||
+    clean === '/piles-specialist-in-tirur' ||
+    clean === '/piles-doctor-in-tirur' ||
+    clean === '/piles-treatment-near-tirur' ||
+    clean === '/piles-consultation-in-tirur'
+  );
+};
+
+const isMenstrualTirurPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-doctor-near-tirur-for-periods-problem' ||
+    clean === '/homoeopathic-doctor-near-tirur-for-periods-problem' ||
+    clean === '/homeopathic-doctor-near-tirur-for-period-problem' ||
+    clean === '/homeopathy-doctor-near-tirur-for-periods-problem' ||
+    clean === '/menstrual-problems-doctor-in-tirur' ||
+    clean === '/menstrual-treatment-in-tirur' ||
+    clean === '/period-pain-consultation-in-tirur' ||
+    clean === '/homeopathic-treatment-for-menstrual-problems-in-tirur' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-tirur' ||
+    clean === '/period-problems-treatment-in-tirur' ||
+    clean === '/womens-health-doctor-in-tirur'
+  );
+};
+
+const isSkinTirurPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-treatment-near-tirur-for-skin-problems' ||
+    clean === '/homoeopathic-treatment-near-tirur-for-skin-problems' ||
+    clean === '/homeopathic-treatment-near-tirur-for-skin-problem' ||
+    clean === '/skin-doctor-in-tirur' ||
+    clean === '/skin-treatment-in-tirur' ||
+    clean === '/skin-specialist-in-tirur' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-tirur' ||
+    clean === '/homeopathic-skin-treatment-in-tirur' ||
+    clean === '/skin-homeopathic-treatment-in-tirur' ||
+    clean === '/skin-homeopathy-clinic-in-tirur' ||
+    clean === '/skin-problems-treatment-in-tirur' ||
+    clean === '/skin-health-clinic-in-tirur'
+  );
+};
+
+const isHairTirurPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-treatment-in-tirur-for-hair-and-scalp' ||
+    clean === '/homeopathic-treatment-in-tirur-for-hair-and-scalp' ||
+    clean === '/hair-treatment-in-tirur' ||
+    clean === '/hair-fall-treatment-in-tirur' ||
+    clean === '/hair-specialist-in-tirur' ||
+    clean === '/hair-doctor-in-tirur' ||
+    clean === '/hair-health-clinic-in-tirur' ||
+    clean === '/hair-and-scalp-treatment-in-tirur' ||
+    clean === '/homoeopathic-hair-treatment-in-tirur' ||
+    clean === '/homeopathic-hair-treatment-in-tirur' ||
+    clean === '/hair-homoeopathy-clinic-in-tirur' ||
+    clean === '/hair-homeopathy-clinic-in-tirur' ||
+    clean === '/hair-care-clinic-in-tirur' ||
+    clean === '/homoeopathic-doctor-for-hair-problems-in-tirur' ||
+    clean === '/homeopathic-doctor-for-hair-problems-in-tirur'
+  );
+};
+
 export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
@@ -809,6 +885,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isPilesMalappuramPath(window.location.pathname)) {
         return 'piles-clinic-malappuram';
+      }
+      if (isPilesTirurPath(window.location.pathname)) {
+        return 'piles-clinic-tirur';
+      }
+      if (isMenstrualTirurPath(window.location.pathname)) {
+        return 'menstrual-doctor-tirur';
+      }
+      if (isSkinTirurPath(window.location.pathname)) {
+        return 'skin-treatment-tirur';
+      }
+      if (isHairTirurPath(window.location.pathname)) {
+        return 'hair-treatment-tirur';
       }
     }
     return 'home';
@@ -1099,6 +1187,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('menstrual-treatment-malappuram');
       } else if (isPilesMalappuramPath(window.location.pathname)) {
         setCurrentView('piles-clinic-malappuram');
+      } else if (isPilesTirurPath(window.location.pathname)) {
+        setCurrentView('piles-clinic-tirur');
+      } else if (isMenstrualTirurPath(window.location.pathname)) {
+        setCurrentView('menstrual-doctor-tirur');
+      } else if (isSkinTirurPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-tirur');
+      } else if (isHairTirurPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-tirur');
       } else if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
         setCurrentView('blog');
         const epPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
@@ -1300,6 +1396,26 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       const targetUrl = '/homeopathy-clinic-for-piles-in-malappuram/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'piles-clinic-malappuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'piles-clinic-tirur') {
+      const targetUrl = '/homeopathy-clinic-for-piles-near-tirur/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-clinic-tirur' }, '', targetUrl);
+      }
+    } else if (currentView === 'menstrual-doctor-tirur') {
+      const targetUrl = '/homeopathic-doctor-near-tirur-for-periods-problem/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-doctor-tirur' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-treatment-tirur') {
+      const targetUrl = '/homeopathic-treatment-near-tirur-for-skin-problems/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-tirur' }, '', targetUrl);
+      }
+    } else if (currentView === 'hair-treatment-tirur') {
+      const targetUrl = '/homoeopathic-treatment-in-tirur-for-hair-and-scalp/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-tirur' }, '', targetUrl);
       }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences') {
       const targetUrl = '/eczema-vs-psoriasis-how-to-understand-the-differences/';
@@ -1958,6 +2074,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'skin-treatment-malappuram') targetId = 'skin-treatment-malappuram';
     else if (currentView === 'menstrual-treatment-malappuram') targetId = 'menstrual-treatment-malappuram';
     else if (currentView === 'piles-clinic-malappuram') targetId = 'piles-clinic-malappuram';
+    else if (currentView === 'piles-clinic-tirur') targetId = 'piles-clinic-tirur';
+    else if (currentView === 'menstrual-doctor-tirur') targetId = 'menstrual-doctor-tirur';
+    else if (currentView === 'skin-treatment-tirur') targetId = 'skin-treatment-tirur';
+    else if (currentView === 'hair-treatment-tirur') targetId = 'hair-treatment-tirur';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';
     else if (currentView === 'book-appointment') targetId = 'book-appointment';

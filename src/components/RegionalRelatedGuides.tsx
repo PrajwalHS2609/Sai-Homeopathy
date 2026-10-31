@@ -163,6 +163,38 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
       badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
       dotColor: 'bg-[#10B981]',
     },
+    {
+      key: 'piles-clinic-tirur',
+      title: 'Piles Clinic Near Tirur',
+      condition: 'Haemorrhoids & Anorectal Care Near Tirur',
+      badge: 'Proctology Care',
+      badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      dotColor: 'bg-[#10B981]',
+    },
+    {
+      key: 'menstrual-doctor-tirur',
+      title: 'Periods Doctor Near Tirur',
+      condition: 'Menstrual Irregularities & Period Pain Near Tirur',
+      badge: 'Women’s Care',
+      badgeColor: 'bg-rose-50 text-rose-700 border-rose-200',
+      dotColor: 'bg-[#E11D48]',
+    },
+    {
+      key: 'skin-treatment-tirur',
+      title: 'Skin Care Near Tirur',
+      condition: 'Acne, Eczema, Psoriasis & Rashes Near Tirur',
+      badge: 'Dermatology Care',
+      badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      dotColor: 'bg-[#059669]',
+    },
+    {
+      key: 'hair-treatment-tirur',
+      title: 'Hair & Scalp Near Tirur',
+      condition: 'Hair Fall, Thinning, Dandruff & Scalp Care Near Tirur',
+      badge: 'Trichology Care',
+      badgeColor: 'bg-teal-50 text-teal-700 border-teal-200',
+      dotColor: 'bg-[#0D9488]',
+    },
   ];
 
   const departmentCarePages: Array<{

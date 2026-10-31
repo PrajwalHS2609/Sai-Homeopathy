@@ -436,6 +436,34 @@ export const Footer: React.FC = () => {
               <span>Piles Clinic in Malappuram</span>
             </button>
             <button
+              onClick={() => handleLinkClick('piles-clinic-tirur')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Piles Clinic Near Tirur</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('menstrual-doctor-tirur')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Periods Doctor Near Tirur</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('skin-treatment-tirur')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#059669]" />
+              <span>Skin Care Near Tirur</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('hair-treatment-tirur')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair &amp; Scalp Near Tirur</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('anorectal-vascular-care')}
               className="hover:text-[#45AC4B] transition-colors text-left flex items-center gap-1.5"
             >

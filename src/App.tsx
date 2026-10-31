@@ -60,6 +60,10 @@ import { HairMalappuramPage } from './components/HairMalappuramPage';
 import { SkinMalappuramPage } from './components/SkinMalappuramPage';
 import { MenstrualMalappuramPage } from './components/MenstrualMalappuramPage';
 import { PilesMalappuramPage } from './components/PilesMalappuramPage';
+import { PilesTirurPage } from './components/PilesTirurPage';
+import { MenstrualTirurPage } from './components/MenstrualTirurPage';
+import { SkinTirurPage } from './components/SkinTirurPage';
+import { HairTirurPage } from './components/HairTirurPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -657,6 +661,86 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <PilesMalappuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathy Clinic for Piles Near Tirur View
+  // URL: /homeopathy-clinic-for-piles-near-tirur/
+  if (currentView === 'piles-clinic-tirur') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesTirurPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Doctor Near Tirur for Periods Problem View
+  // URL: /homeopathic-doctor-near-tirur-for-periods-problem/
+  if (currentView === 'menstrual-doctor-tirur') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualTirurPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Treatment Near Tirur for Skin Problems View
+  // URL: /homeopathic-treatment-near-tirur-for-skin-problems/
+  if (currentView === 'skin-treatment-tirur') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinTirurPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Treatment in Tirur for Hair and Scalp View
+  // URL: /homoeopathic-treatment-in-tirur-for-hair-and-scalp/
+  if (currentView === 'hair-treatment-tirur') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairTirurPage />
         </main>
         <Footer />
         <ProductDetailModal />

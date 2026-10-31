@@ -5797,6 +5797,813 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-31',
   },
+  {
+    id: 'piles-clinic-tirur',
+    pageName: 'Homeopathy Clinic for Piles Near Tirur',
+    category: 'clinical',
+    path: '/homeopathy-clinic-for-piles-near-tirur/',
+    title:
+      'Homeopathy Clinic for Piles Near Tirur | Haemorrhoids Care Guide',
+    description:
+      'Looking for a piles clinic near Tirur? Understand haemorrhoids symptoms, causes, evidence-based care, and confidential consultations with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-near-tirur/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-near-tirur/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathy Clinic for Piles Near Tirur, Piles Clinic in Tirur, Piles Treatment in Tirur, Piles Specialist in Tirur, Piles Doctor in Tirur, Haemorrhoids Treatment Tirur, Piles Homeopathy Clinic Tirur, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-near-tirur/#webpage',
+            name: 'Homeopathy Clinic for Piles Near Tirur – Anjali Homoeo Clinic',
+            headline: 'Homeopathy Clinic for Piles Near Tirur',
+            url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-near-tirur/',
+            description:
+              'Comprehensive patient clinical guide explaining piles (haemorrhoids), rectal bleeding causes, internal vs external types, thrombosed piles, evidence-based treatments, and consultation access near Tirur, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Anal Fissure',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K60.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Rectal Bleeding (Hematochezia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K92.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients experiencing piles, rectal bleeding, anal pain, or bowel discomfort near Tirur and Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur-Kuttippuram Road',
+                addressLocality: 'Kuttippuram (Near Tirur)',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-for-piles-near-tirur/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is a homeopathy clinic for piles near Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The phrase generally refers to a homeopathy clinic offering consultations to people experiencing symptoms they associate with piles (haemorrhoids). However, homeopathy has not been established by reliable scientific evidence as an effective treatment for haemorrhoids. Persistent or concerning symptoms should be medically assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles be treated without surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Many mild cases improve with increased dietary fibre, adequate fluid intake, avoiding straining, and appropriate symptom management. If symptoms persist or haemorrhoids are more severe, a clinician may recommend a procedure or surgery.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homeopathy as an effective treatment for haemorrhoids. It should not replace medical assessment or evidence-based care, particularly when rectal bleeding or severe pain is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for piles in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified general physician can assess many common symptoms. Depending on the diagnosis and severity, referral to a surgeon or colorectal specialist may be appropriate.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What foods may help manage piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Fibre-rich foods such as fruits, vegetables, whole grains, beans, and lentils may help soften stools and reduce straining. Increase fibre gradually and drink sufficient fluids unless you have been advised to restrict them.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek urgent medical care?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek urgent care for heavy or continuous rectal bleeding, fainting, dizziness associated with bleeding, severe anal pain, or fever with worsening swelling. Black or tarry stools also require prompt medical evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I reduce the risk of recurring piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Helpful measures include eating sufficient fibre, drinking adequate fluids, avoiding straining, limiting time on the toilet, and maintaining suitable physical activity. These steps can reduce contributing factors but cannot prevent every case of haemorrhoids.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How far is Anjali Homoeo Clinic from Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Anjali Homoeo Clinic’s main center is located in Kuttippuram on the Tirur-Kuttippuram Road, approximately 15 to 20 minutes from Tirur town and Tirur Railway Station. A branch clinic is also located at Puthanathani. Patients from Tirur can easily visit either center or book a secure online video consultation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I tell if my rectal bleeding is from piles or an anal fissure?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While both can cause bright-red blood, piles are usually relatively painless unless thrombosed or prolapsed. In contrast, an anal fissure produces an intense, sharp, cutting or burning pain during bowel movements that often persists for hours afterwards. A physical examination by a healthcare professional is necessary for an accurate diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is a thrombosed external haemorrhoid and what should be done?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A thrombosed external haemorrhoid occurs when a blood clot develops inside an external vein, forming a firm, tense, bluish-purple perianal lump that causes sudden, intense pain. When evaluated within the first 48 to 72 hours, an in-office minor procedure can excise or evacuate the clot under local anaesthesia for rapid pain relief.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What happens during a clinical piles consultation near Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The consultation begins with a confidential discussion of your bowel habits, symptom duration, bleeding characteristics, and medical history. The doctor conducts a visual external examination and, if appropriate, a gentle digital rectal examination or anoscopy to confirm the diagnosis and rule out other anorectal conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are online video consultations available for patients in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar offers confidential online video consultations for patients in Tirur who wish to discuss symptoms, review bowel and dietary management, or seek clinical triage from home. If an in-person physical examination or surgical procedure is needed, an in-clinic visit or specialist referral will be arranged.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'menstrual-doctor-tirur',
+    pageName: 'Homeopathic Doctor Near Tirur for Periods Problem',
+    category: 'clinical',
+    path: '/homeopathic-doctor-near-tirur-for-periods-problem/',
+    title:
+      'Homeopathic Doctor Near Tirur for Periods Problem | Women’s Health Guide',
+    description:
+      'Consult Dr. Anjali Chandrasekhar (BHMS) near Tirur for irregular periods, severe period pain (dysmenorrhea), heavy bleeding, and PCOS. Evidence-based evaluation.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-tirur-for-periods-problem/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-doctor-near-tirur-for-periods-problem/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic Doctor Near Tirur for Periods Problem, Menstrual Problems Doctor in Tirur, Period Pain Doctor Tirur, Irregular Periods Treatment Tirur, PCOS Homeopathy Doctor Tirur, Heavy Menstrual Bleeding Tirur, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-tirur-for-periods-problem/#webpage',
+            name: 'Homeopathic Doctor Near Tirur for Periods Problem – Anjali Homoeo Clinic',
+            headline: 'Homeopathic Doctor Near Tirur for Periods Problem',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-tirur-for-periods-problem/',
+            description:
+              'Clinical patient guide covering irregular periods, painful menstruation, heavy bleeding, hormonal causes, evidence-based treatments, and consultation access near Tirur, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dysmenorrhea (Painful Periods)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Oligomenorrhea & Irregular Menstruation',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N91',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Heavy Menstrual Bleeding (Menorrhagia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Polycystic Ovary Syndrome (PCOS)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'E28.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Women and individuals experiencing menstrual irregularity, period pain, heavy bleeding, or hormonal symptoms near Tirur',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur-Kuttippuram Road',
+                addressLocality: 'Kuttippuram (Near Tirur)',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-tirur-for-periods-problem/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What does a homeopathic doctor near Tirur for periods problem treat?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The phrase generally refers to homeopathy consultations sought by women experiencing menstrual concerns such as irregular cycles, painful periods, or premenstrual discomfort. However, reliable scientific evidence has not established homeopathy as an effective treatment for menstrual disorders. Women with persistent symptoms should seek appropriate medical assessment from a qualified doctor to identify the cause and discuss evidence-based options.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homeopathy has not been shown by reliable scientific evidence to effectively regulate menstrual cycles or treat the underlying causes of irregular periods. Irregular menstruation may be associated with pregnancy, PCOS, thyroid disorders, stress, or other conditions. Appropriate medical assessment—including pelvic ultrasound and hormonal blood tests—can help determine the exact cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for period pain in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified gynaecologist or women’s healthcare physician is the primary specialist to evaluate persistent or severe period pain. Dr. Anjali Chandrasekhar (BHMS) offers confidential clinical consultations, menstrual health reviews, and medical triage at her Kuttippuram clinic (just 15 minutes from Tirur along the Tirur-Kuttippuram Road) or online, providing prompt referral to gynaecologists when pelvic imaging or specialized treatment is indicated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homeopathy treat PCOS-related menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable scientific evidence that homeopathy treats PCOS or corrects its underlying hormonal and metabolic features. PCOS management should be guided by a qualified healthcare professional and tailored to symptoms, metabolic risks, and reproductive goals, incorporating lifestyle changes, dietary support, and evidence-based medical therapies.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I bring to a menstrual health consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring details of your menstrual dates, bleeding patterns, pain intensity, associated symptoms, existing medical conditions, and a list of current medicines or supplements. Previous ultrasound reports or blood test results are also very helpful. Accurate information helps your healthcare professional decide whether further investigations are needed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should irregular periods be checked?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Arrange a medical assessment if irregular periods persist for more than three cycles, menstruation stops unexpectedly, your cycle length is consistently shorter than 21 days or longer than 35 days, or your usual pattern changes significantly. If pregnancy is possible, take a home pregnancy test first.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I choose a women’s health doctor in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for an appropriately qualified professional with verified state council registration who listens carefully, explains possible causes, recommends investigations when indicated, and discusses treatment options transparently. Avoid providers who promise guaranteed cures or advise you to delay necessary medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How far is Anjali Homoeo Clinic from Tirur for women’s health consultations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Anjali Homoeo Clinic’s main clinic is located in Kuttippuram on the Tirur-Kuttippuram Road, approximately 15 to 20 minutes from Tirur town and Tirur Railway Station. A branch clinic is also located at Puthanathani. Patients from Tirur can easily visit either clinic or schedule a confidential online video consultation from home.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What investigations are standard for evaluating menstrual irregularities?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Standard diagnostic investigations include a pelvic ultrasound (to inspect the ovaries, endometrial thickness, and uterine structure for fibroids or cysts), hormonal blood tests (FSH, LH, prolactin, estradiol, and androgen panel), thyroid function tests (TSH), and a complete blood count with serum ferritin to assess anaemia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can severe period pain be a sign of endometriosis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. While mild cramping is common, debilitating period pain that causes vomiting, fainting, missed work/school, or pain during intercourse or bowel movements strongly warrants investigation for endometriosis or adenomyosis. These conditions require comprehensive gynaecological evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How is heavy menstrual bleeding treated in medical practice?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Evidence-based medical management includes antifibrinolytics like tranexamic acid taken on heavy bleeding days to reduce flow, NSAIDs to lessen cramps and bleeding, combined hormonal contraceptives, progestin therapy, or the levonorgestrel intrauterine system (LNG-IUS). Iron therapy is also prescribed to correct anaemia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are online video consultations available for patients in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar offers confidential online video consultations for women in Tirur who wish to discuss menstrual symptoms, review cycle tracking logs, or receive guidance on diet and lifestyle support. If pelvic examination, ultrasound, or prescription hormonal therapy is needed, an in-clinic visit or gynaecologist referral is coordinated.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'skin-treatment-tirur',
+    pageName: 'Homeopathic Treatment Near Tirur for Skin Problems',
+    category: 'clinical',
+    path: '/homeopathic-treatment-near-tirur-for-skin-problems',
+    title: 'Homeopathic Treatment Near Tirur for Skin Problems | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to skin consultations near Tirur for acne, eczema, psoriasis, fungal infections, rashes & pigmentation. Dr. Anjali Chandrasekhar (BHMS, MD Hom.).',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-near-tirur-for-skin-problems/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homeopathic-treatment-near-tirur-for-skin-problems/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homeopathic treatment near Tirur for skin problems, skin doctor in Tirur, skin treatment in Tirur, skin specialist in Tirur, homeopathy clinic for skin problems in Tirur, acne treatment Tirur, eczema treatment Tirur, psoriasis treatment Tirur, fungal infection Tirur',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-near-tirur-for-skin-problems/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-treatment-near-tirur-for-skin-problems/',
+            name: 'Homeopathic Treatment Near Tirur for Skin Problems',
+            description:
+              'Clinical guide to skin consultations near Tirur for acne, eczema, psoriasis, fungal infections, rashes and pigmentation disorders.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Atopic Dermatitis & Eczema',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatophytosis (Tinea / Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Chloasma / Melasma',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L81.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Physician',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Chief Homoeopathic Physician',
+              medicalSpecialty: 'HomeopathicMedicine',
+              identifier: 'Board Reg. KA-HOM-15563',
+              worksFor: {
+                '@type': 'MedicalClinic',
+                name: 'Anjali Homoeo Clinic',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: 'Tirur-Kuttippuram Road',
+                  addressLocality: 'Kuttippuram',
+                  addressRegion: 'Kerala',
+                  postalCode: '679571',
+                  addressCountry: 'IN',
+                },
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-treatment-near-tirur-for-skin-problems/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is homeopathic treatment near Tirur for skin problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The phrase generally refers to homeopathy consultations sought by people experiencing skin concerns such as acne, eczema, psoriasis, fungal infections, itching, or pigmentation. However, reliable scientific evidence has not established homeopathy as an effective treatment for common skin diseases. Persistent, spreading, or severe symptoms should always be evaluated by a qualified medical professional to ensure an accurate diagnosis and appropriate evidence-based therapy.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for acne or eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homeopathy has not been shown by reliable scientific evidence to effectively treat acne or eczema or resolve their underlying pathophysiological triggers. Evidence-based treatments include gentle barrier-repair skincare, topical retinoids or benzoyl peroxide for acne, and targeted emollients or anti-inflammatory therapies for eczema under medical direction.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for skin problems in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified dermatologist specializes in skin, hair, and nail diseases and is best equipped to diagnose chronic, severe, or atypical dermatological complaints. Dr. Anjali Chandrasekhar (BHMS, Board Reg. KA-HOM-15563) provides confidential clinical evaluations, lifestyle and barrier guidance, and triage at Anjali Homoeo Clinic in Kuttippuram (just 15–20 minutes from Tirur town) and online, coordinating referrals to dermatologists when advanced diagnostic tests or prescription pharmaceuticals are required.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skin problems be treated permanently?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The outcome depends on the specific condition. Acute infections like fungal tinea or bacterial impetigo can be completely cleared with proper antimicrobial medications. However, chronic conditions like atopic eczema and plaque psoriasis are genetic and immune-mediated; they are managed through ongoing skin barrier care, trigger control, and medical treatments rather than a single permanent cure.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I bring to a skin consultation in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring a comprehensive list of all current skin creams, ointments (especially any steroid or combination creams), facial washes, and oral medications. Note your allergy history, previous laboratory or biopsy reports, and bring photographs documenting how the rash looked during acute flare-ups.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I see a skin specialist or dermatologist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a medical doctor or dermatologist if your skin symptoms persist for more than two weeks, spread rapidly, cause severe pain or weeping discharge, interrupt sleep due to itching, or fail to respond to standard barrier care. Seek emergency medical care immediately if a rash occurs with facial swelling, lip swelling, or difficulty breathing.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I choose a skin health clinic near Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Select an appropriately qualified and registered healthcare provider who performs a thorough clinical examination, explains the likely causes transparently, supports evidence-based testing, and provides follow-up. Exercise caution with clinics that promise miraculous, instant, or guaranteed cures for chronic skin diseases.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How far is Anjali Homoeo Clinic from Tirur for skin consultations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Anjali Homoeo Clinic’s main center is conveniently located in Kuttippuram on the Tirur-Kuttippuram Road, approximately 15 to 20 minutes from Tirur Railway Station and Central Bus Stand. We also operate a branch clinic in Puthanathani. Patients from Tirur, Tanur, Tirunnavaya, and surrounding areas can visit in person or book a confidential online video consultation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why are over-the-counter steroid creams dangerous for fungal rashes in Kerala?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'In warm, humid climates like Malappuram, fungal skin infections (Tinea) are very common. Over-the-counter creams that contain strong corticosteroids (often sold in combination with antibiotics and antifungals) temporarily soothe itching but suppress the skin’s local immunity. This creates "Tinea incognito"—a widespread, deep-seated, treatment-resistant fungal infection that is significantly harder to cure.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do doctors distinguish between eczema and fungal ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While both cause redness and itching, fungal infections typically display an active, raised, scaly circular border with central clearing, whereas eczema produces poorly defined, dry, intensely itchy patches without a ringed border. When uncertainty exists, a quick, painless potassium hydroxide (KOH) skin scraping under a microscope confirms or rules out fungal hyphae.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes melasma and dark facial pigmentation in Malappuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Melasma is driven by intense solar ultraviolet exposure combined with hormonal shifts (such as pregnancy, oral contraceptives, or thyroid dysfunction) and genetic susceptibility. The most critical treatment pillar is daily rigorous application of broad-spectrum SPF 50 sunscreen, avoiding friction and harsh fairness creams, and using dermatologist-approved melanin inhibitors.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I book an online video consultation for skin triage from Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar offers convenient online video consultations. During the call, she evaluates high-resolution photographs of your skin condition, reviews your medical and treatment history, offers dietary and skincare barrier advice, and guides you on whether an in-person clinic visit or a specialist dermatologist referral is needed.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'hair-treatment-tirur',
+    pageName: 'Homoeopathic Treatment in Tirur for Hair and Scalp',
+    category: 'clinical',
+    path: '/homoeopathic-treatment-in-tirur-for-hair-and-scalp',
+    title: 'Homoeopathic Treatment in Tirur for Hair and Scalp | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to hair fall, thinning, dandruff & scalp care near Tirur. Transparent evidence, medical triage & consultations by Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-in-tirur-for-hair-and-scalp/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-in-tirur-for-hair-and-scalp/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic treatment in Tirur for hair and scalp, hair treatment in Tirur, hair fall treatment in Tirur, hair specialist in Tirur, hair doctor in Tirur, hair health clinic in Tirur, dandruff treatment Tirur, scalp treatment Tirur',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-in-tirur-for-hair-and-scalp/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-treatment-in-tirur-for-hair-and-scalp/',
+            name: 'Homoeopathic Treatment in Tirur for Hair and Scalp',
+            description:
+              'Clinical guide to hair fall, thinning, dandruff, and scalp care near Tirur. Transparent evidence disclosure, diagnostic causes, and evidence-based treatments.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis of Scalp (Dandruff)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Physician',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Chief Homoeopathic Physician',
+              medicalSpecialty: 'HomeopathicMedicine',
+              identifier: 'Board Reg. KA-HOM-15563',
+              worksFor: {
+                '@type': 'MedicalClinic',
+                name: 'Anjali Homoeo Clinic',
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: 'Tirur-Kuttippuram Road',
+                  addressLocality: 'Kuttippuram',
+                  addressRegion: 'Kerala',
+                  postalCode: '679571',
+                  addressCountry: 'IN',
+                },
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-treatment-in-tirur-for-hair-and-scalp/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes excessive hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common causes include genetic pattern hair loss (androgenetic alopecia), telogen effluvium triggered by acute fever, illness, childbirth, or emotional stress, nutritional deficiencies (especially iron/ferritin and vitamin D3), thyroid imbalances, certain medications, and inflammatory scalp conditions such as seborrhoeic dermatitis. An accurate clinical assessment is the essential first step towards finding the true cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established that homoeopathy effectively treats hair loss, stimulates new follicle regrowth, or cures inflammatory scalp diseases. While many individuals seek homoeopathic consultations for holistic health discussions, people experiencing persistent, progressive, or patchy hair shedding should obtain an evidence-based medical assessment to avoid irreversible follicular damage.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find a Hair Specialist in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified healthcare professional with verified medical council registration who performs a comprehensive scalp examination (including trichoscopy), takes a thorough clinical history, discusses realistic treatment timelines, and arranges laboratory tests or dermatological referrals when necessary. Dermatologists are specially trained in hair and scalp diseases.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ordinary dandruff does not directly destroy hair follicles or cause permanent baldness. However, the intense itching associated with dandruff or seborrhoeic dermatitis can lead to vigorous scratching, which mechanically breaks hair shafts and damages the scalp barrier. Furthermore, severe inflammatory scalp conditions that resemble dandruff can impair healthy hair growth if left untreated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which treatment is suitable for hair thinning?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment depends entirely on the diagnosed etiology. For genetic pattern baldness, established medical treatments such as topical minoxidil and prescription anti-androgens help preserve and thicken miniaturised follicles. When thinning is caused by nutritional shortages or thyroid disease, correcting the underlying deficiency or hormonal imbalance restores normal growth cycles.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I visit a Hair Care Clinic in Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek professional medical advice if hair fall continues for more than 2 to 3 months, if you notice distinct bald patches, if your part line is noticeably widening, or if your scalp feels painful, swollen, burning, or shows pustules and crusting. Sudden or rapidly spreading hair loss warrants prompt evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can diet improve hair health?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, a balanced diet providing sufficient calories, dietary protein, iron, zinc, and vitamins supports optimal keratin synthesis and cellular turnover in the hair matrix. Correcting a verified deficiency (such as low serum ferritin) often improves telogen shedding; however, taking excessive high-dose supplements without proven deficiency does not boost hair growth and can sometimes cause adverse effects.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How far is Anjali Homoeo Clinic from Tirur for hair consultations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Anjali Homoeo Clinic is conveniently located in Kuttippuram on the Tirur-Kuttippuram Road, approximately 15 to 20 minutes from Tirur Railway Station and Tirur Bus Stand. We also operate a branch clinic in Puthanathani. Patients from Tirur, Tanur, Tirunnavaya, and surrounding towns can easily visit in person or arrange a confidential online video consultation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does hard water or coastal well water in Tirur worsen hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hard water containing high concentrations of calcium and magnesium minerals does not kill hair roots or cause genetic baldness. However, mineral deposits can leave a residue on the hair shaft, making it feel dry, stiff, frizzy, and prone to mechanical breakage during brushing. Using a mild chelating or moisturizing shampoo and filtering bath water helps alleviate surface dryness.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do doctors distinguish between Telogen Effluvium and Pattern Baldness?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Telogen effluvium causes sudden, generalized shedding across the entire scalp (often shedding 200–400 hairs daily) with uniform hair shaft thickness. In contrast, androgenetic alopecia develops gradually over months or years, primarily targeting the crown, temples, and part line, characterized by hair miniaturisation (varying hair shaft thicknesses seen under a trichoscope).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are traditional hair oils (coconut or herbal oils) enough to treat genetic baldness?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While pure coconut oil is an excellent pre-wash conditioner that penetrates the hair shaft to prevent protein loss and cuticle breakage, it cannot block dihydrotestosterone (DHT) or reverse genetic follicle miniaturisation. Relying solely on oils for progressive pattern hair loss delays effective medical therapies that protect follicular density.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I book an online video consultation for hair triage from Tirur?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar provides online video consultations for patients in Tirur. During the consultation, she reviews your shedding timeline, evaluates clear photos of your scalp and part line, explores dietary and lifestyle contributors, and provides clear triage guidance on whether in-person clinic visits or dermatologist referrals are needed.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-10-31',
+  },
 ];
 
 

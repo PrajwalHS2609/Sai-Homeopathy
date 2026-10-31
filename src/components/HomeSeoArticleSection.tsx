@@ -22,11 +22,72 @@ import {
   Wind,
   Layers,
   HelpCircle,
+  Search,
+  Tag,
 } from 'lucide-react';
 
 export const HomeSeoArticleSection: React.FC = () => {
   const { setCurrentView, openBlogPost, blogPosts, navigateToBooking, settings } = useClinic();
   const [isExpanded, setIsExpanded] = useState(true);
+
+  const malappuramKeywords: string[] = [
+    'Homeopathy Clinic in Malappuram',
+    'Best Homeopathy Clinic in Malappuram',
+    'Homeopathic Clinic in Malappuram',
+    'Best Homeopathic Doctor in Malappuram',
+    'Homeopathy Doctor in Malappuram',
+    'Homeopathic Treatment in Malappuram',
+    'Homeopathy Hospital in Malappuram',
+    'Experienced Homeopathic Doctor in Malappuram',
+    'Affordable Homeopathy Clinic in Malappuram',
+    'Homeopathy Consultation in Malappuram',
+    'Homeopathy Clinic Near Me',
+    'Best Homeopathy Treatment in Malappuram',
+    'Homeopathy Specialist in Malappuram',
+    'Homeopathic Medicine Clinic in Malappuram',
+    'Homeopathy Centre in Malappuram',
+    'Homeopathy Clinic for Skin Problems in Malappuram',
+    'Homeopathy Treatment for Hair Loss in Malappuram',
+    'Homeopathy Clinic for Allergies in Malappuram',
+    'Homeopathy Treatment for PCOS in Malappuram',
+    "Homeopathy Clinic for Women's Health in Malappuram",
+    'Homeopathy Treatment for Piles in Malappuram',
+    'Homeopathy Treatment for Acidity in Malappuram',
+    'Homeopathy Clinic for Asthma in Malappuram',
+    'Homeopathy Treatment for Eczema in Malappuram',
+    'Homeopathy Clinic for Joint Pain in Malappuram',
+    'Homeopathy Treatment for Migraine in Malappuram',
+    'Homeopathy Doctor for Chronic Diseases in Malappuram',
+    "Homeopathy Clinic for Children's Health in Malappuram",
+    'Online Homeopathy Consultation in Malappuram',
+    'Homeopathy Clinic with Experienced Doctors in Malappuram',
+  ];
+
+  const handleKeywordClick = (keyword: string) => {
+    const kwLower = keyword.toLowerCase();
+    if (kwLower.includes('skin') || kwLower.includes('eczema')) {
+      setCurrentView('skin-treatment-malappuram');
+    } else if (kwLower.includes('hair')) {
+      setCurrentView('hair-treatment-malappuram');
+    } else if (kwLower.includes('piles')) {
+      setCurrentView('piles-clinic-malappuram');
+    } else if (kwLower.includes('pcos') || kwLower.includes("women's health")) {
+      setCurrentView('menstrual-treatment-malappuram');
+    } else if (kwLower.includes('asthma') || kwLower.includes('allerg')) {
+      setCurrentView('respiratory-care');
+    } else if (kwLower.includes('joint')) {
+      setCurrentView('joint-musculoskeletal-care');
+    } else if (kwLower.includes('migraine')) {
+      setCurrentView('neurological-care');
+    } else if (kwLower.includes('acidity')) {
+      setCurrentView('anorectal-vascular-care');
+    } else if (kwLower.includes('online')) {
+      navigateToBooking('online');
+    } else {
+      navigateToBooking('clinic');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleNavigateTreatment = (
     e: React.MouseEvent,
@@ -778,6 +839,32 @@ export const HomeSeoArticleSection: React.FC = () => {
             >
               Choosing a Clinic Guide
             </a>
+          </div>
+        </div>
+
+        {/* Popular Homeopathy Searches & Keywords in Malappuram */}
+        <div className="mt-8 pt-6 border-t border-[#EEF2FB] space-y-3 font-sans">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <span className="text-xs font-bold text-[#1E2559] uppercase tracking-wider flex items-center gap-2">
+              <Search className="w-3.5 h-3.5 text-[#303A88]" />
+              <span>Popular Homeopathy Searches &amp; Consultation Keywords in Malappuram:</span>
+            </span>
+            <span className="text-[11px] text-[#64748B] font-medium">
+              Regional Healthcare Directory • 30 Key Clinical Topics
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            {malappuramKeywords.map((keyword, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => handleKeywordClick(keyword)}
+                className="text-xs bg-[#F8FAFD] hover:bg-[#EEF2FB] text-[#475569] hover:text-[#303A88] border border-[#D8E1F5] hover:border-[#303A88]/40 px-3 py-1.5 rounded-full transition-all duration-200 font-medium text-left flex items-center gap-1.5 shadow-2xs group"
+              >
+                <Tag className="w-3 h-3 text-[#94A3B8] group-hover:text-[#303A88] transition-colors" />
+                <span>{keyword}</span>
+              </button>
+            ))}
           </div>
         </div>
 
