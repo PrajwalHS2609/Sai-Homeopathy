@@ -32,6 +32,8 @@ import {
   Droplets,
   Scissors,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const SkinHairCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1263,6 +1265,10 @@ export const SkinHairCarePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="skin-hair-care" />
     </div>
   );
 };
+

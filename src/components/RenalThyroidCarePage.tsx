@@ -30,6 +30,8 @@ import {
   Flame,
   Zap,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const RenalThyroidCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1239,6 +1241,10 @@ export const RenalThyroidCarePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="renal-thyroid-care" />
     </div>
   );
 };
+

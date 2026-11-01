@@ -2,41 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { useClinic } from '../context/ClinicContext';
 import { AppointmentBookingEngine } from './AppointmentBookingEngine';
 import {
-  MapPin,
   Phone,
   MessageCircle,
-  Clock,
   ShieldCheck,
   CheckCircle2,
   AlertTriangle,
-  ArrowRight,
   ChevronDown,
-  ChevronRight,
   HelpCircle,
-  Stethoscope,
-  Info,
   Calendar,
-  Check,
   ShieldAlert,
   Activity,
   Heart,
   Droplets,
-  BookOpen,
   Sparkles,
-  Award,
-  UserCheck,
-  Lock,
-  Layers,
-  Sparkle,
-  AlertCircle,
-  Sun,
-  Shield,
+  BookOpen,
   FileText,
+  AlertCircle,
 } from 'lucide-react';
+import { RegionalStickyBar } from './RegionalStickyBar';
+import { RegionalBreadcrumb } from './RegionalBreadcrumb';
+import { RegionalHeroSection } from './RegionalHeroSection';
 import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const MenstrualMalappuramPage: React.FC = () => {
-  const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
+  const { setCurrentView, navigateToBookingWithReason } = useClinic();
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
   const [showStickyBar, setShowStickyBar] = useState(false);
 
@@ -60,11 +49,15 @@ export const MenstrualMalappuramPage: React.FC = () => {
   }, []);
 
   const handleBookConsultation = () => {
-    navigateToBookingWithReason('Menstrual Health Consultation (Malappuram)', 'clinic');
+    navigateToBookingWithReason('Menstrual Health Consultation (Malappuram)', 'online');
+    const el = document.getElementById('booking-section');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
-  const handleBookOnline = () => {
-    navigateToBookingWithReason('Menstrual Health Online Consultation (Malappuram)', 'online');
+  const toggleFaq = (index: number) => {
+    setActiveFaq(activeFaq === index ? null : index);
   };
 
   const keyTakeaways = [
@@ -213,99 +206,6 @@ export const MenstrualMalappuramPage: React.FC = () => {
     'Whether pregnancy is possible, or if you are actively attempting to conceive',
   ];
 
-  const supportiveHabits = [
-    {
-      title: 'Maintain a Nutrient-Rich Diet',
-      desc: 'Eat iron-rich foods (spinach, lentils, dates, lean meats), leafy greens, whole grains, and omega-3 fatty acids to help replenish blood loss and reduce systemic inflammation.',
-    },
-    {
-      title: 'Stay Regularly Active',
-      desc: 'Gentle aerobic exercise, yoga, stretching, and brisk walking release natural endorphins that relieve pelvic congestion and moderate prostaglandin-driven cramps.',
-    },
-    {
-      title: 'Prioritize Restorative Sleep',
-      desc: 'Aim for 7–8 hours of consistent nightly sleep. Adequate rest stabilizes melatonin and cortisol rhythms that influence the hypothalamic-pituitary-ovarian axis.',
-    },
-    {
-      title: 'Practice Stress Mitigation',
-      desc: 'Deep breathing exercises, meditation, and delegating strenuous tasks during the luteal phase lower sympathetic nervous system tension and period discomfort.',
-    },
-    {
-      title: 'Track Cycles Diligently',
-      desc: 'Log dates, flow volume, and pain scores in a menstrual diary or mobile app. This objective record helps clinicians diagnose subtle cycle changes accurately.',
-    },
-  ];
-
-  const redFlags = [
-    {
-      sign: 'Very Heavy Bleeding (Soaking a Pad/Hour)',
-      urgency: 'URGENT: Emergency Care',
-      reason: 'Risk of acute hypovolemia, severe anemia, or acute uterine hemorrhage.',
-    },
-    {
-      sign: 'Bleeding with Fainting, Dizziness or Pallor',
-      urgency: 'URGENT: Emergency Medical Attention',
-      reason: 'Sign of hemodynamic instability from rapid blood loss requiring immediate medical stabilization.',
-    },
-    {
-      sign: 'Sudden, Agonizing Pelvic or Abdominal Pain',
-      urgency: 'URGENT: Hospital Evaluation',
-      reason: 'May indicate ruptured ovarian cyst, ectopic pregnancy, or ovarian torsion.',
-    },
-    {
-      sign: 'Severe Pain or Bleeding in Possible Pregnancy',
-      urgency: 'EMERGENCY: Immediate Medical Care',
-      reason: 'Requires urgent ultrasound to exclude life-threatening ectopic pregnancy or miscarriage.',
-    },
-    {
-      sign: 'Pelvic Pain Accompanied by High Fever',
-      urgency: 'Prompt Hospital Care',
-      reason: 'Classic signs of acute pelvic inflammatory disease (PID) or tubo-ovarian abscess.',
-    },
-    {
-      sign: 'Any Vaginal Bleeding After Menopause',
-      urgency: 'Prompt Gynecological Assessment',
-      reason: 'Postmenopausal bleeding is abnormal and requires urgent endometrial evaluation to exclude malignancy.',
-    },
-  ];
-
-  const clinicSelectionCriteria = [
-    {
-      title: 'Recognized Medical Qualifications',
-      desc: 'Verify that the physician possesses recognized degrees (BHMS or MBBS/MD Gynecology) and valid registration with medical councils (e.g., KA-HOM-15563 or Travancore-Cochin Councils).',
-    },
-    {
-      title: 'Comprehensive Gynecological Triage',
-      desc: 'A reputable clinic reviews your full menstrual timeline, past pregnancies, contraceptive history, and previous ultrasound scans before recommending care.',
-    },
-    {
-      title: 'Transparent Communication',
-      desc: 'Expect honest explanations of suspected causes, realistic expectations, treatment limitations, and clear indications for specialist referral.',
-    },
-    {
-      title: 'Zero Guaranteed "Permanent Cure" Claims',
-      desc: 'Ethical practitioners never promise 100% permanent hormonal cures or guarantee pregnancy/ovulation without diagnostic workups.',
-    },
-    {
-      title: 'Active Referral to Gynecologists',
-      desc: 'A responsible clinic immediately connects patients with board-certified gynecologists whenever imaging reveals fibroids, cysts, or severe bleeding.',
-    },
-    {
-      title: 'Clear, Transparent Costs',
-      desc: 'All consultation fees, routine blood panels, and medicines must be clearly explained upfront without high-cost recurring packages.',
-    },
-  ];
-
-  const questionsToAsk = [
-    'What are the clinician’s specific qualifications, board registrations, and experience in women’s health?',
-    'Will my consultation include a thorough review of my cycle history, previous scans, and current medicines?',
-    'Will I be promptly referred for an ultrasound or gynecological evaluation if my symptoms warrant it?',
-    'Is there scientific medical evidence supporting the recommended approach for my specific condition?',
-    'Are there any potential interactions between recommended remedies and my current prescription drugs?',
-    'Will the clinic encourage appropriate blood investigations (TSH, CBC, ferritin, hormonal profile)?',
-    'What is the clear protocol if my period pain worsens or if bleeding becomes excessively heavy?',
-  ];
-
   const faqs = [
     {
       q: 'What is Menstrual Homeopathic Treatment in Malappuram?',
@@ -358,343 +258,121 @@ export const MenstrualMalappuramPage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#F8FAFD] min-h-screen text-[#1E2559] font-sans">
+    <div className="bg-[#F8FAFD] text-[#1E2559] min-h-screen">
       {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
-        <div className="fixed top-0 left-0 right-0 z-40 bg-[#1E2559] text-white shadow-md border-b border-white/10 py-2.5 px-4 transition-all duration-300">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#E11D48] animate-pulse" />
-              <span className="font-semibold text-white">
-                Menstrual Health &amp; Cycle Care – Malappuram Patient Guide
-              </span>
-              <span className="hidden md:inline text-white/70">
-                | Dr. Anjali Chandrasekhar (BHMS, Board Reg. KA-HOM-15563)
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <a
-                href={`tel:${phonePrimary}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 hover:bg-white/25 text-white font-medium transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                <span>Call {phonePrimary}</span>
-              </a>
-              <button
-                onClick={handleBookConsultation}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E11D48] hover:bg-[#be123c] text-white font-semibold transition-colors shadow-sm"
-              >
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Book Visit</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <RegionalStickyBar
+          pageTitle="Menstrual Health & Cycle Care – Malappuram"
+          phonePrimary={phonePrimary}
+          whatsappUrl={whatsappUrl}
+          onBookClick={handleBookConsultation}
+        />
       )}
 
       {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <div className="flex items-center flex-wrap gap-2 text-xs text-[#64748B]">
-            <button
-              onClick={() => setCurrentView('home')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Home
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <button
-              onClick={() => setCurrentView('treatments')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Treatments
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <button
-              onClick={() => setCurrentView('womens-health-care')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Women’s Health Care
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-[#1E2559] font-semibold">
-              Menstrual Homeopathic Treatment in Malappuram
-            </span>
-          </div>
-        </div>
-      </div>
+      <RegionalBreadcrumb
+        categoryView="womens-health-care"
+        categoryLabel="Women's Health & Gynecological Care"
+        pageTitle="Menstrual Homeopathic Treatment in Malappuram"
+      />
 
-      {/* HERO SECTION WITH DOCTOR PROFILE ON THE LEFT */}
-      <section className="relative bg-gradient-to-br from-[#1E2559] via-[#242C66] to-[#161B40] text-white py-12 lg:py-16 overflow-hidden">
-        {/* Subtle background ornamentation */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#CBD5E1_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+      {/* Hero Section with Doctor Profile on Left */}
+      <RegionalHeroSection
+        badgeIcon={<Heart className="w-3.5 h-3.5 text-[#FDA4AF]" />}
+        badgeText="Women's Health Guide • Malappuram Patient Resource"
+        title="Menstrual Homeopathic Treatment in Malappuram"
+        subtitle="Comprehensive clinical guidance on irregular periods, dysmenorrhea, menorrhagia, PCOS, and evidence-grounded gynecological triage for women across Malappuram."
+        metrics={[
+          { label: 'Condition Focus', value: 'Cycle & Hormonal Care' },
+          { label: 'Diagnostic Standard', value: 'Labs & Ultrasound' },
+          { label: 'Evidence Policy', value: 'Transparent Care' },
+        ]}
+        doctorSubtitle="BHMS | Women's Constitutional Healthcare"
+        doctorBio="10+ years of dedicated clinical experience assessing menstrual cycle irregularity, pelvic pain disorders, PCOS lifestyle guidance, and evidence-grounded constitutional care in Malappuram district."
+        phonePrimary={phonePrimary}
+        phoneWhatsApp={phoneWhatsApp}
+        whatsappUrl={whatsappUrl}
+        onBookClick={handleBookConsultation}
+      />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* DOCTOR PROFILE CARD ON THE LEFT (Desktop col-span-5) */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="bg-white text-[#1E2559] rounded-3xl p-6 sm:p-7 shadow-2xl border border-white/20 relative overflow-hidden">
-                {/* Decorative Accent Ribbon */}
-                <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#E11D48] via-[#FB7185] to-[#303A88]" />
-
-                <div className="flex flex-col sm:flex-row lg:flex-col items-center gap-5 sm:gap-6 text-center sm:text-left lg:text-center">
-                  <div className="relative group">
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-[#EEF2FB] shadow-lg mx-auto bg-[#F1F5F9]">
-                      <img
-                        src="/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png"
-                        alt="Dr. Anjali Chandrasekhar, BHMS Doctor consulting for Menstrual Health and Women's Care in Malappuram"
-                        className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300"
-                        loading="eager"
-                        onError={(e) => {
-                          e.currentTarget.src = '/images/dr-anjali-malayali-doctor.jpg';
-                        }}
-                      />
-                    </div>
-                    <span className="absolute bottom-1 right-2 bg-[#E11D48] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow border border-white">
-                      Verified BHMS
-                    </span>
-                  </div>
-
-                  <div className="flex-1">
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EEF2FB] text-[#303A88] text-xs font-bold mb-2">
-                      <Award className="w-3.5 h-3.5 text-[#303A88]" />
-                      <span>Board Reg. KA-HOM-15563</span>
-                    </div>
-                    <h3 className="font-editorial text-2xl font-bold text-[#1E2559]">
-                      Dr. Anjali Chandrasekhar
-                    </h3>
-                    <p className="text-xs font-semibold text-[#E11D48] mt-0.5">
-                      BHMS | Lead Homeopathic Physician
-                    </p>
-                    <p className="text-xs text-[#64748B] mt-2 leading-relaxed">
-                      10+ years of dedicated clinical practice supporting women through menstrual irregularities, dysmenorrhea, PCOS evaluations, and constitutional care across Malappuram district.
-                    </p>
-
-                    <div className="mt-4 pt-4 border-t border-[#E2E8F0] grid grid-cols-2 gap-2 text-left">
-                      <div className="bg-[#F8FAFD] p-2.5 rounded-xl border border-[#E2E8F0]">
-                        <p className="text-[10px] text-[#64748B] uppercase font-bold tracking-wider">
-                          Main Clinic
-                        </p>
-                        <p className="text-xs font-bold text-[#1E2559] mt-0.5">
-                          Kuttippuram
-                        </p>
-                        <p className="text-[10px] text-[#64748B]">Tirur-Kuttippuram Rd</p>
-                      </div>
-                      <div className="bg-[#F8FAFD] p-2.5 rounded-xl border border-[#E2E8F0]">
-                        <p className="text-[10px] text-[#64748B] uppercase font-bold tracking-wider">
-                          Branch Clinic
-                        </p>
-                        <p className="text-xs font-bold text-[#1E2559] mt-0.5">
-                          Puthanathani
-                        </p>
-                        <p className="text-[10px] text-[#64748B]">Opp. Police Station</p>
-                      </div>
-                    </div>
-
-                    <div className="mt-5 flex flex-col sm:flex-row gap-2.5">
-                      <a
-                        href={`tel:${phonePrimary}`}
-                        className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#303A88] hover:bg-[#232b66] text-white text-xs font-bold transition-colors shadow-sm"
-                      >
-                        <Phone className="w-3.5 h-3.5" />
-                        <span>Call {phonePrimary}</span>
-                      </a>
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold transition-colors shadow-sm"
-                      >
-                        <MessageCircle className="w-3.5 h-3.5" />
-                        <span>WhatsApp Chat</span>
-                      </a>
-                    </div>
-
-                    <p className="text-[11px] text-[#94A3B8] text-center mt-3 flex items-center justify-center gap-1">
-                      <Clock className="w-3 h-3 text-[#10B981]" />
-                      <span>Mon – Sat: 9:30 AM – 6:30 PM | Sunday By Prior Appt</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+      {/* Important Key Takeaways (Executive Summary) */}
+      <section className="py-12 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-2.5 mb-6">
+            <div className="w-8 h-8 rounded-lg bg-[#E11D48]/10 flex items-center justify-center text-[#E11D48]">
+              <Sparkles className="w-4 h-4" />
             </div>
-
-            {/* HERO CONTENT ON THE RIGHT (Desktop col-span-7) */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold text-[#FDA4AF]">
-                <Heart className="w-3.5 h-3.5 text-[#FDA4AF]" />
-                <span>Regional Women’s Health Guide • Malappuram Patients</span>
-              </div>
-
-              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
-                Menstrual Homeopathic Treatment in Malappuram
-              </h1>
-
-              <p className="text-base sm:text-lg text-[#CBD5E1] leading-relaxed font-normal">
-                Menstrual health is an important part of a woman's overall well-being. Regular menstrual cycles, manageable period pain, and predictable bleeding patterns contribute to physical comfort and emotional balance. However, many women experience menstrual problems that interfere with daily activities, work, education, sleep, and quality of life. Irregular periods, painful menstruation, heavy bleeding, missed periods, and premenstrual symptoms are among the common concerns requiring medical attention.
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/15">
-                  <p className="text-white/70 text-[11px] uppercase tracking-wider font-semibold">
-                    Clinical Priority
-                  </p>
-                  <p className="text-white font-bold text-sm mt-0.5">
-                    Root Cause Diagnosis
-                  </p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/15">
-                  <p className="text-white/70 text-[11px] uppercase tracking-wider font-semibold">
-                    Evaluation
-                  </p>
-                  <p className="text-white font-bold text-sm mt-0.5">
-                    Endocrine &amp; Pelvic
-                  </p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/15 col-span-2 sm:col-span-1">
-                  <p className="text-white/70 text-[11px] uppercase tracking-wider font-semibold">
-                    Care Format
-                  </p>
-                  <p className="text-white font-bold text-sm mt-0.5">
-                    Clinic &amp; Online Video
-                  </p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-3.5 pt-2">
-                <button
-                  onClick={handleBookConsultation}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#E11D48] hover:bg-[#be123c] text-white font-bold text-sm transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book In-Clinic Consultation</span>
-                </button>
-                <button
-                  onClick={handleBookOnline}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-sm transition-all border border-white/20"
-                >
-                  <Stethoscope className="w-4 h-4" />
-                  <span>Online Video Consult</span>
-                </button>
-                <a
-                  href={`tel:${phoneSecondary}`}
-                  className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#303A88] hover:bg-[#283177] text-white font-semibold text-sm transition-all border border-white/20"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>Doctor Desk: {phoneSecondary}</span>
-                </a>
-              </div>
+            <div>
+              <span className="text-xs uppercase tracking-widest font-bold text-[#E11D48] block">
+                EXECUTIVE SUMMARY
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2559]">
+                Important Key Takeaways for Patients in Malappuram
+              </h2>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* SECTION 2: KEY TAKEAWAYS */}
-      <section className="py-12 bg-white border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#E11D48] bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-              Clinical Essentials
-            </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Key Takeaways on Menstrual Health in Malappuram
-            </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              Essential medical principles every woman should know regarding menstrual symptoms, underlying causes, and evidence-based care.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {keyTakeaways.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-2xl p-5 border border-[#E2E8F0] hover:border-[#E11D48]/40 hover:shadow-md transition-all flex flex-col justify-between"
+                className="rounded-xl p-5 bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#E11D48]/40 hover:shadow-xs transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-8 h-8 rounded-xl bg-rose-100 text-[#E11D48] flex items-center justify-center font-bold text-xs mb-3">
-                    0{idx + 1}
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#BE123C] uppercase tracking-wider mb-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0" />
+                    <span>Point {idx + 1}</span>
                   </div>
-                  <h3 className="font-bold text-base text-[#1E2559] mb-1.5">
+                  <h3 className="font-bold text-[#1E2559] text-base mb-1.5">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-[#475569] leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
               </div>
             ))}
-
-            {/* Summary Highlight Box */}
-            <div className="bg-gradient-to-br from-[#1E2559] to-[#303A88] text-white rounded-2xl p-5 shadow-sm flex flex-col justify-between">
-              <div>
-                <div className="w-8 h-8 rounded-xl bg-white/20 text-[#FDA4AF] flex items-center justify-center font-bold text-xs mb-3">
-                  <ShieldCheck className="w-4 h-4" />
-                </div>
-                <h3 className="font-bold text-base text-white mb-1.5">
-                  Timely Medical Assessment
-                </h3>
-                <p className="text-xs text-white/80 leading-relaxed">
-                  Never dismiss severe period pain or heavy bleeding as an inevitable burden. Identifying conditions like PCOS, fibroids, or endometriosis early prevents long-term health and fertility complications.
-                </p>
-              </div>
-              <button
-                onClick={handleBookConsultation}
-                className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[#FDA4AF] hover:text-white transition-colors"
-              >
-                <span>Schedule Malappuram Assessment</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3: UNDERSTANDING COMMON MENSTRUAL PROBLEMS */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D8E1F5]">
-              Cycle Physiology &amp; Variations
+      {/* Section 1: Common Menstrual Health Concerns */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              CLINICAL OVERVIEW
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Understanding Menstrual Health and Common Period Problems
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Common Menstrual Health Concerns
             </h2>
-            <p className="text-sm text-[#475569] mt-2 leading-relaxed">
-              The menstrual cycle is a natural process influenced by hormones that regulate the reproductive system. Although cycle length and bleeding patterns vary between individuals, significant changes in menstruation may indicate an underlying health concern.
-            </p>
-            <p className="text-sm text-[#475569] mt-2 leading-relaxed">
-              Some women experience mild discomfort, while others face symptoms that disrupt work, school, sleep, and family life. Understanding these differences helps determine when a professional assessment is needed.
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
+              Every woman's menstrual rhythm is unique, yet persistent deviations in frequency, duration, volume, or comfort warrant clinical evaluation.
             </p>
           </div>
 
-          <div className="space-y-5">
-            {commonMenstrualConcerns.map((concern, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            {commonMenstrualConcerns.map((c, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow"
+                className="p-6 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#E11D48]/30 transition-all space-y-2"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-                  <div className="flex items-center gap-2.5">
-                    <span className="w-7 h-7 rounded-lg bg-rose-50 text-[#E11D48] font-bold text-xs flex items-center justify-center">
-                      {concern.number}
-                    </span>
-                    <h3 className="font-bold text-lg text-[#1E2559]">
-                      {concern.title}
-                    </h3>
-                  </div>
-                  <span className="text-xs font-semibold text-[#E11D48] bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-                    {concern.badge}
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-[#BE123C] uppercase tracking-wider">
+                    Concern {c.number}
+                  </span>
+                  <span className="text-[11px] font-semibold text-[#64748B] bg-[#FFF1F2] px-2.5 py-0.5 rounded-full border border-[#FECDD3]">
+                    {c.badge}
                   </span>
                 </div>
-
-                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
-                  {concern.desc}
+                <h3 className="font-bold text-[#1E2559] text-lg">
+                  {c.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                  {c.desc}
                 </p>
-
-                <div className="pt-3 border-t border-[#F1F5F9] flex items-start gap-2 text-xs text-[#0D9488] font-medium">
-                  <CheckCircle2 className="w-4 h-4 shrink-0 text-[#0D9488] mt-0.5" />
-                  <span>{concern.care}</span>
+                <div className="pt-2 border-t border-[#F1F5F9] text-xs font-medium text-[#303A88]">
+                  {c.care}
                 </div>
               </div>
             ))}
@@ -702,119 +380,73 @@ export const MenstrualMalappuramPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 4: SCIENTIFIC EVIDENCE DISCLOSURE ON HOMEOPATHY */}
-      <section className="py-14 bg-white border-t border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D8E1F5]">
-              Evidence Disclosures &amp; Ethics
+      {/* Section 2: Homeopathy Options: Evidence & Transparency */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              TREATMENT TRANSPARENCY
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Menstrual Homeopathic Treatment in Malappuram: What Should Women Know?
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Menstrual Homeopathic Treatment in Malappuram: Clinical Perspective
             </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              An evidence-informed, honest medical perspective for women considering complementary consultations for cycle concerns.
-            </p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="p-6 rounded-3xl bg-[#F8FAFD] border border-[#E2E8F0] shadow-sm">
-              <p className="text-sm text-[#475569] leading-relaxed">
-                Women exploring <strong>Homeopathic Treatment for Menstrual Problems in Malappuram</strong> may be interested in consultations that consider their overall physical health, emotional well-being, and constitutional history. Homeopathy is a complementary system based on highly diluted substances and individualised symptom profiles.
-              </p>
+          <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
+            <p>
+              Women searching for <strong>Menstrual Homeopathic Treatment in Malappuram</strong> often look for a gentle, empathetic setting to discuss menstrual and emotional well-being.
+            </p>
+            <p>
+              Homeopathic consultations focus on holistic history-taking, exploring lifestyle, emotional stress, and constitutional patterns alongside physical symptoms.
+            </p>
 
-              <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-amber-50/90 border border-amber-200 text-xs text-amber-950 leading-relaxed">
-                <p className="font-bold mb-1 flex items-center gap-1.5 text-amber-900 text-sm">
-                  <ShieldAlert className="w-4 h-4 text-amber-700" />
-                  <span>Important Scientific Disclosure</span>
-                </p>
-                <p>
-                  Reliable scientific evidence has not established that homeopathy effectively treats menstrual disorders, corrects hormonal imbalances, improves fertility, or addresses the underlying structural causes of conditions such as PCOS, fibroids, or endometriosis. Women considering homeopathy should understand these limitations before making treatment decisions. Homeopathic remedies must never replace a formal medical evaluation, prescribed medication, or recommended diagnostic imaging.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              <div className="bg-white rounded-2xl p-5 border border-[#E2E8F0] shadow-sm">
-                <div className="w-9 h-9 rounded-xl bg-rose-50 text-[#E11D48] flex items-center justify-center font-bold text-sm mb-3">
-                  01
+            {/* Scientific Evidence Transparency Box */}
+            <div className="p-6 rounded-2xl bg-white border-2 border-[#303A88]/30 shadow-xs">
+              <div className="flex items-start gap-3">
+                <ShieldCheck className="w-6 h-6 text-[#303A88] shrink-0 mt-0.5" />
+                <div className="space-y-2">
+                  <h3 className="font-bold text-[#1E2559] text-base sm:text-lg">
+                    Important Scientific Evidence Disclosure
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                    Reliable scientific evidence has not shown that homeopathy effectively treats menstrual disorders or corrects underlying endocrine pathologies (such as PCOS, hyperprolactinemia, thyroid dysfunction, or endometriosis). Homeopathy must never be used as a substitute for evidence-based gynecological care, imaging, or hormonal management.
+                  </p>
                 </div>
-                <h4 className="font-bold text-sm text-[#1E2559] mb-1.5">
-                  Share Full Health History
-                </h4>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  Always share your complete menstrual dates, past ultrasounds, and medications. Never withhold conventional diagnoses or discontinue prescribed drugs without consulting your treating doctor.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border border-[#E2E8F0] shadow-sm">
-                <div className="w-9 h-9 rounded-xl bg-amber-50 text-[#D97706] flex items-center justify-center font-bold text-sm mb-3">
-                  02
-                </div>
-                <h4 className="font-bold text-sm text-[#1E2559] mb-1.5">
-                  Avoid Guaranteed Hormone Cures
-                </h4>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  Be deeply cautious of claims promising guaranteed permanent hormonal correction, miracle fertility cures, or overnight fibroid dissolution without scientific trial evidence.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-5 border border-[#E2E8F0] shadow-sm">
-                <div className="w-9 h-9 rounded-xl bg-emerald-50 text-[#10B981] flex items-center justify-center font-bold text-sm mb-3">
-                  03
-                </div>
-                <h4 className="font-bold text-sm text-[#1E2559] mb-1.5">
-                  Prioritize Timely Diagnosis
-                </h4>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  Endometriosis and adenomyosis require early clinical management to halt chronic pelvic scarring. Delaying medical care in favor of unproven remedies risks permanent complications.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 5: COMMON CAUSES OF MENSTRUAL DISORDERS */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#E11D48] bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-              Etiological Diagnosis
+      {/* Section 3: Possible Causes of Menstrual Symptoms */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              DIAGNOSTIC ETIOLOGY
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Common Causes of Menstrual Disorders
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Possible Causes of Menstrual Irregularities &amp; Period Pain
             </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              Menstrual symptoms can develop for several reasons. Identifying the root cause is essential because each condition requires a different clinical approach.
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
+              Menstrual concerns arise from a complex interplay of endocrine hormones, reproductive anatomy, and metabolic factors.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {commonCauses.map((cause, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {commonCauses.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 border border-[#E2E8F0] shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow"
+                className="p-5 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#E11D48]/40 transition-all space-y-2"
               >
-                <div>
-                  <div className="w-8 h-8 rounded-xl bg-rose-50 text-[#E11D48] flex items-center justify-center font-bold text-xs mb-3">
-                    0{idx + 1}
-                  </div>
-                  <h3 className="font-bold text-lg text-[#1E2559] mb-2">
-                    {cause.title}
-                  </h3>
-                  <p className="text-xs text-[#475569] leading-relaxed mb-4">
-                    {cause.desc}
-                  </p>
-                </div>
-
-                <div className="pt-3 border-t border-[#F1F5F9]">
-                  <p className="text-[11px] font-bold text-[#1E2559] uppercase tracking-wider mb-1">
-                    Diagnostic Next Step
-                  </p>
-                  <p className="text-xs text-[#0D9488] font-medium leading-relaxed">
-                    {cause.action}
-                  </p>
+                <h3 className="font-bold text-[#1E2559] text-base">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                  {item.desc}
+                </p>
+                <div className="pt-2 border-t border-[#F1F5F9] text-xs font-semibold text-[#0D9488]">
+                  Clinical Action: {item.action}
                 </div>
               </div>
             ))}
@@ -822,306 +454,183 @@ export const MenstrualMalappuramPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 6: EVIDENCE-BASED TREATMENT OPTIONS */}
-      <section className="py-14 bg-white border-t border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#0D9488] bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-              Medical Modalities
+      {/* Section 4: Evidence-Based Management */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              THERAPEUTIC STANDARDS
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Evidence-Based Treatment Options for Menstrual Problems
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Evidence-Based Approaches to Menstrual Health
             </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              Appropriate medical therapies depend on the confirmed diagnosis, symptom severity, age, and individual reproductive goals.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {evidenceBasedOptions.map((modality, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {evidenceBasedOptions.map((opt, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-3xl p-6 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88]/40 transition-all space-y-2.5"
               >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold text-white bg-[#0D9488] px-2.5 py-1 rounded-full">
-                      Modality {modality.step}
-                    </span>
-                    <span className="text-[11px] font-semibold text-[#64748B]">
-                      {modality.subtitle}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-lg text-[#1E2559] mb-2">
-                    {modality.title}
-                  </h3>
-                  <p className="text-xs text-[#475569] leading-relaxed">
-                    {modality.desc}
-                  </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-[#303A88] bg-[#EEF2FB] px-2.5 py-0.5 rounded-full border border-[#D8E1F5]">
+                    Option {opt.step}
+                  </span>
+                  <span className="text-[11px] font-semibold text-[#64748B]">
+                    {opt.subtitle}
+                  </span>
                 </div>
+                <h3 className="font-bold text-[#1E2559] text-base">
+                  {opt.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                  {opt.desc}
+                </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Assessment Consultation Card */}
-            <div className="bg-gradient-to-br from-[#1E2559] to-[#242C66] text-white rounded-3xl p-6 shadow-md flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-bold text-[#FDA4AF] bg-white/10 px-2.5 py-1 rounded-full">
-                  Doctor Guidance
-                </span>
-                <h3 className="font-bold text-lg text-white mt-3 mb-2">
-                  Need an In-Depth Cycle Review?
-                </h3>
-                <p className="text-xs text-white/80 leading-relaxed">
-                  Consult with Dr. Anjali Chandrasekhar for a careful review of your menstrual history, ultrasound reports, and personalized supportive care plan.
-                </p>
-              </div>
-              <button
-                onClick={handleBookConsultation}
-                className="mt-5 w-full py-2.5 rounded-xl bg-[#E11D48] hover:bg-[#be123c] text-white font-bold text-xs transition-colors shadow-sm flex items-center justify-center gap-1.5"
+      {/* Section 5: Consultation Checklist */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              PATIENT PREPARATION
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              What to Share During Your Menstrual Health Consultation
+            </h2>
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
+              Providing clear, detailed history helps the doctor evaluate whether hormonal assays, pelvic ultrasound, or specialist referral is required.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {consultationChecklist.map((item, idx) => (
+              <div
+                key={idx}
+                className="p-4 rounded-xl bg-white border border-[#D8E1F5] flex items-start gap-3"
               >
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Book In-Clinic Assessment</span>
-              </button>
-            </div>
+                <CheckCircle2 className="w-5 h-5 text-[#E11D48] shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm text-[#334155] font-medium leading-relaxed">
+                  {item}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 7: PREPARING FOR CONSULTATION & SUPPORTIVE HABITS */}
-      <section className="py-14 bg-[#F8FAFD] border-t border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-6 space-y-4">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D8E1F5]">
-                Consultation Readiness
+      {/* Section 6: Red Flag Symptoms */}
+      <section className="py-14 sm:py-16 bg-[#FEF2F2] border-b border-[#FCA5A5]/40">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="flex items-center gap-2.5">
+            <ShieldAlert className="w-6 h-6 text-[#DC2626]" />
+            <div>
+              <span className="text-xs uppercase tracking-widest font-bold text-[#DC2626] block">
+                SAFETY PROTOCOL
               </span>
-              <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                Preparing for a Menstrual Disorder Consultation in Malappuram
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#991B1B]">
+                When to Seek Immediate Emergency Medical Care
               </h2>
-              <p className="text-sm text-[#475569] leading-relaxed">
-                Recording your cycle details before visiting the clinic makes your consultation much more informative and allows your doctor to pinpoint cycle irregularities faster.
-              </p>
-
-              <div className="bg-white rounded-2xl p-5 border border-[#E2E8F0] shadow-sm space-y-2.5">
-                <h4 className="font-bold text-xs text-[#1E2559] uppercase tracking-wider mb-2 flex items-center gap-2">
-                  <FileText className="w-4 h-4 text-[#303A88]" />
-                  <span>Key Details to Record Before Your Appointment:</span>
-                </h4>
-                {consultationChecklist.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-2 text-xs text-[#334155]">
-                    <Check className="w-3.5 h-3.5 text-[#E11D48] mt-0.5 shrink-0" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
             </div>
+          </div>
 
-            <div className="lg:col-span-6 space-y-4">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#10B981] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-                Supportive Well-Being
-              </span>
-              <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                Everyday Habits That Support Menstrual Health
-              </h2>
-              <p className="text-sm text-[#475569] leading-relaxed">
-                Healthy routines cannot replace medical treatment when organic conditions like fibroids exist, but they provide substantial physical relief and metabolic stabilization.
-              </p>
-
-              <div className="space-y-3">
-                {supportiveHabits.map((habit, idx) => (
-                  <div
-                    key={idx}
-                    className="p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm"
-                  >
-                    <h4 className="font-bold text-xs text-[#1E2559] mb-1 flex items-center gap-2">
-                      <span className="w-5 h-5 rounded-full bg-emerald-100 text-[#10B981] font-bold text-[10px] flex items-center justify-center shrink-0">
-                        {idx + 1}
-                      </span>
-                      <span>{habit.title}</span>
-                    </h4>
-                    <p className="text-[11px] text-[#64748B] leading-relaxed pl-7">
-                      {habit.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="p-6 rounded-2xl bg-white border border-[#FCA5A5] shadow-xs space-y-3">
+            <p className="text-xs sm:text-sm text-[#7F1D1D] font-medium leading-relaxed">
+              If you experience any of the following symptoms, seek urgent hospital emergency medical care immediately:
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm text-[#991B1B]">
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Soaking through one or more sanitary pads every hour for 2+ consecutive hours</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Bleeding accompanied by fainting, dizziness, severe pallor, or shortness of breath</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Sudden, agonizing, unilateral lower abdominal or pelvic pain (ectopic risk)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Severe pelvic pain accompanied by high-grade fever and foul vaginal discharge</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Severe bleeding or cramping in a known or suspected early pregnancy</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-[#DC2626] shrink-0 mt-0.5" />
+                <span>Any vaginal bleeding occurring after menopause</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* SECTION 8: RED FLAGS & WHEN TO SEEK URGENT MEDICAL ATTENTION */}
-      <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#E11D48] bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-              Emergency Clinical Triage
+      {/* Section 7: FAQs */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              PATIENT EDUCATION
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              When Should You Seek Immediate Medical Attention?
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Frequently Asked Questions: Menstrual Health in Malappuram
             </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              Certain acute menstrual symptoms require urgent hospital assessment rather than a routine outpatient appointment.
+            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+              Common questions answered transparently to help women make informed decisions about menstrual and reproductive care.
             </p>
           </div>
 
-          <div className="overflow-x-auto bg-[#F8FAFD] rounded-3xl border border-[#E2E8F0] shadow-sm">
-            <table className="w-full text-left text-xs">
-              <thead className="bg-[#1E2559] text-white">
-                <tr>
-                  <th className="py-3.5 px-4 font-bold">Observable Symptom</th>
-                  <th className="py-3.5 px-4 font-bold">Recommended Urgency</th>
-                  <th className="py-3.5 px-4 font-bold">Potential Underlying Danger</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-[#E2E8F0]">
-                {redFlags.map((flag, idx) => (
-                  <tr key={idx} className="hover:bg-white transition-colors">
-                    <td className="py-3.5 px-4 font-semibold text-[#1E2559]">
-                      {flag.sign}
-                    </td>
-                    <td className="py-3.5 px-4">
-                      <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-rose-100 text-rose-800 border border-rose-200">
-                        {flag.urgency}
-                      </span>
-                    </td>
-                    <td className="py-3.5 px-4 text-[#475569] leading-relaxed">
-                      {flag.reason}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 9: CHOOSING A DOCTOR & QUESTIONS TO ASK */}
-      <section className="py-14 bg-[#F8FAFD] border-t border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <div className="lg:col-span-7 space-y-5">
-              <div>
-                <span className="text-xs uppercase tracking-widest font-bold text-[#0D9488] bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
-                  Consumer Safety Guide
-                </span>
-                <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-                  Finding a Menstrual Problems Doctor in Malappuram
-                </h2>
-                <p className="text-sm text-[#475569] mt-2">
-                  Selecting the right practitioner involves assessing medical credentials, a systematic examination process, and a commitment to diagnostic investigations rather than vague promises.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {clinicSelectionCriteria.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-4 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm"
-                  >
-                    <h4 className="font-bold text-xs text-[#1E2559] mb-1">
-                      {item.title}
-                    </h4>
-                    <p className="text-[11px] text-[#64748B] leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="lg:col-span-5">
-              <div className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E2E8F0] shadow-sm space-y-4">
-                <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D8E1F5]">
-                  Patient Checklist
-                </span>
-                <h3 className="font-bold text-base text-[#1E2559]">
-                  Questions to Ask at a Women’s Health Clinic
-                </h3>
-                <p className="text-xs text-[#64748B] leading-relaxed">
-                  A trustworthy clinic respects your right to understand the evidence behind any suggested therapy and prioritize your long-term health.
-                </p>
-
-                <div className="space-y-2 pt-1">
-                  {questionsToAsk.map((q, idx) => (
-                    <div
-                      key={idx}
-                      className="p-2.5 rounded-xl bg-[#F8FAFD] border border-[#E2E8F0] flex items-start gap-2 text-xs text-[#334155]"
-                    >
-                      <HelpCircle className="w-3.5 h-3.5 text-[#E11D48] shrink-0 mt-0.5" />
-                      <span>{q}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 10: INTERACTIVE FREQUENTLY ASKED QUESTIONS */}
-      <section className="py-14 bg-white border-t border-[#E2E8F0]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#E11D48] bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-              Doctor Answers
-            </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Frequently Asked Questions on Menstrual Health
-            </h2>
-            <p className="text-sm text-[#64748B] mt-2">
-              Direct, evidence-informed answers to common questions about menstrual disorders and healthcare options in Malappuram.
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            {faqs.map((faq, idx) => {
-              const isOpen = activeFaq === idx;
-              return (
-                <div
-                  key={idx}
-                  className="bg-[#F8FAFD] rounded-2xl border border-[#E2E8F0] overflow-hidden transition-all shadow-sm"
+          <div className="space-y-3 pt-4">
+            {faqs.map((faq, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl border border-[#D8E1F5] bg-white overflow-hidden transition-all shadow-2xs"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleFaq(idx)}
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-[#1E2559] hover:bg-[#F8FAFD] transition-colors"
                 >
-                  <button
-                    onClick={() => setActiveFaq(isOpen ? null : idx)}
-                    className="w-full py-4 px-5 sm:px-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-[#1E2559] hover:bg-white transition-colors"
-                  >
-                    <span className="flex items-center gap-3">
-                      <span className="w-6 h-6 rounded-full bg-rose-100 text-[#E11D48] text-xs font-bold flex items-center justify-center shrink-0">
-                        {idx + 1}
-                      </span>
-                      <span>{faq.q}</span>
-                    </span>
-                    <ChevronDown
-                      className={`w-4 h-4 text-[#64748B] transition-transform duration-200 shrink-0 ${
-                        isOpen ? 'rotate-180 text-[#E11D48]' : ''
-                      }`}
-                    />
-                  </button>
-                  {isOpen && (
-                    <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-[#E2E8F0] bg-white">
-                      <p>{faq.a}</p>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                  <span className="flex items-center gap-3 text-sm sm:text-base">
+                    <HelpCircle className="w-4 h-4 text-[#E11D48] shrink-0" />
+                    <span>{faq.q}</span>
+                  </span>
+                  <ChevronDown
+                    className={`w-4 h-4 text-[#64748B] transition-transform duration-200 shrink-0 ${
+                      activeFaq === idx ? 'rotate-180 text-[#E11D48]' : ''
+                    }`}
+                  />
+                </button>
+                {activeFaq === idx && (
+                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-[#F1F5F9]">
+                    <p>{faq.a}</p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 11: APPOINTMENT BOOKING ENGINE */}
-      <section className="py-14 bg-[#F8FAFD] border-t border-[#E2E8F0]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] bg-[#EEF2FB] px-3 py-1 rounded-full border border-[#D8E1F5]">
-              Direct Scheduling
+      {/* Direct Scheduling Booking Engine */}
+      <section id="booking-section" className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              CONFIDENTIAL APPOINTMENT
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Book Your Menstrual Health Consultation
             </h2>
             <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-              Schedule an in-clinic appointment at Kuttippuram or Puthanathani, or book a confidential online video consultation with Dr. Anjali Chandrasekhar.
+              In-clinic appointments at Kuttippuram and Puthanathani, or comfortable Online Video Consultations from home.
             </p>
           </div>
 
@@ -1129,7 +638,7 @@ export const MenstrualMalappuramPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 12: REGIONAL RELATED GUIDES */}
+      {/* Regional Related Guides */}
       <RegionalRelatedGuides currentGuideKey="menstrual-treatment-malappuram" />
     </div>
   );

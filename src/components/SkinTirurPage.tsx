@@ -2,18 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useClinic } from '../context/ClinicContext';
 import { AppointmentBookingEngine } from './AppointmentBookingEngine';
 import {
-  MapPin,
   Phone,
   MessageCircle,
-  Clock,
   ShieldCheck,
   CheckCircle2,
   AlertTriangle,
-  ArrowRight,
   ChevronDown,
-  ChevronRight,
   HelpCircle,
-  Stethoscope,
   Info,
   Calendar,
   Check,
@@ -21,17 +16,16 @@ import {
   Activity,
   Heart,
   Droplets,
-  Award,
   Sparkles,
   BookOpen,
-  Layers,
   FileText,
   AlertCircle,
-  CheckCircle,
-  Sun,
-  Shield,
   Eye,
+  Sun,
 } from 'lucide-react';
+import { RegionalStickyBar } from './RegionalStickyBar';
+import { RegionalBreadcrumb } from './RegionalBreadcrumb';
+import { RegionalHeroSection } from './RegionalHeroSection';
 import { RegionalRelatedGuides } from './RegionalRelatedGuides';
 
 export const SkinTirurPage: React.FC = () => {
@@ -158,62 +152,31 @@ export const SkinTirurPage: React.FC = () => {
     },
   ];
 
-  // 5 Evidence-based treatment options
-  const evidenceBasedOptions = [
+  // 6 Causes of skin problems
+  const commonCauses = [
     {
-      step: '01',
-      title: 'Topical Medicines',
-      badge: 'Targeted Cutaneous Action',
-      desc: 'Topical creams, ointments, gels, and lotions are formulated for specific dermatological conditions and are not interchangeable.',
-      points: [
-        'Topical retinoids and benzoyl peroxide for comedonal and inflammatory acne vulgaris',
-        'Topical corticosteroids or calcineurin inhibitors for acute atopic dermatitis and eczema flare-ups',
-        'Topical antifungals (clotrimazole, terbinafine, luliconazole) for confirmed fungal dermatophytosis',
-      ],
+      title: 'Allergies and Irritants',
+      desc: 'Contact with soaps, cosmetics, detergents, metals (such as nickel), or industrial chemicals can irritate the epidermal barrier or trigger a delayed hypersensitivity response. Identifying and avoiding the offending agent is fundamental to recovery.',
     },
     {
-      step: '02',
-      title: 'Oral Medicines',
-      badge: 'Systemic Medical Therapy',
-      desc: 'When skin conditions are widespread, deep-seated, or systemic, qualified physicians prescribe targeted oral medications.',
-      points: [
-        'Oral antibiotics for moderate-to-severe inflammatory acne or secondary bacterial impetigo',
-        'Oral antifungals (itraconazole, fluconazole, terbinafine) for extensive tinea or onychomycosis',
-        'Systemic antihistamines to alleviate nocturnal pruritus and break the itch-scratch cycle',
-      ],
+      title: 'Hormonal Changes',
+      desc: 'Androgenic surges during puberty, menstruation, pregnancy, or PCOS directly stimulate sebaceous gland hypertrophy and excess sebum production, leading to acne. Thyroid disorders can cause severe skin xerosis (dryness).',
     },
     {
-      step: '03',
-      title: 'Moisturisers & Skin Barrier Care',
-      badge: 'Ceramides & Emollients',
-      desc: 'Emollients and barrier creams reduce transepidermal water loss and reinforce stratum corneum integrity.',
-      points: [
-        'Ointment and cream-based emollients containing ceramides, glycerin, or petrolatum for dry skin and eczema',
-        'Application within 3 minutes of bathing ("soak and seal" technique) to lock in vital hydration',
-        'Strict avoidance of fragrance-laden, alcohol-containing, or harsh foaming skincare formulations',
-      ],
+      title: 'Genetics & Immune System Activity',
+      desc: 'Atopic dermatitis and psoriasis have strong hereditary components and dysregulated immune pathways. Psoriasis involves accelerated T-cell mediated keratinocyte turnover, requiring long-term structured management.',
     },
     {
-      step: '04',
-      title: 'Broad-Spectrum Sun Protection',
-      badge: 'UV Barrier & Melanin Control',
-      desc: 'Shielding skin from solar UVA and UVB rays prevents pigment aggravation, premature elastosis, and actinic damage.',
-      points: [
-        'Broad-spectrum water-resistant sunscreen with SPF 30 to SPF 50+ applied daily 20 minutes before outdoors',
-        'Physical measures: UV-protective umbrellas, wide-brimmed hats, sunglasses, and seeking midday shade',
-        'Avoiding harsh unverified bleaching agents or steroid creams that trigger steroid-induced rosacea',
-      ],
+      title: 'Infections (Fungal, Bacterial & Viral)',
+      desc: 'Pathogens such as dermatophytes (ringworm), Staphylococcus/Streptococcus (impetigo, boils), and herpesviruses cause distinct eruptions. Because treatment strategies differ radically, correct microscopic or clinical identification is mandatory.',
     },
     {
-      step: '05',
-      title: 'Specialist Dermatological Treatments',
-      badge: 'Advanced Clinical Procedures',
-      desc: 'Severe, recalcitrant, or scarring dermatological conditions necessitate advanced specialist modalities.',
-      points: [
-        'Narrowband UVB phototherapy for extensive plaque psoriasis and severe widespread eczema',
-        'Oral retinoids (isotretinoin) for severe nodulocystic acne under regular biochemical monitoring',
-        'Specialized chemical peels, fractional lasers, or biopsy examinations conducted by qualified dermatologists',
-      ],
+      title: 'Environmental Factors & Climate',
+      desc: 'Intense sun exposure, high humidity, excessive perspiration, and environmental pollution in coastal Kerala provoke fungal colonization, prickly heat, and post-inflammatory melasma. Protective habits significantly lower symptom severity.',
+    },
+    {
+      title: 'Stress & Neuro-Immunological Axes',
+      desc: 'Chronic psychological stress activates the hypothalamic-pituitary-adrenal (HPA) axis, elevating cortisol and triggering neurogenic skin inflammation that intensifies eczema flares and inflammatory acne outbreaks.',
     },
   ];
 
@@ -283,47 +246,62 @@ export const SkinTirurPage: React.FC = () => {
     },
   ];
 
-  // Consultation preparation points
-  const preparationPoints = [
+  // 5 Evidence-based treatment options
+  const evidenceBasedOptions = [
     {
-      icon: Calendar,
-      title: 'Timeline of Skin Appearance',
-      detail: 'Note exactly when the rash, pimples, or scaling first appeared and whether onset was sudden or gradual.',
+      step: '01',
+      title: 'Topical Medicines',
+      badge: 'Targeted Cutaneous Action',
+      desc: 'Topical creams, ointments, gels, and lotions are formulated for specific dermatological conditions and are not interchangeable.',
+      points: [
+        'Topical retinoids and benzoyl peroxide for comedonal and inflammatory acne vulgaris',
+        'Topical corticosteroids or calcineurin inhibitors for acute atopic dermatitis and eczema flare-ups',
+        'Topical antifungals (clotrimazole, terbinafine, luliconazole) for confirmed fungal dermatophytosis',
+      ],
     },
     {
-      icon: MapPin,
-      title: 'Exact Anatomical Areas',
-      detail: 'Identify all affected body locations (face, scalp, flexures, hands, trunk) and whether lesions have spread.',
+      step: '02',
+      title: 'Oral Medicines',
+      badge: 'Systemic Medical Therapy',
+      desc: 'When skin conditions are widespread, deep-seated, or systemic, qualified physicians prescribe targeted oral medications.',
+      points: [
+        'Oral antibiotics for moderate-to-severe inflammatory acne or secondary bacterial impetigo',
+        'Oral antifungals (itraconazole, fluconazole, terbinafine) for extensive tinea or onychomycosis',
+        'Systemic antihistamines to alleviate nocturnal pruritus and break the itch-scratch cycle',
+      ],
     },
     {
-      icon: Activity,
-      title: 'Associated Sensation Characteristics',
-      detail: 'Describe whether the area itches intensely, burns, stings, throbs with pain, or produces fluid discharge/oozing.',
+      step: '03',
+      title: 'Moisturisers & Skin Barrier Care',
+      badge: 'Ceramides & Emollients',
+      desc: 'Emollients and barrier creams reduce transepidermal water loss and reinforce stratum corneum integrity.',
+      points: [
+        'Ointment and cream-based emollients containing ceramides, glycerin, or petrolatum for dry skin and eczema',
+        'Application within 3 minutes of bathing ("soak and seal" technique) to lock in vital hydration',
+        'Strict avoidance of fragrance-laden, alcohol-containing, or harsh foaming skincare formulations',
+      ],
     },
     {
-      icon: Droplets,
-      title: 'Past Products & Creams Tried',
-      detail: 'Make a full list of all OTC creams, steroid tubes (e.g., Betnovate, Panderm), soaps, and homemade pastes used.',
+      step: '04',
+      title: 'Broad-Spectrum Sun Protection',
+      badge: 'UV Barrier & Melanin Control',
+      desc: 'Shielding skin from solar UVA and UVB rays prevents pigment aggravation, premature elastosis, and actinic damage.',
+      points: [
+        'Broad-spectrum water-resistant sunscreen with SPF 30 to SPF 50+ applied daily 20 minutes before outdoors',
+        'Physical measures: UV-protective umbrellas, wide-brimmed hats, sunglasses, and seeking midday shade',
+        'Avoiding harsh unverified bleaching agents or steroid creams that trigger steroid-induced rosacea',
+      ],
     },
     {
-      icon: AlertCircle,
-      title: 'Known Allergies & Medical History',
-      detail: 'Disclose personal or family history of asthma, allergic rhinitis, thyroid problems, diabetes, or autoimmune disorders.',
-    },
-    {
-      icon: Sun,
-      title: 'Possible Environmental Triggers',
-      detail: 'Note triggers such as recent new soaps, detergents, cosmetics, sun exposure, sweating, dust, or work chemicals.',
-    },
-    {
-      icon: Heart,
-      title: 'Household Contacts with Similar Rashes',
-      detail: 'Mention if family members or coworkers have similar itching or skin eruptions (essential for scabies/fungal tinea).',
-    },
-    {
-      icon: Eye,
-      title: 'Photographic Progression Record',
-      detail: 'Bring clear photographs taken in natural daylight over previous weeks to illustrate fluctuating flare-up patterns.',
+      step: '05',
+      title: 'Specialist Dermatological Treatments',
+      badge: 'Advanced Clinical Procedures',
+      desc: 'Severe, recalcitrant, or scarring dermatological conditions necessitate advanced specialist modalities.',
+      points: [
+        'Narrowband UVB phototherapy for extensive plaque psoriasis and severe widespread eczema',
+        'Oral retinoids (isotretinoin) for severe nodulocystic acne under regular biochemical monitoring',
+        'Specialized chemical peels, fractional lasers, or biopsy examinations conducted by qualified dermatologists',
+      ],
     },
   ];
 
@@ -355,7 +333,51 @@ export const SkinTirurPage: React.FC = () => {
     },
   ];
 
-  // 12 FAQs (7 from document + 5 high-yield clinical questions tailored to Tirur & Malappuram region)
+  // Consultation preparation points
+  const preparationPoints = [
+    {
+      icon: Calendar,
+      title: 'Timeline of Skin Appearance',
+      detail: 'Note exactly when the rash, pimples, or scaling first appeared and whether onset was sudden or gradual.',
+    },
+    {
+      icon: Activity,
+      title: 'Exact Anatomical Areas',
+      detail: 'Identify all affected body locations (face, scalp, flexures, hands, trunk) and whether lesions have spread.',
+    },
+    {
+      icon: AlertTriangle,
+      title: 'Associated Sensation Characteristics',
+      detail: 'Describe whether the area itches intensely, burns, stings, throbs with pain, or produces fluid discharge/oozing.',
+    },
+    {
+      icon: Droplets,
+      title: 'Past Products & Creams Tried',
+      detail: 'Make a full list of all OTC creams, steroid tubes (e.g., Betnovate, Panderm), soaps, and homemade pastes used.',
+    },
+    {
+      icon: AlertCircle,
+      title: 'Known Allergies & Medical History',
+      detail: 'Disclose personal or family history of asthma, allergic rhinitis, thyroid problems, diabetes, or autoimmune disorders.',
+    },
+    {
+      icon: Sun,
+      title: 'Possible Environmental Triggers',
+      detail: 'Note triggers such as recent new soaps, detergents, cosmetics, sun exposure, sweating, dust, or work chemicals.',
+    },
+    {
+      icon: Heart,
+      title: 'Household Contacts with Similar Rashes',
+      detail: 'Mention if family members or coworkers have similar itching or skin eruptions (essential for scabies/fungal tinea).',
+    },
+    {
+      icon: Eye,
+      title: 'Photographic Progression Record',
+      detail: 'Bring clear photographs taken in natural daylight over previous weeks to illustrate fluctuating flare-up patterns.',
+    },
+  ];
+
+  // 12 FAQs
   const faqs = [
     {
       q: 'What is homeopathic treatment near Tirur for skin problems?',
@@ -408,330 +430,119 @@ export const SkinTirurPage: React.FC = () => {
   ];
 
   return (
-    <div className="bg-[#F8FAFD] min-h-screen text-[#1E2559] font-sans">
+    <div className="bg-[#F8FAFD] text-[#1E2559] min-h-screen">
       {/* Sticky Quick Contact / Booking Strip */}
       {showStickyBar && (
-        <div className="fixed top-0 left-0 right-0 z-40 bg-[#1E2559] text-white shadow-md border-b border-white/10 py-2.5 px-4 transition-all duration-300">
-          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse" />
-              <span className="font-semibold text-white">
-                Skin Health &amp; Dermatology Care Guide – Tirur Regional Guide
-              </span>
-              <span className="hidden md:inline text-white/70">
-                | Dr. Anjali Chandrasekhar (BHMS, Board Reg. KA-HOM-15563)
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <a
-                href={`tel:${phonePrimary}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 hover:bg-white/25 text-white font-medium transition-colors"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                <span>Call {phonePrimary}</span>
-              </a>
-              <button
-                onClick={handleBookConsultation}
-                className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#059669] hover:bg-[#047857] text-white font-semibold transition-colors shadow-sm"
-              >
-                <Calendar className="w-3.5 h-3.5" />
-                <span>Book Visit</span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <RegionalStickyBar
+          pageTitle="Skin Care Near Tirur"
+          phonePrimary={phonePrimary}
+          whatsappUrl={whatsappUrl}
+          onBookClick={handleBookConsultation}
+        />
       )}
 
       {/* Breadcrumb Navigation */}
-      <div className="bg-white border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <div className="flex items-center flex-wrap gap-2 text-xs text-[#64748B]">
-            <button
-              onClick={() => setCurrentView('home')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Home
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <button
-              onClick={() => setCurrentView('treatments')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Treatments
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <button
-              onClick={() => setCurrentView('skin-hair-care')}
-              className="hover:text-[#303A88] transition-colors"
-            >
-              Skin &amp; Hair Care
-            </button>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-[#1E2559] font-semibold">
-              Homeopathic Treatment Near Tirur for Skin Problems
-            </span>
-          </div>
-        </div>
-      </div>
+      <RegionalBreadcrumb
+        categoryView="skin-hair-care"
+        categoryLabel="Skin & Hair Care"
+        pageTitle="Homeopathic Treatment Near Tirur for Skin Problems"
+      />
 
-      {/* HERO SECTION WITH DOCTOR PROFILE ON THE LEFT */}
-      <section className="relative bg-gradient-to-br from-[#1E2559] via-[#242C66] to-[#161B40] text-white py-12 lg:py-16 overflow-hidden">
-        {/* Subtle background ornamentation */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#CBD5E1_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+      {/* Hero Section with Doctor Profile on Left */}
+      <RegionalHeroSection
+        badgeIcon={<Sun className="w-3.5 h-3.5 text-[#86EFAC]" />}
+        badgeText="Regional Clinical Dermatology Guide • Tirur Patients"
+        title="Homeopathic Treatment Near Tirur for Skin Problems"
+        subtitle="Individualized clinical guidance for patients in Tirur and Malappuram experiencing acne, eczema, psoriasis, fungal ringworm, allergic rashes, and pigmentation disorders."
+        metrics={[
+          { label: 'Condition Focus', value: 'Dermatological Care' },
+          { label: 'Diagnostic Standard', value: 'Skin Triage & Tests' },
+          { label: 'Evidence Policy', value: 'Transparent Care' },
+        ]}
+        doctorSubtitle="BHMS | Dermatology & Chronic Skin Consultations"
+        doctorBio="10+ years of dedicated clinical experience assessing chronic skin conditions, barrier repair strategies, fungal differentiation, and evidence-grounded constitutional care in Malappuram district."
+        phonePrimary={phonePrimary}
+        phoneWhatsApp={phoneWhatsApp}
+        whatsappUrl={whatsappUrl}
+        onBookClick={handleBookConsultation}
+      />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            {/* DOCTOR PROFILE CARD ON THE LEFT (Desktop col-span-5) */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="bg-white text-[#1E2559] rounded-3xl p-6 sm:p-7 shadow-2xl border border-white/20 relative overflow-hidden">
-                {/* Decorative Accent Ribbon */}
-                <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#059669] via-[#10B981] to-[#303A88]" />
-
-                <div className="flex flex-col sm:flex-row lg:flex-col items-center gap-5 sm:gap-6 text-center sm:text-left lg:text-center">
-                  <div className="relative group">
-                    <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden ring-4 ring-[#EEF2FB] shadow-lg mx-auto bg-[#F1F5F9]">
-                      <img
-                        src="/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png"
-                        alt="Dr. Anjali Chandrasekhar, BHMS Doctor consulting for Skin Problems near Tirur"
-                        className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-300"
-                        loading="eager"
-                        onError={(e) => {
-                          e.currentTarget.src = '/images/dr-anjali-malayali-doctor.jpg';
-                        }}
-                      />
-                    </div>
-                    <span className="absolute bottom-1 right-2 bg-[#059669] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow border border-white">
-                      Verified BHMS
-                    </span>
-                  </div>
-
-                  <div className="flex-1">
-                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EEF2FB] text-[#303A88] text-xs font-bold mb-2">
-                      <Award className="w-3.5 h-3.5 text-[#303A88]" />
-                      <span>Board Reg. KA-HOM-15563</span>
-                    </div>
-                    <h3 className="font-editorial text-2xl font-bold text-[#1E2559]">
-                      Dr. Anjali Chandrasekhar
-                    </h3>
-                    <p className="text-xs font-semibold text-[#059669] mt-0.5">
-                      BHMS • MD (Hom.) • Classical Homeopathy &amp; Clinical Care
-                    </p>
-                    <p className="text-xs text-[#64748B] mt-2 leading-relaxed">
-                      Consulting doctor for skin concerns, acne, eczema, psoriasis, and rash assessments for patients in Tirur and Malappuram district.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-5 pt-5 border-t border-[#EEF2FB] space-y-2.5 text-xs text-[#475569]">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-[#059669] shrink-0" />
-                    <span>
-                      <strong>Main Clinic:</strong> Kuttippuram (15 mins from Tirur) • <strong>Branch:</strong> Puthanathani
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-[#059669] shrink-0" />
-                    <span>
-                      <strong>Consulting Hours:</strong> Mon – Sat: 9:30 AM – 6:30 PM
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#059669] shrink-0" />
-                    <span>
-                      Private, respectful evaluations &amp; prompt specialist referrals
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mt-6 grid grid-cols-2 gap-2.5">
-                  <a
-                    href={`tel:${phonePrimary}`}
-                    className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#EEF2FB] hover:bg-[#DCE6F8] text-[#1E2559] font-bold text-xs transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5 text-[#303A88]" />
-                    <span>Call Clinic</span>
-                  </a>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs transition-colors shadow-sm"
-                  >
-                    <MessageCircle className="w-3.5 h-3.5" />
-                    <span>WhatsApp</span>
-                  </a>
-                </div>
-
-                <button
-                  onClick={handleBookConsultation}
-                  className="w-full mt-2.5 py-3 px-4 rounded-xl bg-gradient-to-r from-[#059669] to-[#047857] hover:from-[#047857] hover:to-[#065f46] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2"
-                >
-                  <Calendar className="w-4 h-4" />
-                  <span>Book Skin Consultation</span>
-                </button>
-              </div>
+      {/* Important Key Takeaways (Executive Summary) */}
+      <section className="py-12 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-2.5 mb-6">
+            <div className="w-8 h-8 rounded-lg bg-[#059669]/10 flex items-center justify-center text-[#059669]">
+              <Sparkles className="w-4 h-4" />
             </div>
-
-            {/* HERO TEXT ON THE RIGHT (Desktop col-span-7) */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[#34D399] text-xs font-semibold tracking-wide">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Regional Clinical Care Guide • Tirur &amp; Malappuram</span>
-              </div>
-
-              <h1 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.15] text-white">
-                Homeopathic Treatment Near Tirur for Skin Problems
-              </h1>
-
-              <p className="text-sm sm:text-base text-white/85 leading-relaxed">
-                Healthy skin plays a vital role in physical comfort, emotional well-being, and daily confidence. However, conditions such as acne, eczema, psoriasis, fungal infections, allergic rashes, and pigmentation changes affect individuals across Tirur and nearby Malappuram communities.
-              </p>
-
-              <p className="text-xs sm:text-sm text-white/75 leading-relaxed">
-                This comprehensive clinical guide explains common skin disorders, diagnostic causes, everyday barrier habits, evidence-based dermatological modalities, and what patients near Tirur should know about homeopathic consultations and medical safety.
-              </p>
-
-              {/* Trust Badges */}
-              <div className="pt-2 grid grid-cols-2 sm:grid-cols-3 gap-3">
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
-                  <div className="text-white font-bold text-xs sm:text-sm flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-[#34D399]" />
-                    <span>Accurate Triage</span>
-                  </div>
-                  <p className="text-[11px] text-white/70 mt-0.5">
-                    Root cause investigation
-                  </p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15">
-                  <div className="text-white font-bold text-xs sm:text-sm flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-[#34D399]" />
-                    <span>Evidence-Based</span>
-                  </div>
-                  <p className="text-[11px] text-white/70 mt-0.5">
-                    Transparent guidance
-                  </p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15 col-span-2 sm:col-span-1">
-                  <div className="text-white font-bold text-xs sm:text-sm flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-[#34D399]" />
-                    <span>15 Mins to Tirur</span>
-                  </div>
-                  <p className="text-[11px] text-white/70 mt-0.5">
-                    Kuttippuram clinic hub
-                  </p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap gap-3">
-                <button
-                  onClick={handleBookConsultation}
-                  className="px-6 py-3 rounded-xl bg-[#059669] hover:bg-[#047857] text-white font-bold text-sm transition-all shadow-lg flex items-center gap-2 group"
-                >
-                  <span>Book In-Clinic / Online Appointment</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <a
-                  href="#common-conditions"
-                  className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border border-white/20 flex items-center gap-2"
-                >
-                  <BookOpen className="w-4 h-4 text-[#34D399]" />
-                  <span>Explore Skin Conditions</span>
-                </a>
-              </div>
+            <div>
+              <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+                EXECUTIVE SUMMARY
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1E2559]">
+                Important Key Takeaways for Patients in Tirur
+              </h2>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* KEY TAKEAWAYS SECTION (8 Points from user document) */}
-      <section className="py-12 bg-white border-b border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3 py-1 rounded-full border border-[#A7F3D0]">
-              Clinical Essentials
-            </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-              Key Takeaways: Skin Health &amp; Medical Assessment Near Tirur
-            </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-              Essential principles to keep in mind when experiencing persistent itching, rashes, acne, or skin changes.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {keyTakeaways.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-2xl p-5 border border-[#E2E8F0] hover:border-[#059669]/40 hover:shadow-md transition-all space-y-2.5 relative group"
+                className="rounded-xl p-5 bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#059669]/40 hover:shadow-xs transition-all flex flex-col justify-between"
               >
-                <div className="w-8 h-8 rounded-xl bg-[#059669] text-white flex items-center justify-center font-bold text-xs shadow-sm">
-                  {idx + 1}
+                <div>
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#065F46] uppercase tracking-wider mb-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" />
+                    <span>Point {idx + 1}</span>
+                  </div>
+                  <h3 className="font-bold text-[#1E2559] text-base mb-1.5">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
-                <h3 className="font-bold text-sm text-[#1E2559] group-hover:text-[#059669] transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-[#475569] leading-relaxed">
-                  {item.desc}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION: UNDERSTANDING COMMON SKIN PROBLEMS (6 Conditions) */}
-      <section id="common-conditions" className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1.5 rounded-full border border-[#D8E1F5]">
-              Dermatological Overview
+      {/* Section 1: Understanding Common Skin Problems (6 Conditions) */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              CLINICAL OVERVIEW
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Understanding Common Skin Problems
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2 leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               The skin acts as a protective barrier against environmental irritants, microorganisms, and physical damage. Changes in the skin&apos;s appearance or texture can indicate temporary irritation or a persistent condition requiring medical care.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {commonSkinProblems.map((cond, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E2E8F0] shadow-sm hover:shadow-lg hover:border-[#059669]/40 transition-all flex flex-col justify-between"
+                className="p-6 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#059669]/30 transition-all space-y-3"
               >
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-black text-[#059669]/30 font-editorial">
-                      {cond.number}
-                    </span>
-                    <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#ECFDF5] text-[#059669] border border-[#A7F3D0]">
-                      {cond.badge}
-                    </span>
-                  </div>
-
-                  <h3 className="font-editorial text-xl font-bold text-[#1E2559] leading-tight">
-                    {cond.title}
-                  </h3>
-
-                  <p className="text-xs sm:text-sm text-[#334155] leading-relaxed">
-                    {cond.desc}
-                  </p>
-
-                  <div className="pt-3 border-t border-[#F1F5F9] space-y-2">
-                    <div className="text-xs text-[#475569]">
-                      <span className="font-bold text-[#1E2559]">Contributing Factors: </span>
-                      <span>{cond.factors}</span>
-                    </div>
-                  </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-[#059669] uppercase tracking-wider">
+                    {cond.number} • {cond.badge}
+                  </span>
                 </div>
-
-                <div className="mt-5 pt-3 border-t border-[#F1F5F9]">
-                  <div className="bg-[#F8FAFD] rounded-xl p-3 border border-[#E2E8F0] text-[11px] text-[#065f46]">
-                    <span className="font-bold">Medical Approach: </span>
-                    <span>{cond.treatmentFocus}</span>
-                  </div>
+                <h3 className="font-bold text-[#1E2559] text-lg">
+                  {cond.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                  {cond.desc}
+                </p>
+                <div className="pt-2 border-t border-[#EEF2FB] space-y-1.5 text-xs text-[#475569]">
+                  <p><strong>Contributing Factors:</strong> {cond.factors}</p>
+                  <p className="text-[#065F46] font-medium"><strong>Medical Approach:</strong> {cond.treatmentFocus}</p>
                 </div>
               </div>
             ))}
@@ -739,180 +550,119 @@ export const SkinTirurPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: HOMEOPATHIC TREATMENT NEAR TIRUR: WHAT SHOULD YOU KNOW? */}
-      <section className="py-14 bg-white border-y border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="bg-gradient-to-br from-[#F8FAFD] to-[#EEF2FB] rounded-3xl p-8 sm:p-10 border border-[#D8E1F5] relative overflow-hidden">
-            <div className="max-w-4xl mx-auto space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#303A88] text-white text-xs font-bold">
-                <Info className="w-3.5 h-3.5 text-[#34D399]" />
-                <span>Transparent Scientific Disclosure</span>
-              </div>
+      {/* Section 2: Homeopathic Treatment Near Tirur: What Should You Know? */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              TREATMENT TRANSPARENCY
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Homeopathic Treatment Near Tirur for Skin Problems: What Should You Know?
+            </h2>
+          </div>
 
-              <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559]">
-                Homeopathic Treatment Near Tirur for Skin Problems: What Should You Know?
-              </h2>
+          <div className="prose max-w-none text-[#475569] space-y-4 text-sm sm:text-base leading-relaxed">
+            <p>
+              People searching for <strong>Homeopathic Skin Treatment in Tirur</strong> often want to understand how homeopathy is used during clinical consultations for chronic or recurring skin complaints.
+            </p>
+            <p>
+              Homeopathy is a complementary healthcare system using highly diluted substances. Practitioners assess individual complaints, general physical symptoms, emotional state, and personal lifestyle factors.
+            </p>
 
-              <div className="prose prose-slate max-w-none text-xs sm:text-sm text-[#334155] leading-relaxed space-y-4">
-                <p>
-                  People searching for <strong>Homeopathic Skin Treatment in Tirur</strong> often want to understand how homeopathy is used during clinical consultations for chronic or recurring skin complaints.
-                </p>
-                <p>
-                  Homeopathy is a complementary healthcare system using highly diluted substances. Practitioners assess individual complaints, general physical symptoms, emotional state, and personal lifestyle factors.
-                </p>
-                <p className="bg-[#FEF2F2] border-l-4 border-[#EF4444] p-4 rounded-r-xl text-[#991B1B] font-medium">
-                  <strong>Important Scientific Reality:</strong> Reliable, high-quality scientific evidence has not established homeopathy as an effective treatment for common skin diseases—including acne vulgaris, eczema (atopic dermatitis), plaque psoriasis, fungal infections (tinea), or severe contact dermatitis. Homeopathic remedies have not been demonstrated to reliably cure underlying pathophysiological causes or prevent scarring and secondary bacterial cellulitis.
-                </p>
-                <p>
-                  Individuals considering skin homeopathy consultations near Tirur should understand these clinical boundaries. Homeopathic remedies should never substitute for an accurate dermatological diagnosis, prescribed prescription medication, or recommended laboratory investigations (such as skin scrapings or biopsy).
-                </p>
-                <p>
-                  If you consult a homeopathic practitioner, always disclose all conventional medications, prescription steroid creams, over-the-counter ointments, and supplements you are using. Never abruptly discontinue prescribed treatments without discussing the decision with your primary doctor or dermatologist.
-                </p>
-              </div>
-
-              <div className="pt-2 flex flex-wrap gap-4 items-center">
-                <button
-                  onClick={handleBookConsultation}
-                  className="px-6 py-3 rounded-xl bg-[#1E2559] hover:bg-[#2A3478] text-white font-bold text-xs uppercase tracking-wider transition-all shadow flex items-center gap-2"
-                >
-                  <Calendar className="w-4 h-4 text-[#34D399]" />
-                  <span>Schedule Consultation with Dr. Anjali</span>
-                </button>
-                <a
-                  href={`tel:${phonePrimary}`}
-                  className="inline-flex items-center gap-2 text-xs font-bold text-[#303A88] hover:underline"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call Tirur Patient Helpline: {phonePrimary}</span>
-                </a>
+            {/* Scientific Evidence Transparency Box */}
+            <div className="p-6 rounded-2xl bg-white border-2 border-[#303A88]/30 shadow-xs">
+              <div className="flex items-start gap-3">
+                <ShieldCheck className="w-6 h-6 text-[#303A88] shrink-0 mt-0.5" />
+                <div className="space-y-2">
+                  <h3 className="font-bold text-[#1E2559] text-base sm:text-lg">
+                    Distinguishing Consultation from Scientific Evidence
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                    It is important to distinguish between the way a treatment is described and the scientific evidence supporting its effectiveness. <strong>Reliable scientific evidence has not established homeopathy as an effective treatment for acne, eczema, psoriasis, fungal infections, or other common skin diseases.</strong>
+                  </p>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                    Homeopathy has also not been demonstrated to reliably treat the underlying causes of these conditions or prevent complications such as scarring and infection. Homeopathic remedies should not replace a medical diagnosis, prescribed medication, or recommended investigations.
+                  </p>
+                </div>
               </div>
             </div>
+
+            <p>
+              If you choose to consult a homeopathic practitioner, disclose all medicines, creams, supplements, and remedies you use. Do not stop prescribed treatment or delay a medical assessment without discussing the decision with the clinician responsible for your care.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* SECTION: COMMON CAUSES OF SKIN PROBLEMS */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3.5 py-1.5 rounded-full border border-[#A7F3D0]">
-              Pathophysiology &amp; Triggers
+      {/* Section 3: Common Causes of Skin Problems (6 Causes) */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+              ETIOLOGY &amp; TRIGGERS
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Common Causes of Skin Problems
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               Skin symptoms can develop for diverse reasons, and the same symptom—such as itching or redness—may arise from completely different underlying etiologies.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#EEF2FB] text-[#303A88] flex items-center justify-center font-bold">
-                <AlertTriangle className="w-5 h-5 text-[#303A88]" />
+          <div className="space-y-4 pt-2">
+            {commonCauses.map((cause, idx) => (
+              <div
+                key={idx}
+                className="p-5 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#059669]/30 transition-all flex items-start gap-4"
+              >
+                <div className="w-8 h-8 rounded-xl bg-[#059669] text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                  {idx + 1}
+                </div>
+                <div className="space-y-1">
+                  <h3 className="font-bold text-[#1E2559] text-base">
+                    {cause.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
+                    {cause.desc}
+                  </p>
+                </div>
               </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Allergies and Irritants
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Contact with soaps, cosmetics, detergents, metals (such as nickel), or industrial chemicals can irritate the epidermal barrier or trigger a delayed hypersensitivity response. Identifying and avoiding the offending agent is fundamental to recovery.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#ECFDF5] text-[#059669] flex items-center justify-center font-bold">
-                <Activity className="w-5 h-5 text-[#059669]" />
-              </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Hormonal Changes
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Androgenic surges during puberty, menstruation, pregnancy, or PCOS directly stimulate sebaceous gland hypertrophy and excess sebum production, leading to acne. Thyroid disorders can cause severe skin xerosis (dryness).
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#EEF2FB] text-[#303A88] flex items-center justify-center font-bold">
-                <ShieldCheck className="w-5 h-5 text-[#303A88]" />
-              </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Genetics &amp; Immune System Activity
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Atopic dermatitis and psoriasis have strong hereditary components and dysregulated immune pathways. Psoriasis involves accelerated T-cell mediated keratinocyte turnover, requiring long-term structured management.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#FEF2F2] text-[#DC2626] flex items-center justify-center font-bold">
-                <AlertCircle className="w-5 h-5 text-[#DC2626]" />
-              </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Infections (Fungal, Bacterial &amp; Viral)
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Pathogens such as dermatophytes (ringworm), Staphylococcus/Streptococcus (impetigo, boils), and herpesviruses cause distinct eruptions. Because treatment strategies differ radically, correct microscopic or clinical identification is mandatory.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#FFFBEB] text-[#D97706] flex items-center justify-center font-bold">
-                <Sun className="w-5 h-5 text-[#D97706]" />
-              </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Environmental Factors &amp; Climate
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Intense sun exposure, high humidity, excessive perspiration, and environmental pollution in coastal Kerala provoke fungal colonization, prickly heat, and post-inflammatory melasma. Protective habits significantly lower symptom severity.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E2E8F0] shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-[#F0FDF4] text-[#16A34A] flex items-center justify-center font-bold">
-                <Heart className="w-5 h-5 text-[#16A34A]" />
-              </div>
-              <h3 className="font-bold text-base text-[#1E2559]">
-                Stress &amp; Neuro-Immunological Axes
-              </h3>
-              <p className="text-xs text-[#475569] leading-relaxed">
-                Chronic psychological stress activates the hypothalamic-pituitary-adrenal (HPA) axis, elevating cortisol and triggering neurogenic skin inflammation that intensifies eczema flares and inflammatory acne outbreaks.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION: FINDING A SKIN DOCTOR IN TIRUR (6 FACTORS) */}
-      <section className="py-14 bg-white border-y border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1.5 rounded-full border border-[#D8E1F5]">
-              Doctor Selection Criteria
+      {/* Section 4: Finding a Skin Doctor in Tirur (6 Provider Factors) */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              DOCTOR SELECTION CRITERIA
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Finding a Skin Doctor in Tirur
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2 leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               Choosing an appropriate healthcare professional is vital when dealing with persistent skin symptoms. People looking for a Skin Doctor in Tirur should prioritize relevant qualifications, diagnostic precision, and transparent explanations.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
             {providerFactors.map((factor, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-2xl p-6 border border-[#E2E8F0] hover:border-[#303A88]/40 transition-all space-y-3"
+                className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#D8E1F5] hover:border-[#303A88]/40 transition-all space-y-3"
               >
                 <div className="flex items-center gap-3">
-                  <span className="w-7 h-7 rounded-lg bg-[#303A88] text-white flex items-center justify-center text-xs font-bold">
+                  <span className="w-8 h-8 rounded-xl bg-[#303A88] text-white flex items-center justify-center font-bold text-xs">
                     {factor.number}
                   </span>
-                  <h3 className="font-bold text-sm sm:text-base text-[#1E2559]">
+                  <h3 className="font-bold text-base text-[#1E2559]">
                     {factor.title}
                   </h3>
                 </div>
-                <p className="text-xs text-[#475569] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                   {factor.desc}
                 </p>
               </div>
@@ -921,36 +671,36 @@ export const SkinTirurPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: HOMEOPATHY CLINIC FOR SKIN PROBLEMS IN TIRUR (7 EVALUATION QUESTIONS) */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3.5 py-1.5 rounded-full border border-[#A7F3D0]">
-              Patient Checklist
+      {/* Section 5: Homeopathy Clinic for Skin Problems in Tirur (7 Evaluation Questions) */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+              PATIENT CHECKLIST
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Homeopathy Clinic for Skin Problems in Tirur
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2 leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               When researching a Homeopathy Clinic for Skin Problems in Tirur, asking practical questions about medical registration, evidence, and referral policies ensures you receive responsible, safe care.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 max-w-5xl mx-auto">
+          <div className="space-y-3.5 pt-2">
             {evaluationQuestions.map((item, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-[#E2E8F0] shadow-sm space-y-2 hover:border-[#059669]/40 transition-colors"
+                className="p-5 rounded-2xl bg-white border border-[#D8E1F5] space-y-2 hover:border-[#059669]/40 transition-colors"
               >
                 <div className="flex items-start gap-3">
                   <span className="w-6 h-6 rounded-full bg-[#ECFDF5] text-[#059669] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 border border-[#A7F3D0]">
                     Q{idx + 1}
                   </span>
                   <div>
-                    <h3 className="font-bold text-sm text-[#1E2559]">
+                    <h3 className="font-bold text-sm sm:text-base text-[#1E2559]">
                       {item.q}
                     </h3>
-                    <p className="text-xs text-[#64748B] mt-1.5 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#64748B] mt-1 leading-relaxed">
                       <span className="font-semibold text-[#059669]">Why this matters: </span>
                       {item.why}
                     </p>
@@ -959,42 +709,36 @@ export const SkinTirurPage: React.FC = () => {
               </div>
             ))}
           </div>
-
-          <div className="mt-8 text-center">
-            <div className="inline-block bg-[#EEF2FB] rounded-2xl p-4 text-xs text-[#303A88] max-w-2xl border border-[#D8E1F5]">
-              <strong>Responsible Medical Guidance:</strong> Dr. Anjali Chandrasekhar maintains full professional registration (KA-HOM-15563) and transparently upholds medical referral pathways when dermatological conditions require advanced diagnostic testing or pharmaceutical care.
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* SECTION: EVIDENCE-BASED TREATMENT OPTIONS FOR SKIN PROBLEMS (5 Modalities) */}
-      <section className="py-14 bg-white border-y border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1.5 rounded-full border border-[#D8E1F5]">
-              Therapeutic Science
+      {/* Section 6: Evidence-Based Treatment Options for Skin Problems (5 Modalities) */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              THERAPEUTIC SCIENCE
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Evidence-Based Treatment Options for Skin Problems
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               The appropriate treatment depends on the precise clinical diagnosis, anatomical location, severity, age, and individual medical history.
             </p>
           </div>
 
-          <div className="space-y-6 max-w-5xl mx-auto">
+          <div className="space-y-5 pt-2">
             {evidenceBasedOptions.map((opt, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-2xl p-6 sm:p-7 border border-[#E2E8F0] shadow-sm hover:border-[#303A88]/40 transition-all"
+                className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#D8E1F5] shadow-2xs space-y-3"
               >
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#E2E8F0] pb-3 mb-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#D8E1F5] pb-3">
                   <div className="flex items-center gap-3">
                     <span className="w-8 h-8 rounded-xl bg-[#1E2559] text-white flex items-center justify-center font-bold text-xs">
                       {opt.step}
                     </span>
-                    <h3 className="font-editorial text-lg sm:text-xl font-bold text-[#1E2559]">
+                    <h3 className="font-bold text-lg text-[#1E2559]">
                       {opt.title}
                     </h3>
                   </div>
@@ -1003,15 +747,15 @@ export const SkinTirurPage: React.FC = () => {
                   </span>
                 </div>
 
-                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-[#475569] leading-relaxed">
                   {opt.desc}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2">
                   {opt.points.map((pt, pIdx) => (
                     <div
                       key={pIdx}
-                      className="bg-white rounded-xl p-3 border border-[#E2E8F0] text-xs text-[#334155] flex items-start gap-2"
+                      className="p-3 rounded-xl bg-white border border-[#D8E1F5] text-xs text-[#334155] flex items-start gap-2"
                     >
                       <Check className="w-3.5 h-3.5 text-[#059669] shrink-0 mt-0.5" />
                       <span>{pt}</span>
@@ -1024,68 +768,29 @@ export const SkinTirurPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: PREPARING FOR A SKIN PROBLEMS CONSULTATION IN TIRUR */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3.5 py-1.5 rounded-full border border-[#A7F3D0]">
-              Patient Preparation Checklist
+      {/* Section 7: Everyday Habits That Support Skin Health (6 Habits) */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+              SKIN BARRIER WELLNESS
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
-              Preparing for a Skin Problems Consultation in Tirur
-            </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-              A dermatological consultation is significantly more productive when you organize details about your symptoms and past treatments prior to your visit.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {preparationPoints.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={idx}
-                  className="bg-white rounded-2xl p-5 border border-[#E2E8F0] shadow-sm hover:shadow-md transition-shadow space-y-2.5"
-                >
-                  <div className="w-9 h-9 rounded-xl bg-[#ECFDF5] text-[#059669] flex items-center justify-center">
-                    <Icon className="w-4 h-4" />
-                  </div>
-                  <h3 className="font-bold text-sm text-[#1E2559]">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-[#475569] leading-relaxed">
-                    {item.detail}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION: EVERYDAY HABITS THAT SUPPORT SKIN HEALTH (6 Habits) */}
-      <section className="py-14 bg-white border-y border-[#E2E8F0]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#303A88] bg-[#EEF2FB] px-3.5 py-1.5 rounded-full border border-[#D8E1F5]">
-              Skin Barrier Wellness
-            </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Everyday Habits That Support Skin Health
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               Good skincare habits support the stratum corneum barrier and reduce irritation, although they cannot substitute for medical therapy for an active disease.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             {supportiveHabits.map((habit, idx) => (
               <div
                 key={idx}
-                className="bg-[#F8FAFD] rounded-2xl p-6 border border-[#E2E8F0] hover:border-[#059669]/40 transition-colors space-y-2.5"
+                className="p-5 rounded-2xl bg-white border border-[#D8E1F5] hover:border-[#059669]/40 transition-colors space-y-2"
               >
                 <div className="flex items-center gap-2">
-                  <span className="w-6 h-6 rounded-full bg-[#059669] text-white flex items-center justify-center text-xs font-bold">
+                  <span className="w-5 h-5 rounded-full bg-[#059669] text-white flex items-center justify-center text-xs font-bold shrink-0">
                     ✓
                   </span>
                   <h3 className="font-bold text-sm sm:text-base text-[#1E2559]">
@@ -1101,133 +806,126 @@ export const SkinTirurPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: WHEN TO SEEK MEDICAL ATTENTION & EMERGENCY RED FLAGS */}
-      <section className="py-14 bg-[#F8FAFD]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10">
-              <span className="text-xs uppercase tracking-wider font-bold text-[#DC2626] bg-[#FEF2F2] px-3.5 py-1.5 rounded-full border border-[#FECACA]">
-                Clinical Safety &amp; Triage
-              </span>
-              <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
-                When Should You Seek Medical Attention?
-              </h2>
-              <p className="text-xs sm:text-sm text-[#64748B] mt-2">
-                Understand the difference between non-urgent outpatient evaluations and symptoms requiring prompt or emergency care.
-              </p>
-            </div>
+      {/* Section 8: Preparing for a Skin Problems Consultation in Tirur */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#303A88] block">
+              PATIENT PREPARATION
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              Preparing for a Skin Problems Consultation in Tirur
+            </h2>
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
+              A dermatological consultation is significantly more productive when you organize details about your symptoms and past treatments prior to your visit.
+            </p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Urgent Doctor Evaluation */}
-              <div className="bg-white rounded-2xl p-6 border-2 border-[#F59E0B]/30 shadow-sm space-y-4">
-                <div className="flex items-center gap-2.5 text-[#D97706]">
-                  <AlertTriangle className="w-5 h-5 shrink-0" />
-                  <h3 className="font-bold text-base text-[#1E2559]">
-                    Prompt Medical Care Advised
-                  </h3>
-                </div>
-                <p className="text-xs text-[#475569]">
-                  Schedule a clinical appointment promptly if you experience:
-                </p>
-                <ul className="space-y-2.5 text-xs text-[#334155]">
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
-                    <span>A rapidly spreading rash accompanied by low or high-grade fever.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
-                    <span>Increasing localized redness, warmth, swelling, tenderness, or purulent pus.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
-                    <span>A painful, blistering, or vesicular rash located near the eyes.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
-                    <span>A new, irregular, or changing skin mole/lesion that bleeds or fails to heal.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-1.5 shrink-0" />
-                    <span>A widespread eruption developing shortly after starting a new oral prescription.</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Emergency Hospital Attention */}
-              <div className="bg-white rounded-2xl p-6 border-2 border-[#EF4444]/40 shadow-sm space-y-4">
-                <div className="flex items-center gap-2.5 text-[#DC2626]">
-                  <ShieldAlert className="w-5 h-5 shrink-0" />
-                  <h3 className="font-bold text-base text-[#1E2559]">
-                    Emergency Medical Red Flags
-                  </h3>
-                </div>
-                <p className="text-xs text-[#475569]">
-                  Go to the nearest emergency department or call emergency medical assistance immediately for:
-                </p>
-                <ul className="space-y-2.5 text-xs text-[#334155]">
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] mt-1.5 shrink-0" />
-                    <span>Skin rash accompanied by difficulty breathing, wheezing, or throat tightness.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] mt-1.5 shrink-0" />
-                    <span>Sudden swelling of the face, eyelids, lips, tongue, or pharynx (angioedema).</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] mt-1.5 shrink-0" />
-                    <span>Dizziness, severe lightheadedness, confusion, or collapse/fainting (anaphylaxis).</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] mt-1.5 shrink-0" />
-                    <span>Severe widespread skin detachment, epidermal sloughing, or mucosal erosion (Stevens-Johnson syndrome / TEN).</span>
-                  </li>
-                </ul>
-              </div>
+          <div className="p-6 rounded-2xl bg-[#F8FAFD] border border-[#D8E1F5]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-[#334155]">
+              {preparationPoints.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={idx} className="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-[#D8E1F5]">
+                    <Icon className="w-4 h-4 text-[#059669] shrink-0 mt-0.5" />
+                    <div>
+                      <strong className="text-[#1E2559] block">{item.title}:</strong>
+                      <span className="text-[#64748B] text-xs">{item.detail}</span>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION: FREQUENTLY ASKED QUESTIONS (12 Interactive FAQs) */}
-      <section className="py-14 bg-white border-t border-[#E2E8F0]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3.5 py-1.5 rounded-full border border-[#A7F3D0]">
-              Patient Inquiries
+      {/* Section 9: When Should You Seek Medical Attention? */}
+      <section className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#DC2626] block">
+              CLINICAL TRIAGE &amp; SAFETY
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
+              When Should You Seek Medical Attention?
+            </h2>
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
+              Understand the difference between non-urgent outpatient evaluations and symptoms requiring prompt or emergency care.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-2">
+            <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200 text-amber-950 space-y-3">
+              <h3 className="font-bold text-base flex items-center gap-2 text-amber-900">
+                <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
+                Prompt Medical Care Advised
+              </h3>
+              <ul className="space-y-2 text-xs sm:text-sm text-amber-900/90">
+                <li>• A rapidly spreading rash accompanied by low or high-grade fever.</li>
+                <li>• Increasing localized redness, warmth, swelling, tenderness, or purulent pus.</li>
+                <li>• A painful, blistering, or vesicular rash located near the eyes.</li>
+                <li>• A new, irregular, or changing skin mole/lesion that bleeds or fails to heal.</li>
+                <li>• A widespread eruption developing shortly after starting a new oral prescription.</li>
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-rose-50 border border-rose-200 text-rose-950 space-y-3">
+              <h3 className="font-bold text-base flex items-center gap-2 text-rose-900">
+                <ShieldAlert className="w-5 h-5 text-rose-600 shrink-0" />
+                Emergency Medical Red Flags
+              </h3>
+              <ul className="space-y-2 text-xs sm:text-sm text-rose-900/90">
+                <li>• Skin rash accompanied by difficulty breathing, wheezing, or throat tightness.</li>
+                <li>• Sudden swelling of the face, eyelids, lips, tongue, or pharynx (angioedema).</li>
+                <li>• Dizziness, severe lightheadedness, confusion, or collapse/fainting (anaphylaxis).</li>
+                <li>• Severe widespread skin detachment, epidermal sloughing, or mucosal erosion (Stevens-Johnson syndrome / TEN).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 10: Frequently Asked Questions (12 Interactive FAQs) */}
+      <section className="py-14 sm:py-16 bg-white border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+              PATIENT INQUIRIES
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Frequently Asked Questions: Skin Treatment Near Tirur
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               Common questions from patients in Tirur and Malappuram regarding skin consultations, diagnostic testing, and medical evidence.
             </p>
           </div>
 
-          <div className="space-y-3.5">
+          <div className="space-y-3.5 pt-2">
             {faqs.map((faq, idx) => {
               const isOpen = activeFaq === idx;
               return (
                 <div
                   key={idx}
-                  className="bg-[#F8FAFD] rounded-2xl border border-[#E2E8F0] overflow-hidden transition-all duration-200"
+                  className="rounded-2xl border border-[#D8E1F5] bg-[#F8FAFD] overflow-hidden shadow-2xs"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}
-                    className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-semibold text-sm text-[#1E2559] hover:text-[#059669] transition-colors"
+                    className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-[#1E2559] hover:text-[#059669] transition-colors"
                   >
-                    <span className="flex items-center gap-2.5">
-                      <HelpCircle className="w-4 h-4 text-[#059669] shrink-0" />
+                    <div className="flex items-center gap-3">
+                      <HelpCircle className="w-5 h-5 text-[#059669] shrink-0" />
                       <span>{faq.q}</span>
-                    </span>
+                    </div>
                     <ChevronDown
-                      className={`w-4 h-4 text-[#64748B] shrink-0 transition-transform duration-200 ${
+                      className={`w-5 h-5 text-[#64748B] shrink-0 transition-transform duration-200 ${
                         isOpen ? 'rotate-180 text-[#059669]' : ''
                       }`}
                     />
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-[#475569] leading-relaxed border-t border-[#EEF2FB] bg-white">
+                    <div className="px-5 pb-6 sm:px-6 text-sm text-[#475569] leading-relaxed border-t border-[#EEF2FB] pt-4 bg-white">
                       {faq.a}
                     </div>
                   )}
@@ -1238,58 +936,28 @@ export const SkinTirurPage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION: CONCLUSION & REGIONAL CLINIC ACCESSIBILITY */}
-      <section className="py-12 bg-[#F8FAFD] border-t border-[#E2E8F0]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="bg-white rounded-3xl p-8 border border-[#E2E8F0] shadow-sm text-center space-y-4">
-            <h2 className="font-editorial text-2xl font-bold text-[#1E2559]">
-              Accessible Clinical Care for Patients in Tirur
-            </h2>
-            <p className="text-xs sm:text-sm text-[#475569] leading-relaxed max-w-3xl mx-auto">
-              Taking persistent skin symptoms seriously and choosing care based on reliable medical evidence can help you manage your condition and protect your long-term skin health. Whether you are researching a <strong>Skin Doctor in Tirur</strong>, exploring <strong>Skin Treatment in Tirur</strong>, or comparing services at a <strong>Homeopathy Clinic for Skin Problems in Tirur</strong>, prioritize accurate diagnosis, transparent medical advice, and appropriate follow-up.
-            </p>
-            <div className="pt-2 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-[#303A88]">
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#059669]" />
-                Kuttippuram (15–20 mins via Tirur-Kuttippuram Rd)
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-[#059669]" />
-                Puthanathani Branch Clinic
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1.5">
-                <Phone className="w-4 h-4 text-[#059669]" />
-                Direct Helpline: {phonePrimary}
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* APPOINTMENT BOOKING ENGINE SECTION */}
-      <section id="booking-section" className="py-14 bg-white border-t border-[#E2E8F0]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <span className="text-xs uppercase tracking-wider font-bold text-[#059669] bg-[#ECFDF5] px-3.5 py-1.5 rounded-full border border-[#A7F3D0]">
-              Direct Appointment Scheduling
+      {/* Appointment Booking Engine */}
+      <section id="booking-section" className="py-14 sm:py-16 bg-[#F8FAFD] border-b border-[#D8E1F5]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-xs uppercase tracking-widest font-bold text-[#059669] block">
+              DIRECT APPOINTMENT SCHEDULING
             </span>
-            <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-[#1E2559] mt-3">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1E2559] mt-1">
               Book Your Skin Consultation Near Tirur
             </h2>
-            <p className="text-xs sm:text-sm text-[#64748B] mt-2">
+            <p className="text-xs sm:text-sm text-[#64748B] mt-1">
               Select in-clinic appointment at our Kuttippuram center or schedule a secure online video consultation with Dr. Anjali Chandrasekhar.
             </p>
           </div>
 
-          <div className="bg-[#F8FAFD] rounded-3xl p-6 sm:p-8 border border-[#D8E1F5] shadow-sm">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#D8E1F5] shadow-sm">
             <AppointmentBookingEngine />
           </div>
         </div>
       </section>
 
-      {/* REGIONAL RELATED GUIDES MODULE */}
+      {/* Regional Related Guides */}
       <RegionalRelatedGuides currentGuideKey="skin-treatment-tirur" />
     </div>
   );

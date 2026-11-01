@@ -30,6 +30,8 @@ import {
   X,
   Check,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const WomensHealthCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1234,6 +1236,9 @@ export const WomensHealthCarePage: React.FC = () => {
         </div>
       )}
 
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="womens-health-care" />
     </div>
   );
 };
+

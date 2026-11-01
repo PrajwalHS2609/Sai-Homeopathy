@@ -31,6 +31,8 @@ import {
   Heart,
   Feather,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const AnorectalVascularCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1228,6 +1230,10 @@ export const AnorectalVascularCarePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="anorectal-vascular-care" />
     </div>
   );
 };
+

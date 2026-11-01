@@ -31,6 +31,8 @@ import {
   Sparkles,
   BookOpen,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const NeurologicalCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1232,6 +1234,10 @@ export const NeurologicalCarePage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="neurological-care" />
     </div>
   );
 };
+

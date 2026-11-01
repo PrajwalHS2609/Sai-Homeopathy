@@ -34,6 +34,8 @@ import {
   Layers,
   Compass,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const OphthalmicEyeCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1176,6 +1178,9 @@ export const OphthalmicEyeCarePage: React.FC = () => {
         </div>
       )}
 
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="ophthalmic-eye-care" />
     </div>
   );
 };
+

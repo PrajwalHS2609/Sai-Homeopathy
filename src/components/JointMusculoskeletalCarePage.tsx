@@ -32,6 +32,8 @@ import {
   RefreshCw,
   Compass,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const JointMusculoskeletalCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1175,6 +1177,9 @@ export const JointMusculoskeletalCarePage: React.FC = () => {
         </div>
       )}
 
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="joint-musculoskeletal-care" />
     </div>
   );
 };
+

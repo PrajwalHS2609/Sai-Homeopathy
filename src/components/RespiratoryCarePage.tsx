@@ -31,6 +31,8 @@ import {
   ShieldAlert,
   Zap,
 } from 'lucide-react';
+import { RegionalRelatedGuides } from './RegionalRelatedGuides';
+
 
 export const RespiratoryCarePage: React.FC = () => {
   const { settings, setCurrentView, navigateToBookingWithReason } = useClinic();
@@ -1309,6 +1311,9 @@ export const RespiratoryCarePage: React.FC = () => {
         </div>
       )}
 
+      {/* Regional Related Guides */}
+      <RegionalRelatedGuides currentGuideKey="respiratory-care" />
     </div>
   );
 };
+
