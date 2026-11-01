@@ -35,7 +35,7 @@ export const CLINIC_SOCIAL_LINKS = {
 };
 
 export const INITIAL_SETTINGS: ClinicSettings = {
-  clinicName: 'Anjali Homoeo Clinic',
+  clinicName: 'Anjali Homeoclinic',
   tagline: 'Gentle Care. Personalized Treatment.',
   practitionerName: 'Dr. Anjali Chandrasekhar',
   practitionerQualification: 'BHMS (Bachelor of Homeopathic Medicine and Surgery)',

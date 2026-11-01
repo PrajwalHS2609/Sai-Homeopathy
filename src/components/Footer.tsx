@@ -574,6 +574,15 @@ export const Footer: React.FC = () => {
             </button>
             <span>·</span>
             <a
+              href="/robots.txt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Robots.txt
+            </a>
+            <span>·</span>
+            <a
               href="/sitemap.xml"
               target="_blank"
               rel="noopener noreferrer"
@@ -581,6 +590,7 @@ export const Footer: React.FC = () => {
             >
               XML Sitemap
             </a>
+
           </div>
         </div>
 

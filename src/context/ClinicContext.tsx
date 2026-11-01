@@ -914,7 +914,7 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       'managing-sensory-overload-restful-sleep',
     ]);
 
-    const saved = localStorage.getItem('sai_clinic_blogs');
+    const saved = localStorage.getItem('anjali_homeoclinic_blogs') || localStorage.getItem('sai_clinic_blogs');
     if (saved) {
       try {
         let parsed: BlogPost[] = JSON.parse(saved);
@@ -1072,7 +1072,8 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.unshift(nasalPolypsPost);
           }
         }
-        localStorage.setItem('sai_clinic_blogs', JSON.stringify(parsed));
+        localStorage.setItem('anjali_homeoclinic_blogs', JSON.stringify(parsed));
+        localStorage.removeItem('sai_clinic_blogs');
         return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
       } catch {
         return INITIAL_BLOG_POSTS;
@@ -1626,85 +1627,106 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   // Settings
   const [settings, setSettings] = useState<ClinicSettings>(() => {
-    const saved = localStorage.getItem('sai_clinic_settings');
+    // Purge legacy sai keys from localStorage immediately on startup
+    if (typeof window !== 'undefined') {
+      [
+        'sai_clinic_settings',
+        'sai_clinic_practitioners',
+        'sai_clinic_products',
+        'sai_clinic_appointments',
+        'sai_clinic_cart',
+        'sai_clinic_orders',
+        'sai_clinic_blogs',
+      ].forEach((key) => {
+        try {
+          localStorage.removeItem(key);
+        } catch {}
+      });
+    }
+
+    const saved = localStorage.getItem('anjali_homeoclinic_settings') || localStorage.getItem('sai_clinic_settings');
     if (saved) {
-      const parsed = JSON.parse(saved);
-      if (parsed.practitionerName && parsed.practitionerName.includes('Ananya')) {
-        parsed.practitionerName = 'Dr. Anjali Chandrasekhar';
-      }
-      if (!parsed.clinicName || parsed.clinicName.toLowerCase().includes('sai')) {
-        parsed.clinicName = 'Anjali Homoeo Clinic';
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.practitionerName && parsed.practitionerName.includes('Ananya')) {
+          parsed.practitionerName = 'Dr. Anjali Chandrasekhar';
+        }
+        parsed.clinicName = 'Anjali Homeoclinic';
         parsed.city = 'Kuttippuram & Puthanathani';
         parsed.state = 'Keralam';
         parsed.addressLine1 = 'Tirur - Kuttippuram Rd, Kavumopuram';
         parsed.addressLine2 = 'Kuttippuram';
         parsed.pincode = '679571 / 676552';
+        parsed.email = 'anjalihomoeoclinic@gmail.com';
+        parsed.whatsappNumber = '+918921180408';
+        parsed.registrationNumber = 'KA-HOM-15563';
+        parsed.branches = INITIAL_SETTINGS.branches;
+        parsed.instagramUrl = INITIAL_SETTINGS.instagramUrl;
+        parsed.facebookUrl = INITIAL_SETTINGS.facebookUrl;
+        parsed.practoUrl = INITIAL_SETTINGS.practoUrl;
+        parsed.justdialUrl = INITIAL_SETTINGS.justdialUrl;
+        localStorage.setItem('anjali_homeoclinic_settings', JSON.stringify(parsed));
+        return parsed;
+      } catch {
+        return INITIAL_SETTINGS;
       }
-      // Ensure email is always updated to anjalihomoeoclinic@gmail.com
-      parsed.email = 'anjalihomoeoclinic@gmail.com';
-      // Ensure WhatsApp number is always updated to 89211 80408
-      parsed.whatsappNumber = '+918921180408';
-      parsed.registrationNumber = 'KA-HOM-15563';
-      parsed.branches = INITIAL_SETTINGS.branches;
-      parsed.instagramUrl = INITIAL_SETTINGS.instagramUrl;
-      parsed.facebookUrl = INITIAL_SETTINGS.facebookUrl;
-      parsed.practoUrl = INITIAL_SETTINGS.practoUrl;
-      parsed.justdialUrl = INITIAL_SETTINGS.justdialUrl;
-      localStorage.setItem('sai_clinic_settings', JSON.stringify(parsed));
-      return parsed;
     }
     return INITIAL_SETTINGS;
   });
 
   // Practitioners
   const [practitioners, setPractitioners] = useState<Practitioner[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_practitioners');
+    const saved = localStorage.getItem('anjali_homeoclinic_practitioners') || localStorage.getItem('sai_clinic_practitioners');
     if (saved) {
-      const parsed = JSON.parse(saved);
-      const migrated = parsed.map((p: Practitioner) => {
-        const updated = {
-          ...p,
-          registrationNumber: 'KA-HOM-15563',
-        };
-        if (p.name && p.name.includes('Ananya')) {
-          return {
-            ...updated,
-            id: 'dr-anjali',
-            name: 'Dr. Anjali Chandrasekhar',
-            avatarInitial: 'AC',
-            bio: p.bio.replace(/Dr\. Ananya Sharma/g, 'Dr. Anjali Chandrasekhar'),
+      try {
+        const parsed = JSON.parse(saved);
+        const migrated = parsed.map((p: Practitioner) => {
+          const updated = {
+            ...p,
+            registrationNumber: 'KA-HOM-15563',
           };
-        }
-        return updated;
-      });
-      localStorage.setItem('sai_clinic_practitioners', JSON.stringify(migrated));
-      return migrated;
+          if (p.name && p.name.includes('Ananya')) {
+            return {
+              ...updated,
+              id: 'dr-anjali',
+              name: 'Dr. Anjali Chandrasekhar',
+              avatarInitial: 'AC',
+              bio: p.bio.replace(/Dr\. Ananya Sharma/g, 'Dr. Anjali Chandrasekhar'),
+            };
+          }
+          return updated;
+        });
+        localStorage.setItem('anjali_homeoclinic_practitioners', JSON.stringify(migrated));
+        return migrated;
+      } catch {
+        return INITIAL_PRACTITIONERS;
+      }
     }
     return INITIAL_PRACTITIONERS;
   });
 
   // Products
   const [products, setProducts] = useState<Product[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_products');
+    const saved = localStorage.getItem('anjali_homeoclinic_products') || localStorage.getItem('sai_clinic_products');
     return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
   });
 
   // Appointments
   const [appointments, setAppointments] = useState<Appointment[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_appointments');
+    const saved = localStorage.getItem('anjali_homeoclinic_appointments') || localStorage.getItem('sai_clinic_appointments');
     return saved ? JSON.parse(saved) : INITIAL_APPOINTMENTS;
   });
 
   // Cart
   const [cart, setCart] = useState<CartItem[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_cart');
+    const saved = localStorage.getItem('anjali_homeoclinic_cart') || localStorage.getItem('sai_clinic_cart');
     return saved ? JSON.parse(saved) : [];
   });
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   // Orders
   const [orders, setOrders] = useState<Order[]>(() => {
-    const saved = localStorage.getItem('sai_clinic_orders');
+    const saved = localStorage.getItem('anjali_homeoclinic_orders') || localStorage.getItem('sai_clinic_orders');
     return saved ? JSON.parse(saved) : [];
   });
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -1731,28 +1753,29 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   // Sync with localStorage
   useEffect(() => {
-    localStorage.setItem('sai_clinic_settings', JSON.stringify(settings));
+    localStorage.setItem('anjali_homeoclinic_settings', JSON.stringify(settings));
   }, [settings]);
 
   useEffect(() => {
-    localStorage.setItem('sai_clinic_practitioners', JSON.stringify(practitioners));
+    localStorage.setItem('anjali_homeoclinic_practitioners', JSON.stringify(practitioners));
   }, [practitioners]);
 
   useEffect(() => {
-    localStorage.setItem('sai_clinic_products', JSON.stringify(products));
+    localStorage.setItem('anjali_homeoclinic_products', JSON.stringify(products));
   }, [products]);
 
   useEffect(() => {
-    localStorage.setItem('sai_clinic_appointments', JSON.stringify(appointments));
+    localStorage.setItem('anjali_homeoclinic_appointments', JSON.stringify(appointments));
   }, [appointments]);
 
   useEffect(() => {
-    localStorage.setItem('sai_clinic_cart', JSON.stringify(cart));
+    localStorage.setItem('anjali_homeoclinic_cart', JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
-    localStorage.setItem('sai_clinic_orders', JSON.stringify(orders));
+    localStorage.setItem('anjali_homeoclinic_orders', JSON.stringify(orders));
   }, [orders]);
+
 
   const updateSettings = (newSettings: Partial<ClinicSettings>) => {
     setSettings((prev) => ({ ...prev, ...newSettings }));
