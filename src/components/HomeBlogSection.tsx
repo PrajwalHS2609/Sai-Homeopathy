@@ -54,7 +54,6 @@ export const HomeBlogSection: React.FC = () => {
                 {post.image && (
                   <div
                     className={`w-full ${
-                      post.id === 'post-dark-patches-facial-pigmentation' ||
                       post.id === 'post-eczema-vs-psoriasis' ||
                       post.id === 'post-tonsillitis' ||
                       post.id === 'post-persistent-cough' ||
@@ -78,10 +77,7 @@ export const HomeBlogSection: React.FC = () => {
                       alt={post.title}
                       referrerPolicy="no-referrer"
                       className={`w-full h-full ${
-                        post.id === 'post-joint-pain-and-stiffness' ||
-                        post.id === 'post-teen-acne-skincare' ||
-                        post.id === 'post-hair-thinning-in-women' ||
-                        post.id === 'post-dark-patches-facial-pigmentation' ||
+                        post.id === 'post-eczema-vs-psoriasis' ||
                         post.id === 'post-eczema-vs-psoriasis' ||
                         post.id === 'post-tonsillitis' ||
                         post.id === 'post-persistent-cough' ||

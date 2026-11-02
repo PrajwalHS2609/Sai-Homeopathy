@@ -381,50 +381,6 @@ const isTonsillitisBlogPath = (pathname: string) => {
   );
 };
 
-const isJointPainBlogPath = (pathname: string) => {
-  const clean = normalizeRoutePath(pathname);
-  return (
-    clean === '/joint-pain-and-stiffness-common-causes-and-when-to-seek-help' ||
-    clean === '/joint-pain-and-stiffness' ||
-    clean === '/joint-pain-stiffness-guide' ||
-    clean === '/blog/joint-pain-and-stiffness-common-causes-and-when-to-seek-help' ||
-    clean === '/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/'
-  );
-};
-
-const isTeenAcneBlogPath = (pathname: string) => {
-  const clean = normalizeRoutePath(pathname);
-  return (
-    clean === '/acne-in-teenagers-understanding-hormonal-changes-and-skin-care' ||
-    clean === '/acne-in-teenagers' ||
-    clean === '/acne-in-teenagers-understanding-hormonal-changes' ||
-    clean === '/blog/acne-in-teenagers-understanding-hormonal-changes-and-skin-care' ||
-    clean === '/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/'
-  );
-};
-
-const isHairThinningBlogPath = (pathname: string) => {
-  const clean = normalizeRoutePath(pathname);
-  return (
-    clean === '/hair-thinning-in-women-possible-causes-and-medical-evaluation' ||
-    clean === '/hair-thinning-in-women' ||
-    clean === '/hair-thinning-in-women-causes-and-medical-evaluation' ||
-    clean === '/blog/hair-thinning-in-women-possible-causes-and-medical-evaluation' ||
-    clean === '/hair-thinning-in-women-possible-causes-and-medical-evaluation/'
-  );
-};
-
-const isDarkPatchesBlogPath = (pathname: string) => {
-  const clean = normalizeRoutePath(pathname);
-  return (
-    clean === '/dark-patches-on-the-face-common-causes-of-skin-pigmentation' ||
-    clean === '/dark-patches-on-the-face' ||
-    clean === '/dark-patches-common-causes-of-skin-pigmentation' ||
-    clean === '/blog/dark-patches-on-the-face-common-causes-of-skin-pigmentation' ||
-    clean === '/dark-patches-on-the-face-common-causes-of-skin-pigmentation/'
-  );
-};
-
 const isEczemaVsPsoriasisBlogPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -855,18 +811,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (isPilesBlogPath(window.location.pathname)) {
         return 'blog';
       }
-      if (isJointPainBlogPath(window.location.pathname)) {
-        return 'blog';
-      }
-      if (isTeenAcneBlogPath(window.location.pathname)) {
-        return 'blog';
-      }
-      if (isHairThinningBlogPath(window.location.pathname)) {
-        return 'blog';
-      }
-      if (isDarkPatchesBlogPath(window.location.pathname)) {
-        return 'blog';
-      }
       if (isWomensHealthPath(window.location.pathname)) {
         return 'womens-health-care';
       }
@@ -962,12 +906,25 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
 
   // Blog Posts & Reader State
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
-    const removedIds = new Set(['post-1', 'post-2', 'post-3', 'post-4']);
+    const removedIds = new Set([
+      'post-1',
+      'post-2',
+      'post-3',
+      'post-4',
+      'post-joint-pain-and-stiffness',
+      'post-teen-acne-skincare',
+      'post-hair-thinning-in-women',
+      'post-dark-patches-facial-pigmentation',
+    ]);
     const removedSlugs = new Set([
       'understanding-constitutional-homeopathy',
       'seasonal-allergies-respiratory-health',
       'restoring-digestive-equilibrium-naturally',
       'managing-sensory-overload-restful-sleep',
+      'joint-pain-and-stiffness-common-causes-and-when-to-seek-help',
+      'acne-in-teenagers-understanding-hormonal-changes-and-skin-care',
+      'hair-thinning-in-women-possible-causes-and-medical-evaluation',
+      'dark-patches-on-the-face-common-causes-of-skin-pigmentation',
     ]);
 
     const saved = localStorage.getItem('anjali_homeoclinic_blogs') || localStorage.getItem('sai_clinic_blogs');
@@ -978,46 +935,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         parsed = parsed.filter(
           (p) => !removedIds.has(p.id) && !removedSlugs.has(p.slug)
         );
-
-        const jointPainPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-joint-pain-and-stiffness');
-        if (jointPainPost) {
-          const jpIdx = parsed.findIndex((p) => p.id === 'post-joint-pain-and-stiffness' || p.slug === 'joint-pain-and-stiffness-common-causes-and-when-to-seek-help');
-          if (jpIdx >= 0) {
-            parsed[jpIdx] = { ...parsed[jpIdx], ...jointPainPost, image: jointPainPost.image };
-          } else {
-            parsed.unshift(jointPainPost);
-          }
-        }
-
-        const teenAcnePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-teen-acne-skincare');
-        if (teenAcnePost) {
-          const taIdx = parsed.findIndex((p) => p.id === 'post-teen-acne-skincare' || p.slug === 'acne-in-teenagers-understanding-hormonal-changes-and-skin-care');
-          if (taIdx >= 0) {
-            parsed[taIdx] = { ...parsed[taIdx], ...teenAcnePost, image: teenAcnePost.image };
-          } else {
-            parsed.unshift(teenAcnePost);
-          }
-        }
-
-        const hairThinningPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hair-thinning-in-women');
-        if (hairThinningPost) {
-          const htIdx = parsed.findIndex((p) => p.id === 'post-hair-thinning-in-women' || p.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation');
-          if (htIdx >= 0) {
-            parsed[htIdx] = { ...parsed[htIdx], ...hairThinningPost, image: hairThinningPost.image };
-          } else {
-            parsed.unshift(hairThinningPost);
-          }
-        }
-
-        const darkPatchesPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-dark-patches-facial-pigmentation');
-        if (darkPatchesPost) {
-          const dpIdx = parsed.findIndex((p) => p.id === 'post-dark-patches-facial-pigmentation' || p.slug === 'dark-patches-on-the-face-common-causes-of-skin-pigmentation');
-          if (dpIdx >= 0) {
-            parsed[dpIdx] = { ...parsed[dpIdx], ...darkPatchesPost, image: darkPatchesPost.image };
-          } else {
-            parsed.unshift(darkPatchesPost);
-          }
-        }
 
         const eczemaPsoriasisPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis');
         if (eczemaPsoriasisPost) {
@@ -1179,18 +1096,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   });
   const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(() => {
     if (typeof window !== 'undefined') {
-      if (isJointPainBlogPath(window.location.pathname)) {
-        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-joint-pain-and-stiffness') || INITIAL_BLOG_POSTS[0];
-      }
-      if (isTeenAcneBlogPath(window.location.pathname)) {
-        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-teen-acne-skincare') || INITIAL_BLOG_POSTS[0];
-      }
-      if (isHairThinningBlogPath(window.location.pathname)) {
-        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hair-thinning-in-women') || INITIAL_BLOG_POSTS[0];
-      }
-      if (isDarkPatchesBlogPath(window.location.pathname)) {
-        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-dark-patches-facial-pigmentation') || INITIAL_BLOG_POSTS[0];
-      }
       if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
       }
@@ -1304,22 +1209,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('skin-treatment-tirur');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
-      } else if (isJointPainBlogPath(window.location.pathname)) {
-        setCurrentView('blog');
-        const jpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-joint-pain-and-stiffness') || INITIAL_BLOG_POSTS[0];
-        setSelectedPostForReader(jpPost);
-      } else if (isTeenAcneBlogPath(window.location.pathname)) {
-        setCurrentView('blog');
-        const taPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-teen-acne-skincare') || INITIAL_BLOG_POSTS[0];
-        setSelectedPostForReader(taPost);
-      } else if (isHairThinningBlogPath(window.location.pathname)) {
-        setCurrentView('blog');
-        const htPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-hair-thinning-in-women') || INITIAL_BLOG_POSTS[0];
-        setSelectedPostForReader(htPost);
-      } else if (isDarkPatchesBlogPath(window.location.pathname)) {
-        setCurrentView('blog');
-        const dpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-dark-patches-facial-pigmentation') || INITIAL_BLOG_POSTS[0];
-        setSelectedPostForReader(dpPost);
       } else if (isEczemaVsPsoriasisBlogPath(window.location.pathname)) {
         setCurrentView('blog');
         const epPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-eczema-vs-psoriasis') || INITIAL_BLOG_POSTS[0];
@@ -1542,26 +1431,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'hair-treatment-tirur' }, '', targetUrl);
       }
-    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'joint-pain-and-stiffness-common-causes-and-when-to-seek-help') {
-      const targetUrl = '/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/';
-      if (window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
-      }
-    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'acne-in-teenagers-understanding-hormonal-changes-and-skin-care') {
-      const targetUrl = '/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/';
-      if (window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
-      }
-    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation') {
-      const targetUrl = '/hair-thinning-in-women-possible-causes-and-medical-evaluation/';
-      if (window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
-      }
-    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'dark-patches-on-the-face-common-causes-of-skin-pigmentation') {
-      const targetUrl = '/dark-patches-on-the-face-common-causes-of-skin-pigmentation/';
-      if (window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
-      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'eczema-vs-psoriasis-how-to-understand-the-differences') {
       const targetUrl = '/eczema-vs-psoriasis-how-to-understand-the-differences/';
       if (window.location.pathname !== targetUrl) {
@@ -1757,26 +1626,6 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (post.slug === 'tonsillitis-symptoms-causes-and-available-treatment-options') {
       const targetUrl = '/tonsillitis-symptoms-causes-and-available-treatment-options/';
-      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
-      }
-    } else if (post.slug === 'joint-pain-and-stiffness-common-causes-and-when-to-seek-help') {
-      const targetUrl = '/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/';
-      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
-      }
-    } else if (post.slug === 'acne-in-teenagers-understanding-hormonal-changes-and-skin-care') {
-      const targetUrl = '/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/';
-      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
-      }
-    } else if (post.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation') {
-      const targetUrl = '/hair-thinning-in-women-possible-causes-and-medical-evaluation/';
-      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
-        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
-      }
-    } else if (post.slug === 'dark-patches-on-the-face-common-causes-of-skin-pigmentation') {
-      const targetUrl = '/dark-patches-on-the-face-common-causes-of-skin-pigmentation/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
