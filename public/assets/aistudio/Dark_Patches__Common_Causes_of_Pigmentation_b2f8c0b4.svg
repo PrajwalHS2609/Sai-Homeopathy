@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <!-- Background cream radial gradient -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FFFCF4"/>
+      <stop offset="100%" stop-color="#FFF5E5"/>
+    </radialGradient>
+
+    <!-- Top waves gradients -->
+    <linearGradient id="topWaveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2410C"/>
+      <stop offset="35%" stop-color="#EA580C"/>
+      <stop offset="70%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="topWaveGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FDE68A" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Bottom waves gradients -->
+    <linearGradient id="bottomWaveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="40%" stop-color="#F97316"/>
+      <stop offset="75%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+
+    <linearGradient id="bottomWaveGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="60%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Pill container gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="50%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+
+    <!-- Soft drop shadow for pill -->
+    <filter id="pillShadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#C2410C" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1200" height="600" fill="url(#centerGlow)"/>
+
+  <!-- Top Wave swooshes -->
+  <!-- Deep orange top backdrop -->
+  <path d="M0,0 L1200,0 L1200,140 C1000,190 780,120 540,85 C320,52 140,90 0,165 Z" fill="url(#topWaveGrad1)"/>
+
+  <!-- Secondary golden wave overlay -->
+  <path d="M0,0 L1200,0 L1200,90 C960,140 750,180 500,135 C300,100 120,130 0,195 Z" fill="url(#topWaveGrad2)" opacity="0.85"/>
+
+  <!-- Top swooshing thin contour lines -->
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5">
+    <path d="M0,175 C180,95 380,60 620,95 C860,130 1060,185 1200,130"/>
+    <path d="M0,185 C200,110 420,75 660,110 C900,145 1080,195 1200,145"/>
+    <path d="M0,195 C220,125 460,90 700,125 C940,160 1100,205 1200,160"/>
+    <path d="M0,205 C240,140 500,105 740,140 C980,175 1120,215 1200,175"/>
+    <path d="M0,215 C260,155 540,120 780,155 C1020,190 1140,225 1200,190"/>
+  </g>
+
+  <!-- Bottom Wave swooshes -->
+  <!-- Deep orange base bottom wave -->
+  <path d="M0,600 L1200,600 L1200,455 C1050,420 850,470 600,520 C380,565 180,520 0,420 Z" fill="url(#bottomWaveGrad1)"/>
+
+  <!-- Secondary warm amber bottom wave -->
+  <path d="M0,600 L1200,600 L1200,510 C1000,475 800,510 550,550 C320,585 150,560 0,470 Z" fill="url(#bottomWaveGrad2)" opacity="0.9"/>
+
+  <!-- Bottom swooshing thin contour lines -->
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5">
+    <path d="M0,410 C190,515 410,560 650,510 C890,460 1070,415 1200,445"/>
+    <path d="M0,425 C210,530 440,575 680,525 C920,475 1090,430 1200,460"/>
+    <path d="M0,440 C230,545 470,590 710,540 C950,490 1110,445 1200,475"/>
+    <path d="M0,455 C250,560 500,600 740,555 C980,505 1130,460 1200,490"/>
+    <path d="M0,470 C270,575 530,600 770,570 C1010,520 1150,475 1200,505"/>
+  </g>
+
+  <!-- Subtle golden accent contour lines in background center -->
+  <g fill="none" stroke="#F59E0B" stroke-opacity="0.18" stroke-width="1.2">
+    <path d="M0,230 C300,170 600,140 900,180 C1050,200 1150,220 1200,210"/>
+    <path d="M0,390 C250,490 550,530 850,490 C1020,450 1130,410 1200,430"/>
+  </g>
+
+  <!-- Typography Content Group -->
+  <!-- Main Title: Dark Patches on the Face: -->
+  <text 
+    x="600" 
+    y="270" 
+    text-anchor="middle" 
+    font-family="'Playfair Display', Georgia, Cambria, 'Times New Roman', serif" 
+    font-size="64" 
+    font-weight="900" 
+    font-style="italic" 
+    fill="#4A1208" 
+    letter-spacing="-0.5"
+  >
+    Dark Patches on the Face:
+  </text>
+
+  <!-- Subtitle Pill Container -->
+  <rect 
+    x="140" 
+    y="304" 
+    width="920" 
+    height="72" 
+    rx="36" 
+    ry="36" 
+    fill="#EA580C"
+  />
+
+  <!-- Subtitle Text inside Pill: Common Causes of Skin Pigmentation -->
+  <text 
+    x="600" 
+    y="357" 
+    text-anchor="middle" 
+    font-family="'Playfair Display', Georgia, Cambria, 'Times New Roman', serif" 
+    font-size="40" 
+    font-weight="800" 
+    font-style="italic" 
+    fill="#FFFFFF" 
+    letter-spacing="0.2"
+  >
+    Common Causes of Skin Pigmentation
+  </text>
+</svg>

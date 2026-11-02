@@ -643,6 +643,13 @@ export const BlogPageView: React.FC = () => {
               {featuredPost.image && (
                 <div
                   className={`w-full ${
+                    featuredPost.id === 'post-joint-pain-and-stiffness' ||
+                    featuredPost.id === 'post-teen-acne-skincare' ||
+                    featuredPost.id === 'post-hair-thinning-in-women' ||
+                    featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
+                    featuredPost.id === 'post-eczema-vs-psoriasis' ||
+                    featuredPost.id === 'post-tonsillitis' ||
+                    featuredPost.id === 'post-persistent-cough' ||
                     featuredPost.id === 'post-severe-period-pain' ||
                     featuredPost.id === 'post-uterine-fibroids' ||
                     featuredPost.id === 'post-chronic-sinusitis' ||
@@ -663,6 +670,13 @@ export const BlogPageView: React.FC = () => {
                     alt={featuredPost.title}
                     referrerPolicy="no-referrer"
                     className={`w-full h-full ${
+                      featuredPost.id === 'post-joint-pain-and-stiffness' ||
+                      featuredPost.id === 'post-teen-acne-skincare' ||
+                      featuredPost.id === 'post-hair-thinning-in-women' ||
+                      featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
+                      featuredPost.id === 'post-eczema-vs-psoriasis' ||
+                      featuredPost.id === 'post-tonsillitis' ||
+                      featuredPost.id === 'post-persistent-cough' ||
                       featuredPost.id === 'post-severe-period-pain' ||
                       featuredPost.id === 'post-uterine-fibroids' ||
                       featuredPost.id === 'post-chronic-sinusitis' ||
@@ -766,6 +780,13 @@ export const BlogPageView: React.FC = () => {
                   {post.image && (
                     <div
                       className={`w-full ${
+                        post.id === 'post-joint-pain-and-stiffness' ||
+                        post.id === 'post-teen-acne-skincare' ||
+                        post.id === 'post-hair-thinning-in-women' ||
+                        post.id === 'post-dark-patches-facial-pigmentation' ||
+                        post.id === 'post-eczema-vs-psoriasis' ||
+                        post.id === 'post-tonsillitis' ||
+                        post.id === 'post-persistent-cough' ||
                         post.id === 'post-severe-period-pain' ||
                         post.id === 'post-uterine-fibroids' ||
                         post.id === 'post-chronic-sinusitis' ||
@@ -786,6 +807,13 @@ export const BlogPageView: React.FC = () => {
                         alt={post.title}
                         referrerPolicy="no-referrer"
                         className={`w-full h-full ${
+                          post.id === 'post-joint-pain-and-stiffness' ||
+                          post.id === 'post-teen-acne-skincare' ||
+                          post.id === 'post-hair-thinning-in-women' ||
+                          post.id === 'post-dark-patches-facial-pigmentation' ||
+                          post.id === 'post-eczema-vs-psoriasis' ||
+                          post.id === 'post-tonsillitis' ||
+                          post.id === 'post-persistent-cough' ||
                           post.id === 'post-severe-period-pain' ||
                           post.id === 'post-uterine-fibroids' ||
                           post.id === 'post-chronic-sinusitis' ||
