@@ -12,6 +12,9 @@ import {
 
 interface RegionalRelatedGuidesProps {
   currentGuideKey?: NavView;
+  currentCity?: string;
+  currentCondition?: string;
+  categoryView?: NavView;
 }
 
 export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
@@ -194,6 +197,22 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
       badge: 'Trichology Care',
       badgeColor: 'bg-teal-50 text-teal-700 border-teal-200',
       dotColor: 'bg-[#0D9488]',
+    },
+    {
+      key: 'piles-clinic-ponnani',
+      title: 'Piles Treatment Near Ponnani',
+      condition: 'Haemorrhoids & Anorectal Care Near Ponnani',
+      badge: 'Proctology Care',
+      badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+      dotColor: 'bg-[#10B981]',
+    },
+    {
+      key: 'menstrual-doctor-ponnani',
+      title: 'Periods Doctor Near Ponnani',
+      condition: 'Menstrual Irregularities & Period Pain Near Ponnani',
+      badge: 'Women’s Care',
+      badgeColor: 'bg-rose-50 text-rose-700 border-rose-200',
+      dotColor: 'bg-[#E11D48]',
     },
   ];
 

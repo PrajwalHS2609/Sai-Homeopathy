@@ -6539,6 +6539,179 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     lastUpdated: '2026-10-31',
   },
   {
+    id: 'piles-clinic-ponnani',
+    pageName: 'Homeopathy Clinic Near Ponnani for Piles Treatment',
+    category: 'clinical',
+    path: '/homeopathy-clinic-near-ponnani-for-piles-treatment/',
+    title:
+      'Homeopathy Clinic Near Ponnani for Piles Treatment | Anjali Homoeo Clinic',
+    description:
+      'Searching for a homeopathy clinic near Ponnani for piles treatment? Understand causes, symptoms, evidence-based care, and confidential consultations with Dr. Anjali Chandrasekhar (BHMS).',
+    url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-ponnani-for-piles-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathy-clinic-near-ponnani-for-piles-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathy Clinic Near Ponnani for Piles Treatment, Piles Consultation in Ponnani, Piles Treatment in Ponnani, Piles Homeopathic Clinic in Ponnani, Piles Doctor Near Ponnani, Piles Specialist Near Ponnani, Haemorrhoids Treatment Ponnani, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-near-ponnani-for-piles-treatment/#webpage',
+            name: 'Homeopathy Clinic Near Ponnani for Piles Treatment – Anjali Homoeo Clinic',
+            headline: 'Homeopathy Clinic Near Ponnani for Piles Treatment',
+            url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-ponnani-for-piles-treatment/',
+            description:
+              'Comprehensive patient clinical guide explaining piles (haemorrhoids), rectal bleeding causes, internal vs external types, risk factors, evidence-based treatments, and consultation access near Ponnani, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Anal Fissure',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K60.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Rectal Bleeding',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K92.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients experiencing piles, rectal bleeding, anal pain, or bowel discomfort near Ponnani and Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur-Kuttippuram Road, Kavumopuram',
+                addressLocality: 'Kuttippuram (Near Ponnani)',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-near-ponnani-for-piles-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is a homeopathy clinic near Ponnani for piles treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A homeopathy clinic near Ponnani for piles treatment refers to regional healthcare facilities and qualified practitioners offering consultations for individuals experiencing piles or haemorrhoid symptoms. While homeopathy takes an individualized approach, current reliable scientific evidence has not established homeopathic remedies as an effective curative treatment for piles. A qualified physician provides clinical evaluation, dietary guidance, and triage to ensure safe, evidence-based care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles be treated or managed without surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Many early-stage cases (Grade I and Grade II internal piles) improve significantly with conservative, non-surgical approaches. These include increasing dietary fiber, drinking 2 to 2.5 litres of water daily, avoiding toilet straining, taking warm sitz baths, and using short courses of soothing topical ointments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for piles in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should consult a healthcare professional whenever you experience rectal bleeding, anal pain, persistent itching, or a newly felt lump near the anus. Although piles are common, rectal bleeding can also arise from anal fissures, polyps, inflammatory bowel disease, or other serious colorectal conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy clinically proven to cure piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Currently, there is insufficient reliable scientific clinical trial evidence to prove that homeopathic remedies shrink enlarged hemorrhoidal vascular cushions, reverse tissue prolapse, or provide a permanent cure for piles. Responsible healthcare requires obtaining an accurate clinical diagnosis and not delaying conventional medical or surgical interventions when necessary.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between internal and external piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Internal piles originate inside the lower rectum above the dentate line. Because this upper zone lacks somatic pain-sensing nerves, internal piles are typically painless, though they may bleed during bowel movements or prolapse outward. External piles develop under the sensitive skin around the anal verge below the dentate line and can cause itching, swelling, burning, and severe pain if a blood clot develops inside (thrombosed external haemorrhoid).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I expect during a piles consultation near Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'During a consultation, the doctor will take a thorough medical history regarding your symptom timeline, bowel frequency, stool consistency, bleeding characteristics, and diet. The practitioner will evaluate your overall health, provide tailored dietary fiber and hydration advice, explain appropriate treatment pathways, and determine if an in-person physical assessment or proctoscopy by a specialist is required.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I differentiate piles from an anal fissure?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Piles typically present with painless bright-red bleeding coating the stool or a soft protruding lump. An anal fissure, on the other hand, is a sharp tear in the mucosal lining of the anal canal that produces intense, razor-sharp, cutting pain during and for several hours after passing stool, accompanied by streaks of bright blood on toilet paper. Because symptoms can overlap, a doctor’s examination is essential.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What lifestyle changes help manage piles symptoms?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Essential lifestyle habits include eating 25–35 grams of dietary fiber daily (from vegetables, fruits, whole grains, and psyllium husk), drinking at least 2 litres of water daily, avoiding straining on the toilet, limiting commode sitting time to 3–5 minutes, maintaining gentle perianal hygiene with warm water, and engaging in regular moderate physical exercise like walking.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How far is Anjali Homoeo Clinic from Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Anjali Homoeo Clinic in Kuttippuram is located approximately 18 to 22 kilometres from Ponnani town, making it easily accessible in about 25 to 30 minutes by car, bus, or taxi via Chamravattom / Tirur–Kuttippuram Road. A branch clinic is also located at Puthanathani. Patients from Ponnani, Edappal, Changaramkulam, and Chamravattom can attend in person or opt for confidential online video consultations.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I book an online consultation if I live in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Dr. Anjali Chandrasekhar (BHMS) provides confidential online video consultations for patients in Ponnani and across Kerala. During the online session, you can discuss your symptoms in complete privacy, receive personalized dietary and lifestyle recommendations, and receive clinical advice on whether an in-person examination or surgical evaluation is necessary.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-04',
+  },
+  {
     id: 'menstrual-doctor-tirur',
     pageName: 'Homeopathic Doctor Near Tirur for Periods Problem',
     category: 'clinical',
@@ -6735,6 +6908,188 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
       2
     ),
     lastUpdated: '2026-10-31',
+  },
+  {
+    id: 'menstrual-doctor-ponnani',
+    pageName: 'Homeopathic Doctor Near Ponnani for Periods Problem',
+    category: 'clinical',
+    path: '/homeopathic-doctor-near-ponnani-for-periods-problem/',
+    title:
+      'Homeopathic Doctor Near Ponnani for Periods Problem | Women’s Health Guide',
+    description:
+      'Consult Dr. Anjali Chandrasekhar (BHMS) near Ponnani for irregular periods, severe period pain, heavy bleeding, and PCOS. Evidence-based evaluation and clinical triage.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-ponnani-for-periods-problem/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-doctor-near-ponnani-for-periods-problem/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic Doctor Near Ponnani for Periods Problem, Menstrual Treatment in Ponnani, Period Problems Treatment in Ponnani, Period Pain Consultation in Ponnani, Menstrual Problems Doctor in Ponnani, PCOS Doctor Near Ponnani, Dr Anjali Chandrasekhar BHMS',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-ponnani-for-periods-problem/#webpage',
+            name: 'Homeopathic Doctor Near Ponnani for Periods Problem – Anjali Homoeo Clinic',
+            headline: 'Homeopathic Doctor Near Ponnani for Periods Problem',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-ponnani-for-periods-problem/',
+            description:
+              'Comprehensive women’s health guide covering irregular cycles, painful menstruation, heavy bleeding, hormonal causes, lifestyle tips, and clinical consultation access near Ponnani, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dysmenorrhea (Painful Periods)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Irregular Menstruation & Oligomenorrhea',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N91',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Heavy Menstrual Bleeding (Menorrhagia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Polycystic Ovary Syndrome (PCOS)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'E28.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Women and individuals experiencing menstrual irregularity, period pain, heavy bleeding, or hormonal symptoms near Ponnani and Malappuram',
+            },
+            mainEntity: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              telephone: '098951 01707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur-Kuttippuram Road, Kavumopuram',
+                addressLocality: 'Kuttippuram (Near Ponnani)',
+                addressRegion: 'Keralam',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-ponnani-for-periods-problem/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find a homeopathic doctor near Ponnani for period problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can look for qualified homeopathic practitioners and women\'s healthcare providers in Ponnani and surrounding areas, including Kuttippuram (15–20 minutes from Ponnani) and Puthanathani. Check professional qualifications (such as BHMS), state medical council registration, and consultation services before booking an appointment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the best treatment for irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment depends on the underlying cause. PCOS, thyroid disorders, pregnancy, stress and other conditions may require different approaches. A medical evaluation helps determine the appropriate treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homeopathy cure irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no reliable scientific evidence that homeopathy cures irregular periods or corrects hormonal imbalances. Women with persistent menstrual irregularities should seek appropriate medical evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a menstrual problems doctor?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if you experience repeated irregular cycles, heavy bleeding, severe cramps, missed periods or bleeding between periods.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are painful periods normal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Mild cramps can be common during menstruation. However, severe pain that interferes with daily activities or becomes progressively worse should be investigated.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can PCOS cause irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. PCOS can interfere with ovulation and lead to irregular or infrequent menstrual cycles. Medical diagnosis and appropriate management are important.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress affect menstrual cycles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Significant physical or emotional stress can influence the hormonal processes involved in menstruation and may contribute to irregular periods.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I bring for a menstrual disorder consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Bring your previous medical reports, ultrasound findings if available, medication details and a record of your menstrual dates and symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle changes improve menstrual health?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Balanced nutrition, regular physical activity, adequate sleep and stress management support general health. However, lifestyle changes alone may not treat underlying gynaecological conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is heavy menstrual bleeding a serious concern?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Heavy bleeding can sometimes lead to iron-deficiency anaemia and may indicate an underlying condition. Medical assessment is recommended, particularly when bleeding is persistent or affects daily activities.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-04',
   },
   {
     id: 'skin-treatment-tirur',

@@ -61,7 +61,9 @@ import { SkinMalappuramPage } from './components/SkinMalappuramPage';
 import { MenstrualMalappuramPage } from './components/MenstrualMalappuramPage';
 import { PilesMalappuramPage } from './components/PilesMalappuramPage';
 import { PilesTirurPage } from './components/PilesTirurPage';
+import { PilesPonnaniPage } from './components/PilesPonnaniPage';
 import { MenstrualTirurPage } from './components/MenstrualTirurPage';
+import { MenstrualPonnaniPage } from './components/MenstrualPonnaniPage';
 import { SkinTirurPage } from './components/SkinTirurPage';
 import { HairTirurPage } from './components/HairTirurPage';
 import { SeoHead } from './components/SeoHead';
@@ -693,6 +695,26 @@ const MainContent: React.FC = () => {
     );
   }
 
+  // Route: Dedicated Homeopathy Clinic Near Ponnani for Piles Treatment View
+  // URL: /homeopathy-clinic-near-ponnani-for-piles-treatment/
+  if (currentView === 'piles-clinic-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
   // Route: Dedicated Homeopathic Doctor Near Tirur for Periods Problem View
   // URL: /homeopathic-doctor-near-tirur-for-periods-problem/
   if (currentView === 'menstrual-doctor-tirur') {
@@ -701,6 +723,26 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <MenstrualTirurPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Doctor Near Ponnani for Periods Problem View
+  // URL: /homeopathic-doctor-near-ponnani-for-periods-problem/
+  if (currentView === 'menstrual-doctor-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualPonnaniPage />
         </main>
         <Footer />
         <ProductDetailModal />

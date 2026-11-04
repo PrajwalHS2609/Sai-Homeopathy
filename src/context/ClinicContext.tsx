@@ -68,7 +68,10 @@ export type NavView =
   | 'piles-clinic-tirur'
   | 'menstrual-doctor-tirur'
   | 'skin-treatment-tirur'
-  | 'hair-treatment-tirur';
+  | 'hair-treatment-tirur'
+  | 'piles-clinic-ponnani'
+  | 'menstrual-doctor-ponnani'
+  | 'skin-treatment-ponnani';
 
 interface Toast {
   id: string;
@@ -761,6 +764,24 @@ const isPilesTirurPath = (pathname: string) => {
   );
 };
 
+const isPilesPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathy-clinic-near-ponnani-for-piles-treatment' ||
+    clean === '/homeopathy-clinic-near-ponnani-for-piles-treatment/' ||
+    clean === '/homeopathy-clinic-for-piles-near-ponnani' ||
+    clean === '/homoeopathy-clinic-near-ponnani-for-piles-treatment' ||
+    clean === '/piles-treatment-near-ponnani' ||
+    clean === '/piles-treatment-in-ponnani' ||
+    clean === '/piles-clinic-near-ponnani' ||
+    clean === '/piles-clinic-in-ponnani' ||
+    clean === '/piles-consultation-in-ponnani' ||
+    clean === '/piles-consultation-near-ponnani' ||
+    clean === '/piles-homeopathic-clinic-in-ponnani' ||
+    clean === '/piles-homeopathic-clinic-near-ponnani'
+  );
+};
+
 const isMenstrualTirurPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -775,6 +796,23 @@ const isMenstrualTirurPath = (pathname: string) => {
     clean === '/homeopathy-clinic-for-menstrual-problems-in-tirur' ||
     clean === '/period-problems-treatment-in-tirur' ||
     clean === '/womens-health-doctor-in-tirur'
+  );
+};
+
+const isMenstrualPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-doctor-near-ponnani-for-periods-problem' ||
+    clean === '/homeopathic-doctor-near-ponnani-for-periods-problem/' ||
+    clean === '/homeopathic-doctor-near-ponnani-for-period-problem' ||
+    clean === '/homeopathy-doctor-near-ponnani-for-periods-problem' ||
+    clean === '/menstrual-treatment-in-ponnani' ||
+    clean === '/menstrual-problems-doctor-in-ponnani' ||
+    clean === '/period-pain-consultation-in-ponnani' ||
+    clean === '/period-problems-treatment-in-ponnani' ||
+    clean === '/menstrual-health-clinic-in-ponnani' ||
+    clean === '/womens-health-doctor-in-ponnani' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-ponnani'
   );
 };
 
@@ -793,6 +831,23 @@ const isSkinTirurPath = (pathname: string) => {
     clean === '/skin-homeopathy-clinic-in-tirur' ||
     clean === '/skin-problems-treatment-in-tirur' ||
     clean === '/skin-health-clinic-in-tirur'
+  );
+};
+
+const isSkinPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-clinic-near-ponnani-for-skin-treatment' ||
+    clean === '/homeopathic-clinic-near-ponnani-for-skin-treatment/' ||
+    clean === '/skin-homeopathic-treatment-in-ponnani' ||
+    clean === '/skin-treatment-in-ponnani' ||
+    clean === '/skin-treatment-near-ponnani' ||
+    clean === '/skin-problems-treatment-in-ponnani' ||
+    clean === '/skin-disease-treatment-in-ponnani' ||
+    clean === '/skin-doctor-in-ponnani' ||
+    clean === '/skin-specialist-in-ponnani' ||
+    clean === '/skin-health-clinic-in-ponnani' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-ponnani'
   );
 };
 
@@ -947,11 +1002,20 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (isPilesTirurPath(window.location.pathname)) {
         return 'piles-clinic-tirur';
       }
+      if (isPilesPonnaniPath(window.location.pathname)) {
+        return 'piles-clinic-ponnani';
+      }
       if (isMenstrualTirurPath(window.location.pathname)) {
         return 'menstrual-doctor-tirur';
       }
+      if (isMenstrualPonnaniPath(window.location.pathname)) {
+        return 'menstrual-doctor-ponnani';
+      }
       if (isSkinTirurPath(window.location.pathname)) {
         return 'skin-treatment-tirur';
+      }
+      if (isSkinPonnaniPath(window.location.pathname)) {
+        return 'skin-treatment-ponnani';
       }
       if (isHairTirurPath(window.location.pathname)) {
         return 'hair-treatment-tirur';
@@ -1289,10 +1353,16 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('piles-clinic-malappuram');
       } else if (isPilesTirurPath(window.location.pathname)) {
         setCurrentView('piles-clinic-tirur');
+      } else if (isPilesPonnaniPath(window.location.pathname)) {
+        setCurrentView('piles-clinic-ponnani');
       } else if (isMenstrualTirurPath(window.location.pathname)) {
         setCurrentView('menstrual-doctor-tirur');
+      } else if (isMenstrualPonnaniPath(window.location.pathname)) {
+        setCurrentView('menstrual-doctor-ponnani');
       } else if (isSkinTirurPath(window.location.pathname)) {
         setCurrentView('skin-treatment-tirur');
+      } else if (isSkinPonnaniPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-ponnani');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
       } else if (isJointPainBlogPath(window.location.pathname)) {
@@ -1518,15 +1588,30 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'piles-clinic-tirur' }, '', targetUrl);
       }
+    } else if (currentView === 'piles-clinic-ponnani') {
+      const targetUrl = '/homeopathy-clinic-near-ponnani-for-piles-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-clinic-ponnani' }, '', targetUrl);
+      }
     } else if (currentView === 'menstrual-doctor-tirur') {
       const targetUrl = '/homeopathic-doctor-near-tirur-for-periods-problem/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'menstrual-doctor-tirur' }, '', targetUrl);
       }
+    } else if (currentView === 'menstrual-doctor-ponnani') {
+      const targetUrl = '/homeopathic-doctor-near-ponnani-for-periods-problem/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-doctor-ponnani' }, '', targetUrl);
+      }
     } else if (currentView === 'skin-treatment-tirur') {
       const targetUrl = '/homeopathic-treatment-near-tirur-for-skin-problems/';
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'skin-treatment-tirur' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-treatment-ponnani') {
+      const targetUrl = '/homeopathic-clinic-near-ponnani-for-skin-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-ponnani' }, '', targetUrl);
       }
     } else if (currentView === 'hair-treatment-tirur') {
       const targetUrl = '/homoeopathic-treatment-in-tirur-for-hair-and-scalp/';
@@ -1660,7 +1745,10 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isCornsManjeriPath(window.location.pathname) ||
         isPsoriasisManjeriPath(window.location.pathname) ||
         isRingwormManjeriPath(window.location.pathname) ||
-        isAlopeciaManjeriPath(window.location.pathname)
+        isAlopeciaManjeriPath(window.location.pathname) ||
+        isPilesPonnaniPath(window.location.pathname) ||
+        isMenstrualPonnaniPath(window.location.pathname) ||
+        isSkinPonnaniPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -2247,7 +2335,9 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'menstrual-treatment-malappuram') targetId = 'menstrual-treatment-malappuram';
     else if (currentView === 'piles-clinic-malappuram') targetId = 'piles-clinic-malappuram';
     else if (currentView === 'piles-clinic-tirur') targetId = 'piles-clinic-tirur';
+    else if (currentView === 'piles-clinic-ponnani') targetId = 'piles-clinic-ponnani';
     else if (currentView === 'menstrual-doctor-tirur') targetId = 'menstrual-doctor-tirur';
+    else if (currentView === 'menstrual-doctor-ponnani') targetId = 'menstrual-doctor-ponnani';
     else if (currentView === 'skin-treatment-tirur') targetId = 'skin-treatment-tirur';
     else if (currentView === 'hair-treatment-tirur') targetId = 'hair-treatment-tirur';
     else if (currentView === 'treatments') targetId = 'treatments';
