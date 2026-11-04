@@ -139,7 +139,7 @@ export const BlogPageView: React.FC = () => {
                   loading="eager"
                   decoding="async"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto block aspect-[2/1] object-contain"
+                  className={`w-full h-auto block ${post.id === 'post-hair-thinning-in-women' ? 'aspect-[16/9] object-cover' : 'aspect-[2/1] object-contain'}`}
                 />
               </div>
             )}
@@ -643,6 +643,8 @@ export const BlogPageView: React.FC = () => {
               {featuredPost.image && (
                 <div
                   className={`w-full ${
+                    featuredPost.id === 'post-joint-pain-and-stiffness' ||
+                    featuredPost.id === 'post-acne-in-teenagers' ||
                     featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
                     featuredPost.id === 'post-eczema-vs-psoriasis' ||
                     featuredPost.id === 'post-tonsillitis' ||
@@ -667,6 +669,8 @@ export const BlogPageView: React.FC = () => {
                     alt={featuredPost.title}
                     referrerPolicy="no-referrer"
                     className={`w-full h-full ${
+                      featuredPost.id === 'post-joint-pain-and-stiffness' ||
+                      featuredPost.id === 'post-acne-in-teenagers' ||
                       featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
                       featuredPost.id === 'post-eczema-vs-psoriasis' ||
                       featuredPost.id === 'post-tonsillitis' ||
@@ -774,6 +778,8 @@ export const BlogPageView: React.FC = () => {
                   {post.image && (
                     <div
                       className={`w-full ${
+                        post.id === 'post-joint-pain-and-stiffness' ||
+                        post.id === 'post-acne-in-teenagers' ||
                         post.id === 'post-dark-patches-facial-pigmentation' ||
                         post.id === 'post-eczema-vs-psoriasis' ||
                         post.id === 'post-tonsillitis' ||
@@ -798,6 +804,8 @@ export const BlogPageView: React.FC = () => {
                         alt={post.title}
                         referrerPolicy="no-referrer"
                         className={`w-full h-full ${
+                          post.id === 'post-joint-pain-and-stiffness' ||
+                          post.id === 'post-acne-in-teenagers' ||
                           post.id === 'post-dark-patches-facial-pigmentation' ||
                           post.id === 'post-eczema-vs-psoriasis' ||
                           post.id === 'post-tonsillitis' ||

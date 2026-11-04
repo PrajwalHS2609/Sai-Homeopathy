@@ -2,6 +2,558 @@ import { PageSeoMetadata } from '../types/seo';
 
 export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   {
+    id: "blog-joint-pain-and-stiffness",
+    pageName: "Blog: Joint Pain and Stiffness Common Causes and When to Seek Help",
+    category: "blog",
+    path: "/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/",
+    title: "Joint Pain and Stiffness: Common Causes and When to Seek Help | Anjali Homoeo Clinic",
+    description: "Explore common causes of joint pain and stiffness, from osteoarthritis and rheumatoid arthritis to injuries and gout. Learn warning signs, diagnostics, and treatment.",
+    url: "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Joint_Pain_and_Stiffness_Guide_Banner.png",
+    twitterCard: "summary_large_image",
+    keywords: "joint pain causes, joint stiffness morning, osteoarthritis symptoms, rheumatoid arthritis, gout big toe, septic arthritis warning signs, joint pain homeopathy Malappuram, arthralgia treatment",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/#article",
+          "headline": "Joint Pain and Stiffness: Common Causes and When to Seek Help",
+          "description": "Comprehensive medical guide explaining causes of joint pain and stiffness, osteoarthritis, rheumatoid arthritis, gout, warning signs requiring emergency care, diagnostic tests, and evidence-based treatments.",
+          "image": "https://anjalihomoeoclinic.com/assets/aistudio/Joint_Pain_and_Stiffness_Guide_Banner.png",
+          "url": "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Dr. Anjali Chandrasekhar",
+            "jobTitle": "Senior Homeopathic Physician"
+          },
+          "publisher": {
+            "@type": "MedicalClinic",
+            "name": "Anjali Homoeo Clinic",
+            "url": "https://anjalihomoeoclinic.com/"
+          },
+          "datePublished": "2026-11-04",
+          "dateModified": "2026-11-04"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://anjalihomoeoclinic.com/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What are the most common causes of joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common causes include osteoarthritis, rheumatoid arthritis, gout, sports injuries, bursitis, tendinopathy and inflammatory conditions. Joint infections are less common but require urgent attention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do my joints feel stiff in the morning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Morning stiffness may occur after prolonged inactivity or because of inflammation within the joints. Brief stiffness can occur with osteoarthritis, while prolonged stiffness affecting several joints may suggest inflammatory arthritis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is joint pain always related to arthritis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Joint pain can also result from injuries, tendon problems, bursitis, infections and other musculoskeletal conditions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between osteoarthritis and rheumatoid arthritis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Osteoarthritis involves structural changes in the entire joint, including cartilage and underlying bone. Rheumatoid arthritis is an autoimmune inflammatory condition that primarily affects the joint lining and can damage joints over time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can young adults develop joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Young adults can develop joint pain because of sports injuries, repetitive strain, autoimmune conditions, infections and other medical problems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do my knees hurt when climbing stairs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Knee pain during stair climbing may be associated with osteoarthritis, patellofemoral pain, tendon problems or other knee conditions. The cause depends on the location of pain and examination findings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can stress cause joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Stress does not usually cause structural joint damage, but it can influence pain perception, muscle tension and sleep. Persistent joint symptoms still need appropriate assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does cold weather cause joint stiffness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some people report increased joint discomfort or stiffness in cold weather. However, weather changes do not explain every case of joint pain and do not necessarily indicate worsening joint damage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can dehydration cause joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dehydration may contribute to general discomfort and affect overall health, but it is not a common explanation for persistent joint pain. Ongoing symptoms should be assessed for other causes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the warning signs of rheumatoid arthritis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Persistent swelling and pain in several joints, prolonged morning stiffness, tenderness in the small joints of the hands and feet, and fatigue may suggest rheumatoid arthritis. Medical evaluation is important for diagnosis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I tell whether joint pain is due to gout?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Gout often causes sudden, intense pain with redness, warmth and swelling, commonly in the big toe. Other joints can also be affected. Joint fluid analysis may be needed to confirm the diagnosis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When is joint pain an emergency?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A suddenly hot, swollen and severely painful joint, particularly with fever or chills, may indicate septic arthritis and requires urgent medical care. Severe injuries with deformity or inability to bear weight also need prompt assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which doctor should I consult for joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A primary care doctor can begin the evaluation. Depending on the suspected cause, referral may be made to a rheumatologist, orthopaedic specialist or other appropriate clinician."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are blood tests necessary for joint pain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not always. Blood tests may be recommended when the doctor suspects inflammation, autoimmune disease, infection or metabolic conditions. The choice depends on symptoms and examination findings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can exercise make joint pain better?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Appropriate exercise can improve strength, flexibility and joint function. However, the type and intensity should match the underlying condition. Pain that becomes severe or progressively worse during exercise should be assessed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is walking good for knee osteoarthritis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Walking may be beneficial for many people with knee osteoarthritis when adjusted to their ability. A gradual programme and appropriate footwear may help. A physiotherapist can advise on suitable activity levels."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can joint stiffness be cured?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some causes of joint stiffness are temporary and improve with treatment. Chronic conditions may require long-term management. The outcome depends on the underlying diagnosis and extent of joint damage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does excess body weight affect joint health?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Excess body weight can increase mechanical stress on weight-bearing joints, particularly the knees and hips. Weight management may help reduce symptoms in some individuals with osteoarthritis."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can joint pain be caused by an infection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Viral infections can cause temporary joint symptoms, while bacterial infection inside a joint can cause septic arthritis. A hot, swollen and severely painful joint requires urgent assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best treatment for joint pain and stiffness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is no single best treatment for everyone. Management may involve physiotherapy, appropriate exercise, medication, weight management, treatment of inflammation or infection, injections or surgery depending on the cause."
+              }
+            }
+          ]
+        }
+      ]
+    })
+  },
+  {
+    id: "blog-acne-in-teenagers",
+    pageName: "Blog: Acne in Teenagers Understanding Hormonal Changes and Skin Care",
+    category: "blog",
+    path: "/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/",
+    title: "Acne in Teenagers: Understanding Hormonal Changes and Skin Care | Anjali Homoeo Clinic",
+    description: "Explore causes of teenage acne, pubertal hormonal changes, excess sebum, and C. acnes. Learn effective morning and evening skincare routines, treatments, and when to see a dermatologist.",
+    url: "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Acne_in_Teenagers_Skincare_Guide_Banner.png",
+    twitterCard: "summary_large_image",
+    keywords: "acne in teenagers, teenage acne causes, hormonal acne puberty, teenage skincare routine, benzoyl peroxide, salicylic acid, dermatologist acne consultation, homeopathy skin clinic Malappuram",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/#article",
+          "headline": "Acne in Teenagers: Understanding Hormonal Changes and Skin Care",
+          "description": "Comprehensive medical guide explaining causes of acne in teenagers, pubertal hormonal changes, breakout types, daily morning/evening skincare routines, evidence-based treatments, and when to consult a dermatologist.",
+          "image": "https://anjalihomoeoclinic.com/assets/aistudio/Acne_in_Teenagers_Skincare_Guide_Banner.png",
+          "url": "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Dr. Anjali Chandrasekhar",
+            "jobTitle": "Senior Homeopathic Physician"
+          },
+          "publisher": {
+            "@type": "MedicalClinic",
+            "name": "Anjali Homoeo Clinic",
+            "url": "https://anjalihomoeoclinic.com/"
+          },
+          "datePublished": "2026-11-04",
+          "dateModified": "2026-11-04"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://anjalihomoeoclinic.com/acne-in-teenagers-understanding-hormonal-changes-and-skin-care/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What causes acne in teenagers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teenage acne is mainly associated with hormonal changes during puberty. Increased androgen activity stimulates oil production, which can contribute to blocked pores, bacterial activity and inflammation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "At what age does teenage acne usually start?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Acne commonly begins around the start of puberty, often between 10 and 13 years of age. However, the timing varies from person to person."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is teenage acne normal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Acne is very common during adolescence. However, severe, painful or scarring acne should not be ignored, as effective treatments are available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does oily skin cause acne?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Excess oil can contribute to clogged pores, but oily skin alone does not determine whether someone will develop acne. Hormones, inflammation, genetics and other factors also play a role."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can food cause teenage acne?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Diet is not the only cause of acne. Some evidence suggests that high-glycaemic foods and certain dairy products may worsen acne in some individuals. Responses vary, and restrictive diets are generally unnecessary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does teenage acne take to improve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many acne treatments require approximately 6–8 weeks or longer before noticeable improvement. Some cases need several months of treatment and follow-up."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can teenage acne leave permanent scars?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Severe inflammation, deep acne lesions and repeated picking can increase the risk of permanent scarring. Early treatment helps reduce this risk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should teenagers use moisturizer if they have acne?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A lightweight, non-comedogenic moisturizer can help maintain the skin barrier and reduce dryness caused by acne treatments."
+              }
+            }
+          ]
+        }
+      ]
+    })
+  },
+  {
+    id: "blog-hair-thinning-in-women",
+    pageName: "Blog: Hair Thinning in Women Possible Causes and Medical Evaluation",
+    category: "blog",
+    path: "/hair-thinning-in-women-possible-causes-and-medical-evaluation/",
+    title: "Hair Thinning in Women: Possible Causes and Medical Evaluation | Anjali Homoeo Clinic",
+    description: "Explore common causes of female hair thinning, including female pattern hair loss, hormonal changes, telogen effluvium, and thyroid disorders. Learn evaluation and treatments.",
+    url: "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Hair_Thinning_in_Women_Medical_Evaluation_Banner.jpg",
+    twitterCard: "summary_large_image",
+    keywords: "hair thinning in women, female hair loss causes, female pattern hair loss, telogen effluvium, postpartum hair loss, thyroid hair thinning, hair loss treatment Malappuram, homeopathy hair clinic",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/#article",
+          "headline": "Hair Thinning in Women: Possible Causes and Medical Evaluation",
+          "description": "Comprehensive medical guide explaining causes of female hair thinning, including female pattern hair loss, telogen effluvium, hormones, nutritional deficiencies, and treatment options.",
+          "image": "https://anjalihomoeoclinic.com/assets/aistudio/Hair_Thinning_in_Women_Medical_Evaluation_Banner.jpg",
+          "url": "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Dr. Anjali Chandrasekhar",
+            "jobTitle": "Senior Homeopathic Physician"
+          },
+          "publisher": {
+            "@type": "MedicalClinic",
+            "name": "Anjali Homoeo Clinic",
+            "url": "https://anjalihomoeoclinic.com/"
+          },
+          "datePublished": "2026-11-04",
+          "dateModified": "2026-11-04"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://anjalihomoeoclinic.com/hair-thinning-in-women-possible-causes-and-medical-evaluation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the most common cause of hair thinning in women?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Female pattern hair loss is a common cause of gradual thinning. Hormonal changes, telogen effluvium, nutritional deficiencies and thyroid disorders are other possible causes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can hormonal imbalance cause hair loss in women?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Hormonal changes associated with PCOS, menopause, pregnancy and childbirth may influence hair growth and shedding."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is hair thinning after pregnancy normal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Postpartum shedding is common and usually temporary. It often becomes noticeable a few months after childbirth as the hair growth cycle returns towards its usual pattern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can iron deficiency cause hair thinning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Iron deficiency may contribute to hair shedding in some women. Blood tests can help determine whether iron deficiency is present and whether treatment is needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does stress cause hair loss?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Significant physical or emotional stress can trigger telogen effluvium, which causes increased hair shedding. The effect may become noticeable several months after the triggering event."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can female pattern hair loss be treated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Treatments such as topical minoxidil may help improve hair density or slow progression in suitable patients. Early diagnosis can support better management."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When should I worry about hair thinning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sudden hair loss, bald patches, progressive thinning, scalp inflammation or hair loss accompanied by other unexplained symptoms should be medically assessed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do hair growth supplements work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Supplements may help when a specific nutritional deficiency exists. They are unlikely to correct hair thinning caused by genetics, hormonal conditions or scalp disease without appropriate treatment."
+              }
+            }
+          ]
+        }
+      ]
+    })
+  },
+  {
+    id: "blog-dark-patches-facial-pigmentation",
+    pageName: "Blog: Dark Patches on the Face Common Causes of Skin Pigmentation",
+    category: "blog",
+    path: "/dark-patches-on-the-face-common-causes-of-skin-pigmentation/",
+    title: "Dark Patches on the Face: Common Causes of Skin Pigmentation | Anjali Homoeo Clinic",
+    description: "Explore common causes of dark patches on the face, including melasma, PIH, sunspots, and freckles. Learn clinical evaluation, treatments, and when to see a dermatologist.",
+    url: "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/",
+    canonicalUrl: "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/",
+    ogType: "article",
+    ogImage: "https://anjalihomoeoclinic.com/assets/aistudio/Dark_Patches__Common_Causes_of_Pigmentation_b2f8c0b4.png",
+    twitterCard: "summary_large_image",
+    keywords: "dark patches on face, skin pigmentation causes, melasma, post-inflammatory hyperpigmentation, sunspots, facial dark spots treatment, dermatology Malappuram, homeopathy skin clinic",
+    schemaType: "BlogPosting",
+    schemaJson: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/#article",
+          "headline": "Dark Patches on the Face: Common Causes of Skin Pigmentation",
+          "description": "Comprehensive medical guide explaining causes of dark patches on the face, including melasma, PIH, sunspots, freckles, diagnostic tests, and available treatments.",
+          "image": "https://anjalihomoeoclinic.com/assets/aistudio/Dark_Patches__Common_Causes_of_Pigmentation_b2f8c0b4.png",
+          "url": "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Dr. Anjali Chandrasekhar",
+            "jobTitle": "Senior Homeopathic Physician"
+          },
+          "publisher": {
+            "@type": "MedicalClinic",
+            "name": "Anjali Homoeo Clinic",
+            "url": "https://anjalihomoeoclinic.com/"
+          },
+          "datePublished": "2026-11-03",
+          "dateModified": "2026-11-03"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://anjalihomoeoclinic.com/dark-patches-on-the-face-common-causes-of-skin-pigmentation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the most common cause of dark patches on the face?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common causes include melasma, post-inflammatory hyperpigmentation, sunspots and freckles. The exact cause depends on the appearance, location and medical history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can hormonal changes cause facial pigmentation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Hormonal changes associated with pregnancy and certain hormonal contraceptives can contribute to melasma in susceptible individuals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does sun exposure make facial pigmentation worse?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Ultraviolet radiation can stimulate melanin production and darken existing pigmentation. Daily sunscreen and other sun-protection measures are important."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can acne leave permanent dark patches?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Acne can leave post-inflammatory hyperpigmentation. These marks often fade gradually, although some may persist for months or longer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does facial pigmentation take to fade?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The time varies according to the cause and depth of pigment. Superficial marks may improve over several months, while melasma and deeper pigmentation can be more persistent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is facial pigmentation a sign of a serious disease?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most facial pigmentation is harmless, but some conditions require medical assessment. Sudden changes, unusual lesions or pigmentation associated with other symptoms should be evaluated."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can home remedies remove dark patches?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is limited reliable evidence that common home remedies can safely remove facial pigmentation. Ingredients such as lemon juice may irritate the skin and make dark marks worse."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which doctor should I consult for facial pigmentation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A dermatologist is the appropriate specialist to diagnose different types of facial pigmentation and recommend suitable treatment."
+              }
+            }
+          ]
+        }
+      ]
+    })
+  },
+  {
     id: "blog-eczema-vs-psoriasis",
     pageName: "Blog: Eczema vs Psoriasis How to Understand the Differences",
     category: "blog",
