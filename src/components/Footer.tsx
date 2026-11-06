@@ -450,6 +450,20 @@ export const Footer: React.FC = () => {
               <span>Piles Treatment Near Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('piles-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Piles Treatment Near Kuttippuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('piles-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+              <span>Piles Treatment Near Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('menstrual-doctor-tirur')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
@@ -464,11 +478,32 @@ export const Footer: React.FC = () => {
               <span>Periods Doctor Near Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('menstrual-doctor-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Periods Doctor Near Kuttippuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('menstrual-doctor-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Periods Doctor Near Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('skin-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
               <span>Skin Treatment Near Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('skin-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin Treatment Near Kuttippuram</span>
             </button>
             <button
               onClick={() => handleLinkClick('hair-treatment-ponnani')}
@@ -478,11 +513,25 @@ export const Footer: React.FC = () => {
               <span>Hair Treatment in Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('hair-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair Treatment in Kuttippuram</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('psoriasis-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
               <span>Psoriasis Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('psoriasis-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Psoriasis Treatment in Kuttippuram</span>
             </button>
             <button
               onClick={() => handleLinkClick('acne-treatment-ponnani')}
@@ -492,11 +541,25 @@ export const Footer: React.FC = () => {
               <span>Acne Treatment in Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('acne-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Acne Treatment in Kuttippuram</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('scalp-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
               <span>Scalp Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('scalp-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Scalp Treatment in Kuttippuram</span>
             </button>
             <button
               onClick={() => handleLinkClick('eczema-treatment-ponnani')}
@@ -513,11 +576,25 @@ export const Footer: React.FC = () => {
               <span>Alopecia Treatment in Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('alopecia-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Alopecia Treatment in Kuttippuram</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('ringworm-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
               <span>Ringworm Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('ringworm-treatment-kuttippuram')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
+              <span>Ringworm Treatment in Kuttippuram</span>
             </button>
             <button
               onClick={() => handleLinkClick('skin-treatment-tirur')}

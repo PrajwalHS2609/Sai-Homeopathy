@@ -9194,6 +9194,1983 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-11-05',
   },
+  {
+    id: 'piles-treatment-kuttippuram',
+    pageName: 'Homeopathy Clinic near Kuttippuram for Piles Treatment',
+    category: 'clinical',
+    path: '/homeopathy-clinic-near-kuttippuram-for-piles-treatment/',
+    title:
+      'Homeopathy Clinic near Kuttippuram for Piles Treatment | Anjali Homoeo Clinic',
+    description:
+      'Consult Dr. Anjali Chandrasekhar (BHMS) near Kuttippuram for piles treatment, haemorrhoids, rectal bleeding & constipation. Evidence-aware clinical care.',
+    url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-kuttippuram-for-piles-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathy-clinic-near-kuttippuram-for-piles-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathy clinic near Kuttippuram for piles treatment, Piles clinic in Kuttippuram, Piles treatment in Kuttippuram, Piles consultation in Kuttippuram, Piles homeopathy treatment in Kuttippuram, Piles homeopathic clinic in Kuttippuram, Homeopathic doctor for piles in Kuttippuram, Piles specialist in Kuttippuram, Piles doctor in Kuttippuram, Homeopathy clinic for piles in Kuttippuram, Piles treatment near Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-kuttippuram-for-piles-treatment/#webpage',
+            name: 'Homeopathy Clinic near Kuttippuram for Piles Treatment | Anjali Homoeo Clinic',
+            headline: 'Homeopathy Clinic near Kuttippuram for Piles Treatment',
+            url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-kuttippuram-for-piles-treatment/',
+            description:
+              'Comprehensive patient guide explaining haemorrhoids (internal and external), risk factors, evidence-based medical therapies, diagnostic evaluation, and ethical healthcare guidance in Kuttippuram, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Internal Haemorrhoids',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'External Haemorrhoids',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64.4',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Thrombosed Haemorrhoids',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64.5',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking clinical assessment and dietary management for piles in Kuttippuram and Malappuram district',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-kuttippuram-for-piles-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Piles, also known as haemorrhoids, are swollen vascular structures and supporting connective tissues located in and around the anus and lower rectum. They can cause bleeding, itching, swelling and discomfort.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I get Piles Consultation in Kuttippuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can seek a consultation with a qualified healthcare professional in or around Kuttippuram. Choose a provider who can assess your symptoms, identify possible causes and recommend appropriate treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Piles Homeopathy Treatment in Kuttippuram effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy can cure piles or shrink haemorrhoids. Evidence-based medical treatments and lifestyle changes remain the established approaches.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles cause bleeding?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Internal haemorrhoids can cause bright-red bleeding during or after bowel movements. However, rectal bleeding can have other causes and should be assessed by a doctor.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles disappear without surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Mild symptoms may improve with dietary changes, adequate fluid intake, reduced straining and appropriate medical care. Persistent or severe cases may require procedures or surgery.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified general physician can assess initial symptoms. A general surgeon or colorectal specialist may be appropriate for persistent, severe or complicated haemorrhoids.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does constipation cause piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Chronic constipation and repeated straining can increase pressure around the anal region and contribute to haemorrhoids.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What foods should I eat if I have piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Fibre-rich foods such as vegetables, fruits, legumes and whole grains can help soften stools and reduce straining. Increase fibre gradually and drink sufficient water.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles come back after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Symptoms can recur, particularly when constipation, straining and other contributing factors continue. Maintaining healthy bowel habits can help reduce recurrence.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I see a Piles specialist in Kuttippuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a qualified doctor if you experience persistent bleeding, recurring discomfort, painful swelling or symptoms that do not improve. Seek urgent care for heavy bleeding, fainting, severe pain or fever.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'menstrual-doctor-kuttippuram',
+    pageName: 'Homeopathic Doctor Near Kuttippuram for Periods Problem',
+    category: 'clinical',
+    path: '/homeopathic-doctor-near-kuttippuram-for-periods-problem/',
+    title:
+      'Homeopathic Doctor Near Kuttippuram for Periods Problem | Anjali Homoeo Clinic',
+    description:
+      'Consult Dr. Anjali Chandrasekhar (BHMS) near Kuttippuram for periods problems, irregular cycles, painful menstruation, heavy bleeding & PCOS care.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-kuttippuram-for-periods-problem/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-doctor-near-kuttippuram-for-periods-problem/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic doctor near Kuttippuram for periods problem, Menstrual treatment in Kuttippuram, Period pain consultation in Kuttippuram, Homeopathic treatment for menstrual problems in Kuttippuram, Menstrual disorder consultation in Kuttippuram, Menstrual problems doctor in Kuttippuram, Homeopathic doctor for womens health in Kuttippuram, Homeopathy clinic for menstrual problems in Kuttippuram, Womens health homeopathy clinic in Kuttippuram, Menstrual health clinic in Kuttippuram, Period problems treatment in Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-kuttippuram-for-periods-problem/#webpage',
+            name: 'Homeopathic Doctor Near Kuttippuram for Periods Problem | Anjali Homoeo Clinic',
+            headline: 'Homeopathic Doctor Near Kuttippuram for Periods Problem',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-kuttippuram-for-periods-problem/',
+            description:
+              'Comprehensive patient guide explaining menstrual irregularities, severe period pain, heavy bleeding, delayed cycles, underlying hormonal causes, diagnostic investigations, and ethical healthcare guidance in Kuttippuram, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Menstrual Disorder',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dysmenorrhoea (Painful Periods)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Menorrhagia (Heavy Menstrual Bleeding)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Polycystic Ovary Syndrome (PCOS)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'E28.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Endometriosis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N80',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Women seeking clinical assessment and cycle guidance for menstrual problems in Kuttippuram and Malappuram district',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Women\'s Health Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-kuttippuram-for-periods-problem/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the common signs of menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common signs include irregular periods, missed cycles, unusually heavy bleeding, severe cramps, prolonged menstruation and significant premenstrual symptoms. Persistent changes should be medically assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if your periods become repeatedly irregular, you miss several periods, experience unusual bleeding or notice other symptoms such as excessive hair growth, significant weight changes or pelvic pain.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can PCOS cause irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. PCOS can interfere with regular ovulation and cause irregular, infrequent or absent periods. A healthcare professional can assess symptoms and recommend appropriate investigations.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy a proven treatment for menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No reliable scientific evidence establishes homeopathy as an effective treatment for menstrual disorders or their underlying causes. It should not replace evidence-based medical diagnosis or treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes painful periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Painful periods can occur due to uterine contractions. However, severe or worsening pain may be associated with endometriosis, adenomyosis, fibroids or other pelvic conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress affect menstrual cycles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Significant or prolonged stress can influence the hormonal processes involved in menstruation. However, recurring irregularities should not automatically be attributed to stress without considering other causes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What tests may be needed for menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Depending on symptoms, a doctor may recommend pregnancy testing, thyroid function tests, blood counts, iron studies, hormonal tests or pelvic ultrasound. The exact tests depend on individual circumstances.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle changes improve menstrual health?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Balanced nutrition, regular physical activity, adequate sleep and stress management support general health. However, lifestyle changes alone may not resolve menstrual disorders caused by medical conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I ignore a missed period if I feel healthy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. If pregnancy is possible, take an appropriate pregnancy test. Repeated missed periods should be evaluated even when there are no other noticeable symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prepare for a menstrual health consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Record your period dates, bleeding pattern, pain levels, associated symptoms, medication use and relevant medical history. This information can help the healthcare professional understand your concerns.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'skin-treatment-kuttippuram',
+    pageName: 'Homeopathic Clinic Near Kuttippuram for Skin Treatment',
+    category: 'clinical',
+    path: '/homeopathic-clinic-near-kuttippuram-for-skin-treatment/',
+    title:
+      'Homeopathic Clinic Near Kuttippuram for Skin Treatment | Anjali Homoeo Clinic',
+    description:
+      'Consult Dr. Anjali Chandrasekhar (BHMS) near Kuttippuram for skin treatment, acne, eczema, psoriasis, fungal infections & rashes. Evidence-aware clinical care.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-kuttippuram-for-skin-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-clinic-near-kuttippuram-for-skin-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic clinic near Kuttippuram for skin treatment, Skin treatment in Kuttippuram, Skin homeopathic treatment in Kuttippuram, Skin doctor in Kuttippuram, Homeopathic skin treatment in Kuttippuram, Skin problems treatment in Kuttippuram, Skin specialist in Kuttippuram, Skin disease treatment in Kuttippuram, Skin health clinic in Kuttippuram, Homeopathy clinic for skin problems in Kuttippuram, Skin homeopathy clinic in Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-kuttippuram-for-skin-treatment/#webpage',
+            name: 'Homeopathic Clinic Near Kuttippuram for Skin Treatment | Anjali Homoeo Clinic',
+            headline: 'Homeopathic Clinic Near Kuttippuram for Skin Treatment',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-kuttippuram-for-skin-treatment/',
+            description:
+              'Comprehensive clinical guide explaining common skin diseases (acne, eczema, psoriasis, fungal infections, allergies), root causes, diagnostic evaluation, evidence-based care, and responsible healthcare in Kuttippuram, Kerala.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Eczema / Atopic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatophytosis (Fungal Infection / Tinea)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Contact Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L23',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            medicalAudience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking clinical assessment and evidence-based guidance for skin diseases in Kuttippuram and Malappuram district',
+            },
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-kuttippuram-for-skin-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the common skin problems affecting people?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common skin conditions include acne, eczema, psoriasis, fungal infections, contact dermatitis, pigmentation changes, dryness and allergic rashes. Each condition has different causes and treatment requirements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homeopathy cure skin diseases?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homeopathy as an effective treatment for skin diseases. It should not replace proven dermatological treatment or delay medical diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a skin doctor?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a qualified healthcare professional if you have persistent itching, recurring rashes, painful lesions, spreading infections, severe acne or unexplained changes in skin appearance.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are fungal skin infections contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many fungal skin infections can spread through direct skin contact or contaminated personal items. Appropriate antifungal treatment and hygiene measures help manage infection and reduce transmission.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Psoriasis is a chronic immune-mediated inflammatory condition and does not spread through touching, sharing food or being near someone who has it.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between eczema and a fungal infection?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Eczema is an inflammatory skin condition, while fungal infections are caused by fungi. Both can cause itching and redness, so proper diagnosis is important before starting treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne leave permanent scars?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Severe or inflammatory acne can cause permanent scars. Early, appropriate treatment can reduce the risk of scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skincare products cause skin allergies?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Fragrances, preservatives, detergents and other ingredients can cause allergic or irritant reactions in some people. Discontinue a suspected irritating product and seek medical advice if symptoms persist or worsen.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain healthy skin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use gentle skincare products, moisturise when needed, protect your skin from sunlight, maintain balanced nutrition and avoid unnecessary self-medication.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I consult a dermatologist for recurring skin problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Recurring, severe or unexplained skin problems should be assessed by a qualified dermatologist or appropriate medical professional to identify the cause and discuss suitable treatment.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'hair-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Hair Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Hair Treatment | Anjali Homoeo Clinic',
+    description:
+      'Looking for a homoeopathic clinic in Kuttippuram for hair treatment? Understand causes of hair fall, pattern thinning, dandruff, evidence-based treatments and expert trichology advice.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Kuttippuram for Hair Treatment, Hair Treatment in Kuttippuram, Hair Fall Treatment Near Kuttippuram, Dandruff Treatment Kuttippuram, Alopecia Doctor Kuttippuram, Trichologist Near Kuttippuram, Pattern Baldness Kuttippuram, Hair Care Clinic Malappuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Hair Treatment | Anjali Homoeo Clinic',
+            description:
+              'Comprehensive clinical guide on hair fall, pattern baldness, alopecia areata, dandruff and trichology care near Kuttippuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis of Scalp',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking hair loss evaluation, pattern thinning, and scalp care near Kuttippuram and Malappuram district',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much hair fall is considered normal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Losing between 50 to 100 strands of hair per day is generally considered a normal part of the natural hair growth cycle. Hair constantly goes through phases of growth, resting and shedding.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is androgenetic alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Androgenetic alopecia, also known as pattern hair loss or male/female pattern baldness, is a genetically influenced condition where hair follicles gradually shrink and produce thinner hair over time.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Low iron, low ferritin, insufficient protein, vitamin D deficiency and vitamin B12 deficiency can contribute to telogen effluvium and impaired hair follicle function.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is dandruff caused by poor hygiene?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not necessarily. Dandruff is often associated with the overgrowth of Malassezia yeast, oily scalp and rapid skin cell turnover, although infrequent hair washing can allow oils and scales to build up.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure pattern baldness?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently no reliable scientific evidence that homoeopathy can cure pattern baldness or regrow hair lost to androgenetic alopecia. It should not replace proven conventional treatments like minoxidil.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I see a dermatologist for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should see a doctor or dermatologist if you notice sudden patchy hair loss, rapid thinning, painful scalp lesions, burning or scarring, or hair loss with systemic symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is alopecia areata?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia areata is an autoimmune condition where the body\'s immune system mistakenly attacks hair follicles, leading to smooth, round patches of hair loss on the scalp or body.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Physical or psychological stress can trigger telogen effluvium, causing a large number of hairs to enter the shedding phase simultaneously, typically 2 to 3 months after the stressful event.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does it take for hair treatments to show results?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair grows relatively slowly, about 1 centimetre per month. Most evidence-based treatments such as minoxidil require consistent use for at least 3 to 6 months before visible changes appear.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can tight hairstyles cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Hairstyles that pull tightly on hair follicles (such as tight braids, ponytails, buns or weaves) can cause traction alopecia, which may become permanent if tension continues over long periods.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'psoriasis-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Psoriasis Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Psoriasis Treatment | Anjali Homoeo Clinic',
+    description:
+      'Searching for a homoeopathic clinic in Kuttippuram for psoriasis treatment? Understand chronic scaly plaques, scalp psoriasis, evidence disclosures, and medical dermatology care.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Kuttippuram for Psoriasis Treatment, Psoriasis Treatment in Kuttippuram, Psoriasis Doctor in Kuttippuram, Scalp Psoriasis Kuttippuram, Psoriatic Arthritis Kuttippuram, Skin Specialist Near Kuttippuram, Plaque Psoriasis Treatment Malappuram, Psoriasis Clinic Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Psoriasis Treatment | Anjali Homoeo Clinic',
+            description:
+              'Clinical guide on chronic inflammatory psoriasis, scalp plaques, triggers, psoriatic arthritis risk, evidence disclosures, and medical dermatology care in Kuttippuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis Vulgaris (Plaque Psoriasis)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriatic Arthritis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.5',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Generalized Pustular Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking information and clinical consultation for psoriasis, scaly skin patches, and scalp psoriasis near Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Psoriasis is a chronic immune-mediated inflammatory skin condition that causes accelerated skin-cell growth. It commonly produces thick, scaly and inflamed skin patches.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Psoriasis is not contagious. It cannot spread through touching, sharing food, using common household items or being physically close to someone.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Reliable scientific evidence has not established homoeopathy as an effective treatment for psoriasis. It should not replace evidence-based dermatological care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include raised skin patches, scaling, itching, dryness, cracking and sometimes nail changes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress trigger psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stress can contribute to psoriasis flare-ups in some individuals. Managing stress may support general well-being, but it does not replace medical treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis a lifelong condition?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Psoriasis is generally a chronic condition that can involve periods of improvement and flare-ups. Although there is no permanent cure, treatment can help control symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis affect the nails?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Nail psoriasis can cause pitting, discolouration, thickening and separation of the nail from the nail bed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis affect the joints?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some people develop psoriatic arthritis, which can cause joint pain, swelling and stiffness. Persistent joint symptoms require medical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What treatments are available for psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment options may include topical medicines, phototherapy, systemic medications and biologic therapies. The choice depends on disease severity and individual health requirements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a dermatologist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a dermatologist if you experience persistent scaly patches, worsening inflammation, widespread symptoms, nail changes or possible joint involvement.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'acne-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Acne Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Acne Treatment | Anjali Homoeo Clinic',
+    description:
+      'Searching for a homoeopathic clinic in Kuttippuram for acne treatment? Understand pimples, comedones, hormonal breakouts, evidence disclosures, and medical dermatological care.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Kuttippuram for Acne Treatment, Acne Treatment in Kuttippuram, Face Acne Treatment in Kuttippuram, Acne Doctor in Kuttippuram, Pimple Treatment Kuttippuram, Hormonal Acne Kuttippuram, Acne Specialist Near Kuttippuram, Acne Clinic Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Acne Treatment | Anjali Homoeo Clinic',
+            description:
+              'Clinical guide on facial acne, hormonal breakouts, teenage vs adult acne, scarring prevention, evidence disclosures, and medical care in Kuttippuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Conglobata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Unspecified',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking information and clinical consultation for acne, pimples, and facial skin health near Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes acne on the face?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Facial acne commonly develops when hair follicles become blocked by excess oil and dead skin cells. Hormonal changes, inflammation, genetics and certain skincare products may also contribute.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can adults develop acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Acne can affect adults even if they did not experience it during their teenage years. Hormonal changes, genetics and other factors may contribute to adult acne.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is acne caused by poor hygiene?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Acne is not simply caused by an unclean face. Excessive washing and harsh scrubbing can irritate the skin and make symptoms worse.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the best treatment for facial acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment depends on the type and severity of acne. Common evidence-based options include benzoyl peroxide, topical retinoids and azelaic acid. Moderate or severe cases may require prescription medicines.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homoeopathy as an effective cure or treatment for acne. Patients should not replace proven medical treatment with homoeopathy.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a dermatologist for acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a dermatologist if acne is painful, severe, persistent, causing scars or not responding to appropriate over-the-counter treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne leave permanent scars?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deep inflammatory acne, particularly nodules and cysts, can damage deeper skin tissue and cause permanent scars. Early and appropriate treatment can reduce this risk.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is it safe to squeeze pimples?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Squeezing or picking pimples can increase inflammation and the risk of infection, pigmentation and scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can skincare products make acne worse?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some heavy or pore-blocking products may contribute to breakouts. Choosing non-comedogenic skincare products can help reduce this risk.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does diet affect acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dietary effects vary between individuals. Some research suggests that high-glycaemic diets and certain dairy products may be associated with acne in some people, but diet is not the sole cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can teenagers receive acne treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Teenagers can receive acne treatment based on their age, skin condition and medical history. Persistent or severe acne should be assessed by a qualified healthcare professional.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne marks be treated?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Post-acne dark marks and scars may improve with appropriate dermatological treatments. The best option depends on whether the concern is pigmentation, redness or a change in skin texture.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'scalp-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Scalp Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Scalp Treatment | Anjali Homoeo Clinic',
+    description:
+      'Looking for a homoeopathic clinic in Kuttippuram for scalp treatment? Understand causes of dandruff, seborrhoeic dermatitis, scalp psoriasis, evidence disclosures, and medical care.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Kuttippuram for Scalp Treatment, Scalp Treatment in Kuttippuram, Dandruff Treatment in Kuttippuram, Scalp Doctor in Kuttippuram, Scalp Psoriasis Kuttippuram, Seborrhoeic Dermatitis Kuttippuram, Trichology Clinic Kuttippuram, Scalp Itching Treatment Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Scalp Treatment | Anjali Homoeo Clinic',
+            description:
+              'Clinical guide on dandruff, seborrhoeic dermatitis, scalp psoriasis, fungal infections, hair breakage, evidence disclosures, and scalp care in Kuttippuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis of Scalp',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Dermatitis & Eczema',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking information and clinical consultation for dandruff, scalp itching, flaking, and scalp health near Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the common causes of scalp problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common causes include dandruff, seborrhoeic dermatitis, psoriasis, eczema, fungal infections, allergic reactions and unsuitable hair-care products. The correct cause should be identified before choosing treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure dandruff?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homoeopathy as an effective cure for dandruff. Evidence-based management may include medicated shampoos and other treatments depending on the underlying condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is scalp itching always caused by dandruff?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Scalp itching may be associated with dryness, eczema, psoriasis, contact dermatitis, fungal infections or other conditions. Persistent itching should be medically assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can scalp fungal infections cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Fungal infections such as tinea capitis can cause scaly patches, broken hairs and patchy hair loss. They generally require prescription oral antifungal treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a scalp specialist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if you experience persistent itching, painful patches, thick scaling, sores, pus, sudden hair loss or symptoms that do not improve with appropriate treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause permanent hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ordinary dandruff does not usually cause permanent hair loss. However, repeated scratching and severe inflammation may contribute to temporary hair shedding or breakage.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between dandruff and scalp psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dandruff generally causes loose flakes, while scalp psoriasis often produces thicker, well-defined plaques with silvery scales. A dermatologist can help distinguish between these conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair products cause scalp irritation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Hair dyes, fragrances, shampoos and styling products may trigger irritation or allergic contact dermatitis in some individuals. Stop using a suspected product if it causes a reaction and seek medical advice.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can scalp problems affect hair growth?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some scalp conditions, particularly fungal infections and severe inflammation, can affect hair growth or cause temporary hair loss. The effect depends on the condition and its severity.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I stop my prescribed scalp medication when considering homoeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Do not stop or change prescribed medication without consulting the clinician who prescribed it. Discuss any complementary treatment you are considering with your healthcare professional.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'alopecia-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Alopecia Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Alopecia Treatment | Anjali Homoeo Clinic',
+    description:
+      'Searching for a homoeopathic clinic in Kuttippuram for alopecia treatment? Understand causes of patchy hair loss, alopecia areata, thinning, evidence disclosures, and medical trichology care.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Kuttippuram for Alopecia Treatment, Alopecia Treatment in Kuttippuram, Alopecia Areata Treatment Kuttippuram, Patchy Hair Loss Kuttippuram, Hair Fall Doctor Kuttippuram, Trichologist Near Kuttippuram, Alopecia Specialist Kuttippuram, Hair Regrowth Clinic Kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Alopecia Treatment | Anjali Homoeo Clinic',
+            description:
+              'Clinical guide on patchy hair loss, alopecia areata, pattern baldness, telogen effluvium, evidence disclosures, and medical trichology care in Kuttippuram.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Totalis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Cicatricial (Scarring) Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L66',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking information and clinical consultation for patchy hair loss, alopecia areata, and thinning hair near Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia is a general term for hair loss. It includes different conditions such as alopecia areata, androgenetic alopecia, traction alopecia and scarring alopecia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Possible causes include autoimmune conditions, genetics, hormonal changes, nutritional deficiencies, stress, certain medicines, scalp infections and inflammatory skin conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homoeopathy as an effective treatment or cure for alopecia. Patients should not delay proven medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is alopecia areata an autoimmune condition?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Alopecia areata is an autoimmune condition in which the immune system mistakenly attacks hair follicles, resulting in patchy hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair grow back after alopecia areata?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair may regrow in some people, sometimes without treatment. However, recurrence is possible, and the course varies between individuals.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an alopecia specialist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice for sudden or patchy hair loss, rapidly progressing thinning, eyebrow or eyelash loss, scalp inflammation or signs of scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deficiencies such as iron deficiency may contribute to hair shedding. Appropriate investigations can help identify whether a deficiency is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does stress cause alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Significant stress can contribute to telogen effluvium, a form of excessive hair shedding. Alopecia areata has a different autoimmune mechanism, although stress may be associated with episodes in some individuals.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can alopecia cause permanent hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some forms, particularly scarring alopecia, can cause permanent hair loss because the follicles are destroyed. Other types may allow partial or complete regrowth.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I stop prescribed hair-loss medication when considering homoeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Do not stop or change prescribed medicines without consulting the clinician responsible for your treatment. Discuss complementary approaches with your healthcare professional.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'ringworm-treatment-kuttippuram',
+    pageName: 'Homoeopathic Clinic in Kuttippuram for Ringworm Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/',
+    title:
+      'Homoeopathic Clinic in Kuttippuram for Ringworm Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide on ringworm (dermatophyte fungal infection) near Kuttippuram. Evidence-based antifungal therapies, causes, transmission, red flags, recurrence prevention, and holistic clinical consultations.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'ringworm treatment kuttippuram, homoeopathic clinic in kuttippuram for ringworm treatment, fungal skin infection kuttippuram, tinea corporis kuttippuram, tinea cruris treatment kuttippuram, fungal rash doctor kuttippuram, skin fungal specialist malappuram, homoeopathy clinic kuttippuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/',
+            name: 'Homoeopathic Clinic in Kuttippuram for Ringworm Treatment | Clinical Care Guide',
+            description:
+              'Evidence-based patient guide for ringworm (tinea fungal infection) in Kuttippuram. Covers causes, transmission modes, symptoms, diagnostic tests, antifungal treatments, recurrence prevention, and consultation options.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Ringworm (Dermatophytosis / Tinea)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Corporis (Body Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.4',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Cruris (Jock Itch)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Pedis (Athlete’s Foot)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.3',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking diagnosis, antifungal medical guidance, and holistic care for ringworm and fungal skin rashes near Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ringworm is a contagious fungal infection caused by dermatophytes. It commonly affects the skin but can also involve the scalp, feet, groin and nails. It is not caused by a worm.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is ringworm contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Ringworm can spread through direct contact with infected skin, contaminated personal items, surfaces and infected animals. Good hygiene and appropriate treatment help reduce transmission.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include circular or oval rashes, itching, redness, scaling, peeling and raised borders. Scalp infections may cause broken hair and patchy hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How is ringworm diagnosed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A healthcare professional may examine the affected area. Skin scraping, microscopic examination or fungal culture may be recommended when necessary to confirm the infection.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy can cure ringworm or eliminate the fungi responsible for it. Evidence-based antifungal treatment remains the recommended approach for confirmed fungal infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does ringworm treatment take?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The duration depends on the affected area, severity, type of infection and medicine used. Some skin infections improve with a few weeks of appropriate topical treatment, while scalp and nail infections may require longer treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm return after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Reinfection or recurrence can occur through contact with infected people, animals or contaminated items. Incomplete treatment and certain health conditions may also contribute.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I use steroid creams for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Do not use steroid creams without medical advice. Steroids can mask the symptoms and may allow fungal infections to spread or become more difficult to diagnose.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does scalp ringworm cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Scalp ringworm can cause broken hair and patchy hair loss. Prompt medical treatment is important because severe inflammation can sometimes lead to permanent scarring and hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if the rash spreads, causes significant discomfort, affects the scalp or nails, becomes inflamed, repeatedly returns or does not improve with appropriate treatment.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'piles-treatment-puthanathani',
+    pageName: 'Homeopathy Clinic Near Puthanathani for Piles Treatment',
+    category: 'clinical',
+    path: '/homeopathy-clinic-near-puthanathani-for-piles-treatment/',
+    title:
+      'Homeopathy Clinic Near Puthanathani for Piles Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide on piles (haemorrhoids) and rectal bleeding near Puthanathani. Evidence-based treatments, causes, red flags, dietary fibre relief, and confidential consultations.',
+    url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-puthanathani-for-piles-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathy-clinic-near-puthanathani-for-piles-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathy Clinic Near Puthanathani for Piles Treatment, Piles Treatment in Puthanathani, Homeopathy clinic for piles in Puthanathani, Piles Consultation in Puthanathani, Piles doctor in Puthanathani, Piles specialist in Puthanathani, Piles Clinic in Puthanathani, Haemorrhoids Clinic Puthanathani Malappuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-near-puthanathani-for-piles-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathy-clinic-near-puthanathani-for-piles-treatment/',
+            name: 'Homeopathy Clinic Near Puthanathani for Piles Treatment | Clinical Care Guide',
+            description:
+              'Evidence-based patient guide for piles (haemorrhoids) and anorectal symptoms near Puthanathani. Covers internal/external piles, causes, diagnosis, medical/surgical treatments, lifestyle relief, and consultation details.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Haemorrhoids (Piles)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Internal Haemorrhoids',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'External Haemorrhoids',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'K64.5',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Patients seeking diagnosis, lifestyle dietary relief, and clinical evaluation for piles and rectal bleeding near Puthanathani and Kuttippuram, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathy-clinic-near-puthanathani-for-piles-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Piles, or haemorrhoids, are swollen vascular structures in and around the anus and lower rectum. They may cause bleeding, itching, swelling and discomfort.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include bright red rectal bleeding, itching, swelling, discomfort, a lump near the anus and prolapse during bowel movements.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles improve without surgery?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many mild cases improve with dietary changes, fibre, adequate fluids and avoiding straining. Some persistent cases may require office-based procedures or surgery.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy cures haemorrhoids or removes haemorrhoidal tissue. Evidence-based medical assessment and treatment should not be replaced by homoeopathy.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is rectal bleeding always caused by piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Rectal bleeding can have several causes, including anal fissures, inflammatory bowel conditions and other gastrointestinal problems. Medical assessment is important.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What foods may help people with piles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Fibre-rich foods such as fruits, vegetables, whole grains, oats, beans and lentils may help soften stools and reduce constipation-related straining.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are piles dangerous?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many cases are not serious, but persistent bleeding, severe pain or other unusual symptoms require medical evaluation. Rectal bleeding should never be ignored.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can piles come back after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Symptoms may recur, particularly if constipation, straining and other contributing factors continue. Lifestyle changes can help reduce these risks.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a piles doctor?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if you notice rectal bleeding, persistent itching, swelling, pain, a lump near the anus or recurring bowel discomfort.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prevent piles from worsening?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Eat fibre-rich foods, drink adequate fluids, avoid straining, limit time spent on the toilet and maintain regular physical activity.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
+  {
+    id: 'menstrual-doctor-puthanathani',
+    pageName: 'Homeopathic Doctor Near Puthanathani for Periods Problem',
+    category: 'clinical',
+    path: '/homeopathic-doctor-near-puthanathani-for-periods-problem/',
+    title:
+      'Homeopathic Doctor Near Puthanathani for Periods Problem | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide on irregular periods, dysmenorrhoea, heavy bleeding, and PCOS near Puthanathani. Evidence-based care, causes, diagnostic tests, red flags, and consultations.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-puthanathani-for-periods-problem/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-doctor-near-puthanathani-for-periods-problem/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic Doctor Near Puthanathani for Periods Problem, Menstrual Treatment in Puthanathani, Menstrual Problems Doctor in Puthanathani, Period Pain Consultation in Puthanathani, Homeopathic Doctor for Womens Health in Puthanathani, PCOS Treatment Puthanathani, Irregular Periods Doctor Puthanathani Malappuram',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-puthanathani-for-periods-problem/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-doctor-near-puthanathani-for-periods-problem/',
+            name: 'Homeopathic Doctor Near Puthanathani for Periods Problem | Clinical Care Guide',
+            description:
+              'Evidence-based patient guide for menstrual disorders, painful periods, heavy bleeding, and PCOS near Puthanathani. Covers cycle biology, causes, medical diagnostics, evidence-based treatments, and women’s health consultations.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Menstrual Disorder (Irregular Periods)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dysmenorrhoea (Painful Menstruation)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N94.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Polycystic Ovary Syndrome (PCOS)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'E28.2',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Excessive Menstruation (Menorrhagia)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'N92.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            audience: {
+              '@type': 'MedicalAudience',
+              audienceType:
+                'Women seeking clinical consultation, diagnostic investigation, and evidence-based guidance for period pain, irregular cycles, and PCOS near Puthanathani, Kerala',
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-doctor-near-puthanathani-for-periods-problem/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are common menstrual problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common menstrual problems include irregular periods, painful menstruation, heavy bleeding, missed periods, spotting and premenstrual symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Irregular periods may be associated with PCOS, thyroid disorders, stress, weight changes, excessive exercise, pregnancy and other hormonal or reproductive health conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a menstrual problems doctor?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if periods are repeatedly irregular, unusually heavy, very painful or accompanied by bleeding between periods.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homoeopathy cure menstrual disorders?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy cures menstrual disorders or corrects hormonal imbalances. It should not replace appropriate medical diagnosis and evidence-based treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is period pain normal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Mild to moderate cramps are common for many women. However, severe, worsening or persistent pain should be evaluated because conditions such as endometriosis and fibroids may cause painful menstruation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can PCOS cause irregular periods?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. PCOS can affect ovulation and hormone levels, resulting in irregular or infrequent periods. Medical assessment can help determine appropriate management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I track before a menstrual consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Record the first day of each period, cycle length, bleeding duration, approximate flow, pain severity and any additional symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress affect menstrual cycles?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Significant stress can influence the hormonal processes involved in menstruation and may contribute to cycle changes. Persistent irregularities should still be medically assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes heavy menstrual bleeding?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Possible causes include fibroids, hormonal conditions, adenomyosis, bleeding disorders, certain medicines and other reproductive health conditions. Investigation may be necessary.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When is period pain an emergency?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sudden severe pelvic pain, particularly when pregnancy is possible, or heavy bleeding accompanied by fainting, dizziness or breathlessness requires urgent medical attention.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-06',
+  },
 ];
 
 

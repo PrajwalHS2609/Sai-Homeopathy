@@ -74,6 +74,17 @@ import { ScalpPonnaniPage } from './components/ScalpPonnaniPage';
 import { EczemaPonnaniPage } from './components/EczemaPonnaniPage';
 import { AlopeciaPonnaniPage } from './components/AlopeciaPonnaniPage';
 import { RingwormPonnaniPage } from './components/RingwormPonnaniPage';
+import { PilesKuttippuramPage } from './components/PilesKuttippuramPage';
+import { MenstrualKuttippuramPage } from './components/MenstrualKuttippuramPage';
+import { SkinKuttippuramPage } from './components/SkinKuttippuramPage';
+import { HairKuttippuramPage } from './components/HairKuttippuramPage';
+import { PsoriasisKuttippuramPage } from './components/PsoriasisKuttippuramPage';
+import { AcneKuttippuramPage } from './components/AcneKuttippuramPage';
+import { ScalpKuttippuramPage } from './components/ScalpKuttippuramPage';
+import { AlopeciaKuttippuramPage } from './components/AlopeciaKuttippuramPage';
+import { RingwormKuttippuramPage } from './components/RingwormKuttippuramPage';
+import { PilesPuthanathaniPage } from './components/PilesPuthanathaniPage';
+import { MenstrualPuthanathaniPage } from './components/MenstrualPuthanathaniPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -951,6 +962,220 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <RingwormPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathy Clinic near Kuttippuram for Piles Treatment View
+  // URL: /homeopathy-clinic-near-kuttippuram-for-piles-treatment/
+  if (currentView === 'piles-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Doctor Near Kuttippuram for Periods Problem View
+  // URL: /homeopathic-doctor-near-kuttippuram-for-periods-problem/
+  if (currentView === 'menstrual-doctor-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Clinic Near Kuttippuram for Skin Treatment View
+  // URL: /homeopathic-clinic-near-kuttippuram-for-skin-treatment/
+  if (currentView === 'skin-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Kuttippuram for Hair Treatment View
+  // URL: /homoeopathic-clinic-in-kuttippuram-for-hair-treatment/
+  if (currentView === 'hair-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Kuttippuram for Psoriasis Treatment View
+  // URL: /homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/
+  if (currentView === 'psoriasis-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PsoriasisKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Kuttippuram for Acne Treatment View
+  // URL: /homoeopathic-clinic-in-kuttippuram-for-acne-treatment/
+  if (currentView === 'acne-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AcneKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Kuttippuram for Scalp Treatment View
+  // URL: /homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/
+  if (currentView === 'scalp-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <ScalpKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Kuttippuram for Alopecia Treatment View
+  // URL: /homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/
+  if (currentView === 'alopecia-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AlopeciaKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  if (currentView === 'ringworm-treatment-kuttippuram') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RingwormKuttippuramPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  if (currentView === 'piles-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PilesPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  if (currentView === 'menstrual-doctor-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <MenstrualPuthanathaniPage />
         </main>
         <Footer />
         <ProductDetailModal />

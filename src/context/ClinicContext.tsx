@@ -78,7 +78,18 @@ export type NavView =
   | 'scalp-treatment-ponnani'
   | 'eczema-treatment-ponnani'
   | 'alopecia-treatment-ponnani'
-  | 'ringworm-treatment-ponnani';
+  | 'ringworm-treatment-ponnani'
+  | 'piles-treatment-kuttippuram'
+  | 'menstrual-doctor-kuttippuram'
+  | 'skin-treatment-kuttippuram'
+  | 'hair-treatment-kuttippuram'
+  | 'psoriasis-treatment-kuttippuram'
+  | 'acne-treatment-kuttippuram'
+  | 'scalp-treatment-kuttippuram'
+  | 'alopecia-treatment-kuttippuram'
+  | 'ringworm-treatment-kuttippuram'
+  | 'piles-treatment-puthanathani'
+  | 'menstrual-doctor-puthanathani';
 
 interface Toast {
   id: string;
@@ -1046,6 +1057,390 @@ const isRingwormPonnaniPath = (pathname: string) => {
   );
 };
 
+const isPilesKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathy-clinic-near-kuttippuram-for-piles-treatment' ||
+    clean === '/homeopathy-clinic-near-kuttippuram-for-piles-treatment/' ||
+    clean === '/homoeopathy-clinic-near-kuttippuram-for-piles-treatment' ||
+    clean === '/homoeopathy-clinic-near-kuttippuram-for-piles-treatment/' ||
+    clean === '/piles-clinic-in-kuttippuram' ||
+    clean === '/piles-clinic-in-kuttippuram/' ||
+    clean === '/piles-treatment-in-kuttippuram' ||
+    clean === '/piles-treatment-in-kuttippuram/' ||
+    clean === '/piles-treatment-near-kuttippuram' ||
+    clean === '/piles-treatment-near-kuttippuram/' ||
+    clean === '/piles-consultation-in-kuttippuram' ||
+    clean === '/piles-consultation-in-kuttippuram/' ||
+    clean === '/piles-homeopathy-treatment-in-kuttippuram' ||
+    clean === '/piles-homeopathy-treatment-in-kuttippuram/' ||
+    clean === '/piles-homeopathic-clinic-in-kuttippuram' ||
+    clean === '/piles-homeopathic-clinic-in-kuttippuram/' ||
+    clean === '/homeopathic-doctor-for-piles-in-kuttippuram' ||
+    clean === '/homeopathic-doctor-for-piles-in-kuttippuram/' ||
+    clean === '/piles-specialist-in-kuttippuram' ||
+    clean === '/piles-specialist-in-kuttippuram/' ||
+    clean === '/piles-doctor-in-kuttippuram' ||
+    clean === '/piles-doctor-in-kuttippuram/' ||
+    clean === '/homeopathy-clinic-for-piles-in-kuttippuram' ||
+    clean === '/homeopathy-clinic-for-piles-in-kuttippuram/'
+  );
+};
+
+const isMenstrualKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-doctor-near-kuttippuram-for-periods-problem' ||
+    clean === '/homeopathic-doctor-near-kuttippuram-for-periods-problem/' ||
+    clean === '/homoeopathic-doctor-near-kuttippuram-for-periods-problem' ||
+    clean === '/homoeopathic-doctor-near-kuttippuram-for-periods-problem/' ||
+    clean === '/menstrual-treatment-in-kuttippuram' ||
+    clean === '/menstrual-treatment-in-kuttippuram/' ||
+    clean === '/period-pain-consultation-in-kuttippuram' ||
+    clean === '/period-pain-consultation-in-kuttippuram/' ||
+    clean === '/homeopathic-treatment-for-menstrual-problems-in-kuttippuram' ||
+    clean === '/homeopathic-treatment-for-menstrual-problems-in-kuttippuram/' ||
+    clean === '/menstrual-disorder-consultation-in-kuttippuram' ||
+    clean === '/menstrual-disorder-consultation-in-kuttippuram/' ||
+    clean === '/menstrual-problems-doctor-in-kuttippuram' ||
+    clean === '/menstrual-problems-doctor-in-kuttippuram/' ||
+    clean === '/homeopathic-doctor-for-womens-health-in-kuttippuram' ||
+    clean === '/homeopathic-doctor-for-womens-health-in-kuttippuram/' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-kuttippuram' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-kuttippuram/' ||
+    clean === '/womens-health-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/womens-health-homeopathy-clinic-in-kuttippuram/' ||
+    clean === '/menstrual-health-clinic-in-kuttippuram' ||
+    clean === '/menstrual-health-clinic-in-kuttippuram/' ||
+    clean === '/period-problems-treatment-in-kuttippuram' ||
+    clean === '/period-problems-treatment-in-kuttippuram/'
+  );
+};
+
+const isSkinKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-clinic-near-kuttippuram-for-skin-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-skin-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-skin-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-skin-treatment/' ||
+    clean === '/skin-treatment-in-kuttippuram' ||
+    clean === '/skin-treatment-in-kuttippuram/' ||
+    clean === '/skin-treatment-near-kuttippuram' ||
+    clean === '/skin-treatment-near-kuttippuram/' ||
+    clean === '/skin-homeopathic-treatment-in-kuttippuram' ||
+    clean === '/skin-homeopathic-treatment-in-kuttippuram/' ||
+    clean === '/skin-doctor-in-kuttippuram' ||
+    clean === '/skin-doctor-in-kuttippuram/' ||
+    clean === '/homeopathic-skin-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-skin-treatment-in-kuttippuram/' ||
+    clean === '/skin-problems-treatment-in-kuttippuram' ||
+    clean === '/skin-problems-treatment-in-kuttippuram/' ||
+    clean === '/skin-specialist-in-kuttippuram' ||
+    clean === '/skin-specialist-in-kuttippuram/' ||
+    clean === '/skin-disease-treatment-in-kuttippuram' ||
+    clean === '/skin-disease-treatment-in-kuttippuram/' ||
+    clean === '/skin-health-clinic-in-kuttippuram' ||
+    clean === '/skin-health-clinic-in-kuttippuram/' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-kuttippuram' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-kuttippuram/' ||
+    clean === '/skin-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/skin-homeopathy-clinic-in-kuttippuram/'
+  );
+};
+
+const isHairKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-hair-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-hair-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-hair-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-hair-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-hair-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-hair-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-hair-treatment/' ||
+    clean === '/hair-treatment-in-kuttippuram' ||
+    clean === '/hair-treatment-in-kuttippuram/' ||
+    clean === '/hair-treatment-near-kuttippuram' ||
+    clean === '/hair-treatment-near-kuttippuram/' ||
+    clean === '/homoeopathic-hair-treatment-in-kuttippuram' ||
+    clean === '/homoeopathic-hair-treatment-in-kuttippuram/' ||
+    clean === '/homeopathic-hair-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-hair-treatment-in-kuttippuram/' ||
+    clean === '/hair-doctor-in-kuttippuram' ||
+    clean === '/hair-doctor-in-kuttippuram/' ||
+    clean === '/hair-fall-treatment-in-kuttippuram' ||
+    clean === '/hair-fall-treatment-in-kuttippuram/' ||
+    clean === '/hair-loss-treatment-in-kuttippuram' ||
+    clean === '/hair-loss-treatment-in-kuttippuram/' ||
+    clean === '/hair-specialist-in-kuttippuram' ||
+    clean === '/hair-specialist-in-kuttippuram/' ||
+    clean === '/hair-health-clinic-in-kuttippuram' ||
+    clean === '/hair-health-clinic-in-kuttippuram/' ||
+    clean === '/homoeopathy-clinic-for-hair-problems-in-kuttippuram' ||
+    clean === '/homoeopathy-clinic-for-hair-problems-in-kuttippuram/' ||
+    clean === '/homeopathy-clinic-for-hair-problems-in-kuttippuram' ||
+    clean === '/homeopathy-clinic-for-hair-problems-in-kuttippuram/' ||
+    clean === '/hair-care-clinic-in-kuttippuram' ||
+    clean === '/hair-care-clinic-in-kuttippuram/' ||
+    clean === '/hair-and-scalp-treatment-in-kuttippuram' ||
+    clean === '/hair-and-scalp-treatment-in-kuttippuram/'
+  );
+};
+
+const isPsoriasisKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-psoriasis-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-psoriasis-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-psoriasis-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-psoriasis-treatment/' ||
+    clean === '/psoriasis-treatment-in-kuttippuram' ||
+    clean === '/psoriasis-treatment-in-kuttippuram/' ||
+    clean === '/psoriasis-treatment-near-kuttippuram' ||
+    clean === '/psoriasis-treatment-near-kuttippuram/' ||
+    clean === '/homoeopathic-psoriasis-treatment-in-kuttippuram' ||
+    clean === '/homoeopathic-psoriasis-treatment-in-kuttippuram/' ||
+    clean === '/homeopathic-psoriasis-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-psoriasis-treatment-in-kuttippuram/' ||
+    clean === '/psoriasis-doctor-in-kuttippuram' ||
+    clean === '/psoriasis-doctor-in-kuttippuram/' ||
+    clean === '/psoriasis-specialist-in-kuttippuram' ||
+    clean === '/psoriasis-specialist-in-kuttippuram/' ||
+    clean === '/psoriasis-clinic-in-kuttippuram' ||
+    clean === '/psoriasis-clinic-in-kuttippuram/' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-kuttippuram' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-kuttippuram/' ||
+    clean === '/psoriasis-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/psoriasis-homeopathy-clinic-in-kuttippuram/'
+  );
+};
+
+const isAcneKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-acne-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-acne-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-acne-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-acne-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-acne-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-acne-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-acne-treatment/' ||
+    clean === '/acne-treatment-in-kuttippuram' ||
+    clean === '/acne-treatment-in-kuttippuram/' ||
+    clean === '/acne-treatment-near-kuttippuram' ||
+    clean === '/acne-treatment-near-kuttippuram/' ||
+    clean === '/face-acne-treatment-in-kuttippuram' ||
+    clean === '/face-acne-treatment-in-kuttippuram/' ||
+    clean === '/homoeopathic-acne-treatment-in-kuttippuram' ||
+    clean === '/homoeopathic-acne-treatment-in-kuttippuram/' ||
+    clean === '/homeopathic-acne-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-acne-treatment-in-kuttippuram/' ||
+    clean === '/acne-doctor-in-kuttippuram' ||
+    clean === '/acne-doctor-in-kuttippuram/' ||
+    clean === '/acne-specialist-in-kuttippuram' ||
+    clean === '/acne-specialist-in-kuttippuram/' ||
+    clean === '/acne-clinic-in-kuttippuram' ||
+    clean === '/acne-clinic-in-kuttippuram/' ||
+    clean === '/acne-homoeopathy-clinic-in-kuttippuram' ||
+    clean === '/acne-homoeopathy-clinic-in-kuttippuram/' ||
+    clean === '/acne-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/acne-homeopathy-clinic-in-kuttippuram/' ||
+    clean === '/pimple-treatment-in-kuttippuram' ||
+    clean === '/pimple-treatment-in-kuttippuram/'
+  );
+};
+
+const isScalpKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-scalp-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-scalp-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-scalp-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-scalp-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-scalp-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-scalp-treatment/' ||
+    clean === '/scalp-treatment-in-kuttippuram' ||
+    clean === '/scalp-treatment-in-kuttippuram/' ||
+    clean === '/scalp-treatment-near-kuttippuram' ||
+    clean === '/scalp-treatment-near-kuttippuram/' ||
+    clean === '/homoeopathic-scalp-treatment-in-kuttippuram' ||
+    clean === '/homoeopathic-scalp-treatment-in-kuttippuram/' ||
+    clean === '/homeopathic-scalp-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-scalp-treatment-in-kuttippuram/' ||
+    clean === '/scalp-doctor-in-kuttippuram' ||
+    clean === '/scalp-doctor-in-kuttippuram/' ||
+    clean === '/scalp-specialist-in-kuttippuram' ||
+    clean === '/scalp-specialist-in-kuttippuram/' ||
+    clean === '/scalp-clinic-in-kuttippuram' ||
+    clean === '/scalp-clinic-in-kuttippuram/' ||
+    clean === '/scalp-homoeopathy-clinic-in-kuttippuram' ||
+    clean === '/scalp-homoeopathy-clinic-in-kuttippuram/' ||
+    clean === '/scalp-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/scalp-homeopathy-clinic-in-kuttippuram/' ||
+    clean === '/dandruff-treatment-in-kuttippuram' ||
+    clean === '/dandruff-treatment-in-kuttippuram/'
+  );
+};
+
+const isAlopeciaKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-alopecia-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-alopecia-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-alopecia-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-alopecia-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-alopecia-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-alopecia-treatment/' ||
+    clean === '/alopecia-treatment-in-kuttippuram' ||
+    clean === '/alopecia-treatment-in-kuttippuram/' ||
+    clean === '/alopecia-treatment-near-kuttippuram' ||
+    clean === '/alopecia-treatment-near-kuttippuram/' ||
+    clean === '/homoeopathic-alopecia-treatment-in-kuttippuram' ||
+    clean === '/homoeopathic-alopecia-treatment-in-kuttippuram/' ||
+    clean === '/homeopathic-alopecia-treatment-in-kuttippuram' ||
+    clean === '/homeopathic-alopecia-treatment-in-kuttippuram/' ||
+    clean === '/alopecia-doctor-in-kuttippuram' ||
+    clean === '/alopecia-doctor-in-kuttippuram/' ||
+    clean === '/alopecia-specialist-in-kuttippuram' ||
+    clean === '/alopecia-specialist-in-kuttippuram/' ||
+    clean === '/alopecia-clinic-in-kuttippuram' ||
+    clean === '/alopecia-clinic-in-kuttippuram/' ||
+    clean === '/alopecia-homoeopathy-clinic-in-kuttippuram' ||
+    clean === '/alopecia-homoeopathy-clinic-in-kuttippuram/' ||
+    clean === '/alopecia-homeopathy-clinic-in-kuttippuram' ||
+    clean === '/alopecia-homeopathy-clinic-in-kuttippuram/' ||
+    clean === '/patchy-hair-loss-treatment-in-kuttippuram' ||
+    clean === '/patchy-hair-loss-treatment-in-kuttippuram/' ||
+    clean === '/alopecia-areata-treatment-in-kuttippuram' ||
+    clean === '/alopecia-areata-treatment-in-kuttippuram/'
+  );
+};
+
+const isRingwormKuttippuramPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-ringworm-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-ringworm-treatment/' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-ringworm-treatment' ||
+    clean === '/homeopathic-clinic-near-kuttippuram-for-ringworm-treatment/' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-ringworm-treatment' ||
+    clean === '/homoeopathic-clinic-near-kuttippuram-for-ringworm-treatment/' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-ring-worm-treatment' ||
+    clean === '/homoeopathic-clinic-in-kuttippuram-for-ring-worm-treatment/' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-ring-worm-treatment' ||
+    clean === '/homeopathic-clinic-in-kuttippuram-for-ring-worm-treatment/' ||
+    clean === '/ringworm-treatment-in-kuttippuram' ||
+    clean === '/ringworm-treatment-in-kuttippuram/' ||
+    clean === '/ring-worm-treatment-in-kuttippuram' ||
+    clean === '/ring-worm-treatment-in-kuttippuram/' ||
+    clean === '/ringworm-treatment-near-kuttippuram' ||
+    clean === '/ringworm-treatment-near-kuttippuram/' ||
+    clean === '/ringworm-doctor-in-kuttippuram' ||
+    clean === '/ringworm-doctor-in-kuttippuram/' ||
+    clean === '/ringworm-specialist-in-kuttippuram' ||
+    clean === '/ringworm-specialist-in-kuttippuram/' ||
+    clean === '/ringworm-clinic-in-kuttippuram' ||
+    clean === '/ringworm-clinic-in-kuttippuram/' ||
+    clean === '/fungal-infection-treatment-in-kuttippuram' ||
+    clean === '/fungal-infection-treatment-in-kuttippuram/' ||
+    clean === '/tinea-treatment-in-kuttippuram' ||
+    clean === '/tinea-treatment-in-kuttippuram/'
+  );
+};
+
+const isPilesPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathy-clinic-near-puthanathani-for-piles-treatment' ||
+    clean === '/homeopathy-clinic-near-puthanathani-for-piles-treatment/' ||
+    clean === '/homoeopathy-clinic-near-puthanathani-for-piles-treatment' ||
+    clean === '/homoeopathy-clinic-near-puthanathani-for-piles-treatment/' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-piles-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-piles-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-piles-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-piles-treatment/' ||
+    clean === '/homeopathy-clinic-in-puthanathani-for-piles-treatment' ||
+    clean === '/homeopathy-clinic-in-puthanathani-for-piles-treatment/' ||
+    clean === '/homoeopathy-clinic-in-puthanathani-for-piles-treatment' ||
+    clean === '/homoeopathy-clinic-in-puthanathani-for-piles-treatment/' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-piles-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-piles-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-piles-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-piles-treatment/' ||
+    clean === '/piles-treatment-in-puthanathani' ||
+    clean === '/piles-treatment-in-puthanathani/' ||
+    clean === '/piles-treatment-near-puthanathani' ||
+    clean === '/piles-treatment-near-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-piles-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-piles-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-piles-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-piles-in-puthanathani/' ||
+    clean === '/piles-consultation-in-puthanathani' ||
+    clean === '/piles-consultation-in-puthanathani/' ||
+    clean === '/piles-doctor-in-puthanathani' ||
+    clean === '/piles-doctor-in-puthanathani/' ||
+    clean === '/piles-specialist-in-puthanathani' ||
+    clean === '/piles-specialist-in-puthanathani/' ||
+    clean === '/piles-clinic-in-puthanathani' ||
+    clean === '/piles-clinic-in-puthanathani/' ||
+    clean === '/haemorrhoids-treatment-in-puthanathani' ||
+    clean === '/haemorrhoids-treatment-in-puthanathani/'
+  );
+};
+
+const isMenstrualPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-doctor-near-puthanathani-for-periods-problem' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-periods-problem/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-periods-problem' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-periods-problem/' ||
+    clean === '/homeopathic-doctor-in-puthanathani-for-periods-problem' ||
+    clean === '/homeopathic-doctor-in-puthanathani-for-periods-problem/' ||
+    clean === '/homoeopathic-doctor-in-puthanathani-for-periods-problem' ||
+    clean === '/homoeopathic-doctor-in-puthanathani-for-periods-problem/' ||
+    clean === '/menstrual-treatment-in-puthanathani' ||
+    clean === '/menstrual-treatment-in-puthanathani/' ||
+    clean === '/menstrual-treatment-near-puthanathani' ||
+    clean === '/menstrual-treatment-near-puthanathani/' ||
+    clean === '/menstrual-problems-doctor-in-puthanathani' ||
+    clean === '/menstrual-problems-doctor-in-puthanathani/' ||
+    clean === '/menstrual-disorder-consultation-in-puthanathani' ||
+    clean === '/menstrual-disorder-consultation-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-menstrual-problems-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-menstrual-problems-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-menstrual-problems-in-puthanathani/' ||
+    clean === '/homeopathic-treatment-for-menstrual-problems-in-puthanathani' ||
+    clean === '/homeopathic-treatment-for-menstrual-problems-in-puthanathani/' ||
+    clean === '/homoeopathic-treatment-for-menstrual-problems-in-puthanathani' ||
+    clean === '/homoeopathic-treatment-for-menstrual-problems-in-puthanathani/' ||
+    clean === '/homeopathic-doctor-for-womens-health-in-puthanathani' ||
+    clean === '/homeopathic-doctor-for-womens-health-in-puthanathani/' ||
+    clean === '/homoeopathic-doctor-for-womens-health-in-puthanathani' ||
+    clean === '/homoeopathic-doctor-for-womens-health-in-puthanathani/' ||
+    clean === '/period-problems-treatment-in-puthanathani' ||
+    clean === '/period-problems-treatment-in-puthanathani/' ||
+    clean === '/period-pain-consultation-in-puthanathani' ||
+    clean === '/period-pain-consultation-in-puthanathani/' ||
+    clean === '/menstrual-health-clinic-in-puthanathani' ||
+    clean === '/menstrual-health-clinic-in-puthanathani/'
+  );
+};
+
 const isHairTirurPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -1232,6 +1627,39 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isRingwormPonnaniPath(window.location.pathname)) {
         return 'ringworm-treatment-ponnani';
+      }
+      if (isPilesKuttippuramPath(window.location.pathname)) {
+        return 'piles-treatment-kuttippuram';
+      }
+      if (isMenstrualKuttippuramPath(window.location.pathname)) {
+        return 'menstrual-doctor-kuttippuram';
+      }
+      if (isSkinKuttippuramPath(window.location.pathname)) {
+        return 'skin-treatment-kuttippuram';
+      }
+      if (isHairKuttippuramPath(window.location.pathname)) {
+        return 'hair-treatment-kuttippuram';
+      }
+      if (isPsoriasisKuttippuramPath(window.location.pathname)) {
+        return 'psoriasis-treatment-kuttippuram';
+      }
+      if (isAcneKuttippuramPath(window.location.pathname)) {
+        return 'acne-treatment-kuttippuram';
+      }
+      if (isScalpKuttippuramPath(window.location.pathname)) {
+        return 'scalp-treatment-kuttippuram';
+      }
+      if (isAlopeciaKuttippuramPath(window.location.pathname)) {
+        return 'alopecia-treatment-kuttippuram';
+      }
+      if (isRingwormKuttippuramPath(window.location.pathname)) {
+        return 'ringworm-treatment-kuttippuram';
+      }
+      if (isPilesPuthanathaniPath(window.location.pathname)) {
+        return 'piles-treatment-puthanathani';
+      }
+      if (isMenstrualPuthanathaniPath(window.location.pathname)) {
+        return 'menstrual-doctor-puthanathani';
       }
       if (isHairTirurPath(window.location.pathname)) {
         return 'hair-treatment-tirur';
@@ -1593,6 +2021,28 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('alopecia-treatment-ponnani');
       } else if (isRingwormPonnaniPath(window.location.pathname)) {
         setCurrentView('ringworm-treatment-ponnani');
+      } else if (isPilesKuttippuramPath(window.location.pathname)) {
+        setCurrentView('piles-treatment-kuttippuram');
+      } else if (isMenstrualKuttippuramPath(window.location.pathname)) {
+        setCurrentView('menstrual-doctor-kuttippuram');
+      } else if (isSkinKuttippuramPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-kuttippuram');
+      } else if (isHairKuttippuramPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-kuttippuram');
+      } else if (isPsoriasisKuttippuramPath(window.location.pathname)) {
+        setCurrentView('psoriasis-treatment-kuttippuram');
+      } else if (isAcneKuttippuramPath(window.location.pathname)) {
+        setCurrentView('acne-treatment-kuttippuram');
+      } else if (isScalpKuttippuramPath(window.location.pathname)) {
+        setCurrentView('scalp-treatment-kuttippuram');
+      } else if (isAlopeciaKuttippuramPath(window.location.pathname)) {
+        setCurrentView('alopecia-treatment-kuttippuram');
+      } else if (isRingwormKuttippuramPath(window.location.pathname)) {
+        setCurrentView('ringworm-treatment-kuttippuram');
+      } else if (isPilesPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('piles-treatment-puthanathani');
+      } else if (isMenstrualPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('menstrual-doctor-puthanathani');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
       } else if (isJointPainBlogPath(window.location.pathname)) {
@@ -1883,6 +2333,61 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'ringworm-treatment-ponnani' }, '', targetUrl);
       }
+    } else if (currentView === 'piles-treatment-kuttippuram') {
+      const targetUrl = '/homeopathy-clinic-near-kuttippuram-for-piles-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'menstrual-doctor-kuttippuram') {
+      const targetUrl = '/homeopathic-doctor-near-kuttippuram-for-periods-problem/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-doctor-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'skin-treatment-kuttippuram') {
+      const targetUrl = '/homeopathic-clinic-near-kuttippuram-for-skin-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'hair-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-hair-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'psoriasis-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-psoriasis-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'psoriasis-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'acne-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-acne-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'acne-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'scalp-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-scalp-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'scalp-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'alopecia-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-alopecia-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'alopecia-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'ringworm-treatment-kuttippuram') {
+      const targetUrl = '/homoeopathic-clinic-in-kuttippuram-for-ringworm-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'ringworm-treatment-kuttippuram' }, '', targetUrl);
+      }
+    } else if (currentView === 'piles-treatment-puthanathani') {
+      const targetUrl = '/homeopathy-clinic-near-puthanathani-for-piles-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'piles-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'menstrual-doctor-puthanathani') {
+      const targetUrl = '/homeopathic-doctor-near-puthanathani-for-periods-problem/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'menstrual-doctor-puthanathani' }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation') {
       const targetUrl = '/hair-thinning-in-women-possible-causes-and-medical-evaluation/';
       if (window.location.pathname !== targetUrl) {
@@ -2020,7 +2525,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isScalpPonnaniPath(window.location.pathname) ||
         isEczemaPonnaniPath(window.location.pathname) ||
         isAlopeciaPonnaniPath(window.location.pathname) ||
-        isRingwormPonnaniPath(window.location.pathname)
+        isRingwormPonnaniPath(window.location.pathname) ||
+        isPilesKuttippuramPath(window.location.pathname) ||
+        isMenstrualKuttippuramPath(window.location.pathname) ||
+        isSkinKuttippuramPath(window.location.pathname) ||
+        isHairKuttippuramPath(window.location.pathname) ||
+        isPsoriasisKuttippuramPath(window.location.pathname) ||
+        isAcneKuttippuramPath(window.location.pathname) ||
+        isScalpKuttippuramPath(window.location.pathname) ||
+        isAlopeciaKuttippuramPath(window.location.pathname) ||
+        isRingwormKuttippuramPath(window.location.pathname) ||
+        isPilesPuthanathaniPath(window.location.pathname) ||
+        isMenstrualPuthanathaniPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -2619,6 +3135,17 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'eczema-treatment-ponnani') targetId = 'eczema-treatment-ponnani';
     else if (currentView === 'alopecia-treatment-ponnani') targetId = 'alopecia-treatment-ponnani';
     else if (currentView === 'ringworm-treatment-ponnani') targetId = 'ringworm-treatment-ponnani';
+    else if (currentView === 'piles-treatment-kuttippuram') targetId = 'piles-treatment-kuttippuram';
+    else if (currentView === 'menstrual-doctor-kuttippuram') targetId = 'menstrual-doctor-kuttippuram';
+    else if (currentView === 'skin-treatment-kuttippuram') targetId = 'skin-treatment-kuttippuram';
+    else if (currentView === 'hair-treatment-kuttippuram') targetId = 'hair-treatment-kuttippuram';
+    else if (currentView === 'psoriasis-treatment-kuttippuram') targetId = 'psoriasis-treatment-kuttippuram';
+    else if (currentView === 'acne-treatment-kuttippuram') targetId = 'acne-treatment-kuttippuram';
+    else if (currentView === 'scalp-treatment-kuttippuram') targetId = 'scalp-treatment-kuttippuram';
+    else if (currentView === 'alopecia-treatment-kuttippuram') targetId = 'alopecia-treatment-kuttippuram';
+    else if (currentView === 'ringworm-treatment-kuttippuram') targetId = 'ringworm-treatment-kuttippuram';
+    else if (currentView === 'piles-treatment-puthanathani') targetId = 'piles-treatment-puthanathani';
+    else if (currentView === 'menstrual-doctor-puthanathani') targetId = 'menstrual-doctor-puthanathani';
     else if (currentView === 'hair-treatment-tirur') targetId = 'hair-treatment-tirur';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';
