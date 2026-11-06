@@ -71,7 +71,14 @@ export type NavView =
   | 'hair-treatment-tirur'
   | 'piles-clinic-ponnani'
   | 'menstrual-doctor-ponnani'
-  | 'skin-treatment-ponnani';
+  | 'skin-treatment-ponnani'
+  | 'hair-treatment-ponnani'
+  | 'psoriasis-treatment-ponnani'
+  | 'acne-treatment-ponnani'
+  | 'scalp-treatment-ponnani'
+  | 'eczema-treatment-ponnani'
+  | 'alopecia-treatment-ponnani'
+  | 'ringworm-treatment-ponnani';
 
 interface Toast {
   id: string;
@@ -851,6 +858,194 @@ const isSkinPonnaniPath = (pathname: string) => {
   );
 };
 
+const isHairPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-hair-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-hair-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-hair-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-hair-treatment/' ||
+    clean === '/hair-treatment-in-ponnani' ||
+    clean === '/hair-fall-treatment-in-ponnani' ||
+    clean === '/hair-loss-treatment-in-ponnani' ||
+    clean === '/hair-specialist-in-ponnani' ||
+    clean === '/hair-doctor-in-ponnani' ||
+    clean === '/hair-health-clinic-in-ponnani' ||
+    clean === '/hair-and-scalp-treatment-in-ponnani' ||
+    clean === '/homoeopathic-hair-treatment-in-ponnani' ||
+    clean === '/homeopathic-hair-treatment-in-ponnani' ||
+    clean === '/hair-homoeopathy-clinic-in-ponnani' ||
+    clean === '/hair-homeopathy-clinic-in-ponnani' ||
+    clean === '/hair-care-clinic-in-ponnani' ||
+    clean === '/homoeopathic-doctor-for-hair-problems-in-ponnani' ||
+    clean === '/homeopathic-doctor-for-hair-problems-in-ponnani' ||
+    clean === '/homeopathy-clinic-for-hair-problems-in-ponnani' ||
+    clean === '/homoeopathy-clinic-for-hair-problems-in-ponnani'
+  );
+};
+
+const isPsoriasisPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-psoriasis-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-psoriasis-treatment/' ||
+    clean === '/psoriasis-treatment-in-ponnani' ||
+    clean === '/psoriasis-treatment-near-ponnani' ||
+    clean === '/psoriasis-clinic-in-ponnani' ||
+    clean === '/psoriasis-clinic-near-ponnani' ||
+    clean === '/psoriasis-doctor-in-ponnani' ||
+    clean === '/psoriasis-specialist-in-ponnani' ||
+    clean === '/psoriasis-consultation-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-psoriasis-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-psoriasis-in-ponnani' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-ponnani' ||
+    clean === '/psoriasis-homeopathy-clinic-in-ponnani' ||
+    clean === '/psoriasis-homoeopathic-treatment-in-ponnani' ||
+    clean === '/psoriasis-homeopathic-treatment-in-ponnani' ||
+    clean === '/homoeopathy-for-psoriasis-in-ponnani' ||
+    clean === '/homeopathy-for-psoriasis-in-ponnani'
+  );
+};
+
+const isAcnePonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-acne-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-acne-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-acne-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-acne-treatment/' ||
+    clean === '/acne-treatment-in-ponnani' ||
+    clean === '/acne-treatment-near-ponnani' ||
+    clean === '/face-acne-treatment-in-ponnani' ||
+    clean === '/pimples-treatment-in-ponnani' ||
+    clean === '/acne-clinic-in-ponnani' ||
+    clean === '/acne-doctor-in-ponnani' ||
+    clean === '/acne-specialist-in-ponnani' ||
+    clean === '/acne-consultation-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-acne-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-acne-in-ponnani' ||
+    clean === '/acne-homoeopathy-clinic-in-ponnani' ||
+    clean === '/acne-homeopathy-clinic-in-ponnani' ||
+    clean === '/acne-homoeopathic-treatment-in-ponnani' ||
+    clean === '/acne-homeopathic-treatment-in-ponnani' ||
+    clean === '/homoeopathy-for-acne-in-ponnani' ||
+    clean === '/homeopathy-for-acne-in-ponnani'
+  );
+};
+
+const isScalpPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-scalp-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-scalp-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-scalp-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-scalp-treatment/' ||
+    clean === '/scalp-treatment-in-ponnani' ||
+    clean === '/scalp-treatment-near-ponnani' ||
+    clean === '/dandruff-treatment-in-ponnani' ||
+    clean === '/scalp-clinic-in-ponnani' ||
+    clean === '/scalp-doctor-in-ponnani' ||
+    clean === '/scalp-specialist-in-ponnani' ||
+    clean === '/scalp-consultation-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-scalp-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-scalp-in-ponnani' ||
+    clean === '/scalp-homoeopathy-clinic-in-ponnani' ||
+    clean === '/scalp-homeopathy-clinic-in-ponnani' ||
+    clean === '/scalp-homoeopathic-treatment-in-ponnani' ||
+    clean === '/scalp-homeopathic-treatment-in-ponnani' ||
+    clean === '/homoeopathy-for-scalp-in-ponnani' ||
+    clean === '/homeopathy-for-scalp-in-ponnani'
+  );
+};
+
+const isEczemaPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-eczema-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-eczema-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-eczema-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-eczema-treatment/' ||
+    clean === '/eczema-treatment-in-ponnani' ||
+    clean === '/eczema-treatment-near-ponnani' ||
+    clean === '/atopic-dermatitis-treatment-in-ponnani' ||
+    clean === '/eczema-clinic-in-ponnani' ||
+    clean === '/eczema-doctor-in-ponnani' ||
+    clean === '/eczema-specialist-in-ponnani' ||
+    clean === '/eczema-consultation-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-eczema-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-eczema-in-ponnani' ||
+    clean === '/eczema-homoeopathy-clinic-in-ponnani' ||
+    clean === '/eczema-homeopathy-clinic-in-ponnani' ||
+    clean === '/eczema-homoeopathic-treatment-in-ponnani' ||
+    clean === '/eczema-homeopathic-treatment-in-ponnani' ||
+    clean === '/homoeopathy-for-eczema-in-ponnani' ||
+    clean === '/homeopathy-for-eczema-in-ponnani'
+  );
+};
+
+const isAlopeciaPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-alopecia-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-alopecia-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-alopecia-treatment/' ||
+    clean === '/alopecia-treatment-in-ponnani' ||
+    clean === '/alopecia-treatment-near-ponnani' ||
+    clean === '/alopecia-areata-treatment-in-ponnani' ||
+    clean === '/alopecia-clinic-in-ponnani' ||
+    clean === '/alopecia-doctor-in-ponnani' ||
+    clean === '/alopecia-specialist-in-ponnani' ||
+    clean === '/alopecia-consultation-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-alopecia-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-alopecia-in-ponnani' ||
+    clean === '/alopecia-homoeopathy-clinic-in-ponnani' ||
+    clean === '/alopecia-homeopathy-clinic-in-ponnani' ||
+    clean === '/alopecia-homoeopathic-treatment-in-ponnani' ||
+    clean === '/alopecia-homeopathic-treatment-in-ponnani' ||
+    clean === '/homoeopathy-for-alopecia-in-ponnani' ||
+    clean === '/homeopathy-for-alopecia-in-ponnani'
+  );
+};
+
+const isRingwormPonnaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-ring-worm-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-ring-worm-treatment/' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-ringworm-treatment' ||
+    clean === '/homoeopathic-clinic-in-ponnani-for-ringworm-treatment/' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-ringworm-treatment' ||
+    clean === '/homeopathic-clinic-in-ponnani-for-ringworm-treatment/' ||
+    clean === '/ring-worm-treatment-in-ponnani' ||
+    clean === '/ringworm-treatment-in-ponnani' ||
+    clean === '/ring-worm-treatment-near-ponnani' ||
+    clean === '/ringworm-treatment-near-ponnani' ||
+    clean === '/ring-worm-clinic-in-ponnani' ||
+    clean === '/ringworm-clinic-in-ponnani' ||
+    clean === '/ring-worm-doctor-in-ponnani' ||
+    clean === '/ringworm-doctor-in-ponnani' ||
+    clean === '/ring-worm-specialist-in-ponnani' ||
+    clean === '/ringworm-specialist-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-ring-worm-in-ponnani' ||
+    clean === '/homoeopathic-treatment-for-ringworm-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-ring-worm-in-ponnani' ||
+    clean === '/homeopathic-treatment-for-ringworm-in-ponnani' ||
+    clean === '/ring-worm-homoeopathy-clinic-in-ponnani' ||
+    clean === '/ringworm-homoeopathy-clinic-in-ponnani' ||
+    clean === '/ring-worm-homeopathy-clinic-in-ponnani' ||
+    clean === '/ringworm-homeopathy-clinic-in-ponnani' ||
+    clean === '/homoeopathy-for-ring-worm-in-ponnani' ||
+    clean === '/homoeopathy-for-ringworm-in-ponnani' ||
+    clean === '/homeopathy-for-ring-worm-in-ponnani' ||
+    clean === '/homeopathy-for-ringworm-in-ponnani'
+  );
+};
+
 const isHairTirurPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -1016,6 +1211,27 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isSkinPonnaniPath(window.location.pathname)) {
         return 'skin-treatment-ponnani';
+      }
+      if (isHairPonnaniPath(window.location.pathname)) {
+        return 'hair-treatment-ponnani';
+      }
+      if (isPsoriasisPonnaniPath(window.location.pathname)) {
+        return 'psoriasis-treatment-ponnani';
+      }
+      if (isAcnePonnaniPath(window.location.pathname)) {
+        return 'acne-treatment-ponnani';
+      }
+      if (isScalpPonnaniPath(window.location.pathname)) {
+        return 'scalp-treatment-ponnani';
+      }
+      if (isEczemaPonnaniPath(window.location.pathname)) {
+        return 'eczema-treatment-ponnani';
+      }
+      if (isAlopeciaPonnaniPath(window.location.pathname)) {
+        return 'alopecia-treatment-ponnani';
+      }
+      if (isRingwormPonnaniPath(window.location.pathname)) {
+        return 'ringworm-treatment-ponnani';
       }
       if (isHairTirurPath(window.location.pathname)) {
         return 'hair-treatment-tirur';
@@ -1363,6 +1579,20 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('skin-treatment-tirur');
       } else if (isSkinPonnaniPath(window.location.pathname)) {
         setCurrentView('skin-treatment-ponnani');
+      } else if (isHairPonnaniPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-ponnani');
+      } else if (isPsoriasisPonnaniPath(window.location.pathname)) {
+        setCurrentView('psoriasis-treatment-ponnani');
+      } else if (isAcnePonnaniPath(window.location.pathname)) {
+        setCurrentView('acne-treatment-ponnani');
+      } else if (isScalpPonnaniPath(window.location.pathname)) {
+        setCurrentView('scalp-treatment-ponnani');
+      } else if (isEczemaPonnaniPath(window.location.pathname)) {
+        setCurrentView('eczema-treatment-ponnani');
+      } else if (isAlopeciaPonnaniPath(window.location.pathname)) {
+        setCurrentView('alopecia-treatment-ponnani');
+      } else if (isRingwormPonnaniPath(window.location.pathname)) {
+        setCurrentView('ringworm-treatment-ponnani');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
       } else if (isJointPainBlogPath(window.location.pathname)) {
@@ -1618,6 +1848,41 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'hair-treatment-tirur' }, '', targetUrl);
       }
+    } else if (currentView === 'hair-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-hair-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'psoriasis-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'psoriasis-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'acne-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-acne-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'acne-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'scalp-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-scalp-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'scalp-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'eczema-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-eczema-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'eczema-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'alopecia-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'alopecia-treatment-ponnani' }, '', targetUrl);
+      }
+    } else if (currentView === 'ringworm-treatment-ponnani') {
+      const targetUrl = '/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'ringworm-treatment-ponnani' }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation') {
       const targetUrl = '/hair-thinning-in-women-possible-causes-and-medical-evaluation/';
       if (window.location.pathname !== targetUrl) {
@@ -1748,7 +2013,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isAlopeciaManjeriPath(window.location.pathname) ||
         isPilesPonnaniPath(window.location.pathname) ||
         isMenstrualPonnaniPath(window.location.pathname) ||
-        isSkinPonnaniPath(window.location.pathname)
+        isSkinPonnaniPath(window.location.pathname) ||
+        isHairPonnaniPath(window.location.pathname) ||
+        isPsoriasisPonnaniPath(window.location.pathname) ||
+        isAcnePonnaniPath(window.location.pathname) ||
+        isScalpPonnaniPath(window.location.pathname) ||
+        isEczemaPonnaniPath(window.location.pathname) ||
+        isAlopeciaPonnaniPath(window.location.pathname) ||
+        isRingwormPonnaniPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -2339,6 +2611,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'menstrual-doctor-tirur') targetId = 'menstrual-doctor-tirur';
     else if (currentView === 'menstrual-doctor-ponnani') targetId = 'menstrual-doctor-ponnani';
     else if (currentView === 'skin-treatment-tirur') targetId = 'skin-treatment-tirur';
+    else if (currentView === 'skin-treatment-ponnani') targetId = 'skin-treatment-ponnani';
+    else if (currentView === 'hair-treatment-ponnani') targetId = 'hair-treatment-ponnani';
+    else if (currentView === 'psoriasis-treatment-ponnani') targetId = 'psoriasis-treatment-ponnani';
+    else if (currentView === 'acne-treatment-ponnani') targetId = 'acne-treatment-ponnani';
+    else if (currentView === 'scalp-treatment-ponnani') targetId = 'scalp-treatment-ponnani';
+    else if (currentView === 'eczema-treatment-ponnani') targetId = 'eczema-treatment-ponnani';
+    else if (currentView === 'alopecia-treatment-ponnani') targetId = 'alopecia-treatment-ponnani';
+    else if (currentView === 'ringworm-treatment-ponnani') targetId = 'ringworm-treatment-ponnani';
     else if (currentView === 'hair-treatment-tirur') targetId = 'hair-treatment-tirur';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';

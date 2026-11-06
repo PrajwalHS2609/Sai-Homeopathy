@@ -66,6 +66,14 @@ import { MenstrualTirurPage } from './components/MenstrualTirurPage';
 import { MenstrualPonnaniPage } from './components/MenstrualPonnaniPage';
 import { SkinTirurPage } from './components/SkinTirurPage';
 import { HairTirurPage } from './components/HairTirurPage';
+import { SkinPonnaniPage } from './components/SkinPonnaniPage';
+import { HairPonnaniPage } from './components/HairPonnaniPage';
+import { PsoriasisPonnaniPage } from './components/PsoriasisPonnaniPage';
+import { AcnePonnaniPage } from './components/AcnePonnaniPage';
+import { ScalpPonnaniPage } from './components/ScalpPonnaniPage';
+import { EczemaPonnaniPage } from './components/EczemaPonnaniPage';
+import { AlopeciaPonnaniPage } from './components/AlopeciaPonnaniPage';
+import { RingwormPonnaniPage } from './components/RingwormPonnaniPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -783,6 +791,166 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <HairTirurPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Clinic Near Ponnani for Skin Treatment View
+  // URL: /homeopathic-clinic-near-ponnani-for-skin-treatment/
+  if (currentView === 'skin-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Hair Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-hair-treatment/
+  if (currentView === 'hair-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Psoriasis Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/
+  if (currentView === 'psoriasis-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PsoriasisPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Acne Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-acne-treatment/
+  if (currentView === 'acne-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AcnePonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Scalp Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-scalp-treatment/
+  if (currentView === 'scalp-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <ScalpPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Eczema Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-eczema-treatment/
+  if (currentView === 'eczema-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <EczemaPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Alopecia Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-alopecia-treatment/
+  if (currentView === 'alopecia-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AlopeciaPonnaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Ponnani for Ring worm Treatment View
+  // URL: /homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/
+  if (currentView === 'ringworm-treatment-ponnani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RingwormPonnaniPage />
         </main>
         <Footer />
         <ProductDetailModal />

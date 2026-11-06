@@ -7511,6 +7511,1689 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-10-31',
   },
+  {
+    id: 'skin-treatment-ponnani',
+    pageName: 'Homeopathic Clinic Near Ponnani for Skin Treatment',
+    category: 'clinical',
+    path: '/homeopathic-clinic-near-ponnani-for-skin-treatment/',
+    title: 'Homeopathic Clinic Near Ponnani for Skin Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to homeopathic skin consultations near Ponnani for acne, eczema, psoriasis, skin allergies & pigmentation. Dr. Anjali Chandrasekhar (BHMS, MD Hom.).',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-ponnani-for-skin-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-ponnani-for-skin-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homeopathic clinic near Ponnani for skin treatment, skin homeopathic treatment in Ponnani, skin doctor near Ponnani, skin specialist near Ponnani, acne treatment Ponnani, eczema treatment Ponnani, psoriasis doctor Ponnani, fungal skin infection Ponnani, skin allergy homeopathy',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-ponnani-for-skin-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-ponnani-for-skin-treatment/',
+            name: 'Homeopathic Clinic Near Ponnani for Skin Treatment',
+            description:
+              'Clinical guide to homeopathic skin consultations near Ponnani for acne, eczema, psoriasis, skin allergies, fungal infections, and pigmentation concerns.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Atopic Dermatitis & Eczema',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Urticaria & Allergic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L50',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Chloasma / Melasma & Facial Pigmentation',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L81.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatophytosis (Fungal Skin Infections)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.9',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-ponnani-for-skin-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'When should I consult a doctor for skin problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek professional medical advice if skin symptoms persist for several weeks, worsen over time, cause intense itching or pain, spread rapidly, or interfere with daily activities. Rapidly spreading rashes with fever or breathing difficulty require immediate emergency medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can homeopathy treat acne and pimples?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homeopathic practitioners assess individual acne patterns alongside hormonal factors, skin hygiene, diet, and stress. It is considered as supportive care alongside gentle non-comedogenic skincare and medical guidance.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How does homeopathy approach eczema and itchy skin rashes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homeopathic consultations focus on understanding individual triggers, moisture barrier integrity, flare patterns, and overall constitutional sensitivity to provide gentle, individualized care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can lifestyle changes improve skin health?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Gentle cleansing, regular barrier moisturisation, consistent daily sun protection (SPF 30+), adequate hydration, a balanced diet, and stress management are vital for skin barrier repair and resilience.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How do I choose the best clinic for skin treatment near Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for qualified practitioners with recognized medical degrees (BHMS / MD Hom.), transparent clinical practices, structured case evaluation, and appropriate referral protocols for severe dermatological emergencies.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does homeopathic skin treatment usually take?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The timeframe varies based on chronicity, skin barrier condition, triggers, and overall health. Acute eruptions may stabilize within weeks, while chronic conditions like eczema, psoriasis, or stubborn pigmentation often require structured supportive care over several months.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are homeopathic skin medicines safe for long-term use?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Prescribed by qualified homeopathic doctors, homeopathic remedies are generally gentle, highly diluted, non-habit forming, and free from steroid-related skin thinning. However, self-medication is discouraged.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I consult online from Ponnani before visiting the clinic in Kuttippuram?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes, Anjali Homoeo Clinic offers online video consultations for patients residing in Ponnani, Edappal, and surrounding areas. This allows initial clinical case analysis and photo review prior to scheduling an in-person follow-up at our Kuttippuram or Puthanathani clinics.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'hair-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Hair Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-hair-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Hair Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to homoeopathic hair consultations in Ponnani for hair fall, thinning, dandruff & scalp irritation. Dr. Anjali Chandrasekhar (BHMS, MD Hom.).',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-hair-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-hair-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for hair treatment, hair treatment in Ponnani, homoeopathic hair treatment in Ponnani, hair homoeopathy clinic in Ponnani, hair fall treatment in Ponnani, hair specialist in Ponnani, hair doctor in Ponnani, hair loss treatment in Ponnani, homoeopathic doctor for hair problems in Ponnani, hair and scalp treatment in Ponnani, hair health clinic in Ponnani, homoeopathy clinic for hair problems in Ponnani, hair care clinic in Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-hair-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-hair-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Hair Treatment',
+            description:
+              'Clinical guide to hair consultations in Ponnani for excessive hair fall, gradual thinning, dandruff, brittle hair, and scalp health.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia (Pattern Thinning)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata (Patchy Hair Loss)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis of Scalp & Dandruff',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Trichological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-hair-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find a Homoeopathic Clinic in Ponnani for Hair Treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can look for a qualified homoeopathic practitioner in Ponnani who offers consultations for hair and scalp concerns. Check professional qualifications and ensure the clinic provides clear information about treatment limitations and referrals.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Hair Treatment in Ponnani effective for hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homoeopathy as an effective treatment for hair fall. It should not replace medical diagnosis or evidence-based treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common causes of hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common causes include genetic hair loss, stress, nutritional deficiencies, thyroid disorders, hormonal changes, certain medicines and scalp conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair loss be reversed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Some types of hair loss, particularly those caused by temporary triggers, may improve when the underlying cause is addressed. Genetic hair loss and scarring hair conditions may require ongoing specialist treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Hair Doctor in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a healthcare professional if hair fall is persistent, sudden, excessive or associated with scalp irritation, bald patches or other health symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dandruff itself does not usually cause permanent hair loss. However, persistent itching and scratching may damage hair, while other scalp conditions that resemble dandruff may contribute to hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I expect during a hair consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You may be asked about your hair fall pattern, medical history, family history, diet, lifestyle, scalp symptoms and previous treatments. Further examination or investigations may be recommended.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair thinning?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deficiencies involving iron, protein and certain other nutrients may contribute to hair shedding. Testing and appropriate medical advice can help determine whether a deficiency is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is a Hair Specialist in Ponnani necessary for every hair problem?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not every hair concern requires specialist treatment. However, persistent, severe, patchy or unexplained hair loss should be assessed by a qualified healthcare professional. A dermatologist may be needed for diagnosis and treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain healthy hair?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Maintain a balanced diet, follow a gentle hair care routine, avoid excessive chemical and heat treatments, get sufficient sleep and seek medical advice when hair loss persists.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'psoriasis-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Psoriasis Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Psoriasis Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to psoriasis consultations in Ponnani for plaque psoriasis, scalp scaling, itching & flexural flares. Dr. Anjali Chandrasekhar (BHMS, MD Hom.).',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for psoriasis treatment, psoriasis treatment in Ponnani, homoeopathic treatment for psoriasis in Ponnani, psoriasis doctor in Ponnani, psoriasis homoeopathy clinic in Ponnani, psoriasis specialist in Ponnani, psoriasis clinic in Ponnani, plaque psoriasis Ponnani, scalp psoriasis Ponnani, homoeopathy for psoriasis in Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Psoriasis Treatment',
+            description:
+              'Clinical guide to psoriasis consultations in Ponnani for plaque psoriasis, scalp scaling, itching, guttate spots, flexural flares, and psoriatic arthritis awareness.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Plaque Psoriasis (Psoriasis Vulgaris)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Guttate Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.4',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Inverse (Flexural) Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriatic Arthritis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'M07.3',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-psoriasis-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis a contagious skin disease?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Psoriasis is not contagious. It cannot spread through touching, sharing clothes, eating together or normal physical contact.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis be permanently cured?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently no established permanent cure for psoriasis. However, evidence-based treatments can help control symptoms and achieve periods of remission.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Psoriasis in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy effectively treats psoriasis. It should not replace dermatologist-recommended treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the early signs of psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Early signs may include small red or discoloured patches, dry skin, scaling, itching and thickened areas. Symptoms vary depending on the type of psoriasis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis affect the scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Scalp psoriasis may cause thick scaling, itching and inflamed patches. A dermatologist can distinguish it from dandruff and other scalp conditions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress worsen psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stress may trigger or worsen flare-ups in some individuals. Managing stress can support general well-being, although it does not replace medical treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does psoriasis affect the joints?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some people with psoriasis develop psoriatic arthritis, which can cause joint pain, swelling and stiffness. Early diagnosis is important.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What foods should people with psoriasis avoid?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no universal psoriasis diet. A balanced eating pattern is generally advisable. If a particular food appears to trigger symptoms, discuss it with a healthcare professional rather than following restrictive diets without guidance.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How often should psoriasis patients consult a doctor?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Follow-up frequency depends on symptom severity and the treatment being used. Patients should attend appointments as advised and seek earlier review if symptoms worsen.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis return after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Psoriasis is a chronic condition that may have periods of improvement and flare-ups. Long-term management can help control symptoms.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'acne-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Acne Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-acne-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Acne Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical guide to acne consultations in Ponnani for pimples, blackheads, whiteheads, hormonal jawline acne & scarring. Dr. Anjali Chandrasekhar (BHMS, MD Hom.).',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-acne-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-acne-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for acne treatment, acne treatment in Ponnani, homoeopathic treatment for acne in Ponnani, acne doctor in Ponnani, acne homoeopathy clinic in Ponnani, face acne treatment in Ponnani, pimples treatment in Ponnani, acne specialist in Ponnani, homoeopathy for acne in Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-acne-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-acne-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Acne Treatment',
+            description:
+              'Clinical guide to acne consultations in Ponnani for blackheads, whiteheads, inflammatory pimples, hormonal chin breakouts, and post-acne dark marks.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Comedonal Acne (Whiteheads & Blackheads)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Papulopustular Acne',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Nodulocystic Acne',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L70.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Post-Inflammatory Hyperpigmentation',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L81.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-acne-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Acne develops when hair follicles become blocked with oil and dead skin cells. Hormonal changes, inflammation, genetics and certain medicines can contribute.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is acne only a teenage problem?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Acne can affect adults of all ages. Adult acne is common, particularly among women experiencing hormonal fluctuations.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Treatment for Acne in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy effectively treats acne. It should not replace proven dermatological treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne leave permanent scars?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Severe inflammatory acne, particularly nodules and cysts, can damage deeper skin tissue and cause permanent scars.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I reduce facial acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use a gentle cleanser, choose non-comedogenic products, avoid picking pimples and consult a healthcare professional about evidence-based acne treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does oily skin always cause acne?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Oily skin may contribute to blocked pores, but acne also involves inflammation, dead skin cells, bacteria and other factors.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress make acne worse?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stress may worsen acne in some individuals, although it is not the only cause. Healthy sleep and stress-management habits can support general well-being.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an Acne Doctor in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if acne is persistent, painful, severe, scarring or affecting your confidence and everyday life.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne marks and scars be removed?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dark marks may gradually fade, while established scars often require dermatologist-supervised treatment. The appropriate option depends on the type of mark or scar.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does acne treatment take?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Improvement often takes several weeks, and some treatments require a few months to show their full effect. Follow your doctor's instructions and avoid stopping treatment prematurely without advice.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'scalp-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Scalp Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-scalp-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Scalp Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical scalp consultations for patients near Ponnani for persistent dandruff, itching, seborrhoeic flaking, scalp psoriasis & ringworm. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-scalp-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-scalp-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for scalp treatment, scalp treatment in Ponnani, homoeopathic scalp treatment in Ponnani, scalp doctor in Ponnani, scalp homoeopathy clinic in Ponnani, scalp problem treatment in Ponnani, hair and scalp treatment in Ponnani, scalp issues treatment in Ponnani, homoeopathic doctor for scalp problems in Ponnani, scalp specialist in Ponnani, dandruff treatment Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-scalp-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-scalp-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Scalp Treatment',
+            description:
+              'Clinical guide to scalp consultations in Ponnani for dandruff, seborrhoeic dermatitis, scalp psoriasis, dry scalp, fungal infections, and chronic scalp itching.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dandruff (Pityriasis Capitis)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Psoriasis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L40.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Fungal Scalp Infection)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Contact Dermatitis of Scalp',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L23',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-scalp-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the common causes of scalp problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common causes include ordinary dandruff (pityriasis capitis), seborrhoeic dermatitis, scalp psoriasis, fungal ringworm infections (tinea capitis), atopic eczema, contact dermatitis from hair dyes or shampoos, and environmental dryness.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Scalp Treatment in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence establishing homoeopathy as an effective or curative treatment for scalp disorders such as seborrhoeic dermatitis, psoriasis, or fungal infections. While some patients explore homoeopathy for constitutional support, it should not replace established medical diagnosis and evidence-based treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ordinary dandruff does not directly destroy hair follicles or cause permanent baldness. However, severe scalp inflammation, persistent itching, and vigorous fingernail scratching can physically snap hair shafts near the roots and weaken hair anchorage, contributing to increased temporary shedding.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I identify scalp psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Scalp psoriasis typically produces thick, well-defined, raised erythematous plaques covered with dense, silvery-white scales that often extend beyond the hairline onto the forehead or behind the ears. A dermatologist can differentiate scalp psoriasis from severe dandruff or eczema through clinical examination.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can fungal infections affect the scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Fungal infections (tinea capitis) can invade hair shafts, causing scaly itchy patches, broken hairs ("black dots"), localized swelling (kerion), and patchy hair loss. Because the fungus resides within the hair follicle, prescription oral antifungal medicines are generally required.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How often should I wash my hair?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The ideal washing frequency depends on your scalp oiliness, hair texture, climate, and underlying conditions. Individuals with oily scalps or seborrhoeic dermatitis typically benefit from washing every 1 to 2 days, whereas those with dry scalps may wash 2 to 3 times weekly. Follow your doctor’s guidance when using medicated shampoos.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause scalp itching?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Psychological stress stimulates the neuroendocrine system and releases inflammatory cytokines that can lower the itch threshold and exacerbate conditions like seborrhoeic dermatitis and psoriasis. However, persistent itching should always be assessed by a doctor to identify the exact cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Scalp Doctor in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You should seek professional medical advice if you experience persistent itching lasting more than two weeks, thick or recurring scales, scalp tenderness, painful bumps, pus, crusting, sores, or sudden unexplained hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between dandruff and dry scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dandruff is typically associated with excess oil production, Malassezia yeast overgrowth, and larger, greasy yellow or white flakes on an irritated base. Dry scalp is caused by a lack of moisture and lipids, presenting as fine, small, dry white flakes with a feeling of scalp tightness.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can scalp problems be prevented?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'While genetic or autoimmune conditions like scalp psoriasis cannot be completely prevented, flare-ups can be significantly reduced through gentle hair hygiene, avoiding irritating chemical dyes, using appropriate non-stripping shampoos, and seeking timely medical care when early symptoms appear.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'eczema-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Eczema Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-eczema-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Eczema Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical eczema consultations for patients near Ponnani for atopic dermatitis, dry itchy patches, dyshidrotic blisters, nummular eczema & allergic reactions. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-eczema-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-eczema-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for eczema treatment, eczema treatment in Ponnani, homoeopathic eczema treatment in Ponnani, eczema doctor in Ponnani, eczema homoeopathy clinic in Ponnani, eczema problem treatment in Ponnani, eczema issues treatment in Ponnani, eczema health clinic in Ponnani, hair and eczema treatment in Ponnani, eczema care clinic in Ponnani, eczema specialist in Ponnani, atopic dermatitis Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-eczema-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-eczema-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Eczema Treatment',
+            description:
+              'Clinical guide to eczema consultations in Ponnani for atopic dermatitis, contact allergies, seborrhoeic dermatitis, dyshidrotic blisters, nummular lesions, and barrier repair.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Atopic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L20',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Allergic Contact Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L23',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Irritant Contact Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L24',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dyshidrotic Eczema (Pompholyx)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L30.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Nummular (Discoid) Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L30.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Seborrhoeic Dermatitis',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L21',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-eczema-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What causes eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Eczema is associated with skin barrier dysfunction and inflammation. Genetics, immune-system activity, environmental irritants and allergens may contribute.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is eczema contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Eczema cannot spread through touching, sharing clothes or ordinary physical contact.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Eczema Treatment in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy effectively treats eczema. It should not replace established medical diagnosis and treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can eczema be permanently cured?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is no single permanent cure for all types of eczema. However, appropriate treatment and skincare can help control symptoms and reduce flare-ups.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress worsen eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stress may worsen symptoms in some individuals. Managing stress and maintaining healthy sleep habits can support general well-being, but do not replace medical treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can eczema affect the scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Certain eczema-related conditions can affect the scalp and hairline, causing itching, redness and scaling.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the best moisturiser for eczema?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Fragrance-free creams or ointments are often suitable for dry, eczema-prone skin. A healthcare professional can recommend a product based on individual needs.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult an Eczema Doctor in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if symptoms are persistent, severe, spreading or interfering with sleep and daily activities. Signs of infection require prompt assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can eczema leave dark marks?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Inflammation and repeated scratching can cause temporary or persistent changes in skin colour, particularly in darker skin tones. Avoiding scratching and controlling inflammation may help reduce further changes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I prevent eczema flare-ups?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Regular moisturising, avoiding known irritants, following prescribed treatment and maintaining a gentle skincare routine may help reduce flare-ups.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'alopecia-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Alopecia Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Alopecia Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical alopecia and hair loss consultations for patients near Ponnani for alopecia areata, pattern baldness, telogen shedding & scalp conditions. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for alopecia treatment, alopecia treatment in Ponnani, homoeopathic alopecia treatment in Ponnani, alopecia doctor in Ponnani, alopecia homoeopathy clinic in Ponnani, alopecia problem treatment in Ponnani, hair and alopecia treatment in Ponnani, alopecia care clinic in Ponnani, alopecia specialist in Ponnani, alopecia areata Ponnani, hair loss treatment Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Alopecia Treatment',
+            description:
+              'Clinical guide to alopecia consultations in Ponnani for alopecia areata, androgenetic pattern loss, telogen effluvium, traction alopecia, and scarring hair conditions.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L63',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia (Pattern Hair Loss)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L64',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Traction Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L65.8',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Cicatricial (Scarring) Alopecia',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'L66',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-alopecia-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia is the medical term for hair loss. It includes several conditions, such as alopecia areata, androgenetic alopecia, telogen effluvium and scarring alopecia. The causes and treatment options vary depending on the type.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can alopecia be treated in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. People experiencing hair loss in Ponnani can consult qualified healthcare professionals for assessment and appropriate treatment. The treatment depends on the underlying cause and may involve a dermatologist, medical investigations and condition-specific medicines.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Alopecia Treatment in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy effectively treats or cures alopecia. Anyone considering homoeopathy should understand these limitations and should not delay evidence-based medical treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A dermatologist is generally the most appropriate specialist for diagnosing and treating hair and scalp disorders. A general physician may also help assess underlying health conditions that contribute to hair loss.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Does alopecia cause permanent hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'It depends on the type. Some conditions cause temporary hair loss, while scarring alopecia can permanently damage hair follicles. Early diagnosis is important for identifying conditions that may cause irreversible damage.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Significant physical or emotional stress can trigger telogen effluvium, which causes increased hair shedding. However, not all hair loss is stress-related. Other causes should be considered during medical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are nutritional deficiencies responsible for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Iron deficiency, inadequate protein intake and certain other nutritional problems can contribute to hair shedding. Blood tests and medical assessment may help identify deficiencies. Supplements should not be taken unnecessarily.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does alopecia treatment take?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Treatment duration varies according to the type of hair loss, its severity and the response to treatment. Some conditions may improve over several months, while others require long-term management. Hair regrowth cannot be guaranteed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can hair grow back after alopecia areata?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Hair regrowth is possible in alopecia areata, particularly in some limited cases. However, the condition can recur, and outcomes differ between individuals. A dermatologist can discuss appropriate treatment options and expectations.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I check before choosing an Alopecia Homoeopathy Clinic in Ponnani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Check the practitioner's qualifications, registration, consultation process and willingness to explain treatment limitations. Avoid providers who guarantee permanent hair regrowth or advise stopping prescribed medical treatment.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
+  {
+    id: 'ringworm-treatment-ponnani',
+    pageName: 'Homoeopathic Clinic in Ponnani for Ring worm Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/',
+    title: 'Homoeopathic Clinic in Ponnani for Ring worm Treatment | Anjali Homoeo Clinic',
+    description:
+      'Clinical fungal skin consultations for patients near Ponnani for ringworm, tinea corporis, jock itch, athlete\'s foot, scalp fungal scaling & nail infections. Dr. Anjali Chandrasekhar.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/',
+    canonicalUrl: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/',
+    ogType: 'article',
+    twitterCard: 'summary_large_image',
+    ogImage: 'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    keywords:
+      'Homoeopathic clinic in Ponnani for ring worm treatment, ring worm treatment in Ponnani, homoeopathic ring worm treatment in Ponnani, ring worm doctor in Ponnani, ring worm homoeopathy clinic in Ponnani, ring worm problem treatment in Ponnani, ring worm issues treatment in Ponnani, ring worm health clinic in Ponnani, ring worm care clinic in Ponnani, ring worm specialist in Ponnani, tinea treatment Ponnani, fungal skin infection Ponnani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/',
+            name: 'Homoeopathic Clinic in Ponnani for Ring worm Treatment',
+            description:
+              'Clinical guide to ringworm and fungal skin consultations in Ponnani for tinea corporis, tinea cruris, tinea pedis, scalp ringworm, and fungal nail infections.',
+            inLanguage: 'en-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': 'https://anjalihomoeoclinic.com/#website',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+            },
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dermatophytosis (Ringworm / Tinea)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Corporis (Body Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.4',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Cruris (Jock Itch)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.6',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Pedis (Athlete\'s Foot)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.3',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.0',
+                  codingSystem: 'ICD-10',
+                },
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Unguium (Fungal Nail Infection)',
+                code: {
+                  '@type': 'MedicalCode',
+                  code: 'B35.1',
+                  codingSystem: 'ICD-10',
+                },
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'Senior Homeopathic Physician & Clinical Dermatological Assessor',
+              alumniOf: 'Government Homeopathic Medical College, Calicut',
+              honorificPrefix: 'Dr.',
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'degree',
+                  name: 'Bachelor of Homeopathic Medicine and Surgery (BHMS)',
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'postgraduate degree',
+                  name: 'Doctor of Medicine in Homeopathy (MD Hom.)',
+                },
+              ],
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com',
+              logo: 'https://anjalihomoeoclinic.com/anjali-logo.svg',
+              telephone: '+919895101707',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Tirur - Kuttippuram Rd, near Mini Civil Station',
+                addressLocality: 'Kuttippuram',
+                addressRegion: 'Kerala',
+                postalCode: '679571',
+                addressCountry: 'IN',
+              },
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            '@id': 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-ponnani-for-ring-worm-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is ringworm, and how does it spread?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ringworm is a fungal infection caused by dermatophytes. It can spread through direct contact with infected people or animals and through contaminated objects such as towels, clothes, combs and footwear.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is ringworm a serious skin disease?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many cases can be treated successfully with appropriate antifungal medicines. However, scalp infections, extensive infections and infections in people with weakened immune systems may require more intensive medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Ring worm Treatment in Ponnani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence that homoeopathy can cure ringworm or eliminate the fungi responsible for the infection. Evidence-based antifungal treatment remains the established approach.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm spread from one person to another?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Ringworm is contagious and can spread through skin contact, shared personal belongings and contaminated surfaces. Appropriate treatment and hygiene precautions help reduce transmission.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does ringworm take to heal?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'The duration depends on the affected body area, severity and treatment. Some uncomplicated skin infections improve within a few weeks, while scalp and nail infections may require longer treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Scalp ringworm can cause broken hairs and patchy hair loss. Severe inflammatory infections may lead to scarring and permanent hair loss if not treated promptly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I use steroid cream for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Do not use steroid creams on suspected ringworm without medical advice. Steroids can mask symptoms and allow fungal infections to spread or become more difficult to diagnose.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm return after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Reinfection can occur through contact with contaminated objects, infected people or animals. Incomplete treatment may also contribute to persistent infection. Follow the prescribed treatment and hygiene instructions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified general physician or dermatologist can assess suspected ringworm. A dermatologist is particularly appropriate for persistent, widespread, recurrent or complicated fungal infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I do if ringworm does not improve?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a doctor for reassessment. The diagnosis may need confirmation, or a different treatment may be required. Avoid repeatedly applying over-the-counter creams without understanding the cause of the rash.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-05',
+  },
 ];
 
 

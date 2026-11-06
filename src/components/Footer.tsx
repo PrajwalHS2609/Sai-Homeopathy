@@ -464,6 +464,62 @@ export const Footer: React.FC = () => {
               <span>Periods Doctor Near Ponnani</span>
             </button>
             <button
+              onClick={() => handleLinkClick('skin-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin Treatment Near Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('hair-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('psoriasis-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Psoriasis Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('acne-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Acne Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('scalp-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Scalp Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('eczema-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Eczema Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('alopecia-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Alopecia Treatment in Ponnani</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('ringworm-treatment-ponnani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Ringworm Treatment in Ponnani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('skin-treatment-tirur')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
