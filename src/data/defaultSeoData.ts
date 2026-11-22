@@ -2,6 +2,902 @@ import { PageSeoMetadata } from '../types/seo';
 
 export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
   {
+    id: 'blog-anjali-homoeo-clinic-malappuram-guide',
+    pageName: 'Blog: Anjali Homoeo Clinic in Malappuram: Services and Consultation Guide',
+    category: 'blog',
+    path: '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/',
+    title: 'Anjali Homoeo Clinic in Malappuram: Services and Consultation Guide',
+    description:
+      'Complete guide to Anjali Homoeo Clinic in Kurumbathur, Malappuram: Dr. Anjali Chandrasekhar (BHMS), listed health concerns, consultation process, preparation tips, timings, fees, and informed healthcare guidance.',
+    url: 'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Anjali_Homoeo_Clinic_Guide_3cd8e19b.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Anjali Homoeo Clinic Malappuram, Anjali Homoeo Clinic Kurumbathur, Dr Anjali Chandrasekhar BHMS, homoeopathic clinic Malappuram services, consultation guide Malappuram, clinic timings fees Kurumbathur, patient education blog Kerala',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/#article',
+          headline: 'Anjali Homoeo Clinic in Malappuram: Services and Consultation Guide',
+          description:
+            'Patient education guide covering Anjali Homoeo Clinic in Kurumbathur, Malappuram, listed health concerns, step-by-step consultation overview, visit preparation, appointment details, and informed healthcare decisions.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Anjali_Homoeo_Clinic_Guide_3cd8e19b.png',
+          url: 'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-22',
+          dateModified: '2026-11-22',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Where is Anjali Homoeo Clinic located?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Anjali Homoeo Clinic is publicly listed in Kurumbathur, Malappuram, Kerala, opposite Thavakal Jewellery. Patients should confirm the exact location before travelling.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Who is the practitioner at Anjali Homoeo Clinic?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Public clinic listings associate the clinic with Dr. Anjali Chandrasekhar, who holds a BHMS qualification. Patients are encouraged to verify professional registration and current practitioner details directly before booking.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What services are listed at Anjali Homoeo Clinic?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Publicly listed health concerns include vitiligo, warts, migraine, vertigo, sinusitis, menstrual disorders, kidney stones, kidney cysts, allergy management and skin-related concerns. A listed service does not establish that homoeopathy is effective for that condition.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the consultation fee at Anjali Homoeo Clinic?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Publicly listed clinic information indicates a consultation fee of approximately ₹200. Because fees may change, patients should confirm the current amount directly with the clinic.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: "What are the clinic's consultation timings?",
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Public listings indicate consultation hours from Monday to Saturday, 10:00 AM–1:00 PM and 2:00 PM–6:00 PM. Always confirm current timings and practitioner availability before visiting.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What should I bring to my first consultation?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Bring relevant medical reports, previous prescriptions, details of current medication, allergy information and a brief record of your symptoms.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can homoeopathy replace conventional medical treatment?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Homoeopathy should not replace evidence-based medical treatment, prescribed medication, vaccination or necessary diagnostic investigations.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-homoeopathic-consultation-process',
+    pageName: 'Blog: Understanding the Homoeopathic Consultation Process',
+    category: 'blog',
+    path: '/understanding-the-homoeopathic-consultation-process/',
+    title: 'Understanding the Homoeopathic Consultation Process | Anjali Homoeo Clinic',
+    description:
+      'Step-by-step guide to the homoeopathic consultation process: booking your first appointment, reviewing medical history and lifestyle, follow-up appointments, choosing a qualified practitioner, and informed healthcare decisions.',
+    url: 'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Consultation_Process_8ad0e8e1.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'homoeopathic consultation process, first homeopathy appointment, what to expect homoeopathy consultation, preparing for homeopathic visit, follow-up homeopathy appointment, choosing qualified homeopathic practitioner, patient education blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/#article',
+          headline: 'Understanding the Homoeopathic Consultation Process',
+          description:
+            'Comprehensive patient education guide explaining what happens during a homoeopathic consultation, step-by-step stages, medical history review, follow-up visits, practitioner selection, and informed healthcare choices.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Homoeopathic_Consultation_Process_8ad0e8e1.png',
+          url: 'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-22',
+          dateModified: '2026-11-22',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/understanding-the-homoeopathic-consultation-process/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What happens during a first homoeopathic consultation?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'A first consultation generally involves discussing your main health concerns, medical history, symptoms, lifestyle, diet and sleep patterns. The practitioner may also review medical reports and discuss a proposed approach.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How long does a homoeopathic consultation take?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'The duration varies between clinics and practitioners. Initial appointments may take longer because they involve reviewing medical history and discussing symptoms in detail. Ask the clinic about its appointment duration before booking.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What should I bring to a homoeopathic consultation?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Bring relevant medical reports, previous prescriptions, details of current medications, allergy information and a list of your symptoms. These details can help the practitioner understand your health background.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Are follow-up appointments necessary?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "Some practitioners recommend follow-up appointments to discuss reported changes in symptoms and review the consultation plan. The frequency depends on the individual's circumstances and the practitioner's approach. Follow-up appointments should not replace necessary medical reviews.",
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I continue my regular medicines while consulting a homoeopath?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Do not stop or change prescribed medication without discussing it with the doctor responsible for your treatment. Inform all healthcare professionals about the medicines and complementary products you use.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is homoeopathy scientifically proven to treat diseases?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Current high-quality scientific evidence does not establish homoeopathy as an effective treatment for any specific health condition. Patients should understand this limitation before deciding whether to use homoeopathic products.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can I choose an online homoeopathic consultation?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "Some practitioners offer consultations through online platforms. Before booking, verify the practitioner's credentials, understand how your health information will be handled and confirm how a physical examination or referral will be arranged if necessary.",
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-understanding-anal-fissures',
+    pageName: 'Blog: Why Does It Hurt During Bowel Movements? Understanding Anal Fissures',
+    category: 'blog',
+    path: '/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/',
+    title: 'Why Does It Hurt During Bowel Movements? Understanding Anal Fissures | Anjali Homoeo Clinic',
+    description:
+      'Learn why bowel movements hurt, how acute and chronic anal fissures develop, anal fissure vs piles differences, diagnostic steps, conservative and medical treatments, and prevention tips.',
+    url: 'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Amber_Remedy__Understanding_Anal_Fissures_b20c5b41.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'anal fissures, pain during bowel movements, sharp pain passing stools, acute vs chronic anal fissure, anal fissure vs piles, sitz bath anal fissure, anal fissure treatment, digestive health blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/#article',
+          headline: 'Why Does It Hurt During Bowel Movements? Understanding Anal Fissures',
+          description:
+            'Comprehensive digestive health guide explaining anal fissures, sphincter spasm pain cycle, six common symptoms, causes, anal fissure vs piles comparison, diagnosis, treatment options, and prevention.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Amber_Remedy__Understanding_Anal_Fissures_b20c5b41.png',
+          url: 'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-22',
+          dateModified: '2026-11-22',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Why does it hurt when I pass stools?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Pain during bowel movements may occur because of an anal fissure, constipation, piles or other anorectal conditions. An anal fissure typically causes a sharp or tearing sensation when stools pass through the anal opening, sometimes followed by burning pain.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How do I know if I have an anal fissure?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Common symptoms include sharp pain during bowel movements, burning discomfort afterwards and small amounts of bright red blood. A doctor can confirm the diagnosis through a symptom review and gentle visual examination.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can an anal fissure heal on its own?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Many acute anal fissures improve with appropriate bowel-habit changes, adequate fibre and fluids, and measures that reduce straining. Persistent or chronic fissures may require prescription treatment or a specialist procedure.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How long does an anal fissure take to heal?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Healing time varies depending on whether the fissure is acute or chronic, its severity and the underlying cause. Some acute fissures improve over a few weeks, while persistent fissures may take longer and require medical treatment.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is anal fissure bleeding dangerous?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Anal fissures can cause small amounts of bright red bleeding. However, rectal bleeding can have several causes and should be assessed by a healthcare professional, particularly if it recurs or is accompanied by other symptoms.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can constipation make an anal fissure worse?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Hard stools and repeated straining can stretch the injured anal lining, cause further irritation and delay healing. Keeping stools soft is an important part of fissure management.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is surgery always necessary for anal fissures?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Most acute anal fissures do not require surgery. Conservative care and prescription medication are often tried first. Surgery may be considered for selected chronic fissures that do not respond to other treatments.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-early-warning-signs-of-piles',
+    pageName: 'Blog: Early Warning Signs of Piles You Should Never Ignore',
+    category: 'blog',
+    path: '/early-warning-signs-of-piles-you-should-never-ignore/',
+    title: 'Early Warning Signs of Piles You Should Never Ignore | Anjali Homoeo Clinic',
+    description:
+      'Recognize the 8 early warning signs of piles (haemorrhoids)—including bright red bleeding, persistent anal itching, sitting discomfort, anal lumps, mucus discharge, prolapse, and straining—plus when to see a doctor.',
+    url: 'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Early_Warning_Signs_of_Piles_397cb644.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'early warning signs of piles, early symptoms of haemorrhoids, bright red blood in stool piles, internal vs external piles, anal itching piles, prolapsed haemorrhoids, piles diagnosis, digestive health blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/#article',
+          headline: 'Early Warning Signs of Piles You Should Never Ignore',
+          description:
+            'Comprehensive digestive health guide explaining internal vs external piles, eight early warning signs of haemorrhoids, causes and risk factors, diagnostic evaluation, urgent red flags, and bowel health habits.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Early_Warning_Signs_of_Piles_397cb644.png',
+          url: 'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-21',
+          dateModified: '2026-11-21',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/early-warning-signs-of-piles-you-should-never-ignore/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What are the first signs of piles?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Early signs may include bright red bleeding during bowel movements, anal itching, mild discomfort, swelling, and a small lump around the anus. Some people may also experience mucus discharge or a feeling of incomplete bowel emptying.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can piles occur without pain?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Internal piles often cause painless bleeding, particularly during bowel movements. Pain is more commonly associated with external piles, thrombosed haemorrhoids, or prolapsed internal piles.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is bright red blood always a sign of piles?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Although bright red rectal bleeding can occur with haemorrhoids, it may also result from anal fissures, bowel inflammation, polyps, or other conditions. Any unexplained rectal bleeding should be medically evaluated.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can constipation cause piles?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Constipation can contribute to piles because repeated straining and passing hard stools increase pressure on blood vessels around the anus and rectum. Managing constipation is an important part of reducing haemorrhoid symptoms.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can piles go away on their own?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Mild haemorrhoid symptoms may improve with dietary changes, adequate fluid intake, and better toilet habits. However, persistent, recurrent, or worsening symptoms require medical assessment. Some cases may need medical procedures or surgery.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'When should rectal bleeding become a concern?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Rectal bleeding should be assessed by a healthcare professional, even if it appears mild. Heavy bleeding, continuous bleeding, large clots, dizziness, fainting, or severe pain require urgent medical attention.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Are piles dangerous?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Many cases of piles are not serious and can be managed effectively. However, persistent bleeding, severe pain, or unusual bowel changes should not be ignored because similar symptoms can occur with other medical conditions.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-enlarged-adenoids-in-children',
+    pageName: 'Blog: Enlarged Adenoids in Children - Symptoms Parents Should Know',
+    category: 'blog',
+    path: '/enlarged-adenoids-in-children-symptoms-parents-should-know/',
+    title: 'Enlarged Adenoids in Children: Symptoms Parents Should Know | Anjali Homoeo Clinic',
+    description:
+      'Learn early symptoms of enlarged adenoids (adenoid hypertrophy) in children—including mouth breathing, snoring, sleep apnea, recurrent ear infections, and nasal obstruction—plus diagnosis and treatment options.',
+    url: 'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Enlarged_Adenoids__Symptoms_Parents_Should_Know_789862a6.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'enlarged adenoids in children, adenoid hypertrophy symptoms, child mouth breathing, childhood snoring adenoids, pediatric sleep apnea adenoids, recurrent ear infections adenoids, adenoidectomy, respiratory ENT blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/#article',
+          headline: 'Enlarged Adenoids in Children: Symptoms Parents Should Know',
+          description:
+            'Comprehensive pediatric ENT guide explaining what adenoids are, causes of adenoid hypertrophy in children, seven key symptom patterns, growth and sleep effects, diagnostic evaluations, and treatment options.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Enlarged_Adenoids__Symptoms_Parents_Should_Know_789862a6.png',
+          url: 'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-16',
+          dateModified: '2026-11-16',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/enlarged-adenoids-in-children-symptoms-parents-should-know/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What are the first signs of enlarged adenoids in children?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Common early signs include persistent mouth breathing, nasal congestion, snoring, noisy breathing, and restless sleep. Some children may also experience frequent ear infections.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'At what age do children commonly develop enlarged adenoids?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Adenoids naturally grow during early childhood and are generally largest in younger children. Enlargement may cause symptoms during the preschool and early school years.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can enlarged adenoids go away naturally?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Adenoids usually shrink gradually as children grow older. Mild cases may improve naturally without surgery, depending on the severity of symptoms.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Are enlarged adenoids dangerous for children?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Enlarged adenoids are not always dangerous. However, significant enlargement can interfere with breathing, sleep, and ear function. Persistent symptoms should be evaluated by a healthcare professional.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Do enlarged adenoids cause snoring every night?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'They can contribute to frequent snoring by restricting airflow through the upper airway. However, other conditions can also cause snoring, so an appropriate medical evaluation is important.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is surgery necessary for every child with enlarged adenoids?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "No. Many children do not require surgery. Treatment depends on symptom severity, associated complications, and the child's overall health.",
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can enlarged adenoids affect hearing?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Enlarged adenoids may interfere with Eustachian tube function, potentially causing fluid buildup in the middle ear and temporary hearing difficulties.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: "Can enlarged adenoids affect a child's speech?",
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'They can contribute to changes in voice quality, particularly a nasal-sounding voice. Persistent speech or voice changes should be evaluated to identify the underlying cause.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-uterine-fibroids-heavy-periods',
+    pageName: 'Blog: Uterine Fibroids and Heavy Periods - Understanding the Connection',
+    category: 'blog',
+    path: '/uterine-fibroids-and-heavy-periods-understanding-the-connection/',
+    title: 'Uterine Fibroids and Heavy Periods: Understanding the Connection | Anjali Homoeo Clinic',
+    description:
+      'Learn how uterine fibroids cause heavy menstrual bleeding (menorrhagia) and iron-deficiency anemia, types of fibroids, fertility considerations, diagnostic tests, and treatment approaches.',
+    url: 'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Geometric_Uterine_Fibroids_Awareness_Banner_4f94ee7e.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'uterine fibroids and heavy periods, fibroids heavy menstrual bleeding, menorrhagia fibroids, submucosal fibroids bleeding, fibroids iron deficiency anemia, uterine fibroids diagnosis ultrasound, fibroids treatment options, womens health blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/#article',
+          headline: 'Uterine Fibroids and Heavy Periods: Understanding the Connection',
+          description:
+            'Comprehensive women’s health guide explaining what uterine fibroids are, why they cause heavy menstrual bleeding, warning signs of menorrhagia, iron-deficiency anemia, fertility considerations, diagnostic procedures, and treatment approaches.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Geometric_Uterine_Fibroids_Awareness_Banner_4f94ee7e.png',
+          url: 'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-16',
+          dateModified: '2026-11-16',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/uterine-fibroids-and-heavy-periods-understanding-the-connection/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Can uterine fibroids cause extremely heavy periods?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Uterine fibroids, particularly submucosal fibroids, can contribute to excessive menstrual bleeding. The severity depends on their size, number, and location.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Are uterine fibroids cancerous?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Most uterine fibroids are benign, meaning they are non-cancerous. They are different from uterine cancer, although unusual or changing symptoms should always be medically evaluated.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can fibroids disappear naturally?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Fibroids may shrink naturally, particularly after menopause when estrogen and progesterone levels decline. However, they do not always disappear completely.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Do all women with fibroids experience heavy periods?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Some women have fibroids without noticeable symptoms. Others may experience heavy bleeding, pelvic pain, frequent urination, or abdominal pressure.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can uterine fibroids cause iron deficiency?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Repeated heavy menstrual bleeding can result in iron loss, potentially leading to iron-deficiency anemia.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can women with uterine fibroids get pregnant?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Many women with fibroids conceive naturally. However, certain fibroids may affect fertility or pregnancy outcomes depending on their location and size.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Is surgery always necessary for uterine fibroids?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'No. Treatment is not always required. Women with mild or no symptoms may only need monitoring. Medication and minimally invasive procedures are also available depending on individual needs.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-pelvic-pain-in-women',
+    pageName: 'Blog: Pelvic Pain in Women - Common Causes and Warning Signs',
+    category: 'blog',
+    path: '/pelvic-pain-in-women-common-causes-and-warning-signs/',
+    title: 'Pelvic Pain in Women: Common Causes and Warning Signs | Anjali Homoeo Clinic',
+    description:
+      'Explore acute and chronic causes of pelvic pain in women—including endometriosis, ovarian cysts, uterine fibroids, PID, UTIs, IBS, and pelvic floor dysfunction—plus warning signs and diagnostic evaluation.',
+    url: 'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Pelvic_Pain_Causes_and_Warning_Signs_4a947d76.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'pelvic pain in women, causes of pelvic pain, lower abdominal pain women, acute vs chronic pelvic pain, endometriosis pelvic pain, ovarian cysts pain, uterine fibroids pressure, PID symptoms, pelvic pain warning signs, womens health blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/#article',
+          headline: 'Pelvic Pain in Women: Common Causes and Warning Signs',
+          description:
+            'Comprehensive women’s health guide covering acute vs chronic pelvic pain, ten common gynecological, urinary, digestive, and muscular causes, urgent warning signs, diagnostic testing, and individualized treatment options.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Pelvic_Pain_Causes_and_Warning_Signs_4a947d76.png',
+          url: 'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-16',
+          dateModified: '2026-11-16',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/pelvic-pain-in-women-common-causes-and-warning-signs/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What causes lower abdominal or pelvic pain in women when not menstruating?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Non-menstrual pelvic pain can stem from ovarian cysts, endometriosis, uterine fibroids, pelvic inflammatory disease (PID), urinary tract infections, interstitial cystitis, digestive conditions like irritable bowel syndrome (IBS), or pelvic floor muscle tension.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'When is pelvic pain considered a medical emergency?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Sudden, severe, or worsening pelvic pain—especially when accompanied by fever, chills, vomiting, dizziness, fainting, heavy or unusual vaginal bleeding, or a missed period with a positive pregnancy test—requires urgent emergency care to rule out conditions like ectopic pregnancy, ovarian torsion, or ruptured cysts.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'What is the difference between acute and chronic pelvic pain?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Acute pelvic pain develops suddenly and can be sharp or intense, often signaling an infection, cyst rupture, or urgent condition. Chronic pelvic pain persists or recurs for six months or longer and may involve ongoing conditions like endometriosis, fibroids, IBS, or pelvic floor dysfunction.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can digestive or urinary issues feel like gynecological pelvic pain?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Because the bladder, lower bowel, uterus, and pelvic muscles sit close together in the pelvic cavity, urinary tract infections, bladder pain syndrome, constipation, or IBS can produce discomfort that feels identical to reproductive pelvic pain.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How do doctors diagnose the cause of persistent pelvic pain?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Evaluation typically includes a detailed symptom and menstrual history, a physical and pelvic examination, urine and blood tests (including a pregnancy test when applicable), infection screening, and pelvic ultrasound or further imaging when indicated.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
+    id: 'blog-missed-periods',
+    pageName: 'Blog: Missed Periods - Common Reasons Beyond Pregnancy',
+    category: 'blog',
+    path: '/missed-periods-common-reasons-beyond-pregnancy/',
+    title: 'Missed Periods: Common Reasons Beyond Pregnancy | Anjali Homoeo Clinic',
+    description:
+      'Explore nine common reasons for missed periods beyond pregnancy, including hormonal imbalance, PCOS, stress, weight changes, thyroid disorders, excessive exercise, and medications.',
+    url: 'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Missed_Periods__Common_Reasons_Affiche_52685511.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'missed periods beyond pregnancy, reasons for missed period not pregnant, delayed period causes, PCOS missed periods, stress delayed period, thyroid missed periods, amenorrhea evaluation, womens health blog Malappuram',
+    schemaType: 'BlogPosting',
+    schemaJson: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BlogPosting',
+          '@id':
+            'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/#article',
+          headline: 'Missed Periods: Common Reasons Beyond Pregnancy',
+          description:
+            'Comprehensive women’s health guide explaining nine common reasons for missed periods beyond pregnancy, warning signs, diagnostic testing (hormone panels, TSH, pelvic ultrasound), and menstrual health habits.',
+          image:
+            'https://anjalihomoeoclinic.com/assets/aistudio/Missed_Periods__Common_Reasons_Affiche_52685511.png',
+          url: 'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/',
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/',
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Dr. Anjali Chandrasekhar',
+            jobTitle: 'Senior Homeopathic Physician',
+          },
+          publisher: {
+            '@type': 'MedicalClinic',
+            name: 'Anjali Homoeo Clinic',
+            url: 'https://anjalihomoeoclinic.com/',
+          },
+          datePublished: '2026-11-16',
+          dateModified: '2026-11-16',
+        },
+        {
+          '@type': 'FAQPage',
+          '@id':
+            'https://anjalihomoeoclinic.com/missed-periods-common-reasons-beyond-pregnancy/#faq',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Can stress cause a missed period even when I am not pregnant?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: "Yes. Significant physical or emotional stress can interfere with the brain's hormonal signals that regulate ovulation. This may delay or temporarily stop menstruation.",
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'How long can a period be delayed without pregnancy?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Menstrual cycle timing naturally varies. However, repeated delays, persistent irregularities or three consecutive missed periods should be evaluated by a healthcare professional.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can PCOS cause periods to stop completely?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. PCOS can interfere with ovulation, resulting in infrequent or absent menstrual periods. Appropriate medical evaluation can help identify the condition and discuss management options.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Can thyroid problems affect menstrual cycles?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Both hypothyroidism and hyperthyroidism can affect reproductive hormone activity and contribute to irregular, heavy or missed periods.',
+              },
+            },
+            {
+              '@type': 'Question',
+              name: 'Should I worry if I miss one period?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Missing one period occasionally may not indicate a serious problem. However, if pregnancy is possible, take a pregnancy test. Seek medical advice if missed periods continue or occur alongside other concerning symptoms.',
+              },
+            },
+          ],
+        },
+      ],
+    }),
+  },
+  {
     id: "blog-joint-pain-and-stiffness",
     pageName: "Blog: Joint Pain and Stiffness Common Causes and When to Seek Help",
     category: "blog",

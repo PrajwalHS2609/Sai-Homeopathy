@@ -47,7 +47,7 @@ export const RespiratoryCarePage: React.FC = () => {
   const [assessmentGenerated, setAssessmentGenerated] = useState(false);
 
   // Phone numbers as requested
-  const phonePrimary = '0989101707';
+  const phonePrimary = '09895101707';
   const phoneSecondary = '098951 01707';
 
   // WhatsApp helper
@@ -395,7 +395,7 @@ export const RespiratoryCarePage: React.FC = () => {
 
                 </div>
 
-                {/* Secondary Row: Direct Phone Line 0989101707 + Kuttippuram Clinic Line */}
+                {/* Secondary Row: Direct Phone Line 09895101707 + Kuttippuram Clinic Line */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-3.5 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#D8E1F5] shadow-xs">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-xl bg-[#EEF2FB] flex items-center justify-center shrink-0 text-[#303A88] border border-[#D8E1F5]">
@@ -410,7 +410,7 @@ export const RespiratoryCarePage: React.FC = () => {
                         <a
                           href={`tel:${phonePrimary}`}
                           className="font-bold text-base sm:text-lg text-[#1E2559] hover:text-[#303A88] tracking-tight transition-colors"
-                          title="Call 0989101707"
+                          title="Call 09895101707"
                         >
                           {phonePrimary}
                         </a>
@@ -1204,14 +1204,14 @@ export const RespiratoryCarePage: React.FC = () => {
       >
         <div className="max-w-md mx-auto grid grid-cols-12 gap-2 items-center">
           
-          {/* Quick Call Button: 0989101707 */}
+          {/* Quick Call Button: 09895101707 */}
           <a
             href={`tel:${phonePrimary}`}
             className="col-span-3 flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-[#EEF2FB] hover:bg-[#D8E1F5] text-[#303A88] font-bold text-[11px] transition-colors border border-[#D8E1F5] active:scale-95"
-            title="Call 0989101707"
+            title="Call 09895101707"
           >
             <Phone className="w-4 h-4 text-[#45AC4B] mb-0.5" />
-            <span className="truncate w-full text-center">0989101707</span>
+            <span className="truncate w-full text-center">09895101707</span>
           </a>
 
           {/* Quick WhatsApp Button */}

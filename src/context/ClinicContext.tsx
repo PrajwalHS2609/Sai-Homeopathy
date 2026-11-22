@@ -402,6 +402,94 @@ const isTonsillitisBlogPath = (pathname: string) => {
   );
 };
 
+const isAnjaliClinicGuideBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide' ||
+    clean === '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/' ||
+    clean === '/anjali-homoeo-clinic-in-malappuram' ||
+    clean === '/anjali-homoeo-clinic-guide' ||
+    clean === '/blog/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide'
+  );
+};
+
+const isHomoeopathicConsultationBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/understanding-the-homoeopathic-consultation-process' ||
+    clean === '/understanding-the-homoeopathic-consultation-process/' ||
+    clean === '/homoeopathic-consultation-process' ||
+    clean === '/homeopathic-consultation-process' ||
+    clean === '/blog/understanding-the-homoeopathic-consultation-process'
+  );
+};
+
+const isAnalFissuresBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures' ||
+    clean === '/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/' ||
+    clean === '/understanding-anal-fissures' ||
+    clean === '/anal-fissures' ||
+    clean === '/blog/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures'
+  );
+};
+
+const isEarlyWarningPilesBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/early-warning-signs-of-piles-you-should-never-ignore' ||
+    clean === '/early-warning-signs-of-piles-you-should-never-ignore/' ||
+    clean === '/early-warning-signs-of-piles' ||
+    clean === '/early-signs-of-piles' ||
+    clean === '/blog/early-warning-signs-of-piles-you-should-never-ignore'
+  );
+};
+
+const isEnlargedAdenoidsBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/enlarged-adenoids-in-children-symptoms-parents-should-know' ||
+    clean === '/enlarged-adenoids-in-children-symptoms-parents-should-know/' ||
+    clean === '/enlarged-adenoids-in-children' ||
+    clean === '/enlarged-adenoids' ||
+    clean === '/blog/enlarged-adenoids-in-children-symptoms-parents-should-know'
+  );
+};
+
+const isUterineFibroidsHeavyPeriodsBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/uterine-fibroids-and-heavy-periods-understanding-the-connection' ||
+    clean === '/uterine-fibroids-and-heavy-periods-understanding-the-connection/' ||
+    clean === '/uterine-fibroids-and-heavy-periods' ||
+    clean === '/uterine-fibroids-heavy-periods' ||
+    clean === '/blog/uterine-fibroids-and-heavy-periods-understanding-the-connection'
+  );
+};
+
+const isPelvicPainBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/pelvic-pain-in-women-common-causes-and-warning-signs' ||
+    clean === '/pelvic-pain-in-women-common-causes-and-warning-signs/' ||
+    clean === '/pelvic-pain-in-women' ||
+    clean === '/pelvic-pain' ||
+    clean === '/blog/pelvic-pain-in-women-common-causes-and-warning-signs'
+  );
+};
+
+const isMissedPeriodsBlogPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/missed-periods-common-reasons-beyond-pregnancy' ||
+    clean === '/missed-periods-common-reasons-beyond-pregnancy/' ||
+    clean === '/missed-periods-common-reasons' ||
+    clean === '/missed-periods' ||
+    clean === '/blog/missed-periods-common-reasons-beyond-pregnancy'
+  );
+};
+
 const isJointPainBlogPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -1466,6 +1554,30 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   // Navigation
   const [currentView, setCurrentView] = useState<NavView>(() => {
     if (typeof window !== 'undefined') {
+      if (isAnjaliClinicGuideBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isHomoeopathicConsultationBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isAnalFissuresBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isEarlyWarningPilesBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isEnlargedAdenoidsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isUterineFibroidsHeavyPeriodsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isPelvicPainBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
+      if (isMissedPeriodsBlogPath(window.location.pathname)) {
+        return 'blog';
+      }
       if (isJointPainBlogPath(window.location.pathname)) {
         return 'blog';
       }
@@ -1867,6 +1979,78 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             parsed.unshift(nasalPolypsPost);
           }
         }
+        const missedPeriodsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-missed-periods');
+        if (missedPeriodsPost) {
+          const mpIdx = parsed.findIndex((p) => p.id === 'post-missed-periods' || p.slug === 'missed-periods-common-reasons-beyond-pregnancy');
+          if (mpIdx >= 0) {
+            parsed[mpIdx] = { ...parsed[mpIdx], ...missedPeriodsPost, image: missedPeriodsPost.image };
+          } else {
+            parsed.unshift(missedPeriodsPost);
+          }
+        }
+        const pelvicPainPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pelvic-pain-in-women');
+        if (pelvicPainPost) {
+          const ppIdx = parsed.findIndex((p) => p.id === 'post-pelvic-pain-in-women' || p.slug === 'pelvic-pain-in-women-common-causes-and-warning-signs');
+          if (ppIdx >= 0) {
+            parsed[ppIdx] = { ...parsed[ppIdx], ...pelvicPainPost, image: pelvicPainPost.image };
+          } else {
+            parsed.unshift(pelvicPainPost);
+          }
+        }
+        const uterineFibroidsHeavyPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids-heavy-periods');
+        if (uterineFibroidsHeavyPost) {
+          const ufhpIdx = parsed.findIndex((p) => p.id === 'post-uterine-fibroids-heavy-periods' || p.slug === 'uterine-fibroids-and-heavy-periods-understanding-the-connection');
+          if (ufhpIdx >= 0) {
+            parsed[ufhpIdx] = { ...parsed[ufhpIdx], ...uterineFibroidsHeavyPost, image: uterineFibroidsHeavyPost.image };
+          } else {
+            parsed.unshift(uterineFibroidsHeavyPost);
+          }
+        }
+        const enlargedAdenoidsPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-enlarged-adenoids-in-children');
+        if (enlargedAdenoidsPost) {
+          const eaIdx = parsed.findIndex((p) => p.id === 'post-enlarged-adenoids-in-children' || p.slug === 'enlarged-adenoids-in-children-symptoms-parents-should-know');
+          if (eaIdx >= 0) {
+            parsed[eaIdx] = { ...parsed[eaIdx], ...enlargedAdenoidsPost, image: enlargedAdenoidsPost.image };
+          } else {
+            parsed.unshift(enlargedAdenoidsPost);
+          }
+        }
+        const earlyWarningPilesPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-early-warning-signs-of-piles');
+        if (earlyWarningPilesPost) {
+          const ewpIdx = parsed.findIndex((p) => p.id === 'post-early-warning-signs-of-piles' || p.slug === 'early-warning-signs-of-piles-you-should-never-ignore');
+          if (ewpIdx >= 0) {
+            parsed[ewpIdx] = { ...parsed[ewpIdx], ...earlyWarningPilesPost, image: earlyWarningPilesPost.image };
+          } else {
+            parsed.unshift(earlyWarningPilesPost);
+          }
+        }
+        const analFissuresPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-understanding-anal-fissures');
+        if (analFissuresPost) {
+          const afIdx = parsed.findIndex((p) => p.id === 'post-understanding-anal-fissures' || p.slug === 'why-does-it-hurt-during-bowel-movements-understanding-anal-fissures');
+          if (afIdx >= 0) {
+            parsed[afIdx] = { ...parsed[afIdx], ...analFissuresPost, image: analFissuresPost.image };
+          } else {
+            parsed.unshift(analFissuresPost);
+          }
+        }
+        const consultationProcessPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-consultation-process');
+        if (consultationProcessPost) {
+          const cpIdx = parsed.findIndex((p) => p.id === 'post-homoeopathic-consultation-process' || p.slug === 'understanding-the-homoeopathic-consultation-process');
+          if (cpIdx >= 0) {
+            parsed[cpIdx] = { ...parsed[cpIdx], ...consultationProcessPost, image: consultationProcessPost.image };
+          } else {
+            parsed.unshift(consultationProcessPost);
+          }
+        }
+        const anjaliClinicGuidePost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-anjali-homoeo-clinic-malappuram-guide');
+        if (anjaliClinicGuidePost) {
+          const acgIdx = parsed.findIndex((p) => p.id === 'post-anjali-homoeo-clinic-malappuram-guide' || p.slug === 'anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide');
+          if (acgIdx >= 0) {
+            parsed[acgIdx] = { ...parsed[acgIdx], ...anjaliClinicGuidePost, image: anjaliClinicGuidePost.image };
+          } else {
+            parsed.unshift(anjaliClinicGuidePost);
+          }
+        }
         localStorage.setItem('anjali_homeoclinic_blogs', JSON.stringify(parsed));
         localStorage.removeItem('sai_clinic_blogs');
         return parsed.length > 0 ? parsed : INITIAL_BLOG_POSTS;
@@ -1878,6 +2062,30 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   });
   const [selectedPostForReader, setSelectedPostForReader] = useState<BlogPost | null>(() => {
     if (typeof window !== 'undefined') {
+      if (isAnjaliClinicGuideBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-anjali-homoeo-clinic-malappuram-guide') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isHomoeopathicConsultationBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-consultation-process') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isAnalFissuresBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-understanding-anal-fissures') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isEarlyWarningPilesBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-early-warning-signs-of-piles') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isEnlargedAdenoidsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-enlarged-adenoids-in-children') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isUterineFibroidsHeavyPeriodsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids-heavy-periods') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isPelvicPainBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pelvic-pain-in-women') || INITIAL_BLOG_POSTS[0];
+      }
+      if (isMissedPeriodsBlogPath(window.location.pathname)) {
+        return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-missed-periods') || INITIAL_BLOG_POSTS[0];
+      }
       if (isJointPainBlogPath(window.location.pathname)) {
         return INITIAL_BLOG_POSTS.find((p) => p.id === 'post-joint-pain-and-stiffness') || INITIAL_BLOG_POSTS[0];
       }
@@ -2045,6 +2253,38 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('menstrual-doctor-puthanathani');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
+      } else if (isAnjaliClinicGuideBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const cgPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-anjali-homoeo-clinic-malappuram-guide') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(cgPost);
+      } else if (isHomoeopathicConsultationBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const cpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-homoeopathic-consultation-process') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(cpPost);
+      } else if (isAnalFissuresBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const afPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-understanding-anal-fissures') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(afPost);
+      } else if (isEarlyWarningPilesBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const ewpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-early-warning-signs-of-piles') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(ewpPost);
+      } else if (isEnlargedAdenoidsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const eaPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-enlarged-adenoids-in-children') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(eaPost);
+      } else if (isUterineFibroidsHeavyPeriodsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const ufhpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-uterine-fibroids-heavy-periods') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(ufhpPost);
+      } else if (isPelvicPainBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const ppPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-pelvic-pain-in-women') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(ppPost);
+      } else if (isMissedPeriodsBlogPath(window.location.pathname)) {
+        setCurrentView('blog');
+        const mpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-missed-periods') || INITIAL_BLOG_POSTS[0];
+        setSelectedPostForReader(mpPost);
       } else if (isJointPainBlogPath(window.location.pathname)) {
         setCurrentView('blog');
         const jpPost = INITIAL_BLOG_POSTS.find((p) => p.id === 'post-joint-pain-and-stiffness') || INITIAL_BLOG_POSTS[0];
@@ -2388,6 +2628,46 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'menstrual-doctor-puthanathani' }, '', targetUrl);
       }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide') {
+      const targetUrl = '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'understanding-the-homoeopathic-consultation-process') {
+      const targetUrl = '/understanding-the-homoeopathic-consultation-process/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'why-does-it-hurt-during-bowel-movements-understanding-anal-fissures') {
+      const targetUrl = '/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'early-warning-signs-of-piles-you-should-never-ignore') {
+      const targetUrl = '/early-warning-signs-of-piles-you-should-never-ignore/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'enlarged-adenoids-in-children-symptoms-parents-should-know') {
+      const targetUrl = '/enlarged-adenoids-in-children-symptoms-parents-should-know/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'uterine-fibroids-and-heavy-periods-understanding-the-connection') {
+      const targetUrl = '/uterine-fibroids-and-heavy-periods-understanding-the-connection/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'pelvic-pain-in-women-common-causes-and-warning-signs') {
+      const targetUrl = '/pelvic-pain-in-women-common-causes-and-warning-signs/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
+    } else if (currentView === 'blog' && selectedPostForReader?.slug === 'missed-periods-common-reasons-beyond-pregnancy') {
+      const targetUrl = '/missed-periods-common-reasons-beyond-pregnancy/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: selectedPostForReader.slug }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'hair-thinning-in-women-possible-causes-and-medical-evaluation') {
       const targetUrl = '/hair-thinning-in-women-possible-causes-and-medical-evaluation/';
       if (window.location.pathname !== targetUrl) {
@@ -2480,6 +2760,14 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (currentView === 'home') {
       if (
+        isAnjaliClinicGuideBlogPath(window.location.pathname) ||
+        isHomoeopathicConsultationBlogPath(window.location.pathname) ||
+        isAnalFissuresBlogPath(window.location.pathname) ||
+        isEarlyWarningPilesBlogPath(window.location.pathname) ||
+        isEnlargedAdenoidsBlogPath(window.location.pathname) ||
+        isUterineFibroidsHeavyPeriodsBlogPath(window.location.pathname) ||
+        isPelvicPainBlogPath(window.location.pathname) ||
+        isMissedPeriodsBlogPath(window.location.pathname) ||
         isJointPainBlogPath(window.location.pathname) ||
         isAcneInTeenagersBlogPath(window.location.pathname) ||
         isHairThinningBlogPath(window.location.pathname) ||
@@ -2643,6 +2931,46 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
     } else if (post.slug === 'joint-pain-and-stiffness-common-causes-and-when-to-seek-help') {
       const targetUrl = '/joint-pain-and-stiffness-common-causes-and-when-to-seek-help/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'missed-periods-common-reasons-beyond-pregnancy') {
+      const targetUrl = '/missed-periods-common-reasons-beyond-pregnancy/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'pelvic-pain-in-women-common-causes-and-warning-signs') {
+      const targetUrl = '/pelvic-pain-in-women-common-causes-and-warning-signs/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'uterine-fibroids-and-heavy-periods-understanding-the-connection') {
+      const targetUrl = '/uterine-fibroids-and-heavy-periods-understanding-the-connection/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'enlarged-adenoids-in-children-symptoms-parents-should-know') {
+      const targetUrl = '/enlarged-adenoids-in-children-symptoms-parents-should-know/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'early-warning-signs-of-piles-you-should-never-ignore') {
+      const targetUrl = '/early-warning-signs-of-piles-you-should-never-ignore/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'why-does-it-hurt-during-bowel-movements-understanding-anal-fissures') {
+      const targetUrl = '/why-does-it-hurt-during-bowel-movements-understanding-anal-fissures/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'understanding-the-homoeopathic-consultation-process') {
+      const targetUrl = '/understanding-the-homoeopathic-consultation-process/';
+      if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
+      }
+    } else if (post.slug === 'anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide') {
+      const targetUrl = '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/';
       if (typeof window !== 'undefined' && window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'blog', slug: post.slug }, '', targetUrl);
       }
@@ -3180,6 +3508,22 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         targetId = 'blog-homeopathic-clinic-in-malappuram';
       } else if (selectedPostForReader?.slug === 'what-causes-piles-risk-factors-prevention') {
         targetId = 'blog-what-causes-piles';
+      } else if (selectedPostForReader?.slug === 'missed-periods-common-reasons-beyond-pregnancy') {
+        targetId = 'blog-missed-periods';
+      } else if (selectedPostForReader?.slug === 'pelvic-pain-in-women-common-causes-and-warning-signs') {
+        targetId = 'blog-pelvic-pain-in-women';
+      } else if (selectedPostForReader?.slug === 'uterine-fibroids-and-heavy-periods-understanding-the-connection') {
+        targetId = 'blog-uterine-fibroids-heavy-periods';
+      } else if (selectedPostForReader?.slug === 'enlarged-adenoids-in-children-symptoms-parents-should-know') {
+        targetId = 'blog-enlarged-adenoids-in-children';
+      } else if (selectedPostForReader?.slug === 'early-warning-signs-of-piles-you-should-never-ignore') {
+        targetId = 'blog-early-warning-signs-of-piles';
+      } else if (selectedPostForReader?.slug === 'why-does-it-hurt-during-bowel-movements-understanding-anal-fissures') {
+        targetId = 'blog-understanding-anal-fissures';
+      } else if (selectedPostForReader?.slug === 'understanding-the-homoeopathic-consultation-process') {
+        targetId = 'blog-homoeopathic-consultation-process';
+      } else if (selectedPostForReader?.slug === 'anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide') {
+        targetId = 'blog-anjali-homoeo-clinic-malappuram-guide';
       } else if (selectedPostForReader) {
         const found = seoPages.find(
           (p) =>

@@ -38,7 +38,7 @@ export const AllergicRhinitisManjeriPage: React.FC = () => {
   const [showStickyBar, setShowStickyBar] = useState(false);
 
   // Phone numbers
-  const phonePrimary = '0989101707';
+  const phonePrimary = '09895101707';
   const phoneSecondary = '098951 01707';
   const phoneWhatsApp = '89211 80408';
 

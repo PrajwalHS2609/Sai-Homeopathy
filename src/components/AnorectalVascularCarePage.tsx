@@ -47,7 +47,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
   const [assessmentGenerated, setAssessmentGenerated] = useState(false);
 
   // Phone numbers as requested
-  const phonePrimary = '0989101707';
+  const phonePrimary = '09895101707';
   const phoneSecondary = '098951 01707';
 
   // WhatsApp helper
@@ -374,7 +374,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
 
                 </div>
 
-                {/* Secondary Row: Direct Phone Line 0989101707 + Kuttippuram Clinic Line */}
+                {/* Secondary Row: Direct Phone Line 09895101707 + Kuttippuram Clinic Line */}
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 p-3.5 sm:p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#D8E1F5] shadow-xs">
                   <div className="flex items-center gap-3">
                     <div className="w-9 h-9 rounded-xl bg-[#EEF2FB] flex items-center justify-center shrink-0 text-[#303A88] border border-[#D8E1F5]">
@@ -389,7 +389,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
                         <a
                           href={`tel:${phonePrimary}`}
                           className="font-bold text-base sm:text-lg text-[#1E2559] hover:text-[#303A88] tracking-tight transition-colors"
-                          title="Call 0989101707"
+                          title="Call 09895101707"
                         >
                           {phonePrimary}
                         </a>
@@ -1060,7 +1060,7 @@ export const AnorectalVascularCarePage: React.FC = () => {
               <a
                 href={`tel:${phonePrimary}`}
                 className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-full bg-white text-[#1E2559] hover:bg-[#EEF2FB] text-xs sm:text-sm font-bold transition-all shadow-sm whitespace-nowrap"
-                title="Call 0989101707"
+                title="Call 09895101707"
               >
                 <Phone className="w-4 h-4 text-[#45AC4B]" />
                 <span>{phonePrimary}</span>

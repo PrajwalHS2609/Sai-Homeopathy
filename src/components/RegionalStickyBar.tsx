@@ -10,7 +10,7 @@ interface RegionalStickyBarProps {
 
 export const RegionalStickyBar: React.FC<RegionalStickyBarProps> = ({
   pageTitle,
-  phonePrimary = '0989101707',
+  phonePrimary = '09895101707',
   whatsappUrl,
   onBookClick,
 }) => {

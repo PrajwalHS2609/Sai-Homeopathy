@@ -265,8 +265,8 @@ export const Footer: React.FC = () => {
                 Tirur - Kuttippuram Rd, Kavumopuram, Kuttippuram, Keralam 679571
               </p>
               <p className="pt-0.5 flex flex-wrap items-center gap-2">
-                <a href="tel:0989101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums" title="Call Doctor Desk 0989101707">
-                  Ph: 0989101707
+                <a href="tel:09895101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums" title="Call Doctor Desk 09895101707">
+                  Ph: 09895101707
                 </a>
                 <span className="text-[#94A3B8]">/</span>
                 <a href="tel:09895101707" className="text-[#86EFAC] hover:underline font-semibold tabular-nums" title="Call 098951 01707">

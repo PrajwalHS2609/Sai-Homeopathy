@@ -11,7 +11,7 @@ interface RegionalDoctorCardProps {
 export const RegionalDoctorCard: React.FC<RegionalDoctorCardProps> = ({
   doctorSubtitle = 'BHMS | Chief Homeopathic Physician',
   doctorBio = '10+ years of dedicated clinical experience conducting detailed patient assessments, root-cause evaluations, and evidence-guided constitutional homeopathic care across Malappuram district.',
-  phonePrimary = '0989101707',
+  phonePrimary = '09895101707',
   whatsappUrl,
 }) => {
   return (

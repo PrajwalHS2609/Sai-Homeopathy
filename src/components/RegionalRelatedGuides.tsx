@@ -543,11 +543,11 @@ export const RegionalRelatedGuides: React.FC<RegionalRelatedGuidesProps> = ({
           </div>
           <div className="flex items-center gap-2 shrink-0">
             <a
-              href="tel:0989101707"
+              href="tel:09895101707"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#303A88] hover:bg-[#232b66] text-white text-xs font-bold transition-colors shadow-xs"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>0989101707</span>
+              <span>09895101707</span>
             </a>
             <a
               href="https://wa.me/918921180408"

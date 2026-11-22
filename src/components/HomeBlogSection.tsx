@@ -54,6 +54,14 @@ export const HomeBlogSection: React.FC = () => {
                 {post.image && (
                   <div
                     className={`w-full ${
+                      post.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                      post.id === 'post-homoeopathic-consultation-process' ||
+                      post.id === 'post-understanding-anal-fissures' ||
+                      post.id === 'post-early-warning-signs-of-piles' ||
+                      post.id === 'post-enlarged-adenoids-in-children' ||
+                      post.id === 'post-uterine-fibroids-heavy-periods' ||
+                      post.id === 'post-pelvic-pain-in-women' ||
+                      post.id === 'post-missed-periods' ||
                       post.id === 'post-joint-pain-and-stiffness' ||
                       post.id === 'post-acne-in-teenagers' ||
                       post.id === 'post-dark-patches-facial-pigmentation' ||
@@ -80,6 +88,14 @@ export const HomeBlogSection: React.FC = () => {
                       alt={post.title}
                       referrerPolicy="no-referrer"
                       className={`w-full h-full ${
+                        post.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                        post.id === 'post-homoeopathic-consultation-process' ||
+                        post.id === 'post-understanding-anal-fissures' ||
+                        post.id === 'post-early-warning-signs-of-piles' ||
+                        post.id === 'post-enlarged-adenoids-in-children' ||
+                        post.id === 'post-uterine-fibroids-heavy-periods' ||
+                        post.id === 'post-pelvic-pain-in-women' ||
+                        post.id === 'post-missed-periods' ||
                         post.id === 'post-joint-pain-and-stiffness' ||
                         post.id === 'post-acne-in-teenagers' ||
                         post.id === 'post-dark-patches-facial-pigmentation' ||

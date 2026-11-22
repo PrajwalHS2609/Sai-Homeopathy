@@ -29,7 +29,7 @@ export const RegionalHeroSection: React.FC<RegionalHeroSectionProps> = ({
   metrics,
   doctorSubtitle,
   doctorBio,
-  phonePrimary = '0989101707',
+  phonePrimary = '09895101707',
   phoneWhatsApp = '89211 80408',
   whatsappUrl,
   onBookClick,

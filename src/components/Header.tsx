@@ -200,13 +200,13 @@ export const Header: React.FC = () => {
           {/* Quick Contact Links Row */}
           <div className="flex flex-wrap items-center justify-center gap-x-2.5 sm:gap-x-3.5 gap-y-1 text-[10.5px] sm:text-xs font-sans">
             <a
-              href="tel:0989101707"
+              href="tel:09895101707"
               className="flex items-center gap-1 hover:text-[#86EFAC] transition-colors whitespace-nowrap"
-              title="Call Doctor Desk: 0989101707"
+              title="Call Doctor Desk: 09895101707"
             >
               <Phone className="w-3 h-3 text-[#45AC4B] shrink-0" />
               <span className="text-[#D3DBF4]">Desk:</span>
-              <span className="tabular-nums font-semibold">0989101707</span>
+              <span className="tabular-nums font-semibold">09895101707</span>
             </a>
             <span className="text-[#8FA3E8]">·</span>
             <a

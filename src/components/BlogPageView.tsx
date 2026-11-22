@@ -321,6 +321,17 @@ export const BlogPageView: React.FC = () => {
                 post.id === 'post-what-causes-piles' &&
                 paragraph.startsWith('### 5. Prevention Tips');
 
+              if (paragraph.startsWith('#### ')) {
+                return (
+                  <h4
+                    key={index}
+                    className="font-editorial text-xl sm:text-2xl font-bold text-[#1E2559] pt-4 pb-1"
+                  >
+                    {paragraph.replace('#### ', '')}
+                  </h4>
+                );
+              }
+
               if (paragraph.startsWith('### ')) {
                 return (
                   <React.Fragment key={index}>
@@ -463,6 +474,68 @@ export const BlogPageView: React.FC = () => {
                     </h3>
                   </React.Fragment>
                 );
+              }
+
+              // Markdown comparison table
+              if (paragraph.trim().startsWith('|') && paragraph.includes('\n|')) {
+                const tableLines = paragraph
+                  .trim()
+                  .split('\n')
+                  .map((l) => l.trim())
+                  .filter((l) => l.startsWith('|'));
+                const parsedRows = tableLines
+                  .filter((line) => !/^\|[\s:|-]+\|$/.test(line))
+                  .map((line) =>
+                    line
+                      .slice(1, line.endsWith('|') ? -1 : undefined)
+                      .split('|')
+                      .map((cell) => cell.trim().replace(/\*\*/g, ''))
+                  );
+                const [headers, ...bodyRows] = parsedRows;
+                if (headers && headers.length > 0 && bodyRows.length > 0) {
+                  return (
+                    <div
+                      key={index}
+                      className="my-6 overflow-x-auto rounded-2xl border border-[#D8E1F5] bg-white shadow-2xs not-prose"
+                    >
+                      <table className="w-full text-left border-collapse text-xs sm:text-sm font-sans">
+                        <thead>
+                          <tr className="bg-[#EEF2FB] border-b border-[#D8E1F5]">
+                            {headers.map((header, hIdx) => (
+                              <th
+                                key={hIdx}
+                                className="px-4 py-3 font-bold text-[#1E2559] whitespace-nowrap"
+                              >
+                                {header}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-[#EEF2FB]">
+                          {bodyRows.map((row, rIdx) => (
+                            <tr
+                              key={rIdx}
+                              className={rIdx % 2 === 1 ? 'bg-[#F8FAFD]/70' : 'bg-white'}
+                            >
+                              {row.map((cell, cIdx) => (
+                                <td
+                                  key={cIdx}
+                                  className={`px-4 py-3 align-top leading-relaxed ${
+                                    cIdx === 0
+                                      ? 'font-semibold text-[#1E2559] whitespace-nowrap'
+                                      : 'text-[#334155]'
+                                  }`}
+                                >
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  );
+                }
               }
 
               // Bullet points
@@ -643,6 +716,14 @@ export const BlogPageView: React.FC = () => {
               {featuredPost.image && (
                 <div
                   className={`w-full ${
+                    featuredPost.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                    featuredPost.id === 'post-homoeopathic-consultation-process' ||
+                    featuredPost.id === 'post-understanding-anal-fissures' ||
+                    featuredPost.id === 'post-early-warning-signs-of-piles' ||
+                    featuredPost.id === 'post-enlarged-adenoids-in-children' ||
+                    featuredPost.id === 'post-uterine-fibroids-heavy-periods' ||
+                    featuredPost.id === 'post-pelvic-pain-in-women' ||
+                    featuredPost.id === 'post-missed-periods' ||
                     featuredPost.id === 'post-joint-pain-and-stiffness' ||
                     featuredPost.id === 'post-acne-in-teenagers' ||
                     featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
@@ -669,6 +750,14 @@ export const BlogPageView: React.FC = () => {
                     alt={featuredPost.title}
                     referrerPolicy="no-referrer"
                     className={`w-full h-full ${
+                      featuredPost.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                      featuredPost.id === 'post-homoeopathic-consultation-process' ||
+                      featuredPost.id === 'post-understanding-anal-fissures' ||
+                      featuredPost.id === 'post-early-warning-signs-of-piles' ||
+                      featuredPost.id === 'post-enlarged-adenoids-in-children' ||
+                      featuredPost.id === 'post-uterine-fibroids-heavy-periods' ||
+                      featuredPost.id === 'post-pelvic-pain-in-women' ||
+                      featuredPost.id === 'post-missed-periods' ||
                       featuredPost.id === 'post-joint-pain-and-stiffness' ||
                       featuredPost.id === 'post-acne-in-teenagers' ||
                       featuredPost.id === 'post-dark-patches-facial-pigmentation' ||
@@ -778,6 +867,14 @@ export const BlogPageView: React.FC = () => {
                   {post.image && (
                     <div
                       className={`w-full ${
+                        post.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                        post.id === 'post-homoeopathic-consultation-process' ||
+                        post.id === 'post-understanding-anal-fissures' ||
+                        post.id === 'post-early-warning-signs-of-piles' ||
+                        post.id === 'post-enlarged-adenoids-in-children' ||
+                        post.id === 'post-uterine-fibroids-heavy-periods' ||
+                        post.id === 'post-pelvic-pain-in-women' ||
+                        post.id === 'post-missed-periods' ||
                         post.id === 'post-joint-pain-and-stiffness' ||
                         post.id === 'post-acne-in-teenagers' ||
                         post.id === 'post-dark-patches-facial-pigmentation' ||
@@ -804,6 +901,14 @@ export const BlogPageView: React.FC = () => {
                         alt={post.title}
                         referrerPolicy="no-referrer"
                         className={`w-full h-full ${
+                          post.id === 'post-anjali-homoeo-clinic-malappuram-guide' ||
+                          post.id === 'post-homoeopathic-consultation-process' ||
+                          post.id === 'post-understanding-anal-fissures' ||
+                          post.id === 'post-early-warning-signs-of-piles' ||
+                          post.id === 'post-enlarged-adenoids-in-children' ||
+                          post.id === 'post-uterine-fibroids-heavy-periods' ||
+                          post.id === 'post-pelvic-pain-in-women' ||
+                          post.id === 'post-missed-periods' ||
                           post.id === 'post-joint-pain-and-stiffness' ||
                           post.id === 'post-acne-in-teenagers' ||
                           post.id === 'post-dark-patches-facial-pigmentation' ||
