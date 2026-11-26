@@ -89,7 +89,13 @@ export type NavView =
   | 'alopecia-treatment-kuttippuram'
   | 'ringworm-treatment-kuttippuram'
   | 'piles-treatment-puthanathani'
-  | 'menstrual-doctor-puthanathani';
+  | 'menstrual-doctor-puthanathani'
+  | 'skin-treatment-puthanathani'
+  | 'hair-treatment-puthanathani'
+  | 'psoriasis-treatment-puthanathani'
+  | 'scalp-treatment-puthanathani'
+  | 'alopecia-treatment-puthanathani'
+  | 'ringworm-treatment-puthanathani';
 
 interface Toast {
   id: string;
@@ -1529,6 +1535,286 @@ const isMenstrualPuthanathaniPath = (pathname: string) => {
   );
 };
 
+const isSkinPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homeopathic-clinic-near-puthanathani-for-skin-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-skin-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-skin-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-skin-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-skin-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-skin-treatment/' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-skin-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-skin-treatment/' ||
+    clean === '/skin-homeopathy-clinic-in-puthanathani' ||
+    clean === '/skin-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/skin-treatment-in-puthanathani' ||
+    clean === '/skin-treatment-in-puthanathani/' ||
+    clean === '/skin-treatment-near-puthanathani' ||
+    clean === '/skin-treatment-near-puthanathani/' ||
+    clean === '/skin-homeopathic-treatment-in-puthanathani' ||
+    clean === '/skin-homeopathic-treatment-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-skin-problems-in-puthanathani/' ||
+    clean === '/skin-health-clinic-in-puthanathani' ||
+    clean === '/skin-health-clinic-in-puthanathani/' ||
+    clean === '/skin-doctor-in-puthanathani' ||
+    clean === '/skin-doctor-in-puthanathani/' ||
+    clean === '/skin-specialist-in-puthanathani' ||
+    clean === '/skin-specialist-in-puthanathani/' ||
+    clean === '/homoeopathic-doctor-for-skin-problems-in-puthanathani' ||
+    clean === '/homoeopathic-doctor-for-skin-problems-in-puthanathani/' ||
+    clean === '/homeopathic-doctor-for-skin-problems-in-puthanathani' ||
+    clean === '/homeopathic-doctor-for-skin-problems-in-puthanathani/' ||
+    clean === '/skin-disease-treatment-in-puthanathani' ||
+    clean === '/skin-disease-treatment-in-puthanathani/' ||
+    clean === '/skin-problems-treatment-in-puthanathani' ||
+    clean === '/skin-problems-treatment-in-puthanathani/'
+  );
+};
+
+const isHairPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-puthanathani-for-hair-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-hair-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-hair-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-hair-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-hair-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-hair-treatment/' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-hair-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-hair-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-hair-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-hair-treatment/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-hair-treatment' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-hair-treatment/' ||
+    clean === '/hair-treatment-in-puthanathani' ||
+    clean === '/hair-treatment-in-puthanathani/' ||
+    clean === '/hair-fall-treatment-in-puthanathani' ||
+    clean === '/hair-fall-treatment-in-puthanathani/' ||
+    clean === '/homoeopathic-hair-treatment-in-puthanathani' ||
+    clean === '/homoeopathic-hair-treatment-in-puthanathani/' ||
+    clean === '/homeopathic-hair-treatment-in-puthanathani' ||
+    clean === '/homeopathic-hair-treatment-in-puthanathani/' ||
+    clean === '/hair-homoeopathy-clinic-in-puthanathani' ||
+    clean === '/hair-homoeopathy-clinic-in-puthanathani/' ||
+    clean === '/hair-homeopathy-clinic-in-puthanathani' ||
+    clean === '/hair-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/hair-health-clinic-in-puthanathani' ||
+    clean === '/hair-health-clinic-in-puthanathani/' ||
+    clean === '/hair-doctor-in-puthanathani' ||
+    clean === '/hair-doctor-in-puthanathani/' ||
+    clean === '/hair-specialist-in-puthanathani' ||
+    clean === '/hair-specialist-in-puthanathani/' ||
+    clean === '/homoeopathic-doctor-for-hair-problems-in-puthanathani' ||
+    clean === '/homoeopathic-doctor-for-hair-problems-in-puthanathani/' ||
+    clean === '/homeopathic-doctor-for-hair-problems-in-puthanathani' ||
+    clean === '/homeopathic-doctor-for-hair-problems-in-puthanathani/' ||
+    clean === '/hair-loss-treatment-in-puthanathani' ||
+    clean === '/hair-loss-treatment-in-puthanathani/' ||
+    clean === '/hair-and-scalp-treatment-in-puthanathani' ||
+    clean === '/hair-and-scalp-treatment-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-hair-problems-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-hair-problems-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-hair-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-hair-problems-in-puthanathani/' ||
+    clean === '/hair-care-clinic-in-puthanathani' ||
+    clean === '/hair-care-clinic-in-puthanathani/'
+  );
+};
+
+const isPsoriasisPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-psoriasis-treatment' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-psoriasis-treatment/' ||
+    clean === '/psoriasis-treatment-in-puthanathani' ||
+    clean === '/psoriasis-treatment-in-puthanathani/' ||
+    clean === '/homoeopathic-treatment-for-psoriasis-in-puthanathani' ||
+    clean === '/homoeopathic-treatment-for-psoriasis-in-puthanathani/' ||
+    clean === '/homeopathic-treatment-for-psoriasis-in-puthanathani' ||
+    clean === '/homeopathic-treatment-for-psoriasis-in-puthanathani/' ||
+    clean === '/homoeopathy-for-psoriasis-in-puthanathani' ||
+    clean === '/homoeopathy-for-psoriasis-in-puthanathani/' ||
+    clean === '/homeopathy-for-psoriasis-in-puthanathani' ||
+    clean === '/homeopathy-for-psoriasis-in-puthanathani/' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-puthanathani' ||
+    clean === '/psoriasis-homoeopathy-clinic-in-puthanathani/' ||
+    clean === '/psoriasis-homeopathy-clinic-in-puthanathani' ||
+    clean === '/psoriasis-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/psoriasis-clinic-in-puthanathani' ||
+    clean === '/psoriasis-clinic-in-puthanathani/' ||
+    clean === '/psoriasis-doctor-in-puthanathani' ||
+    clean === '/psoriasis-doctor-in-puthanathani/' ||
+    clean === '/psoriasis-homoeopathic-treatment-in-puthanathani' ||
+    clean === '/psoriasis-homoeopathic-treatment-in-puthanathani/' ||
+    clean === '/psoriasis-homeopathic-treatment-in-puthanathani' ||
+    clean === '/psoriasis-homeopathic-treatment-in-puthanathani/' ||
+    clean === '/psoriasis-consultation-in-puthanathani' ||
+    clean === '/psoriasis-consultation-in-puthanathani/'
+  );
+};
+
+const isScalpPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-puthanathani-for-scalp-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-scalp-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-scalp-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-scalp-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-scalp-treatment/' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-scalp-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-scalp-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-scalp-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-scalp-treatment/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-scalp-treatment' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-scalp-treatment/' ||
+    clean === '/scalp-treatment-in-puthanathani' ||
+    clean === '/scalp-treatment-in-puthanathani/' ||
+    clean === '/homoeopathic-scalp-treatment-in-puthanathani' ||
+    clean === '/homoeopathic-scalp-treatment-in-puthanathani/' ||
+    clean === '/homeopathic-scalp-treatment-in-puthanathani' ||
+    clean === '/homeopathic-scalp-treatment-in-puthanathani/' ||
+    clean === '/scalp-problem-treatment-in-puthanathani' ||
+    clean === '/scalp-problem-treatment-in-puthanathani/' ||
+    clean === '/scalp-specialist-in-puthanathani' ||
+    clean === '/scalp-specialist-in-puthanathani/' ||
+    clean === '/scalp-homoeopathy-clinic-in-puthanathani' ||
+    clean === '/scalp-homoeopathy-clinic-in-puthanathani/' ||
+    clean === '/scalp-homeopathy-clinic-in-puthanathani' ||
+    clean === '/scalp-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/scalp-doctor-in-puthanathani' ||
+    clean === '/scalp-doctor-in-puthanathani/' ||
+    clean === '/homoeopathic-doctor-for-scalp-problems-in-puthanathani' ||
+    clean === '/homoeopathic-doctor-for-scalp-problems-in-puthanathani/' ||
+    clean === '/homeopathic-doctor-for-scalp-problems-in-puthanathani' ||
+    clean === '/homeopathic-doctor-for-scalp-problems-in-puthanathani/' ||
+    clean === '/scalp-issues-treatment-in-puthanathani' ||
+    clean === '/scalp-issues-treatment-in-puthanathani/' ||
+    clean === '/scalp-health-clinic-in-puthanathani' ||
+    clean === '/scalp-health-clinic-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-scalp-problems-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-scalp-problems-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-scalp-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-scalp-problems-in-puthanathani/' ||
+    clean === '/scalp-care-clinic-in-puthanathani' ||
+    clean === '/scalp-care-clinic-in-puthanathani/'
+  );
+};
+
+const isAlopeciaPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-alopecia-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-alopecia-treatment/' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-alopecia-treatment' ||
+    clean === '/homoeopathic-clinic-near-puthanathani-for-alopecia-treatment/' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-alopecia-treatment' ||
+    clean === '/homeopathic-clinic-near-puthanathani-for-alopecia-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-alopecia-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-alopecia-treatment/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-alopecia-treatment' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-alopecia-treatment/' ||
+    clean === '/alopecia-treatment-in-puthanathani' ||
+    clean === '/alopecia-treatment-in-puthanathani/' ||
+    clean === '/alopecia-doctor-in-puthanathani' ||
+    clean === '/alopecia-doctor-in-puthanathani/' ||
+    clean === '/homoeopathic-alopecia-treatment-in-puthanathani' ||
+    clean === '/homoeopathic-alopecia-treatment-in-puthanathani/' ||
+    clean === '/homeopathic-alopecia-treatment-in-puthanathani' ||
+    clean === '/homeopathic-alopecia-treatment-in-puthanathani/' ||
+    clean === '/alopecia-homoeopathy-clinic-in-puthanathani' ||
+    clean === '/alopecia-homoeopathy-clinic-in-puthanathani/' ||
+    clean === '/alopecia-homeopathy-clinic-in-puthanathani' ||
+    clean === '/alopecia-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/homoeopathic-doctor-for-alopecia-problems-in-puthanathani' ||
+    clean === '/homoeopathic-doctor-for-alopecia-problems-in-puthanathani/' ||
+    clean === '/homeopathic-doctor-for-alopecia-problems-in-puthanathani' ||
+    clean === '/homeopathic-doctor-for-alopecia-problems-in-puthanathani/' ||
+    clean === '/alopecia-problem-treatment-in-puthanathani' ||
+    clean === '/alopecia-problem-treatment-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-alopecia-problems-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-alopecia-problems-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-alopecia-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-alopecia-problems-in-puthanathani/' ||
+    clean === '/alopecia-issues-treatment-in-puthanathani' ||
+    clean === '/alopecia-issues-treatment-in-puthanathani/' ||
+    clean === '/alopecia-health-clinic-in-puthanathani' ||
+    clean === '/alopecia-health-clinic-in-puthanathani/' ||
+    clean === '/alopecia-care-clinic-in-puthanathani' ||
+    clean === '/alopecia-care-clinic-in-puthanathani/' ||
+    clean === '/hair-and-alopecia-treatment-in-puthanathani' ||
+    clean === '/hair-and-alopecia-treatment-in-puthanathani/'
+  );
+};
+
+const isRingwormPuthanathaniPath = (pathname: string) => {
+  const clean = normalizeRoutePath(pathname);
+  return (
+    clean === '/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-ring-worm-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-ring-worm-treatment/' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-ringworm-treatment' ||
+    clean === '/homoeopathic-clinic-in-puthanathani-for-ringworm-treatment/' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-ringworm-treatment' ||
+    clean === '/homeopathic-clinic-in-puthanathani-for-ringworm-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ring-worm' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ring-worm/' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-ring-worm' ||
+    clean === '/homoeopathic-doctor-near-puthanathani-for-ring-worm/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ringworm' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ringworm/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ring-worm-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ring-worm-treatment/' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ringworm-treatment' ||
+    clean === '/homeopathic-doctor-near-puthanathani-for-ringworm-treatment/' ||
+    clean === '/ring-worm-treatment-in-puthanathani' ||
+    clean === '/ring-worm-treatment-in-puthanathani/' ||
+    clean === '/ringworm-treatment-in-puthanathani' ||
+    clean === '/ringworm-treatment-in-puthanathani/' ||
+    clean === '/ring-worm-problem-treatment-in-puthanathani' ||
+    clean === '/ring-worm-problem-treatment-in-puthanathani/' ||
+    clean === '/homoeopathic-ring-worm-treatment-in-puthanathani' ||
+    clean === '/homoeopathic-ring-worm-treatment-in-puthanathani/' ||
+    clean === '/homeopathic-ring-worm-treatment-in-puthanathani' ||
+    clean === '/homeopathic-ring-worm-treatment-in-puthanathani/' ||
+    clean === '/ring-worm-homoeopathy-clinic-in-puthanathani' ||
+    clean === '/ring-worm-homoeopathy-clinic-in-puthanathani/' ||
+    clean === '/ring-worm-homeopathy-clinic-in-puthanathani' ||
+    clean === '/ring-worm-homeopathy-clinic-in-puthanathani/' ||
+    clean === '/ring-worm-doctor-in-puthanathani' ||
+    clean === '/ring-worm-doctor-in-puthanathani/' ||
+    clean === '/ringworm-doctor-in-puthanathani' ||
+    clean === '/ringworm-doctor-in-puthanathani/' ||
+    clean === '/ring-worm-specialist-in-puthanathani' ||
+    clean === '/ring-worm-specialist-in-puthanathani/' ||
+    clean === '/ring-worm-issues-treatment-in-puthanathani' ||
+    clean === '/ring-worm-issues-treatment-in-puthanathani/' ||
+    clean === '/homoeopathy-clinic-for-ring-worm-problems-in-puthanathani' ||
+    clean === '/homoeopathy-clinic-for-ring-worm-problems-in-puthanathani/' ||
+    clean === '/homeopathy-clinic-for-ring-worm-problems-in-puthanathani' ||
+    clean === '/homeopathy-clinic-for-ring-worm-problems-in-puthanathani/' ||
+    clean === '/ring-worm-health-clinic-in-puthanathani' ||
+    clean === '/ring-worm-health-clinic-in-puthanathani/' ||
+    clean === '/ring-worm-care-clinic-in-puthanathani' ||
+    clean === '/ring-worm-care-clinic-in-puthanathani/'
+  );
+};
+
 const isHairTirurPath = (pathname: string) => {
   const clean = normalizeRoutePath(pathname);
   return (
@@ -1772,6 +2058,24 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }
       if (isMenstrualPuthanathaniPath(window.location.pathname)) {
         return 'menstrual-doctor-puthanathani';
+      }
+      if (isSkinPuthanathaniPath(window.location.pathname)) {
+        return 'skin-treatment-puthanathani';
+      }
+      if (isHairPuthanathaniPath(window.location.pathname)) {
+        return 'hair-treatment-puthanathani';
+      }
+      if (isPsoriasisPuthanathaniPath(window.location.pathname)) {
+        return 'psoriasis-treatment-puthanathani';
+      }
+      if (isScalpPuthanathaniPath(window.location.pathname)) {
+        return 'scalp-treatment-puthanathani';
+      }
+      if (isAlopeciaPuthanathaniPath(window.location.pathname)) {
+        return 'alopecia-treatment-puthanathani';
+      }
+      if (isRingwormPuthanathaniPath(window.location.pathname)) {
+        return 'ringworm-treatment-puthanathani';
       }
       if (isHairTirurPath(window.location.pathname)) {
         return 'hair-treatment-tirur';
@@ -2251,6 +2555,18 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setCurrentView('piles-treatment-puthanathani');
       } else if (isMenstrualPuthanathaniPath(window.location.pathname)) {
         setCurrentView('menstrual-doctor-puthanathani');
+      } else if (isSkinPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('skin-treatment-puthanathani');
+      } else if (isHairPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('hair-treatment-puthanathani');
+      } else if (isPsoriasisPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('psoriasis-treatment-puthanathani');
+      } else if (isScalpPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('scalp-treatment-puthanathani');
+      } else if (isAlopeciaPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('alopecia-treatment-puthanathani');
+      } else if (isRingwormPuthanathaniPath(window.location.pathname)) {
+        setCurrentView('ringworm-treatment-puthanathani');
       } else if (isHairTirurPath(window.location.pathname)) {
         setCurrentView('hair-treatment-tirur');
       } else if (isAnjaliClinicGuideBlogPath(window.location.pathname)) {
@@ -2628,6 +2944,36 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       if (window.location.pathname !== targetUrl) {
         window.history.pushState({ view: 'menstrual-doctor-puthanathani' }, '', targetUrl);
       }
+    } else if (currentView === 'skin-treatment-puthanathani') {
+      const targetUrl = '/homeopathic-clinic-near-puthanathani-for-skin-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'skin-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'hair-treatment-puthanathani') {
+      const targetUrl = '/homoeopathic-clinic-in-puthanathani-for-hair-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'hair-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'psoriasis-treatment-puthanathani') {
+      const targetUrl = '/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'psoriasis-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'scalp-treatment-puthanathani') {
+      const targetUrl = '/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'scalp-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'alopecia-treatment-puthanathani') {
+      const targetUrl = '/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'alopecia-treatment-puthanathani' }, '', targetUrl);
+      }
+    } else if (currentView === 'ringworm-treatment-puthanathani') {
+      const targetUrl = '/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/';
+      if (window.location.pathname !== targetUrl) {
+        window.history.pushState({ view: 'ringworm-treatment-puthanathani' }, '', targetUrl);
+      }
     } else if (currentView === 'blog' && selectedPostForReader?.slug === 'anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide') {
       const targetUrl = '/anjali-homoeo-clinic-in-malappuram-services-and-consultation-guide/';
       if (window.location.pathname !== targetUrl) {
@@ -2824,7 +3170,13 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         isAlopeciaKuttippuramPath(window.location.pathname) ||
         isRingwormKuttippuramPath(window.location.pathname) ||
         isPilesPuthanathaniPath(window.location.pathname) ||
-        isMenstrualPuthanathaniPath(window.location.pathname)
+        isMenstrualPuthanathaniPath(window.location.pathname) ||
+        isSkinPuthanathaniPath(window.location.pathname) ||
+        isHairPuthanathaniPath(window.location.pathname) ||
+        isPsoriasisPuthanathaniPath(window.location.pathname) ||
+        isScalpPuthanathaniPath(window.location.pathname) ||
+        isAlopeciaPuthanathaniPath(window.location.pathname) ||
+        isRingwormPuthanathaniPath(window.location.pathname)
       ) {
         window.history.pushState({ view: 'home' }, '', '/');
       }
@@ -3474,6 +3826,12 @@ export const ClinicProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     else if (currentView === 'ringworm-treatment-kuttippuram') targetId = 'ringworm-treatment-kuttippuram';
     else if (currentView === 'piles-treatment-puthanathani') targetId = 'piles-treatment-puthanathani';
     else if (currentView === 'menstrual-doctor-puthanathani') targetId = 'menstrual-doctor-puthanathani';
+    else if (currentView === 'skin-treatment-puthanathani') targetId = 'skin-treatment-puthanathani';
+    else if (currentView === 'hair-treatment-puthanathani') targetId = 'hair-treatment-puthanathani';
+    else if (currentView === 'psoriasis-treatment-puthanathani') targetId = 'psoriasis-treatment-puthanathani';
+    else if (currentView === 'scalp-treatment-puthanathani') targetId = 'scalp-treatment-puthanathani';
+    else if (currentView === 'alopecia-treatment-puthanathani') targetId = 'alopecia-treatment-puthanathani';
+    else if (currentView === 'ringworm-treatment-puthanathani') targetId = 'ringworm-treatment-puthanathani';
     else if (currentView === 'hair-treatment-tirur') targetId = 'hair-treatment-tirur';
     else if (currentView === 'treatments') targetId = 'treatments';
     else if (currentView === 'consultations') targetId = 'consultations';

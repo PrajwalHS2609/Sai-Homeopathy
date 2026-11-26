@@ -506,6 +506,13 @@ export const Footer: React.FC = () => {
               <span>Skin Treatment Near Kuttippuram</span>
             </button>
             <button
+              onClick={() => handleLinkClick('skin-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B]" />
+              <span>Skin Treatment Near Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('hair-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
@@ -520,6 +527,13 @@ export const Footer: React.FC = () => {
               <span>Hair Treatment in Kuttippuram</span>
             </button>
             <button
+              onClick={() => handleLinkClick('hair-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Hair Treatment in Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('psoriasis-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
@@ -532,6 +546,13 @@ export const Footer: React.FC = () => {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
               <span>Psoriasis Treatment in Kuttippuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('psoriasis-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
+              <span>Psoriasis Treatment in Puthanathani</span>
             </button>
             <button
               onClick={() => handleLinkClick('acne-treatment-ponnani')}
@@ -562,6 +583,13 @@ export const Footer: React.FC = () => {
               <span>Scalp Treatment in Kuttippuram</span>
             </button>
             <button
+              onClick={() => handleLinkClick('scalp-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Scalp Treatment in Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('eczema-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
@@ -583,6 +611,13 @@ export const Footer: React.FC = () => {
               <span>Alopecia Treatment in Kuttippuram</span>
             </button>
             <button
+              onClick={() => handleLinkClick('alopecia-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#0D9488]" />
+              <span>Alopecia Treatment in Puthanathani</span>
+            </button>
+            <button
               onClick={() => handleLinkClick('ringworm-treatment-ponnani')}
               className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
             >
@@ -595,6 +630,13 @@ export const Footer: React.FC = () => {
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
               <span>Ringworm Treatment in Kuttippuram</span>
+            </button>
+            <button
+              onClick={() => handleLinkClick('ringworm-treatment-puthanathani')}
+              className="hover:text-[#45AC4B] transition-colors text-left text-white font-medium flex items-center gap-1.5"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
+              <span>Ringworm Treatment in Puthanathani</span>
             </button>
             <button
               onClick={() => handleLinkClick('skin-treatment-tirur')}

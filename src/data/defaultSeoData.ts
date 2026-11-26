@@ -12067,6 +12067,890 @@ export const DEFAULT_SEO_PAGES: PageSeoMetadata[] = [
     ),
     lastUpdated: '2026-11-06',
   },
+  {
+    id: 'skin-treatment-puthanathani',
+    pageName: 'Homeopathic Clinic near Puthanathani for Skin Treatment',
+    category: 'clinical',
+    path: '/homeopathic-clinic-near-puthanathani-for-skin-treatment/',
+    title:
+      'Homeopathic Clinic near Puthanathani for Skin Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for skin treatment near Puthanathani covering acne, eczema, pigmentation, rashes, fungal infections, consultation expectations, dermatology scope, warning signs, and FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-puthanathani-for-skin-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homeopathic-clinic-near-puthanathani-for-skin-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homeopathic Clinic near Puthanathani for Skin Treatment, Skin Homeopathy Clinic in Puthanathani, Skin Treatment in Puthanathani, Skin Homeopathic Treatment in Puthanathani, Homeopathy Clinic for Skin Problems in Puthanathani, Skin Health Clinic in Puthanathani, Skin Doctor in Puthanathani, Skin Specialist in Puthanathani, Homoeopathic Doctor for Skin Problems in Puthanathani, Skin Disease Treatment in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-clinic-near-puthanathani-for-skin-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homeopathic-clinic-near-puthanathani-for-skin-treatment/',
+            name: 'Homeopathic Clinic near Puthanathani for Skin Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide covering common skin problems, consultation process, scientific evidence disclosures, warning signs, healthy skincare habits, and FAQs near Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Acne Vulgaris',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Eczema and Dry Skin',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Skin Pigmentation and Dark Spots',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Fungal and Skin Infections',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homeopathic-clinic-near-puthanathani-for-skin-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find a homeopathic clinic near Puthanathani for skin treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "You can search for local homeopathic clinics near Puthanathani and verify their practitioner's qualifications, registration, services and consultation arrangements. For persistent or serious skin conditions, consult a qualified dermatologist.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homeopathy effective for skin diseases?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently insufficient reliable scientific evidence to establish homeopathy as an effective treatment for skin diseases. It should not replace evidence-based medical care or prescribed treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for recurring skin problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified dermatologist is the appropriate specialist for diagnosing and managing many skin conditions. A medical assessment is particularly important if symptoms persist, worsen or recur.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can acne be treated through homeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homeopathy has not been reliably demonstrated to treat acne. A dermatologist can assess acne severity and recommend evidence-based options to manage breakouts and reduce the risk of scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek medical attention for a skin rash?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek prompt medical attention if a rash spreads quickly, becomes painful, develops blisters, involves the eyes or mouth, or occurs with fever. Breathing difficulty or swelling of the tongue or throat requires emergency care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I discuss during a skin consultation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Explain when the symptoms started, which areas are affected, what makes them better or worse, and which medicines or creams you have used. Mention allergies, existing health conditions and any previous diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is it safe to stop my prescribed skin medication and try homeopathy?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Do not stop prescribed medication or delay recommended medical treatment without discussing it with your treating doctor. Some products labelled homeopathic may also contain active ingredients and cause side effects or interactions.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain healthy skin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use gentle skincare products, moisturise when needed, protect your skin from excessive sun exposure, avoid unverified creams and seek medical advice for persistent symptoms.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
+  {
+    id: 'hair-treatment-puthanathani',
+    pageName: 'Homoeopathic Clinic in Puthanathani for Hair Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-puthanathani-for-hair-treatment/',
+    title:
+      'Homoeopathic Clinic in Puthanathani for Hair Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for hair treatment in Puthanathani covering hair fall, thinning, dandruff, scalp irritation, patchy hair loss, consultation expectations, causes, care tips, warning signs, and FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-hair-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-hair-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Puthanathani for Hair Treatment, Hair Treatment in Puthanathani, Homoeopathic Hair Treatment in Puthanathani, Hair Fall Treatment in Puthanathani, Hair Homoeopathy Clinic in Puthanathani, Hair Health Clinic in Puthanathani, Hair Doctor in Puthanathani, Hair Specialist in Puthanathani, Homoeopathic Doctor for Hair Problems in Puthanathani, Hair Loss Treatment in Puthanathani, Hair and Scalp Treatment in Puthanathani, Hair Care Clinic in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-hair-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-hair-treatment/',
+            name: 'Homoeopathic Clinic in Puthanathani for Hair Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide covering common hair and scalp problems, consultation expectations, scientific evidence disclosures, causes of hair loss, everyday hair-care tips, warning signs, and FAQs in Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Hair Loss and Excessive Hair Fall',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Hair Thinning and Genetic Hair Loss',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dandruff and Seborrhoeic Dermatitis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata and Patchy Hair Loss',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-hair-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Where can I find a homoeopathic clinic in Puthanathani for hair treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "You can search for local homoeopathic clinics in and around Puthanathani and verify their practitioner's qualifications, registration and available services. For persistent or unusual hair loss, consider consulting a qualified dermatologist.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homeopathy as an effective treatment for hair fall. It should not replace evidence-based medical assessment or proven hair-loss treatments.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What causes excessive hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Excessive hair fall may be associated with genetics, hormonal changes, stress, illness, nutritional deficiencies, medications or scalp conditions. A medical assessment can help identify the possible cause.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A dermatologist is an appropriate medical specialist for evaluating hair loss and scalp conditions. They can examine your symptoms and recommend investigations or evidence-based treatment options.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Dandruff itself does not usually cause permanent hair loss. However, severe scalp inflammation, scratching or an associated scalp condition may contribute to temporary hair shedding or breakage.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I do about sudden hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sudden hair loss should be assessed by a qualified medical professional. The cause may involve an underlying medical condition, infection or another factor that requires appropriate investigation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Are hair-growth supplements necessary?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Not everyone needs hair-growth supplements. Supplements may be useful when a specific deficiency has been identified, but unnecessary or excessive supplementation can be harmful. Seek medical advice before taking them.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain a healthy scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use suitable hair-care products, avoid excessive heat and tight hairstyles, maintain a balanced diet and seek medical advice for persistent itching, scaling or irritation.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
+  {
+    id: 'psoriasis-treatment-puthanathani',
+    pageName: 'Homoeopathic Clinic in Puthanathani for Psoriasis Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/',
+    title:
+      'Homoeopathic Clinic in Puthanathani for Psoriasis Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for psoriasis treatment in Puthanathani covering symptoms, plaque/scalp/guttate/inverse/nail psoriasis, triggers, consultation expectations, dermatologist care, daily tips, and 10 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Puthanathani for Psoriasis Treatment, Psoriasis Treatment in Puthanathani, Homoeopathic Treatment for Psoriasis in Puthanathani, Homoeopathy for Psoriasis in Puthanathani, Psoriasis Homoeopathy Clinic in Puthanathani, Psoriasis Clinic in Puthanathani, Psoriasis Doctor in Puthanathani, Psoriasis Homoeopathic Treatment in Puthanathani, Psoriasis Consultation in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/',
+            name: 'Homoeopathic Clinic in Puthanathani for Psoriasis Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide explaining psoriasis, common symptoms, five clinical types, triggers, scientific evidence disclosures, dermatologist treatments, daily care tips, and 10 FAQs in Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriasis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Plaque and Scalp Psoriasis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Psoriatic Arthritis',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Psoriasis is a chronic inflammatory condition that causes skin cells to build up more quickly than usual. It can produce raised, scaly patches, itching, dryness and inflammation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is psoriasis contagious?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Psoriasis is not contagious. It cannot spread through touching, sharing food, using the same towels or ordinary physical contact.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is insufficient reliable scientific evidence to establish homoeopathy as an effective psoriasis treatment. It should not replace prescribed medication or evidence-based dermatological care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which doctor should I consult for psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A qualified dermatologist is the appropriate medical specialist for diagnosing and managing psoriasis. Consult one if symptoms are persistent, severe, spreading or affecting your joints.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis be permanently cured?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently no established permanent cure for psoriasis. However, evidence-based treatments can help control symptoms, reduce inflammation and manage flare-ups.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What can trigger psoriasis flare-ups?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Possible triggers include infections, stress, skin injuries, smoking, alcohol consumption and certain medications. Triggers vary between individuals.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can psoriasis affect the joints?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Some people with psoriasis develop psoriatic arthritis, which can cause joint pain, swelling and stiffness. Early medical assessment is important.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I care for psoriasis-affected skin?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Moisturise regularly, use gentle skincare products, avoid scratching, protect your skin from injury and follow your prescribed treatment plan.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I seek medical advice for psoriasis?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if symptoms worsen, spread, become painful or affect daily activities. Joint pain, swelling or stiffness should also be assessed.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I check before choosing a psoriasis clinic in Puthanathani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Verify the practitioner's qualifications, registration, services and treatment approach. Ensure that the clinic provides transparent information and recommends specialist care when required.",
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
+  {
+    id: 'scalp-treatment-puthanathani',
+    pageName: 'Homoeopathic Clinic in Puthanathani for Scalp Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/',
+    title:
+      'Homoeopathic Clinic in Puthanathani for Scalp Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for scalp treatment in Puthanathani covering dandruff, dry scalp, seborrhoeic dermatitis, scalp psoriasis, folliculitis, consultation preparation, daily scalp tips, and 8 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Puthanathani for Scalp Treatment, Scalp Treatment in Puthanathani, Homoeopathic Scalp Treatment in Puthanathani, Scalp problem Treatment in Puthanathani, Scalp Specialist in Puthanathani, Scalp Homoeopathy Clinic in Puthanathani, Scalp Doctor in Puthanathani, Hair and Scalp Treatment in Puthanathani, Homoeopathic Doctor for Scalp Problems in Puthanathani, Scalp Issues Treatment in Puthanathani, Scalp Health Clinic in Puthanathani, Scalp Care Clinic in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/',
+            name: 'Homoeopathic Clinic in Puthanathani for Scalp Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide covering scalp symptoms, common causes (dandruff, dry scalp, seborrhoeic dermatitis, scalp psoriasis, folliculitis, contact sensitivity), scientific evidence disclosures, daily scalp tips, warning signs, and 8 FAQs in Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dandruff and Seborrhoeic Dermatitis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Psoriasis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Scalp Folliculitis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Dry and Irritated Scalp',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-scalp-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What are the common symptoms of scalp problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common symptoms include itching, dandruff, dryness, redness, scaling, excessive oiliness, irritation, painful bumps and unusual hair shedding. The symptoms may vary depending on the underlying condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Where can I find Scalp Treatment in Puthanathani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'You can research local healthcare providers and dermatology services in Puthanathani. Check practitioner qualifications, available services and patient-care information before choosing a provider.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Homoeopathic Scalp Treatment in Puthanathani effective?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'There is currently no reliable scientific evidence establishing homoeopathy as an effective treatment for scalp disorders. It should not replace evidence-based medical treatment or delay consultation with a dermatologist.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a Scalp Doctor in Puthanathani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a qualified doctor if you experience persistent itching, severe scaling, redness, painful bumps, sores, discharge or unexplained hair loss. Sudden or worsening symptoms should be assessed promptly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can dandruff cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ordinary dandruff does not usually cause permanent hair loss. However, significant itching and repeated scratching may contribute to temporary hair shedding or breakage. Persistent hair loss requires medical assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the difference between dry scalp and dandruff?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'A dry scalp is generally associated with reduced skin moisture, while dandruff is often associated with flaking and changes in scalp skin activity. Both can cause itching, so persistent symptoms may need professional evaluation.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I maintain a healthy scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Use suitable hair-care products, maintain regular scalp hygiene, avoid excessive scratching, limit irritating chemical treatments and seek medical advice for persistent symptoms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I consult a dermatologist for recurring scalp problems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Recurring scalp problems should be evaluated by a dermatologist to identify the cause and determine appropriate treatment. Some conditions require prescription medication or specific medical care.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
+  {
+    id: 'alopecia-treatment-puthanathani',
+    pageName: 'Homoeopathic Clinic in Puthanathani for Alopecia Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/',
+    title:
+      'Homoeopathic Clinic in Puthanathani for Alopecia Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for alopecia treatment in Puthanathani covering alopecia areata, androgenetic alopecia, telogen effluvium, traction and scarring alopecia, warning signs, evidence-based care, and 10 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Puthanathani for Alopecia Treatment, Alopecia Treatment in Puthanathani, Alopecia Doctor in Puthanathani, Homoeopathic Alopecia Treatment in Puthanathani, Alopecia Homoeopathy Clinic in Puthanathani, Homoeopathic Doctor for Alopecia Problems in Puthanathani, Alopecia Problem Treatment in Puthanathani, Homoeopathy Clinic for Alopecia Problems in Puthanathani, Alopecia Issues Treatment in Puthanathani, Alopecia Health Clinic in Puthanathani, Alopecia Care Clinic in Puthanathani, Hair and Alopecia Treatment in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/',
+            name: 'Homoeopathic Clinic in Puthanathani for Alopecia Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide covering alopecia types, causes, symptoms, dermatologist assessment, scientific evidence disclosures, hair care habits, warning signs, and 10 FAQs in Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Alopecia Areata',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Androgenetic Alopecia',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Telogen Effluvium',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Traction and Scarring Alopecia',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Alopecia is a general medical term for hair loss. It includes different conditions, such as alopecia areata, androgenetic alopecia, telogen effluvium and scarring alopecia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What are the common causes of alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Common causes include genetic factors, autoimmune conditions, hormonal changes, nutritional deficiencies, physical stress, certain medicines and scalp infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can alopecia be treated?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Many forms of alopecia can be managed, but the appropriate treatment depends on the specific condition. Some forms may improve, while others require long-term management.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homoeopathy has not been reliably demonstrated to treat alopecia or produce hair regrowth. It should not replace evidence-based medical care or dermatologist assessment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a dermatologist for hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Consult a dermatologist if you experience sudden hair loss, bald patches, persistent thinning, scalp inflammation, pain or signs of scarring.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can nutritional deficiencies cause hair loss?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Deficiencies involving nutrients such as iron or insufficient protein intake may contribute to hair shedding. Medical assessment can help determine whether a deficiency is present.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is alopecia the same as ordinary hair fall?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Everyday hair shedding is normal, while alopecia refers to hair loss that may occur in specific patterns or because of an underlying condition.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can stress cause alopecia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Significant physical or emotional stress can trigger temporary hair shedding, including telogen effluvium. However, not every form of alopecia is caused by stress.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I choose an alopecia specialist in Puthanathani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified dermatologist with experience in hair and scalp conditions. Check professional credentials, consultation procedures and whether the recommended care is appropriate for your diagnosis.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What should I do before starting alopecia treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Understand the likely cause of your hair loss, review your medical history and seek an appropriate diagnosis. Discuss the benefits, risks and limitations of any proposed treatment with a qualified healthcare professional.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
+  {
+    id: 'ringworm-treatment-puthanathani',
+    pageName: 'Homoeopathic Clinic in Puthanathani for Ring worm Treatment',
+    category: 'clinical',
+    path: '/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/',
+    title:
+      'Homoeopathic Clinic in Puthanathani for Ring worm Treatment | Anjali Homoeo Clinic',
+    description:
+      'Patient guide for ringworm (tinea / dermatophytosis) treatment in Puthanathani covering tinea corporis, capitis, pedis, cruris, nails, antifungal care, steroid cream risks, hygiene prevention, and 10 FAQs.',
+    url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/',
+    canonicalUrl:
+      'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/',
+    ogType: 'article',
+    ogImage:
+      'https://anjalihomoeoclinic.com/assets/aistudio/Smiling_South_Asian_Doctor_Portrait_a779a860.png',
+    twitterCard: 'summary_large_image',
+    keywords:
+      'Homoeopathic Clinic in Puthanathani for Ring worm Treatment, Ring worm Treatment in Puthanathani, Ring worm Problem Treatment in Puthanathani, Homoeopathic Ring worm Treatment in Puthanathani, Ring worm Homoeopathy Clinic in Puthanathani, Ring worm Doctor in Puthanathani, Ring worm Specialist in Puthanathani, Ring worm Issues Treatment in Puthanathani, Homoeopathy Clinic for Ring worm Problems in Puthanathani, Ring worm Health Clinic in Puthanathani, Ring worm Care Clinic in Puthanathani',
+    schemaType: 'MedicalWebPage',
+    schemaJson: JSON.stringify(
+      {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'MedicalWebPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/#webpage',
+            url: 'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/',
+            name: 'Homoeopathic Clinic in Puthanathani for Ring worm Treatment | Patient Guide',
+            description:
+              'Comprehensive patient guide covering ringworm types, transmission, symptoms, accurate diagnosis, scientific evidence disclosures, antifungal treatment options, prevention habits, and 10 FAQs in Puthanathani.',
+            about: [
+              {
+                '@type': 'MedicalCondition',
+                name: 'Ringworm (Dermatophytosis / Tinea)',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Corporis',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Capitis (Scalp Ringworm)',
+              },
+              {
+                '@type': 'MedicalCondition',
+                name: 'Tinea Pedis and Tinea Cruris',
+              },
+            ],
+            author: {
+              '@type': 'Person',
+              name: 'Dr. Anjali Chandrasekhar',
+              jobTitle: 'BHMS Homoeopathic Practitioner',
+            },
+            publisher: {
+              '@type': 'MedicalClinic',
+              name: 'Anjali Homoeo Clinic',
+              url: 'https://anjalihomoeoclinic.com/',
+            },
+            datePublished: '2026-11-26',
+            dateModified: '2026-11-26',
+          },
+          {
+            '@type': 'FAQPage',
+            '@id':
+              'https://anjalihomoeoclinic.com/homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/#faq',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Ringworm is a contagious fungal infection caused by dermatophytes. It commonly produces an itchy, scaly rash that may appear circular or ring-shaped.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is ringworm caused by a worm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Despite its name, ringworm is caused by fungi and has no connection with parasitic worms.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm spread from one person to another?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. It can spread through direct skin contact and by sharing contaminated towels, clothing, bedding and personal belongings.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What is the standard treatment for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Antifungal medicines are the established treatment. Mild skin infections may respond to topical antifungal products, while scalp, nail or extensive infections may require prescription treatment.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is homoeopathy effective for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Homoeopathy has not been reliably established as an effective treatment for ringworm. It should not replace antifungal medicines or delay appropriate medical care.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm affect the scalp?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Scalp ringworm can cause scaling, itching, broken hairs and patchy hair loss. It usually requires prescription oral antifungal medication.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can ringworm return after treatment?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Reinfection can occur through contact with infected people, animals or contaminated belongings. Following the recommended treatment and maintaining good hygiene can help reduce the risk.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Should I use steroid cream for ringworm?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Do not use steroid-containing creams for suspected ringworm unless a qualified healthcare professional specifically advises them for an appropriate reason. Steroids can worsen fungal infections.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'When should I consult a dermatologist?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Seek medical advice if the infection spreads, affects the scalp or nails, becomes painful, develops significant inflammation or does not improve with appropriate antifungal treatment. People with weakened immune systems should seek professional advice promptly.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How can I find suitable Ring worm Treatment in Puthanathani?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Look for a qualified healthcare professional who can assess the rash, recommend appropriate testing and guide you towards evidence-based antifungal treatment.',
+                },
+              },
+            ],
+          },
+        ],
+      },
+      null,
+      2
+    ),
+    lastUpdated: '2026-11-26',
+  },
 ];
 
 

@@ -85,6 +85,12 @@ import { AlopeciaKuttippuramPage } from './components/AlopeciaKuttippuramPage';
 import { RingwormKuttippuramPage } from './components/RingwormKuttippuramPage';
 import { PilesPuthanathaniPage } from './components/PilesPuthanathaniPage';
 import { MenstrualPuthanathaniPage } from './components/MenstrualPuthanathaniPage';
+import { SkinPuthanathaniPage } from './components/SkinPuthanathaniPage';
+import { HairPuthanathaniPage } from './components/HairPuthanathaniPage';
+import { PsoriasisPuthanathaniPage } from './components/PsoriasisPuthanathaniPage';
+import { ScalpPuthanathaniPage } from './components/ScalpPuthanathaniPage';
+import { AlopeciaPuthanathaniPage } from './components/AlopeciaPuthanathaniPage';
+import { RingwormPuthanathaniPage } from './components/RingwormPuthanathaniPage';
 import { SeoHead } from './components/SeoHead';
 import { SeoPageEditModal } from './components/SeoPageEditModal';
 import { FloatingSeoBadge } from './components/FloatingSeoBadge';
@@ -1176,6 +1182,126 @@ const MainContent: React.FC = () => {
         <Header />
         <main className="flex-1">
           <MenstrualPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homeopathic Clinic near Puthanathani for Skin Treatment View
+  // URL: /homeopathic-clinic-near-puthanathani-for-skin-treatment/
+  if (currentView === 'skin-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <SkinPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Puthanathani for Hair Treatment View
+  // URL: /homoeopathic-clinic-in-puthanathani-for-hair-treatment/
+  if (currentView === 'hair-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <HairPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Puthanathani for Psoriasis Treatment View
+  // URL: /homoeopathic-clinic-in-puthanathani-for-psoriasis-treatment/
+  if (currentView === 'psoriasis-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <PsoriasisPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Puthanathani for Scalp Treatment View
+  // URL: /homoeopathic-clinic-in-puthanathani-for-scalp-treatment/
+  if (currentView === 'scalp-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <ScalpPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Puthanathani for Alopecia Treatment View
+  // URL: /homoeopathic-clinic-in-puthanathani-for-alopecia-treatment/
+  if (currentView === 'alopecia-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <AlopeciaPuthanathaniPage />
+        </main>
+        <Footer />
+        <ProductDetailModal />
+        <CartDrawer />
+        <CheckoutModal />
+        <MedicalDisclaimerModal />
+        <FloatingWhatsapp />
+        <ToastContainer />
+      </div>
+    );
+  }
+
+  // Route: Dedicated Homoeopathic Clinic in Puthanathani for Ring worm Treatment View
+  // URL: /homoeopathic-clinic-in-puthanathani-for-ring-worm-treatment/
+  if (currentView === 'ringworm-treatment-puthanathani') {
+    return (
+      <div className="min-h-screen flex flex-col bg-[#F8FAFD] font-sans">
+        <Header />
+        <main className="flex-1">
+          <RingwormPuthanathaniPage />
         </main>
         <Footer />
         <ProductDetailModal />
